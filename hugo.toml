@@ -1,0 +1,4 @@
+baseURL = 'https://acebase.cc/'
+languageCode = 'en-us'
+title = 'AceBase | 专业器材与技术'
+theme = 'PaperMod'
