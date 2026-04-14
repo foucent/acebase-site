@@ -4,6 +4,10 @@ on:
   push:
     branches: ["main"]
 
+# 解决 2026 年 Node.js 24 强制升级警告
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+
 permissions:
   contents: read
   pages: write
@@ -23,14 +27,14 @@ jobs:
           submodules: recursive
           fetch-depth: 0
       - name: Setup Hugo
-        uses: peaceiris/actions-hugo@v3 # 升级到 v3
+        uses: peaceiris/actions-hugo@v3
         with:
           hugo-version: 'latest'
           extended: true
       - name: Build with Hugo
         run: hugo --minify
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3 # 关键：这里必须是 v3 或更高
+        uses: actions/upload-pages-artifact@v3
         with:
           path: ./public
 
@@ -43,4 +47,4 @@ jobs:
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v4 # 关键：这里必须是 v4
+        uses: actions/deploy-pages@v4
