@@ -2,7 +2,7 @@ name: Deploy Hugo site to Pages
 
 on:
   push:
-    branches: ["main"]  # 确保你的主分支叫 main
+    branches: ["main"]
 
 permissions:
   contents: read
@@ -20,17 +20,17 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
         with:
-          submodules: recursive  # 极其重要：这样才能拉取你的主题
+          submodules: recursive
           fetch-depth: 0
       - name: Setup Hugo
-        uses: peaceiris/actions-hugo@v2
+        uses: peaceiris/actions-hugo@v3 # 升级到 v3
         with:
           hugo-version: 'latest'
-          extended: true         # 开启 Extended 版支持 SCSS
+          extended: true
       - name: Build with Hugo
         run: hugo --minify
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v2
+        uses: actions/upload-pages-artifact@v3 # 关键：这里必须是 v3 或更高
         with:
           path: ./public
 
@@ -43,4 +43,4 @@ jobs:
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v2
+        uses: actions/deploy-pages@v4 # 关键：这里必须是 v4
