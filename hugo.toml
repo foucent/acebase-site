@@ -1,4 +1,13 @@
 baseURL = 'https://acebase.cc/'
 languageCode = 'en-us'
 title = 'AceBase | 专业器材与技术'
-theme = 'PaperMod'
+theme = 'pehtheme-hugo'
+[[menu.main]]
+    name = "所有文章"
+    url = "/posts/"
+    weight = 1
+
+[[menu.main]]
+    name = "标签分类"
+    url = "/tags/"
+    weight = 2

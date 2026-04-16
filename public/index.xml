@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>AceBase | 专业器材与技术</title>
     <link>http://localhost:1313/</link>
@@ -13,7 +13,7 @@
       <link>http://localhost:1313/posts/my-first-post/</link>
       <pubDate>Wed, 15 Apr 2026 13:58:15 +0800</pubDate>
       <guid>http://localhost:1313/posts/my-first-post/</guid>
-      <description></description>
+      <description>&lt;p&gt;这是我的文章正文内容。支持 &lt;strong&gt;加粗&lt;/strong&gt;、&lt;a href=&#34;https://google.com&#34;&gt;链接&lt;/a&gt; 和图片。&lt;/p&gt;</description>
     </item>
     <item>
       <title>Hello World</title>
