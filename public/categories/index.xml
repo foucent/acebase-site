@@ -1,13 +1,20 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Categories on AceBase | 专业器材与技术</title>
+    <title>Categories on AceBase | 玩家基地</title>
     <link>http://localhost:1313/categories/</link>
-    <description>Recent content in Categories on AceBase | 专业器材与技术</description>
+    <description>Recent content in Categories on AceBase | 玩家基地</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 15 Apr 2026 13:58:15 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 20 Apr 2026 10:00:00 +0800</lastBuildDate>
     <atom:link href="http://localhost:1313/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>高手进阶</title>
+      <link>http://localhost:1313/categories/%E9%AB%98%E6%89%8B%E8%BF%9B%E9%98%B6/</link>
+      <pubDate>Mon, 20 Apr 2026 10:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/categories/%E9%AB%98%E6%89%8B%E8%BF%9B%E9%98%B6/</guid>
+      <description></description>
+    </item>
     <item>
       <title>技术</title>
       <link>http://localhost:1313/categories/%E6%8A%80%E6%9C%AF/</link>

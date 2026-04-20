@@ -1,33 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on AceBase | 玩家基地</title>
-    <link>http://localhost:1313/posts/</link>
-    <description>Recent content in Posts on AceBase | 玩家基地</description>
+    <title>游戏技巧 on AceBase | 玩家基地</title>
+    <link>http://localhost:1313/tags/%E6%B8%B8%E6%88%8F%E6%8A%80%E5%B7%A7/</link>
+    <description>Recent content in 游戏技巧 on AceBase | 玩家基地</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 20 Apr 2026 10:00:00 +0800</lastBuildDate>
-    <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/%E6%B8%B8%E6%88%8F%E6%8A%80%E5%B7%A7/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>《黑色行动6》全显卡极致优化指南：5分钟解决掉帧卡顿</title>
       <link>http://localhost:1313/posts/black-ops-6-settings/</link>
       <pubDate>Mon, 20 Apr 2026 10:00:00 +0800</pubDate>
       <guid>http://localhost:1313/posts/black-ops-6-settings/</guid>
       <description>&lt;h2 id=&#34;-核心技巧视频演示&#34;&gt;📺 核心技巧视频演示&lt;/h2&gt;&#xA;&lt;p&gt;这里嵌入你自己的 YouTube 视频，能极大提升页面停留时间。&lt;/p&gt;&#xA;&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;&#xA;      &lt;iframe allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen&#34; loading=&#34;eager&#34; referrerpolicy=&#34;strict-origin-when-cross-origin&#34; src=&#34;https://www.youtube.com/embed/diaMkQB4is8?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; title=&#34;YouTube video&#34;&gt;&lt;/iframe&gt;&#xA;    &lt;/div&gt;&#xA;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;-视频要点精选-seo省流助手&#34;&gt;📝 视频要点精选 (SEO省流助手)&lt;/h2&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;&lt;strong&gt;为什么要看这篇文章？&lt;/strong&gt; &amp;gt; 很多博主只告诉你要关掉阴影，但我会结合 &lt;strong&gt;RTX 50系列显卡&lt;/strong&gt; 的特性，告诉你如何利用 DLSS 5 榨干最后一帧性能。&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;h3 id=&#34;1-关键画面设置参数表&#34;&gt;1. 关键画面设置参数表&lt;/h3&gt;&#xA;&lt;table&gt;&#xA;  &lt;thead&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;th style=&#34;text-align: left&#34;&gt;设置项&lt;/th&gt;&#xA;          &lt;th style=&#34;text-align: left&#34;&gt;建议选项&lt;/th&gt;&#xA;          &lt;th style=&#34;text-align: left&#34;&gt;性能影响&lt;/th&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/thead&gt;&#xA;  &lt;tbody&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td style=&#34;text-align: left&#34;&gt;纹理质量&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: left&#34;&gt;高 (High)&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: left&#34;&gt;显存占用中等&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td style=&#34;text-align: left&#34;&gt;光影追踪&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: left&#34;&gt;关闭 (Off)&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: left&#34;&gt;&lt;strong&gt;帧数提升约 20%&lt;/strong&gt;&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td style=&#34;text-align: left&#34;&gt;超分辨率&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: left&#34;&gt;DLSS 5 - 平衡&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: left&#34;&gt;兼容最新显卡加速&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/tbody&gt;&#xA;&lt;/table&gt;&#xA;&lt;h3 id=&#34;2-独家身法技巧&#34;&gt;2. 独家身法技巧&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;快速滑铲取消：&lt;/strong&gt; 视频 01:45 处演示了 2026 年最新的指法逻辑。&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;听声辨位调优：&lt;/strong&gt; 建议将系统采样率调至 48kHz。&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;-硬件与特价装备推荐&#34;&gt;🛠️ 硬件与特价装备推荐&lt;/h2&gt;&#xA;&lt;p&gt;如果你觉得目前的配置带不动游戏，可以关注我们的 &lt;a href=&#34;https://acebase.cc&#34;&gt;AceBase玩家基地特价渠道&lt;/a&gt;。&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>My First Post</title>
-      <link>http://localhost:1313/posts/my-first-post/</link>
-      <pubDate>Wed, 15 Apr 2026 13:58:15 +0800</pubDate>
-      <guid>http://localhost:1313/posts/my-first-post/</guid>
-      <description>&lt;p&gt;这是我的文章正文内容。支持 &lt;strong&gt;加粗&lt;/strong&gt;、&lt;a href=&#34;https://google.com&#34;&gt;链接&lt;/a&gt; 和图片。&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Hello World</title>
-      <link>http://localhost:1313/posts/hello-world/</link>
-      <pubDate>Tue, 14 Apr 2026 14:13:10 +0800</pubDate>
-      <guid>http://localhost:1313/posts/hello-world/</guid>
-      <description></description>
     </item>
   </channel>
 </rss>
