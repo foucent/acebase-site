@@ -14,7 +14,7 @@ draft: false
 
 这里嵌入你自己的 YouTube 视频，能极大提升页面停留时间。
 
-{{< youtube id= nyBo4_C8_zggQeVN >}}
+{{< youtube id=diaMkQB4is8>}}
 
 ---
 
