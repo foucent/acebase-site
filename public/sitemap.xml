@@ -49,5 +49,7 @@
   </url><url>
     <loc>http://localhost:1313/posts/hello-world/</loc>
     <lastmod>2026-04-14T14:13:10+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/%E7%B1%B3%E5%93%88%E6%B8%B8%E8%99%9A%E5%B9%BB5%E5%86%99%E5%AE%9E%E9%A3%8E%E5%A5%87%E5%B9%BB%E6%96%B0%E4%BD%9C%E9%A6%96%E6%9B%9D-%23%E7%B1%B3%E5%93%88%E6%B8%B8-%23%E8%99%9A%E5%B9%BB5-%23%E5%8E%9F%E7%A5%9E/</loc>
   </url>
 </urlset>
