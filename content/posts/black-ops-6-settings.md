@@ -11,8 +11,6 @@ keywords: ["黑色行动6优化", "RTX 5070设置", "游戏技巧视频", "aceba
 draft: false
 ---
 
-![封面图](/images/abc.png)
-
 ## 📺 核心技巧视频演示
 
 这里嵌入你自己的 YouTube 视频，能极大提升页面停留时间。
