@@ -1,6 +1,6 @@
 baseURL = 'https://acebase.cc/'
 languageCode = 'en-us'
-title = 'AceBase | 玩家基地'
+title = 'A玩家 | 一起来玩'
 theme = 'pehtheme-hugo'
 [[menu.main]]
     name = "所有文章"
