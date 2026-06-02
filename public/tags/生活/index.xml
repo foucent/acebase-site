@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>生活 on A玩家 | 一起来玩</title>
-    <link>https://acebase.cc/tags/%E7%94%9F%E6%B4%BB/</link>
+    <link>http://localhost:10381/tags/%E7%94%9F%E6%B4%BB/</link>
     <description>Recent content in 生活 on A玩家 | 一起来玩</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 15 Apr 2026 13:58:15 +0800</lastBuildDate>
-    <atom:link href="https://acebase.cc/tags/%E7%94%9F%E6%B4%BB/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:10381/tags/%E7%94%9F%E6%B4%BB/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>My First Post</title>
-      <link>https://acebase.cc/posts/my-first-post/</link>
+      <link>http://localhost:10381/posts/my-first-post/</link>
       <pubDate>Wed, 15 Apr 2026 13:58:15 +0800</pubDate>
-      <guid>https://acebase.cc/posts/my-first-post/</guid>
+      <guid>http://localhost:10381/posts/my-first-post/</guid>
       <description>&lt;p&gt;这是我的文章正文内容。支持 &lt;strong&gt;加粗&lt;/strong&gt;、&lt;a href=&#34;https://google.com&#34;&gt;链接&lt;/a&gt; 和图片。&lt;/p&gt;</description>
     </item>
     <item>
       <title>Hello World</title>
-      <link>https://acebase.cc/posts/hello-world/</link>
+      <link>http://localhost:10381/posts/hello-world/</link>
       <pubDate>Tue, 14 Apr 2026 14:13:10 +0800</pubDate>
-      <guid>https://acebase.cc/posts/hello-world/</guid>
+      <guid>http://localhost:10381/posts/hello-world/</guid>
       <description></description>
     </item>
   </channel>
