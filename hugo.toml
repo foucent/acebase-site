@@ -1,13 +1,13 @@
 baseURL = 'https://acebase.cc/'
 languageCode = 'en-us'
-title = 'A玩家 | 一起来玩'
+title = 'ACEBASE | GEAR UP, QUEUE UP'
 theme = 'pehtheme-hugo'
 [[menu.main]]
-    name = "所有文章"
+    name = "Posts"
     url = "/posts/"
     weight = 1
 
 [[menu.main]]
-    name = "标签分类"
+    name = "Tags"
     url = "/tags/"
     weight = 2
