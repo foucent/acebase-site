@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>AI Algorithms on ACEBASE | GEAR UP, QUEUE UP</title>
-    <link>http://localhost:1313/tags/ai-algorithms/</link>
+    <link>https://acebase.cc/tags/ai-algorithms/</link>
     <description>Recent content in AI Algorithms on ACEBASE | GEAR UP, QUEUE UP</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 02 Jun 2026 12:11:56 +0800</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/ai-algorithms/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://acebase.cc/tags/ai-algorithms/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>CS2&#39;s Hidden Truths: 8 Overlooked Competitive Details Analyzed</title>
-      <link>http://localhost:1313/posts/cs2-8-hardcore-details-you-never-noticed-from-frame-drop-mechanics-to-ai-sound-card-tech-en/</link>
+      <link>https://acebase.cc/posts/cs2-8-hardcore-details-you-never-noticed-from-frame-drop-mechanics-to-ai-sound-card-tech-en/</link>
       <pubDate>Tue, 02 Jun 2026 12:11:56 +0800</pubDate>
-      <guid>http://localhost:1313/posts/cs2-8-hardcore-details-you-never-noticed-from-frame-drop-mechanics-to-ai-sound-card-tech-en/</guid>
+      <guid>https://acebase.cc/posts/cs2-8-hardcore-details-you-never-noticed-from-frame-drop-mechanics-to-ai-sound-card-tech-en/</guid>
       <description>&lt;p&gt;&lt;strong&gt;Introduction:&lt;/strong&gt;&lt;br&gt;&#xA;&lt;em&gt;Counter-Strike 2&lt;/em&gt; (CS2) has been continuously iterating since its launch, yet rarely discloses subtle optimizations through official announcements. This video systematically reviews 8 hidden details that are easily overlooked but profoundly impact the actual gameplay experience — from the underlying rendering logic of frame drops behind smoke, CT/T molotov fire color identification techniques, to the C4 allocation mechanism and AI sound card enhanced footsteps. These &amp;ldquo;invisible efforts&amp;rdquo; are key evidence of Valve polishing competitive realism at millimeter precision, and they determine the boundary between victory and defeat in pro-level sound positioning and tactical prediction.&lt;/p&gt;</description>
     </item>
   </channel>

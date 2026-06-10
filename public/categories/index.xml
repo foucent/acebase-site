@@ -2,220 +2,115 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on ACEBASE | GEAR UP, QUEUE UP</title>
-    <link>http://localhost:1313/categories/</link>
+    <link>https://acebase.cc/categories/</link>
     <description>Recent content in Categories on ACEBASE | GEAR UP, QUEUE UP</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 03 Jun 2026 10:00:00 +0800</lastBuildDate>
-    <atom:link href="http://localhost:1313/categories/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://acebase.cc/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>CS2 Deep Analysis</title>
-      <link>http://localhost:1313/categories/cs2-deep-analysis/</link>
+      <link>https://acebase.cc/categories/cs2-deep-analysis/</link>
       <pubDate>Wed, 03 Jun 2026 10:00:00 +0800</pubDate>
-      <guid>http://localhost:1313/categories/cs2-deep-analysis/</guid>
+      <guid>https://acebase.cc/categories/cs2-deep-analysis/</guid>
       <description></description>
     </item>
     <item>
       <title>CS2 Guides</title>
-      <link>http://localhost:1313/categories/cs2-guides/</link>
+      <link>https://acebase.cc/categories/cs2-guides/</link>
       <pubDate>Wed, 03 Jun 2026 10:00:00 +0800</pubDate>
-      <guid>http://localhost:1313/categories/cs2-guides/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>CS2攻略</title>
-      <link>http://localhost:1313/categories/cs2%E6%94%BB%E7%95%A5/</link>
-      <pubDate>Wed, 03 Jun 2026 10:00:00 +0800</pubDate>
-      <guid>http://localhost:1313/categories/cs2%E6%94%BB%E7%95%A5/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>CS2深度分析</title>
-      <link>http://localhost:1313/categories/cs2%E6%B7%B1%E5%BA%A6%E5%88%86%E6%9E%90/</link>
-      <pubDate>Wed, 03 Jun 2026 10:00:00 +0800</pubDate>
-      <guid>http://localhost:1313/categories/cs2%E6%B7%B1%E5%BA%A6%E5%88%86%E6%9E%90/</guid>
+      <guid>https://acebase.cc/categories/cs2-guides/</guid>
       <description></description>
     </item>
     <item>
       <title>Gaming News</title>
-      <link>http://localhost:1313/categories/gaming-news/</link>
+      <link>https://acebase.cc/categories/gaming-news/</link>
       <pubDate>Wed, 03 Jun 2026 10:00:00 +0800</pubDate>
-      <guid>http://localhost:1313/categories/gaming-news/</guid>
+      <guid>https://acebase.cc/categories/gaming-news/</guid>
       <description></description>
     </item>
     <item>
       <title>Tips Sharing</title>
-      <link>http://localhost:1313/categories/tips-sharing/</link>
+      <link>https://acebase.cc/categories/tips-sharing/</link>
       <pubDate>Wed, 03 Jun 2026 10:00:00 +0800</pubDate>
-      <guid>http://localhost:1313/categories/tips-sharing/</guid>
+      <guid>https://acebase.cc/categories/tips-sharing/</guid>
       <description></description>
     </item>
     <item>
       <title>Tutorials</title>
-      <link>http://localhost:1313/categories/tutorials/</link>
+      <link>https://acebase.cc/categories/tutorials/</link>
       <pubDate>Wed, 03 Jun 2026 10:00:00 +0800</pubDate>
-      <guid>http://localhost:1313/categories/tutorials/</guid>
+      <guid>https://acebase.cc/categories/tutorials/</guid>
       <description></description>
     </item>
     <item>
       <title>Weapon Reviews</title>
-      <link>http://localhost:1313/categories/weapon-reviews/</link>
+      <link>https://acebase.cc/categories/weapon-reviews/</link>
       <pubDate>Wed, 03 Jun 2026 10:00:00 +0800</pubDate>
-      <guid>http://localhost:1313/categories/weapon-reviews/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>技巧分享</title>
-      <link>http://localhost:1313/categories/%E6%8A%80%E5%B7%A7%E5%88%86%E4%BA%AB/</link>
-      <pubDate>Wed, 03 Jun 2026 10:00:00 +0800</pubDate>
-      <guid>http://localhost:1313/categories/%E6%8A%80%E5%B7%A7%E5%88%86%E4%BA%AB/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>技巧教学</title>
-      <link>http://localhost:1313/categories/%E6%8A%80%E5%B7%A7%E6%95%99%E5%AD%A6/</link>
-      <pubDate>Wed, 03 Jun 2026 10:00:00 +0800</pubDate>
-      <guid>http://localhost:1313/categories/%E6%8A%80%E5%B7%A7%E6%95%99%E5%AD%A6/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>武器评测</title>
-      <link>http://localhost:1313/categories/%E6%AD%A6%E5%99%A8%E8%AF%84%E6%B5%8B/</link>
-      <pubDate>Wed, 03 Jun 2026 10:00:00 +0800</pubDate>
-      <guid>http://localhost:1313/categories/%E6%AD%A6%E5%99%A8%E8%AF%84%E6%B5%8B/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>游戏资讯</title>
-      <link>http://localhost:1313/categories/%E6%B8%B8%E6%88%8F%E8%B5%84%E8%AE%AF/</link>
-      <pubDate>Wed, 03 Jun 2026 10:00:00 +0800</pubDate>
-      <guid>http://localhost:1313/categories/%E6%B8%B8%E6%88%8F%E8%B5%84%E8%AE%AF/</guid>
+      <guid>https://acebase.cc/categories/weapon-reviews/</guid>
       <description></description>
     </item>
     <item>
       <title>CSGO Guides</title>
-      <link>http://localhost:1313/categories/csgo-guides/</link>
+      <link>https://acebase.cc/categories/csgo-guides/</link>
       <pubDate>Tue, 02 Jun 2026 12:22:59 +0800</pubDate>
-      <guid>http://localhost:1313/categories/csgo-guides/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>CSGO攻略</title>
-      <link>http://localhost:1313/categories/csgo%E6%94%BB%E7%95%A5/</link>
-      <pubDate>Tue, 02 Jun 2026 12:22:59 +0800</pubDate>
-      <guid>http://localhost:1313/categories/csgo%E6%94%BB%E7%95%A5/</guid>
+      <guid>https://acebase.cc/categories/csgo-guides/</guid>
       <description></description>
     </item>
     <item>
       <title>Map Deep Dive</title>
-      <link>http://localhost:1313/categories/map-deep-dive/</link>
+      <link>https://acebase.cc/categories/map-deep-dive/</link>
       <pubDate>Tue, 02 Jun 2026 12:22:59 +0800</pubDate>
-      <guid>http://localhost:1313/categories/map-deep-dive/</guid>
+      <guid>https://acebase.cc/categories/map-deep-dive/</guid>
       <description></description>
     </item>
     <item>
       <title>Newbie Tutorials</title>
-      <link>http://localhost:1313/categories/newbie-tutorials/</link>
+      <link>https://acebase.cc/categories/newbie-tutorials/</link>
       <pubDate>Tue, 02 Jun 2026 12:22:59 +0800</pubDate>
-      <guid>http://localhost:1313/categories/newbie-tutorials/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>地图深度</title>
-      <link>http://localhost:1313/categories/%E5%9C%B0%E5%9B%BE%E6%B7%B1%E5%BA%A6/</link>
-      <pubDate>Tue, 02 Jun 2026 12:22:59 +0800</pubDate>
-      <guid>http://localhost:1313/categories/%E5%9C%B0%E5%9B%BE%E6%B7%B1%E5%BA%A6/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>新手教学</title>
-      <link>http://localhost:1313/categories/%E6%96%B0%E6%89%8B%E6%95%99%E5%AD%A6/</link>
-      <pubDate>Tue, 02 Jun 2026 12:22:59 +0800</pubDate>
-      <guid>http://localhost:1313/categories/%E6%96%B0%E6%89%8B%E6%95%99%E5%AD%A6/</guid>
+      <guid>https://acebase.cc/categories/newbie-tutorials/</guid>
       <description></description>
     </item>
     <item>
       <title>Ecosystem Observation</title>
-      <link>http://localhost:1313/categories/ecosystem-observation/</link>
+      <link>https://acebase.cc/categories/ecosystem-observation/</link>
       <pubDate>Tue, 02 Jun 2026 12:22:54 +0800</pubDate>
-      <guid>http://localhost:1313/categories/ecosystem-observation/</guid>
+      <guid>https://acebase.cc/categories/ecosystem-observation/</guid>
       <description></description>
     </item>
     <item>
       <title>In-Depth Game Analysis</title>
-      <link>http://localhost:1313/categories/in-depth-game-analysis/</link>
+      <link>https://acebase.cc/categories/in-depth-game-analysis/</link>
       <pubDate>Tue, 02 Jun 2026 12:22:54 +0800</pubDate>
-      <guid>http://localhost:1313/categories/in-depth-game-analysis/</guid>
+      <guid>https://acebase.cc/categories/in-depth-game-analysis/</guid>
       <description></description>
     </item>
     <item>
       <title>Social Phenomena</title>
-      <link>http://localhost:1313/categories/social-phenomena/</link>
+      <link>https://acebase.cc/categories/social-phenomena/</link>
       <pubDate>Tue, 02 Jun 2026 12:22:54 +0800</pubDate>
-      <guid>http://localhost:1313/categories/social-phenomena/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>游戏深度分析</title>
-      <link>http://localhost:1313/categories/%E6%B8%B8%E6%88%8F%E6%B7%B1%E5%BA%A6%E5%88%86%E6%9E%90/</link>
-      <pubDate>Tue, 02 Jun 2026 12:22:54 +0800</pubDate>
-      <guid>http://localhost:1313/categories/%E6%B8%B8%E6%88%8F%E6%B7%B1%E5%BA%A6%E5%88%86%E6%9E%90/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>生态观察</title>
-      <link>http://localhost:1313/categories/%E7%94%9F%E6%80%81%E8%A7%82%E5%AF%9F/</link>
-      <pubDate>Tue, 02 Jun 2026 12:22:54 +0800</pubDate>
-      <guid>http://localhost:1313/categories/%E7%94%9F%E6%80%81%E8%A7%82%E5%AF%9F/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>社会现象</title>
-      <link>http://localhost:1313/categories/%E7%A4%BE%E4%BC%9A%E7%8E%B0%E8%B1%A1/</link>
-      <pubDate>Tue, 02 Jun 2026 12:22:54 +0800</pubDate>
-      <guid>http://localhost:1313/categories/%E7%A4%BE%E4%BC%9A%E7%8E%B0%E8%B1%A1/</guid>
+      <guid>https://acebase.cc/categories/social-phenomena/</guid>
       <description></description>
     </item>
     <item>
       <title>Esports Hardware</title>
-      <link>http://localhost:1313/categories/esports-hardware/</link>
+      <link>https://acebase.cc/categories/esports-hardware/</link>
       <pubDate>Tue, 02 Jun 2026 12:21:34 +0800</pubDate>
-      <guid>http://localhost:1313/categories/esports-hardware/</guid>
+      <guid>https://acebase.cc/categories/esports-hardware/</guid>
       <description></description>
     </item>
     <item>
       <title>Event Observation</title>
-      <link>http://localhost:1313/categories/event-observation/</link>
+      <link>https://acebase.cc/categories/event-observation/</link>
       <pubDate>Tue, 02 Jun 2026 12:21:34 +0800</pubDate>
-      <guid>http://localhost:1313/categories/event-observation/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>电竞硬件</title>
-      <link>http://localhost:1313/categories/%E7%94%B5%E7%AB%9E%E7%A1%AC%E4%BB%B6/</link>
-      <pubDate>Tue, 02 Jun 2026 12:21:34 +0800</pubDate>
-      <guid>http://localhost:1313/categories/%E7%94%B5%E7%AB%9E%E7%A1%AC%E4%BB%B6/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>赛事观察</title>
-      <link>http://localhost:1313/categories/%E8%B5%9B%E4%BA%8B%E8%A7%82%E5%AF%9F/</link>
-      <pubDate>Tue, 02 Jun 2026 12:21:34 +0800</pubDate>
-      <guid>http://localhost:1313/categories/%E8%B5%9B%E4%BA%8B%E8%A7%82%E5%AF%9F/</guid>
+      <guid>https://acebase.cc/categories/event-observation/</guid>
       <description></description>
     </item>
     <item>
       <title>Tech Reveal</title>
-      <link>http://localhost:1313/categories/tech-reveal/</link>
+      <link>https://acebase.cc/categories/tech-reveal/</link>
       <pubDate>Tue, 02 Jun 2026 12:11:56 +0800</pubDate>
-      <guid>http://localhost:1313/categories/tech-reveal/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>技术揭秘</title>
-      <link>http://localhost:1313/categories/%E6%8A%80%E6%9C%AF%E6%8F%AD%E7%A7%98/</link>
-      <pubDate>Tue, 02 Jun 2026 12:11:56 +0800</pubDate>
-      <guid>http://localhost:1313/categories/%E6%8A%80%E6%9C%AF%E6%8F%AD%E7%A7%98/</guid>
+      <guid>https://acebase.cc/categories/tech-reveal/</guid>
       <description></description>
     </item>
   </channel>
