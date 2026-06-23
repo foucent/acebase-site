@@ -11,3 +11,14 @@ theme = 'pehtheme-hugo'
     name = "Tags"
     url = "/tags/"
     weight = 2
+
+# 1. 开启 Emoji 解析（解决 💡, 🛠️ 等小图标无法渲染的问题）
+enableEmoji = true
+
+# 2. 避免 Markdown 里的特殊标点被自动转义（防止 [Player Facing Direction] 等被拆散）
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.extensions]
+      typographer = false
+    [markup.goldmark.renderer]
+      unsafe = true
