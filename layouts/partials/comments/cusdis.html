@@ -1,0 +1,11 @@
+{{ with .Site.Params.cusdis }}
+<div id="cusdis_thread"
+  data-host="{{ .host | default "https://cusdis.com" }}"
+  data-app-id="{{ .appId }}"
+  data-page-id="{{ $.RelPermalink }}"
+  data-page-url="{{ $.Permalink }}"
+  data-page-title="{{ $.Title }}"
+  {{ with .lang }}data-lang="{{ . }}"{{ end }}
+></div>
+<script async defer src="{{ .host | default "https://cusdis.com" }}/js/cusdis.es.js"></script>
+{{ end }}

@@ -22,3 +22,8 @@ enableEmoji = true
       typographer = false
     [markup.goldmark.renderer]
       unsafe = true
+
+[params.cusdis]
+host = "https://cusdis.com"
+appId = "58f9207e-554d-4f64-85b1-130a693eeb78"
+lang = "zh-CN"
