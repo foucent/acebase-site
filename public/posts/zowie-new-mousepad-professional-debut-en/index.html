@@ -6,6 +6,7 @@
   <title>ZOWIE New Mousepad Makes Professional Debut: The True Verification Path of Esports Peripherals | ACEBASE | GEAR UP, QUEUE UP</title>
   <meta name="description" content="From a professional match pause camera shot of FaZe vs FURIA, capturing ZOWIE&#39;s unreleased new mousepad in use. In-depth analysis of ZOWIE&#39;s &#39;pre-match secret testing&#39; product philosophy, youthful color strategy, and hydrophobic coating upgrade, revealing the hidden force behind pro esports peripherals from engineering prototype to market release.">
   <link rel="stylesheet" href="/css/main.css">
+  <link rel="stylesheet" href="/css/comments.css">
   <link rel="icon" type="image/svg+xml" href="/favicon.svg"> 
   <link rel="icon" type="image/x-icon" href="/favicon.ico"> 
 </head>
@@ -132,6 +133,40 @@ This mousepad that flashed by in a single pause frame on Mirage is far more than
   data-lang="zh-CN"
 ></div>
 <script async defer src="https://cusdis.com/js/cusdis.es.js"></script>
+<script>
+(function () {
+  var thread = document.getElementById("cusdis_thread");
+  if (!thread) return;
+
+  function tuneIframe() {
+    var iframe = thread.querySelector("iframe");
+    if (!iframe) return;
+    iframe.style.overflow = "hidden";
+    var height = parseInt(iframe.style.height, 10);
+    if (!height || height < 320) {
+      iframe.style.minHeight = "520px";
+    }
+  }
+
+  new MutationObserver(tuneIframe).observe(thread, {
+    childList: true,
+    subtree: true,
+    attributes: true,
+    attributeFilter: ["style"]
+  });
+
+  window.addEventListener("message", function (event) {
+    try {
+      var msg = JSON.parse(event.data);
+      if (msg.from === "cusdis" && msg.event === "resize") {
+        tuneIframe();
+      }
+    } catch (e) {}
+  });
+
+  tuneIframe();
+})();
+</script>
 
 
           </div>

@@ -6,6 +6,7 @@
   <title>CS2 R8 Revolver: The Anti-Human Charging &#39;Wheelchair God&#39; | ACEBASE | GEAR UP, QUEUE UP</title>
   <meta name="description" content="Complete R8 guide: anti-human charge delay firing, triple-high damage and armor penetration, 16-round magazine weakness, -0.2 second pre-aim rotation, kiting control tactics, and hidden R8 quick-combo technique. From eco-round comeback weapon to wallbang assassin tactical analysis.">
   <link rel="stylesheet" href="/css/main.css">
+  <link rel="stylesheet" href="/css/comments.css">
   <link rel="icon" type="image/svg+xml" href="/favicon.svg"> 
   <link rel="icon" type="image/x-icon" href="/favicon.ico"> 
 </head>
@@ -139,6 +140,40 @@ The R8 Revolver has never been an &quot;easy to pick up&quot; gun. It's one of t
   data-lang="zh-CN"
 ></div>
 <script async defer src="https://cusdis.com/js/cusdis.es.js"></script>
+<script>
+(function () {
+  var thread = document.getElementById("cusdis_thread");
+  if (!thread) return;
+
+  function tuneIframe() {
+    var iframe = thread.querySelector("iframe");
+    if (!iframe) return;
+    iframe.style.overflow = "hidden";
+    var height = parseInt(iframe.style.height, 10);
+    if (!height || height < 320) {
+      iframe.style.minHeight = "520px";
+    }
+  }
+
+  new MutationObserver(tuneIframe).observe(thread, {
+    childList: true,
+    subtree: true,
+    attributes: true,
+    attributeFilter: ["style"]
+  });
+
+  window.addEventListener("message", function (event) {
+    try {
+      var msg = JSON.parse(event.data);
+      if (msg.from === "cusdis" && msg.event === "resize") {
+        tuneIframe();
+      }
+    } catch (e) {}
+  });
+
+  tuneIframe();
+})();
+</script>
 
 
           </div>

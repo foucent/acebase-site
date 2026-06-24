@@ -6,6 +6,7 @@
   <title>Cache Map Complete Guide: From the &#39;Forklift&#39; Nickname to Callout Slang — Zero to Hero | ACEBASE | GEAR UP, QUEUE UP</title>
   <meta name="description" content="Why is Cache called &#39;Forklift&#39; by players? In-depth analysis of the map&#39;s naming origin (homophone &#43; visual easter egg), grid-shaped terrain structure, A/B site callout slang (Headshot Crack, Double Stack, Little Hill, etc.), and terrain changes and callout updates after Valve&#39;s latest updates. A quick-start guide for beginners.">
   <link rel="stylesheet" href="/css/main.css">
+  <link rel="stylesheet" href="/css/comments.css">
   <link rel="icon" type="image/svg+xml" href="/favicon.svg"> 
   <link rel="icon" type="image/x-icon" href="/favicon.ico"> 
 </head>
@@ -185,6 +186,40 @@
   data-lang="zh-CN"
 ></div>
 <script async defer src="https://cusdis.com/js/cusdis.es.js"></script>
+<script>
+(function () {
+  var thread = document.getElementById("cusdis_thread");
+  if (!thread) return;
+
+  function tuneIframe() {
+    var iframe = thread.querySelector("iframe");
+    if (!iframe) return;
+    iframe.style.overflow = "hidden";
+    var height = parseInt(iframe.style.height, 10);
+    if (!height || height < 320) {
+      iframe.style.minHeight = "520px";
+    }
+  }
+
+  new MutationObserver(tuneIframe).observe(thread, {
+    childList: true,
+    subtree: true,
+    attributes: true,
+    attributeFilter: ["style"]
+  });
+
+  window.addEventListener("message", function (event) {
+    try {
+      var msg = JSON.parse(event.data);
+      if (msg.from === "cusdis" && msg.event === "resize") {
+        tuneIframe();
+      }
+    } catch (e) {}
+  });
+
+  tuneIframe();
+})();
+</script>
 
 
           </div>

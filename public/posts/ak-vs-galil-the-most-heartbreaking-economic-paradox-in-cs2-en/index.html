@@ -6,6 +6,7 @@
   <title>AK vs Galil: The Most Heartbreaking Economic Paradox in CS2 | ACEBASE | GEAR UP, QUEUE UP</title>
   <meta name="description" content="An in-depth analysis of the real differences between the AK and Galil in CS2&#39;s economy. Through damage values, armor penetration rates, and bullet pattern characteristics, data reveals: the Galil isn&#39;t a &#39;budget AK,&#39; but the best cost-performance solution. Understand how new players can break through Gold and Silver ranks with economic strategy.">
   <link rel="stylesheet" href="/css/main.css">
+  <link rel="stylesheet" href="/css/comments.css">
   <link rel="icon" type="image/svg+xml" href="/favicon.svg"> 
   <link rel="icon" type="image/x-icon" href="/favicon.ico"> 
 </head>
@@ -134,6 +135,40 @@ This video tears open the gentlest illusion in <em>CS2</em>: we always think we 
   data-lang="zh-CN"
 ></div>
 <script async defer src="https://cusdis.com/js/cusdis.es.js"></script>
+<script>
+(function () {
+  var thread = document.getElementById("cusdis_thread");
+  if (!thread) return;
+
+  function tuneIframe() {
+    var iframe = thread.querySelector("iframe");
+    if (!iframe) return;
+    iframe.style.overflow = "hidden";
+    var height = parseInt(iframe.style.height, 10);
+    if (!height || height < 320) {
+      iframe.style.minHeight = "520px";
+    }
+  }
+
+  new MutationObserver(tuneIframe).observe(thread, {
+    childList: true,
+    subtree: true,
+    attributes: true,
+    attributeFilter: ["style"]
+  });
+
+  window.addEventListener("message", function (event) {
+    try {
+      var msg = JSON.parse(event.data);
+      if (msg.from === "cusdis" && msg.event === "resize") {
+        tuneIframe();
+      }
+    } catch (e) {}
+  });
+
+  tuneIframe();
+})();
+</script>
 
 
           </div>

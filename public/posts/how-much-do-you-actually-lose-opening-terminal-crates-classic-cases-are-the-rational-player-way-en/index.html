@@ -6,6 +6,7 @@
   <title>How Much Do You Actually Lose Opening Terminal Crates? Classic Cases Are the Rational Player&#39;s Way | ACEBASE | GEAR UP, QUEUE UP</title>
   <meta name="description" content="This article breaks down the cross-platform connectivity, ecological AI, dynamic NPCs, and hundred-player confrontation strategies of miHoYo&#39;s new UE5 realistic open-world project.">
   <link rel="stylesheet" href="/css/main.css">
+  <link rel="stylesheet" href="/css/comments.css">
   <link rel="icon" type="image/svg+xml" href="/favicon.svg"> 
   <link rel="icon" type="image/x-icon" href="/favicon.ico"> 
 </head>
@@ -135,6 +136,40 @@ Only by doing so can case opening avoid becoming a &quot;money pit&quot; and tru
   data-lang="zh-CN"
 ></div>
 <script async defer src="https://cusdis.com/js/cusdis.es.js"></script>
+<script>
+(function () {
+  var thread = document.getElementById("cusdis_thread");
+  if (!thread) return;
+
+  function tuneIframe() {
+    var iframe = thread.querySelector("iframe");
+    if (!iframe) return;
+    iframe.style.overflow = "hidden";
+    var height = parseInt(iframe.style.height, 10);
+    if (!height || height < 320) {
+      iframe.style.minHeight = "520px";
+    }
+  }
+
+  new MutationObserver(tuneIframe).observe(thread, {
+    childList: true,
+    subtree: true,
+    attributes: true,
+    attributeFilter: ["style"]
+  });
+
+  window.addEventListener("message", function (event) {
+    try {
+      var msg = JSON.parse(event.data);
+      if (msg.from === "cusdis" && msg.event === "resize") {
+        tuneIframe();
+      }
+    } catch (e) {}
+  });
+
+  tuneIframe();
+})();
+</script>
 
 
           </div>
