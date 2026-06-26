@@ -24,14 +24,14 @@
 
         {{- else }}
           <div class="w-full h-full flex items-center justify-center text-zinc-400 font-bold text-sm bg-zinc-200">
-            📰 ARTICLE
+            📰 文章
           </div>
         {{- end }}
 
     </figure>
 
     <div class="p-6 flex flex-col flex-grow">
-        <time datetime="{{ .Date.Format "2006-01-02T15:04:05-07:00" | safeHTML }}">{{ .Date.Format "Jan 02, 2006" }}</time>
+        <time datetime="{{ .Date.Format "2006-01-02T15:04:05-07:00" }}">{{ .Date.Format "2006年1月2日" }}</time>
 
         <h3 class="my-4 text-2xl font-bold group-hover:text-blue-600 transition-colors">{{ .LinkTitle }}</h3>
 

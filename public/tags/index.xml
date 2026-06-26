@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tags on ACEBASE | GEAR UP, QUEUE UP</title>
+    <title>标签分类 on AceBase | 硬核玩家基地</title>
     <link>https://acebase.cc/tags/</link>
-    <description>Recent content in Tags on ACEBASE | GEAR UP, QUEUE UP</description>
+    <description>Recent content in 标签分类 on AceBase | 硬核玩家基地</description>
     <generator>Hugo</generator>
-    <language>en-us</language>
+    <language>zh-cn</language>
     <lastBuildDate>Thu, 25 Jun 2026 14:00:00 +0800</lastBuildDate>
     <atom:link href="https://acebase.cc/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
@@ -23,10 +23,10 @@
       <description></description>
     </item>
     <item>
-      <title>准星</title>
-      <link>https://acebase.cc/tags/%E5%87%86%E6%98%9F/</link>
+      <title>灵敏度</title>
+      <link>https://acebase.cc/tags/%E7%81%B5%E6%95%8F%E5%BA%A6/</link>
       <pubDate>Thu, 25 Jun 2026 14:00:00 +0800</pubDate>
-      <guid>https://acebase.cc/tags/%E5%87%86%E6%98%9F/</guid>
+      <guid>https://acebase.cc/tags/%E7%81%B5%E6%95%8F%E5%BA%A6/</guid>
       <description></description>
     </item>
     <item>
@@ -37,10 +37,10 @@
       <description></description>
     </item>
     <item>
-      <title>灵敏度</title>
-      <link>https://acebase.cc/tags/%E7%81%B5%E6%95%8F%E5%BA%A6/</link>
+      <title>选手配置</title>
+      <link>https://acebase.cc/tags/%E9%80%89%E6%89%8B%E9%85%8D%E7%BD%AE/</link>
       <pubDate>Thu, 25 Jun 2026 14:00:00 +0800</pubDate>
-      <guid>https://acebase.cc/tags/%E7%81%B5%E6%95%8F%E5%BA%A6/</guid>
+      <guid>https://acebase.cc/tags/%E9%80%89%E6%89%8B%E9%85%8D%E7%BD%AE/</guid>
       <description></description>
     </item>
     <item>
@@ -51,10 +51,10 @@
       <description></description>
     </item>
     <item>
-      <title>选手配置</title>
-      <link>https://acebase.cc/tags/%E9%80%89%E6%89%8B%E9%85%8D%E7%BD%AE/</link>
+      <title>准星</title>
+      <link>https://acebase.cc/tags/%E5%87%86%E6%98%9F/</link>
       <pubDate>Thu, 25 Jun 2026 14:00:00 +0800</pubDate>
-      <guid>https://acebase.cc/tags/%E9%80%89%E6%89%8B%E9%85%8D%E7%BD%AE/</guid>
+      <guid>https://acebase.cc/tags/%E5%87%86%E6%98%9F/</guid>
       <description></description>
     </item>
     <item>

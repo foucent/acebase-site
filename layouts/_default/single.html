@@ -22,7 +22,7 @@
               <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"></path>
             </svg>
           </button>
-          <div class="relative rounded-full py-1.5 px-6 bg-zinc-100 hover:bg-zinc-200 text-xl font-bold uppercase mx-2">
+          <div class="relative rounded-full py-1.5 px-6 bg-zinc-100 hover:bg-zinc-200 text-xl font-bold mx-2">
             <h2><a href="/">{{ .Site.Title }}</a></h2>
           </div>
         </div>
@@ -48,8 +48,8 @@
   <main class="max-w-7xl mx-auto px-4 md:px-6 lg:px-8">
     <div id="breadcrumb" class="py-8">
       <ul class="flex space-x-4 text-sm text-zinc-500">
-        <li class="after:content-['❯'] after:ml-4 after:opacity-30 last:after:content-none uppercase"><a href="/">首页</a></li>
-        <li class="after:content-['❯'] after:ml-4 after:opacity-30 last:after:content-none uppercase"><a href="/posts/">文章列表</a></li>
+        <li class="after:content-['❯'] after:ml-4 after:opacity-30 last:after:content-none"><a href="/">首页</a></li>
+        <li class="after:content-['❯'] after:ml-4 after:opacity-30 last:after:content-none"><a href="/posts/">文章列表</a></li>
         <li class="last:after:content-none active">{{ .Title }}</li>
       </ul>
     </div>
@@ -68,9 +68,9 @@
           {{ end }}
           
           <div class="flex items-center space-x-4 text-zinc-500 text-sm mb-6">
-            <time datetime="{{ .Date.Format "2006-01-02T15:04:05-07:00" }}">{{ .Date.Format "January 2, 2006" }}</time>
+            <time datetime="{{ .Date.Format "2006-01-02T15:04:05-07:00" }}">{{ .Date.Format "2006年1月2日" }}</time>
             <span>•</span>
-            <span>{{ .ReadingTime }} min read</span>
+            <span>约 {{ .ReadingTime }} 分钟阅读</span>
           </div>
         </header>
 
@@ -80,7 +80,7 @@
 
         {{ if .Params.tags }}
         <ul id="taxonomy" class="not-prose flex items-center space-x-4 flex-nowrap whitespace-nowrap overflow-x-auto my-8">
-          <li class="font-semibold">Tags:</li>
+          <li class="font-semibold">标签：</li>
           {{ range .Params.tags }}
           <li><a class="py-1.5 px-4 border rounded-full text-sm hover:bg-zinc-100" href="/tags/{{ . | urlize }}/">{{ . }}</a></li>
           {{ end }}
@@ -134,8 +134,8 @@
   <footer class="bg-zinc-100 py-10 border-t">
     <div class="max-w-7xl mx-auto px-4 md:px-6 lg:px-8 text-center md:text-left flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
       <div>
-        <span class="text-xl font-semibold uppercase block mb-1">{{ .Site.Title }}</span>
-        <p class="text-xs text-zinc-500">Copyright © {{ now.Format "2006" }}. All rights reserved.</p>
+        <span class="text-xl font-semibold block mb-1">{{ .Site.Title }}</span>
+        <p class="text-xs text-zinc-500">Copyright © {{ now.Format "2006" }} AceBase. 保留所有权利。</p>
       </div>
       <div class="flex space-x-6 text-sm">
         <a class="hover:underline" href="/posts/">所有文章</a>
