@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Social Phenomena on AceBase | 硬核玩家基地</title>
-    <link>https://acebase.cc/categories/social-phenomena/</link>
+    <link>http://localhost:1313/categories/social-phenomena/</link>
     <description>Recent content in Social Phenomena on AceBase | 硬核玩家基地</description>
     <generator>Hugo</generator>
     <language>zh-cn</language>
     <lastBuildDate>Tue, 02 Jun 2026 12:22:54 +0800</lastBuildDate>
-    <atom:link href="https://acebase.cc/categories/social-phenomena/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/categories/social-phenomena/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>CS2&#39;s Three Dark Features: Decoding the Scalping Ecosystem, Cheat Tolerance, and Internet Cafe Ban</title>
-      <link>https://acebase.cc/posts/cs2-three-dark-features-scalping-ecosystem-cheat-tolerance-and-internet-cafe-ban-en/</link>
+      <link>http://localhost:1313/posts/cs2-three-dark-features-scalping-ecosystem-cheat-tolerance-and-internet-cafe-ban-en/</link>
       <pubDate>Tue, 02 Jun 2026 12:22:54 +0800</pubDate>
-      <guid>https://acebase.cc/posts/cs2-three-dark-features-scalping-ecosystem-cheat-tolerance-and-internet-cafe-ban-en/</guid>
+      <guid>http://localhost:1313/posts/cs2-three-dark-features-scalping-ecosystem-cheat-tolerance-and-internet-cafe-ban-en/</guid>
       <description>&lt;h1 id=&#34;cs2s-three-dark-features-scalping-ecosystem-tacit-cheating-and-internet-cafe-forbidden-zone&#34;&gt;CS2&#39;s Three Dark Features: Scalping Ecosystem, Tacit Cheating, and Internet Cafe Forbidden Zone&lt;/h1&gt;&#xA;&lt;p&gt;&lt;strong&gt;Introduction:&lt;/strong&gt; You think CS2 is just a shooting game? Wrong! It&#39;s more like an unregulated virtual financial city — some people trade stickers like stocks, others run bot lobbies as &amp;quot;data miners,&amp;quot; and some lose everything over a single skin. This video uses dark humor to dissect CS2&#39;s three counter-intuitive features: the closed-loop ecosystem where everyone is a &amp;quot;scalper,&amp;quot; the tacit official tolerance of cheaters, and the tragic history of veteran players collectively abandoning internet cafes due to theft. This isn&#39;t a game review; it&#39;s a &lt;em&gt;CS2 Survival Guide Against Scams&lt;/em&gt;.&lt;/p&gt;</description>
     </item>
   </channel>

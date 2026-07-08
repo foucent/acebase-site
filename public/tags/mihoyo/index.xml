@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>MiHoYo on AceBase | 硬核玩家基地</title>
-    <link>https://acebase.cc/tags/mihoyo/</link>
+    <link>http://localhost:1313/tags/mihoyo/</link>
     <description>Recent content in MiHoYo on AceBase | 硬核玩家基地</description>
     <generator>Hugo</generator>
     <language>zh-cn</language>
     <lastBuildDate>Thu, 07 May 2026 10:00:00 +0800</lastBuildDate>
-    <atom:link href="https://acebase.cc/tags/mihoyo/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/mihoyo/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>miHoYo&#39;s First UE5 Realistic Fantasy Epic: Ambition and Challenges Behind Zero Marketing</title>
-      <link>https://acebase.cc/posts/mihoyo-ue5-realistic-fantasy-new-game-first-look-en/</link>
+      <link>http://localhost:1313/posts/mihoyo-ue5-realistic-fantasy-new-game-first-look-en/</link>
       <pubDate>Thu, 07 May 2026 10:00:00 +0800</pubDate>
-      <guid>https://acebase.cc/posts/mihoyo-ue5-realistic-fantasy-new-game-first-look-en/</guid>
+      <guid>http://localhost:1313/posts/mihoyo-ue5-realistic-fantasy-new-game-first-look-en/</guid>
       <description>&lt;h1 id=&#34;mihoyos-first-ue5-realistic-fantasy-epic-ambition-and-challenges-behind-zero-marketing&#34;&gt;miHoYo&#39;s First UE5 Realistic Fantasy Epic: Ambition and Challenges Behind Zero Marketing&lt;/h1&gt;&#xA;&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;&#xA;&lt;p&gt;Just yesterday, miHoYo quietly announced a brand new project still in the &amp;quot;prophecy stage&amp;quot; — a fantasy open-world game powered by Unreal Engine 5 with a realistic art style. No name, no character designs, no world-building setup — just a 19-second demo video and a few vague lines of text on the official website. However, as miHoYo&#39;s first strategic product to fully transition to UE5 and a realistic style, it quickly ignited heated discussion in the player community. This article will systematically梳理 the currently known clues, analyze its technical路线, design logic, and market implications, and restore the true轮廓 of this &amp;quot;unnamed revolution.&amp;quot;&lt;/p&gt;</description>
     </item>
   </channel>

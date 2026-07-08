@@ -2,17 +2,19 @@
     
     <a class="insert-link" href="{{ .Permalink }}"></a>
 
-    <figure class="w-full aspect-video overflow-hidden rounded-3xl bg-zinc-200">
+    {{- $img := .Params.image -}}
+    {{- $isPlayerAvatar := and $img (strings.HasPrefix $img "/images/player-config/") -}}
+    <figure class="w-full {{ if $isPlayerAvatar }}aspect-square{{ else }}aspect-video{{ end }} overflow-hidden rounded-3xl bg-zinc-200">
 
-        {{- if .Params.image }}
-          {{- if (strings.HasPrefix .Params.image "http") }}
-            <img class="object-cover group-hover:scale-105 transition duration-500 cursor-pointer" src="{{ .Params.image }}" alt="{{ .Title }}" style="width: 100%; height: 100%; object-fit: cover;">
-          {{- else if (strings.HasPrefix .Params.image "/") }}
-            <img class="object-cover group-hover:scale-105 transition duration-500 cursor-pointer" src="{{ .Params.image }}" alt="{{ .Title }}" style="width: 100%; height: 100%; object-fit: cover;">
+        {{- if $img }}
+          {{- if (strings.HasPrefix $img "http") }}
+            <img class="group-hover:scale-105 transition duration-500 cursor-pointer" src="{{ $img }}" alt="{{ .Title }}" style="width: 100%; height: 100%; object-fit: {{ if $isPlayerAvatar }}contain{{ else }}cover{{ end }};{{ if $isPlayerAvatar }} object-position: top center;{{ end }}">
+          {{- else if (strings.HasPrefix $img "/") }}
+            <img class="group-hover:scale-105 transition duration-500 cursor-pointer" src="{{ $img }}" alt="{{ .Title }}" style="width: 100%; height: 100%; object-fit: {{ if $isPlayerAvatar }}contain{{ else }}cover{{ end }};{{ if $isPlayerAvatar }} object-position: top center;{{ end }}">
           {{- else }}
-            {{- with $imgcard := resources.Get .Params.image -}}
+            {{- with $imgcard := resources.Get $img -}}
               {{- $imgcard := $imgcard.Process "resize 750x" -}}
-              <img class="object-cover group-hover:scale-105 transition duration-500 cursor-pointer" src="{{ $imgcard.RelPermalink }}" alt="{{ .Title }}" width="{{ $imgcard.Width }}" height="{{ $imgcard.Height }}" style="width: 100%; height: 100%; object-fit: cover;">
+              <img class="group-hover:scale-105 transition duration-500 cursor-pointer" src="{{ $imgcard.RelPermalink }}" alt="{{ .Title }}" width="{{ $imgcard.Width }}" height="{{ $imgcard.Height }}" style="width: 100%; height: 100%; object-fit: {{ if $isPlayerAvatar }}contain{{ else }}cover{{ end }};{{ if $isPlayerAvatar }} object-position: top center;{{ end }}">
             {{- end }}
           {{- end }}
 

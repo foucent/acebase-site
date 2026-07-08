@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>STEAM on AceBase | 硬核玩家基地</title>
-    <link>https://acebase.cc/tags/steam/</link>
+    <link>http://localhost:1313/tags/steam/</link>
     <description>Recent content in STEAM on AceBase | 硬核玩家基地</description>
     <generator>Hugo</generator>
     <language>zh-cn</language>
     <lastBuildDate>Tue, 02 Jun 2026 12:11:56 +0800</lastBuildDate>
-    <atom:link href="https://acebase.cc/tags/steam/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/steam/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>CS2&#39;s Hidden Truths: 8 Overlooked Competitive Details Analyzed</title>
-      <link>https://acebase.cc/posts/cs2-8-hardcore-details-you-never-noticed-from-frame-drop-mechanics-to-ai-sound-card-tech-en/</link>
+      <link>http://localhost:1313/posts/cs2-8-hardcore-details-you-never-noticed-from-frame-drop-mechanics-to-ai-sound-card-tech-en/</link>
       <pubDate>Tue, 02 Jun 2026 12:11:56 +0800</pubDate>
-      <guid>https://acebase.cc/posts/cs2-8-hardcore-details-you-never-noticed-from-frame-drop-mechanics-to-ai-sound-card-tech-en/</guid>
+      <guid>http://localhost:1313/posts/cs2-8-hardcore-details-you-never-noticed-from-frame-drop-mechanics-to-ai-sound-card-tech-en/</guid>
       <description>&lt;p&gt;&lt;strong&gt;Introduction:&lt;/strong&gt;&lt;br&gt;&#xA;&lt;em&gt;Counter-Strike 2&lt;/em&gt; (CS2) has been continuously iterating since its launch, yet rarely discloses subtle optimizations through official announcements. This video systematically reviews 8 hidden details that are easily overlooked but profoundly impact the actual gameplay experience — from the underlying rendering logic of frame drops behind smoke, CT/T molotov fire color identification techniques, to the C4 allocation mechanism and AI sound card enhanced footsteps. These &amp;quot;invisible efforts&amp;quot; are key evidence of Valve polishing competitive realism at millimeter precision, and they determine the boundary between victory and defeat in pro-level sound positioning and tactical prediction.&lt;/p&gt;</description>
     </item>
     <item>
       <title>How Much Do You Actually Lose Opening Terminal Crates? Classic Cases Are the Rational Player&#39;s Way</title>
-      <link>https://acebase.cc/posts/how-much-do-you-actually-lose-opening-terminal-crates-classic-cases-are-the-rational-player-way-en/</link>
+      <link>http://localhost:1313/posts/how-much-do-you-actually-lose-opening-terminal-crates-classic-cases-are-the-rational-player-way-en/</link>
       <pubDate>Thu, 07 May 2026 10:00:00 +0800</pubDate>
-      <guid>https://acebase.cc/posts/how-much-do-you-actually-lose-opening-terminal-crates-classic-cases-are-the-rational-player-way-en/</guid>
+      <guid>http://localhost:1313/posts/how-much-do-you-actually-lose-opening-terminal-crates-classic-cases-are-the-rational-player-way-en/</guid>
       <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;&#xA;&lt;p&gt;In FPS games like &lt;em&gt;CS2&lt;/em&gt;, opening cases is a major way for many players to get rare skins. However, a recent in-depth analysis points out that seemingly &amp;quot;free&amp;quot; Terminal Crates actually hide a high-cost trap, far less cost-effective than classic old cases (like Key Cases or Trade Up Contracts). The video cuts in from the dual perspective of data logic and player psychology, revealing the core issues of Terminal Crates: their short lifecycle, high pressure to recoup costs, and inverted pricing. It also provides rational spending advice for new and veteran players. This article systematically summarizes its core arguments to help you avoid the &amp;quot;sucker trap&amp;quot; and make every penny count.&lt;/p&gt;</description>
     </item>
   </channel>
