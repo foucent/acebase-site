@@ -1,0 +1,1321 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="This article breaks down the cross-platform connectivity, ecological AI, dynamic NPCs, and hundred-player confrontation strategies of miHoYo's new UE5 realistic open-world project.">
+      
+      
+      
+        <link rel="canonical" href="https://acebase.cc/guides/terminal-crates-vs-classic-cases/">
+      
+      
+        <link rel="prev" href="../cs2-three-dark-features/">
+      
+      
+        <link rel="next" href="../mihoyo-ue5-first-look/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+    
+    
+      
+        <title>How Much Do You Actually Lose Opening Terminal Crates? Classic Cases Are the Rational Player's Way - AceBase</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.ec1eaa64.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+      <link rel="stylesheet" href="../../stylesheets/player-settings.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="teal">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#introduction" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="AceBase" class="md-header__button md-logo" aria-label="AceBase" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            AceBase
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              How Much Do You Actually Lose Opening Terminal Crates? Classic Cases Are the Rational Player's Way
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://acebase.cc/" title="AceBase" class="md-source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6 7h12a5 5 0 0 1 5 5 5 5 0 0 1-5 5c-1.64 0-3.09-.79-4-2h-4c-.91 1.21-2.36 2-4 2a5 5 0 0 1-5-5 5 5 0 0 1 5-5m13.75 2.5a1.25 1.25 0 0 0-1.25 1.25A1.25 1.25 0 0 0 19.75 12 1.25 1.25 0 0 0 21 10.75a1.25 1.25 0 0 0-1.25-1.25m-2.5 2.5A1.25 1.25 0 0 0 16 13.25a1.25 1.25 0 0 0 1.25 1.25 1.25 1.25 0 0 0 1.25-1.25A1.25 1.25 0 0 0 17.25 12M5 9v2H3v2h2v2h2v-2h2v-2H7V9z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    AceBase
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="AceBase" class="md-nav__button md-logo" aria-label="AceBase" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    AceBase
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://acebase.cc/" title="AceBase" class="md-source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6 7h12a5 5 0 0 1 5 5 5 5 0 0 1-5 5c-1.64 0-3.09-.79-4-2h-4c-.91 1.21-2.36 2-4 2a5 5 0 0 1-5-5 5 5 0 0 1 5-5m13.75 2.5a1.25 1.25 0 0 0-1.25 1.25A1.25 1.25 0 0 0 19.75 12 1.25 1.25 0 0 0 21 10.75a1.25 1.25 0 0 0-1.25-1.25m-2.5 2.5A1.25 1.25 0 0 0 16 13.25a1.25 1.25 0 0 0 1.25 1.25 1.25 1.25 0 0 0 1.25-1.25A1.25 1.25 0 0 0 17.25 12M5 9v2H3v2h2v2h2v-2h2v-2H7V9z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    AceBase
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Player Settings
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Player Settings
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../players/aspas/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    aspas
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../players/donk/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    donk
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../players/kyousuke/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    kyousuke
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../players/m0nesy/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    m0NESY
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../players/niko/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    NiKo
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../players/ropz/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ropz
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../players/s1mple/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    s1mple
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../players/tenz/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    TenZ
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../players/xantares/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    XANTARES
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../players/zmjjkk/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ZmjjKK
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../players/zywoo/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ZywOo
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Guides & Articles
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Guides & Articles
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../cs2-trivia-facts/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    7 CS2 Trivia Facts You Definitely Never Noticed!
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../model-notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    7 CS2 Trivia Facts You Definitely Never Noticed!
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ak-vs-galil/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    AK vs Galil: The Most Heartbreaking Economic Paradox in CS2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../cache-map-complete-guide/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Cache Map Complete Guide: From the 'Forklift' Nickname to Callout Slang — Zero to Hero
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../cs2-r8-revolver/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    CS2 R8 Revolver: The Anti-Human Charging 'Wheelchair God
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../cs2-hardcore-details/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    CS2's Hidden Truths: 8 Overlooked Competitive Details Analyzed
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../cs2-three-dark-features/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    CS2's Three Dark Features: Decoding the Scalping Ecosystem, Cheat Tolerance, and Internet Cafe Ban
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    How Much Do You Actually Lose Opening Terminal Crates? Classic Cases Are the Rational Player's Way
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    How Much Do You Actually Lose Opening Terminal Crates? Classic Cases Are the Rational Player's Way
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introduction" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Introduction
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#background" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Background
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-free-illusion-of-terminal-crates-is-actually-cost-transfer" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The "Free Illusion" of Terminal Crates is Actually Cost Transfer
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-deterministic-advantage-of-old-cases-stable-odds-clear-costs-smooth-circulation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The Deterministic Advantage of Old Cases: Stable Odds, Clear Costs, Smooth Circulation
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#new-user-bonus-65-yuan-coupon-pack-significantly-lowers-the-barrier-for-old-cases" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        New User Bonus: 65 Yuan Coupon Pack Significantly Lowers the Barrier for Old Cases
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conclusion-opening-cases-is-essentially-an-emotional-purchase-rationality-is-the-ultimate-guide-against-scams" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Conclusion: Opening Cases is Essentially an Emotional Purchase; Rationality is the Ultimate Guide Against Scams
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../mihoyo-ue5-first-look/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    miHoYo's First UE5 Realistic Fantasy Epic: Ambition and Challenges Behind Zero Marketing
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ak-spray-control/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    The Hidden Rhythm of AK Spray Control: The 'Don't Compensate for the First Two Shots' Rule That 90% of Newbies Get Wrong
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../zowie-mousepad-debut/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ZOWIE New Mousepad Makes Professional Debut: The True Verification Path of Esports Peripherals
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introduction" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Introduction
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#background" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Background
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-free-illusion-of-terminal-crates-is-actually-cost-transfer" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The "Free Illusion" of Terminal Crates is Actually Cost Transfer
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-deterministic-advantage-of-old-cases-stable-odds-clear-costs-smooth-circulation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The Deterministic Advantage of Old Cases: Stable Odds, Clear Costs, Smooth Circulation
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#new-user-bonus-65-yuan-coupon-pack-significantly-lowers-the-barrier-for-old-cases" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        New User Bonus: 65 Yuan Coupon Pack Significantly Lowers the Barrier for Old Cases
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conclusion-opening-cases-is-essentially-an-emotional-purchase-rationality-is-the-ultimate-guide-against-scams" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Conclusion: Opening Cases is Essentially an Emotional Purchase; Rationality is the Ultimate Guide Against Scams
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+  <h1>How Much Do You Actually Lose Opening Terminal Crates? Classic Cases Are the Rational Player's Way</h1>
+
+
+<h2 id="introduction">Introduction</h2>
+<p>In FPS games like <em>CS2</em>, opening cases is a major way for many players to get rare skins. However, a recent in-depth analysis points out that seemingly "free" Terminal Crates actually hide a high-cost trap, far less cost-effective than classic old cases (like Key Cases or Trade Up Contracts). The video cuts in from the dual perspective of data logic and player psychology, revealing the core issues of Terminal Crates: their short lifecycle, high pressure to recoup costs, and inverted pricing. It also provides rational spending advice for new and veteran players. This article systematically summarizes its core arguments to help you avoid the "sucker trap" and make every penny count.</p>
+<h2 id="background">Background</h2>
+<p><img alt="" src="https://oss.vidseekapp.com/video/screenshots/00f8ba64-2819-4a7a-b6e1-49055f332f68/13.0.jpg" /></p>
+<p>Terminal Crates are limited-time event weapon cases introduced in <em>CS2</em>, promoting a "free to open" concept – players can earn the right to open them for free by completing daily missions or participating in events. Superficially zero-cost, this is highly tempting. However, their internal mechanics fundamentally differ from traditional Key Cases: Terminal Crate skins are not directly tradable. Players must first "unlock" them before listing them on the market. Furthermore, the official initial unlock price is generally higher than the average market price on the Steam Community. Simultaneously, a large number of players unlock the same skins and flood the market, causing the secondary market price to plummet quickly. In contrast, classic old cases (like the "Prisma" or "Fracture" cases) use a stable probability model. A key is consistently priced (around $2.50), and skins are freely tradable upon being unboxed. Their prices are determined by long-term supply and demand, resulting in smoother fluctuations and clearer arbitrage paths. This structural difference is the fundamental reason for Terminal Crates' "short bloom, hard recovery, and high loss" nature.</p>
+<h2 id="the-free-illusion-of-terminal-crates-is-actually-cost-transfer">The "Free Illusion" of Terminal Crates is Actually Cost Transfer</h2>
+<p><img alt="" src="https://oss.vidseekapp.com/video/screenshots/abb10f91-dace-48be-8fee-4d39e85f147a/20.0.jpg" /></p>
+<p>Terminal Crates advertise "free opening," but "free" only refers to the opening action itself, not zero cost for acquiring the skin. The video hits the nail on the head: players save the cost of a key but end up paying a "second fee" for the skin – meaning they must pay a premium to unlock it before it can be sold. This unlock cost often exceeds the real-time market price of the same skin. For example, a popular knife skin might require $18 to unlock from a Terminal Crate, but its average price on the Steam Community on that day is only $15.20. If the player is eager to recoup costs, they might have to sell it for $14 or even lower, losing over $4. More critically, this pricing isn't accidental but by design: the initial unlock price for Terminal Crate skins is set uniformly by the developer, and all users face similar costs. This leads to a highly homogenized supply side with little room for bargaining. When hundreds of people unlock the same skin on the same day, a "rat race sell-off" becomes inevitable, causing the price to spiral downwards. The so-called "free" simply transforms an explicit cost (key fee) into implicit costs (unlock premium + time sunk + discounted loss).</p>
+<h2 id="the-deterministic-advantage-of-old-cases-stable-odds-clear-costs-smooth-circulation">The Deterministic Advantage of Old Cases: Stable Odds, Clear Costs, Smooth Circulation</h2>
+<p><img alt="" src="https://oss.vidseekapp.com/video/screenshots/00f8ba64-2819-4a7a-b6e1-49055f332f68/28.0.jpg" /></p>
+<p>In contrast to the floating mechanism of Terminal Crates, traditional old cases (like "Prisma" or "Fracture" cases) establish a highly transparent cost-benefit model. Its core lies in three points of certainty:
+1.  <strong>Constant Opening Cost:</strong> A key always costs $2.49, with no hidden unlock fees.
+2.  <strong>Public and Stable Drop Odds:</strong> Players can accurately calculate expected value based on historical data (e.g., CSGOStash statistics).
+3.  <strong>Full Trading Rights Immediately:</strong> Skins can be traded right away upon unboxing, requiring no secondary operations. They can be listed and sold instantly.
+This means players have complete control over the input-output ratio. If a target skin costs $50 on the market, the theoretical average number of keys needed is about 20 ($50 ÷ $2.49 ≈ 20.08). While luck is still a factor, the cost ceiling is clear and the path is predictable. The video emphasizes that "you either eat dirt or eat gold," though humorous, accurately reflects the risk profile of old cases – they don't promise huge profits, but they eliminate the "pseudo-free trap" of Terminal Crates, making every click a controllable entertainment investment.</p>
+<h2 id="new-user-bonus-65-yuan-coupon-pack-significantly-lowers-the-barrier-for-old-cases">New User Bonus: 65 Yuan Coupon Pack Significantly Lowers the Barrier for Old Cases</h2>
+<p><img alt="" src="https://oss.vidseekapp.com/video/screenshots/5918ab94-7f67-4677-8022-dc18e7270b9a/46.0.jpg" /></p>
+<p>For new players, the video points out a current favorable policy window: the "186 Yuan Newcomer Gift Pack" offered by the Yousheng platform includes a 65 Yuan universal discount coupon that can seamlessly cover the cost of opening mainstream old cases like Prisma, Key Cases, and Fracture Cases. Taking the most common "Fracture Case" as an example, opening one requires one key ($2.49). After applying the 65 Yuan coupon, the actual cash outlay approaches zero. Even for higher rarity cases like "Prisma," which costs about $7.49 per open, after deducting the coupon, the out-of-pocket expense is only around ¥35 Yuan, far lower than the hidden cost of $15+ for unlocking a Terminal Crate. More importantly, the coupon pack has no usage limit and can be used in batches for multiple openings, greatly alleviating psychological pressure and capital occupation. The video reminds us: this isn't an endorsement of "mindless opening," but an emphasis that – with costs significantly offset by policy leverage – choosing old cases with transparent mechanics allows you to enjoy the immediate thrill of opening while maintaining financial discipline, striking a balance between entertainment and rationality.</p>
+<h2 id="conclusion-opening-cases-is-essentially-an-emotional-purchase-rationality-is-the-ultimate-guide-against-scams">Conclusion: Opening Cases is Essentially an Emotional Purchase; Rationality is the Ultimate Guide Against Scams</h2>
+<p>In summary, the "loss" from Terminal Crates isn't about the single loss amount, but their systemic design flaws: using "free" rhetoric to mask high unlock costs, driving irrational hoarding with short-term hype, and ultimately shifting risk onto regular players. In contrast, old cases, lacking such gimmicks, anchor value with certainty. They don't promise overnight riches, but ensure every key's cost is clear and every skin's circulation is smooth. The video's final advice is crucial: "Don't let your brain get hot," "Treat it like buying a meal." The underlying logic of case opening is never investment, but paying for a brief moment of emotional pleasure. The real value isn't the skin's market price, but whether, with clear awareness, you paid a reasonable price for that enjoyment. Therefore, both new and veteran players should establish three iron rules:
+1.  <strong>Prioritize cases with transparent mechanics and controllable costs.</strong>
+2.  <strong>Make good use of external subsidies like newcomer bonuses to reduce cash outlay.</strong>
+3.  <strong>Set a single-session budget cap and proactively stop loss if the target isn't hit.</strong>
+Only by doing so can case opening avoid becoming a "money pit" and truly return to its essence: a controlled, fun, and guilt-free digital firework.</p>
+
+
+<div class="admonition note mg-page-note">
+  <p class="admonition-title">Note</p>
+  <p>Translated from Chinese—please suggest fixes if wording looks off.</p>
+</div>
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        
+<div class="md-social">
+  
+    
+    
+    
+    
+    <a href="https://acebase.cc/" target="_blank" rel="noopener" title="AceBase" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6 7h12a5 5 0 0 1 5 5 5 5 0 0 1-5 5c-1.64 0-3.09-.79-4-2h-4c-.91 1.21-2.36 2-4 2a5 5 0 0 1-5-5 5 5 0 0 1 5-5m13.75 2.5a1.25 1.25 0 0 0-1.25 1.25A1.25 1.25 0 0 0 19.75 12 1.25 1.25 0 0 0 21 10.75a1.25 1.25 0 0 0-1.25-1.25m-2.5 2.5A1.25 1.25 0 0 0 16 13.25a1.25 1.25 0 0 0 1.25 1.25 1.25 1.25 0 0 0 1.25-1.25A1.25 1.25 0 0 0 17.25 12M5 9v2H3v2h2v2h2v-2h2v-2H7V9z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["search.suggest", "search.highlight", "content.code.copy", "content.tables.scroll", "navigation.sections"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.d7400e89.min.js"></script>
+      
+        <script src="../../javascripts/gallery-lightbox.js"></script>
+      
+    
+  </body>
+</html>

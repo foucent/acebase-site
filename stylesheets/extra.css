@@ -1,0 +1,534 @@
+/* Clearer hierarchy: sidebar / TOC vs article body */
+
+:root {
+  --mg-ink: #0f172a;
+  --mg-ink-muted: #64748b;
+  --mg-nav-active-bg: rgba(13, 148, 136, 0.14);
+  --mg-nav-section: #0f766e;
+}
+
+/* —— Primary nav (left) —— */
+.md-nav--primary .md-nav__title {
+  color: var(--mg-ink);
+  font-weight: 800;
+  letter-spacing: 0.01em;
+}
+
+.md-nav--primary .md-nav__link {
+  color: var(--mg-ink-muted);
+  font-weight: 500;
+}
+
+.md-nav--primary .md-nav__link:hover {
+  color: var(--mg-ink);
+}
+
+/*
+  Material marks parent sections as .md-nav__item--active when a child page
+  is open. Only highlight the leaf page link — never the section label.
+*/
+.md-nav--primary .md-nav__item--active > .md-nav__link:not(.md-nav__link--active) {
+  color: var(--mg-ink-muted) !important;
+  font-weight: 500 !important;
+  background: transparent !important;
+}
+
+.md-nav--primary .md-nav__item--section > .md-nav__link,
+.md-nav--primary .md-nav__item--section.md-nav__item--active > .md-nav__link {
+  color: var(--mg-nav-section) !important;
+  font-weight: 800 !important;
+  font-size: 0.78rem !important;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin-top: 0.65rem;
+  background: transparent !important;
+  box-shadow: none !important;
+}
+
+.md-nav--primary .md-nav__link--active {
+  color: var(--mg-nav-section) !important;
+  font-weight: 700 !important;
+  background-color: var(--mg-nav-active-bg) !important;
+  border-radius: 0.35rem;
+}
+
+/* —— On-this-page TOC (right) —— */
+.md-nav--secondary .md-nav__title {
+  color: var(--mg-ink);
+  font-weight: 800;
+}
+
+.md-nav--secondary .md-nav__link {
+  color: var(--mg-ink-muted);
+  font-weight: 500;
+  border-left: 2px solid transparent;
+  padding-left: 0.65rem;
+}
+
+.md-nav--secondary .md-nav__link--active,
+.md-nav--secondary .md-nav__link:hover {
+  color: var(--mg-nav-section);
+  font-weight: 700;
+  border-left-color: var(--mg-nav-section);
+}
+
+/* —— Article headings (body size = theme default) —— */
+.md-typeset h1 {
+  color: var(--mg-ink);
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  border-bottom: 2px solid rgba(13, 148, 136, 0.35);
+  padding-bottom: 0.35em;
+}
+
+.md-typeset h2 {
+  color: var(--mg-ink);
+  font-weight: 800;
+  margin-top: 1.6em;
+  padding-left: 0.55rem;
+  border-left: 4px solid var(--mg-nav-section);
+}
+
+.md-typeset h3 {
+  color: #134e4a;
+  font-weight: 700;
+}
+
+.md-typeset a {
+  font-weight: 600;
+}
+
+/* —— Product / used-stock pages —— */
+.mg-product-meta {
+  margin: 0.25rem 0 1rem;
+  padding: 0.65rem 0.85rem;
+  border-radius: 0.4rem;
+  background: rgba(13, 148, 136, 0.08);
+  color: #134e4a;
+  font-size: 0.9em;
+}
+
+.mg-wa-btn {
+  display: inline-block !important;
+  margin: 0.35rem 0 0.75rem;
+  padding: 0.55rem 1.1rem;
+  border-radius: 999px;
+  background: #128c7e !important;
+  color: #fff !important;
+  font-weight: 700 !important;
+  text-decoration: none !important;
+}
+
+.mg-wa-btn:hover {
+  background: #0f766e !important;
+  color: #fff !important;
+}
+
+/* —— Price list / shop CTA banner —— */
+.mg-cta {
+  margin: 1.25rem 0 0.5rem;
+  padding: 1.25rem 1.15rem 1.15rem;
+  border-radius: 0.65rem;
+  text-align: center;
+  background: linear-gradient(105deg, #0f766e 0%, #0d9488 55%, #115e59 100%);
+  box-shadow: 0 4px 14px rgba(15, 118, 110, 0.14);
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
+}
+
+.mg-cta__title {
+  margin: 0 0 0.35rem !important;
+  color: #fff !important;
+  font-size: 0.98rem !important;
+  font-weight: 700 !important;
+  line-height: 1.3 !important;
+  letter-spacing: -0.01em;
+}
+
+.mg-cta__text {
+  margin: 0 auto 0.9rem !important;
+  max-width: 32rem;
+  color: rgba(255, 255, 255, 0.88) !important;
+  font-size: 0.78rem !important;
+  font-weight: 500 !important;
+  line-height: 1.45 !important;
+}
+
+.mg-cta__btn {
+  display: inline-block !important;
+  padding: 0.45rem 1.15rem !important;
+  border-radius: 999px !important;
+  background: #fff !important;
+  color: #0f766e !important;
+  font-weight: 700 !important;
+  font-size: 0.78rem !important;
+  text-decoration: none !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.mg-cta__btn:hover {
+  background: #f0fdfa !important;
+  color: #115e59 !important;
+}
+
+.mg-cta--compact {
+  display: block;
+  margin: 0.85rem 0 0.35rem;
+  padding: 0.7rem 0.85rem 0.75rem;
+  text-align: center;
+  border-radius: 0.45rem;
+  box-shadow: 0 2px 8px rgba(15, 118, 110, 0.12);
+}
+
+.mg-cta--compact .mg-cta__text {
+  margin: 0 auto 0.55rem !important;
+  max-width: 28rem;
+  color: rgba(255, 255, 255, 0.92) !important;
+  font-size: 0.72rem !important;
+  font-weight: 500 !important;
+  line-height: 1.35 !important;
+}
+
+.mg-cta--compact .mg-cta__btn {
+  display: inline-block !important;
+  padding: 0.32rem 0.85rem !important;
+  font-size: 0.7rem !important;
+  box-shadow: none;
+}
+
+@media (max-width: 600px) {
+  .mg-cta {
+    padding: 1.1rem 0.85rem 1rem;
+  }
+
+  .mg-cta__title {
+    font-size: 0.92rem !important;
+  }
+
+  .mg-cta--compact {
+    padding: 0.65rem 0.7rem 0.7rem;
+  }
+}
+
+.mg-unit {
+  margin: 1.75rem 0 2.25rem;
+  padding: 1rem 1rem 0.35rem;
+  border: 1px solid rgba(15, 118, 110, 0.22);
+  border-radius: 0.5rem;
+  background: rgba(13, 148, 136, 0.04);
+}
+
+.mg-unit > h3 {
+  margin-top: 0.15rem !important;
+}
+
+.md-typeset .mg-unit table {
+  width: 100%;
+  margin: 0.6rem 0 0.85rem;
+  display: table;
+  font-size: 0.85rem;
+}
+
+.md-typeset .mg-unit table th,
+.md-typeset .mg-unit table td {
+  padding: 0.45rem 0.65rem;
+  border-color: rgba(15, 118, 110, 0.18);
+  vertical-align: top;
+}
+
+.md-typeset .mg-unit table th:first-child,
+.md-typeset .mg-unit table td:first-child {
+  width: 28%;
+  white-space: nowrap;
+  font-weight: 700;
+  background-color: rgba(13, 148, 136, 0.1);
+}
+
+.mg-unit-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem;
+  align-items: center;
+  margin: 0.35rem 0 0.9rem;
+}
+
+.mg-copy-wa {
+  appearance: none;
+  border: 0;
+  border-radius: 999px;
+  padding: 0.55rem 1.1rem;
+  background: #0f766e;
+  color: #fff;
+  font: inherit;
+  font-weight: 700;
+  font-size: 0.82rem;
+  cursor: pointer;
+}
+
+.mg-copy-wa:hover {
+  background: #115e59;
+}
+
+.mg-copy-wa--done {
+  background: #047857 !important;
+}
+
+.mg-unit .mg-wa-btn {
+  margin: 0 !important;
+}
+
+.mg-gallery {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 0.4rem;
+  margin: 0.75rem 0 1.75rem;
+}
+
+.mg-gallery a {
+  display: block;
+  aspect-ratio: 1;
+  overflow: hidden;
+  border-radius: 0.35rem;
+  background: #e2e8f0;
+  border: 1px solid rgba(15, 118, 110, 0.15);
+}
+
+.mg-gallery img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  margin: 0;
+}
+
+@media (max-width: 600px) {
+  .mg-gallery {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+/* Packaging page: compact thumbs (full image opens in lightbox) */
+.mg-gallery--pack {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  max-width: 22rem;
+}
+
+.mg-gallery--pack a {
+  aspect-ratio: 4 / 3;
+  cursor: zoom-in;
+}
+
+.mg-gallery--timelines {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.mg-gallery--timelines a {
+  aspect-ratio: 16 / 10;
+  cursor: zoom-in;
+}
+
+@media (max-width: 600px) {
+  .mg-gallery--pack,
+  .mg-gallery--timelines {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+/* —— Gallery lightbox —— */
+body.mg-lightbox-open {
+  overflow: hidden;
+}
+
+.mg-lightbox {
+  position: fixed;
+  inset: 0;
+  z-index: 10000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2.5rem 3.5rem 1.5rem;
+  background: rgba(15, 23, 42, 0.82);
+  cursor: zoom-out;
+}
+
+.mg-lightbox[hidden] {
+  display: none !important;
+}
+
+.mg-lightbox__stage {
+  position: relative;
+  max-width: min(96vw, 1100px);
+  max-height: 88vh;
+  cursor: default;
+}
+
+.mg-lightbox__img {
+  display: block;
+  max-width: min(90vw, 1100px);
+  max-height: 82vh;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  border-radius: 0.35rem;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.45);
+  cursor: pointer;
+  background: #0f172a;
+}
+
+.mg-lightbox__counter {
+  margin-top: 0.55rem;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+}
+
+.mg-lightbox__close,
+.mg-lightbox__nav {
+  position: absolute;
+  border: 0;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.92);
+  color: #0f172a;
+  cursor: pointer;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.25);
+  line-height: 1;
+  z-index: 1;
+}
+
+.mg-lightbox__close {
+  top: 0.75rem;
+  right: 0.85rem;
+  width: 2.4rem;
+  height: 2.4rem;
+  font-size: 1.6rem;
+}
+
+.mg-lightbox__nav {
+  top: 50%;
+  transform: translateY(-50%);
+  width: 2.6rem;
+  height: 2.6rem;
+  font-size: 1.85rem;
+  padding-bottom: 0.15rem;
+}
+
+.mg-lightbox__prev {
+  left: 0.65rem;
+}
+
+.mg-lightbox__next {
+  right: 0.65rem;
+}
+
+.mg-lightbox__close:hover,
+.mg-lightbox__nav:hover {
+  background: #fff;
+}
+
+.mg-lightbox__nav[hidden],
+.mg-lightbox__counter[hidden] {
+  display: none !important;
+}
+
+@media (max-width: 600px) {
+  .mg-lightbox {
+    padding: 3rem 0.5rem 1rem;
+  }
+
+  .mg-lightbox__nav {
+    width: 2.2rem;
+    height: 2.2rem;
+    font-size: 1.55rem;
+  }
+}
+
+/* —— Shop FAQ: mark each question —— */
+.mg-faq p {
+  margin-top: 1.15em;
+}
+
+.mg-faq h2 + p {
+  margin-top: 0.85em;
+}
+
+.mg-faq p > strong:first-child {
+  color: #134e4a;
+  font-weight: 800;
+  font-size: 1.02em;
+}
+
+.mg-faq p > strong:first-child::before {
+  content: "Q";
+  display: inline-block;
+  margin-right: 0.45em;
+  padding: 0.1em 0.42em;
+  border-radius: 0.3em;
+  background: rgba(13, 148, 136, 0.16);
+  color: #0f766e;
+  font-size: 0.78em;
+  font-weight: 800;
+  line-height: 1.2;
+  vertical-align: 0.12em;
+}
+
+.md-typeset table th {
+  color: var(--mg-ink);
+  font-weight: 700;
+  background-color: rgba(13, 148, 136, 0.08);
+}
+
+/* —— Price list product thumbs —— */
+.md-typeset .mg-price-table table td:first-child {
+  width: 3.25rem;
+  padding: 0.35rem 0.4rem;
+  vertical-align: middle;
+}
+
+.md-typeset .mg-price-table table img {
+  width: 2.75rem;
+  height: 2.75rem;
+  object-fit: cover;
+  border-radius: 0.3rem;
+  margin: 0 !important;
+  display: block;
+  background: #e2e8f0;
+  cursor: zoom-in;
+}
+
+.md-typeset .mg-price-table table img:hover {
+  outline: 2px solid rgba(15, 118, 110, 0.45);
+  outline-offset: 1px;
+}
+
+/* —— Tip at the bottom of every article (subtle Material admonition) —— */
+.md-typeset .admonition.mg-page-note {
+  margin: 1.5rem 0 0.25rem;
+  font-size: 0.7rem;
+  border-color: rgba(15, 118, 110, 0.35);
+  /* force fill on mobile / Safari (theme can drop plain backgrounds) */
+  background-color: #eef6f5 !important;
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
+  color: #64748b;
+}
+
+.md-typeset .admonition.mg-page-note > .admonition-title {
+  font-size: 0.7rem;
+  font-weight: 600;
+  background-color: #e2f0ee !important;
+  border-color: rgba(15, 118, 110, 0.35);
+  color: #64748b;
+  padding-top: 0.45rem;
+  padding-bottom: 0.45rem;
+}
+
+.md-typeset .admonition.mg-page-note > .admonition-title::before {
+  background-color: #0f766e;
+  opacity: 0.55;
+}
+
+.md-typeset .admonition.mg-page-note > :not(.admonition-title) {
+  font-size: 0.7rem;
+  color: #64748b;
+}
