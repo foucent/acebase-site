@@ -1,0 +1,17 @@
+{% include "partials/tags.html" %}
+{% include "partials/actions.html" %}
+{% if "\u003ch1" not in page.content %}
+  <h1>{{ page.title | d(config.site_name, true)}}</h1>
+{% endif %}
+{% if page.file.src_uri == "shop/faq-and-updates.md" %}<div class="mg-faq">{% endif %}
+{{ page.content }}
+{% if page.file.src_uri == "shop/faq-and-updates.md" %}</div>{% endif %}
+{% if not page.file.src_uri.startswith("shop/") %}
+<div class="admonition note mg-page-note">
+  <p class="admonition-title">Note</p>
+  <p>Translated from Chinese—please suggest fixes if wording looks off.</p>
+</div>
+{% endif %}
+{% include "partials/source-file.html" %}
+{% include "partials/feedback.html" %}
+{% include "partials/comments.html" %}

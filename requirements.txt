@@ -1,0 +1,5 @@
+# click>=8.3 silently disables mkdocs serve livereload
+click==8.2.1
+mkdocs>=1.6
+mkdocs-material>=9.6
+mkdocs-redirects>=1.2

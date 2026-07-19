@@ -1,8 +1,8 @@
-name: Deploy Hugo site to Pages
+name: Deploy Hugo site to Pages (legacy, disabled)
 
+# Replaced by deploy-mkdocs.yml — keep file for reference only.
 on:
-  push:
-    branches: ["main"]
+  workflow_dispatch:
 
 # 解决 2026 年 Node.js 24 强制升级警告
 env:
