@@ -21,95 +21,188 @@
       instructions = instructions + (instructions ? " " : "") + wiseHint;
     }
 
+    var openedKey = "ab_wa_order_";
+
     function money(n) {
       var v = Number(n);
       if (isNaN(v)) return String(n);
       return "US$ " + v.toFixed(2);
     }
 
+    function pick(obj, keys) {
+      if (!obj) return "";
+      for (var i = 0; i < keys.length; i++) {
+        var v = obj[keys[i]];
+        if (v != null && v !== "") return v;
+      }
+      return "";
+    }
+
     function isDeferredOrder(cart) {
       if (!cart) return false;
-      var status = String(cart.paymentStatus || cart.payment_status || "");
-      var method = String(cart.paymentMethod || cart.payment_method || "");
-      return /deferred/i.test(status) || /deferred|wise/i.test(method);
+      var status = String(
+        pick(cart, ["paymentStatus", "payment_status"]) || ""
+      );
+      var method = String(
+        pick(cart, ["paymentMethod", "payment_method", "gatewayId", "paymentGateway"]) ||
+          ""
+      );
+      // Card / online gateways that already charged — skip WhatsApp
+      if (/^(paid|authorized)$/i.test(status) && !/deferred|wise/i.test(method + status)) {
+        return false;
+      }
+      return (
+        /deferred|pending/i.test(status) ||
+        /deferred|wise|pay with wise/i.test(method)
+      );
+    }
+
+    function normalizeItems(cart) {
+      var raw = cart.items || cart.cartItems || cart.products || [];
+      if (raw && raw.items) raw = raw.items;
+      if (raw && typeof raw.toArray === "function") raw = raw.toArray();
+      if (!raw) return [];
+      if (Array.isArray(raw)) return raw;
+      try {
+        return Array.prototype.slice.call(raw);
+      } catch (e) {
+        return [];
+      }
     }
 
     function buildWhatsAppText(cart) {
-      var invoice =
-        cart.invoiceNumber ||
-        cart.token ||
-        cart.orderToken ||
-        cart.number ||
-        "";
-      var email =
-        (cart.email ||
-          (cart.user && cart.user.email) ||
-          (cart.billingAddress && cart.billingAddress.email) ||
-          "") + "";
-      var name =
-        (cart.billingAddress &&
-          ((cart.billingAddress.fullName ||
-            [cart.billingAddress.name, cart.billingAddress.surname]
-              .filter(Boolean)
-              .join(" ")) ||
-            "")) ||
-        "";
-      var total =
-        cart.total != null
-          ? cart.total
-          : cart.grandTotal != null
-            ? cart.grandTotal
-            : "";
-      var currency = (cart.currency || "usd").toUpperCase();
+      var invoice = String(
+        pick(cart, ["invoiceNumber", "invoice_number", "number", "token", "orderToken"]) ||
+          ""
+      );
+      var email = String(
+        pick(cart, ["email"]) ||
+          pick(cart.user, ["email"]) ||
+          pick(cart.billingAddress, ["email"]) ||
+          ""
+      );
+      var addr = cart.billingAddress || {};
+      var name = String(
+        pick(addr, ["fullName", "name"]) ||
+          [addr.name, addr.surname].filter(Boolean).join(" ") ||
+          ""
+      );
+      var total = pick(cart, ["total", "grandTotal", "payableTotal"]);
+      var currency = String(pick(cart, ["currency"]) || "usd").toUpperCase();
       var lines = [
-        "Hi, I placed a Wise (deferred) order on AceBase:",
-        "Order: " + (invoice || "(pending)"),
-        name ? "Name: " + name : "",
-        email ? "Email: " + email : "",
-        "Total: " +
-          (total !== "" ? money(total) : "") +
-          (currency ? " " + currency : ""),
-        "",
-        "Items:",
-      ].filter(Boolean);
+        "Hi, I placed a Wise order on AceBase.",
+        "Order: " + (invoice || "(pending)")
+      ];
+      if (name) lines.push("Name: " + name);
+      if (email) lines.push("Email: " + email);
+      if (total !== "" && total != null) {
+        lines.push("Total: " + money(total) + " " + currency);
+      }
+      lines.push("");
+      lines.push("Items:");
 
-      var items = cart.items || cart.cartItems || [];
-      if (items && items.length) {
+      var items = normalizeItems(cart);
+      if (items.length) {
         items.forEach(function (it, i) {
           var q = it.quantity != null ? it.quantity : 1;
           var p = it.totalPrice != null ? it.totalPrice : it.price;
           lines.push(
-            i +
-              1 +
-              ". " +
-              (it.name || it.id || "Item") +
-              " × " +
-              q +
-              (p != null ? " = " + money(p) : "")
+            i + 1 + ". " + (it.name || it.id || "Item") + " × " + q +
+              (p != null ? " = " + money(Number(p) * (it.totalPrice != null ? 1 : q)) : "")
           );
         });
       } else {
-        lines.push("(see Snipcart dashboard)");
+        lines.push("(see confirmation / Snipcart dashboard)");
       }
 
       lines.push("");
-      lines.push(
-        "I will send the Wise transfer with this order number as the reference."
-      );
+      lines.push("I will send the Wise transfer using order " + (invoice || "number") + " as the reference.");
       return lines.join("\n");
     }
 
-    function openWhatsApp(text) {
-      var url =
+    function whatsAppUrl(text) {
+      return (
         "https://wa.me/" +
         String(waNumber).replace(/\D/g, "") +
         "?text=" +
-        encodeURIComponent(text);
-      window.open(url, "_blank", "noopener,noreferrer");
+        encodeURIComponent(text)
+      );
     }
 
-    document.addEventListener("snipcart.ready", function () {
-      if (!window.Snipcart) return;
+    function alreadyOpened(invoice) {
+      if (!invoice || !window.sessionStorage) return false;
+      try {
+        return sessionStorage.getItem(openedKey + invoice) === "1";
+      } catch (e) {
+        return false;
+      }
+    }
+
+    function markOpened(invoice) {
+      if (!invoice || !window.sessionStorage) return;
+      try {
+        sessionStorage.setItem(openedKey + invoice, "1");
+      } catch (e) {}
+    }
+
+    function showFallbackButton(url, invoice) {
+      if (document.getElementById("ab-wa-order-fallback")) return;
+      var bar = document.createElement("div");
+      bar.id = "ab-wa-order-fallback";
+      bar.setAttribute(
+        "style",
+        "position:fixed;z-index:2147483647;left:16px;right:16px;bottom:16px;" +
+          "padding:14px 16px;border-radius:12px;background:#128C7E;color:#fff;" +
+          "font:600 15px/1.35 system-ui,sans-serif;box-shadow:0 8px 24px rgba(0,0,0,.25);" +
+          "display:flex;gap:12px;align-items:center;justify-content:space-between;"
+      );
+      bar.innerHTML =
+        "<span>Order " +
+        (invoice || "") +
+        " placed — continue on WhatsApp to send Wise payment details.</span>";
+      var a = document.createElement("a");
+      a.href = url;
+      a.target = "_blank";
+      a.rel = "noopener noreferrer";
+      a.textContent = "Open WhatsApp";
+      a.setAttribute(
+        "style",
+        "flex:0 0 auto;background:#fff;color:#075E54;text-decoration:none;" +
+          "padding:10px 14px;border-radius:8px;font-weight:700;"
+      );
+      bar.appendChild(a);
+      document.body.appendChild(bar);
+    }
+
+    function openWhatsApp(cart) {
+      var invoice = String(
+        pick(cart, ["invoiceNumber", "invoice_number", "number", "token"]) || ""
+      );
+      if (alreadyOpened(invoice)) return;
+      var text = buildWhatsAppText(cart || {});
+      var url = whatsAppUrl(text);
+      markOpened(invoice);
+      showFallbackButton(url, invoice);
+      // Same-tab redirect avoids popup blockers after checkout
+      window.setTimeout(function () {
+        window.location.assign(url);
+      }, 400);
+    }
+
+    function onConfirmed(cart) {
+      try {
+        if (!isDeferredOrder(cart)) {
+          console.info("[AceBase] skip WhatsApp — not a deferred/Wise order", cart);
+          return;
+        }
+        openWhatsApp(cart || {});
+      } catch (e) {
+        console.warn("AceBase WhatsApp order notify failed", e);
+      }
+    }
+
+    function bindSnipcart() {
+      if (!window.Snipcart) return false;
 
       if (Snipcart.api && Snipcart.api.session) {
         Snipcart.api.session.setLanguage("en", {
@@ -125,16 +218,20 @@
         });
       }
 
-      if (Snipcart.events && Snipcart.events.on) {
-        Snipcart.events.on("cart.confirmed", function (cart) {
-          try {
-            if (!isDeferredOrder(cart)) return;
-            openWhatsApp(buildWhatsAppText(cart || {}));
-          } catch (e) {
-            console.warn("AceBase WhatsApp order notify failed", e);
-          }
-        });
+      if (Snipcart.events && Snipcart.events.on && !window.__abSnipcartWaBound) {
+        window.__abSnipcartWaBound = true;
+        Snipcart.events.on("cart.confirmed", onConfirmed);
       }
-    });
+      return true;
+    }
+
+    document.addEventListener("snipcart.ready", bindSnipcart);
+    // In case snipcart.ready already fired
+    if (window.Snipcart) bindSnipcart();
+    var tries = 0;
+    var poll = window.setInterval(function () {
+      tries += 1;
+      if (bindSnipcart() || tries > 40) window.clearInterval(poll);
+    }, 250);
   })();
 </script>
