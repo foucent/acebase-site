@@ -20,6 +20,6 @@ cd c:\1Work\acebase.cc
 
 | 路径 | 说明 |
 | --- | --- |
-| `docs/` | 站点正文（guides / players）与图片 |
+| `docs/` | 站点正文（players / gift-cards）与图片 |
 | `docs/stylesheets/` | MyGear 风格样式 + 选手配置卡片 CSS |
 | `overrides/` | Material 主题覆盖 |
