@@ -1,11 +1,1 @@
 {% extends "base.html" %}
-
-{% block scripts %}
-  {{ super() }}
-  {# Pilot: Snipcart only on the Roblox gift-card test page #}
-  {% if page and page.file.src_uri == "gift-cards/roblox-gift-card-us.md" %}
-    {% if config.extra.snipcart_public_key %}
-      {% include "partials/snipcart.html" %}
-    {% endif %}
-  {% endif %}
-{% endblock %}

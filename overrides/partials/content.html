@@ -3,15 +3,7 @@
 {% if "\u003ch1" not in page.content %}
   <h1>{{ page.title | d(config.site_name, true)}}</h1>
 {% endif %}
-{% if page.file.src_uri == "shop/faq-and-updates.md" %}<div class="mg-faq">{% endif %}
 {{ page.content }}
-{% if page.file.src_uri == "shop/faq-and-updates.md" %}</div>{% endif %}
-{% if page.file.src_uri.startswith("gift-cards/") or page.file.src_uri.startswith("fps-top-up/") %}
-<div class="admonition note mg-page-note">
-  <p class="admonition-title">Note</p>
-  <p>Prices are collected on a schedule. Live prices and stock on the sales page always take priority.</p>
-</div>
-{% endif %}
 {% include "partials/source-file.html" %}
 {% include "partials/feedback.html" %}
 {% include "partials/comments.html" %}

@@ -5,11 +5,10 @@ repo_name: AceBase
 theme:
   name: material
   custom_dir: overrides
-  language: custom
   palette:
-    scheme: default
-    primary: teal
-    accent: teal
+    scheme: slate
+    primary: custom
+    accent: custom
   icon:
     repo: material/controller-classic
   features:
@@ -18,128 +17,108 @@ theme:
     - content.code.copy
     - content.tables.scroll
     - navigation.sections
+    - navigation.indexes
 
 plugins:
   - search
+  - i18n:
+      docs_structure: folder
+      fallback_to_default: false
+      reconfigure_material: true
+      reconfigure_search: true
+      languages:
+        - locale: zh
+          default: true
+          name: 中文
+          build: true
+          theme:
+            language: zh
+        - locale: en
+          name: English
+          build: true
+          theme:
+            language: en
+          nav_translations:
+            home: Home
+            如何下单: How to Order
+            价格与货源: Pricing & Sourcing
+            FAQ 与更新: FAQ & Updates
+            发货与到账: Delivery
+            PUBG Mobile 直充: PUBG Mobile Top-Up
+            PUBG G-COIN CDK: PUBG G-COIN CDK
+            暗区突围点券: Arena Breakout Bonds
+            三角洲行动充值: Delta Force Top-Up
+            王者荣耀国际服充值: Honor of Kings Top-Up
+            MLBB 钻石充值: MLBB Diamonds
+            加速器横评: VPN Reviews
+            图片墙: Photo Wall
+            关于与政策: About & Policies
+            关于我们: About Us
+            联系我们: Contact Us
+            支持: Support
+            退款与退货: Return Policy
+            发货政策: Shipping Policy
+            反洗钱与反恐融资: AML / CTF Policy
+            服务条款: Terms of Use
 
 markdown_extensions:
   - admonition
-  - toc
+  - toc:
+      permalink: true
   - tables
   - fenced_code
   - md_in_html
+  - attr_list
   - pymdownx.details
   - pymdownx.superfences
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
 
 extra_css:
   - stylesheets/extra.css
+  - stylesheets/offgamers-pubg.css
+  - stylesheets/bittopup-product.css
+  - stylesheets/preowned.css
+  - stylesheets/photo-wall.css
 
 extra_javascript:
+  - javascripts/currency.js
   - javascripts/crisp.js
-  - javascripts/buy-widget.js
+  - javascripts/hero-slides.js
+  - javascripts/photo-wall.js
 
 watch:
   - overrides
 
 extra:
+  analytics:
+    provider: google
+    property: G-Q77Y59HQ7K
   social:
     - icon: material/controller-classic
       link: https://acebase.cc/
       name: AceBase
-  # Snipcart public API key (Test mode). Replace with your key from https://app.snipcart.com
-  snipcart_public_key: "MjA4M2Y2NmMtMjBmNi00Y2Q4LThlNzYtNDA1ZDhlNTU0OTQ2NjM5MjAxNTQ1NTQwOTM1OTI4"
-  # MUST be a URL Snipcart's servers can reach (localhost will always fail).
-  # After pushing this repo, use jsDelivr (and allow cdn.jsdelivr.net in Domains & URLs):
-  #   https://cdn.jsdelivr.net/gh/foucent/acebase-site@main/docs/snipcart/products.json
-  # Or after deploying MkDocs: https://YOUR-PUBLIC-DOMAIN/snipcart/products.json
-  snipcart_products_url: "https://cdn.jsdelivr.net/gh/foucent/acebase-site@main/docs/snipcart/products.json"
-  # Shown in Snipcart checkout when Deferred Payments is enabled
-  snipcart_deferred_title: "Pay with Wise"
-  snipcart_deferred_instructions: "Click Place order — WhatsApp will open with your order details. Then send the exact total via Wise using your order number as the reference. We deliver the digital PIN after payment is confirmed."
-  snipcart_wise_hint: "Wise: +86 18627156285"
-  snipcart_whatsapp: "8618627156285"
 
 nav:
-  - Home: index.md
-  - FPS Top-Up:
-      - "Arena Breakout: Infinite Top Up": fps-top-up/arena-breakout-infinite-top-up.md
-      - "Point Blank Cash(SEA)": fps-top-up/point-blank-cash-sea.md
-      - "Point Blank Cash(ID)": fps-top-up/point-blank-pb-cash.md
-      - "Valorant Point Philippines": fps-top-up/valorant-point-ph-top-up.md
-      - "Valorant Point Malaysia": fps-top-up/valorant-point-my-top-up.md
-      - "Valorant Point Thailand": fps-top-up/valorant-point-th-top-up.md
-      - "Valorant Point Indonesia": fps-top-up/valorant-point-id-top-up.md
-      - "Mecha BREAK Corite Top Up": fps-top-up/mecha-break-top-up.md
-      - "PUBG Mobile UC(Global)": fps-top-up/pubg-mobile-uc-top-up-global.md
-      - "PUBG Mobile UC(MY)": fps-top-up/pubg-mobile-uc-top-up.md
-      - "PUBG Mobile UC(Taiwan)": fps-top-up/pubg-mobile-tw-top-up.md
-      - "PUBG Mobile UC(Indonesia)": fps-top-up/pubgm-uc-indonesia.md
-      - "PUBG Mobile Royale Pass Pack(Global)": fps-top-up/pubg-mobile-rp-global.md
-      - "PUBG Mobile Royale Pass Pack(MY)": fps-top-up/pubg-mobile-rp-my.md
-      - "PUBG Mobile Royale Pass Pack(TW)": fps-top-up/pubg-mobile-rp-tw.md
-      - "PUBG Mobile Lite BattleCoin(Indonesia)": fps-top-up/pubg-mobile-lite-indonesia-top-up.md
-      - "New State Mobile NC": fps-top-up/pubg-new-state-nc.md
-      - "Free Fire Diamonds": fps-top-up/free-fire-diamonds-top-up.md
-      - "Free Fire Diamonds(MY/SG/PH/KH)": fps-top-up/free-fire-diamonds-my-top-up.md
-      - "Free Fire Diamonds(LATAM)": fps-top-up/free-fire-latam-diamonds-top-up.md
-      - "Free Fire Diamonds(ID)": fps-top-up/free-fire-id-diamonds-top-up.md
-      - "Free Fire Diamonds(TH)": fps-top-up/free-fire-th-diamonds-top-up.md
-      - "Free Fire Diamonds(EU/TR)": fps-top-up/free-fire-diamonds-eu-tr.md
-      - "Free Fire Diamonds(BR)": fps-top-up/free-fire-diamonds-br-top-up.md
-      - "Free Fire Diamonds(TW)": fps-top-up/free-fire-diamonds-tw-top-up.md
-      - "Free Fire Diamonds(BD)": fps-top-up/free-fire-bd-diamonds-top-up.md
-      - "Free Fire Diamonds(VN)": fps-top-up/free-fire-diamonds-vn-top-up.md
-      - "Free Fire Max Diamonds": fps-top-up/free-fire-max-diamonds-top-up.md
-      - "Blood Strike Golds": fps-top-up/blood-strike-gold-top-up.md
-      - "Blood Strike Pass": fps-top-up/blood-strike-pass-top-up.md
-      - "Blood Strike Max": fps-top-up/blood-strike-gold-pass-mena.md
-      - "Knives Out Vouchers": fps-top-up/knives-out-vouchers.md
-      - "Knives Out Package": fps-top-up/knives-out-package.md
-      - "Arena Breakout Bonds": fps-top-up/arena-breakout-bonds-top-up.md
-      - "Arena Breakout Pass & Packages": fps-top-up/arena-breakout-pass-package-top-up.md
-      - "Delta Force Global Top Up": fps-top-up/delta-force-top-up-global.md
-      - "Garena Delta Force SEA Top Up": fps-top-up/garena-delta-force-top-up.md
-      - "Garena Delta Force Malaysia Top Up": fps-top-up/garena-delta-force-malaysia-top-up.md
-      - "Garena Delta Force Indonesia Top Up": fps-top-up/garena-delta-force-indonesia-top-up.md
-      - "Garena Delta Force Thailand Top Up": fps-top-up/garena-delta-force-thailand-top-up.md
-      - "Garena Delta Force Taiwan Top Up": fps-top-up/garena-delta-force-taiwan-top-up.md
-      - "Garena Delta Force Latam Top Up": fps-top-up/garena-delta-force-latam-top-up.md
-      - "Garena Delta Force MENA Top Up": fps-top-up/garena-delta-force-mena-top-up.md
-      - "Farlight 84 Diamonds": fps-top-up/farlight-84-diamonds.md
-      - "Crossfire: Legends SEA Top Up": fps-top-up/crossfire-legends-sea-top-up.md
-      - "Garena Call of Duty Mobile Top Up(MY/SG)": fps-top-up/garena-call-of-duty-mobile-top-up-my-sg.md
-      - "Garena Call of Duty Mobile CP": fps-top-up/garena-codm-top-up.md
-      - "Garena Call of Duty Mobile(TW)Top Up": fps-top-up/garena-call-of-duty-mobile-tw-top-up.md
-      - "Rainbow Six Mobile Top Up": fps-top-up/rainbow-six-mobile-top-up.md
-      - "Marvel Rivals Top Up": fps-top-up/marvel-rivals-top-up.md
-      - "The Division Resurgence Top Up": fps-top-up/the-division-resurgence-top-up.md
-      - "Warframe Mobile Top Up": fps-top-up/warframe-mobile-top-up.md
-      - "Ballistic Hero VNG SEA Top Up": fps-top-up/ballistic-hero-vng-top-up.md
-      - "T3 Arena T-Gems": fps-top-up/t3-arena-t-gems-top-up.md
-      - "Destiny: Rising Top Up": fps-top-up/destiny-rising-top-up.md
-      - "Snowbreak: Containment Zone Top Up": fps-top-up/snowbreak-containment-zone-top-up.md
-      - "Valorant Point Singapore": fps-top-up/valorant-point-sg-top-up.md
-      - "Undawn RC(EU)": fps-top-up/undawn-rc-eu-top-up.md
-      - "Undawn RC(NA)": fps-top-up/undawn-rc-na-top-up.md
-      - "Undawn Package(EU)": fps-top-up/undawn-package-eu-top-up.md
-      - "Undawn Package(NA)": fps-top-up/undawn-package-na-top-up.md
-      - "Garena Undawn RC & Package(MY/SG)": fps-top-up/garena-undawn-rc-my-top-up.md
-      - "Garena Undawn RC(Indonesia)": fps-top-up/garena-undawn-rc-id-top-up.md
-      - "Garena Undawn RC(Philippines)": fps-top-up/garena-undawn-rc-ph-top-up.md
-      - "Garena Undawn Paket(Indonesia)": fps-top-up/garena-undawn-paket-id-top-up.md
-      - "ACECRAFT Global Top Up": fps-top-up/acecraft-global-top-up.md
-      - "Mini World Royale Top Up": fps-top-up/mini-world-royale-top-up.md
-      - "Sausage Man Candies": fps-top-up/sausage-man-candies.md
-      - "X-Clash Top Up": fps-top-up/x-clash-top-up.md
-  - Gift Cards:
-      - "Roblox Gift Card (US)": gift-cards/roblox-gift-card-us.md
-      - "Escape from Tarkov": gift-cards/escape-from-tarkov.md
-      - "Arena Breakout: Infinite": gift-cards/arena-breakout-infinite.md
-      - "Hunt: Showdown": gift-cards/hunt-showdown.md
-      - "Delta Force": gift-cards/delta-force.md
-      - "Call of Duty: Warzone": gift-cards/call-of-duty-warzone.md
-      - "Gray Zone Warfare": gift-cards/gray-zone-warfare.md
-      - "Marauders": gift-cards/marauders.md
-      - "Vigor": gift-cards/vigor.md
-      - "S.T.A.L.K.E.R. 2": gift-cards/stalker-2.md
-      - "Single Player Tarkov (SPT)": gift-cards/single-player-tarkov.md
+  - home: index.md
+  - PUBG Mobile 直充: topup/pubg-mobile-direct.md
+  - PUBG G-COIN CDK: topup/pubg-gcoin.md
+  - 暗区突围点券: topup/arena-breakout-bonds.md
+  - 三角洲行动充值: topup/delta-force.md
+  - 王者荣耀国际服充值: topup/honor-of-kings.md
+  - MLBB 钻石充值: topup/mlbb-diamonds.md
+  - 加速器横评: vpn-reviews.md
+  - 图片墙: figure-wall.md
+  - 关于与政策:
+      - 如何下单: shop/how-to-order.md
+      - 价格与货源: shop/pricing-and-sourcing.md
+      - FAQ 与更新: shop/faq-and-updates.md
+      - 发货与到账: shop/shipping-and-delivery.md
+      - 关于我们: legal/about.md
+      - 联系我们: legal/contact.md
+      - 支持: legal/support.md
+      - 退款与退货: legal/return-policy.md
+      - 发货政策: legal/shipping-policy.md
+      - 反洗钱与反恐融资: legal/aml-policy.md
+      - 服务条款: legal/terms-of-use.md

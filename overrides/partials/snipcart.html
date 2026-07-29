@@ -90,16 +90,16 @@
       var total = pick(cart, ["total", "grandTotal", "payableTotal"]);
       var currency = String(pick(cart, ["currency"]) || "usd").toUpperCase();
       var lines = [
-        "Hi, I placed a Wise order on AceBase.",
-        "Order: " + (invoice || "(pending)")
+        "你好，我在 AceBase 下了一笔 Wise 订单。",
+        "订单号：" + (invoice || "（待生成）")
       ];
-      if (name) lines.push("Name: " + name);
-      if (email) lines.push("Email: " + email);
+      if (name) lines.push("姓名：" + name);
+      if (email) lines.push("邮箱：" + email);
       if (total !== "" && total != null) {
-        lines.push("Total: " + money(total) + " " + currency);
+        lines.push("合计：" + money(total) + " " + currency);
       }
       lines.push("");
-      lines.push("Items:");
+      lines.push("商品：");
 
       var items = normalizeItems(cart);
       if (items.length) {
@@ -107,16 +107,16 @@
           var q = it.quantity != null ? it.quantity : 1;
           var p = it.totalPrice != null ? it.totalPrice : it.price;
           lines.push(
-            i + 1 + ". " + (it.name || it.id || "Item") + " × " + q +
+            i + 1 + ". " + (it.name || it.id || "商品") + " × " + q +
               (p != null ? " = " + money(Number(p) * (it.totalPrice != null ? 1 : q)) : "")
           );
         });
       } else {
-        lines.push("(see confirmation / Snipcart dashboard)");
+        lines.push("（详见确认页 / Snipcart 后台）");
       }
 
       lines.push("");
-      lines.push("I will send the Wise transfer using order " + (invoice || "number") + " as the reference.");
+      lines.push("我会以订单号 " + (invoice || "") + " 作为备注通过 Wise 转账。");
       return lines.join("\n");
     }
 
@@ -157,14 +157,14 @@
           "display:flex;gap:12px;align-items:center;justify-content:space-between;"
       );
       bar.innerHTML =
-        "<span>Order " +
+        "<span>订单 " +
         (invoice || "") +
-        " placed — continue on WhatsApp to send Wise payment details.</span>";
+        " 已提交 — 请前往 WhatsApp 发送 Wise 付款信息。</span>";
       var a = document.createElement("a");
       a.href = url;
       a.target = "_blank";
       a.rel = "noopener noreferrer";
-      a.textContent = "Open WhatsApp";
+      a.textContent = "打开 WhatsApp";
       a.setAttribute(
         "style",
         "flex:0 0 auto;background:#fff;color:#075E54;text-decoration:none;" +
@@ -205,7 +205,7 @@
       if (!window.Snipcart) return false;
 
       if (Snipcart.api && Snipcart.api.session) {
-        Snipcart.api.session.setLanguage("en", {
+        Snipcart.api.session.setLanguage("zh", {
           payment: {
             form: {
               deferred_payment_title: title,

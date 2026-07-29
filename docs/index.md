@@ -1,91 +1,71 @@
-# AceBase
-
-Hardcore player hub: CS2 / VALORANT setups, competitive guides, and hardware tuning.
-
+---
+title: Home
+description: 国际服电竞玩家入口 — 下单、礼品卡、加速。
 ---
 
-## FPS Top-Up
+# AceBase
 
-- [Arena Breakout: Infinite Top Up](fps-top-up/arena-breakout-infinite-top-up.md)
-- [Point Blank Cash (SEA)](fps-top-up/point-blank-cash-sea.md)
-- [Point Blank Cash (ID)](fps-top-up/point-blank-pb-cash.md)
-- [Valorant Point Philippines](fps-top-up/valorant-point-ph-top-up.md)
-- [Valorant Point Malaysia](fps-top-up/valorant-point-my-top-up.md)
-- [Valorant Point Thailand](fps-top-up/valorant-point-th-top-up.md)
-- [Valorant Point Indonesia](fps-top-up/valorant-point-id-top-up.md)
-- [Mecha BREAK Corite Top Up](fps-top-up/mecha-break-top-up.md)
-- [PUBG Mobile UC (Global)](fps-top-up/pubg-mobile-uc-top-up-global.md)
-- [PUBG Mobile UC (MY)](fps-top-up/pubg-mobile-uc-top-up.md)
-- [PUBG Mobile UC (Taiwan)](fps-top-up/pubg-mobile-tw-top-up.md)
-- [PUBG Mobile UC (Indonesia)](fps-top-up/pubgm-uc-indonesia.md)
-- [PUBG Mobile Royale Pass Pack (Global)](fps-top-up/pubg-mobile-rp-global.md)
-- [PUBG Mobile Royale Pass Pack (MY)](fps-top-up/pubg-mobile-rp-my.md)
-- [PUBG Mobile Royale Pass Pack (TW)](fps-top-up/pubg-mobile-rp-tw.md)
-- [PUBG Mobile Lite BattleCoin (Indonesia)](fps-top-up/pubg-mobile-lite-indonesia-top-up.md)
-- [New State Mobile NC](fps-top-up/pubg-new-state-nc.md)
-- [Free Fire Diamonds](fps-top-up/free-fire-diamonds-top-up.md)
-- [Free Fire Diamonds (MY/SG/PH/KH)](fps-top-up/free-fire-diamonds-my-top-up.md)
-- [Free Fire Diamonds (LATAM)](fps-top-up/free-fire-latam-diamonds-top-up.md)
-- [Free Fire Diamonds (ID)](fps-top-up/free-fire-id-diamonds-top-up.md)
-- [Free Fire Diamonds (TH)](fps-top-up/free-fire-th-diamonds-top-up.md)
-- [Free Fire Diamonds (EU/TR)](fps-top-up/free-fire-diamonds-eu-tr.md)
-- [Free Fire Diamonds (BR)](fps-top-up/free-fire-diamonds-br-top-up.md)
-- [Free Fire Diamonds (TW)](fps-top-up/free-fire-diamonds-tw-top-up.md)
-- [Free Fire Diamonds (BD)](fps-top-up/free-fire-bd-diamonds-top-up.md)
-- [Free Fire Diamonds (VN)](fps-top-up/free-fire-diamonds-vn-top-up.md)
-- [Free Fire Max Diamonds](fps-top-up/free-fire-max-diamonds-top-up.md)
-- [Blood Strike Golds](fps-top-up/blood-strike-gold-top-up.md)
-- [Blood Strike Pass](fps-top-up/blood-strike-pass-top-up.md)
-- [Blood Strike Max](fps-top-up/blood-strike-gold-pass-mena.md)
-- [Knives Out Vouchers](fps-top-up/knives-out-vouchers.md)
-- [Knives Out Package](fps-top-up/knives-out-package.md)
-- [Arena Breakout Bonds](fps-top-up/arena-breakout-bonds-top-up.md)
-- [Arena Breakout Pass & Packages](fps-top-up/arena-breakout-pass-package-top-up.md)
-- [Delta Force Global Top Up](fps-top-up/delta-force-top-up-global.md)
-- [Garena Delta Force SEA Top Up](fps-top-up/garena-delta-force-top-up.md)
-- [Garena Delta Force Malaysia Top Up](fps-top-up/garena-delta-force-malaysia-top-up.md)
-- [Garena Delta Force Indonesia Top Up](fps-top-up/garena-delta-force-indonesia-top-up.md)
-- [Garena Delta Force Thailand Top Up](fps-top-up/garena-delta-force-thailand-top-up.md)
-- [Garena Delta Force Taiwan Top Up](fps-top-up/garena-delta-force-taiwan-top-up.md)
-- [Garena Delta Force Latam Top Up](fps-top-up/garena-delta-force-latam-top-up.md)
-- [Garena Delta Force MENA Top Up](fps-top-up/garena-delta-force-mena-top-up.md)
-- [Farlight 84 Diamonds](fps-top-up/farlight-84-diamonds.md)
-- [Crossfire: Legends SEA Top Up](fps-top-up/crossfire-legends-sea-top-up.md)
-- [Garena Call of Duty Mobile Top Up (MY/SG)](fps-top-up/garena-call-of-duty-mobile-top-up-my-sg.md)
-- [Garena Call of Duty Mobile CP](fps-top-up/garena-codm-top-up.md)
-- [Garena Call of Duty Mobile (TW) Top Up](fps-top-up/garena-call-of-duty-mobile-tw-top-up.md)
-- [Rainbow Six Mobile Top Up](fps-top-up/rainbow-six-mobile-top-up.md)
-- [Marvel Rivals Top Up](fps-top-up/marvel-rivals-top-up.md)
-- [The Division Resurgence Top Up](fps-top-up/the-division-resurgence-top-up.md)
-- [Warframe Mobile Top Up](fps-top-up/warframe-mobile-top-up.md)
-- [Ballistic Hero VNG SEA Top Up](fps-top-up/ballistic-hero-vng-top-up.md)
-- [T3 Arena T-Gems](fps-top-up/t3-arena-t-gems-top-up.md)
-- [Destiny: Rising Top Up](fps-top-up/destiny-rising-top-up.md)
-- [Snowbreak: Containment Zone Top Up](fps-top-up/snowbreak-containment-zone-top-up.md)
-- [Valorant Point Singapore](fps-top-up/valorant-point-sg-top-up.md)
-- [Undawn RC (EU)](fps-top-up/undawn-rc-eu-top-up.md)
-- [Undawn RC (NA)](fps-top-up/undawn-rc-na-top-up.md)
-- [Undawn Package (EU)](fps-top-up/undawn-package-eu-top-up.md)
-- [Undawn Package (NA)](fps-top-up/undawn-package-na-top-up.md)
-- [Garena Undawn RC & Package (MY/SG)](fps-top-up/garena-undawn-rc-my-top-up.md)
-- [Garena Undawn RC (Indonesia)](fps-top-up/garena-undawn-rc-id-top-up.md)
-- [Garena Undawn RC (Philippines)](fps-top-up/garena-undawn-rc-ph-top-up.md)
-- [Garena Undawn Paket (Indonesia)](fps-top-up/garena-undawn-paket-id-top-up.md)
-- [ACECRAFT Global Top Up](fps-top-up/acecraft-global-top-up.md)
-- [Mini World Royale Top Up](fps-top-up/mini-world-royale-top-up.md)
-- [Sausage Man Candies](fps-top-up/sausage-man-candies.md)
-- [X-Clash Top Up](fps-top-up/x-clash-top-up.md)
+国际服电竞玩家入口：下单 · 礼品卡 · 加速。
 
-## Gift Cards
+<p class="ab-meta">Demo 站骨架 · 更新日期：2026-07-29</p>
 
-- [Roblox Gift Card (US)](gift-cards/roblox-gift-card-us.md)
-- [Escape from Tarkov](gift-cards/escape-from-tarkov.md)
-- [Arena Breakout: Infinite](gift-cards/arena-breakout-infinite.md)
-- [Hunt: Showdown](gift-cards/hunt-showdown.md)
-- [Delta Force](gift-cards/delta-force.md)
-- [Call of Duty: Warzone](gift-cards/call-of-duty-warzone.md)
-- [Gray Zone Warfare](gift-cards/gray-zone-warfare.md)
-- [Marauders](gift-cards/marauders.md)
-- [Vigor](gift-cards/vigor.md)
-- [S.T.A.L.K.E.R. 2](gift-cards/stalker-2.md)
-- [Single Player Tarkov (SPT)](gift-cards/single-player-tarkov.md)
+## 本周推荐
+
+<div class="ab-card-grid" markdown="0">
+  <a class="ab-card" href="/shop/how-to-order/">
+    <strong>如何下单</strong>
+    <span>WhatsApp / 客服 · 报价 · 付款 · 到账</span>
+  </a>
+  <a class="ab-card" href="/vpn-reviews/">
+    <strong>2026 加速器横评</strong>
+    <span>延迟 · 稳定性 · 价格档 · 适合谁</span>
+  </a>
+  <a class="ab-card" href="/figure-wall/">
+    <strong>图片墙</strong>
+    <span>手办 / 模型照片墙 · 点击浏览</span>
+  </a>
+  <a class="ab-card" href="/topup/arena-breakout-bonds/">
+    <strong>暗区突围点券</strong>
+    <span>Global Bonds · Player ID 直充（BitTopup 参考）</span>
+  </a>
+  <a class="ab-card" href="/topup/delta-force/">
+    <strong>三角洲行动充值</strong>
+    <span>Global 三角币 · Player ID 直充（BitTopup 参考）</span>
+  </a>
+  <a class="ab-card" href="/topup/honor-of-kings/">
+    <strong>王者荣耀国际服</strong>
+    <span>HOK Tokens · UID 直充（BitTopup 参考）</span>
+  </a>
+  <a class="ab-card" href="/topup/mlbb-diamonds/">
+    <strong>MLBB 钻石</strong>
+    <span>User ID + Zone ID · MY 价表 Demo</span>
+  </a>
+  <a class="ab-card" href="/topup/pubg-gcoin/">
+    <strong>PUBG G-COIN CDK</strong>
+    <span>PC 激活码 · 邮件发货（BitTopup 参考）</span>
+  </a>
+  <a class="ab-card" href="/topup/pubg-mobile-direct/">
+    <strong>PUBG Mobile 直充</strong>
+    <span>Global UC · Player ID 直充（OffGamers 参考）</span>
+  </a>
+</div>
+
+## 站点导航
+
+| 页面 | 路径 |
+| --- | --- |
+| 如何下单 | [`/shop/how-to-order/`](shop/how-to-order.md) |
+| 价格与货源 | [`/shop/pricing-and-sourcing/`](shop/pricing-and-sourcing.md) |
+| FAQ 与更新 | [`/shop/faq-and-updates/`](shop/faq-and-updates.md) |
+| 发货与到账 | [`/shop/shipping-and-delivery/`](shop/shipping-and-delivery.md) |
+| PUBG Mobile 直充 | [`/topup/pubg-mobile-direct/`](topup/pubg-mobile-direct.md) |
+| PUBG G-COIN CDK | [`/topup/pubg-gcoin/`](topup/pubg-gcoin.md) |
+| 暗区突围点券 | [`/topup/arena-breakout-bonds/`](topup/arena-breakout-bonds.md) |
+| 三角洲行动充值 | [`/topup/delta-force/`](topup/delta-force.md) |
+| 王者荣耀国际服 | [`/topup/honor-of-kings/`](topup/honor-of-kings.md) |
+| MLBB 钻石 | [`/topup/mlbb-diamonds/`](topup/mlbb-diamonds.md) |
+| 加速器横评 | [`/vpn-reviews/`](vpn-reviews.md) |
+| 图片墙 | [`/figure-wall/`](figure-wall.md) |
+
+!!! note "Demo 说明"
+    当前为内容骨架与字段模板演示，表格价格与名单均为占位数据，不构成购买建议。
