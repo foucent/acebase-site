@@ -123,7 +123,7 @@ hide:
       <p class="bt-checkout__off" id="bt-off">折扣: 70.0% OFF</p>
       <button type="button" class="bt-checkout__buy" id="bt-buy" disabled>立即购买</button>
       <p class="bt-summary"><strong id="bt-summary-label">240 Tokens</strong> · 总计 · x1</p>
-      <p class="bt-checkout__note">Demo · 价格采集自 <a href="https://bittopup.com/goods/Honor-of-Kings-Tokens-Global" rel="noopener noreferrer">BitTopup</a>（2026-07-29 · USD · Global）。下单：<a href="../shop/how-to-order.md">WhatsApp / 客服</a>。</p>
+      <p class="bt-checkout__note">Demo · 价格采集自 <a href="https://bittopup.com/goods/Honor-of-Kings-Tokens-Global" rel="noopener noreferrer">BitTopup</a>（2026-07-29 · USD · Global）。下单：<a href="../shop/how-to-order.md">在线咨询</a>。</p>
     </div>
   </aside>
 </div>
@@ -141,7 +141,7 @@ hide:
 <section class="bt-faq">
   <h2>常见问题</h2>
   <p><strong>订单多久完成？</strong><br>通常几分钟；延迟请联系客服。</p>
-  <p><strong>客服时间？</strong><br>Demo 页请走 WhatsApp / 在线客服。</p>
+  <p><strong>客服时间？</strong><br>Demo 页请走 在线咨询。</p>
 </section>
 
 </div>

@@ -81,7 +81,7 @@ hide:
         <span class="og-pubg__price-currency">USD</span>
       </div>
       <button type="button" class="og-pubg__buy" id="og-buy-btn" disabled>Buy now</button>
-      <p class="og-pubg__note">Demo · Prices from <a href="https://www.offgamers.com/product/pubg-mobile-direct-top-up" rel="noopener noreferrer">OffGamers</a> (2026-07-29). Order via <a href="../shop/how-to-order.md">WhatsApp / support</a>.</p>
+      <p class="og-pubg__note">Demo · Prices from <a href="https://www.offgamers.com/product/pubg-mobile-direct-top-up" rel="noopener noreferrer">OffGamers</a> (2026-07-29). Order via <a href="../shop/how-to-order.md">Crisp chat</a>.</p>
     </div>
   </aside>
 </div>

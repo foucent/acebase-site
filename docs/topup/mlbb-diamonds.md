@@ -171,7 +171,7 @@ hide:
       <p class="bt-checkout__off" id="bt-off">折扣: 30.0% OFF</p>
       <button type="button" class="bt-checkout__buy" id="bt-buy" disabled>立即购买</button>
       <p class="bt-summary"><strong id="bt-summary-label">Malaysia Weekly Diamond Pass</strong> · 总计 · x1</p>
-      <p class="bt-checkout__note">Demo · 价格采集自 <a href="https://bittopup.com/goods/mlbb-diamonds" rel="noopener noreferrer">BitTopup</a>（2026-07-29 · USD · MY）。下单：<a href="../shop/how-to-order.md">WhatsApp / 客服</a>。</p>
+      <p class="bt-checkout__note">Demo · 价格采集自 <a href="https://bittopup.com/goods/mlbb-diamonds" rel="noopener noreferrer">BitTopup</a>（2026-07-29 · USD · MY）。下单：<a href="../shop/how-to-order.md">在线咨询</a>。</p>
     </div>
   </aside>
 </div>

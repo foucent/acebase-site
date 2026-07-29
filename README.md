@@ -24,7 +24,6 @@ cd c:\1Work\acebase.cc
 | `/shop/how-to-order/` 等 | 下单 / 价格 / FAQ / 发货（「关于与政策」分组） |
 | `/topup/pubg-mobile-direct/` | PUBG Mobile UC 直充（Global） |
 | `/topup/pubg-gcoin/` 等 | BitTopup 风格商品页（G-COIN / 暗区 / 三角洲 / HOK / MLBB） |
-| `/vpn-reviews/` | 加速器横评 |
 | `/figure-wall/` | 图片墙（手办 / 模型照片墙 Demo） |
 
 ## 部署

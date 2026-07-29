@@ -1,10 +1,35 @@
 /**
  * Crisp live chat bootstrap for AceBase
  * + custom close button (top-right) when chat is open
+ * + .ab-crisp-open click helper for site-wide CTAs
  */
 (function () {
   window.$crisp = window.$crisp || [];
   window.CRISP_WEBSITE_ID = "7e271486-98c1-4394-a6be-b323024b43cb";
+
+  function openCrisp(prefill) {
+    window.$crisp = window.$crisp || [];
+    var msg = (prefill || "").trim();
+    if (msg) {
+      window.$crisp.push(["set", "message:text", msg]);
+    }
+    window.$crisp.push(["do", "chat:open"]);
+  }
+
+  window.abOpenCrisp = openCrisp;
+
+  document.addEventListener(
+    "click",
+    function (e) {
+      var el = e.target && e.target.closest
+        ? e.target.closest("a.ab-crisp-open, button.ab-crisp-open")
+        : null;
+      if (!el) return;
+      e.preventDefault();
+      openCrisp(el.getAttribute("data-crisp-msg") || "");
+    },
+    true
+  );
 
   function ensureCloseButton() {
     var btn = document.getElementById("ab-crisp-close");

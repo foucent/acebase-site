@@ -11,7 +11,7 @@ description: AceBase 联系方式（Demo）
 
 | 方式 | 说明 |
 | --- | --- |
-| **WhatsApp / 在线客服** | 下单与进度查询首选，见 [如何下单](../shop/how-to-order.md) |
+| **在线咨询** | 下单与进度查询首选，见 [如何下单](../shop/how-to-order.md) |
 | **站内 Crisp** | 右下角聊天组件（若已启用） |
 
 ## 发消息时请带上
@@ -27,4 +27,4 @@ description: AceBase 联系方式（Demo）
 - [支持说明](support.md)  
 
 !!! note "Demo"
-    正式邮箱、地址与表单可在上线前替换；当前以 WhatsApp / 客服为主。
+    正式邮箱、地址与表单可在上线前替换；当前以 在线咨询为主。

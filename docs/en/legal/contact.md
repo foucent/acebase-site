@@ -11,7 +11,7 @@ For quotes, order status, or feedback, use the channels below.
 
 | Channel | Note |
 | --- | --- |
-| **WhatsApp / live chat** | Best for orders and tracking — see [How to order](../shop/how-to-order.md) |
+| **Crisp chat** | Best for orders and tracking — see [How to order](../shop/how-to-order.md) |
 | **Crisp (on-site)** | Chat widget (when enabled) |
 
 ## Please include
@@ -27,4 +27,4 @@ For quotes, order status, or feedback, use the channels below.
 - [Support](support.md)  
 
 !!! note "Demo"
-    Replace with production email/address/forms before launch; WhatsApp / support is primary for now.
+    Replace with production email/address/forms before launch; Crisp chat is primary for now.

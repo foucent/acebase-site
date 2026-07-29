@@ -14,7 +14,7 @@ AceBase 以 **数字交付** 为主（直充到账、卡密/CDK 发送）。无�
 | 类型 | 方式 |
 | --- | --- |
 | 游戏直充 | 付款确认后充入指定账号 |
-| 卡密 / PIN / CDK | 通过 WhatsApp / 邮件 / 客服渠道发送 |
+| 卡密 / PIN / CDK | 通过 Crisp / 邮件 / 客服渠道发送 |
 
 详见：[发货与到账](../shop/shipping-and-delivery.md)
 

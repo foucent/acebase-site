@@ -94,7 +94,7 @@ hide:
       <p class="bt-checkout__off" id="bt-off">Save: 70.0% OFF</p>
       <button type="button" class="bt-checkout__buy" id="bt-buy" disabled>Buy now</button>
       <p class="bt-summary"><strong id="bt-summary-label">510 G-COIN</strong> · Total · x1</p>
-      <p class="bt-checkout__note">Demo · Prices from <a href="https://bittopup.com/zh/goods/pubg-gcoin" rel="noopener noreferrer">BitTopup</a> (2026-07-29 · CNY · GLOBAL CDK). Order via <a href="../shop/how-to-order.md">WhatsApp / support</a>.</p>
+      <p class="bt-checkout__note">Demo · Prices from <a href="https://bittopup.com/zh/goods/pubg-gcoin" rel="noopener noreferrer">BitTopup</a> (2026-07-29 · CNY · GLOBAL CDK). Order via <a href="../shop/how-to-order.md">Crisp chat</a>.</p>
     </div>
   </aside>
 </div>
@@ -117,7 +117,7 @@ hide:
   <ol>
     <li>Pick a G-COIN pack</li>
     <li>Enter the email for CDK delivery</li>
-    <li>Finish payment via WhatsApp / support</li>
+    <li>Finish payment via Crisp chat</li>
   </ol>
 
   <h3>Notes</h3>

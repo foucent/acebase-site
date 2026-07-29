@@ -11,7 +11,7 @@ description: AceBase Terms of Use summary (Demo · BitTopup-aligned structure)
 
 ## 1. Services
 
-AceBase provides top-up references, order guidance, and VPN content. **Demo prices are not offers**; final price, delivery, and refunds follow support confirmation and related policies.
+AceBase provides top-up references and order guidance. **Demo prices are not offers**; final price, delivery, and refunds follow support confirmation and related policies.
 
 ## 2. Eligibility
 

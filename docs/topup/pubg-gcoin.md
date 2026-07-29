@@ -94,7 +94,7 @@ hide:
       <p class="bt-checkout__off" id="bt-off">折扣: 70.0% OFF</p>
       <button type="button" class="bt-checkout__buy" id="bt-buy" disabled>立即购买</button>
       <p class="bt-summary"><strong id="bt-summary-label">510 G-COIN</strong> · 总计 · x1</p>
-      <p class="bt-checkout__note">Demo · 价格采集自 <a href="https://bittopup.com/zh/goods/pubg-gcoin" rel="noopener noreferrer">BitTopup</a>（2026-07-29 · CNY · GLOBAL CDK）。下单：<a href="../shop/how-to-order.md">WhatsApp / 客服</a>。</p>
+      <p class="bt-checkout__note">Demo · 价格采集自 <a href="https://bittopup.com/zh/goods/pubg-gcoin" rel="noopener noreferrer">BitTopup</a>（2026-07-29 · CNY · GLOBAL CDK）。下单：<a href="../shop/how-to-order.md">在线咨询</a>。</p>
     </div>
   </aside>
 </div>
@@ -117,7 +117,7 @@ hide:
   <ol>
     <li>选择 G-COIN 面额</li>
     <li>填写接收 CDK 的 Email</li>
-    <li>通过 WhatsApp / 客服完成付款</li>
+    <li>通过 在线咨询完成付款</li>
   </ol>
 
   <h3>注意事项</h3>

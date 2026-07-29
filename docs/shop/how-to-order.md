@@ -1,11 +1,11 @@
 ---
 title: 如何下单
-description: AceBase Shop — WhatsApp / 在线客服下单流程（Demo）
+description: AceBase Shop — 在线咨询下单流程（Demo）
 ---
 
 # 如何下单
 
-参考 [MyGear Guide · Shop](https://guide.mygear.top/) 的下单分区结构。AceBase 当前以 **充值比价咨询、加速器咨询** 为主；正式下单请走 **WhatsApp** 或站内 **在线客服**。
+参考 [MyGear Guide · Shop](https://guide.mygear.top/) 的下单分区结构。AceBase 当前以 **充值比价咨询** 为主；正式下单请走站内 **在线咨询**。
 
 另见：[价格与货源](pricing-and-sourcing.md) · [FAQ 与更新](faq-and-updates.md) · [发货与到账](shipping-and-delivery.md)
 
@@ -17,7 +17,7 @@ description: AceBase Shop — WhatsApp / 在线客服下单流程（Demo）
 
 | | |
 | --- | --- |
-| **沟通** | WhatsApp / 在线客服（Crisp） |
+| **沟通** | 在线咨询 |
 | **付款** | 优先 Wise；其它方式下单前确认 |
 | **交付** | 数字到账（UC / VP / Steam CDK 等） |
 | **退款** | 多数直充 **不可退**；以确认单为准 |

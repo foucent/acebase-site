@@ -171,7 +171,7 @@ hide:
       <p class="bt-checkout__off" id="bt-off">Save: 30.0% OFF</p>
       <button type="button" class="bt-checkout__buy" id="bt-buy" disabled>Buy now</button>
       <p class="bt-summary"><strong id="bt-summary-label">Malaysia Weekly Diamond Pass</strong> · Total · x1</p>
-      <p class="bt-checkout__note">Demo · Prices from <a href="https://bittopup.com/goods/mlbb-diamonds" rel="noopener noreferrer">BitTopup</a>（2026-07-29 · USD · MY）。Order:<a href="../shop/how-to-order.md">WhatsApp / support</a>。</p>
+      <p class="bt-checkout__note">Demo · Prices from <a href="https://bittopup.com/goods/mlbb-diamonds" rel="noopener noreferrer">BitTopup</a>（2026-07-29 · USD · MY）。Order:<a href="../shop/how-to-order.md">Crisp chat</a>。</p>
     </div>
   </aside>
 </div>

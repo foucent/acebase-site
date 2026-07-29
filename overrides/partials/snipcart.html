@@ -16,12 +16,10 @@
     var title = {{ config.extra.snipcart_deferred_title | default("Pay with Wise") | tojson }};
     var instructions = {{ config.extra.snipcart_deferred_instructions | default("") | tojson }};
     var wiseHint = {{ config.extra.snipcart_wise_hint | default("") | tojson }};
-    var waNumber = {{ config.extra.snipcart_whatsapp | default("8618627156285") | tojson }};
     if (wiseHint) {
       instructions = instructions + (instructions ? " " : "") + wiseHint;
     }
-
-    var openedKey = "ab_wa_order_";
+    var openedKey = "ab_crisp_order_";
 
     function money(n) {
       var v = Number(n);
@@ -47,7 +45,7 @@
         pick(cart, ["paymentMethod", "payment_method", "gatewayId", "paymentGateway"]) ||
           ""
       );
-      // Card / online gateways that already charged — skip WhatsApp
+      // Card / online gateways that already charged — skip Crisp
       if (/^(paid|authorized)$/i.test(status) && !/deferred|wise/i.test(method + status)) {
         return false;
       }
@@ -70,7 +68,7 @@
       }
     }
 
-    function buildWhatsAppText(cart) {
+    function buildCrispText(cart) {
       var invoice = String(
         pick(cart, ["invoiceNumber", "invoice_number", "number", "token", "orderToken"]) ||
           ""
@@ -120,15 +118,6 @@
       return lines.join("\n");
     }
 
-    function whatsAppUrl(text) {
-      return (
-        "https://wa.me/" +
-        String(waNumber).replace(/\D/g, "") +
-        "?text=" +
-        encodeURIComponent(text)
-      );
-    }
-
     function alreadyOpened(invoice) {
       if (!invoice || !window.sessionStorage) return false;
       try {
@@ -145,59 +134,59 @@
       } catch (e) {}
     }
 
-    function showFallbackButton(url, invoice) {
-      if (document.getElementById("ab-wa-order-fallback")) return;
+    function showFallbackButton(invoice) {
+      if (document.getElementById("ab-crisp-order-fallback")) return;
       var bar = document.createElement("div");
-      bar.id = "ab-wa-order-fallback";
+      bar.id = "ab-crisp-order-fallback";
       bar.setAttribute(
         "style",
         "position:fixed;z-index:2147483647;left:16px;right:16px;bottom:16px;" +
-          "padding:14px 16px;border-radius:12px;background:#128C7E;color:#fff;" +
+          "padding:14px 16px;border-radius:12px;background:#1972f5;color:#fff;" +
           "font:600 15px/1.35 system-ui,sans-serif;box-shadow:0 8px 24px rgba(0,0,0,.25);" +
           "display:flex;gap:12px;align-items:center;justify-content:space-between;"
       );
       bar.innerHTML =
         "<span>订单 " +
         (invoice || "") +
-        " 已提交 — 请前往 WhatsApp 发送 Wise 付款信息。</span>";
-      var a = document.createElement("a");
-      a.href = url;
-      a.target = "_blank";
-      a.rel = "noopener noreferrer";
-      a.textContent = "打开 WhatsApp";
+        " 已提交 — 请通过在线咨询发送 Wise 付款信息。</span>";
+      var a = document.createElement("button");
+      a.type = "button";
+      a.className = "ab-crisp-open";
+      a.textContent = "在线咨询";
       a.setAttribute(
         "style",
-        "flex:0 0 auto;background:#fff;color:#075E54;text-decoration:none;" +
+        "flex:0 0 auto;background:#fff;color:#0b57d0;border:0;cursor:pointer;" +
           "padding:10px 14px;border-radius:8px;font-weight:700;"
       );
       bar.appendChild(a);
       document.body.appendChild(bar);
     }
 
-    function openWhatsApp(cart) {
+    function openCrispOrder(cart) {
       var invoice = String(
         pick(cart, ["invoiceNumber", "invoice_number", "number", "token"]) || ""
       );
       if (alreadyOpened(invoice)) return;
-      var text = buildWhatsAppText(cart || {});
-      var url = whatsAppUrl(text);
+      var text = buildCrispText(cart || {});
       markOpened(invoice);
-      showFallbackButton(url, invoice);
-      // Same-tab redirect avoids popup blockers after checkout
-      window.setTimeout(function () {
-        window.location.assign(url);
-      }, 400);
+      showFallbackButton(invoice);
+      if (typeof window.abOpenCrisp === "function") {
+        window.abOpenCrisp(text);
+      } else if (window.$crisp) {
+        window.$crisp.push(["set", "message:text", text]);
+        window.$crisp.push(["do", "chat:open"]);
+      }
     }
 
     function onConfirmed(cart) {
       try {
         if (!isDeferredOrder(cart)) {
-          console.info("[AceBase] skip WhatsApp — not a deferred/Wise order", cart);
+          console.info("[AceBase] skip Crisp — not a deferred/Wise order", cart);
           return;
         }
-        openWhatsApp(cart || {});
+        openCrispOrder(cart || {});
       } catch (e) {
-        console.warn("AceBase WhatsApp order notify failed", e);
+        console.warn("AceBase Crisp order notify failed", e);
       }
     }
 
@@ -218,8 +207,8 @@
         });
       }
 
-      if (Snipcart.events && Snipcart.events.on && !window.__abSnipcartWaBound) {
-        window.__abSnipcartWaBound = true;
+      if (Snipcart.events && Snipcart.events.on && !window.__abSnipcartCrispBound) {
+        window.__abSnipcartCrispBound = true;
         Snipcart.events.on("cart.confirmed", onConfirmed);
       }
       return true;

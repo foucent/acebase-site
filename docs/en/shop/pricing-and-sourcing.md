@@ -33,7 +33,7 @@ Taiwan server **PUBG MOBILE** direct **UC**. Reference aligned with [SEAGM · PU
 | **Delivery** | Player ID direct top-up |
 | **Limit** | **1** per order (illustrative, SEAGM TW page) |
 | **Risk** | <span class="ab-tag ab-tag--risk-low">Low</span> (legit channel; wrong ID → medium risk) |
-| **Order** | WhatsApp / [live chat](../shop/how-to-order.md) — have **Player ID** ready |
+| **Order** | Crisp / [live chat](../shop/how-to-order.md) — have **Player ID** ready |
 
 !!! warning "Important"
     - Confirm the account is **Taiwan** server.  
@@ -48,7 +48,6 @@ Taiwan server **PUBG MOBILE** direct **UC**. Reference aligned with [SEAGM · PU
 | Type | Look at | Fixed URL |
 | --- | --- | --- |
 | Game top-up | Denomination, unit price, risk | [`/en/topup/delta-force/`](../topup/delta-force.md) etc. |
-| VPN | Price tier, latency, fit | [`/en/vpn-reviews/`](../vpn-reviews.md) |
 | Photo Wall | Figure / model photo browse | [`/en/figure-wall/`](../figure-wall.md) |
 
 ## Other reference (fictional)
@@ -57,7 +56,7 @@ Taiwan server **PUBG MOBILE** direct **UC**. Reference aligned with [SEAGM · PU
 | --- | --- | --- | --- |
 | Honor of Kings | 240 Tokens | [Product page](../topup/honor-of-kings.md) | UID |
 | PUBG UC (Global) | 600 | [Top-up page](../topup/pubg-mobile-direct.md) | Player ID |
-| VPN monthly | 1 month | Mid tier sample | See roundup |
+| MLBB Diamonds | 86 Diamonds | [Product page](../topup/mlbb-diamonds.md) | User ID + Zone |
 
 !!! note "Demo"
-    Except TW PUBG table (SEAGM reference), other rows are placeholders. Final price via WhatsApp / support.
+    Except TW PUBG table (SEAGM reference), other rows are placeholders. Final price via Crisp chat.

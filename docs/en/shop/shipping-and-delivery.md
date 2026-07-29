@@ -14,8 +14,8 @@ AceBase delivers **digitally / by intro**. Physical goods, if added later, will 
 | Type | We do | You provide |
 | --- | --- | --- |
 | **Game top-up** | Credit account after payment confirmed | Region, Player ID / agreed login |
-| **PIN / code / CDK** | Send code + redeem guide | Receive channel (WhatsApp / Email, etc.) |
-| **Consulting** | VPN advice | Budget and use case |
+| **PIN / code / CDK** | Send code + redeem guide | Receive channel (Crisp / Email, etc.) |
+| **Consulting** | Product / order guidance | Budget and use case |
 
 ---
 
@@ -28,7 +28,7 @@ AceBase delivers **digitally / by intro**. Physical goods, if added later, will 
 | Channel maintenance / peak | Support will ask to retry or reschedule |
 
 !!! note "Tracking"
-    Digital orders have no courier number. Progress via **WhatsApp / live chat**; for issues attach payment proof and order keywords.
+    Digital orders have no courier number. Progress via **Crisp chat**; for issues attach payment proof and order keywords.
 
 ---
 

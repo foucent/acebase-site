@@ -7,13 +7,13 @@ description: About AceBase (Demo)
 
 <p class="ab-meta">Layout aligned with BitTopup About · AceBase Demo branding</p>
 
-AceBase serves global-server gamers with **game top-up guidance**, gift-card notes, and VPN roundups. This site is a **Demo shell**: prices and catalogs are illustrative; final deals are confirmed with support.
+AceBase serves global-server gamers with **game top-up guidance**, gift-card notes, and a photo wall. This site is a **Demo shell**: prices and catalogs are illustrative; final deals are confirmed with support.
 
 ## What we do
 
-- **Game top-up**: product pages show tiers and reference prices; orders go via WhatsApp / live chat  
-- **VPN Reviews**: latency, stability, and price-tier references  
-- **Photo Wall**: figure / model photo wall Demo
+- **Game top-up**: product pages show tiers and reference prices; orders go via Crisp chat  
+- **Photo Wall**: figure / model photo wall Demo  
+- **Order guides**: how to order, delivery, and FAQ
 
 ## Why AceBase (Demo)
 

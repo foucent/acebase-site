@@ -20,9 +20,9 @@ hide:
     <div class="mg-home-hero__inner">
       <p class="mg-home-hero__brand">AceBase</p>
       <h1 class="mg-home-hero__title">图片墙</h1>
-      <p class="mg-home-hero__lead">手办 / 模型照片墙——每格一组；点击浏览组内图片（左右切换不离组）。WhatsApp 确认库存或询价。</p>
+      <p class="mg-home-hero__lead">手办 / 模型照片墙——每格一组；点击浏览组内图片（左右切换不离组）。Crisp 确认库存或询价。</p>
       <div class="mg-home-hero__actions">
-        <a class="mg-home-hero__btn mg-home-hero__btn--primary" href="https://wa.me/8618627156285?text=Hello%2C%20I%27d%20like%20a%20quote%20for%20anime%20figures.%0D%0A%0D%0AShip%20to%20(city%20%2F%20postal%20code)%3A%0D%0A%0D%0A">WhatsApp quote</a>
+        <a class="mg-home-hero__btn mg-home-hero__btn--primary ab-crisp-open" href="#" data-crisp-msg="你好，想咨询手办 / 图片墙。">在线咨询</a>
         <a class="mg-home-hero__btn mg-home-hero__btn--ghost" href="/shop/how-to-order/">如何下单</a>
       </div>
     </div>
@@ -30,10 +30,10 @@ hide:
 
   <section class="mg-home-help">
     <p class="mg-home-help__links">
-      <a href="/vpn-reviews/">加速器横评</a>
+      <a href="/shop/how-to-order/">如何下单</a>
       <a href="/shop/faq-and-updates/">FAQ</a>
       <a href="/legal/shipping-policy/">发货政策</a>
-      <a href="/shop/how-to-order/">如何下单</a>
+      <a href="/figure-wall/">图片墙</a>
     </p>
   </section>
 
@@ -55,4 +55,4 @@ hide:
 </div>
 
 !!! tip "Demo 说明"
-    布局页头参考 MyGear / AceBase Pre-owned；图片墙交互对齐 TinyBox Outfit Guide。图集为示意收录，非正式库存；询价与下单以 WhatsApp / 客服确认为准。
+    布局页头参考 MyGear / AceBase Pre-owned；图片墙交互对齐 TinyBox Outfit Guide。图集为示意收录，非正式库存；询价与下单以 在线咨询确认为准。

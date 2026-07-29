@@ -14,7 +14,7 @@ AceBase focuses on **digital delivery** (account credit, PIN / CDK codes). No ph
 | Type | Method |
 | --- | --- |
 | Game top-up | Credited after payment confirmation |
-| PIN / gift / CDK codes | Sent via WhatsApp / email / support |
+| PIN / gift / CDK codes | Sent via Crisp / email / support |
 
 See also: [Shipping & delivery](../shop/shipping-and-delivery.md)
 

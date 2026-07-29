@@ -1,11 +1,11 @@
 ---
 title: How to Order
-description: AceBase Shop — WhatsApp / live chat order flow (Demo)
+description: AceBase Shop — Crisp chat order flow (Demo)
 ---
 
 # How to Order
 
-Inspired by [MyGear Guide · Shop](https://guide.mygear.top/). AceBase focuses on **top-up price compare** and **VPN advice**. For real orders use **WhatsApp** or **live chat**.
+Inspired by [MyGear Guide · Shop](https://guide.mygear.top/). AceBase focuses on **top-up price compare**. For real orders use **Crisp chat**.
 
 See also: [Pricing & Sourcing](pricing-and-sourcing.md) · [FAQ & Updates](faq-and-updates.md) · [Delivery](shipping-and-delivery.md)
 
@@ -17,7 +17,7 @@ See also: [Pricing & Sourcing](pricing-and-sourcing.md) · [FAQ & Updates](faq-a
 
 | | |
 | --- | --- |
-| **Contact** | WhatsApp / live chat (Crisp) |
+| **Contact** | Crisp chat |
 | **Payment** | Wise preferred; confirm others before ordering |
 | **Delivery** | Digital credit (UC / VP / Steam CDK, etc.) |
 | **Refunds** | Most direct top-ups **non-refundable**; per confirmed quote |

@@ -123,7 +123,7 @@ hide:
       <p class="bt-checkout__off" id="bt-off">Save: 70.0% OFF</p>
       <button type="button" class="bt-checkout__buy" id="bt-buy" disabled>Buy now</button>
       <p class="bt-summary"><strong id="bt-summary-label">240 Tokens</strong> · Total · x1</p>
-      <p class="bt-checkout__note">Demo · Prices from <a href="https://bittopup.com/goods/Honor-of-Kings-Tokens-Global" rel="noopener noreferrer">BitTopup</a>（2026-07-29 · USD · Global）。Order:<a href="../shop/how-to-order.md">WhatsApp / support</a>。</p>
+      <p class="bt-checkout__note">Demo · Prices from <a href="https://bittopup.com/goods/Honor-of-Kings-Tokens-Global" rel="noopener noreferrer">BitTopup</a>（2026-07-29 · USD · Global）。Order:<a href="../shop/how-to-order.md">Crisp chat</a>。</p>
     </div>
   </aside>
 </div>
@@ -141,7 +141,7 @@ hide:
 <section class="bt-faq">
   <h2>常见问题</h2>
   <p><strong>How long?</strong><br>Usually a few minutes; contact support if delayed.</p>
-  <p><strong>Support hours?</strong><br>This demo page: WhatsApp / live chat.</p>
+  <p><strong>Support hours?</strong><br>This demo page: Crisp chat.</p>
 </section>
 
 </div>

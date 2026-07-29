@@ -33,7 +33,7 @@ description: AceBase Shop — 充值/加速参考价与货源说明（Demo）
 | **到账方式** | Player ID 直充 |
 | **购买限额** | 单笔 **1**（示意，与 SEAGM 台服页一致） |
 | **风险等级** | <span class="ab-tag ab-tag--risk-low">低</span>（正规直充渠道；填错 ID 为中风险） |
-| **下单** | WhatsApp / [在线客服](../shop/how-to-order.md) — 请备 **Player ID** |
+| **下单** | Crisp / [在线客服](../shop/how-to-order.md) — 请备 **Player ID** |
 
 !!! warning "重要"
     - 请确认充值的是 **台服** 账号。  
@@ -48,7 +48,6 @@ description: AceBase Shop — 充值/加速参考价与货源说明（Demo）
 | 类型 | 看什么 | 固定 URL |
 | --- | --- | --- |
 | 游戏充值 | 面额、单价、风险 | [`/topup/delta-force/`](../topup/delta-force.md) 等商品页 |
-| 加速器 | 价格档、延迟、适合谁 | [`/vpn-reviews/`](../vpn-reviews.md) |
 | 图片墙 | 手办 / 模型照片浏览 | [`/figure-wall/`](../figure-wall.md) |
 
 ## 其它示意参考（虚构）
@@ -57,7 +56,7 @@ description: AceBase Shop — 充值/加速参考价与货源说明（Demo）
 | --- | --- | --- | --- |
 | Honor of Kings | 240 Tokens | 见 [商品页](../topup/honor-of-kings.md) | UID |
 | PUBG UC（国际） | 600 | 见 [直充页](../topup/pubg-mobile-direct.md) | Player ID |
-| 加速器月卡 | 1 个月 | 中档示意 | 见横评 |
+| MLBB 钻石 | 86 Diamonds | 见 [商品页](../topup/mlbb-diamonds.md) | User ID + Zone |
 
 !!! note "Demo"
-    除台服 PUBG 表为 SEAGM 参考采集外，其它条目仍为占位。正式价以 WhatsApp / 客服确认为准。
+    除台服 PUBG 表为 SEAGM 参考采集外，其它条目仍为占位。正式价以 在线咨询确认为准。

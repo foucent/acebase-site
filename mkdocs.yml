@@ -1,7 +1,5 @@
 site_name: AceBase
 site_url: https://acebase.cc/
-repo_url: https://acebase.cc/
-repo_name: AceBase
 theme:
   name: material
   custom_dir: overrides
@@ -10,7 +8,7 @@ theme:
     primary: custom
     accent: custom
   icon:
-    repo: material/controller-classic
+    logo: material/controller-classic
   features:
     - search.suggest
     - search.highlight
@@ -50,7 +48,6 @@ plugins:
             三角洲行动充值: Delta Force Top-Up
             王者荣耀国际服充值: Honor of Kings Top-Up
             MLBB 钻石充值: MLBB Diamonds
-            加速器横评: VPN Reviews
             图片墙: Photo Wall
             关于与政策: About & Policies
             关于我们: About Us
@@ -81,6 +78,7 @@ extra_css:
   - stylesheets/bittopup-product.css
   - stylesheets/preowned.css
   - stylesheets/photo-wall.css
+  - stylesheets/home.css
 
 extra_javascript:
   - javascripts/currency.js
@@ -108,7 +106,6 @@ nav:
   - 三角洲行动充值: topup/delta-force.md
   - 王者荣耀国际服充值: topup/honor-of-kings.md
   - MLBB 钻石充值: topup/mlbb-diamonds.md
-  - 加速器横评: vpn-reviews.md
   - 图片墙: figure-wall.md
   - 关于与政策:
       - 如何下单: shop/how-to-order.md

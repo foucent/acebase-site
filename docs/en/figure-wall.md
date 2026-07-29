@@ -20,9 +20,9 @@ hide:
     <div class="mg-home-hero__inner">
       <p class="mg-home-hero__brand">AceBase</p>
       <h1 class="mg-home-hero__title">Photo Wall</h1>
-      <p class="mg-home-hero__lead">Anime figures &amp; models — each tile is one set. Tap to browse photos. WhatsApp for stock or quotes.</p>
+      <p class="mg-home-hero__lead">Anime figures &amp; models — each tile is one set. Tap to browse photos. Crisp for stock or quotes.</p>
       <div class="mg-home-hero__actions">
-        <a class="mg-home-hero__btn mg-home-hero__btn--primary" href="https://wa.me/8618627156285?text=Hello%2C%20I%27d%20like%20a%20quote%20for%20anime%20figures.%0D%0A%0D%0AShip%20to%20(city%20%2F%20postal%20code)%3A%0D%0A%0D%0A">WhatsApp quote</a>
+        <a class="mg-home-hero__btn mg-home-hero__btn--primary ab-crisp-open" href="#" data-crisp-msg="Hello, I'd like a quote for anime figures.">Live chat</a>
         <a class="mg-home-hero__btn mg-home-hero__btn--ghost" href="/en/shop/how-to-order/">How to Order</a>
       </div>
     </div>
@@ -30,10 +30,10 @@ hide:
 
   <section class="mg-home-help">
     <p class="mg-home-help__links">
-      <a href="/en/vpn-reviews/">VPN Reviews</a>
+      <a href="/en/shop/how-to-order/">How to Order</a>
       <a href="/en/shop/faq-and-updates/">FAQ</a>
       <a href="/en/legal/shipping-policy/">Shipping</a>
-      <a href="/en/shop/how-to-order/">How to Order</a>
+      <a href="/en/figure-wall/">Photo Wall</a>
     </p>
   </section>
 
@@ -55,4 +55,4 @@ hide:
 </div>
 
 !!! tip "Demo"
-    Hero layout adapted from Pre-owned; photo-wall interaction from TinyBox Outfit Guide. Sets are demo collections, not live stock — quote via WhatsApp / support.
+    Hero layout adapted from Pre-owned; photo-wall interaction from TinyBox Outfit Guide. Sets are demo collections, not live stock — quote via Crisp chat.
