@@ -5,8 +5,6 @@ description: AceBase return / refund policy (BitTopup-aligned structure)
 
 # Return Policy
 
-Digital goods (direct top-up / PIN codes) are generally **non-refundable** once delivered. Rules below apply as confirmed with support.
-
 ## Refunds
 
 You may request a review when:

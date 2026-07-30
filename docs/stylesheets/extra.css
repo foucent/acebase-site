@@ -74,49 +74,44 @@ body {
   background: var(--bt-panel);
 }
 
-/* Sidebar top: Home replaces AceBase site_name (same slot / size) */
+/* Sidebar top: Home replaces AceBase site_name; match section-header look (e.g. 关于与政策) */
 .md-nav--primary > .md-nav__title.md-nav__title--home {
-  display: flex;
-  align-items: center;
+  display: block;
   box-sizing: border-box;
   height: auto !important;
-  min-height: 2.4rem;
-  padding: 0.35rem 0.5rem !important;
+  min-height: 0;
+  padding: 0 !important;
   line-height: 1.5 !important;
+  background: transparent !important;
   cursor: default;
 }
 
 .md-nav--primary > .md-nav__title.md-nav__title--home .md-nav__home {
-  display: flex;
-  align-items: center;
-  gap: 0.45rem;
+  display: block;
   width: 100%;
-  min-height: 2.05rem;
-  padding: 0.35rem 0.65rem;
-  border-radius: 0.35rem;
-  color: var(--mg-ink-muted);
-  font-weight: 700;
-  font-size: 0.8rem;
+  min-height: 0;
+  padding: 0.6rem 0.8rem;
+  border-radius: 0;
+  color: var(--mg-nav-section) !important;
+  font-weight: 800 !important;
+  font-size: 0.78rem !important;
   line-height: 1.5;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
   text-decoration: none;
+  background: transparent !important;
 }
 
-.md-nav--primary > .md-nav__title.md-nav__title--home .md-nav__home:hover {
-  color: var(--mg-ink);
-}
-
+.md-nav--primary > .md-nav__title.md-nav__title--home .md-nav__home:hover,
 .md-nav--primary > .md-nav__title.md-nav__title--home.is-active .md-nav__home,
 .md-nav--primary > .md-nav__title.md-nav__title--home .md-nav__home:focus-visible {
-  color: #c4b5fd;
-  font-weight: 700;
-  background-color: var(--mg-nav-active-bg);
+  color: var(--mg-nav-section) !important;
+  font-weight: 800 !important;
+  background: transparent !important;
 }
 
 .md-nav--primary > .md-nav__title.md-nav__title--home .md-nav__home-icon {
-  flex: 0 0 auto;
-  width: 1.1rem;
-  height: 1.1rem;
-  fill: currentColor;
+  display: none !important;
 }
 
 .md-nav--primary > .md-nav__title.md-nav__title--home .md-logo {

@@ -99,24 +99,6 @@
   line-height: 1.15;
 }
 
-.md-typeset .bt-trust {
-  display: flex;
-  align-items: center;
-  gap: 0.45rem;
-  margin-bottom: 0.75rem;
-  font-size: 13px;
-}
-
-.md-typeset .bt-trust__stars {
-  color: #22c55e;
-  letter-spacing: 0.05em;
-}
-
-.md-typeset .bt-trust__brand {
-  color: #d1d5db;
-  font-weight: 600;
-}
-
 .md-typeset .bt-badges {
   display: flex;
   flex-wrap: wrap;

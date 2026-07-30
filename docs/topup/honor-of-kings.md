@@ -20,17 +20,12 @@ hide:
   </div>
   <div>
     <h1 class="bt-hero__title">王者荣耀国际服代充</h1>
-    <div class="bt-trust">
-      <span class="bt-trust__label">Excellent</span>
-      <span class="bt-trust__stars" aria-hidden="true">★★★★★</span>
-      <span class="bt-trust__brand">Trustpilot</span>
-    </div>
-        <div class="bt-badges">
+    <div class="bt-badges">
       <span class="bt-badge"><img src="/assets/bittopup/icon-region.webp" alt=""> GLOBAL</span>
       <span class="bt-badge"><img src="/assets/bittopup/icon-fast.webp" alt=""> 人工确认</span>
-      <span class="bt-badge"><img src="/assets/bittopup/icon-safe.webp" alt=""> 多种支付</span>
+      <span class="bt-badge"><img src="/assets/bittopup/icon-safe.webp" alt=""> 快速到帐</span>
     </div>
-    <p class="bt-hero__promo">💡 王者荣耀国际服 <strong>代充</strong> — 选好面额与 UID，点「我要代充」打开在线客服确认最新报价。</p>
+    <p class="bt-hero__promo">💡 王者荣耀国际服 <strong>代充</strong> — 选好面额与 UID，点「我要代充」打开在线客服确认最新报价和库存。</p>
   </div>
 </section>
 
@@ -39,72 +34,72 @@ hide:
     <div class="bt-panel">
       <h2 class="bt-panel__title">最新报价</h2>
       <div class="bt-skus" id="bt-sku-grid">
-        <button type="button" class="bt-sku is-active" data-price="2.28" data-was="8.83" data-label="240 Tokens" data-off="70.0">
+        <button type="button" class="bt-sku is-active" data-price="2.17" data-was="8.83" data-label="240 Tokens" data-off="75.4">
           <span class="bt-sku__ribbon bt-sku__ribbon--sale">SALE</span>
           <span class="bt-sku__icon">🪙</span>
           <span class="bt-sku__name">240 Tokens</span>
           <span class="bt-sku__game">Honor of Kings</span>
-          <span class="bt-sku__off">折扣: 70.0% OFF</span>
-          <span class="bt-sku__price">US$ 2.28<span class="bt-sku__was">US$ 8.83</span></span>
+          <span class="bt-sku__off">折扣: 75.4% OFF</span>
+          <span class="bt-sku__price">US$ 2.17<span class="bt-sku__was">US$ 8.83</span></span>
         </button>
-        <button type="button" class="bt-sku" data-price="3.81" data-was="7.52" data-label="400 Tokens" data-off="70.0">
+        <button type="button" class="bt-sku" data-price="3.62" data-was="7.52" data-label="400 Tokens" data-off="51.9">
           <span class="bt-sku__ribbon bt-sku__ribbon--hot">HOT</span>
           <span class="bt-sku__icon">🪙</span>
           <span class="bt-sku__name">400 Tokens</span>
           <span class="bt-sku__game">Honor of Kings</span>
-          <span class="bt-sku__off">折扣: 70.0% OFF</span>
-          <span class="bt-sku__price">US$ 3.81<span class="bt-sku__was">US$ 7.52</span></span>
+          <span class="bt-sku__off">折扣: 51.9% OFF</span>
+          <span class="bt-sku__price">US$ 3.62<span class="bt-sku__was">US$ 7.52</span></span>
         </button>
-        <button type="button" class="bt-sku" data-price="5.34" data-was="20.65" data-label="560 Tokens" data-off="70.0">
+        <button type="button" class="bt-sku" data-price="5.07" data-was="20.65" data-label="560 Tokens" data-off="75.4">
           <span class="bt-sku__ribbon bt-sku__ribbon--hot">HOT</span>
           <span class="bt-sku__icon">🪙</span>
           <span class="bt-sku__name">560 Tokens</span>
           <span class="bt-sku__game">Honor of Kings</span>
-          <span class="bt-sku__off">折扣: 70.0% OFF</span>
-          <span class="bt-sku__price">US$ 5.34<span class="bt-sku__was">US$ 20.65</span></span>
+          <span class="bt-sku__off">折扣: 75.4% OFF</span>
+          <span class="bt-sku__price">US$ 5.07<span class="bt-sku__was">US$ 20.65</span></span>
         </button>
-        <button type="button" class="bt-sku" data-price="7.63" data-was="29.52" data-label="800 Tokens" data-off="70.0">
+        <button type="button" class="bt-sku" data-price="7.25" data-was="29.52" data-label="800 Tokens" data-off="75.4">
           <span class="bt-sku__ribbon bt-sku__ribbon--hot">HOT</span>
           <span class="bt-sku__icon">🪙</span>
           <span class="bt-sku__name">800 Tokens</span>
           <span class="bt-sku__game">Honor of Kings</span>
-          <span class="bt-sku__off">折扣: 70.0% OFF</span>
-          <span class="bt-sku__price">US$ 7.63<span class="bt-sku__was">US$ 29.52</span></span>
+          <span class="bt-sku__off">折扣: 75.4% OFF</span>
+          <span class="bt-sku__price">US$ 7.25<span class="bt-sku__was">US$ 29.52</span></span>
         </button>
-        <button type="button" class="bt-sku" data-price="11.44" data-was="22.59" data-label="1200 Tokens" data-off="70.0">
+        <button type="button" class="bt-sku" data-price="10.87" data-was="22.59" data-label="1200 Tokens" data-off="51.9">
           <span class="bt-sku__icon">🪙</span>
           <span class="bt-sku__name">1200 Tokens</span>
           <span class="bt-sku__game">Honor of Kings</span>
-          <span class="bt-sku__off">折扣: 70.0% OFF</span>
-          <span class="bt-sku__price">US$ 11.44<span class="bt-sku__was">US$ 22.59</span></span>
+          <span class="bt-sku__off">折扣: 51.9% OFF</span>
+          <span class="bt-sku__price">US$ 10.87<span class="bt-sku__was">US$ 22.59</span></span>
         </button>
-        <button type="button" class="bt-sku" data-price="22.90" data-was="88.08" data-label="2508 Tokens" data-off="70.0">
+        <button type="button" class="bt-sku" data-price="21.75" data-was="88.08" data-label="2508 Tokens" data-off="75.3">
           <span class="bt-sku__icon">🪙</span>
           <span class="bt-sku__name">2508 Tokens</span>
           <span class="bt-sku__game">Honor of Kings</span>
-          <span class="bt-sku__off">折扣: 70.0% OFF</span>
-          <span class="bt-sku__price">US$ 22.90<span class="bt-sku__was">US$ 88.08</span></span>
+          <span class="bt-sku__off">折扣: 75.3% OFF</span>
+          <span class="bt-sku__price">US$ 21.75<span class="bt-sku__was">US$ 88.08</span></span>
         </button>
-        <button type="button" class="bt-sku bt-sku--extra" data-price="38.17" data-was="75.34" data-label="4000 Tokens" data-off="70.0">
+        <button type="button" class="bt-sku bt-sku--extra" data-price="36.26" data-was="75.34" data-label="4000 Tokens" data-off="51.9">
           <span class="bt-sku__icon">🪙</span>
           <span class="bt-sku__name">4000 Tokens</span>
           <span class="bt-sku__game">Honor of Kings</span>
-          <span class="bt-sku__off">折扣: 70.0% OFF</span>
-          <span class="bt-sku__price">US$ 38.17<span class="bt-sku__was">US$ 75.34</span></span>
+          <span class="bt-sku__off">折扣: 51.9% OFF</span>
+          <span class="bt-sku__price">US$ 36.26<span class="bt-sku__was">US$ 75.34</span></span>
         </button>
-        <button type="button" class="bt-sku bt-sku--extra" data-price="76.35" data-was="150.70" data-label="8000 Tokens" data-off="70.0">
+        <button type="button" class="bt-sku bt-sku--extra" data-price="72.53" data-was="150.70" data-label="8000 Tokens" data-off="51.9">
           <span class="bt-sku__icon">🪙</span>
           <span class="bt-sku__name">8000 Tokens</span>
           <span class="bt-sku__game">Honor of Kings</span>
-          <span class="bt-sku__off">折扣: 70.0% OFF</span>
-          <span class="bt-sku__price">US$ 76.35<span class="bt-sku__was">US$ 150.70</span></span>
+          <span class="bt-sku__off">折扣: 51.9% OFF</span>
+          <span class="bt-sku__price">US$ 72.53<span class="bt-sku__was">US$ 150.70</span></span>
         </button>
-        <button type="button" class="bt-sku bt-sku--extra" data-price="0.75" data-was="1.49" data-label="80 Tokens" data-off="70.0">
+        <button type="button" class="bt-sku bt-sku--extra" data-price="0.71" data-was="1.49" data-label="80 Tokens" data-off="52.3">
           <span class="bt-sku__icon">🪙</span>
           <span class="bt-sku__name">80 Tokens</span>
           <span class="bt-sku__game">Honor of Kings</span>
-          <span class="bt-sku__off">折扣: 70.0% OFF</span>
-          <span class="bt-sku__price">US$ 0.75<span class="bt-sku__was">US$ 1.49</span></span>
+          <span class="bt-sku__off">折扣: 52.3% OFF</span>
+          <span class="bt-sku__price">US$ 0.71<span class="bt-sku__was">US$ 1.49</span></span>
         </button>
       </div>
       <button type="button" class="bt-more" id="bt-more">显示更多 +3</button>
@@ -118,14 +113,14 @@ hide:
       <input id="bt-player-id" class="bt-checkout__input" type="text" placeholder="Please enter Player ID" autocomplete="off">
       <div class="bt-checkout__total-row">
         <span class="bt-checkout__total-label">参考总计</span>
-        <span class="bt-checkout__total" id="bt-total">US$ 2.28</span>
+        <span class="bt-checkout__total" id="bt-total">US$ 2.17</span>
       </div>
-      <p class="bt-checkout__off" id="bt-off">折扣: 70.0% OFF</p>
+      <p class="bt-checkout__off" id="bt-off">折扣: 75.4% OFF</p>
             <button type="button" class="bt-checkout__buy bt-checkout__buy--chat" id="bt-buy" disabled>
         <svg class="bt-checkout__buy-ico" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" focusable="false"><path fill="currentColor" d="M12 3C6.5 3 2 6.58 2 11c0 2.39 1.33 4.54 3.41 5.96L4 21l4.55-1.52C9.66 19.82 10.81 20 12 20c5.5 0 10-3.58 10-8s-4.5-9-10-9m0 15c-.96 0-1.9-.16-2.78-.45l-.2-.07-2.34.78.77-2.24-.15-.23C5.86 14.53 5 12.84 5 11c0-3.31 3.13-6 7-6s7 2.69 7 6-3.13 6-7 6z"/></svg>
         <span>我要代充</span>
       </button>
-      <p class="bt-checkout__chat-hint">点击后打开在线客服聊天窗，确认最新报价与代充。</p>
+      <p class="bt-checkout__chat-hint">点击后打开在线客服聊天窗，确认最新报价和库存与代充。</p>
       <p class="bt-summary"><strong id="bt-summary-label">240 Tokens</strong> · 参考总计 · x1</p>
             <p class="bt-checkout__note">价格更新时间 2026-07-29 12:15 UTC。</p>
     </div>

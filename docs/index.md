@@ -11,8 +11,7 @@ description: 国际服电竞玩家入口 — 充值、加速、相册，Crisp �
   <section class="mg-home-hero" style="--mg-home-hero-image: url('/assets/offgamers/pubg-mobile-top-up.webp')">
     <div class="mg-home-hero__inner">
       <p class="mg-home-hero__brand">AceBase</p>
-      <h1 class="mg-home-hero__title">国际服电竞，随时询价</h1>
-      <p class="mg-home-hero__lead">游戏直充、热门商品页、手办相册。</p>
+      <h1 class="mg-home-hero__title">游戏折扣、手办、周边代购</h1>
       <div class="mg-home-hero__actions">
         <a class="mg-home-hero__btn mg-home-hero__btn--primary ab-crisp-open" href="#" data-crisp-msg="你好，我想咨询 AceBase。">在线咨询</a>
         <a class="mg-home-hero__btn mg-home-hero__btn--ghost" href="/shop/faq-and-updates/">FAQ 与更新</a>

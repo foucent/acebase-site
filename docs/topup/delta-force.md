@@ -20,17 +20,12 @@ hide:
   </div>
   <div>
     <h1 class="bt-hero__title">三角洲行动代充</h1>
-    <div class="bt-trust">
-      <span class="bt-trust__label">Excellent</span>
-      <span class="bt-trust__stars" aria-hidden="true">★★★★★</span>
-      <span class="bt-trust__brand">Trustpilot</span>
-    </div>
-        <div class="bt-badges">
+    <div class="bt-badges">
       <span class="bt-badge"><img src="/assets/bittopup/icon-region.webp" alt=""> GLOBAL</span>
       <span class="bt-badge"><img src="/assets/bittopup/icon-fast.webp" alt=""> 人工确认</span>
-      <span class="bt-badge"><img src="/assets/bittopup/icon-safe.webp" alt=""> 多种支付</span>
+      <span class="bt-badge"><img src="/assets/bittopup/icon-safe.webp" alt=""> 快速到帐</span>
     </div>
-    <p class="bt-hero__promo">💡 三角洲行动 <strong>代充</strong> — 选好面额与 Player ID，点「我要代充」打开在线客服确认最新报价。</p>
+    <p class="bt-hero__promo">💡 三角洲行动 <strong>代充</strong> — 选好面额与 Player ID，点「我要代充」打开在线客服确认最新报价和库存。</p>
   </div>
 </section>
 
@@ -39,72 +34,72 @@ hide:
     <div class="bt-panel">
       <h2 class="bt-panel__title">最新报价</h2>
       <div class="bt-skus" id="bt-sku-grid">
-        <button type="button" class="bt-sku is-active" data-price="2.32" data-was="4.02" data-label="30 Delta Coins" data-off="40.0">
+        <button type="button" class="bt-sku is-active" data-price="2.20" data-was="4.02" data-label="30 Delta Coins" data-off="45.3">
           <span class="bt-sku__ribbon bt-sku__ribbon--sale">SALE</span>
           <span class="bt-sku__icon">🪙</span>
           <span class="bt-sku__name">30 Delta Coins</span>
           <span class="bt-sku__game">三角洲行动</span>
-          <span class="bt-sku__off">折扣: 40.0% OFF</span>
-          <span class="bt-sku__price">￥ 2.32<span class="bt-sku__was">￥ 4.02</span></span>
+          <span class="bt-sku__off">折扣: 45.3% OFF</span>
+          <span class="bt-sku__price">￥ 2.20<span class="bt-sku__was">￥ 4.02</span></span>
         </button>
-        <button type="button" class="bt-sku" data-price="4.65" data-was="7.89" data-label="60 Delta Coins" data-off="40.0">
+        <button type="button" class="bt-sku" data-price="4.42" data-was="7.89" data-label="60 Delta Coins" data-off="44.0">
           <span class="bt-sku__ribbon bt-sku__ribbon--hot">HOT</span>
           <span class="bt-sku__icon">🪙</span>
           <span class="bt-sku__name">60 Delta Coins</span>
           <span class="bt-sku__game">三角洲行动</span>
-          <span class="bt-sku__off">折扣: 40.0% OFF</span>
-          <span class="bt-sku__price">￥ 4.65<span class="bt-sku__was">￥ 7.89</span></span>
+          <span class="bt-sku__off">折扣: 44.0% OFF</span>
+          <span class="bt-sku__price">￥ 4.42<span class="bt-sku__was">￥ 7.89</span></span>
         </button>
-        <button type="button" class="bt-sku" data-price="23.24" data-was="38.41" data-label="300+20 Delta Coins" data-off="40.0">
+        <button type="button" class="bt-sku" data-price="22.08" data-was="38.41" data-label="300+20 Delta Coins" data-off="42.5">
           <span class="bt-sku__ribbon bt-sku__ribbon--hot">HOT</span>
           <span class="bt-sku__icon">🪙</span>
           <span class="bt-sku__name">300+20 Delta Coins</span>
           <span class="bt-sku__game">三角洲行动</span>
-          <span class="bt-sku__off">折扣: 40.0% OFF</span>
-          <span class="bt-sku__price">￥ 23.24<span class="bt-sku__was">￥ 38.41</span></span>
+          <span class="bt-sku__off">折扣: 42.5% OFF</span>
+          <span class="bt-sku__price">￥ 22.08<span class="bt-sku__was">￥ 38.41</span></span>
         </button>
-        <button type="button" class="bt-sku" data-price="33.70" data-was="55.09" data-label="420 + 40 Delta Coins" data-off="40.0">
+        <button type="button" class="bt-sku" data-price="32.02" data-was="55.09" data-label="420 + 40 Delta Coins" data-off="41.9">
           <span class="bt-sku__ribbon bt-sku__ribbon--hot">HOT</span>
           <span class="bt-sku__icon">🪙</span>
           <span class="bt-sku__name">420 + 40 Delta Coins</span>
           <span class="bt-sku__game">三角洲行动</span>
-          <span class="bt-sku__off">折扣: 40.0% OFF</span>
-          <span class="bt-sku__price">￥ 33.70<span class="bt-sku__was">￥ 55.09</span></span>
+          <span class="bt-sku__off">折扣: 41.9% OFF</span>
+          <span class="bt-sku__price">￥ 32.02<span class="bt-sku__was">￥ 55.09</span></span>
         </button>
-        <button type="button" class="bt-sku" data-price="46.55" data-was="75.94" data-label="680 + 70 Delta Coins" data-off="40.0">
+        <button type="button" class="bt-sku" data-price="44.22" data-was="75.94" data-label="680 + 70 Delta Coins" data-off="41.8">
           <span class="bt-sku__icon">🪙</span>
           <span class="bt-sku__name">680 + 70 Delta Coins</span>
           <span class="bt-sku__game">三角洲行动</span>
-          <span class="bt-sku__off">折扣: 40.0% OFF</span>
-          <span class="bt-sku__price">￥ 46.55<span class="bt-sku__was">￥ 75.94</span></span>
+          <span class="bt-sku__off">折扣: 41.8% OFF</span>
+          <span class="bt-sku__price">￥ 44.22<span class="bt-sku__was">￥ 75.94</span></span>
         </button>
-        <button type="button" class="bt-sku" data-price="93.02" data-was="150.38" data-label="1280 + 200 Delta Coins" data-off="40.0">
+        <button type="button" class="bt-sku" data-price="88.37" data-was="150.38" data-label="1280 + 200 Delta Coins" data-off="41.2">
           <span class="bt-sku__icon">🪙</span>
           <span class="bt-sku__name">1280 + 200 Delta Coins</span>
           <span class="bt-sku__game">三角洲行动</span>
-          <span class="bt-sku__off">折扣: 40.0% OFF</span>
-          <span class="bt-sku__price">￥ 93.02<span class="bt-sku__was">￥ 150.38</span></span>
+          <span class="bt-sku__off">折扣: 41.2% OFF</span>
+          <span class="bt-sku__price">￥ 88.37<span class="bt-sku__was">￥ 150.38</span></span>
         </button>
-        <button type="button" class="bt-sku bt-sku--extra" data-price="116.33" data-was="187.60" data-label="1680 + 300 Delta Coins" data-off="40.0">
+        <button type="button" class="bt-sku bt-sku--extra" data-price="110.51" data-was="187.60" data-label="1680 + 300 Delta Coins" data-off="41.1">
           <span class="bt-sku__icon">🪙</span>
           <span class="bt-sku__name">1680 + 300 Delta Coins</span>
           <span class="bt-sku__game">三角洲行动</span>
-          <span class="bt-sku__off">折扣: 40.0% OFF</span>
-          <span class="bt-sku__price">￥ 116.33<span class="bt-sku__was">￥ 187.60</span></span>
+          <span class="bt-sku__off">折扣: 41.1% OFF</span>
+          <span class="bt-sku__price">￥ 110.51<span class="bt-sku__was">￥ 187.60</span></span>
         </button>
-        <button type="button" class="bt-sku bt-sku--extra" data-price="232.66" data-was="376.68" data-label="3280 + 670 Delta Coins" data-off="40.0">
+        <button type="button" class="bt-sku bt-sku--extra" data-price="221.03" data-was="376.68" data-label="3280 + 670 Delta Coins" data-off="41.3">
           <span class="bt-sku__icon">🪙</span>
           <span class="bt-sku__name">3280 + 670 Delta Coins</span>
           <span class="bt-sku__game">三角洲行动</span>
-          <span class="bt-sku__off">折扣: 40.0% OFF</span>
-          <span class="bt-sku__price">￥ 232.66<span class="bt-sku__was">￥ 376.68</span></span>
+          <span class="bt-sku__off">折扣: 41.3% OFF</span>
+          <span class="bt-sku__price">￥ 221.03<span class="bt-sku__was">￥ 376.68</span></span>
         </button>
-        <button type="button" class="bt-sku bt-sku--extra" data-price="465.40" data-was="750.40" data-label="6480 + 1620 Delta Coins" data-off="40.0">
+        <button type="button" class="bt-sku bt-sku--extra" data-price="442.13" data-was="750.40" data-label="6480 + 1620 Delta Coins" data-off="41.1">
           <span class="bt-sku__icon">🪙</span>
           <span class="bt-sku__name">6480 + 1620 Delta Coins</span>
           <span class="bt-sku__game">三角洲行动</span>
-          <span class="bt-sku__off">折扣: 40.0% OFF</span>
-          <span class="bt-sku__price">￥ 465.40<span class="bt-sku__was">￥ 750.40</span></span>
+          <span class="bt-sku__off">折扣: 41.1% OFF</span>
+          <span class="bt-sku__price">￥ 442.13<span class="bt-sku__was">￥ 750.40</span></span>
         </button>
       </div>
       <button type="button" class="bt-more" id="bt-more">显示更多 +3</button>
@@ -118,14 +113,14 @@ hide:
       <input id="bt-player-id" class="bt-checkout__input" type="text" placeholder="Please enter Player ID" autocomplete="off">
       <div class="bt-checkout__total-row">
         <span class="bt-checkout__total-label">参考总计</span>
-        <span class="bt-checkout__total" id="bt-total">￥ 2.32</span>
+        <span class="bt-checkout__total" id="bt-total">￥ 2.20</span>
       </div>
-      <p class="bt-checkout__off" id="bt-off">折扣: 40.0% OFF</p>
+      <p class="bt-checkout__off" id="bt-off">折扣: 45.3% OFF</p>
             <button type="button" class="bt-checkout__buy bt-checkout__buy--chat" id="bt-buy" disabled>
         <svg class="bt-checkout__buy-ico" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" focusable="false"><path fill="currentColor" d="M12 3C6.5 3 2 6.58 2 11c0 2.39 1.33 4.54 3.41 5.96L4 21l4.55-1.52C9.66 19.82 10.81 20 12 20c5.5 0 10-3.58 10-8s-4.5-9-10-9m0 15c-.96 0-1.9-.16-2.78-.45l-.2-.07-2.34.78.77-2.24-.15-.23C5.86 14.53 5 12.84 5 11c0-3.31 3.13-6 7-6s7 2.69 7 6-3.13 6-7 6z"/></svg>
         <span>我要代充</span>
       </button>
-      <p class="bt-checkout__chat-hint">点击后打开在线客服聊天窗，确认最新报价与代充。</p>
+      <p class="bt-checkout__chat-hint">点击后打开在线客服聊天窗，确认最新报价和库存与代充。</p>
       <p class="bt-summary"><strong id="bt-summary-label">30 Delta Coins</strong> · 参考总计 · x1</p>
             <p class="bt-checkout__note">价格更新时间 2026-07-29 12:15 UTC。</p>
     </div>

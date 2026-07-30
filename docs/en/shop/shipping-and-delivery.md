@@ -5,10 +5,6 @@ description: AceBase Shop — digital delivery, timing, and exceptions
 
 # Delivery
 
-AceBase delivers **digitally / by intro**. Physical goods, if added later, will get packing and tracking notes here. Order via **live chat**.
-
----
-
 ## Delivery types
 
 | Type | We do | You provide |
@@ -18,14 +14,6 @@ AceBase delivers **digitally / by intro**. Physical goods, if added later, will 
 | **Consulting** | Product / order guidance | Budget and use case |
 
 ---
-
-## Timing
-
-| Scenario | Expectation |
-| --- | --- |
-| Direct top-up (business hours) | Processed soon after payment confirm |
-| Off hours | May wait until next business window |
-| Channel maintenance / peak | Support will ask to retry or reschedule |
 
 !!! note "Tracking"
     Digital orders have no courier number. Progress via **Crisp chat**; for issues attach payment proof and order keywords.
