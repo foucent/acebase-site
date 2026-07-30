@@ -1,15 +1,13 @@
 ---
 title: 反洗钱与反恐融资政策
-description: AceBase AML / CTF 政策摘要（Demo · 结构参考 BitTopup）
+description: AceBase AML / CTF 政策摘要（结构参考 BitTopup）
 ---
 
 # 反洗钱与反恐融资（AML / CTF）政策
 
-<p class="ab-meta">结构参考 [BitTopup AML Policy](https://bittopup.com/bittopup_anti_money.html) · AceBase Demo 摘要，非正式合规文本</p>
-
 ## 目的
 
-本摘要说明 AceBase（Demo）在提供数字充值 / 礼品相关服务时，对 **洗钱、恐怖融资及相关金融犯罪** 采取的基本立场与控制方向。
+本摘要说明 AceBase在提供数字充值 / 礼品相关服务时，对 **洗钱、恐怖融资及相关金融犯罪** 采取的基本立场与控制方向。
 
 ## 适用范围
 
@@ -21,7 +19,7 @@ description: AceBase AML / CTF 政策摘要（Demo · 结构参考 BitTopup）
 - 对可疑交易可要求补充说明、暂缓或拒绝服务  
 - 禁止将服务用于非法用途、制裁规避或明显异常资金流转  
 
-## 客户尽职调查（示意）
+## 客户尽职调查
 
 在必要时，我们可能要求：
 
@@ -32,15 +30,13 @@ description: AceBase AML / CTF 政策摘要（Demo · 结构参考 BitTopup）
 ## 监控与报告
 
 - 对异常下单模式保持关注（如拆单、异常面额组合等）  
-- 依法配合有权机关的合理要求（正式主体上线后适用）  
+- 依法配合有权机关的合理要求  
 
-## 禁止活动（示意）
+## 禁止活动
 
 不得将服务用于：欺诈、勒索、违禁品交易、制裁规避或其他违法行为。
 
 ## 联系
 
-合规相关问询：[联系我们](contact.md)
+合规相关问询：请使用站内 **在线咨询**
 
-!!! warning "Demo 免责"
-    本文为站点版式与流程演示摘要，**不构成正式 AML 制度或法律意见**。正式上线须由持牌/合规主体替换完整政策。

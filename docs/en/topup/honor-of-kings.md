@@ -1,6 +1,6 @@
 ---
-title: Honor of Kings Top-Up
-description: Honor of Kings Tokens (Global) — BitTopup layout demo
+title: Honor of Kings Proxy Top-Up
+description: Honor of Kings Tokens (Global) manual proxy top-up — latest quotes · live chat
 hide:
   - title
   - toc
@@ -11,7 +11,7 @@ hide:
 <div class="bt-shell">
 
 <nav class="bt-crumb" aria-label="Breadcrumb">
-  <a href="/en/">Home</a> / Honor of Kings
+  <a href="/en/">Home</a> / Honor of Kings Proxy Top-Up
 </nav>
 
 <section class="bt-hero">
@@ -19,25 +19,25 @@ hide:
     <img src="/assets/bittopup/honor-of-kings.webp" alt="Honor of Kings" width="200" height="200" loading="eager">
   </div>
   <div>
-    <h1 class="bt-hero__title">Honor of Kings Top-Up</h1>
+    <h1 class="bt-hero__title">Honor of Kings Proxy Top-Up</h1>
     <div class="bt-trust">
       <span class="bt-trust__label">Excellent</span>
       <span class="bt-trust__stars" aria-hidden="true">★★★★★</span>
       <span class="bt-trust__brand">Trustpilot</span>
     </div>
-    <div class="bt-badges">
+        <div class="bt-badges">
       <span class="bt-badge"><img src="/assets/bittopup/icon-region.webp" alt=""> GLOBAL</span>
-      <span class="bt-badge"><img src="/assets/bittopup/icon-fast.webp" alt=""> Fast delivery</span>
-      <span class="bt-badge"><img src="/assets/bittopup/icon-safe.webp" alt=""> Secure payment</span>
+      <span class="bt-badge"><img src="/assets/bittopup/icon-fast.webp" alt=""> Manual confirm</span>
+      <span class="bt-badge"><img src="/assets/bittopup/icon-safe.webp" alt=""> Multiple payments</span>
     </div>
-    <p class="bt-hero__promo">💡 Instant HOK Top Up — powered by Midasbuy for fast and easy recharges!</p>
+    <p class="bt-hero__promo">💡 Honor of Kings <strong>proxy top-up</strong> — pick a tier and UID, then tap “I want proxy top-up” to confirm the latest quote in live chat.</p>
   </div>
 </section>
 
 <div class="bt-main">
   <div class="bt-left">
     <div class="bt-panel">
-      <h2 class="bt-panel__title">Choose denomination</h2>
+      <h2 class="bt-panel__title">Latest quotes</h2>
       <div class="bt-skus" id="bt-sku-grid">
         <button type="button" class="bt-sku is-active" data-price="2.28" data-was="8.83" data-label="240 Tokens" data-off="70.0">
           <span class="bt-sku__ribbon bt-sku__ribbon--sale">SALE</span>
@@ -111,37 +111,41 @@ hide:
     </div>
   </div>
 
-  <aside class="bt-checkout">
+  <aside class="bt-checkout bt-checkout--chat">
     <div class="bt-panel">
-      <h2 class="bt-checkout__title">Top-up details</h2>
+      <h2 class="bt-checkout__title">Proxy top-up details</h2>
       <label class="bt-checkout__label" for="bt-player-id">Player ID (UID)</label>
       <input id="bt-player-id" class="bt-checkout__input" type="text" placeholder="Please enter Player ID" autocomplete="off">
       <div class="bt-checkout__total-row">
-        <span class="bt-checkout__total-label">Total</span>
+        <span class="bt-checkout__total-label">Reference total</span>
         <span class="bt-checkout__total" id="bt-total">US$ 2.28</span>
       </div>
       <p class="bt-checkout__off" id="bt-off">Save: 70.0% OFF</p>
-      <button type="button" class="bt-checkout__buy" id="bt-buy" disabled>Buy now</button>
-      <p class="bt-summary"><strong id="bt-summary-label">240 Tokens</strong> · Total · x1</p>
-      <p class="bt-checkout__note">Demo · Prices from <a href="https://bittopup.com/goods/Honor-of-Kings-Tokens-Global" rel="noopener noreferrer">BitTopup</a>（2026-07-29 · USD · Global）。Order:<a href="../shop/how-to-order.md">Crisp chat</a>。</p>
+            <button type="button" class="bt-checkout__buy bt-checkout__buy--chat" id="bt-buy" disabled>
+        <svg class="bt-checkout__buy-ico" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" focusable="false"><path fill="currentColor" d="M12 3C6.5 3 2 6.58 2 11c0 2.39 1.33 4.54 3.41 5.96L4 21l4.55-1.52C9.66 19.82 10.81 20 12 20c5.5 0 10-3.58 10-8s-4.5-9-10-9m0 15c-.96 0-1.9-.16-2.78-.45l-.2-.07-2.34.78.77-2.24-.15-.23C5.86 14.53 5 12.84 5 11c0-3.31 3.13-6 7-6s7 2.69 7 6-3.13 6-7 6z"/></svg>
+        <span>I want proxy top-up</span>
+      </button>
+      <p class="bt-checkout__chat-hint">Opens the live-chat window to confirm the latest quote and proxy top-up.</p>
+      <p class="bt-summary"><strong id="bt-summary-label">240 Tokens</strong> · Reference total · x1</p>
+            <p class="bt-checkout__note">Price updated 2026-07-29 12:15 UTC.</p>
     </div>
   </aside>
 </div>
 
 <section class="bt-desc">
-  <h2>如何充值 Honor of Kings Tokens？</h2>
+  <h2>How to proxy top-up Honor of Kings Tokens?</h2>
   <ol>
-    <li>Choose a token pack</li>
+    <li>Pick a tier under Latest quotes — prices are reference until support confirms</li>
     <li>Enter UID (Avatar → Settings → View UID)</li>
-    <li>Pay</li>
-    <li>Usually credited quickly</li>
+    <li>Tap “I want proxy top-up” to open live chat</li>
+    <li>Confirm quote &amp; pay — support completes the top-up</li>
   </ol>
 </section>
 
 <section class="bt-faq">
-  <h2>常见问题</h2>
-  <p><strong>How long?</strong><br>Usually a few minutes; contact support if delayed.</p>
-  <p><strong>Support hours?</strong><br>This demo page: Crisp chat.</p>
+  <h2>Proxy top-up FAQ</h2>
+  <p><strong>How long?</strong><br>Usually a few minutes after payment. Use the chat window if delayed.</p>
+  <p><strong>Support hours?</strong><br>Tap “I want proxy top-up” to open live chat.</p>
 </section>
 
 </div>
@@ -186,12 +190,14 @@ hide:
     if (buyBtn.disabled) return;
     var sku = activeSku();
     var label = sku ? sku.getAttribute("data-label") : "";
-    var msg = "Hi, I want Honor of Kings Tokens (Global) " + label + " · UID: " + playerId.value.trim();
-    if (window.$crisp) {
-      window.$crisp.push(["do", "chat:open"]);
+    var msg = "Hi, I want proxy top-up for Honor of Kings Tokens (Global) " + label + " · UID: " + playerId.value.trim();
+    if (typeof window.abOpenCrisp === "function") {
+      window.abOpenCrisp(msg);
+    } else if (window.$crisp) {
       window.$crisp.push(["set", "message:text", msg]);
+      window.$crisp.push(["do", "chat:open"]);
     } else {
-      window.location.href = "../shop/how-to-order/";
+      window.location.href = "/";
     }
   });
   if (moreBtn) {

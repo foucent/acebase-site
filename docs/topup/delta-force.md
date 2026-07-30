@@ -1,6 +1,6 @@
 ---
-title: 三角洲行动充值
-description: 三角洲行动三角币（Global）— BitTopup 布局 1:1 复刻
+title: 三角洲行动代充
+description: 三角洲行动三角币（Global）人工代充 — 最新报价 · 在线咨询
 hide:
   - title
   - toc
@@ -11,33 +11,33 @@ hide:
 <div class="bt-shell">
 
 <nav class="bt-crumb" aria-label="Breadcrumb">
-  <a href="/">首页</a> / 三角洲行动
+  <a href="/">首页</a> / 三角洲行动代充
 </nav>
 
 <section class="bt-hero">
   <div class="bt-hero__img">
-    <img src="/assets/bittopup/delta-force.webp" alt="三角洲行动" width="200" height="200" loading="eager">
+    <img src="/assets/bittopup/delta-force.webp" alt="三角洲行动代充" width="200" height="200" loading="eager">
   </div>
   <div>
-    <h1 class="bt-hero__title">三角洲行动充值</h1>
+    <h1 class="bt-hero__title">三角洲行动代充</h1>
     <div class="bt-trust">
       <span class="bt-trust__label">Excellent</span>
       <span class="bt-trust__stars" aria-hidden="true">★★★★★</span>
       <span class="bt-trust__brand">Trustpilot</span>
     </div>
-    <div class="bt-badges">
+        <div class="bt-badges">
       <span class="bt-badge"><img src="/assets/bittopup/icon-region.webp" alt=""> GLOBAL</span>
-      <span class="bt-badge"><img src="/assets/bittopup/icon-fast.webp" alt=""> 极速发货</span>
-      <span class="bt-badge"><img src="/assets/bittopup/icon-safe.webp" alt=""> 安全保障支付</span>
+      <span class="bt-badge"><img src="/assets/bittopup/icon-fast.webp" alt=""> 人工确认</span>
+      <span class="bt-badge"><img src="/assets/bittopup/icon-safe.webp" alt=""> 多种支付</span>
     </div>
-    <p class="bt-hero__promo">💡 三角洲行动充值 - 低价购买三角币，极速到账！</p>
+    <p class="bt-hero__promo">💡 三角洲行动 <strong>代充</strong> — 选好面额与 Player ID，点「我要代充」打开在线客服确认最新报价。</p>
   </div>
 </section>
 
 <div class="bt-main">
   <div class="bt-left">
     <div class="bt-panel">
-      <h2 class="bt-panel__title">选择面额</h2>
+      <h2 class="bt-panel__title">最新报价</h2>
       <div class="bt-skus" id="bt-sku-grid">
         <button type="button" class="bt-sku is-active" data-price="2.32" data-was="4.02" data-label="30 Delta Coins" data-off="40.0">
           <span class="bt-sku__ribbon bt-sku__ribbon--sale">SALE</span>
@@ -111,32 +111,36 @@ hide:
     </div>
   </div>
 
-  <aside class="bt-checkout">
+  <aside class="bt-checkout bt-checkout--chat">
     <div class="bt-panel">
-      <h2 class="bt-checkout__title">充值信息</h2>
+      <h2 class="bt-checkout__title">代充信息</h2>
       <label class="bt-checkout__label" for="bt-player-id">Player ID</label>
       <input id="bt-player-id" class="bt-checkout__input" type="text" placeholder="Please enter Player ID" autocomplete="off">
       <div class="bt-checkout__total-row">
-        <span class="bt-checkout__total-label">总计</span>
+        <span class="bt-checkout__total-label">参考总计</span>
         <span class="bt-checkout__total" id="bt-total">￥ 2.32</span>
       </div>
       <p class="bt-checkout__off" id="bt-off">折扣: 40.0% OFF</p>
-      <button type="button" class="bt-checkout__buy" id="bt-buy" disabled>立即购买</button>
-      <p class="bt-summary"><strong id="bt-summary-label">30 Delta Coins</strong> · 总计 · x1</p>
-      <p class="bt-checkout__note">Demo · 价格采集自 <a href="https://bittopup.com/zh/goods/delta-force" rel="noopener noreferrer">BitTopup</a>（2026-07-29 · CNY · Global）。下单：<a href="../shop/how-to-order.md">在线咨询</a>。</p>
+            <button type="button" class="bt-checkout__buy bt-checkout__buy--chat" id="bt-buy" disabled>
+        <svg class="bt-checkout__buy-ico" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" focusable="false"><path fill="currentColor" d="M12 3C6.5 3 2 6.58 2 11c0 2.39 1.33 4.54 3.41 5.96L4 21l4.55-1.52C9.66 19.82 10.81 20 12 20c5.5 0 10-3.58 10-8s-4.5-9-10-9m0 15c-.96 0-1.9-.16-2.78-.45l-.2-.07-2.34.78.77-2.24-.15-.23C5.86 14.53 5 12.84 5 11c0-3.31 3.13-6 7-6s7 2.69 7 6-3.13 6-7 6z"/></svg>
+        <span>我要代充</span>
+      </button>
+      <p class="bt-checkout__chat-hint">点击后打开在线客服聊天窗，确认最新报价与代充。</p>
+      <p class="bt-summary"><strong id="bt-summary-label">30 Delta Coins</strong> · 参考总计 · x1</p>
+            <p class="bt-checkout__note">价格更新时间 2026-07-29 12:15 UTC。</p>
     </div>
   </aside>
 </div>
 
 <section class="bt-desc">
-  <h2>三角洲行动 充值指南</h2>
+  <h2>三角洲行动代充指南</h2>
 
-  <h3>如何充值三角洲行动代币？</h3>
+  <h3>如何代充三角洲行动代币？</h3>
   <ol>
-    <li>选择三角币面额</li>
-    <li>输入您的玩家 ID（Player ID）</li>
-    <li>结账并选择支付方式</li>
-    <li>支付完成后，三角洲行动代币将很快到账</li>
+    <li>在「最新报价」中选面额 — 价格为参考，以客服确认为准</li>
+    <li>输入 Player ID</li>
+    <li>点击「我要代充」打开在线客服聊天窗</li>
+    <li>确认报价并付款后由客服代充到账</li>
   </ol>
 
   <h3>如何查找三角洲行动玩家 ID？</h3>
@@ -148,9 +152,9 @@ hide:
 </section>
 
 <section class="bt-faq">
-  <h2>三角洲行动 充值常见问题</h2>
-  <p><strong>订单完成需要多长时间？</strong><br>通常情况下，订单会在几分钟内完成。如有延迟，请联系客服。</p>
-  <p><strong>客服工作时间？</strong><br>BitTopup 客服提供 24/7 全天候服务（本 Demo 页请走 在线咨询）。</p>
+  <h2>三角洲行动 代充常见问题</h2>
+  <p><strong>订单完成需要多长时间？</strong><br>通常几分钟内完成代充。如有延迟，请在聊天窗联系客服。</p>
+  <p><strong>客服工作时间？</strong><br>请点击「我要代充」打开在线咨询。</p>
 </section>
 
 </div>
@@ -202,12 +206,14 @@ hide:
     var sku = activeSku();
     var label = sku ? sku.getAttribute("data-label") : "";
     var pid = playerId.value.trim();
-    var msg = "Hi, I want Delta Force (Global) " + label + " · Player ID: " + pid;
-    if (window.$crisp) {
-      window.$crisp.push(["do", "chat:open"]);
+    var msg = "你好，我要代充三角洲行动（Global）" + label + " · Player ID: " + pid;
+    if (typeof window.abOpenCrisp === "function") {
+      window.abOpenCrisp(msg);
+    } else if (window.$crisp) {
       window.$crisp.push(["set", "message:text", msg]);
+      window.$crisp.push(["do", "chat:open"]);
     } else {
-      window.location.href = "../shop/how-to-order/";
+      window.location.href = "/";
     }
   });
 

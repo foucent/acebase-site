@@ -2,8 +2,6 @@
 
 国际服电竞玩家入口（MkDocs Material）：下单 · 礼品卡 · 加速。
 
-当前为 **Demo 骨架站**（占位数据，非实时报价）。
-
 ## 本地预览
 
 ```powershell
@@ -21,10 +19,10 @@ cd c:\1Work\acebase.cc
 | 路径 | 说明 |
 | --- | --- |
 | `/` | Home（本周推荐） |
-| `/shop/how-to-order/` 等 | 下单 / 价格 / FAQ / 发货（「关于与政策」分组） |
-| `/topup/pubg-mobile-direct/` | PUBG Mobile UC 直充（Global） |
-| `/topup/pubg-gcoin/` 等 | BitTopup 风格商品页（G-COIN / 暗区 / 三角洲 / HOK / MLBB） |
-| `/figure-wall/` | 图片墙（手办 / 模型照片墙 Demo） |
+| `/shop/faq-and-updates/` 等 | FAQ / 发货与到账 / 关于与政策 |
+| `/topup/pubg-mobile-direct/` | PUBG Mobile UC 代充（Global） |
+| `/topup/pubg-gcoin/` 等 | 人工代充商品页（G-COIN / 暗区 / 三角洲 / HOK） |
+| `/gallery/` | 相册（手办 / 模型照片墙） |
 
 ## 部署
 

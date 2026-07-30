@@ -1,11 +1,11 @@
 ---
 title: Delivery
-description: AceBase Shop — digital delivery, timing, and exceptions (Demo)
+description: AceBase Shop — digital delivery, timing, and exceptions
 ---
 
 # Delivery
 
-AceBase delivers **digitally / by intro**. Physical goods, if added later, will get packing and tracking notes here. Order flow: [How to Order](how-to-order.md).
+AceBase delivers **digitally / by intro**. Physical goods, if added later, will get packing and tracking notes here. Order via **live chat**.
 
 ---
 
@@ -19,9 +19,9 @@ AceBase delivers **digitally / by intro**. Physical goods, if added later, will 
 
 ---
 
-## Timing (illustrative)
+## Timing
 
-| Scenario | Demo expectation |
+| Scenario | Expectation |
 | --- | --- |
 | Direct top-up (business hours) | Processed soon after payment confirm |
 | Off hours | May wait until next business window |

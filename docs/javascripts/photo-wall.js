@@ -151,7 +151,7 @@
       img.alt = title;
       cap.textContent =
         gallery.length > 1
-          ? title + " · " + (idx + 1) + " / " + gallery.length
+          ? (title ? title + " · " : "") + (idx + 1) + " / " + gallery.length
           : title;
       armBuyCta();
     }

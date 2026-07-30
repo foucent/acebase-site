@@ -74,6 +74,55 @@ body {
   background: var(--bt-panel);
 }
 
+/* Sidebar top: Home replaces AceBase site_name (same slot / size) */
+.md-nav--primary > .md-nav__title.md-nav__title--home {
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  height: auto !important;
+  min-height: 2.4rem;
+  padding: 0.35rem 0.5rem !important;
+  line-height: 1.5 !important;
+  cursor: default;
+}
+
+.md-nav--primary > .md-nav__title.md-nav__title--home .md-nav__home {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+  width: 100%;
+  min-height: 2.05rem;
+  padding: 0.35rem 0.65rem;
+  border-radius: 0.35rem;
+  color: var(--mg-ink-muted);
+  font-weight: 700;
+  font-size: 0.8rem;
+  line-height: 1.5;
+  text-decoration: none;
+}
+
+.md-nav--primary > .md-nav__title.md-nav__title--home .md-nav__home:hover {
+  color: var(--mg-ink);
+}
+
+.md-nav--primary > .md-nav__title.md-nav__title--home.is-active .md-nav__home,
+.md-nav--primary > .md-nav__title.md-nav__title--home .md-nav__home:focus-visible {
+  color: #c4b5fd;
+  font-weight: 700;
+  background-color: var(--mg-nav-active-bg);
+}
+
+.md-nav--primary > .md-nav__title.md-nav__title--home .md-nav__home-icon {
+  flex: 0 0 auto;
+  width: 1.1rem;
+  height: 1.1rem;
+  fill: currentColor;
+}
+
+.md-nav--primary > .md-nav__title.md-nav__title--home .md-logo {
+  display: none !important;
+}
+
 .md-nav--primary .md-nav__link {
   color: var(--mg-ink-muted);
   font-weight: 500;
@@ -719,10 +768,11 @@ body {
 
 /*
  * Keep left site nav identical on every page.
- * Material nests the page TOC under the active nav item; that makes
- * Pricing vs FAQ look like different menus. TOC stays in the right sidebar.
+ * Material nests the page TOC under the active leaf nav item; hide that
+ * TOC toggle/label so Pricing vs FAQ don't look like different menus.
+ * Do NOT hide section headers (e.g. 关于与政策) when that section is active.
  */
-.md-sidebar--primary .md-nav--primary > .md-nav__list > .md-nav__item--active > label.md-nav__link {
+.md-sidebar--primary .md-nav--primary > .md-nav__list > .md-nav__item--active:not(.md-nav__item--section) > label.md-nav__link {
   display: none;
 }
 

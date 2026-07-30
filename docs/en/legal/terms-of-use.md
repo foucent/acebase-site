@@ -1,17 +1,15 @@
 ---
 title: Terms of Use
-description: AceBase Terms of Use summary (Demo · BitTopup-aligned structure)
+description: AceBase Terms of Use summary (BitTopup-aligned structure)
 ---
 
 # Terms of Use
 
-<p class="ab-meta">Structure inspired by [BitTopup Terms of Use](https://bittopup.com/service.html) · AceBase Demo summary</p>
-
-**Effective note**: Demo terms may change at any time; continued use means you accept the latest version. A full legal text will replace this before production.
+**Effective note**: These terms may change at any time; continued use means you accept the latest version.
 
 ## 1. Services
 
-AceBase provides top-up references and order guidance. **Demo prices are not offers**; final price, delivery, and refunds follow support confirmation and related policies.
+AceBase provides top-up references and order guidance. **Listed prices are not offers**; final price, delivery, and refunds follow support confirmation and related policies.
 
 ## 2. Eligibility
 
@@ -33,9 +31,9 @@ You must be of legal age to contract in your jurisdiction. Minors need guardian 
 
 No money laundering / sanctions evasion, IP infringement, malware, harassment, or other illegal use. See [AML policy](aml-policy.md).
 
-## 6. Disclaimer (illustrative)
+## 6. Disclaimer
 
-To the extent allowed by law, Demo content is provided “as is”; no warranty for indirect or consequential loss. Channel maintenance and network failures may cause delay.
+To the extent allowed by law, site content is provided “as is”; no warranty for indirect or consequential loss. Channel maintenance and network failures may cause delay.
 
 ## 7. Intellectual property
 
@@ -43,7 +41,5 @@ Site copy, layout, and assets belong to AceBase and related rights holders. Do n
 
 ## 8. Contact
 
-Questions: [Contact](contact.md) · [Support](support.md)
+Questions: use **live chat**
 
-!!! warning "Demo"
-    Condensed demo only — not a full Terms of Use. Have counsel review a complete version before production.

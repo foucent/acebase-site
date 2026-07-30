@@ -1,6 +1,6 @@
 ---
-title: Delta Force Top-Up
-description: Delta Force Delta Coins (Global) — BitTopup layout demo
+title: Delta Force Proxy Top-Up
+description: Delta Force Delta Coins (Global) manual proxy top-up — latest quotes · live chat
 hide:
   - title
   - toc
@@ -11,33 +11,33 @@ hide:
 <div class="bt-shell">
 
 <nav class="bt-crumb" aria-label="Breadcrumb">
-  <a href="/en/">Home</a> / Delta Force
+  <a href="/en/">Home</a> / Delta Force Proxy Top-Up
 </nav>
 
 <section class="bt-hero">
   <div class="bt-hero__img">
-    <img src="/assets/bittopup/delta-force.webp" alt="Delta Force" width="200" height="200" loading="eager">
+    <img src="/assets/bittopup/delta-force.webp" alt="Delta Force proxy top-up" width="200" height="200" loading="eager">
   </div>
   <div>
-    <h1 class="bt-hero__title">Delta Force Top-Up</h1>
+    <h1 class="bt-hero__title">Delta Force Proxy Top-Up</h1>
     <div class="bt-trust">
       <span class="bt-trust__label">Excellent</span>
       <span class="bt-trust__stars" aria-hidden="true">★★★★★</span>
       <span class="bt-trust__brand">Trustpilot</span>
     </div>
-    <div class="bt-badges">
+        <div class="bt-badges">
       <span class="bt-badge"><img src="/assets/bittopup/icon-region.webp" alt=""> GLOBAL</span>
-      <span class="bt-badge"><img src="/assets/bittopup/icon-fast.webp" alt=""> Fast delivery</span>
-      <span class="bt-badge"><img src="/assets/bittopup/icon-safe.webp" alt=""> Secure payment</span>
+      <span class="bt-badge"><img src="/assets/bittopup/icon-fast.webp" alt=""> Manual confirm</span>
+      <span class="bt-badge"><img src="/assets/bittopup/icon-safe.webp" alt=""> Multiple payments</span>
     </div>
-    <p class="bt-hero__promo">💡 Top up Delta Force — buy Delta Coins cheap, delivered fast.</p>
+    <p class="bt-hero__promo">💡 Delta Force <strong>proxy top-up</strong> — pick a tier and Player ID, then tap “I want proxy top-up” to confirm the latest quote in live chat.</p>
   </div>
 </section>
 
 <div class="bt-main">
   <div class="bt-left">
     <div class="bt-panel">
-      <h2 class="bt-panel__title">Choose denomination</h2>
+      <h2 class="bt-panel__title">Latest quotes</h2>
       <div class="bt-skus" id="bt-sku-grid">
         <button type="button" class="bt-sku is-active" data-price="2.32" data-was="4.02" data-label="30 Delta Coins" data-off="40.0">
           <span class="bt-sku__ribbon bt-sku__ribbon--sale">SALE</span>
@@ -111,32 +111,36 @@ hide:
     </div>
   </div>
 
-  <aside class="bt-checkout">
+  <aside class="bt-checkout bt-checkout--chat">
     <div class="bt-panel">
-      <h2 class="bt-checkout__title">Top-up details</h2>
+      <h2 class="bt-checkout__title">Proxy top-up details</h2>
       <label class="bt-checkout__label" for="bt-player-id">Player ID</label>
       <input id="bt-player-id" class="bt-checkout__input" type="text" placeholder="Please enter Player ID" autocomplete="off">
       <div class="bt-checkout__total-row">
-        <span class="bt-checkout__total-label">Total</span>
+        <span class="bt-checkout__total-label">Reference total</span>
         <span class="bt-checkout__total" id="bt-total">￥ 2.32</span>
       </div>
       <p class="bt-checkout__off" id="bt-off">Save: 40.0% OFF</p>
-      <button type="button" class="bt-checkout__buy" id="bt-buy" disabled>Buy now</button>
-      <p class="bt-summary"><strong id="bt-summary-label">30 Delta Coins</strong> · Total · x1</p>
-      <p class="bt-checkout__note">Demo · Prices from <a href="https://bittopup.com/zh/goods/delta-force" rel="noopener noreferrer">BitTopup</a> (2026-07-29 · CNY · Global). Order: <a href="../shop/how-to-order.md">Crisp chat</a>.</p>
+            <button type="button" class="bt-checkout__buy bt-checkout__buy--chat" id="bt-buy" disabled>
+        <svg class="bt-checkout__buy-ico" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" focusable="false"><path fill="currentColor" d="M12 3C6.5 3 2 6.58 2 11c0 2.39 1.33 4.54 3.41 5.96L4 21l4.55-1.52C9.66 19.82 10.81 20 12 20c5.5 0 10-3.58 10-8s-4.5-9-10-9m0 15c-.96 0-1.9-.16-2.78-.45l-.2-.07-2.34.78.77-2.24-.15-.23C5.86 14.53 5 12.84 5 11c0-3.31 3.13-6 7-6s7 2.69 7 6-3.13 6-7 6z"/></svg>
+        <span>I want proxy top-up</span>
+      </button>
+      <p class="bt-checkout__chat-hint">Opens the live-chat window to confirm the latest quote and proxy top-up.</p>
+      <p class="bt-summary"><strong id="bt-summary-label">30 Delta Coins</strong> · Reference total · x1</p>
+            <p class="bt-checkout__note">Price updated 2026-07-29 12:15 UTC.</p>
     </div>
   </aside>
 </div>
 
 <section class="bt-desc">
-  <h2>Delta Force top-up guide</h2>
+  <h2>Delta Force proxy top-up guide</h2>
 
-  <h3>How to top up Delta Force coins?</h3>
+  <h3>How to proxy top-up Delta Force coins?</h3>
   <ol>
-    <li>Choose a Delta Coins denomination</li>
+    <li>Pick a tier under Latest quotes — prices are reference until support confirms</li>
     <li>Enter your Player ID</li>
-    <li>Checkout and pick a payment method</li>
-    <li>After payment, coins are credited shortly</li>
+    <li>Tap “I want proxy top-up” to open live chat</li>
+    <li>Confirm quote &amp; pay — support completes the top-up</li>
   </ol>
 
   <h3>How to find your Delta Force Player ID?</h3>
@@ -148,9 +152,9 @@ hide:
 </section>
 
 <section class="bt-faq">
-  <h2>Delta Force top-up FAQ</h2>
-  <p><strong>How long does an order take?</strong><br>Usually a few minutes. Contact support if delayed.</p>
-  <p><strong>Support hours?</strong><br>BitTopup offers 24/7 support (this demo page: Crisp chat).</p>
+  <h2>Delta Force proxy top-up FAQ</h2>
+  <p><strong>How long does an order take?</strong><br>Usually a few minutes after payment. Use the chat window if delayed.</p>
+  <p><strong>Support hours?</strong><br>Tap “I want proxy top-up” to open live chat.</p>
 </section>
 
 </div>
@@ -202,12 +206,14 @@ hide:
     var sku = activeSku();
     var label = sku ? sku.getAttribute("data-label") : "";
     var pid = playerId.value.trim();
-    var msg = "Hi, I want Delta Force (Global) " + label + " · Player ID: " + pid;
-    if (window.$crisp) {
-      window.$crisp.push(["do", "chat:open"]);
+    var msg = "Hi, I want proxy top-up for Delta Force (Global) " + label + " · Player ID: " + pid;
+    if (typeof window.abOpenCrisp === "function") {
+      window.abOpenCrisp(msg);
+    } else if (window.$crisp) {
       window.$crisp.push(["set", "message:text", msg]);
+      window.$crisp.push(["do", "chat:open"]);
     } else {
-      window.location.href = "../shop/how-to-order/";
+      window.location.href = "/";
     }
   });
 

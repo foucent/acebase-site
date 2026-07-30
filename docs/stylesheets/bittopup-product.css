@@ -464,6 +464,40 @@
   cursor: not-allowed;
 }
 
+/* Crisp-blue chat CTA (proxy top-up pages) */
+.md-typeset .bt-checkout--chat .bt-panel {
+  border-color: rgba(25, 114, 245, 0.35);
+  box-shadow: 0 8px 28px rgba(25, 114, 245, 0.12);
+}
+
+.md-typeset .bt-checkout__buy--chat {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.55rem;
+  background: #1972f5;
+  border-radius: 999px;
+  box-shadow: 0 4px 14px rgba(25, 114, 245, 0.35);
+}
+
+.md-typeset .bt-checkout__buy--chat:hover:not(:disabled) {
+  background: #0b5ed7;
+}
+
+.md-typeset .bt-checkout__buy-ico {
+  flex: 0 0 auto;
+  display: block;
+}
+
+.md-typeset .bt-checkout__chat-hint {
+  margin: 0.55rem 0 0;
+  color: #93c5fd;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 1.4;
+  text-align: center;
+}
+
 .md-typeset .bt-checkout__note {
   margin: 0.75rem 0 0;
   color: var(--bt-muted);

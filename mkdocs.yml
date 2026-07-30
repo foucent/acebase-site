@@ -38,23 +38,16 @@ plugins:
             language: en
           nav_translations:
             home: Home
-            如何下单: How to Order
-            价格与货源: Pricing & Sourcing
             FAQ 与更新: FAQ & Updates
             发货与到账: Delivery
-            PUBG Mobile 直充: PUBG Mobile Top-Up
-            PUBG G-COIN CDK: PUBG G-COIN CDK
-            暗区突围点券: Arena Breakout Bonds
-            三角洲行动充值: Delta Force Top-Up
-            王者荣耀国际服充值: Honor of Kings Top-Up
-            MLBB 钻石充值: MLBB Diamonds
-            图片墙: Photo Wall
+            PUBG Mobile UC 代充: PUBG Mobile UC Proxy Top-Up
+            PUBG G-COIN CDK 代充: PUBG G-COIN CDK Proxy Top-Up
+            暗区突围点券代充: Arena Breakout Proxy Top-Up
+            三角洲行动代充: Delta Force Proxy Top-Up
+            王者荣耀国际服代充: Honor of Kings Proxy Top-Up
+            相册: Gallery
             关于与政策: About & Policies
-            关于我们: About Us
-            联系我们: Contact Us
-            支持: Support
             退款与退货: Return Policy
-            发货政策: Shipping Policy
             反洗钱与反恐融资: AML / CTF Policy
             服务条款: Terms of Use
 
@@ -100,22 +93,15 @@ extra:
 
 nav:
   - home: index.md
-  - PUBG Mobile 直充: topup/pubg-mobile-direct.md
-  - PUBG G-COIN CDK: topup/pubg-gcoin.md
-  - 暗区突围点券: topup/arena-breakout-bonds.md
-  - 三角洲行动充值: topup/delta-force.md
-  - 王者荣耀国际服充值: topup/honor-of-kings.md
-  - MLBB 钻石充值: topup/mlbb-diamonds.md
-  - 图片墙: figure-wall.md
+  - PUBG Mobile UC 代充: topup/pubg-mobile-direct.md
+  - PUBG G-COIN CDK 代充: topup/pubg-gcoin.md
+  - 暗区突围点券代充: topup/arena-breakout-bonds.md
+  - 三角洲行动代充: topup/delta-force.md
+  - 王者荣耀国际服代充: topup/honor-of-kings.md
+  - 相册: gallery.md
   - 关于与政策:
-      - 如何下单: shop/how-to-order.md
-      - 价格与货源: shop/pricing-and-sourcing.md
       - FAQ 与更新: shop/faq-and-updates.md
       - 发货与到账: shop/shipping-and-delivery.md
-      - 关于我们: legal/about.md
-      - 联系我们: legal/contact.md
-      - 支持: legal/support.md
       - 退款与退货: legal/return-policy.md
-      - 发货政策: legal/shipping-policy.md
       - 反洗钱与反恐融资: legal/aml-policy.md
       - 服务条款: legal/terms-of-use.md
