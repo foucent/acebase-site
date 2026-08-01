@@ -358,7 +358,7 @@
 .mg-float-stack {
   position: fixed;
   right: 1rem;
-  bottom: 1rem;
+  bottom: 4.75rem;
   z-index: 80;
   display: flex;
   flex-direction: column;
@@ -719,7 +719,7 @@ body.mg-lightbox-open {
 @media (max-width: 700px) {
   .mg-float-stack {
     right: 0.75rem;
-    bottom: 0.75rem;
+    bottom: 4.5rem;
   }
 }
 
