@@ -23,6 +23,9 @@ hide:
       <img class="mg-hero-slides__img" src="/assets/figures/18_2b9f2aad6e/img_01.jpg" alt="" width="1200" height="900" decoding="async" loading="lazy">
       <img class="mg-hero-slides__img" src="/assets/figures/19_e576641c9b/img_01.jpg" alt="" width="1200" height="900" decoding="async" loading="lazy">
       <img class="mg-hero-slides__img" src="/assets/figures/20_3eeb66d68d/img_01.jpg" alt="" width="1200" height="900" decoding="async" loading="lazy">
+
+      <img class="mg-hero-slides__img" src="/assets/figures/21_e070503d/img_01.jpg" alt="" width="1200" height="900" decoding="async" loading="lazy">
+      <img class="mg-hero-slides__img" src="/assets/figures/22_a078b4e2/img_01.jpg" alt="" width="1200" height="900" decoding="async" loading="lazy">
     </div>
     <div class="mg-home-hero__inner">
       <p class="mg-home-hero__brand">AceBase</p>
@@ -45,7 +48,7 @@ hide:
 
 </div>
 
-## 图集列表 <span class="mg-list-meta">Updated 30 Jul 2026</span>
+## 图集列表 <span class="mg-list-meta">Updated 01 Aug 2026</span>
 
 <div class="sc-wall" id="sc-wall" markdown="0">
   <a class="sc-wall__tile sc-wall__tile--sm" href="/assets/figures/06_ced1ce6bec/img_01.jpg" data-gallery="[&quot;/assets/figures/06_ced1ce6bec/img_01.jpg&quot;, &quot;/assets/figures/06_ced1ce6bec/img_02.jpg&quot;, &quot;/assets/figures/06_ced1ce6bec/img_03.jpg&quot;, &quot;/assets/figures/06_ced1ce6bec/img_04.jpg&quot;]" data-buy="#"><img src="/assets/figures/06_ced1ce6bec/img_01.jpg" alt="" loading="lazy"><span class="sc-wall__count">4</span></a>
@@ -59,5 +62,7 @@ hide:
   <a class="sc-wall__tile sc-wall__tile--lg" href="/assets/figures/18_2b9f2aad6e/img_01.jpg" data-gallery="[&quot;/assets/figures/18_2b9f2aad6e/img_01.jpg&quot;, &quot;/assets/figures/18_2b9f2aad6e/img_02.jpg&quot;, &quot;/assets/figures/18_2b9f2aad6e/img_03.jpg&quot;]" data-buy="#"><img src="/assets/figures/18_2b9f2aad6e/img_01.jpg" alt="" loading="lazy"><span class="sc-wall__count">3</span></a>
   <a class="sc-wall__tile sc-wall__tile--sm" href="/assets/figures/19_e576641c9b/img_01.jpg" data-gallery="[&quot;/assets/figures/19_e576641c9b/img_01.jpg&quot;, &quot;/assets/figures/19_e576641c9b/img_02.jpg&quot;, &quot;/assets/figures/19_e576641c9b/img_03.jpg&quot;]" data-buy="#"><img src="/assets/figures/19_e576641c9b/img_01.jpg" alt="" loading="lazy"><span class="sc-wall__count">3</span></a>
   <a class="sc-wall__tile sc-wall__tile--md" href="/assets/figures/20_3eeb66d68d/img_01.jpg" data-gallery="[&quot;/assets/figures/20_3eeb66d68d/img_01.jpg&quot;, &quot;/assets/figures/20_3eeb66d68d/img_02.jpg&quot;, &quot;/assets/figures/20_3eeb66d68d/img_03.jpg&quot;, &quot;/assets/figures/20_3eeb66d68d/img_04.jpg&quot;]" data-buy="#"><img src="/assets/figures/20_3eeb66d68d/img_01.jpg" alt="" loading="lazy"><span class="sc-wall__count">4</span></a>
+  <a class="sc-wall__tile sc-wall__tile--lg" href="/assets/figures/21_e070503d/img_01.jpg" data-gallery="[&quot;/assets/figures/21_e070503d/img_01.jpg&quot;, &quot;/assets/figures/21_e070503d/img_02.jpg&quot;, &quot;/assets/figures/21_e070503d/img_03.jpg&quot;, &quot;/assets/figures/21_e070503d/img_04.jpg&quot;, &quot;/assets/figures/21_e070503d/img_05.jpg&quot;, &quot;/assets/figures/21_e070503d/img_06.jpg&quot;, &quot;/assets/figures/21_e070503d/img_07.jpg&quot;]" data-buy="#"><img src="/assets/figures/21_e070503d/img_01.jpg" alt="" loading="lazy"><span class="sc-wall__count">7</span></a>
+  <a class="sc-wall__tile sc-wall__tile--sm" href="/assets/figures/22_a078b4e2/img_01.jpg" data-gallery="[&quot;/assets/figures/22_a078b4e2/img_01.jpg&quot;, &quot;/assets/figures/22_a078b4e2/img_02.jpg&quot;, &quot;/assets/figures/22_a078b4e2/img_03.jpg&quot;, &quot;/assets/figures/22_a078b4e2/img_04.jpg&quot;, &quot;/assets/figures/22_a078b4e2/img_05.jpg&quot;, &quot;/assets/figures/22_a078b4e2/img_06.jpg&quot;, &quot;/assets/figures/22_a078b4e2/img_07.jpg&quot;, &quot;/assets/figures/22_a078b4e2/img_08.jpg&quot;, &quot;/assets/figures/22_a078b4e2/img_09.jpg&quot;]" data-buy="#"><img src="/assets/figures/22_a078b4e2/img_01.jpg" alt="" loading="lazy"><span class="sc-wall__count">9</span></a>
 </div>
 
