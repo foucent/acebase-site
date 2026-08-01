@@ -45,6 +45,7 @@ plugins:
             暗区突围点券代充: Arena Breakout Proxy Top-Up
             三角洲行动代充: Delta Force Proxy Top-Up
             王者荣耀国际服代充: Honor of Kings Proxy Top-Up
+            桌游: Board Games
             相册: Gallery
             关于与政策: About & Policies
             退款与退货: Return Policy
@@ -72,12 +73,16 @@ extra_css:
   - stylesheets/preowned.css
   - stylesheets/photo-wall.css
   - stylesheets/home.css
+  - stylesheets/board-games.css
 
 extra_javascript:
   - javascripts/currency.js
   - javascripts/crisp.js
   - javascripts/hero-slides.js
   - javascripts/photo-wall.js
+  - javascripts/gallery-lightbox.js
+  - javascripts/board-cart.js
+  - javascripts/board-grid.js
 
 watch:
   - overrides
@@ -98,6 +103,7 @@ nav:
   - 暗区突围点券代充: topup/arena-breakout-bonds.md
   - 三角洲行动代充: topup/delta-force.md
   - 王者荣耀国际服代充: topup/honor-of-kings.md
+  - 桌游: board-games.md
   - 相册: gallery.md
   - 关于与政策:
       - FAQ 与更新: shop/faq-and-updates.md

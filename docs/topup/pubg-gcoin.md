@@ -6,7 +6,7 @@ hide:
   - toc
 ---
 
-<div class="bt-product" data-currency-base="CNY" markdown="0">
+<div class="bt-product" data-currency-base="USD" markdown="0">
 
 <div class="bt-shell">
 
@@ -34,44 +34,44 @@ hide:
     <div class="bt-panel">
       <h2 class="bt-panel__title">最新报价</h2>
       <div class="bt-skus" id="bt-sku-grid">
-        <button type="button" class="bt-sku is-active" data-price="22.55" data-was="48.04" data-label="510 G-COIN" data-off="53.1">
+        <button type="button" class="bt-sku is-active" data-price="3.11" data-was="6.63" data-label="510 G-COIN" data-off="53.1">
           <span class="bt-sku__ribbon bt-sku__ribbon--sale">SALE</span>
           <span class="bt-sku__icon">🪙</span>
           <span class="bt-sku__name">510 G-COIN</span>
           <span class="bt-sku__game">PUBG G-COIN CDK</span>
           <span class="bt-sku__off">折扣: 53.1% OFF</span>
-          <span class="bt-sku__price">￥ 22.55<span class="bt-sku__was">￥ 48.04</span></span>
+          <span class="bt-sku__price">US$ 3.11<span class="bt-sku__was">US$ 6.63</span></span>
         </button>
-        <button type="button" class="bt-sku" data-price="45.17" data-was="96.08" data-label="1050 G-COIN" data-off="53.0">
+        <button type="button" class="bt-sku" data-price="6.23" data-was="13.25" data-label="1050 G-COIN" data-off="53.0">
           <span class="bt-sku__ribbon bt-sku__ribbon--hot">HOT</span>
           <span class="bt-sku__icon">🪙</span>
           <span class="bt-sku__name">1050 G-COIN</span>
           <span class="bt-sku__game">PUBG G-COIN CDK</span>
           <span class="bt-sku__off">折扣: 53.0% OFF</span>
-          <span class="bt-sku__price">￥ 45.17<span class="bt-sku__was">￥ 96.08</span></span>
+          <span class="bt-sku__price">US$ 6.23<span class="bt-sku__was">US$ 13.25</span></span>
         </button>
-        <button type="button" class="bt-sku" data-price="112.90" data-was="240.22" data-label="2700 G-COIN" data-off="53.0">
+        <button type="button" class="bt-sku" data-price="15.57" data-was="33.13" data-label="2700 G-COIN" data-off="53.0">
           <span class="bt-sku__ribbon bt-sku__ribbon--hot">HOT</span>
           <span class="bt-sku__icon">🪙</span>
           <span class="bt-sku__name">2700 G-COIN</span>
           <span class="bt-sku__game">PUBG G-COIN CDK</span>
           <span class="bt-sku__off">折扣: 53.0% OFF</span>
-          <span class="bt-sku__price">￥ 112.90<span class="bt-sku__was">￥ 240.22</span></span>
+          <span class="bt-sku__price">US$ 15.57<span class="bt-sku__was">US$ 33.13</span></span>
         </button>
-        <button type="button" class="bt-sku" data-price="225.76" data-was="480.44" data-label="5500 G-COIN" data-off="53.0">
+        <button type="button" class="bt-sku" data-price="31.14" data-was="66.27" data-label="5500 G-COIN" data-off="53.0">
           <span class="bt-sku__ribbon bt-sku__ribbon--hot">HOT</span>
           <span class="bt-sku__icon">🪙</span>
           <span class="bt-sku__name">5500 G-COIN</span>
           <span class="bt-sku__game">PUBG G-COIN CDK</span>
           <span class="bt-sku__off">折扣: 53.0% OFF</span>
-          <span class="bt-sku__price">￥ 225.76<span class="bt-sku__was">￥ 480.44</span></span>
+          <span class="bt-sku__price">US$ 31.14<span class="bt-sku__was">US$ 66.27</span></span>
         </button>
-        <button type="button" class="bt-sku" data-price="451.56" data-was="960.87" data-label="11200 G-COIN" data-off="53.0">
+        <button type="button" class="bt-sku" data-price="62.28" data-was="132.53" data-label="11200 G-COIN" data-off="53.0">
           <span class="bt-sku__icon">🪙</span>
           <span class="bt-sku__name">11200 G-COIN</span>
           <span class="bt-sku__game">PUBG G-COIN CDK</span>
           <span class="bt-sku__off">折扣: 53.0% OFF</span>
-          <span class="bt-sku__price">￥ 451.56<span class="bt-sku__was">￥ 960.87</span></span>
+          <span class="bt-sku__price">US$ 62.28<span class="bt-sku__was">US$ 132.53</span></span>
         </button>
       </div>
     </div>
@@ -84,7 +84,7 @@ hide:
       <input id="bt-email" class="bt-checkout__input" type="email" placeholder="用于接收 CDK 激活码" autocomplete="email">
       <div class="bt-checkout__total-row">
         <span class="bt-checkout__total-label">参考总计</span>
-        <span class="bt-checkout__total" id="bt-total">￥ 22.55</span>
+        <span class="bt-checkout__total" id="bt-total">US$ 3.11</span>
       </div>
       <p class="bt-checkout__off" id="bt-off">折扣: 53.1% OFF</p>
             <button type="button" class="bt-checkout__buy bt-checkout__buy--chat" id="bt-buy" disabled>
@@ -158,8 +158,8 @@ hide:
     var off = sku.getAttribute("data-off");
     var label = sku.getAttribute("data-label");
     totalEl.textContent = window.AceBaseCurrency
-      ? AceBaseCurrency.formatFromBase(parseFloat(price), "CNY")
-      : "￥ " + price;
+      ? AceBaseCurrency.formatFromBase(parseFloat(price), "USD")
+      : "US$ " + price;
     offEl.textContent = "折扣: " + off + "% OFF";
     summaryLabel.textContent = label;
     buyBtn.disabled = !emailEl.value.trim();

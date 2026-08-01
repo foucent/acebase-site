@@ -6,7 +6,7 @@ hide:
   - toc
 ---
 
-<div class="bt-product" data-currency-base="CNY" markdown="0">
+<div class="bt-product" data-currency-base="USD" markdown="0">
 
 <div class="bt-shell">
 
@@ -34,72 +34,72 @@ hide:
     <div class="bt-panel">
       <h2 class="bt-panel__title">Latest quotes</h2>
       <div class="bt-skus" id="bt-sku-grid">
-        <button type="button" class="bt-sku is-active" data-price="1.98" data-was="3.62" data-label="30 Delta Coins" data-off="45.3">
+        <button type="button" class="bt-sku is-active" data-price="0.27" data-was="0.50" data-label="30 Delta Coins" data-off="45.3">
           <span class="bt-sku__ribbon bt-sku__ribbon--sale">SALE</span>
           <span class="bt-sku__icon">🪙</span>
           <span class="bt-sku__name">30 Delta Coins</span>
           <span class="bt-sku__game">Delta Force</span>
           <span class="bt-sku__off">Save: 40.0% OFF</span>
-          <span class="bt-sku__price">￥ 1.98<span class="bt-sku__was">￥ 3.62</span></span>
+          <span class="bt-sku__price">US$ 0.27<span class="bt-sku__was">US$ 0.50</span></span>
         </button>
-        <button type="button" class="bt-sku" data-price="3.98" data-was="7.10" data-label="60 Delta Coins" data-off="44.0">
+        <button type="button" class="bt-sku" data-price="0.55" data-was="0.98" data-label="60 Delta Coins" data-off="44.0">
           <span class="bt-sku__ribbon bt-sku__ribbon--hot">HOT</span>
           <span class="bt-sku__icon">🪙</span>
           <span class="bt-sku__name">60 Delta Coins</span>
           <span class="bt-sku__game">Delta Force</span>
           <span class="bt-sku__off">Save: 40.0% OFF</span>
-          <span class="bt-sku__price">￥ 3.98<span class="bt-sku__was">￥ 7.10</span></span>
+          <span class="bt-sku__price">US$ 0.55<span class="bt-sku__was">US$ 0.98</span></span>
         </button>
-        <button type="button" class="bt-sku" data-price="19.87" data-was="34.57" data-label="300+20 Delta Coins" data-off="42.5">
+        <button type="button" class="bt-sku" data-price="2.74" data-was="4.77" data-label="300+20 Delta Coins" data-off="42.5">
           <span class="bt-sku__ribbon bt-sku__ribbon--hot">HOT</span>
           <span class="bt-sku__icon">🪙</span>
           <span class="bt-sku__name">300+20 Delta Coins</span>
           <span class="bt-sku__game">Delta Force</span>
           <span class="bt-sku__off">Save: 40.0% OFF</span>
-          <span class="bt-sku__price">￥ 19.87<span class="bt-sku__was">￥ 34.57</span></span>
+          <span class="bt-sku__price">US$ 2.74<span class="bt-sku__was">US$ 4.77</span></span>
         </button>
-        <button type="button" class="bt-sku" data-price="28.82" data-was="49.58" data-label="420 + 40 Delta Coins" data-off="41.9">
+        <button type="button" class="bt-sku" data-price="3.98" data-was="6.84" data-label="420 + 40 Delta Coins" data-off="41.9">
           <span class="bt-sku__ribbon bt-sku__ribbon--hot">HOT</span>
           <span class="bt-sku__icon">🪙</span>
           <span class="bt-sku__name">420 + 40 Delta Coins</span>
           <span class="bt-sku__game">Delta Force</span>
           <span class="bt-sku__off">Save: 40.0% OFF</span>
-          <span class="bt-sku__price">￥ 28.82<span class="bt-sku__was">￥ 49.58</span></span>
+          <span class="bt-sku__price">US$ 3.98<span class="bt-sku__was">US$ 6.84</span></span>
         </button>
-        <button type="button" class="bt-sku" data-price="39.80" data-was="68.35" data-label="680 + 70 Delta Coins" data-off="41.8">
+        <button type="button" class="bt-sku" data-price="5.49" data-was="9.43" data-label="680 + 70 Delta Coins" data-off="41.8">
           <span class="bt-sku__icon">🪙</span>
           <span class="bt-sku__name">680 + 70 Delta Coins</span>
           <span class="bt-sku__game">Delta Force</span>
           <span class="bt-sku__off">Save: 40.0% OFF</span>
-          <span class="bt-sku__price">￥ 39.80<span class="bt-sku__was">￥ 68.35</span></span>
+          <span class="bt-sku__price">US$ 5.49<span class="bt-sku__was">US$ 9.43</span></span>
         </button>
-        <button type="button" class="bt-sku" data-price="79.53" data-was="135.34" data-label="1280 + 200 Delta Coins" data-off="41.2">
+        <button type="button" class="bt-sku" data-price="10.97" data-was="18.67" data-label="1280 + 200 Delta Coins" data-off="41.2">
           <span class="bt-sku__icon">🪙</span>
           <span class="bt-sku__name">1280 + 200 Delta Coins</span>
           <span class="bt-sku__game">Delta Force</span>
           <span class="bt-sku__off">Save: 40.0% OFF</span>
-          <span class="bt-sku__price">￥ 79.53<span class="bt-sku__was">￥ 135.34</span></span>
+          <span class="bt-sku__price">US$ 10.97<span class="bt-sku__was">US$ 18.67</span></span>
         </button>
-        <button type="button" class="bt-sku bt-sku--extra" data-price="99.46" data-was="168.84" data-label="1680 + 300 Delta Coins" data-off="41.1">
+        <button type="button" class="bt-sku bt-sku--extra" data-price="13.72" data-was="23.29" data-label="1680 + 300 Delta Coins" data-off="41.1">
           <span class="bt-sku__icon">🪙</span>
           <span class="bt-sku__name">1680 + 300 Delta Coins</span>
           <span class="bt-sku__game">Delta Force</span>
           <span class="bt-sku__off">Save: 40.0% OFF</span>
-          <span class="bt-sku__price">￥ 99.46<span class="bt-sku__was">￥ 168.84</span></span>
+          <span class="bt-sku__price">US$ 13.72<span class="bt-sku__was">US$ 23.29</span></span>
         </button>
-        <button type="button" class="bt-sku bt-sku--extra" data-price="198.93" data-was="339.01" data-label="3280 + 670 Delta Coins" data-off="41.3">
+        <button type="button" class="bt-sku bt-sku--extra" data-price="27.44" data-was="46.76" data-label="3280 + 670 Delta Coins" data-off="41.3">
           <span class="bt-sku__icon">🪙</span>
           <span class="bt-sku__name">3280 + 670 Delta Coins</span>
           <span class="bt-sku__game">Delta Force</span>
           <span class="bt-sku__off">Save: 40.0% OFF</span>
-          <span class="bt-sku__price">￥ 198.93<span class="bt-sku__was">￥ 339.01</span></span>
+          <span class="bt-sku__price">US$ 27.44<span class="bt-sku__was">US$ 46.76</span></span>
         </button>
-        <button type="button" class="bt-sku bt-sku--extra" data-price="397.92" data-was="675.36" data-label="6480 + 1620 Delta Coins" data-off="41.1">
+        <button type="button" class="bt-sku bt-sku--extra" data-price="54.89" data-was="93.15" data-label="6480 + 1620 Delta Coins" data-off="41.1">
           <span class="bt-sku__icon">🪙</span>
           <span class="bt-sku__name">6480 + 1620 Delta Coins</span>
           <span class="bt-sku__game">Delta Force</span>
           <span class="bt-sku__off">Save: 40.0% OFF</span>
-          <span class="bt-sku__price">￥ 397.92<span class="bt-sku__was">￥ 675.36</span></span>
+          <span class="bt-sku__price">US$ 54.89<span class="bt-sku__was">US$ 93.15</span></span>
         </button>
       </div>
       <button type="button" class="bt-more" id="bt-more">Show more +3</button>
@@ -113,7 +113,7 @@ hide:
       <input id="bt-player-id" class="bt-checkout__input" type="text" placeholder="Please enter Player ID" autocomplete="off">
       <div class="bt-checkout__total-row">
         <span class="bt-checkout__total-label">Reference total</span>
-        <span class="bt-checkout__total" id="bt-total">￥ 1.98</span>
+        <span class="bt-checkout__total" id="bt-total">US$ 0.27</span>
       </div>
       <p class="bt-checkout__off" id="bt-off">Save: 40.0% OFF</p>
             <button type="button" class="bt-checkout__buy bt-checkout__buy--chat" id="bt-buy" disabled>
@@ -177,8 +177,8 @@ hide:
     var off = sku.getAttribute("data-off");
     var label = sku.getAttribute("data-label");
     totalEl.textContent = window.AceBaseCurrency
-      ? AceBaseCurrency.formatFromBase(parseFloat(price), "CNY")
-      : "￥ " + price;
+      ? AceBaseCurrency.formatFromBase(parseFloat(price), "USD")
+      : "US$ " + price;
     offEl.textContent = "Save: " + off + "% OFF";
     summaryLabel.textContent = label;
     buyBtn.disabled = !playerId.value.trim();

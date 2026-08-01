@@ -35,6 +35,7 @@ Digital direct top-ups are usually **non-refundable**; unpaid intent orders can 
 
 | Date | Change |
 | --- | --- |
+| **2026-08-02** | Removed the currency switcher; all prices now shown in USD (US$). Added a board games page (Asmodee Modern Classics, 42 titles). |
 | **2026-07-22** | Site launch; Shop four-page structure. |
 | **2026-07-22** | Nav: top-up section; Gallery added later. |
 | **2026-07-29** | Site-wide CNY / USD / TWD currency switch; zh / en language versions. |
