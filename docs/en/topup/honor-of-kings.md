@@ -34,72 +34,72 @@ hide:
     <div class="bt-panel">
       <h2 class="bt-panel__title">Latest quotes</h2>
       <div class="bt-skus" id="bt-sku-grid">
-        <button type="button" class="bt-sku is-active" data-price="2.17" data-was="8.83" data-label="240 Tokens" data-off="75.4">
+        <button type="button" class="bt-sku is-active" data-price="1.95" data-was="7.95" data-label="240 Tokens" data-off="75.4">
           <span class="bt-sku__ribbon bt-sku__ribbon--sale">SALE</span>
           <span class="bt-sku__icon">🪙</span>
           <span class="bt-sku__name">240 Tokens</span>
           <span class="bt-sku__game">Honor of Kings</span>
           <span class="bt-sku__off">Save: 70.0% OFF</span>
-          <span class="bt-sku__price">US$ 2.17<span class="bt-sku__was">US$ 8.83</span></span>
+          <span class="bt-sku__price">US$ 1.95<span class="bt-sku__was">US$ 7.95</span></span>
         </button>
-        <button type="button" class="bt-sku" data-price="3.62" data-was="7.52" data-label="400 Tokens" data-off="51.9">
+        <button type="button" class="bt-sku" data-price="3.26" data-was="6.77" data-label="400 Tokens" data-off="51.9">
           <span class="bt-sku__ribbon bt-sku__ribbon--hot">HOT</span>
           <span class="bt-sku__icon">🪙</span>
           <span class="bt-sku__name">400 Tokens</span>
           <span class="bt-sku__game">Honor of Kings</span>
           <span class="bt-sku__off">Save: 70.0% OFF</span>
-          <span class="bt-sku__price">US$ 3.62<span class="bt-sku__was">US$ 7.52</span></span>
+          <span class="bt-sku__price">US$ 3.26<span class="bt-sku__was">US$ 6.77</span></span>
         </button>
-        <button type="button" class="bt-sku" data-price="5.07" data-was="20.65" data-label="560 Tokens" data-off="75.4">
+        <button type="button" class="bt-sku" data-price="4.56" data-was="18.58" data-label="560 Tokens" data-off="75.4">
           <span class="bt-sku__ribbon bt-sku__ribbon--hot">HOT</span>
           <span class="bt-sku__icon">🪙</span>
           <span class="bt-sku__name">560 Tokens</span>
           <span class="bt-sku__game">Honor of Kings</span>
           <span class="bt-sku__off">Save: 70.0% OFF</span>
-          <span class="bt-sku__price">US$ 5.07<span class="bt-sku__was">US$ 20.65</span></span>
+          <span class="bt-sku__price">US$ 4.56<span class="bt-sku__was">US$ 18.58</span></span>
         </button>
-        <button type="button" class="bt-sku" data-price="7.25" data-was="29.52" data-label="800 Tokens" data-off="75.4">
+        <button type="button" class="bt-sku" data-price="6.52" data-was="26.57" data-label="800 Tokens" data-off="75.4">
           <span class="bt-sku__ribbon bt-sku__ribbon--hot">HOT</span>
           <span class="bt-sku__icon">🪙</span>
           <span class="bt-sku__name">800 Tokens</span>
           <span class="bt-sku__game">Honor of Kings</span>
           <span class="bt-sku__off">Save: 70.0% OFF</span>
-          <span class="bt-sku__price">US$ 7.25<span class="bt-sku__was">US$ 29.52</span></span>
+          <span class="bt-sku__price">US$ 6.52<span class="bt-sku__was">US$ 26.57</span></span>
         </button>
-        <button type="button" class="bt-sku" data-price="10.87" data-was="22.59" data-label="1200 Tokens" data-off="51.9">
+        <button type="button" class="bt-sku" data-price="9.78" data-was="20.33" data-label="1200 Tokens" data-off="51.9">
           <span class="bt-sku__icon">🪙</span>
           <span class="bt-sku__name">1200 Tokens</span>
           <span class="bt-sku__game">Honor of Kings</span>
           <span class="bt-sku__off">Save: 70.0% OFF</span>
-          <span class="bt-sku__price">US$ 10.87<span class="bt-sku__was">US$ 22.59</span></span>
+          <span class="bt-sku__price">US$ 9.78<span class="bt-sku__was">US$ 20.33</span></span>
         </button>
-        <button type="button" class="bt-sku" data-price="21.75" data-was="88.08" data-label="2508 Tokens" data-off="75.3">
+        <button type="button" class="bt-sku" data-price="19.58" data-was="79.27" data-label="2508 Tokens" data-off="75.3">
           <span class="bt-sku__icon">🪙</span>
           <span class="bt-sku__name">2508 Tokens</span>
           <span class="bt-sku__game">Honor of Kings</span>
           <span class="bt-sku__off">Save: 70.0% OFF</span>
-          <span class="bt-sku__price">US$ 21.75<span class="bt-sku__was">US$ 88.08</span></span>
+          <span class="bt-sku__price">US$ 19.58<span class="bt-sku__was">US$ 79.27</span></span>
         </button>
-        <button type="button" class="bt-sku bt-sku--extra" data-price="36.26" data-was="75.34" data-label="4000 Tokens" data-off="51.9">
+        <button type="button" class="bt-sku bt-sku--extra" data-price="32.63" data-was="67.81" data-label="4000 Tokens" data-off="51.9">
           <span class="bt-sku__icon">🪙</span>
           <span class="bt-sku__name">4000 Tokens</span>
           <span class="bt-sku__game">Honor of Kings</span>
           <span class="bt-sku__off">Save: 70.0% OFF</span>
-          <span class="bt-sku__price">US$ 36.26<span class="bt-sku__was">US$ 75.34</span></span>
+          <span class="bt-sku__price">US$ 32.63<span class="bt-sku__was">US$ 67.81</span></span>
         </button>
-        <button type="button" class="bt-sku bt-sku--extra" data-price="72.53" data-was="150.70" data-label="8000 Tokens" data-off="51.9">
+        <button type="button" class="bt-sku bt-sku--extra" data-price="65.28" data-was="135.63" data-label="8000 Tokens" data-off="51.9">
           <span class="bt-sku__icon">🪙</span>
           <span class="bt-sku__name">8000 Tokens</span>
           <span class="bt-sku__game">Honor of Kings</span>
           <span class="bt-sku__off">Save: 70.0% OFF</span>
-          <span class="bt-sku__price">US$ 72.53<span class="bt-sku__was">US$ 150.70</span></span>
+          <span class="bt-sku__price">US$ 65.28<span class="bt-sku__was">US$ 135.63</span></span>
         </button>
-        <button type="button" class="bt-sku bt-sku--extra" data-price="0.71" data-was="1.49" data-label="80 Tokens" data-off="52.3">
+        <button type="button" class="bt-sku bt-sku--extra" data-price="0.64" data-was="1.34" data-label="80 Tokens" data-off="52.3">
           <span class="bt-sku__icon">🪙</span>
           <span class="bt-sku__name">80 Tokens</span>
           <span class="bt-sku__game">Honor of Kings</span>
           <span class="bt-sku__off">Save: 70.0% OFF</span>
-          <span class="bt-sku__price">US$ 0.71<span class="bt-sku__was">US$ 1.49</span></span>
+          <span class="bt-sku__price">US$ 0.64<span class="bt-sku__was">US$ 1.34</span></span>
         </button>
       </div>
       <button type="button" class="bt-more" id="bt-more">Show more +3</button>
@@ -113,7 +113,7 @@ hide:
       <input id="bt-player-id" class="bt-checkout__input" type="text" placeholder="Please enter Player ID" autocomplete="off">
       <div class="bt-checkout__total-row">
         <span class="bt-checkout__total-label">Reference total</span>
-        <span class="bt-checkout__total" id="bt-total">US$ 2.17</span>
+        <span class="bt-checkout__total" id="bt-total">US$ 1.95</span>
       </div>
       <p class="bt-checkout__off" id="bt-off">Save: 70.0% OFF</p>
             <button type="button" class="bt-checkout__buy bt-checkout__buy--chat" id="bt-buy" disabled>

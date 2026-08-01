@@ -34,57 +34,57 @@ hide:
     <div class="bt-panel">
       <h2 class="bt-panel__title">最新报价</h2>
       <div class="bt-skus" id="bt-sku-grid">
-        <button type="button" class="bt-sku is-active" data-price="8.94" data-was="13.44" data-label="600 + 60 UC" data-off="33.5">
+        <button type="button" class="bt-sku is-active" data-price="8.05" data-was="12.10" data-label="600 + 60 UC" data-off="33.5">
           <span class="bt-sku__ribbon bt-sku__ribbon--sale">SALE</span>
           <span class="bt-sku__icon">🪙</span>
           <span class="bt-sku__name">600 + 60 UC</span>
           <span class="bt-sku__game">PUBG Mobile</span>
           <span class="bt-sku__off">折扣: 33.5% OFF</span>
-          <span class="bt-sku__price">US$ 8.94<span class="bt-sku__was">US$ 13.44</span></span>
+          <span class="bt-sku__price">US$ 8.05<span class="bt-sku__was">US$ 12.10</span></span>
         </button>
-        <button type="button" class="bt-sku" data-price="4.46" data-was="6.71" data-label="300 + 25 UC" data-off="33.5">
+        <button type="button" class="bt-sku" data-price="4.01" data-was="6.04" data-label="300 + 25 UC" data-off="33.5">
           <span class="bt-sku__ribbon bt-sku__ribbon--hot">HOT</span>
           <span class="bt-sku__icon">🪙</span>
           <span class="bt-sku__name">300 + 25 UC</span>
           <span class="bt-sku__game">PUBG Mobile</span>
           <span class="bt-sku__off">折扣: 33.5% OFF</span>
-          <span class="bt-sku__price">US$ 4.46<span class="bt-sku__was">US$ 6.71</span></span>
+          <span class="bt-sku__price">US$ 4.01<span class="bt-sku__was">US$ 6.04</span></span>
         </button>
-        <button type="button" class="bt-sku" data-price="0.88" data-was="1.33" data-label="60 UC" data-off="33.8">
+        <button type="button" class="bt-sku" data-price="0.79" data-was="1.20" data-label="60 UC" data-off="33.8">
           <span class="bt-sku__ribbon bt-sku__ribbon--hot">HOT</span>
           <span class="bt-sku__icon">🪙</span>
           <span class="bt-sku__name">60 UC</span>
           <span class="bt-sku__game">PUBG Mobile</span>
           <span class="bt-sku__off">折扣: 33.8% OFF</span>
-          <span class="bt-sku__price">US$ 0.88<span class="bt-sku__was">US$ 1.33</span></span>
+          <span class="bt-sku__price">US$ 0.79<span class="bt-sku__was">US$ 1.20</span></span>
         </button>
-        <button type="button" class="bt-sku" data-price="22.36" data-was="33.63" data-label="1,500 + 300 UC" data-off="33.5">
+        <button type="button" class="bt-sku" data-price="20.12" data-was="30.27" data-label="1,500 + 300 UC" data-off="33.5">
           <span class="bt-sku__icon">🪙</span>
           <span class="bt-sku__name">1,500 + 300 UC</span>
           <span class="bt-sku__game">PUBG Mobile</span>
           <span class="bt-sku__off">折扣: 33.5% OFF</span>
-          <span class="bt-sku__price">US$ 22.36<span class="bt-sku__was">US$ 33.63</span></span>
+          <span class="bt-sku__price">US$ 20.12<span class="bt-sku__was">US$ 30.27</span></span>
         </button>
-        <button type="button" class="bt-sku" data-price="44.71" data-was="67.23" data-label="3,000 + 850 UC" data-off="33.5">
+        <button type="button" class="bt-sku" data-price="40.24" data-was="60.51" data-label="3,000 + 850 UC" data-off="33.5">
           <span class="bt-sku__icon">🪙</span>
           <span class="bt-sku__name">3,000 + 850 UC</span>
           <span class="bt-sku__game">PUBG Mobile</span>
           <span class="bt-sku__off">折扣: 33.5% OFF</span>
-          <span class="bt-sku__price">US$ 44.71<span class="bt-sku__was">US$ 67.23</span></span>
+          <span class="bt-sku__price">US$ 40.24<span class="bt-sku__was">US$ 60.51</span></span>
         </button>
-        <button type="button" class="bt-sku" data-price="89.43" data-was="134.49" data-label="6,000 + 2,100 UC" data-off="33.5">
+        <button type="button" class="bt-sku" data-price="80.49" data-was="121.04" data-label="6,000 + 2,100 UC" data-off="33.5">
           <span class="bt-sku__icon">🪙</span>
           <span class="bt-sku__name">6,000 + 2,100 UC</span>
           <span class="bt-sku__game">PUBG Mobile</span>
           <span class="bt-sku__off">折扣: 33.5% OFF</span>
-          <span class="bt-sku__price">US$ 89.43<span class="bt-sku__was">US$ 134.49</span></span>
+          <span class="bt-sku__price">US$ 80.49<span class="bt-sku__was">US$ 121.04</span></span>
         </button>
-        <button type="button" class="bt-sku" data-price="357.51" data-was="537.61" data-label="24,000 + 8,400 UC" data-off="33.5">
+        <button type="button" class="bt-sku" data-price="321.76" data-was="483.85" data-label="24,000 + 8,400 UC" data-off="33.5">
           <span class="bt-sku__icon">🪙</span>
           <span class="bt-sku__name">24,000 + 8,400 UC</span>
           <span class="bt-sku__game">PUBG Mobile</span>
           <span class="bt-sku__off">折扣: 33.5% OFF</span>
-          <span class="bt-sku__price">US$ 357.51<span class="bt-sku__was">US$ 537.61</span></span>
+          <span class="bt-sku__price">US$ 321.76<span class="bt-sku__was">US$ 483.85</span></span>
         </button>
       </div>
     </div>
@@ -97,14 +97,14 @@ hide:
       <input id="bt-player-id" class="bt-checkout__input" type="text" placeholder="Please enter User ID" autocomplete="off">
       <div class="bt-checkout__total-row">
         <span class="bt-checkout__total-label">参考总计</span>
-        <span class="bt-checkout__total" id="bt-total">US$ 8.94</span>
+        <span class="bt-checkout__total" id="bt-total">US$ 8.05</span>
       </div>
       <p class="bt-checkout__off" id="bt-off">折扣: 33.5% OFF</p>
       <button type="button" class="bt-checkout__buy bt-checkout__buy--chat" id="bt-buy" disabled>
         <svg class="bt-checkout__buy-ico" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" focusable="false"><path fill="currentColor" d="M12 3C6.5 3 2 6.58 2 11c0 2.39 1.33 4.54 3.41 5.96L4 21l4.55-1.52C9.66 19.82 10.81 20 12 20c5.5 0 10-3.58 10-8s-4.5-9-10-9m0 15c-.96 0-1.9-.16-2.78-.45l-.2-.07-2.34.78.77-2.24-.15-.23C5.86 14.53 5 12.84 5 11c0-3.31 3.13-6 7-6s7 2.69 7 6-3.13 6-7 6z"/></svg>
         <span>我要代充</span>
       </button>
-      <p class="bt-checkout__chat-hint">点击后打开在线客服聊天窗，确认最新报价和库存。</p>
+      <p class="bt-checkout__chat-hint">点击后打开在线客服聊天窗，确认最新报价和库存</p>
       <p class="bt-summary"><strong id="bt-summary-label">600 + 60 UC</strong> · 参考总计 · x1</p>
       <p class="bt-checkout__note">价格更新时间 2026-07-29 12:15 UTC。</p>
     </div>

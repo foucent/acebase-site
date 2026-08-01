@@ -34,44 +34,44 @@ hide:
     <div class="bt-panel">
       <h2 class="bt-panel__title">Latest quotes</h2>
       <div class="bt-skus" id="bt-sku-grid">
-        <button type="button" class="bt-sku is-active" data-price="25.06" data-was="53.38" data-label="510 G-COIN" data-off="53.1">
+        <button type="button" class="bt-sku is-active" data-price="22.55" data-was="48.04" data-label="510 G-COIN" data-off="53.1">
           <span class="bt-sku__ribbon bt-sku__ribbon--sale">SALE</span>
           <span class="bt-sku__icon">🪙</span>
           <span class="bt-sku__name">510 G-COIN</span>
           <span class="bt-sku__game">PUBG G-COIN CDK</span>
           <span class="bt-sku__off">Save: 70.0% OFF</span>
-          <span class="bt-sku__price">￥ 25.06<span class="bt-sku__was">￥ 53.38</span></span>
+          <span class="bt-sku__price">￥ 22.55<span class="bt-sku__was">￥ 48.04</span></span>
         </button>
-        <button type="button" class="bt-sku" data-price="50.19" data-was="106.76" data-label="1050 G-COIN" data-off="53.0">
+        <button type="button" class="bt-sku" data-price="45.17" data-was="96.08" data-label="1050 G-COIN" data-off="53.0">
           <span class="bt-sku__ribbon bt-sku__ribbon--hot">HOT</span>
           <span class="bt-sku__icon">🪙</span>
           <span class="bt-sku__name">1050 G-COIN</span>
           <span class="bt-sku__game">PUBG G-COIN CDK</span>
           <span class="bt-sku__off">Save: 70.0% OFF</span>
-          <span class="bt-sku__price">￥ 50.19<span class="bt-sku__was">￥ 106.76</span></span>
+          <span class="bt-sku__price">￥ 45.17<span class="bt-sku__was">￥ 96.08</span></span>
         </button>
-        <button type="button" class="bt-sku" data-price="125.45" data-was="266.91" data-label="2700 G-COIN" data-off="53.0">
+        <button type="button" class="bt-sku" data-price="112.90" data-was="240.22" data-label="2700 G-COIN" data-off="53.0">
           <span class="bt-sku__ribbon bt-sku__ribbon--hot">HOT</span>
           <span class="bt-sku__icon">🪙</span>
           <span class="bt-sku__name">2700 G-COIN</span>
           <span class="bt-sku__game">PUBG G-COIN CDK</span>
           <span class="bt-sku__off">Save: 70.0% OFF</span>
-          <span class="bt-sku__price">￥ 125.45<span class="bt-sku__was">￥ 266.91</span></span>
+          <span class="bt-sku__price">￥ 112.90<span class="bt-sku__was">￥ 240.22</span></span>
         </button>
-        <button type="button" class="bt-sku" data-price="250.84" data-was="533.82" data-label="5500 G-COIN" data-off="53.0">
+        <button type="button" class="bt-sku" data-price="225.76" data-was="480.44" data-label="5500 G-COIN" data-off="53.0">
           <span class="bt-sku__ribbon bt-sku__ribbon--hot">HOT</span>
           <span class="bt-sku__icon">🪙</span>
           <span class="bt-sku__name">5500 G-COIN</span>
           <span class="bt-sku__game">PUBG G-COIN CDK</span>
           <span class="bt-sku__off">Save: 70.0% OFF</span>
-          <span class="bt-sku__price">￥ 250.84<span class="bt-sku__was">￥ 533.82</span></span>
+          <span class="bt-sku__price">￥ 225.76<span class="bt-sku__was">￥ 480.44</span></span>
         </button>
-        <button type="button" class="bt-sku" data-price="501.73" data-was="1067.63" data-label="11200 G-COIN" data-off="53.0">
+        <button type="button" class="bt-sku" data-price="451.56" data-was="960.87" data-label="11200 G-COIN" data-off="53.0">
           <span class="bt-sku__icon">🪙</span>
           <span class="bt-sku__name">11200 G-COIN</span>
           <span class="bt-sku__game">PUBG G-COIN CDK</span>
           <span class="bt-sku__off">Save: 70.0% OFF</span>
-          <span class="bt-sku__price">￥ 501.73<span class="bt-sku__was">￥ 1067.63</span></span>
+          <span class="bt-sku__price">￥ 451.56<span class="bt-sku__was">￥ 960.87</span></span>
         </button>
       </div>
     </div>
@@ -84,7 +84,7 @@ hide:
       <input id="bt-email" class="bt-checkout__input" type="email" placeholder="Email to receive CDK" autocomplete="email">
       <div class="bt-checkout__total-row">
         <span class="bt-checkout__total-label">Reference total</span>
-        <span class="bt-checkout__total" id="bt-total">￥ 25.06</span>
+        <span class="bt-checkout__total" id="bt-total">￥ 22.55</span>
       </div>
       <p class="bt-checkout__off" id="bt-off">Save: 70.0% OFF</p>
             <button type="button" class="bt-checkout__buy bt-checkout__buy--chat" id="bt-buy" disabled>

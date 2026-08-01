@@ -34,79 +34,79 @@ hide:
     <div class="bt-panel">
       <h2 class="bt-panel__title">最新报价</h2>
       <div class="bt-skus" id="bt-sku-grid">
-        <button type="button" class="bt-sku is-active" data-price="929.38" data-was="1544.33" data-label="13000 + 640 Bonds" data-off="39.8">
+        <button type="button" class="bt-sku is-active" data-price="836.44" data-was="1389.90" data-label="13000 + 640 Bonds" data-off="39.8">
           <span class="bt-sku__ribbon bt-sku__ribbon--sale">SALE</span>
           <span class="bt-sku__icon">🪙</span>
           <span class="bt-sku__name">13000 + 640 Bonds</span>
           <span class="bt-sku__game">暗区突围</span>
           <span class="bt-sku__off">折扣: 39.8% OFF</span>
-          <span class="bt-sku__price">￥ 929.38<span class="bt-sku__was">￥ 1544.33</span></span>
+          <span class="bt-sku__price">￥ 836.44<span class="bt-sku__was">￥ 1389.90</span></span>
         </button>
-        <button type="button" class="bt-sku" data-price="464.72" data-was="772.16" data-label="6500 + 320 Bonds" data-off="39.8">
+        <button type="button" class="bt-sku" data-price="418.25" data-was="694.94" data-label="6500 + 320 Bonds" data-off="39.8">
           <span class="bt-sku__ribbon bt-sku__ribbon--hot">HOT</span>
           <span class="bt-sku__icon">🪙</span>
           <span class="bt-sku__name">6500 + 320 Bonds</span>
           <span class="bt-sku__game">暗区突围</span>
           <span class="bt-sku__off">折扣: 39.8% OFF</span>
-          <span class="bt-sku__price">￥ 464.72<span class="bt-sku__was">￥ 772.16</span></span>
+          <span class="bt-sku__price">￥ 418.25<span class="bt-sku__was">￥ 694.94</span></span>
         </button>
-        <button type="button" class="bt-sku" data-price="241.09" data-was="400.65" data-label="3200 + 200 Bonds" data-off="39.8">
+        <button type="button" class="bt-sku" data-price="216.98" data-was="360.58" data-label="3200 + 200 Bonds" data-off="39.8">
           <span class="bt-sku__ribbon bt-sku__ribbon--hot">HOT</span>
           <span class="bt-sku__icon">🪙</span>
           <span class="bt-sku__name">3200 + 200 Bonds</span>
           <span class="bt-sku__game">暗区突围</span>
           <span class="bt-sku__off">折扣: 39.8% OFF</span>
-          <span class="bt-sku__price">￥ 241.09<span class="bt-sku__was">￥ 400.65</span></span>
+          <span class="bt-sku__price">￥ 216.98<span class="bt-sku__was">￥ 360.58</span></span>
         </button>
-        <button type="button" class="bt-sku" data-price="118.76" data-was="197.39" data-label="1580 + 110 Bonds" data-off="39.8">
+        <button type="button" class="bt-sku" data-price="106.88" data-was="177.65" data-label="1580 + 110 Bonds" data-off="39.8">
           <span class="bt-sku__ribbon bt-sku__ribbon--hot">HOT</span>
           <span class="bt-sku__icon">🪙</span>
           <span class="bt-sku__name">1580 + 110 Bonds</span>
           <span class="bt-sku__game">暗区突围</span>
           <span class="bt-sku__off">折扣: 39.8% OFF</span>
-          <span class="bt-sku__price">￥ 118.76<span class="bt-sku__was">￥ 197.39</span></span>
+          <span class="bt-sku__price">￥ 106.88<span class="bt-sku__was">￥ 177.65</span></span>
         </button>
-        <button type="button" class="bt-sku" data-price="47.79" data-was="79.40" data-label="630 + 45 Bonds" data-off="39.8">
+        <button type="button" class="bt-sku" data-price="43.01" data-was="71.46" data-label="630 + 45 Bonds" data-off="39.8">
           <span class="bt-sku__icon">🪙</span>
           <span class="bt-sku__name">630 + 45 Bonds</span>
           <span class="bt-sku__game">暗区突围</span>
           <span class="bt-sku__off">折扣: 39.8% OFF</span>
-          <span class="bt-sku__price">￥ 47.79<span class="bt-sku__was">￥ 79.40</span></span>
+          <span class="bt-sku__price">￥ 43.01<span class="bt-sku__was">￥ 71.46</span></span>
         </button>
-        <button type="button" class="bt-sku" data-price="24.35" data-was="40.50" data-label="310 + 25 Bonds" data-off="39.9">
+        <button type="button" class="bt-sku" data-price="21.92" data-was="36.45" data-label="310 + 25 Bonds" data-off="39.9">
           <span class="bt-sku__icon">🪙</span>
           <span class="bt-sku__name">310 + 25 Bonds</span>
           <span class="bt-sku__game">暗区突围</span>
           <span class="bt-sku__off">折扣: 39.9% OFF</span>
-          <span class="bt-sku__price">￥ 24.35<span class="bt-sku__was">￥ 40.50</span></span>
+          <span class="bt-sku__price">￥ 21.92<span class="bt-sku__was">￥ 36.45</span></span>
         </button>
-        <button type="button" class="bt-sku bt-sku--extra" data-price="4.87" data-was="8.14" data-label="60 + 6 Bonds" data-off="40.2">
+        <button type="button" class="bt-sku bt-sku--extra" data-price="4.38" data-was="7.33" data-label="60 + 6 Bonds" data-off="40.2">
           <span class="bt-sku__icon">🪙</span>
           <span class="bt-sku__name">60 + 6 Bonds</span>
           <span class="bt-sku__game">暗区突围</span>
           <span class="bt-sku__off">折扣: 40.2% OFF</span>
-          <span class="bt-sku__price">￥ 4.87<span class="bt-sku__was">￥ 8.14</span></span>
+          <span class="bt-sku__price">￥ 4.38<span class="bt-sku__was">￥ 7.33</span></span>
         </button>
-        <button type="button" class="bt-sku bt-sku--extra" data-price="37.20" data-was="62.63" data-label="Composite Case (30d)" data-off="40.6">
+        <button type="button" class="bt-sku bt-sku--extra" data-price="33.48" data-was="56.37" data-label="Composite Case (30d)" data-off="40.6">
           <span class="bt-sku__icon">📦</span>
           <span class="bt-sku__name">Composite Case (30d)</span>
           <span class="bt-sku__game">暗区突围</span>
           <span class="bt-sku__off">折扣: 40.6% OFF</span>
-          <span class="bt-sku__price">￥ 37.20<span class="bt-sku__was">￥ 62.63</span></span>
+          <span class="bt-sku__price">￥ 33.48<span class="bt-sku__was">￥ 56.37</span></span>
         </button>
-        <button type="button" class="bt-sku bt-sku--extra" data-price="12.53" data-was="21.12" data-label="Bulletproof Case (30d)" data-off="40.7">
+        <button type="button" class="bt-sku bt-sku--extra" data-price="11.28" data-was="19.01" data-label="Bulletproof Case (30d)" data-off="40.7">
           <span class="bt-sku__icon">📦</span>
           <span class="bt-sku__name">Bulletproof Case (30d)</span>
           <span class="bt-sku__game">暗区突围</span>
           <span class="bt-sku__off">折扣: 40.7% OFF</span>
-          <span class="bt-sku__price">￥ 12.53<span class="bt-sku__was">￥ 21.12</span></span>
+          <span class="bt-sku__price">￥ 11.28<span class="bt-sku__was">￥ 19.01</span></span>
         </button>
-        <button type="button" class="bt-sku bt-sku--extra" data-price="5.71" data-was="9.45" data-label="Beginner Select" data-off="39.6">
+        <button type="button" class="bt-sku bt-sku--extra" data-price="5.14" data-was="8.50" data-label="Beginner Select" data-off="39.6">
           <span class="bt-sku__icon">🎁</span>
           <span class="bt-sku__name">Beginner Select</span>
           <span class="bt-sku__game">暗区突围</span>
           <span class="bt-sku__off">折扣: 39.6% OFF</span>
-          <span class="bt-sku__price">￥ 5.71<span class="bt-sku__was">￥ 9.45</span></span>
+          <span class="bt-sku__price">￥ 5.14<span class="bt-sku__was">￥ 8.50</span></span>
         </button>
       </div>
       <button type="button" class="bt-more" id="bt-more">显示更多 +4</button>
@@ -120,14 +120,14 @@ hide:
       <input id="bt-player-id" class="bt-checkout__input" type="text" placeholder="Please enter Player ID" autocomplete="off">
       <div class="bt-checkout__total-row">
         <span class="bt-checkout__total-label">参考总计</span>
-        <span class="bt-checkout__total" id="bt-total">￥ 929.38</span>
+        <span class="bt-checkout__total" id="bt-total">￥ 836.44</span>
       </div>
       <p class="bt-checkout__off" id="bt-off">折扣: 39.8% OFF</p>
       <button type="button" class="bt-checkout__buy bt-checkout__buy--chat" id="bt-buy" disabled>
         <svg class="bt-checkout__buy-ico" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" focusable="false"><path fill="currentColor" d="M12 3C6.5 3 2 6.58 2 11c0 2.39 1.33 4.54 3.41 5.96L4 21l4.55-1.52C9.66 19.82 10.81 20 12 20c5.5 0 10-3.58 10-8s-4.5-9-10-9m0 15c-.96 0-1.9-.16-2.78-.45l-.2-.07-2.34.78.77-2.24-.15-.23C5.86 14.53 5 12.84 5 11c0-3.31 3.13-6 7-6s7 2.69 7 6-3.13 6-7 6z"/></svg>
         <span>我要代充</span>
       </button>
-      <p class="bt-checkout__chat-hint">点击后打开在线客服聊天窗，确认最新报价和库存。</p>
+      <p class="bt-checkout__chat-hint">点击后打开在线客服聊天窗，确认最新报价和库存</p>
       <p class="bt-summary"><strong id="bt-summary-label">13000 + 640 Bonds</strong> · 参考总计 · x1</p>
       <p class="bt-checkout__note">价格更新时间 2026-07-29 12:15 UTC。</p>
     </div>

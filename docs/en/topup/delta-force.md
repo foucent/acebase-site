@@ -34,72 +34,72 @@ hide:
     <div class="bt-panel">
       <h2 class="bt-panel__title">Latest quotes</h2>
       <div class="bt-skus" id="bt-sku-grid">
-        <button type="button" class="bt-sku is-active" data-price="2.20" data-was="4.02" data-label="30 Delta Coins" data-off="45.3">
+        <button type="button" class="bt-sku is-active" data-price="1.98" data-was="3.62" data-label="30 Delta Coins" data-off="45.3">
           <span class="bt-sku__ribbon bt-sku__ribbon--sale">SALE</span>
           <span class="bt-sku__icon">🪙</span>
           <span class="bt-sku__name">30 Delta Coins</span>
           <span class="bt-sku__game">Delta Force</span>
           <span class="bt-sku__off">Save: 40.0% OFF</span>
-          <span class="bt-sku__price">￥ 2.20<span class="bt-sku__was">￥ 4.02</span></span>
+          <span class="bt-sku__price">￥ 1.98<span class="bt-sku__was">￥ 3.62</span></span>
         </button>
-        <button type="button" class="bt-sku" data-price="4.42" data-was="7.89" data-label="60 Delta Coins" data-off="44.0">
+        <button type="button" class="bt-sku" data-price="3.98" data-was="7.10" data-label="60 Delta Coins" data-off="44.0">
           <span class="bt-sku__ribbon bt-sku__ribbon--hot">HOT</span>
           <span class="bt-sku__icon">🪙</span>
           <span class="bt-sku__name">60 Delta Coins</span>
           <span class="bt-sku__game">Delta Force</span>
           <span class="bt-sku__off">Save: 40.0% OFF</span>
-          <span class="bt-sku__price">￥ 4.42<span class="bt-sku__was">￥ 7.89</span></span>
+          <span class="bt-sku__price">￥ 3.98<span class="bt-sku__was">￥ 7.10</span></span>
         </button>
-        <button type="button" class="bt-sku" data-price="22.08" data-was="38.41" data-label="300+20 Delta Coins" data-off="42.5">
+        <button type="button" class="bt-sku" data-price="19.87" data-was="34.57" data-label="300+20 Delta Coins" data-off="42.5">
           <span class="bt-sku__ribbon bt-sku__ribbon--hot">HOT</span>
           <span class="bt-sku__icon">🪙</span>
           <span class="bt-sku__name">300+20 Delta Coins</span>
           <span class="bt-sku__game">Delta Force</span>
           <span class="bt-sku__off">Save: 40.0% OFF</span>
-          <span class="bt-sku__price">￥ 22.08<span class="bt-sku__was">￥ 38.41</span></span>
+          <span class="bt-sku__price">￥ 19.87<span class="bt-sku__was">￥ 34.57</span></span>
         </button>
-        <button type="button" class="bt-sku" data-price="32.02" data-was="55.09" data-label="420 + 40 Delta Coins" data-off="41.9">
+        <button type="button" class="bt-sku" data-price="28.82" data-was="49.58" data-label="420 + 40 Delta Coins" data-off="41.9">
           <span class="bt-sku__ribbon bt-sku__ribbon--hot">HOT</span>
           <span class="bt-sku__icon">🪙</span>
           <span class="bt-sku__name">420 + 40 Delta Coins</span>
           <span class="bt-sku__game">Delta Force</span>
           <span class="bt-sku__off">Save: 40.0% OFF</span>
-          <span class="bt-sku__price">￥ 32.02<span class="bt-sku__was">￥ 55.09</span></span>
+          <span class="bt-sku__price">￥ 28.82<span class="bt-sku__was">￥ 49.58</span></span>
         </button>
-        <button type="button" class="bt-sku" data-price="44.22" data-was="75.94" data-label="680 + 70 Delta Coins" data-off="41.8">
+        <button type="button" class="bt-sku" data-price="39.80" data-was="68.35" data-label="680 + 70 Delta Coins" data-off="41.8">
           <span class="bt-sku__icon">🪙</span>
           <span class="bt-sku__name">680 + 70 Delta Coins</span>
           <span class="bt-sku__game">Delta Force</span>
           <span class="bt-sku__off">Save: 40.0% OFF</span>
-          <span class="bt-sku__price">￥ 44.22<span class="bt-sku__was">￥ 75.94</span></span>
+          <span class="bt-sku__price">￥ 39.80<span class="bt-sku__was">￥ 68.35</span></span>
         </button>
-        <button type="button" class="bt-sku" data-price="88.37" data-was="150.38" data-label="1280 + 200 Delta Coins" data-off="41.2">
+        <button type="button" class="bt-sku" data-price="79.53" data-was="135.34" data-label="1280 + 200 Delta Coins" data-off="41.2">
           <span class="bt-sku__icon">🪙</span>
           <span class="bt-sku__name">1280 + 200 Delta Coins</span>
           <span class="bt-sku__game">Delta Force</span>
           <span class="bt-sku__off">Save: 40.0% OFF</span>
-          <span class="bt-sku__price">￥ 88.37<span class="bt-sku__was">￥ 150.38</span></span>
+          <span class="bt-sku__price">￥ 79.53<span class="bt-sku__was">￥ 135.34</span></span>
         </button>
-        <button type="button" class="bt-sku bt-sku--extra" data-price="110.51" data-was="187.60" data-label="1680 + 300 Delta Coins" data-off="41.1">
+        <button type="button" class="bt-sku bt-sku--extra" data-price="99.46" data-was="168.84" data-label="1680 + 300 Delta Coins" data-off="41.1">
           <span class="bt-sku__icon">🪙</span>
           <span class="bt-sku__name">1680 + 300 Delta Coins</span>
           <span class="bt-sku__game">Delta Force</span>
           <span class="bt-sku__off">Save: 40.0% OFF</span>
-          <span class="bt-sku__price">￥ 110.51<span class="bt-sku__was">￥ 187.60</span></span>
+          <span class="bt-sku__price">￥ 99.46<span class="bt-sku__was">￥ 168.84</span></span>
         </button>
-        <button type="button" class="bt-sku bt-sku--extra" data-price="221.03" data-was="376.68" data-label="3280 + 670 Delta Coins" data-off="41.3">
+        <button type="button" class="bt-sku bt-sku--extra" data-price="198.93" data-was="339.01" data-label="3280 + 670 Delta Coins" data-off="41.3">
           <span class="bt-sku__icon">🪙</span>
           <span class="bt-sku__name">3280 + 670 Delta Coins</span>
           <span class="bt-sku__game">Delta Force</span>
           <span class="bt-sku__off">Save: 40.0% OFF</span>
-          <span class="bt-sku__price">￥ 221.03<span class="bt-sku__was">￥ 376.68</span></span>
+          <span class="bt-sku__price">￥ 198.93<span class="bt-sku__was">￥ 339.01</span></span>
         </button>
-        <button type="button" class="bt-sku bt-sku--extra" data-price="442.13" data-was="750.40" data-label="6480 + 1620 Delta Coins" data-off="41.1">
+        <button type="button" class="bt-sku bt-sku--extra" data-price="397.92" data-was="675.36" data-label="6480 + 1620 Delta Coins" data-off="41.1">
           <span class="bt-sku__icon">🪙</span>
           <span class="bt-sku__name">6480 + 1620 Delta Coins</span>
           <span class="bt-sku__game">Delta Force</span>
           <span class="bt-sku__off">Save: 40.0% OFF</span>
-          <span class="bt-sku__price">￥ 442.13<span class="bt-sku__was">￥ 750.40</span></span>
+          <span class="bt-sku__price">￥ 397.92<span class="bt-sku__was">￥ 675.36</span></span>
         </button>
       </div>
       <button type="button" class="bt-more" id="bt-more">Show more +3</button>
@@ -113,7 +113,7 @@ hide:
       <input id="bt-player-id" class="bt-checkout__input" type="text" placeholder="Please enter Player ID" autocomplete="off">
       <div class="bt-checkout__total-row">
         <span class="bt-checkout__total-label">Reference total</span>
-        <span class="bt-checkout__total" id="bt-total">￥ 2.20</span>
+        <span class="bt-checkout__total" id="bt-total">￥ 1.98</span>
       </div>
       <p class="bt-checkout__off" id="bt-off">Save: 40.0% OFF</p>
             <button type="button" class="bt-checkout__buy bt-checkout__buy--chat" id="bt-buy" disabled>
