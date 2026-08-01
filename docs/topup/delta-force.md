@@ -120,7 +120,7 @@ hide:
         <svg class="bt-checkout__buy-ico" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" focusable="false"><path fill="currentColor" d="M12 3C6.5 3 2 6.58 2 11c0 2.39 1.33 4.54 3.41 5.96L4 21l4.55-1.52C9.66 19.82 10.81 20 12 20c5.5 0 10-3.58 10-8s-4.5-9-10-9m0 15c-.96 0-1.9-.16-2.78-.45l-.2-.07-2.34.78.77-2.24-.15-.23C5.86 14.53 5 12.84 5 11c0-3.31 3.13-6 7-6s7 2.69 7 6-3.13 6-7 6z"/></svg>
         <span>我要代充</span>
       </button>
-      <p class="bt-checkout__chat-hint">点击后打开在线客服聊天窗，确认最新报价和库存与代充。</p>
+      <p class="bt-checkout__chat-hint">点击后打开在线客服聊天窗，确认最新报价和库存。</p>
       <p class="bt-summary"><strong id="bt-summary-label">30 Delta Coins</strong> · 参考总计 · x1</p>
             <p class="bt-checkout__note">价格更新时间 2026-07-29 12:15 UTC。</p>
     </div>
