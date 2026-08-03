@@ -19,6 +19,10 @@ theme:
 
 plugins:
   - search
+  - redirects:
+      redirect_maps:
+        board-games.md: peripherals.md
+        en/board-games.md: en/peripherals.md
   - i18n:
       docs_structure: folder
       fallback_to_default: false
@@ -45,7 +49,7 @@ plugins:
             暗区突围点券代充: Arena Breakout Proxy Top-Up
             三角洲行动代充: Delta Force Proxy Top-Up
             王者荣耀国际服代充: Honor of Kings Proxy Top-Up
-            桌游: Board Games
+            外设: Peripherals
             相册: Gallery
             关于与政策: About & Policies
             退款与退货: Return Policy
@@ -103,7 +107,7 @@ nav:
   - 暗区突围点券代充: topup/arena-breakout-bonds.md
   - 三角洲行动代充: topup/delta-force.md
   - 王者荣耀国际服代充: topup/honor-of-kings.md
-  - 桌游: board-games.md
+  - 外设: peripherals.md
   - 相册: gallery.md
   - 关于与政策:
       - FAQ 与更新: shop/faq-and-updates.md

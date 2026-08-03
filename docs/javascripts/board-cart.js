@@ -1,12 +1,12 @@
 (function () {
   "use strict";
 
-  // AceBase board games cart.
+  // AceBase peripherals cart.
   // Adapted from mygear-wiki price-cart.js: adds a "+" button to every row of a
   // .mg-price-table, a floating cart Fab + drawer, and checks out via Crisp
   // (window.abOpenCrisp) instead of WhatsApp.
 
-  var STORAGE_KEY = "acebase-board-cart-v1";
+  var STORAGE_KEY = "acebase-peripherals-cart-v1";
 
   function $(sel, root) {
     return (root || document).querySelector(sel);
@@ -75,7 +75,7 @@
   }
 
   function buildCrispMsg(cart) {
-    var lines = ["你好，我想咨询以下桌游：", ""];
+    var lines = ["你好，我想咨询以下外设：", ""];
     cart.forEach(function (item, i) {
       lines.push(
         (i + 1) + ". " + item.name + " × " + item.qty + " — US$" + money(item.price) + " /件"

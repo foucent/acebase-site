@@ -35,6 +35,7 @@ Digital direct top-ups are usually **non-refundable**; unpaid intent orders can 
 
 | Date | Change |
 | --- | --- |
+| **2026-08-03** | The board games page became a peripherals page (`/peripherals/`) with 30 keyboards & mice reference items; `/board-games/` redirects automatically. |
 | **2026-08-02** | Removed the currency switcher; all prices now shown in USD (US$). Added a board games page (Asmodee Modern Classics, 42 titles). |
 | **2026-07-22** | Site launch; Shop four-page structure. |
 | **2026-07-22** | Nav: top-up section; Gallery added later. |
