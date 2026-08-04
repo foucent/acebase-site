@@ -1,7 +1,7 @@
 (function () {
   "use strict";
 
-  // AceBase peripherals: convert the .mg-price-table source table into a
+  // AceBase mousepads: convert the .mg-price-table source table into a
   // card grid (adapted from mygear-wiki preowned-grid.js buildShopGrid).
   // Each card: media image (zoom-in), stock badge, title, price, add-to-cart.
 
