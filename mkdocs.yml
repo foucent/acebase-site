@@ -98,6 +98,10 @@ watch:
   - overrides
 
 extra:
+  # Snipcart v3 public API key (Test key while testing; Live key after going live).
+  # Get it at https://app.snipcart.com → Account → API keys.
+  # See https://docs.snipcart.com/v3/testing/going-live
+  snipcart_public_key: "MjA4M2Y2NmMtMjBmNi00Y2Q4LThlNzYtNDA1ZDhlNTU0OTQ2NjM5MjAxNTQ1NTQwOTM1OTI4"
   analytics:
     provider: google
     property: G-Q77Y59HQ7K

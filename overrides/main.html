@@ -1,1 +1,6 @@
 {% extends "base.html" %}
+
+{% block scripts %}
+  {{ super() }}
+  <script>window.AB_SNIPCART_KEY = {{ config.extra.snipcart_public_key | default("") | tojson }};</script>
+{% endblock %}

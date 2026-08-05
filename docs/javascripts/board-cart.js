@@ -7,6 +7,7 @@
   // (window.abOpenCrisp) instead of WhatsApp.
 
   var STORAGE_KEY = "acebase-mousepads-cart-v1";
+  var IS_MOUSEPADS = /\/mousepads\//.test(window.location.pathname);
 
   function $(sel, root) {
     return (root || document).querySelector(sel);
@@ -51,14 +52,14 @@
     }, 0);
   }
 
-  function upsert(cart, name, price) {
+  function upsert(cart, name, price, image) {
     for (var i = 0; i < cart.length; i++) {
       if (cart[i].name === name) {
         cart[i].qty += 1;
         return { cart: cart, status: "updated" };
       }
     }
-    cart.push({ name: name, price: price, qty: 1 });
+    cart.push({ name: name, price: price, qty: 1, image: image || "" });
     return { cart: cart, status: "added" };
   }
 
@@ -67,7 +68,7 @@
     return cart
       .map(function (item) {
         if (item.name !== name) return item;
-        return { name: item.name, price: item.price, qty: qty };
+        return { name: item.name, price: item.price, qty: qty, image: item.image || "" };
       })
       .filter(function (item) {
         return item.qty > 0;
@@ -94,6 +95,93 @@
       window.$crisp.push(["set", "message:text", msg]);
       window.$crisp.push(["do", "chat:open"]);
     }
+  }
+
+  // ---- Snipcart instant checkout (v3) ----
+  function isSnipcartConfigured() {
+    var key = window.AB_SNIPCART_KEY || "";
+    return !!key && key.indexOf("REPLACE_WITH_YOUR_SNIPCART") < 0;
+  }
+
+  function slugify(s) {
+    return String(s || "")
+      .toLowerCase()
+      .replace(/[^a-z0-9]+/g, "-")
+      .replace(/^-+|-+$/g, "")
+      .slice(0, 48);
+  }
+
+  function loadSnipcart(cb) {
+    if (window.Snipcart && window.Snipcart.api) {
+      cb();
+      return;
+    }
+    if (!isSnipcartConfigured()) {
+      showToast("在线支付尚未配置，请通过在线客服确认");
+      return;
+    }
+    window.SnipcartSettings = {
+      publicApiKey: window.AB_SNIPCART_KEY,
+      version: "3.0",
+      currency: "usd",
+      loadStrategy: "on-user-interaction",
+      modalStyle: "side",
+      timeoutDuration: 2000
+    };
+    if (!document.getElementById("snipcart-script")) {
+      var s = document.createElement("script");
+      s.id = "snipcart-script";
+      s.async = true;
+      s.src = "https://cdn.snipcart.com/themes/v3.0/default/snipcart.js";
+      document.head.appendChild(s);
+    }
+    var done = false;
+    function go() {
+      if (done) return;
+      done = true;
+      if (window.Snipcart && window.Snipcart.api) cb();
+      else showToast("在线支付加载失败，请通过在线客服确认");
+    }
+    document.addEventListener("snipcart.ready", go);
+    var tries = 0;
+    var timer = setInterval(function () {
+      tries += 1;
+      if (window.Snipcart && window.Snipcart.api) go();
+      else if (tries > 60) {
+        clearInterval(timer);
+        go();
+      }
+    }, 300);
+  }
+
+  function checkoutWithSnipcart(cart) {
+    loadSnipcart(function () {
+      var items = cart.map(function (it) {
+        return {
+          id: "mp-" + (it.id || slugify(it.name) || "item"),
+          name: it.name,
+          price: it.price,
+          url: window.location.href,
+          quantity: it.qty || 1,
+          image: it.image || ""
+        };
+      });
+      Snipcart.api.cart.items
+        .add(items)
+        .then(function () {
+          if (
+            Snipcart.api.theme &&
+            typeof Snipcart.api.theme.cart.open === "function"
+          ) {
+            Snipcart.api.theme.cart.open();
+          }
+          window.location.hash = "/checkout";
+        })
+        .catch(function (err) {
+          console.error("[AceBase] Snipcart add failed", err);
+          showToast("加入支付失败，请通过在线客服确认");
+        });
+    });
   }
 
   function enhanceTables() {
@@ -126,6 +214,10 @@
         btn.setAttribute("aria-label", "Add " + name + " to cart");
         btn.setAttribute("data-name", name);
         btn.setAttribute("data-price", String(price));
+        var rowImg = cells[0].querySelector("img");
+        if (rowImg) {
+          btn.setAttribute("data-image", rowImg.currentSrc || rowImg.src || "");
+        }
         btn.innerHTML = "<span aria-hidden='true'>+</span>";
         td.appendChild(btn);
         tr.appendChild(td);
@@ -157,6 +249,10 @@
       '    <div class="mg-cart-drawer__foot">' +
       '      <div class="mg-cart-drawer__total">小计 <span id="mg-cart-total">$0</span></div>' +
       '      <button type="button" class="mg-cart-drawer__wa" id="mg-cart-wa">通过在线客服确认</button>' +
+      (IS_MOUSEPADS
+        ? '      <button type="button" class="mg-cart-drawer__snipcart" id="mg-cart-snipcart">立即结帐</button>' +
+          '      <p class="mg-cart-drawer__snipcart-hint">在线支付由 Snipcart 安全处理，支持信用卡 / 多种支付方式</p>'
+        : "") +
       '      <button type="button" class="mg-cart-drawer__clear" id="mg-cart-clear">清空购物车</button>' +
       "    </div>" +
       "  </div>" +
@@ -186,6 +282,7 @@
     var itemsEl = $("#mg-cart-items");
     var totalEl = $("#mg-cart-total");
     var wa = $("#mg-cart-wa");
+    var snip = $("#mg-cart-snipcart");
     var count = cartCount(cart);
 
     if (!fab || !itemsEl) return;
@@ -198,6 +295,10 @@
       itemsEl.innerHTML = '<p class="mg-cart-empty">购物车是空的。点击商品右侧 + 号加入。</p>';
       wa.classList.add("is-disabled");
       wa.setAttribute("aria-disabled", "true");
+      if (snip) {
+        snip.classList.add("is-disabled");
+        snip.setAttribute("aria-disabled", "true");
+      }
     } else {
       itemsEl.innerHTML = cart
         .map(function (item) {
@@ -227,6 +328,10 @@
         .join("");
       wa.classList.remove("is-disabled");
       wa.removeAttribute("aria-disabled");
+      if (snip) {
+        snip.classList.remove("is-disabled");
+        snip.removeAttribute("aria-disabled");
+      }
     }
   }
 
@@ -258,7 +363,8 @@
       if (add) {
         var name = add.getAttribute("data-name");
         var price = parseFloat(add.getAttribute("data-price"));
-        var result = upsert(cart, name, price);
+        var image = add.getAttribute("data-image") || "";
+        var result = upsert(cart, name, price, image);
         cart = result.cart;
         saveCart(cart);
         render(cart);
@@ -288,6 +394,13 @@
         if (!cart.length) return;
         openDrawer(false);
         openCrisp(cart);
+        return;
+      }
+
+      if (e.target.closest("#mg-cart-snipcart")) {
+        if (!cart.length) return;
+        openDrawer(false);
+        checkoutWithSnipcart(cart);
         return;
       }
 
