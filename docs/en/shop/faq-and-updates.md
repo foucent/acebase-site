@@ -35,7 +35,7 @@ Digital direct top-ups are usually **non-refundable**; unpaid intent orders can 
 
 | Date | Change |
 | --- | --- |
-| **2026-08-04** | Added a mousepads page (`/mousepads/`) with 50 reference pads, replacing the keyboards page; added a keycaps page (`/keycaps/`) with 30 reference sets; mousepads support multi-image lightbox. Old URLs redirect automatically. |
+| **2026-08-04** | Added a COD Black Ops Cold War codes page (`/topup/cod-black-ops-cold-war/`); added a mousepads page (`/mousepads/`) with 50 reference pads, replacing the keyboards page; added a keycaps page (`/keycaps/`) with 30 reference sets. Old URLs redirect automatically. |
 | **2026-08-03** | The board games page became a peripherals page with keyboard & mouse reference items. |
 | **2026-08-02** | Removed the currency switcher; all prices now shown in USD (US$). Added a board games page (Asmodee Modern Classics, 42 titles). |
 | **2026-07-22** | Site launch; Shop four-page structure. |

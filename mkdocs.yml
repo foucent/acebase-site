@@ -53,6 +53,7 @@ plugins:
             暗区突围点券代充: Arena Breakout Proxy Top-Up
             三角洲行动代充: Delta Force Proxy Top-Up
             王者荣耀国际服代充: Honor of Kings Proxy Top-Up
+            使命召唤冷战兑换码: COD Black Ops Cold War Codes
             鼠标垫: Mousepads
             键帽: Keycaps
             相册: Gallery
@@ -112,6 +113,7 @@ nav:
   - 暗区突围点券代充: topup/arena-breakout-bonds.md
   - 三角洲行动代充: topup/delta-force.md
   - 王者荣耀国际服代充: topup/honor-of-kings.md
+  - 使命召唤冷战兑换码: topup/cod-black-ops-cold-war.md
   - 鼠标垫: mousepads.md
   - 键帽: keycaps.md
   - 相册: gallery.md
