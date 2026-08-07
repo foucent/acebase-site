@@ -128,6 +128,14 @@
       modalStyle: "side",
       timeoutDuration: 2000
     };
+    // Snipcart v3 requires a #snipcart element carrying data-api-key.
+    if (!document.getElementById("snipcart")) {
+      var host = document.createElement("div");
+      host.id = "snipcart";
+      host.setAttribute("data-api-key", window.AB_SNIPCART_KEY);
+      host.hidden = true;
+      document.body.appendChild(host);
+    }
     if (!document.getElementById("snipcart-script")) {
       var s = document.createElement("script");
       s.id = "snipcart-script";
@@ -156,19 +164,22 @@
 
   function checkoutWithSnipcart(cart) {
     loadSnipcart(function () {
-      var items = cart.map(function (it) {
-        return {
+      // Snipcart v3 `items.add` accepts a single item object (or one at a time).
+      // Passing an array is serialized as {"0": {...}} and fails validation.
+      var queue = cart.map(function (it) {
+        var item = {
           id: "mp-" + (it.id || slugify(it.name) || "item"),
           name: it.name,
           price: it.price,
           url: window.location.href,
-          quantity: it.qty || 1,
-          image: it.image || ""
+          quantity: it.qty || 1
         };
+        if (it.image) item.image = it.image;
+        return item;
       });
-      Snipcart.api.cart.items
-        .add(items)
-        .then(function () {
+      var index = 0;
+      function addNext() {
+        if (index >= queue.length) {
           if (
             Snipcart.api.theme &&
             typeof Snipcart.api.theme.cart.open === "function"
@@ -176,11 +187,20 @@
             Snipcart.api.theme.cart.open();
           }
           window.location.hash = "/checkout";
-        })
-        .catch(function (err) {
-          console.error("[AceBase] Snipcart add failed", err);
-          showToast("加入支付失败，请通过在线客服确认");
-        });
+          return;
+        }
+        Snipcart.api.cart.items
+          .add(queue[index])
+          .then(function () {
+            index += 1;
+            addNext();
+          })
+          .catch(function (err) {
+            console.error("[AceBase] Snipcart add failed", err);
+            showToast("加入支付失败，请通过在线客服确认");
+          });
+      }
+      addNext();
     });
   }
 

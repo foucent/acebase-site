@@ -1,27 +1,27 @@
 ---
-title: 发货与到账
-description: AceBase Shop — 数字到账、对接时效与异常处理
+title: Delivery
+description: AceBase Shop — digital delivery, timing, and exceptions
 ---
 
-# 发货与到账
+# Delivery
 
-## 交付类型
+## Delivery types
 
-| 类型 | 我们做什么 | 你需要提供 |
+| Type | We do | You provide |
 | --- | --- | --- |
-| **游戏直充** | 付款确认后按面额充入指定账号 | 区服、Player ID / 约定登录方式 |
-| **卡密 / PIN / CDK** | 发送卡密与兑换指引 | 接收渠道（Crisp / Email 等） |
-| **咨询类** | 商品与下单指引 | 预算与使用场景 |
+| **Game top-up** | Credit account after payment confirmed | Region, Player ID / agreed login |
+| **PIN / code / CDK** | Send code + redeem guide | Receive channel (Crisp / Email, etc.) |
+| **Consulting** | Product / order guidance | Budget and use case |
 
 ---
 
-!!! note "追踪"
-    数字单没有快递单号。进度以 **在线咨询** 回复为准；异常请带上付款凭证与订单关键词。
+!!! note "Tracking"
+    Digital orders have no courier number. Progress via **Crisp chat**; for issues attach payment proof and order keywords.
 
 ---
 
-## 异常怎么处理
+## If something goes wrong
 
-1. **未到账**：先核对区服与 ID，再联系客服并附付款截图。  
-2. **错区 / 错号**：多数无法冲正；以事前核对为主。  
-3. **重复付款**：保留两笔凭证，由客服核对后退款或改充（视情况）。
+1. **Not credited**: Verify region and ID, then contact support with payment screenshot.  
+2. **Wrong region / ID**: Usually irreversible — prevention beats fix.  
+3. **Double payment**: Keep both receipts; support will refund or re-apply credit as applicable.

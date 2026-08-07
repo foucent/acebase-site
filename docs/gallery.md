@@ -1,6 +1,6 @@
 ---
-title: 相册
-description: AceBase 手办 / 模型相册
+title: Gallery
+description: AceBase figure / model photo wall
 hide:
   - title
   - toc
@@ -29,10 +29,10 @@ hide:
     </div>
     <div class="mg-home-hero__inner">
       <p class="mg-home-hero__brand">AceBase</p>
-      <h1 class="mg-home-hero__title">相册</h1>
-      <p class="mg-home-hero__lead">图片来自用户投稿/网络收集，投稿或投诉请<a class="ab-crisp-open" href="#" data-crisp-msg="你好，想投稿或投诉相册内容。">联系我们</a>。</p>
+      <h1 class="mg-home-hero__title">Gallery</h1>
+      <p class="mg-home-hero__lead">Photos are from user submissions and web collection. For submissions or complaints, please <a class="ab-crisp-open" href="#" data-crisp-msg="Hi, I want to submit or report gallery content.">contact us</a>.</p>
       <div class="mg-home-hero__actions">
-        <a class="mg-home-hero__btn mg-home-hero__btn--primary ab-crisp-open" href="#" data-crisp-msg="你好，想咨询手办 / 相册。">在线咨询</a>
+        <a class="mg-home-hero__btn mg-home-hero__btn--primary ab-crisp-open" href="#" data-crisp-msg="Hello, I'd like a quote for anime figures.">Live chat</a>
         <a class="mg-home-hero__btn mg-home-hero__btn--ghost" href="/shop/faq-and-updates/">FAQ</a>
       </div>
     </div>
@@ -41,14 +41,14 @@ hide:
   <section class="mg-home-help">
     <p class="mg-home-help__links">
       <a href="/shop/faq-and-updates/">FAQ</a>
-      <a href="/shop/shipping-and-delivery/">发货与到账</a>
-      <a href="/gallery/">相册</a>
+      <a href="/shop/shipping-and-delivery/">Delivery</a>
+      <a href="/gallery/">Gallery</a>
     </p>
   </section>
 
 </div>
 
-## 图集列表 <span class="mg-list-meta">Updated 01 Aug 2026</span>
+## Gallery list <span class="mg-list-meta">Updated 01 Aug 2026</span>
 
 <div class="sc-wall" id="sc-wall" markdown="0">
   <a class="sc-wall__tile sc-wall__tile--sm" href="/assets/figures/06_ced1ce6bec/img_01.jpg" data-gallery="[&quot;/assets/figures/06_ced1ce6bec/img_01.jpg&quot;, &quot;/assets/figures/06_ced1ce6bec/img_02.jpg&quot;, &quot;/assets/figures/06_ced1ce6bec/img_03.jpg&quot;, &quot;/assets/figures/06_ced1ce6bec/img_04.jpg&quot;]" data-buy="#"><img src="/assets/figures/06_ced1ce6bec/img_01.jpg" alt="" loading="lazy"><span class="sc-wall__count">4</span></a>

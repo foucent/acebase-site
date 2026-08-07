@@ -1,42 +1,44 @@
 ---
-title: FAQ 与更新
-description: AceBase Shop — 下单、付款、到账 FAQ 与店铺更新
+title: FAQ & Updates
+description: AceBase Shop — order, payment, delivery FAQ and changelog
 ---
 
-# FAQ 与更新
+# FAQ & Updates
 
-下单、付款、到账的常见问题，以及店铺/栏目更新日志。通过 **在线咨询** 下单；到账说明见 [发货与到账](shipping-and-delivery.md)。
+Common questions on ordering, payment, and delivery, plus site updates. Order via **live chat**; delivery: [Delivery](shipping-and-delivery.md).
 
 ---
 
 ## FAQ
 
-**如何拿到最终报价并下单？**  
-通过 在线咨询发送区服 + 面额 + 必要账号字段，拿到含说明的总价后再付款。步骤：打开在线咨询发送需求。
+**How do I get a final quote and order?**  
+Send region + denomination + required account fields via Crisp chat; pay after you receive the total. Steps: open live chat with your request.
 
-**比价页上的价格能直接拍吗？**  
-不能默认成交。比价页用于对比与避坑；**成交价以确认单为准**。
+**Can I buy at compare-page prices directly?**  
+Not by default. Compare pages are for research; **confirmed quote from support** is what counts.
 
-**支持哪些付款方式？**  
-主推 **Wise**。其它方式请在下单前确认是否开放。
+**Which payment methods are supported?**  
+**Wise** is preferred. Confirm other methods with support before paying.
 
-**直充填错 Player ID 怎么办？**  
-多数直充无法撤回。下单前务必核对区服与 ID；详见各比价文风险说明。
+**Wrong Player ID on direct top-up?**  
+Most direct top-ups cannot be reversed. Double-check region and ID; see risk notes on each compare page.
 
-**卡密 / CDK 怎么发货？**  
-付款确认后通过 Crisp / 邮件发送卡密与兑换指引，见 [发货与到账](shipping-and-delivery.md)。
+**How are PIN / CDK codes delivered?**  
+After payment confirmation we send the code and redeem steps via Crisp / email — see [Delivery](shipping-and-delivery.md).
 
-**可以退款吗？**  
-数字直充类订单通常 **不支持退款**；未付款可取消意向单。
+**Refunds?**  
+Digital direct top-ups are usually **non-refundable**; unpaid intent orders can be cancelled.
 
 ---
 
 ## Updates
 
-| 日期 | 更新 |
+| Date | Change |
 | --- | --- |
-| **2026-08-04** | 新增使命召唤冷战兑换码页（`/topup/cod-black-ops-cold-war/`）；新增鼠标垫页（`/mousepads/`）50 款参考价，替换原键盘页；新增键帽页（`/keycaps/`）30 款参考价。旧地址自动跳转。 |
-| **2026-08-03** | 桌游页改为外设页；新增键鼠参考价与图片。 |
-| **2026-08-02** | 移除多币种切换，全站统一美元（US$）；新增桌游页（Asmodee 當代經典 42 款）。 |
-| **2026-07-22** | 站点上线；新增 Shop 四页。 |
-| **2026-07-29** | 全站 CNY / USD / TWD 货币切换；中 / 英双语版本（`/en/`）。 |
+| **2026-08-07** | Site is now English-only (removed the Chinese version). Added a floating "Translate" button (Google Translate) so visitors can auto-translate pages into their language. |
+| **2026-08-04** | Added a COD Black Ops Cold War codes page (`/topup/cod-black-ops-cold-war/`); added a mousepads page (`/mousepads/`) with 50 reference pads, replacing the keyboards page; added a keycaps page (`/keycaps/`) with 30 reference sets. Old URLs redirect automatically. |
+| **2026-08-03** | The board games page became a peripherals page with keyboard & mouse reference items. |
+| **2026-08-02** | Removed the currency switcher; all prices now shown in USD (US$). Added a board games page (Asmodee Modern Classics, 42 titles). |
+| **2026-07-22** | Site launch; Shop four-page structure. |
+| **2026-07-22** | Nav: top-up section; Gallery added later. |
+| **2026-07-29** | Site-wide CNY / USD / TWD currency switch; zh / en language versions. |

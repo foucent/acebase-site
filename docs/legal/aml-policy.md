@@ -1,42 +1,42 @@
 ---
-title: 反洗钱与反恐融资政策
-description: AceBase AML / CTF 政策摘要（结构参考 BitTopup）
+title: AML / CTF Policy
+description: AceBase AML / CTF policy summary (BitTopup-aligned structure)
 ---
 
-# 反洗钱与反恐融资（AML / CTF）政策
+# Anti-Money Laundering & Counter-Terrorist Financing (AML / CTF)
 
-## 目的
+## Purpose
 
-本摘要说明 AceBase在提供数字充值 / 礼品相关服务时，对 **洗钱、恐怖融资及相关金融犯罪** 采取的基本立场与控制方向。
+This summary states AceBase’s basic stance and control directions against **money laundering, terrorist financing, and related financial crime** when providing digital top-up / gift-related services.
 
-## 适用范围
+## Scope
 
-适用于站点相关服务、运营人员与合作方，以及使用本站下单 / 咨询的用户。
+Applies to site-related services, operators and partners, and users who order or inquire through this site.
 
-## 基本原则
+## Principles
 
-- 采用 **风险为本** 的识别与控制思路  
-- 对可疑交易可要求补充说明、暂缓或拒绝服务  
-- 禁止将服务用于非法用途、制裁规避或明显异常资金流转  
+- **Risk-based** identification and controls  
+- Suspicious activity may trigger requests for more info, delay, or refusal of service  
+- Services must not be used for illegal purposes, sanctions evasion, or clearly abnormal fund flows  
 
-## 客户尽职调查
+## Customer due diligence
 
-在必要时，我们可能要求：
+When needed, we may:
 
-- 核实身份与联系方式  
-- 了解交易目的与资金来源（高风险情形）  
-- 拒绝无法完成核验的订单  
+- Verify identity and contact details  
+- Ask about purpose of the transaction and source of funds (higher-risk cases)  
+- Refuse orders that cannot be verified  
 
-## 监控与报告
+## Monitoring & reporting
 
-- 对异常下单模式保持关注（如拆单、异常面额组合等）  
-- 依法配合有权机关的合理要求  
+- Watch for unusual order patterns (e.g. structuring, odd denomination mixes)  
+- Cooperate with lawful requests from competent authorities (once a production entity is live)  
 
-## 禁止活动
+## Prohibited activity
 
-不得将服务用于：欺诈、勒索、违禁品交易、制裁规避或其他违法行为。
+Do not use the service for fraud, extortion, prohibited goods, sanctions evasion, or other illegal activity.
 
-## 联系
+## Contact
 
-合规相关问询：请使用站内 **在线咨询**
+Compliance questions: use **live chat**
 

@@ -3,6 +3,7 @@ site_url: https://acebase.cc/
 theme:
   name: material
   custom_dir: overrides
+  language: en
   palette:
     scheme: slate
     primary: custom
@@ -19,48 +20,17 @@ theme:
 
 plugins:
   - search
+  - minify:
+      minify_html: true
+      minify_css: true
+      minify_js: true
+      htmlmin_opts:
+        remove_comments: true
   - redirects:
       redirect_maps:
         board-games.md: mousepads.md
-        en/board-games.md: en/mousepads.md
         peripherals.md: mousepads.md
-        en/peripherals.md: en/mousepads.md
         keyboards.md: mousepads.md
-        en/keyboards.md: en/mousepads.md
-  - i18n:
-      docs_structure: folder
-      fallback_to_default: false
-      reconfigure_material: true
-      reconfigure_search: true
-      languages:
-        - locale: zh
-          default: true
-          name: 中文
-          build: true
-          theme:
-            language: zh
-        - locale: en
-          name: English
-          build: true
-          theme:
-            language: en
-          nav_translations:
-            home: Home
-            FAQ 与更新: FAQ & Updates
-            发货与到账: Delivery
-            PUBG Mobile UC 代充: PUBG Mobile UC Proxy Top-Up
-            PUBG G-COIN CDK 代充: PUBG G-COIN CDK Proxy Top-Up
-            暗区突围点券代充: Arena Breakout Proxy Top-Up
-            三角洲行动代充: Delta Force Proxy Top-Up
-            王者荣耀国际服代充: Honor of Kings Proxy Top-Up
-            使命召唤冷战兑换码: COD Black Ops Cold War Codes
-            鼠标垫: Mousepads
-            键帽: Keycaps
-            相册: Gallery
-            关于与政策: About & Policies
-            退款与退货: Return Policy
-            反洗钱与反恐融资: AML / CTF Policy
-            服务条款: Terms of Use
 
 markdown_extensions:
   - admonition
@@ -84,6 +54,7 @@ extra_css:
   - stylesheets/photo-wall.css
   - stylesheets/home.css
   - stylesheets/board-games.css
+  - stylesheets/games.css
 
 extra_javascript:
   - javascripts/currency.js
@@ -93,6 +64,7 @@ extra_javascript:
   - javascripts/gallery-lightbox.js
   - javascripts/board-cart.js
   - javascripts/board-grid.js
+  - javascripts/games-prices.js
 
 watch:
   - overrides
@@ -109,21 +81,34 @@ extra:
     - icon: material/controller-classic
       link: https://acebase.cc/
       name: AceBase
+    - icon: fontawesome/brands/youtube
+      link: https://youtube.com/@acebase
+      name: AceBase on YouTube
+    - icon: fontawesome/brands/discord
+      link: https://discord.gg/acebase
+      name: AceBase on Discord
 
 nav:
-  - home: index.md
-  - PUBG Mobile UC 代充: topup/pubg-mobile-direct.md
-  - PUBG G-COIN CDK 代充: topup/pubg-gcoin.md
-  - 暗区突围点券代充: topup/arena-breakout-bonds.md
-  - 三角洲行动代充: topup/delta-force.md
-  - 王者荣耀国际服代充: topup/honor-of-kings.md
-  - 使命召唤冷战兑换码: topup/cod-black-ops-cold-war.md
-  - 鼠标垫: mousepads.md
-  - 键帽: keycaps.md
-  - 相册: gallery.md
-  - 关于与政策:
-      - FAQ 与更新: shop/faq-and-updates.md
-      - 发货与到账: shop/shipping-and-delivery.md
-      - 退款与退货: legal/return-policy.md
-      - 反洗钱与反恐融资: legal/aml-policy.md
-      - 服务条款: legal/terms-of-use.md
+  - Home: index.md
+  - Games:
+      - Valorant: games/valorant.md
+      - Apex Legends: games/apex-legends.md
+      - CS2: games/cs2.md
+      - Delta Force: games/delta-force.md
+  - Guides:
+      - Top-Up Safety Guide: guides/safety.md
+  - PUBG Mobile UC Top-Up: topup/pubg-mobile-direct.md
+  - PUBG G-COIN CDK Top-Up: topup/pubg-gcoin.md
+  - Arena Breakout Top-Up: topup/arena-breakout-bonds.md
+  - Delta Force Top-Up: topup/delta-force.md
+  - Honor of Kings Top-Up: topup/honor-of-kings.md
+  - COD Black Ops Cold War Codes: topup/cod-black-ops-cold-war.md
+  - Mousepads: mousepads.md
+  - Keycaps: keycaps.md
+  - Gallery: gallery.md
+  - About & Policies:
+      - FAQ & Updates: shop/faq-and-updates.md
+      - Delivery: shop/shipping-and-delivery.md
+      - Return Policy: legal/return-policy.md
+      - AML / CTF Policy: legal/aml-policy.md
+      - Terms of Use: legal/terms-of-use.md

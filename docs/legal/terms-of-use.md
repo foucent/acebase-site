@@ -1,45 +1,45 @@
 ---
-title: 服务条款
-description: AceBase 服务条款摘要（结构参考 BitTopup Terms of Use）
+title: Terms of Use
+description: AceBase Terms of Use summary (BitTopup-aligned structure)
 ---
 
-# 服务条款
+# Terms of Use
 
-**生效说明**：本站条款可能随时更新；继续使用即视为知悉并接受最新版本。
+**Effective note**: These terms may change at any time; continued use means you accept the latest version.
 
-## 1. 服务说明
+## 1. Services
 
-AceBase 网站提供游戏充值参考与下单指引等内容。**页面展示价格不构成要约**；成交价、交付与退款以客服确认与相关政策为准。
+AceBase provides top-up references and order guidance. **Listed prices are not offers**; final price, delivery, and refunds follow support confirmation and related policies.
 
-## 2. 资格
+## 2. Eligibility
 
-你须达到所在司法辖区允许订立合同的法定年龄。未成年人须在监护人同意下使用相关服务。
+You must be of legal age to contract in your jurisdiction. Minors need guardian consent where required.
 
-## 3. 账号与信息
+## 3. Accounts & information
 
-- 向客服提供的账号字段（Player ID / UID / Zone ID 等）须真实准确  
-- 填错导致错充的风险由用户承担（多数直充不可撤回）  
-- 不得冒充他人或从事欺诈、违法活动  
+- Account fields given to support (Player ID / UID / Zone ID, etc.) must be accurate  
+- Wrong top-ups from user error are usually irreversible  
+- Do not impersonate others or engage in fraud / illegal activity  
 
-## 4. 订单与数字商品
+## 4. Orders & digital goods
 
-- 直充 / 卡密属数字商品，交付后通常不可退（见 [退款与退货](return-policy.md)）  
-- 请确认区服与商品适用范围  
-- 我们可在怀疑风险或库存/渠道异常时拒绝或取消订单  
+- Top-ups / PINs are digital and usually non-refundable after delivery (see [Return policy](return-policy.md))  
+- Confirm region and product eligibility  
+- We may refuse or cancel orders when risk, stock, or channel issues arise  
 
-## 5. 禁止行为
+## 5. Prohibited uses
 
-不得利用本站从事：洗钱/制裁规避、侵权、传播恶意软件、骚扰他人、或任何违法用途。详见 [AML 政策](aml-policy.md)。
+No money laundering / sanctions evasion, IP infringement, malware, harassment, or other illegal use. See [AML policy](aml-policy.md).
 
-## 6. 免责
+## 6. Disclaimer
 
-在法律允许范围内，本站内容按「现状」提供；对间接损失、预期收益损失等不作保证。渠道维护、网络故障等不可抗力可能导致延迟。
+To the extent allowed by law, site content is provided “as is”; no warranty for indirect or consequential loss. Channel maintenance and network failures may cause delay.
 
-## 7. 知识产权
+## 7. Intellectual property
 
-站点文案、版式与素材归 AceBase 及相关权利人所有，未经许可不得擅自复制用于商业用途。
+Site copy, layout, and assets belong to AceBase and related rights holders. Do not copy for commercial use without permission.
 
-## 8. 联系
+## 8. Contact
 
-条款疑问：请使用站内 **在线咨询**
+Questions: use **live chat**
 

@@ -1,6 +1,6 @@
 ---
-title: 三角洲行动代充
-description: 三角洲行动三角币（Global）人工代充 — 最新报价 · 在线咨询
+title: Delta Force Proxy Top-Up
+description: Delta Force Delta Coins (Global) manual proxy top-up — latest quotes · live chat
 hide:
   - title
   - toc
@@ -11,145 +11,145 @@ hide:
 <div class="bt-shell">
 
 <nav class="bt-crumb" aria-label="Breadcrumb">
-  <a href="/">首页</a> / 三角洲行动代充
+  <a href="/">Home</a> / Delta Force Proxy Top-Up
 </nav>
 
 <section class="bt-hero">
   <div class="bt-hero__img">
-    <img src="/assets/bittopup/delta-force.webp" alt="三角洲行动代充" width="200" height="200" loading="eager">
+    <img src="/assets/bittopup/delta-force.webp" alt="Delta Force proxy top-up" width="200" height="200" loading="eager">
   </div>
   <div>
-    <h1 class="bt-hero__title">三角洲行动代充</h1>
+    <h1 class="bt-hero__title">Delta Force Proxy Top-Up</h1>
     <div class="bt-badges">
       <span class="bt-badge"><img src="/assets/bittopup/icon-region.webp" alt=""> GLOBAL</span>
-      <span class="bt-badge"><img src="/assets/bittopup/icon-fast.webp" alt=""> 人工确认</span>
-      <span class="bt-badge"><img src="/assets/bittopup/icon-safe.webp" alt=""> 快速到帐</span>
+      <span class="bt-badge"><img src="/assets/bittopup/icon-fast.webp" alt=""> Manual confirm</span>
+      <span class="bt-badge"><img src="/assets/bittopup/icon-safe.webp" alt=""> Fast credit</span>
     </div>
-    <p class="bt-hero__promo">💡 三角洲行动 <strong>代充</strong> — 选好面额与 Player ID，点「我要代充」打开在线客服确认最新报价和库存。</p>
+    <p class="bt-hero__promo">💡 Delta Force <strong>proxy top-up</strong> — pick a tier and Player ID, then tap “I want proxy top-up” to confirm the latest quote and stock in live chat.</p>
   </div>
 </section>
 
 <div class="bt-main">
   <div class="bt-left">
     <div class="bt-panel">
-      <h2 class="bt-panel__title">最新报价</h2>
+      <h2 class="bt-panel__title">Latest quotes</h2>
       <div class="bt-skus" id="bt-sku-grid">
         <button type="button" class="bt-sku is-active" data-price="0.27" data-was="0.50" data-label="30 Delta Coins" data-off="45.3">
           <span class="bt-sku__ribbon bt-sku__ribbon--sale">SALE</span>
           <span class="bt-sku__icon">🪙</span>
           <span class="bt-sku__name">30 Delta Coins</span>
-          <span class="bt-sku__game">三角洲行动</span>
-          <span class="bt-sku__off">折扣: 45.3% OFF</span>
+          <span class="bt-sku__game">Delta Force</span>
+          <span class="bt-sku__off">Save: 40.0% OFF</span>
           <span class="bt-sku__price">US$ 0.27<span class="bt-sku__was">US$ 0.50</span></span>
         </button>
         <button type="button" class="bt-sku" data-price="0.55" data-was="0.98" data-label="60 Delta Coins" data-off="44.0">
           <span class="bt-sku__ribbon bt-sku__ribbon--hot">HOT</span>
           <span class="bt-sku__icon">🪙</span>
           <span class="bt-sku__name">60 Delta Coins</span>
-          <span class="bt-sku__game">三角洲行动</span>
-          <span class="bt-sku__off">折扣: 44.0% OFF</span>
+          <span class="bt-sku__game">Delta Force</span>
+          <span class="bt-sku__off">Save: 40.0% OFF</span>
           <span class="bt-sku__price">US$ 0.55<span class="bt-sku__was">US$ 0.98</span></span>
         </button>
         <button type="button" class="bt-sku" data-price="2.74" data-was="4.77" data-label="300+20 Delta Coins" data-off="42.5">
           <span class="bt-sku__ribbon bt-sku__ribbon--hot">HOT</span>
           <span class="bt-sku__icon">🪙</span>
           <span class="bt-sku__name">300+20 Delta Coins</span>
-          <span class="bt-sku__game">三角洲行动</span>
-          <span class="bt-sku__off">折扣: 42.5% OFF</span>
+          <span class="bt-sku__game">Delta Force</span>
+          <span class="bt-sku__off">Save: 40.0% OFF</span>
           <span class="bt-sku__price">US$ 2.74<span class="bt-sku__was">US$ 4.77</span></span>
         </button>
         <button type="button" class="bt-sku" data-price="3.98" data-was="6.84" data-label="420 + 40 Delta Coins" data-off="41.9">
           <span class="bt-sku__ribbon bt-sku__ribbon--hot">HOT</span>
           <span class="bt-sku__icon">🪙</span>
           <span class="bt-sku__name">420 + 40 Delta Coins</span>
-          <span class="bt-sku__game">三角洲行动</span>
-          <span class="bt-sku__off">折扣: 41.9% OFF</span>
+          <span class="bt-sku__game">Delta Force</span>
+          <span class="bt-sku__off">Save: 40.0% OFF</span>
           <span class="bt-sku__price">US$ 3.98<span class="bt-sku__was">US$ 6.84</span></span>
         </button>
         <button type="button" class="bt-sku" data-price="5.49" data-was="9.43" data-label="680 + 70 Delta Coins" data-off="41.8">
           <span class="bt-sku__icon">🪙</span>
           <span class="bt-sku__name">680 + 70 Delta Coins</span>
-          <span class="bt-sku__game">三角洲行动</span>
-          <span class="bt-sku__off">折扣: 41.8% OFF</span>
+          <span class="bt-sku__game">Delta Force</span>
+          <span class="bt-sku__off">Save: 40.0% OFF</span>
           <span class="bt-sku__price">US$ 5.49<span class="bt-sku__was">US$ 9.43</span></span>
         </button>
         <button type="button" class="bt-sku" data-price="10.97" data-was="18.67" data-label="1280 + 200 Delta Coins" data-off="41.2">
           <span class="bt-sku__icon">🪙</span>
           <span class="bt-sku__name">1280 + 200 Delta Coins</span>
-          <span class="bt-sku__game">三角洲行动</span>
-          <span class="bt-sku__off">折扣: 41.2% OFF</span>
+          <span class="bt-sku__game">Delta Force</span>
+          <span class="bt-sku__off">Save: 40.0% OFF</span>
           <span class="bt-sku__price">US$ 10.97<span class="bt-sku__was">US$ 18.67</span></span>
         </button>
         <button type="button" class="bt-sku bt-sku--extra" data-price="13.72" data-was="23.29" data-label="1680 + 300 Delta Coins" data-off="41.1">
           <span class="bt-sku__icon">🪙</span>
           <span class="bt-sku__name">1680 + 300 Delta Coins</span>
-          <span class="bt-sku__game">三角洲行动</span>
-          <span class="bt-sku__off">折扣: 41.1% OFF</span>
+          <span class="bt-sku__game">Delta Force</span>
+          <span class="bt-sku__off">Save: 40.0% OFF</span>
           <span class="bt-sku__price">US$ 13.72<span class="bt-sku__was">US$ 23.29</span></span>
         </button>
         <button type="button" class="bt-sku bt-sku--extra" data-price="27.44" data-was="46.76" data-label="3280 + 670 Delta Coins" data-off="41.3">
           <span class="bt-sku__icon">🪙</span>
           <span class="bt-sku__name">3280 + 670 Delta Coins</span>
-          <span class="bt-sku__game">三角洲行动</span>
-          <span class="bt-sku__off">折扣: 41.3% OFF</span>
+          <span class="bt-sku__game">Delta Force</span>
+          <span class="bt-sku__off">Save: 40.0% OFF</span>
           <span class="bt-sku__price">US$ 27.44<span class="bt-sku__was">US$ 46.76</span></span>
         </button>
         <button type="button" class="bt-sku bt-sku--extra" data-price="54.89" data-was="93.15" data-label="6480 + 1620 Delta Coins" data-off="41.1">
           <span class="bt-sku__icon">🪙</span>
           <span class="bt-sku__name">6480 + 1620 Delta Coins</span>
-          <span class="bt-sku__game">三角洲行动</span>
-          <span class="bt-sku__off">折扣: 41.1% OFF</span>
+          <span class="bt-sku__game">Delta Force</span>
+          <span class="bt-sku__off">Save: 40.0% OFF</span>
           <span class="bt-sku__price">US$ 54.89<span class="bt-sku__was">US$ 93.15</span></span>
         </button>
       </div>
-      <button type="button" class="bt-more" id="bt-more">显示更多 +3</button>
+      <button type="button" class="bt-more" id="bt-more">Show more +3</button>
     </div>
   </div>
 
   <aside class="bt-checkout bt-checkout--chat">
     <div class="bt-panel">
-      <h2 class="bt-checkout__title">代充信息</h2>
+      <h2 class="bt-checkout__title">Proxy top-up details</h2>
       <label class="bt-checkout__label" for="bt-player-id">Player ID</label>
       <input id="bt-player-id" class="bt-checkout__input" type="text" placeholder="Please enter Player ID" autocomplete="off">
       <div class="bt-checkout__total-row">
-        <span class="bt-checkout__total-label">参考总计</span>
+        <span class="bt-checkout__total-label">Reference total</span>
         <span class="bt-checkout__total" id="bt-total">US$ 0.27</span>
       </div>
-      <p class="bt-checkout__off" id="bt-off">折扣: 45.3% OFF</p>
+      <p class="bt-checkout__off" id="bt-off">Save: 40.0% OFF</p>
             <button type="button" class="bt-checkout__buy bt-checkout__buy--chat" id="bt-buy" disabled>
         <svg class="bt-checkout__buy-ico" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" focusable="false"><path fill="currentColor" d="M12 3C6.5 3 2 6.58 2 11c0 2.39 1.33 4.54 3.41 5.96L4 21l4.55-1.52C9.66 19.82 10.81 20 12 20c5.5 0 10-3.58 10-8s-4.5-9-10-9m0 15c-.96 0-1.9-.16-2.78-.45l-.2-.07-2.34.78.77-2.24-.15-.23C5.86 14.53 5 12.84 5 11c0-3.31 3.13-6 7-6s7 2.69 7 6-3.13 6-7 6z"/></svg>
-        <span>我要代充</span>
+        <span>I want proxy top-up</span>
       </button>
-      <p class="bt-checkout__chat-hint">点击后打开在线客服聊天窗，确认最新报价和库存</p>
-      <p class="bt-summary"><strong id="bt-summary-label">30 Delta Coins</strong> · 参考总计 · x1</p>
-            <p class="bt-checkout__note">价格更新时间 2026-07-29 12:15 UTC。</p>
+      <p class="bt-checkout__chat-hint">Opens the live-chat window to confirm the latest quote, stock, and proxy top-up.</p>
+      <p class="bt-summary"><strong id="bt-summary-label">30 Delta Coins</strong> · Reference total · x1</p>
+            <p class="bt-checkout__note">Price updated 2026-07-29 12:15 UTC.</p>
     </div>
   </aside>
 </div>
 
 <section class="bt-desc">
-  <h2>三角洲行动代充指南</h2>
+  <h2>Delta Force proxy top-up guide</h2>
 
-  <h3>如何代充三角洲行动代币？</h3>
+  <h3>How to proxy top-up Delta Force coins?</h3>
   <ol>
-    <li>在「最新报价」中选面额 — 价格为参考，以客服确认为准</li>
-    <li>输入 Player ID</li>
-    <li>点击「我要代充」打开在线客服聊天窗</li>
-    <li>确认报价并付款后由客服代充到账</li>
+    <li>Pick a tier under Latest quotes — prices are reference until support confirms</li>
+    <li>Enter your Player ID</li>
+    <li>Tap “I want proxy top-up” to open live chat</li>
+    <li>Confirm quote &amp; pay — support completes the top-up</li>
   </ol>
 
-  <h3>如何查找三角洲行动玩家 ID？</h3>
+  <h3>How to find your Delta Force Player ID?</h3>
   <ol>
-    <li>使用您的账户登录游戏</li>
-    <li>点击主界面右下角的「头像」图标</li>
-    <li>您的三角洲行动玩家 ID 将显示在屏幕上</li>
+    <li>Log in with your account</li>
+    <li>Tap the avatar icon at the bottom-right of the home screen</li>
+    <li>Your Player ID is shown on screen</li>
   </ol>
 </section>
 
 <section class="bt-faq">
-  <h2>三角洲行动 代充常见问题</h2>
-  <p><strong>订单完成需要多长时间？</strong><br>通常几分钟内完成代充。如有延迟，请在聊天窗联系客服。</p>
-  <p><strong>客服工作时间？</strong><br>请点击「我要代充」打开在线咨询。</p>
+  <h2>Delta Force proxy top-up FAQ</h2>
+  <p><strong>How long does an order take?</strong><br>Usually a few minutes after payment. Use the chat window if delayed.</p>
+  <p><strong>Support hours?</strong><br>Tap “I want proxy top-up” to open live chat.</p>
 </section>
 
 </div>
@@ -179,7 +179,7 @@ hide:
     totalEl.textContent = window.AceBaseCurrency
       ? AceBaseCurrency.formatFromBase(parseFloat(price), "USD")
       : "US$ " + price;
-    offEl.textContent = "折扣: " + off + "% OFF";
+    offEl.textContent = "Save: " + off + "% OFF";
     summaryLabel.textContent = label;
     buyBtn.disabled = !playerId.value.trim();
   }
@@ -201,7 +201,7 @@ hide:
     var sku = activeSku();
     var label = sku ? sku.getAttribute("data-label") : "";
     var pid = playerId.value.trim();
-    var msg = "你好，我要代充三角洲行动（Global）" + label + " · Player ID: " + pid;
+    var msg = "Hi, I want proxy top-up for Delta Force (Global) " + label + " · Player ID: " + pid;
     if (typeof window.abOpenCrisp === "function") {
       window.abOpenCrisp(msg);
     } else if (window.$crisp) {

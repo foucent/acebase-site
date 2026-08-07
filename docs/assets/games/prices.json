@@ -1,0 +1,103 @@
+{
+  "updated": "2026-08-07",
+  "games": {
+    "valorant": [
+      {
+        "title": "535 VP",
+        "official": 4.99,
+        "acebase": 4.49
+      },
+      {
+        "title": "1060 VP",
+        "official": 9.99,
+        "acebase": 8.99
+      },
+      {
+        "title": "2200 VP",
+        "official": 19.99,
+        "acebase": 17.99
+      },
+      {
+        "title": "5650 VP",
+        "official": 49.99,
+        "acebase": 44.99
+      },
+      {
+        "title": "11500 VP",
+        "official": 99.99,
+        "acebase": 89.99
+      }
+    ],
+    "apex": [
+      {
+        "title": "500 Apex Coins",
+        "official": 4.99,
+        "acebase": 4.49
+      },
+      {
+        "title": "1000 Apex Coins",
+        "official": 9.99,
+        "acebase": 8.99
+      },
+      {
+        "title": "2000 Apex Coins",
+        "official": 19.99,
+        "acebase": 17.99
+      },
+      {
+        "title": "4000 Apex Coins",
+        "official": 39.99,
+        "acebase": 35.99
+      }
+    ],
+    "cs2": [
+      {
+        "title": "CS2 Case Key",
+        "official": 2.49,
+        "acebase": 2.29
+      },
+      {
+        "title": "Steam Wallet $5",
+        "official": 5.0,
+        "acebase": 4.69
+      },
+      {
+        "title": "Steam Wallet $10",
+        "official": 10.0,
+        "acebase": 9.39
+      },
+      {
+        "title": "Steam Wallet $20",
+        "official": 20.0,
+        "acebase": 18.79
+      }
+    ],
+    "delta-force": [
+      {
+        "title": "60 Delta Coins",
+        "official": 0.98,
+        "acebase": 0.55
+      },
+      {
+        "title": "300 + 20 Delta Coins",
+        "official": 4.77,
+        "acebase": 2.74
+      },
+      {
+        "title": "650 + 50 Delta Coins",
+        "official": 9.78,
+        "acebase": 5.62
+      },
+      {
+        "title": "1300 + 120 Delta Coins",
+        "official": 19.17,
+        "acebase": 11.25
+      },
+      {
+        "title": "6500 + 500 Delta Coins",
+        "official": 95.85,
+        "acebase": 57.69
+      }
+    ]
+  }
+}

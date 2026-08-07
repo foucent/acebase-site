@@ -1,32 +1,32 @@
 ---
-title: 退款与退货
-description: AceBase 退款 / 退货政策（结构参考 BitTopup）
+title: Return Policy
+description: AceBase return / refund policy (BitTopup-aligned structure)
 ---
 
-# 退款与退货
+# Return Policy
 
-## 退款
+## Refunds
 
-在下列情形下，可申请审核（不保证一定通过）：
+You may request a review when:
 
-- 商品存在可证实的缺陷或故障，且 **非用户原因**  
-- 自购买日起 **14 天内** 提出申请  
-- 审核通过后，退款一般退回原支付方式（约 **7 个工作日**）
+- The product has a **verifiable** defect not caused by the user  
+- The request is made within **14 days** of purchase  
+- If approved, refunds usually return to the original payment method (about **7 business days**)
 
-## 退货
+## Returns
 
-数字商品即时交付，**原则上不接受退货**。例外情形：
+Digital goods are delivered instantly and are **generally not returnable**. Exceptions:
 
-- 可证明卡密 **无法使用**，且在购买后 14 天内主张  
-- 卡密 **尚未兑换 / 使用**
+- PIN codes proven **unusable**, claimed within 14 days  
+- Codes that have **not been redeemed / used**
 
-## 虚拟商品特别说明
+## Virtual goods
 
-- 直充类一旦记入指定账号，视为已消费，通常 **不可撤回**  
-- 完成付款即表示理解数字商品一经交付难以退回  
-- 已交付的 PIN / 虚拟物品，除证实缺陷外，一般 **不予退款**
+- Direct top-up credited to an account is treated as consumed and usually **cannot be reversed**  
+- Paying implies you understand digital delivery is hard to undo  
+- Delivered PINs / virtual items are generally **non-refundable** except for proven defects
 
-## 联系
+## Contact
 
-退款相关请通过 **在线咨询**，并附订单关键词与凭证。
+Refunds: contact us via **live chat** with order keyword and proof.
 

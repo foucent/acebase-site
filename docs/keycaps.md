@@ -3,45 +3,45 @@ icon: material/apple-keyboard-caps
 hide:
   - title
   - toc
-description: 键帽参考 — 30 款精选机械键盘键帽。在线咨询确认最新报价与库存。
+description: Keycaps reference — 30 curated mechanical keyboard keycap sets. Chat for latest prices and stock.
 ---
 
 <div class="mg-shop" markdown="0">
 
-  <section class="mg-home-hero mg-home-hero--shop mg-hero-slides" aria-label="键帽图片">
+  <section class="mg-home-hero mg-home-hero--shop mg-hero-slides" aria-label="Keycaps photos">
     <div class="mg-hero-slides__track" aria-hidden="true">
       <img class="mg-hero-slides__img is-active" src="/assets/keycaps/hero/hero-keyboard.svg" alt="" width="1400" height="900" decoding="async" fetchpriority="high">
     </div>
     <div class="mg-home-hero__inner">
       <p class="mg-home-hero__brand">AceBase</p>
-      <h1 class="mg-home-hero__title">键帽 Keycaps</h1>
-      <p class="mg-home-hero__lead">精选机械键盘键帽参考列表 — 点击「在线咨询」确认最新报价与库存。</p>
+      <h1 class="mg-home-hero__title">Keycaps</h1>
+      <p class="mg-home-hero__lead">Curated mechanical keyboard keycap reference list — ask our chat for the latest price and stock.</p>
       <div class="mg-home-hero__actions">
-        <a class="mg-home-hero__btn mg-home-hero__btn--primary ab-crisp-open" href="#" data-crisp-msg="你好，我想咨询键帽。">在线咨询</a>
-        <a class="mg-home-hero__btn mg-home-hero__btn--ghost" href="/shop/faq-and-updates/">FAQ 与更新</a>
+        <a class="mg-home-hero__btn mg-home-hero__btn--primary ab-crisp-open" href="#" data-crisp-msg="Hi, I'd like to ask about keycaps.">Chat with us</a>
+        <a class="mg-home-hero__btn mg-home-hero__btn--ghost" href="/shop/faq-and-updates/">FAQ &amp; Updates</a>
       </div>
     </div>
   </section>
 
   <section class="mg-home-help">
     <p class="mg-home-help__links">
-      <a href="/shop/shipping-and-delivery/">发货与到账</a>
-      <a href="/shop/faq-and-updates/">FAQ 与更新</a>
-      <a href="/gallery/">相册</a>
+      <a href="/shop/shipping-and-delivery/">Shipping &amp; Delivery</a>
+      <a href="/shop/faq-and-updates/">FAQ &amp; Updates</a>
+      <a href="/gallery/">Gallery</a>
     </p>
   </section>
 
 </div>
 
-## 键帽列表 <span class="mg-list-meta">参考价 · 2026-08-04</span>
+## Keycaps list <span class="mg-list-meta">reference · 2026-08-04</span>
 
-<p>以下为精选机械键盘键帽的参考价格，单位为美元。库存请通过在线客服确认。</p>
+<p>Reference prices below are in US Dollars. Confirm stock with our chat.</p>
 
-<p class="mg-rubbers-showing" markdown="0">共 30 款 · 参考价</p>
+<p class="mg-rubbers-showing" markdown="0">30 titles · reference prices</p>
 
 <div class="mg-price-table" markdown="1">
 
-| | 商品 | 价格 |
+| | Product | Price |
 | :---: | --- | ---: |
 | <img src="/assets/keycaps/thumbs/kc-01-z-review-rinko-touch-cherry-profile-keyc.jpg" alt="Utyping X Z Reviews Rinko Touch Cherry Profile Keycaps Set" data-full-src="/assets/keycaps/full/kc-01-z-review-rinko-touch-cherry-profile-keyc-1.jpg" data-gallery="/assets/keycaps/full/kc-01-z-review-rinko-touch-cherry-profile-keyc-1.jpg,/assets/keycaps/full/kc-01-z-review-rinko-touch-cherry-profile-keyc-2.jpg" loading="lazy"> | Utyping X Z Reviews Rinko Touch Cherry Profile Keycaps Set | US$69.99 |
 | <img src="/assets/keycaps/thumbs/kc-02-fbb-sfc-keycaps.jpg" alt="FBB SFC PBT Retro Cherry Profile Keycaps Set" data-full-src="/assets/keycaps/full/kc-02-fbb-sfc-keycaps-1.jpg" data-gallery="/assets/keycaps/full/kc-02-fbb-sfc-keycaps-1.jpg,/assets/keycaps/full/kc-02-fbb-sfc-keycaps-2.jpg" loading="lazy"> | FBB SFC PBT Retro Cherry Profile Keycaps Set | US$55.99 |
@@ -76,11 +76,11 @@ description: 键帽参考 — 30 款精选机械键盘键帽。在线咨询确�
 </div>
 
 <div class="admonition note mg-page-note">
-  <p class="admonition-title">价格说明</p>
-  <p>价格为可能随官方调整。请在下单前通过在线客服确认最新报价、库存与发货方式</p>
+  <p class="admonition-title">Price note</p>
+  <p>Prices may change. Confirm the latest price, stock and delivery with our chat before ordering</p>
 </div>
 
 <div class="admonition note mg-page-note">
-  <p class="admonition-title">相关</p>
-  <p><a href="/mousepads/">鼠标垫</a> · <a href="/topup/pubg-mobile-direct/">PUBG Mobile 代充</a> · <a href="/gallery/">相册</a></p>
+  <p class="admonition-title">Related</p>
+  <p><a href="/mousepads/">Mousepads</a> · <a href="/topup/pubg-mobile-direct/">PUBG Mobile Top-Up</a> · <a href="/gallery/">Gallery</a></p>
 </div>

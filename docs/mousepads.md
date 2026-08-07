@@ -3,45 +3,45 @@ icon: material/mouse
 hide:
   - title
   - toc
-description: 鼠标垫参考 — 50 款精选鼠标垫。在线咨询确认最新报价与库存。
+description: Mousepads reference — 50 curated mouse pads. Chat for latest prices and stock.
 ---
 
 <div class="mg-shop" markdown="0">
 
-  <section class="mg-home-hero mg-home-hero--shop mg-hero-slides" aria-label="鼠标垫图片">
+  <section class="mg-home-hero mg-home-hero--shop mg-hero-slides" aria-label="Mousepads photos">
     <div class="mg-hero-slides__track" aria-hidden="true">
       <img class="mg-hero-slides__img is-active" src="/assets/mousepads/hero/hero-mousepad.svg" alt="" width="1400" height="900" decoding="async" fetchpriority="high">
     </div>
     <div class="mg-home-hero__inner">
       <p class="mg-home-hero__brand">AceBase</p>
-      <h1 class="mg-home-hero__title">鼠标垫 Mousepads</h1>
-      <p class="mg-home-hero__lead">精选鼠标垫参考列表 — 点击「在线咨询」确认最新报价与库存。</p>
+      <h1 class="mg-home-hero__title">Mousepads</h1>
+      <p class="mg-home-hero__lead">Curated mousepad reference list — ask our chat for the latest price and stock.</p>
       <div class="mg-home-hero__actions">
-        <a class="mg-home-hero__btn mg-home-hero__btn--primary ab-crisp-open" href="#" data-crisp-msg="你好，我想咨询鼠标垫。">在线咨询</a>
-        <a class="mg-home-hero__btn mg-home-hero__btn--ghost" href="/shop/faq-and-updates/">FAQ 与更新</a>
+        <a class="mg-home-hero__btn mg-home-hero__btn--primary ab-crisp-open" href="#" data-crisp-msg="Hi, I'd like to ask about mousepads.">Chat with us</a>
+        <a class="mg-home-hero__btn mg-home-hero__btn--ghost" href="/shop/faq-and-updates/">FAQ &amp; Updates</a>
       </div>
     </div>
   </section>
 
   <section class="mg-home-help">
     <p class="mg-home-help__links">
-      <a href="/shop/shipping-and-delivery/">发货与到账</a>
-      <a href="/shop/faq-and-updates/">FAQ 与更新</a>
-      <a href="/gallery/">相册</a>
+      <a href="/shop/shipping-and-delivery/">Shipping &amp; Delivery</a>
+      <a href="/shop/faq-and-updates/">FAQ &amp; Updates</a>
+      <a href="/gallery/">Gallery</a>
     </p>
   </section>
 
 </div>
 
-## 鼠标垫列表 <span class="mg-list-meta">参考价 · 2026-08-04</span>
+## Mousepads list <span class="mg-list-meta">reference · 2026-08-04</span>
 
-<p>以下为精选鼠标垫的参考价格，单位为美元。库存请通过在线客服确认。</p>
+<p>Reference prices below are in US Dollars. Confirm stock with our chat.</p>
 
-<p class="mg-rubbers-showing" markdown="0">共 45 款 · 参考价</p>
+<p class="mg-rubbers-showing" markdown="0">45 titles · reference prices</p>
 
 <div class="mg-price-table" markdown="1">
 
-| | 商品 | 价格 |
+| | Product | Price |
 | :---: | --- | ---: |
 | <img src="/assets/mousepads/thumbs/mp-01-esptiger-shan-hai-series-mousepad.jpg" alt="Esptiger Shan Hai Series MousePad" data-full-src="/assets/mousepads/full/mp-01-esptiger-shan-hai-series-mousepad-1.jpg" data-gallery="/assets/mousepads/full/mp-01-esptiger-shan-hai-series-mousepad-1.jpg,/assets/mousepads/full/mp-01-esptiger-shan-hai-series-mousepad-2.jpg" loading="lazy"> | Esptiger Shan Hai Series MousePad | US$55.99 |
 | <img src="/assets/mousepads/thumbs/mp-02-gamingpunk-drizzle-series-mousepad.jpg" alt="AXGamingPunk Drizzle Series Mousepad" data-full-src="/assets/mousepads/full/mp-02-gamingpunk-drizzle-series-mousepad-1.jpg" data-gallery="/assets/mousepads/full/mp-02-gamingpunk-drizzle-series-mousepad-1.jpg,/assets/mousepads/full/mp-02-gamingpunk-drizzle-series-mousepad-2.jpg" loading="lazy"> | AXGamingPunk Drizzle Series Mousepad | US$39.99 |
@@ -91,11 +91,11 @@ description: 鼠标垫参考 — 50 款精选鼠标垫。在线咨询确认最�
 </div>
 
 <div class="admonition note mg-page-note">
-  <p class="admonition-title">价格说明</p>
-  <p>价格为可能随官方调整。请在下单前通过在线客服确认最新报价、库存与发货方式</p>
+  <p class="admonition-title">Price note</p>
+  <p>Prices may change. Confirm the latest price, stock and delivery with our chat before ordering</p>
 </div>
 
 <div class="admonition note mg-page-note">
-  <p class="admonition-title">相关</p>
-  <p><a href="/keycaps/">键帽</a> · <a href="/gallery/">相册</a></p>
+  <p class="admonition-title">Related</p>
+  <p><a href="/keycaps/">Keycaps</a> · <a href="/gallery/">Gallery</a></p>
 </div>

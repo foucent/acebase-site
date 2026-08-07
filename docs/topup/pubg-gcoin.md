@@ -1,6 +1,6 @@
 ---
-title: PUBG G-COIN CDK 代充
-description: PUBG PC G-COIN CDK 人工代充 — 最新报价 · 在线咨询
+title: PUBG G-COIN CDK Proxy Top-Up
+description: PUBG PC G-COIN CDK manual proxy top-up — latest quotes · live chat
 hide:
   - title
   - toc
@@ -11,7 +11,7 @@ hide:
 <div class="bt-shell">
 
 <nav class="bt-crumb" aria-label="Breadcrumb">
-  <a href="/">首页</a> / PUBG G-COIN CDK 代充
+  <a href="/">Home</a> / PUBG G-COIN CDK Proxy Top-Up
 </nav>
 
 <section class="bt-hero">
@@ -19,27 +19,27 @@ hide:
     <img src="/assets/bittopup/pubg-gcoin.webp" alt="PUBG G-COIN" width="200" height="200" loading="eager">
   </div>
   <div>
-    <h1 class="bt-hero__title">PUBG G-COIN CDK 代充</h1>
+    <h1 class="bt-hero__title">PUBG G-COIN CDK Proxy Top-Up</h1>
     <div class="bt-badges">
       <span class="bt-badge"><img src="/assets/bittopup/icon-region.webp" alt=""> GLOBAL</span>
-      <span class="bt-badge"><img src="/assets/bittopup/icon-fast.webp" alt=""> 人工确认</span>
-      <span class="bt-badge"><img src="/assets/bittopup/icon-safe.webp" alt=""> 快速到帐</span>
+      <span class="bt-badge"><img src="/assets/bittopup/icon-fast.webp" alt=""> Manual confirm</span>
+      <span class="bt-badge"><img src="/assets/bittopup/icon-safe.webp" alt=""> Fast credit</span>
     </div>
-    <p class="bt-hero__promo">💡 PUBG PC <strong>G-COIN CDK 代充</strong> — 选好面额与 Email，点「我要代充」打开在线客服确认最新报价和库存。</p>
+    <p class="bt-hero__promo">💡 PUBG PC <strong>G-COIN CDK proxy top-up</strong> — pick a tier and Email, then tap “I want proxy top-up” to confirm the latest quote and stock in live chat.</p>
   </div>
 </section>
 
 <div class="bt-main">
   <div class="bt-left">
     <div class="bt-panel">
-      <h2 class="bt-panel__title">最新报价</h2>
+      <h2 class="bt-panel__title">Latest quotes</h2>
       <div class="bt-skus" id="bt-sku-grid">
         <button type="button" class="bt-sku is-active" data-price="3.11" data-was="6.63" data-label="510 G-COIN" data-off="53.1">
           <span class="bt-sku__ribbon bt-sku__ribbon--sale">SALE</span>
           <span class="bt-sku__icon">🪙</span>
           <span class="bt-sku__name">510 G-COIN</span>
           <span class="bt-sku__game">PUBG G-COIN CDK</span>
-          <span class="bt-sku__off">折扣: 53.1% OFF</span>
+          <span class="bt-sku__off">Save: 70.0% OFF</span>
           <span class="bt-sku__price">US$ 3.11<span class="bt-sku__was">US$ 6.63</span></span>
         </button>
         <button type="button" class="bt-sku" data-price="6.23" data-was="13.25" data-label="1050 G-COIN" data-off="53.0">
@@ -47,7 +47,7 @@ hide:
           <span class="bt-sku__icon">🪙</span>
           <span class="bt-sku__name">1050 G-COIN</span>
           <span class="bt-sku__game">PUBG G-COIN CDK</span>
-          <span class="bt-sku__off">折扣: 53.0% OFF</span>
+          <span class="bt-sku__off">Save: 70.0% OFF</span>
           <span class="bt-sku__price">US$ 6.23<span class="bt-sku__was">US$ 13.25</span></span>
         </button>
         <button type="button" class="bt-sku" data-price="15.57" data-was="33.13" data-label="2700 G-COIN" data-off="53.0">
@@ -55,7 +55,7 @@ hide:
           <span class="bt-sku__icon">🪙</span>
           <span class="bt-sku__name">2700 G-COIN</span>
           <span class="bt-sku__game">PUBG G-COIN CDK</span>
-          <span class="bt-sku__off">折扣: 53.0% OFF</span>
+          <span class="bt-sku__off">Save: 70.0% OFF</span>
           <span class="bt-sku__price">US$ 15.57<span class="bt-sku__was">US$ 33.13</span></span>
         </button>
         <button type="button" class="bt-sku" data-price="31.14" data-was="66.27" data-label="5500 G-COIN" data-off="53.0">
@@ -63,14 +63,14 @@ hide:
           <span class="bt-sku__icon">🪙</span>
           <span class="bt-sku__name">5500 G-COIN</span>
           <span class="bt-sku__game">PUBG G-COIN CDK</span>
-          <span class="bt-sku__off">折扣: 53.0% OFF</span>
+          <span class="bt-sku__off">Save: 70.0% OFF</span>
           <span class="bt-sku__price">US$ 31.14<span class="bt-sku__was">US$ 66.27</span></span>
         </button>
         <button type="button" class="bt-sku" data-price="62.28" data-was="132.53" data-label="11200 G-COIN" data-off="53.0">
           <span class="bt-sku__icon">🪙</span>
           <span class="bt-sku__name">11200 G-COIN</span>
           <span class="bt-sku__game">PUBG G-COIN CDK</span>
-          <span class="bt-sku__off">折扣: 53.0% OFF</span>
+          <span class="bt-sku__off">Save: 70.0% OFF</span>
           <span class="bt-sku__price">US$ 62.28<span class="bt-sku__was">US$ 132.53</span></span>
         </button>
       </div>
@@ -79,59 +79,59 @@ hide:
 
   <aside class="bt-checkout bt-checkout--chat">
     <div class="bt-panel">
-      <h2 class="bt-checkout__title">代充信息</h2>
+      <h2 class="bt-checkout__title">Proxy top-up details</h2>
       <label class="bt-checkout__label" for="bt-email">Email</label>
-      <input id="bt-email" class="bt-checkout__input" type="email" placeholder="用于接收 CDK 激活码" autocomplete="email">
+      <input id="bt-email" class="bt-checkout__input" type="email" placeholder="Email to receive CDK" autocomplete="email">
       <div class="bt-checkout__total-row">
-        <span class="bt-checkout__total-label">参考总计</span>
+        <span class="bt-checkout__total-label">Reference total</span>
         <span class="bt-checkout__total" id="bt-total">US$ 3.11</span>
       </div>
-      <p class="bt-checkout__off" id="bt-off">折扣: 53.1% OFF</p>
+      <p class="bt-checkout__off" id="bt-off">Save: 70.0% OFF</p>
             <button type="button" class="bt-checkout__buy bt-checkout__buy--chat" id="bt-buy" disabled>
         <svg class="bt-checkout__buy-ico" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" focusable="false"><path fill="currentColor" d="M12 3C6.5 3 2 6.58 2 11c0 2.39 1.33 4.54 3.41 5.96L4 21l4.55-1.52C9.66 19.82 10.81 20 12 20c5.5 0 10-3.58 10-8s-4.5-9-10-9m0 15c-.96 0-1.9-.16-2.78-.45l-.2-.07-2.34.78.77-2.24-.15-.23C5.86 14.53 5 12.84 5 11c0-3.31 3.13-6 7-6s7 2.69 7 6-3.13 6-7 6z"/></svg>
-        <span>我要代充</span>
+        <span>I want proxy top-up</span>
       </button>
-      <p class="bt-checkout__chat-hint">点击后打开在线客服聊天窗，确认最新报价和库存</p>
-      <p class="bt-summary"><strong id="bt-summary-label">510 G-COIN</strong> · 参考总计 · x1</p>
-            <p class="bt-checkout__note">价格更新时间 2026-07-29 12:15 UTC。</p>
+      <p class="bt-checkout__chat-hint">Opens the live-chat window to confirm the latest quote, stock, and proxy top-up.</p>
+      <p class="bt-summary"><strong id="bt-summary-label">510 G-COIN</strong> · Reference total · x1</p>
+            <p class="bt-checkout__note">Price updated 2026-07-29 12:15 UTC.</p>
     </div>
   </aside>
 </div>
 
 <section class="bt-desc">
-  <h2>PUBG G-COIN CDK 代充指南</h2>
+  <h2>PUBG G-COIN CDK proxy top-up guide</h2>
 
-  <h3>什么是 G-COIN？</h3>
-  <p>G-COIN 是《绝地求生》(PUBG: Battlegrounds) <strong>PC 版</strong>官方高级货币，可用于购买外观、通行证、宝箱等。</p>
+  <h3>What is G-COIN?</h3>
+  <p>G-COIN is the official premium currency for <strong>PUBG: Battlegrounds (PC)</strong> — skins, passes, crates, and more.</p>
 
-  <h3>如何兑换 CDK 激活码</h3>
+  <h3>How to redeem</h3>
   <ol>
-    <li>获取代码 — CDK 通过邮件发送</li>
-    <li>前往 PUBG 官方兑换中心或 Steam 客户端兑换</li>
-    <li>准确输入激活码</li>
-    <li>G-COIN 将记入账户</li>
+    <li>Receive your CDK by email</li>
+    <li>Open the official PUBG redeem page or Steam</li>
+    <li>Enter the code carefully</li>
+    <li>G-COIN credits to your account</li>
   </ol>
 
-  <h3>代充流程</h3>
+  <h3>Proxy top-up flow</h3>
   <ol>
-    <li>在「最新报价」中选面额 — 价格为参考，以客服确认为准</li>
-    <li>填写接收 CDK 的 Email</li>
-    <li>点击「我要代充」打开在线客服聊天窗</li>
-    <li>确认报价并付款后由客服发码</li>
+    <li>Pick a tier under Latest quotes — prices are reference until support confirms</li>
+    <li>Enter the email for CDK delivery</li>
+    <li>Tap “I want proxy top-up” to open live chat</li>
+    <li>Confirm quote &amp; pay — support sends the code</li>
   </ol>
 
-  <h3>注意事项</h3>
+  <h3>Notes</h3>
   <ul>
-    <li>仅适用于 PUBG PC 版，不适用于 PUBG Mobile</li>
-    <li>激活码一经售出通常不可退换；每码限用一次</li>
-    <li>购买前请确认区域兼容性</li>
+    <li>PC only — not for PUBG Mobile</li>
+    <li>Codes are typically non-refundable and single-use</li>
+    <li>Confirm region eligibility before buying</li>
   </ul>
 </section>
 
 <section class="bt-faq">
-  <h2>PUBG G-COIN CDK 代充常见问题</h2>
-  <p><strong>订单完成需要多长时间？</strong><br>通常几分钟内发码；如有延迟请在聊天窗联系客服。</p>
-  <p><strong>和 PUBG Mobile UC 有什么区别？</strong><br>G-COIN CDK 用于 PC《绝地求生》；手机端请看 <a href="/topup/pubg-mobile-direct/">PUBG Mobile 代充</a>。</p>
+  <h2>Proxy top-up FAQ</h2>
+  <p><strong>How long does delivery take?</strong><br>Usually within minutes; use the chat window if delayed.</p>
+  <p><strong>Difference from PUBG Mobile UC?</strong><br>G-COIN CDK is for PC PUBG; for mobile see <a href="/topup/pubg-mobile-direct/">PUBG Mobile Proxy Top-Up</a>.</p>
 </section>
 
 </div>
@@ -160,7 +160,7 @@ hide:
     totalEl.textContent = window.AceBaseCurrency
       ? AceBaseCurrency.formatFromBase(parseFloat(price), "USD")
       : "US$ " + price;
-    offEl.textContent = "折扣: " + off + "% OFF";
+    offEl.textContent = "Save: " + off + "% OFF";
     summaryLabel.textContent = label;
     buyBtn.disabled = !emailEl.value.trim();
   }
@@ -182,7 +182,7 @@ hide:
     var sku = activeSku();
     var label = sku ? sku.getAttribute("data-label") : "";
     var email = emailEl.value.trim();
-    var msg = "你好，我要代充 PUBG G-COIN CDK " + label + " · Email: " + email;
+    var msg = "Hi, I want proxy top-up for PUBG G-COIN CDK " + label + " · Email: " + email;
     if (typeof window.abOpenCrisp === "function") {
       window.abOpenCrisp(msg);
     } else if (window.$crisp) {
