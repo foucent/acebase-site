@@ -22,32 +22,32 @@ description: Global esports hub — top-up and photo wall. Crisp for quotes.
   <section class="mg-home-cats" aria-label="Shop categories">
     <h2 class="mg-home-section-title">Shop</h2>
     <div class="mg-home-cats__grid">
-      <a class="mg-home-cat" href="/topup/pubg-mobile-direct/">
-        <img class="mg-home-cat__img" src="/assets/offgamers/pubg-mobile-top-up.webp" alt="PUBG Mobile UC" loading="lazy">
+      <a class="mg-home-cat" href="/games/pubg-mobile/">
+        <img class="mg-home-cat__img" src="/assets/games/pubg-mobile.svg" alt="PUBG Mobile" loading="lazy">
         <span class="mg-home-cat__body">
           <span class="mg-home-cat__name">PUBG Mobile</span>
-          <span class="mg-home-cat__desc">Global UC proxy top-up</span>
+          <span class="mg-home-cat__desc">Discount top-up</span>
         </span>
       </a>
-      <a class="mg-home-cat" href="/topup/delta-force/">
-        <img class="mg-home-cat__img" src="/assets/bittopup/delta-force.webp" alt="Delta Force proxy top-up" loading="lazy">
+      <a class="mg-home-cat" href="/games/pubg-gcoin/">
+        <img class="mg-home-cat__img" src="/assets/games/pubg-gcoin.svg" alt="PUBG G-COIN" loading="lazy">
         <span class="mg-home-cat__body">
-          <span class="mg-home-cat__name">Delta Force</span>
-          <span class="mg-home-cat__desc">Delta Coins proxy</span>
+          <span class="mg-home-cat__name">PUBG G-COIN</span>
+          <span class="mg-home-cat__desc">Discount top-up</span>
         </span>
       </a>
-      <a class="mg-home-cat" href="/gallery/">
-        <img class="mg-home-cat__img" src="/assets/figures/06_ced1ce6bec/img_01.jpg" alt="Gallery" loading="lazy">
+      <a class="mg-home-cat" href="/games/honor-of-kings/">
+        <img class="mg-home-cat__img" src="/assets/games/honor-of-kings.svg" alt="Honor of Kings" loading="lazy">
         <span class="mg-home-cat__body">
-          <span class="mg-home-cat__name">Gallery</span>
-          <span class="mg-home-cat__desc">Figures &amp; models</span>
+          <span class="mg-home-cat__name">Honor of Kings</span>
+          <span class="mg-home-cat__desc">Discount top-up</span>
         </span>
       </a>
-      <a class="mg-home-cat" href="/topup/arena-breakout-bonds/">
-        <img class="mg-home-cat__img" src="/assets/bittopup/arena-breakout-bonds.webp" alt="Arena Breakout proxy top-up" loading="lazy">
+      <a class="mg-home-cat" href="/gallery/wallpapers/">
+        <img class="mg-home-cat__img" src="/assets/gallery/wallpapers/img_01.svg" alt="Wallpapers" loading="lazy">
         <span class="mg-home-cat__body">
-          <span class="mg-home-cat__name">Arena Breakout</span>
-          <span class="mg-home-cat__desc">Bonds proxy top-up</span>
+          <span class="mg-home-cat__name">Wallpapers</span>
+          <span class="mg-home-cat__desc">Gallery</span>
         </span>
       </a>
     </div>
@@ -79,7 +79,7 @@ description: Global esports hub — top-up and photo wall. Crisp for quotes.
 
 Popular top-ups and the photo wall — see each product page for tiers and reference prices.
 
-[Arena Breakout](topup/arena-breakout-bonds.md) · [Honor of Kings](topup/honor-of-kings.md) · [PUBG Mobile](topup/pubg-mobile-direct.md) · [PUBG G-COIN](topup/pubg-gcoin.md) · [Gallery](gallery.md)
+[PUBG Mobile](games/pubg-mobile.md) · [PUBG G-COIN](games/pubg-gcoin.md) · [Honor of Kings](games/honor-of-kings.md) · [Gallery](gallery/wallpapers.md)
 
 </div>
 

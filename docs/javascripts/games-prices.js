@@ -44,7 +44,37 @@
       return;
     }
 
-    var html =
+    // Price-range schema: rows have {title, lowest, highest, average} ->
+    // 4-column table (Amount / Lowest / Highest / Average).
+    // Official-vs-AceBase schema: rows have {title, official, acebase} ->
+    // 3-column table (Amount / Official / AceBase / Discount).
+    var isRange = rows.some(function (r) {
+      return r.lowest != null && r.highest != null && r.average != null;
+    });
+
+    var html;
+    if (isRange) {
+      html =
+        '<table class="mg-games__table">' +
+        "<thead><tr>" +
+        "<th>Amount</th><th>Lowest</th><th>Highest</th><th>Average</th>" +
+        "</tr></thead><tbody>";
+      rows.forEach(function (r) {
+        var title = esc(r.title || "Top-Up");
+        html +=
+          "<tr>" +
+          "<td>" + title + "</td>" +
+          '<td class="mg-games__td-lowest">' + money(r.lowest) + "</td>" +
+          '<td class="mg-games__td-highest">' + money(r.highest) + "</td>" +
+          '<td class="mg-games__td-average">' + money(r.average) + "</td>" +
+          "</tr>";
+      });
+      html += "</tbody></table>";
+      wrap.innerHTML = html;
+      return;
+    }
+
+    html =
       '<table class="mg-games__table">' +
       "<thead><tr>" +
       "<th>Amount</th><th>Official</th><th>AceBase</th><th>Discount</th>" +

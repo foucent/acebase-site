@@ -166,6 +166,22 @@
   white-space: nowrap;
 }
 
+/* Price-range table (lowest / highest / average) */
+.mg-games__td-lowest {
+  color: #25d366 !important;
+  font-weight: 800 !important;
+}
+
+.mg-games__td-highest {
+  color: #f87171 !important;
+  font-weight: 800 !important;
+}
+
+.mg-games__td-average {
+  color: #a78bfa !important;
+  font-weight: 800 !important;
+}
+
 .mg-games__loading,
 .mg-games__empty {
   margin: 0.4rem 0 !important;

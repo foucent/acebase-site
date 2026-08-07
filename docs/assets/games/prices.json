@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-07",
+  "updated": "2026-08-08",
   "games": {
     "valorant": [
       {
@@ -98,6 +98,239 @@
         "official": 95.85,
         "acebase": 57.69
       }
+    ],
+    "pubg-mobile": [
+      {
+        "title": "60 UC",
+        "lowest": 0.8,
+        "highest": 0.86,
+        "average": 0.84
+      },
+      {
+        "title": "300 + 25 UC",
+        "lowest": 3.94,
+        "highest": 4.29,
+        "average": 4.15
+      },
+      {
+        "title": "600 + 60 UC",
+        "lowest": 7.88,
+        "highest": 8.59,
+        "average": 8.31
+      },
+      {
+        "title": "1500 + 300 UC",
+        "lowest": 20.1,
+        "highest": 22.02,
+        "average": 21.21
+      },
+      {
+        "title": "3000 + 850 UC",
+        "lowest": 40.21,
+        "highest": 43.95,
+        "average": 42.39
+      },
+      {
+        "title": "6000 + 2100 UC",
+        "lowest": 80.4,
+        "highest": 88.28,
+        "average": 84.9
+      },
+      {
+        "title": "12000 + 4200 UC",
+        "lowest": 160.8,
+        "highest": 181.12,
+        "average": 171.32
+      },
+      {
+        "title": "18000 + 6300 UC",
+        "lowest": 241.21,
+        "highest": 271.54,
+        "average": 256.94
+      },
+      {
+        "title": "24000 + 8400 UC",
+        "lowest": 321.61,
+        "highest": 362.06,
+        "average": 342.59
+      },
+      {
+        "title": "30000 + 10500 UC",
+        "lowest": 402.01,
+        "highest": 452.66,
+        "average": 428.27
+      }
+    ],
+    "pubg-gcoin": [
+      {
+        "title": "100 G-COIN",
+        "lowest": 0.86,
+        "highest": 0.86,
+        "average": 0.86
+      },
+      {
+        "title": "510 G-COIN",
+        "lowest": 3.88,
+        "highest": 4.36,
+        "average": 4.12
+      },
+      {
+        "title": "1050 G-COIN",
+        "lowest": 7.77,
+        "highest": 8.72,
+        "average": 8.25
+      },
+      {
+        "title": "2700 G-COIN",
+        "lowest": 19.42,
+        "highest": 21.82,
+        "average": 20.62
+      },
+      {
+        "title": "5500 G-COIN",
+        "lowest": 38.83,
+        "highest": 43.65,
+        "average": 41.24
+      },
+      {
+        "title": "11200 G-COIN",
+        "lowest": 77.67,
+        "highest": 87.31,
+        "average": 82.49
+      }
+    ],
+    "cod-cold-war": [
+      {
+        "title": "500 Points",
+        "official": 8.0,
+        "acebase": 5.32
+      },
+      {
+        "title": "1,100 Points",
+        "official": 16.0,
+        "acebase": 10.24
+      },
+      {
+        "title": "2,400 Points",
+        "official": 32.0,
+        "acebase": 20.47
+      },
+      {
+        "title": "5,000 Points",
+        "official": 64.0,
+        "acebase": 40.93
+      },
+      {
+        "title": "Standard Edition XBox Key",
+        "official": 99.99,
+        "acebase": 75.81
+      },
+      {
+        "title": "Cross-Gen Bundle XBox Key",
+        "official": 109.99,
+        "acebase": 81.22
+      }
+    ],
+    "honor-of-kings": [
+      {
+        "title": "16 Tokens",
+        "lowest": 0.19,
+        "highest": 0.19,
+        "average": 0.19
+      },
+      {
+        "title": "80 Tokens",
+        "lowest": 0.75,
+        "highest": 0.91,
+        "average": 0.83
+      },
+      {
+        "title": "240 Tokens",
+        "lowest": 2.29,
+        "highest": 2.81,
+        "average": 2.55
+      },
+      {
+        "title": "400 Tokens",
+        "lowest": 3.83,
+        "highest": 4.53,
+        "average": 4.18
+      },
+      {
+        "title": "560 Tokens",
+        "lowest": 5.37,
+        "highest": 6.35,
+        "average": 5.86
+      },
+      {
+        "title": "800 Tokens",
+        "lowest": 7.67,
+        "highest": 9.07,
+        "average": 8.37
+      },
+      {
+        "title": "1200 Tokens",
+        "lowest": 11.5,
+        "highest": 13.62,
+        "average": 12.56
+      },
+      {
+        "title": "2400 Tokens",
+        "lowest": 27.24,
+        "highest": 27.24,
+        "average": 27.24
+      },
+      {
+        "title": "2508 Tokens",
+        "lowest": 23.02,
+        "highest": 23.02,
+        "average": 23.02
+      },
+      {
+        "title": "4000 Tokens",
+        "lowest": 38.37,
+        "highest": 45.4,
+        "average": 41.88
+      },
+      {
+        "title": "8000 Tokens",
+        "lowest": 76.74,
+        "highest": 90.8,
+        "average": 83.77
+      }
+    ],
+    "arena-breakout": [
+      {
+        "title": "310 + 25 Bonds",
+        "official": 5.03,
+        "acebase": 3.02
+      },
+      {
+        "title": "630 + 45 Bonds",
+        "official": 9.86,
+        "acebase": 5.93
+      },
+      {
+        "title": "1,580 + 110 Bonds",
+        "official": 24.5,
+        "acebase": 14.74
+      },
+      {
+        "title": "3,200 + 200 Bonds",
+        "official": 49.74,
+        "acebase": 29.93
+      },
+      {
+        "title": "6,500 + 320 Bonds",
+        "official": 95.85,
+        "acebase": 57.69
+      },
+      {
+        "title": "13,000 + 640 Bonds",
+        "official": 191.71,
+        "acebase": 115.37
+      }
     ]
-  }
+  },
+  "currency": "USD"
 }

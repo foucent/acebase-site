@@ -21,16 +21,21 @@ theme:
 plugins:
   - search
   - minify:
-      minify_html: true
+      # HTML minification strips attribute quotes, breaking data-gallery JSON
+      # attributes used by the photo-wall lightbox. Keep CSS/JS minify only.
+      minify_html: false
       minify_css: true
       minify_js: true
-      htmlmin_opts:
-        remove_comments: true
   - redirects:
       redirect_maps:
-        board-games.md: mousepads.md
-        peripherals.md: mousepads.md
-        keyboards.md: mousepads.md
+        board-games.md: gallery/peripherals.md
+        peripherals.md: gallery/peripherals.md
+        keyboards.md: gallery/peripherals.md
+        keycaps.md: gallery/peripherals.md
+        mousepads.md: gallery/peripherals.md
+        guides/safety.md: legal/safety.md
+        gallery/coser.md: gallery/figures.md
+        gallery/pre-owned.md: gallery/figures.md
 
 markdown_extensions:
   - admonition
@@ -91,24 +96,17 @@ extra:
 nav:
   - Home: index.md
   - Games:
-      - Valorant: games/valorant.md
-      - Apex Legends: games/apex-legends.md
-      - CS2: games/cs2.md
-      - Delta Force: games/delta-force.md
-  - Guides:
-      - Top-Up Safety Guide: guides/safety.md
-  - PUBG Mobile UC Top-Up: topup/pubg-mobile-direct.md
-  - PUBG G-COIN CDK Top-Up: topup/pubg-gcoin.md
-  - Arena Breakout Top-Up: topup/arena-breakout-bonds.md
-  - Delta Force Top-Up: topup/delta-force.md
-  - Honor of Kings Top-Up: topup/honor-of-kings.md
-  - COD Black Ops Cold War Codes: topup/cod-black-ops-cold-war.md
-  - Mousepads: mousepads.md
-  - Keycaps: keycaps.md
-  - Gallery: gallery.md
-  - About & Policies:
+      - PUBG Mobile: games/pubg-mobile.md
+      - PUBG G-COIN: games/pubg-gcoin.md
+      - Honor of Kings: games/honor-of-kings.md
+  - Gallery:
+      - Wallpapers: gallery/wallpapers.md
+      - Peripherals: gallery/peripherals.md
+      - Figures: gallery/figures.md
+  - About:
       - FAQ & Updates: shop/faq-and-updates.md
       - Delivery: shop/shipping-and-delivery.md
+      - Top-Up Safety Guide: legal/safety.md
       - Return Policy: legal/return-policy.md
       - AML / CTF Policy: legal/aml-policy.md
       - Terms of Use: legal/terms-of-use.md
