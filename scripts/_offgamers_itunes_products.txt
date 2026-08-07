@@ -1,0 +1,1430 @@
+=== https://sls.offgamers.com/offer/product/seo_info?seo_term=itunes-gift-cards&currency=SGD
+{
+  "code": 2000,
+  "messages": [],
+  "payload": {
+    "service_id": "fdf75033-56ee-4ce6-929c-1f9c93a4c642",
+    "brand_id": "9853ae0e-2a86-44de-870d-c1896f54b602",
+    "seo_term": "itunes-gift-cards",
+    "seo_info": {
+      "offer_lowest_price": 1.12,
+      "offer_highest_price": 502.06,
+      "converted_lowest_price": 1.45,
+      "converted_highest_price": 648.9,
+      "agg_rating_value": 0,
+      "agg_rating_count": 0
+    },
+    "seo_meta": {
+      "meta_title": {
+        "en": "Buy iTunes Gift Card Starting From $1.95 On OffGamers.com",
+        "id": "Beli Gift Card iTunes - OffGamers.com",
+        "zh-CN": "",
+        "zh-TW": "",
+        "ko": ""
+      },
+      "meta_description": {
+        "en": "Unlock a world of digital entertainment with iTunes Gift Card exclusive on OffGamers.com. Hassle-free, instant delivery, and 24/7 assistance.",
+        "id": "Nikmati dunia hiburan digital dengan Gift Card iTunes eksklusif di OffGamers.com. Mudah, cepat, pengiriman instan, dan bantuan 24/7.",
+        "zh-CN": "",
+        "zh-TW": "",
+        "ko": ""
+      },
+      "meta_keyword": {
+        "en": "iTunes Gift Card, buy iTunes Gift Card, redeem itunes card,",
+        "id": "",
+        "zh-CN": "",
+        "zh-TW": "",
+        "ko": ""
+      }
+    },
+    "cat_seo_term": "gift-cards",
+    "category_names": {
+      "gift-cards": {
+        "cat_id": "e2116db2-512a-4dea-bf09-bd24d9783a2a",
+        "cat_name": {
+          "en": "Gift Cards",
+          "id": "Gift Cards",
+          "ko": "상품권",
+          "zh-CN": "礼品卡",
+          "zh-TW": "禮品卡"
+        },
+        "seo_path": "gift-cards"
+      }
+    }
+  },
+  "request_id": "da3522b3-e158-4ef1-908d-8856946c8495"
+}
+
+=== https://sls.offgamers.com/offer/products/search
+{
+  "code": 2000,
+  "messages": [],
+  "payload": {
+    "results": [
+      {
+        "service_id": "fdf75033-56ee-4ce6-929c-1f9c93a4c642",
+        "service_name": "Digital Pins",
+        "brand_id": "9853ae0e-2a86-44de-870d-c1896f54b602",
+        "brand_name": "iTunes Gift Card",
+        "region_id": "60f96732-6eb0-46c6-88eb-4a21817054ab",
+        "region_name": "Japan",
+        "relation_id": "e95aa657-d6e6-43d8-9d24-4d2b523adc2b",
+        "status": "active",
+        "img_url": "https://assets.offgamers.com/img/offer/kr_fdf75033-56ee-4ce6-929c-1f9c93a4c642_9853ae0e-2a86-44de-870d-c1896f54b602.webp",
+        "lgc_category_id": "17710",
+        "supported_countries": []
+      },
+      {
+        "service_id": "fdf75033-56ee-4ce6-929c-1f9c93a4c642",
+        "service_name": "Digital Pins",
+        "brand_id": "9853ae0e-2a86-44de-870d-c1896f54b602",
+        "brand_name": "iTunes Gift Card",
+        "region_id": "20f03600-8d9a-4a4e-a3f6-7b984d4fd1d5",
+        "region_name": "United Arab Emirates",
+        "relation_id": "e5020bf5-6c3f-468e-8433-48f5b8610fdc",
+        "status": "active",
+        "img_url": "https://assets.offgamers.com/img/offer/kr_fdf75033-56ee-4ce6-929c-1f9c93a4c642_9853ae0e-2a86-44de-870d-c1896f54b602.webp",
+        "lgc_category_id": "27881"
+      },
+      {
+        "service_id": "fdf75033-56ee-4ce6-929c-1f9c93a4c642",
+        "service_name": "Digital Pins",
+        "brand_id": "9853ae0e-2a86-44de-870d-c1896f54b602",
+        "brand_name": "iTunes Gift Card",
+        "region_id": "1904c31c-7ae2-4f26-8116-f6c124024fdb",
+        "region_name": "Luxembourg",
+        "relation_id": "e4c3c02f-e905-4dd8-8c90-0751b96ef193",
+        "status": "active",
+        "img_url": "https://assets.offgamers.com/img/offer/kr_fdf75033-56ee-4ce6-929c-1f9c93a4c642_9853ae0e-2a86-44de-870d-c1896f54b602.webp",
+        "lgc_category_id": "22825"
+      },
+      {
+        "service_id": "fdf75033-56ee-4ce6-929c-1f9c93a4c642",
+        "service_name": "Digital Pins",
+        "brand_id": "9853ae0e-2a86-44de-870d-c1896f54b602",
+        "brand_name": "iTunes Gift Card",
+        "region_id": "7b62d5a3-a95e-4a19-b19c-807041aade69",
+        "region_name": "Hong Kong",
+        "relation_id": "e315e7ad-f8c0-4fd4-a367-f1ac59f93e48",
+        "status": "active",
+        "img_url": "https://assets.offgamers.com/img/offer/kr_fdf75033-56ee-4ce6-929c-1f9c93a4c642_9853ae0e-2a86-44de-870d-c1896f54b602.webp",
+        "lgc_category_id": "21596"
+      },
+      {
+        "service_id": "fdf75033-56ee-4ce6-929c-1f9c93a4c642",
+        "service_name": "Digital Pins",
+        "brand_id": "9853ae0e-2a86-44de-870d-c1896f54b602",
+        "brand_name": "iTunes Gift Card",
+        "region_id": "b5569c40-897a-4b02-b48f-28e6cb0cf15c",
+        "region_name": "Germany",
+        "relation_id": "db353c2f-e252-40ac-a5a5-6bcfc23239fb",
+        "status": "active",
+        "img_url": "https://assets.offgamers.com/img/offer/kr_fdf75033-56ee-4ce6-929c-1f9c93a4c642_9853ae0e-2a86-44de-870d-c1896f54b602.webp",
+        "lgc_category_id": "17715"
+      },
+      {
+        "service_id": "fdf75033-56ee-4ce6-929c-1f9c93a4c642",
+        "service_name": "Digital Pins",
+        "brand_id": "9853ae0e-2a86-44de-870d-c1896f54b602",
+        "brand_name": "iTunes Gift Card",
+        "region_id": "43020c4d-7ac7-4485-97a9-be9a268acf00",
+        "region_name": "Portugal",
+        "relation_id": "d41bc818-d225-4562-9ba0-6896180ad93d",
+        "status": "active",
+        "img_url": "https://assets.offgamers.com/img/offer/kr_fdf75033-56ee-4ce6-929c-1f9c93a4c642_9853ae0e-2a86-44de-870d-c1896f54b602.webp",
+        "lgc_category_id": "22828"
+      },
+      {
+        "service_id": "fdf75033-56ee-4ce6-929c-1f9c93a4c642",
+        "service_name": "Digital Pins",
+        "brand_id": "9853ae0e-2a86-44de-870d-c1896f54b602",
+        "brand_name": "iTunes Gift Card",
+        "region_id": "a455eada-a176-4b92-b75a-063ea233c87c",
+        "region_name": "Italy",
+        "relation_id": "d1002535-aff8-491c-9a62-a43fcdbe748b",
+        "status": "active",
+        "img_url": "https://assets.offgamers.com/img/offer/kr_fdf75033-56ee-4ce6-929c-1f9c93a4c642_9853ae0e-2a86-44de-870d-c1896f54b602.webp",
+        "lgc_category_id": "17717"
+      },
+      {
+        "service_id": "fdf75033-56ee-4ce6-929c-1f9c93a4c642",
+        "service_name": "Digital Pins",
+        "brand_id": "9853ae0e-2a86-44de-870d-c1896f54b602",
+        "brand_name": "iTunes Gift Card",
+        "region_id": "9c65b0fc-5500-4af6-9f3f-1a0d6818dca4",
+        "region_name": "Taiwan",
+        "relation_id": "caf67240-7d5f-4cf3-9e1e-d39095953ddd",
+        "status": "active",
+        "img_url": "https://assets.offgamers.com/img/offer/kr_fdf75033-56ee-4ce6-929c-1f9c93a4c642_9853ae0e-2a86-44de-870d-c1896f54b602.webp",
+        "lgc_category_id": "28012"
+      },
+      {
+        "service_id": "fdf75033-56ee-4ce6-929c-1f9c93a4c642",
+        "service_name": "Digital Pins",
+        "brand_id": "9853ae0e-2a86-44de-870d-c1896f54b602",
+        "brand_name": "iTunes Gift Card",
+        "region_id": "f5bdd912-cc0f-4d7e-8bfd-becf99a6216f",
+        "region_name": "Ireland",
+        "relation_id": "a1ea34e8-ac0d-4d8f-9e9f-cea0e5aeb66c",
+        "status": "active",
+        "img_url": "https://assets.offgamers.com/img/offer/kr_fdf75033-56ee-4ce6-929c-1f9c93a4c642_9853ae0e-2a86-44de-870d-c1896f54b602.webp",
+        "lgc_category_id": "24627"
+      },
+      {
+        "service_id": "fdf75033-56ee-4ce6-929c-1f9c93a4c642",
+        "service_name": "Digital Pins",
+        "brand_id": "9853ae0e-2a86-44de-870d-c1896f54b602",
+        "brand_name": "iTunes Gift Card",
+        "region_id": "28539254-60b2-4037-8457-f13eb747ab6b",
+        "region_name": "United Kingdom",
+        "relation_id": "9bafd98e-c7e5-4e9e-aa70-3273c3b50ac0",
+        "status": "active",
+        "img_url": "https://assets.offgamers.com/img/offer/kr_fdf75033-56ee-4ce6-929c-1f9c93a4c642_9853ae0e-2a86-44de-870d-c1896f54b602.webp",
+        "lgc_category_id": "5236"
+      },
+      {
+        "service_id": "fdf75033-56ee-4ce6-929c-1f9c93a4c642",
+        "service_name": "Digital Pins",
+        "brand_id": "9853ae0e-2a86-44de-870d-c1896f54b602",
+        "brand_name": "iTunes Gift Card",
+        "region_id": "c67067a2-dc30-4e86-9297-4ea0a3b9f8ff",
+        "region_name": "Australia",
+        "relation_id": "9b836a47-6c78-4e4d-b2cb-f3eb34617d62",
+        "status": "active",
+        "img_url": "https://assets.offgamers.com/img/offer/kr_fdf75033-56ee-4ce6-929c-1f9c93a4c642_9853ae0e-2a86-44de-870d-c1896f54b602.webp",
+        "lgc_category_id": "17712"
+      },
+      {
+        "service_id": "fdf75033-56ee-4ce6-929c-1f9c93a4c642",
+        "service_name": "Digital Pins",
+        "brand_id": "9853ae0e-2a86-44de-870d-c1896f54b602",
+        "brand_name": "iTunes Gift Card",
+        "region_id": "81f02718-158a-41a5-b0d4-af7499e6fadc",
+        "region_name": "Spain",
+        "relation_id": "97ffa3bb-5590-4652-a310-145ea08eb191",
+        "status": "active",
+        "img_url": "https://assets.offgamers.com/img/offer/kr_fdf75033-56ee-4ce6-929c-1f9c93a4c642_9853ae0e-2a86-44de-870d-c1896f54b602.webp",
+        "lgc_category_id": "17714"
+      },
+      {
+        "service_id": "fdf75033-56ee-4ce6-929c-1f9c93a4c642",
+        "service_name": "Digital Pins",
+        "brand_id": "9853ae0e-2a86-44de-870d-c1896f54b602",
+        "brand_name": "iTunes Gift Card",
+        "region_id": "e3974c60-baa0-4847-848a-86037433f280",
+        "region_name": "Turkey",
+        "relation_id": "959857f6-580a-4db4-b623-6571783d9b2a",
+        "status": "active",
+        "img_url": "https://assets.offgamers.com/img/offer/kr_fdf75033-56ee-4ce6-929c-1f9c93a4c642_9853ae0e-2a86-44de-870d-c1896f54b602.webp",
+        "lgc_category_id": "22844"
+      },
+      {
+        "service_id": "fdf75033-56ee-4ce6-929c-1f9c93a4c642",
+        "service_name": "Digital Pins",
+        "brand_id": "9853ae0e-2a86-44de-870d-c1896f54b602",
+        "brand_name": "iTunes Gift Card",
+        "region_id": "59e8afea-0c6a-4993-b878-f8bedad9db2a",
+        "region_name": "Austria",
+        "relation_id": "92b526fb-5199-4d2c-8faf-e216eb472320",
+        "status": "active",
+        "img_url": "https://assets.offgamers.com/img/offer/kr_fdf75033-56ee-4ce6-929c-1f9c93a4c642_9853ae0e-2a86-44de-870d-c1896f54b602.webp",
+        "lgc_category_id": "22831"
+      },
+      {
+        "service_id": "fdf75033-56ee-4ce6-929c-1f9c93a4c642",
+        "service_name": "Digital Pins",
+        "brand_id": "9853ae0e-2a86-44de-870d-c1896f54b602",
+        "brand_name": "iTunes Gift Card",
+        "region_id": "492c3ca6-c4e6-47fc-b274-c2c35031b271",
+        "region_name": "India",
+        "relation_id": "83b3b897-c0b9-4300-a2ec-68e2e34929db",
+        "status": "active",
+        "img_url": "https://assets.offgamers.com/img/offer/kr_fdf75033-56ee-4ce6-929c-1f9c93a4c642_9853ae0e-2a86-44de-870d-c1896f54b602.webp",
+        "lgc_category_id": "40916",
+        "supported_countries": [
+          "in"
+        ]
+      },
+      {
+        "service_id": "fdf75033-56ee-4ce6-929c-1f9c93a4c642",
+        "service_name": "Digital Pins",
+        "brand_id": "9853ae0e-2a86-44de-870d-c1896f54b602",
+        "brand_name": "iTunes Gift Card",
+        "region_id": "d963ad50-a91b-4e39-8de2-630ff84c674c",
+        "region_name": "Canada",
+        "relation_id": "714ed1b8-8a39-40cb-964a-3472ccb55529",
+        "status": "active",
+        "img_url": "https://assets.offgamers.com/img/offer/kr_fdf75033-56ee-4ce6-929c-1f9c93a4c642_9853ae0e-2a86-44de-870d-c1896f54b602.webp",
+        "lgc_category_id": "18261"
+      },
+      {
+        "service_id": "fdf75033-56ee-4ce6-929c-1f9c93a4c642",
+        "service_name": "Digital Pins",
+        "brand_id": "9853ae0e-2a86-44de-870d-c1896f54b602",
+        "brand_name": "iTunes Gift Card",
+        "region_id": "f364d482-2c7c-4604-85e6-60e9a8e3a78a",
+        "region_name": "Saudi Arabia",
+        "relation_id": "66ac34c0-e38b-4fa1-8749-71863c2313c3",
+        "status": "active",
+        "img_url": "https://assets.offgamers.com/img/offer/kr_fdf75033-56ee-4ce6-929c-1f9c93a4c642_9853ae0e-2a86-44de-870d-c1896f54b602.webp",
+        "lgc_category_id": "27884"
+      },
+      {
+        "service_id": "fdf75033-56ee-4ce6-929c-1f9c93a4c642",
+        "service_name": "Digital Pins",
+        "brand_id": "9853ae0e-2a86-44de-870d-c1896f54b602",
+        "brand_name": "iTunes Gift Card",
+        "region_id": "d2d4dec8-1ef0-4db3-888e-a373895e2b25",
+        "region_name": "France",
+        "relation_id": "51dfb32f-4cee-478e-a320-dbeebf3d2227",
+        "status": "active",
+        "img_url": "https://assets.offgamers.com/img/offer/kr_fdf75033-56ee-4ce6-929c-1f9c93a4c642_9853ae0e-2a86-44de-870d-c1896f54b602.webp",
+        "lgc_category_id": "17716"
+      },
+      {
+        "service_id": "fdf75033-56ee-4ce6-929c-1f9c93a4c642",
+        "service_name": "Digital Pins",
+        "brand_id": "9853ae0e-2a86-44de-870d-c1896f54b602",
+        "brand_name": "iTunes Gift Card",
+        "region_id": "4fab1434-5a9b-4a11-83ff-6b3d42208dd8",
+        "region_name": "Netherlands",
+        "relation_id": "5057d479-3a2c-4bab-8f1b-91896ce25046",
+        "status": "active",
+        "img_url": "https://assets.offgamers.com/img/offer/kr_fdf75033-56ee-4ce6-929c-1f9c93a4c642_9853ae0e-2a86-44de-870d-c1896f54b602.webp",
+        "lgc_category_id": "17711"
+      },
+      {
+        "service_id": "fdf75033-56ee-4ce6-929c-1f9c93a4c642",
+        "service_name": "Digital Pins",
+        "brand_id": "9853ae0e-2a86-44de-870d-c1896f54b602",
+        "brand_name": "iTunes Gift Card",
+        "region_id": "1ca2a5db-c351-4663-a779-da96bd7a5a56",
+        "region_name": "Finland",
+        "relation_id": "4bac56b0-8680-48c3-bf65-9e21570678d1",
+        "status": "active",
+        "img_url": "https://assets.offgamers.com/img/offer/kr_fdf75033-56ee-4ce6-929c-1f9c93a4c642_9853ae0e-2a86-44de-870d-c1896f54b602.webp",
+        "lgc_category_id": "21584"
+      },
+      {
+        "service_id": "fdf75033-56ee-4ce6-929c-1f9c93a4c642",
+        "service_name": "Digital Pins",
+        "brand_id": "9853ae0e-2a86-44de-870d-c1896f54b602",
+        "brand_name": "iTunes Gift Card",
+        "region_id": "e537da7b-7a23-4d21-8f42-ed5a46a52a57",
+        "region_name": "Mexico",
+        "relation_id": "3f36395f-7731-4ded-ba61-770a0f3d6a9d",
+        "status": "active",
+        "img_url": "https://assets.offgamers.com/img/offer/kr_fdf75033-56ee-4ce6-929c-1f9c93a4c642_9853ae0e-2a86-44de-870d-c1896f54b602.webp",
+        "lgc_category_id": "21593"
+      },
+      {
+        "service_id": "fdf75033-56ee-4ce6-929c-1f9c93a4c642",
+        "service_name": "Digital Pins",
+        "brand_id": "9853ae0e-2a86-44de-870d-c1896f54b602",
+        "brand_name": "iTunes Gift Card",
+        "region_id": "bee03652-e28c-4278-b0d5-0c63b4b6db33",
+        "region_name": "United States",
+        "relation_id": "339d7464-d00d-488e-bef5-9d9df7f4957d",
+        "status": "active",
+        "img_url": "https://assets.offgamers.com/img/offer/kr_fdf75033-56ee-4ce6-929c-1f9c93a4c642_9853ae0e-2a86-44de-870d-c1896f54b602.webp",
+        "lgc_category_id": "4444"
+      },
+      {
+        "service_id": "fdf75033-56ee-4ce6-929c-1f9c93a4c642",
+        "service_name": "Digital Pins",
+        "brand_id": "9853ae0e-2a86-44de-870d-c1896f54b602",
+        "brand_name": "iTunes Gift Card",
+        "region_id": "80ee9462-401b-447e-8c70-312672dde199",
+        "region_name": "Belgium",
+        "relation_id": "2dcd9714-8aab-434c-893e-9bcdec226da3",
+        "status": "active",
+        "img_url": "https://assets.offgamers.com/img/offer/kr_fdf75033-56ee-4ce6-929c-1f9c93a4c642_9853ae0e-2a86-44de-870d-c1896f54b602.webp",
+        "lgc_category_id": "17713"
+      },
+      {
+        "service_id": "fdf75033-56ee-4ce6-929c-1f9c93a4c642",
+        "service_name": "Digital Pins",
+        "brand_id": "9853ae0e-2a86-44de-870d-c1896f54b602",
+        "brand_name": "iTunes Gift Card",
+        "region_id": "a754d6f9-a63e-4735-9c56-16834350ecb3",
+        "region_name": "New Zealand",
+        "relation_id": "20b508bd-72b2-4f6b-b7af-8c955969f336",
+        "status": "active",
+        "img_url": "https://assets.offgamers.com/img/offer/kr_fdf75033-56ee-4ce6-929c-1f9c93a4c642_9853ae0e-2a86-44de-870d-c1896f54b602.webp",
+        "lgc_category_id": "27457"
+      },
+      {
+        "service_id": "fdf75033-56ee-4ce6-929c-1f9c93a4c642",
+        "service_name": "Digital Pins",
+        "brand_id": "9853ae0e-2a86-44de-870d-c1896f54b602",
+        "brand_name": "iTunes Gift Card",
+        "region_id": "7d30e8c8-dd06-429c-9d14-56025ad62aaf",
+        "region_name": "China",
+        "relation_id": "1eaaf432-4eeb-423f-9c2b-6b205992d6e4",
+        "status": "active",
+        "img_url": "https://assets.offgamers.com/img/offer/kr_fdf75033-56ee-4ce6-929c-1f9c93a4c642_9853ae0e-2a86-44de-870d-c1896f54b602.webp",
+        "lgc_category_id": "24115"
+      }
+    ]
+  },
+  "request_id": "23026fae-ea21-4941-ad45-6c477c1f1a60"
+}
+
+=== https://sls.offgamers.com/offer/keyword_info?seo_term=itunes-gift-cards&include_relation_detail=1&language=en&v=v2
+{
+  "code": 2000,
+  "messages": [],
+  "payload": {
+    "relation_detail": {
+      "brand_img_url": "https://assets.offgamers.com/img/offer/kr_fdf75033-56ee-4ce6-929c-1f9c93a4c642_9853ae0e-2a86-44de-870d-c1896f54b602.webp",
+      "product_description": {
+        "en": "iTunes Gift Card sold by OffGamers is a region locked product. It's only valid for account registered in the respective region. All purchases are NON-REFUNDABLE and NON-EXCHANGEABLE on cases mentioned."
+      },
+      "marketing_title": {
+        "en": "iTunes Gift Card (India)"
+      },
+      "marketing_description": {
+        "en": "<h1 data-v-a28fc712=\"\" data-v-6a5aa8e0=\"\" class=\"text-h4 q-ma-none\">iTunes Gift Card for Sale</h1><br>\n\n<p>If you are an Apple user, then you must be familiar with iTunes. iTunes is one of Apple’s prominent features in which you can download, play, and manage various digital multimedia content. Music, video, software, and movies–iTunes has all of them, making it the perfect platform to use your iTunes gift card for music and movies.</p><br>\n\n<p>To get access to said digital services, you can purchase an iTunes Gift Card first. It is basically a prepaid digital card that gives you a certain amount of balance. iTunes gift card's balance can be used within iTunes Store, Apple Store, and other Apple services. </p><br>\n\n<p>If you looking for a perfect gift for your friend, family, or loved one, iTunes gift card is the right choice for you. For example, an iTunes gift card 50 dollars offers great value and flexibility. Make sure to only buy it through reliable online marketplaces like OffGamers, so your transaction is 100% secured.</p><br>\n\n<h4 data-v-a28fc712=\"\" data-v-6a5aa8e0=\"\" class=\"text-h4 q-ma-none\">OffGamers: The Best Place to Buy iTunes Gift Card</h4><br>\n\n<p>Buying iTunes Gift Card has never been faster than with OffGamers. No matter how many iTunes Gift Card you want to buy, OffGamers ensures that you won't be waiting for more than 15 minutes to receive your gift card! Fast and seamless transaction is our priority.</p><br>\n\n<p>With more than 200 localized payment methods, it will be much easier for you to shop with us from almost anywhere. Also, SSL technology protects all of your transaction details, so hackers or scammers won't be able to read your data.</p><br>\n\n<p>Unlike some other platforms, OffGamers is committed to providing a clear and upfront pricing structure. This means that the price you see during your purchase is the final price you'll pay. Thus, you don't have to worry about unexpected fees or additional costs creeping up on your transaction.</p><br>\n\n<h4 data-v-a28fc712=\"\" data-v-6a5aa8e0=\"\" class=\"text-h4 q-ma-none\">How to Redeem iTunes Gift Card</h4><br>\nFollow these steps to redeem your iTunes Gift Card:\n<ol>\n<li>Find and open the App Store.</li>\n<li>Look for your name or the sign-in button found by the sidebar and click on it.</li>\n<li>Click \"Redeem Gift Card\" and input the 16-digit code sent to you.</li>\n<li>Your iTunes Card should be redeemed into your account.</li>\n</ol>\n\n<h4 data-v-a28fc712=\"\" data-v-6a5aa8e0=\"\" class=\"text-h4 q-ma-none\">About iTunes</h4><br>\n\n<p>iTunes is your digital playground for all things music, movies, and more. It's like having a world of entertainment right at your fingertips. With iTunes, you can create your own customized playlists to match your every mood – whether you're ready to dance the night away or just looking for some peaceful tunes to unwind.</p><br>\n\n<p>But it's not just about music; iTunes is also your go-to hub for movies and TV shows. You can rent or buy the latest blockbusters or catch up on your favorite series, all in the comfort of your own home. No more waiting in long lines or searching for that elusive DVD; everything you want is just a click away.</p><br>\n\n<p>What's more, iTunes offers a vast library of apps, games, and podcasts, making it a one-stop shop for all your digital entertainment needs. So, whether you're a music aficionado, a movie buff, or a podcast enthusiast, iTunes has something special in store for you. Get ready to dive into the world of endless entertainment with iTunes – where every click opens up a new adventure.</p><br>\n\n<h4 data-v-a28fc712=\"\" data-v-6a5aa8e0=\"\" class=\"text-h4 q-ma-none\">FAQs</h4><br>\n\n<b>Q:</b> What can I buy with an iTunes Gift Card?<br>\n<b>A:</b> You can use it to purchase paid apps, in-app items, subscriptions like Apple Music, and digital content like movies, music, and audiobooks.<br><br>\n\n<b>Q:</b> How do I check my iTunes Gift Card balance?<br>\n<b>A:</b> Your balance will automatically appear in your Apple account after redeeming the gift card. You can check it in the App Store under your account profile.<br><br>\n\n<b>Q:</b> Can I use an iTunes Gift Card for in-app purchases?<br>\n<b>A:</b> Yes, iTunes balances can be used for in-app purchases, including game upgrades, subscriptions, and more.<br><br>\n\n<b>Q:</b> What makes the iTunes Gift Card from OffGamers different?<br>\n<b>A:</b> The OffGamers platform specializes in virtual digital products, offering fast delivery and a variety of localized payment methods. The iTunes Gift Card you purchase here is the same as those from other channels—it is an official Apple-issued recharge voucher. What's important to note is your Apple ID's region; you must select the corresponding regional product when making a purchase.<br><br>\n\n<h4 data-v-a28fc712=\"\" data-v-6a5aa8e0=\"\" class=\"text-h4 q-ma-none\">Trending Gift Cards</h4><br>\n<ol>\n<li><a href=\"https://www.offgamers.com/product/gocash-game-card-gift-cards\">GoCash Game Card</a></li>\n<li><a href=\"https://www.offgamers.com/product/steam-wallet-codes-gift-cards\">Steam Wallet Gift Cards</a></li>\n<li><a href=\"https://www.offgamers.com/product/mycard-points-gift-cards\">MyCard Points Gift Cards</a></li>\n<li><a href=\"https://www.offgamers.com/product/playstation-store-gift-cards\">Playstation Store Gift Cards</a></li>\n<li><a href=\"https://www.offgamers.com/product/nintendo-eshop-gift-cards\">Nintendo eShop Gift Cards</a></li>\n<li><a href=\"https://www.offgamers.com/product/erolabs-ecoin-gift-cards\">Erolabs eCoin Gift Card</a></li>\n<li><a href=\"https://www.offgamers.com/product/cherry-credits-gift-cards\">Cherry Credits Gift Cards</a></li>\n<li><a href=\"https://www.offgamers.com/product/google-play-code\">Google Play Gift Cards</a></li>\n</ol>\n"
+      },
+      "seo_meta": {
+        "meta_description": {
+          "en": "Unlock a world of digital entertainment with iTunes Gift Card exclusive on OffGamers.com. Hassle-free, instant delivery, and 24/7 assistance."
+        },
+        "meta_title": {
+          "en": "Buy iTunes Gift Card Starting From $1.95 On OffGamers.com"
+        },
+        "meta_keyword": {
+          "en": "iTunes Gift Card, buy iTunes Gift Card, redeem itunes card,"
+        }
+      },
+      "relation_id": "",
+      "display_trending": false
+    }
+  },
+  "request_id": "bcb8f4f8-a776-4138-baa9-c75b3c5c29da"
+}
+
+=== https://sls.offgamers.com/offer/product_settings/service/fdf75033-56ee-4ce6-929c-1f9c93a4c642/brand/9853ae0e-2a86-44de-870d-c1896f54b602/product_settings?settings_type=product_faq&language=en
+{
+  "code": 2000,
+  "messages": [],
+  "payload": {
+    "service_id": "fdf75033-56ee-4ce6-929c-1f9c93a4c642",
+    "brand_id": "9853ae0e-2a86-44de-870d-c1896f54b602",
+    "results": [
+      {
+        "product_settings_type": "product_faq",
+        "results": []
+      }
+    ]
+  },
+  "request_id": "06149e85-7277-41bd-98d8-61323c94dcda"
+}
+
+=== https://sls.offgamers.com/offer/search/lite?service_id=fdf75033-56ee-4ce6-929c-1f9c93a4c642&brand_id=9853ae0e-2a86-44de-870d-c1896f54b602&region_id=7d30e8c8-dd06-429c-9d14-56025ad62aaf&country=SG&currency=SGD
+{
+  "code": 2000,
+  "messages": [],
+  "payload": {
+    "results": [
+      {
+        "collection_id": "fac2110b",
+        "parent_id": "fac2110b",
+        "parent_value": "iTunes Gift Card GC (CHINA)",
+        "description": {
+          "en": "",
+          "id": "",
+          "zh-CN": "",
+          "zh-TW": "",
+          "ko": ""
+        },
+        "offer_results": [
+          {
+            "converted_unit_price": 198.360343,
+            "display_currency": "SGD",
+            "display_price": "198.36",
+            "offer_group": "/b3ed4d2e",
+            "offer_id": "G1715140817791MF",
+            "relation_id": "1eaaf432-4eeb-423f-9c2b-6b205992d6e4",
+            "service_id": "fdf75033-56ee-4ce6-929c-1f9c93a4c642",
+            "brand_id": "9853ae0e-2a86-44de-870d-c1896f54b602",
+            "region_id": "7d30e8c8-dd06-429c-9d14-56025ad62aaf",
+            "title": "CNY 1,000",
+            "description": "",
+            "offer_attributes": [
+              {
+                "collection_id": "fac2110b",
+                "dataset_id": "b3ed4d2e"
+              }
+            ],
+            "filter_attributes": {
+              "fac2110b": [
+                "b3ed4d2e"
+              ]
+            },
+            "offer_group_attributes": {
+              "fac2110b": [
+                "b3ed4d2e"
+              ]
+            },
+            "delivery_mode": [
+              "instant_inventory",
+              "instant_openapi"
+            ],
+            "delivery_method_ids": [
+              "instant_inventory",
+              "instant_openapi"
+            ],
+            "available_qty": 89,
+            "reserved_qty": 0,
+            "min_qty": 1,
+            "offer_currency": "CNY",
+            "unit_price": 1018.8438,
+            "unit_name": "",
+            "other_pricing": [],
+            "qty_metric": "1",
+            "wholesale_details": [],
+            "other_wholesale_details": [],
+            "supported_countries": [],
+            "display_to": {},
+            "status": "live",
+            "created_at": 1715140817791,
+            "updated_at": 1785296394320,
+            "cat_id": "088b3ab0-00d8-499c-8a21-d41cdeb4a485",
+            "ancestor_id": "088b3ab0-00d8-499c-8a21-d41cdeb4a485",
+            "lgc_products_id": "175333",
+            "lgc_category_id": "24115",
+            "total_success_order": 0,
+            "is_bundle": false,
+            "decimal_places": 2,
+            "formatted_unit_price": "0",
+            "attribute_description": {
+              "en": "",
+              "id": "",
+              "zh-CN": "",
+              "zh-TW": "",
+              "ko": ""
+            }
+          },
+          {
+            "converted_unit_price": 129.186004,
+            "display_currency": "SGD",
+            "display_price": "129.19",
+            "offer_group": "/b4263e00",
+            "offer_id": "G1716353237599UF",
+            "relation_id": "1eaaf432-4eeb-423f-9c2b-6b205992d6e4",
+            "service_id": "fdf75033-56ee-4ce6-929c-1f9c93a4c642",
+            "brand_id": "9853ae0e-2a86-44de-870d-c1896f54b602",
+            "region_id": "7d30e8c8-dd06-429c-9d14-56025ad62aaf",
+            "title": "CNY 648",
+            "description": "",
+            "offer_attributes": [
+              {
+                "collection_id": "fac2110b",
+                "dataset_id": "b4263e00"
+              }
+            ],
+            "filter_attributes": {
+              "fac2110b": [
+                "b4263e00"
+              ]
+            },
+            "offer_group_attributes": {
+              "fac2110b": [
+                "b4263e00"
+              ]
+            },
+            "delivery_mode": [
+              "instant_inventory",
+              "instant_openapi"
+            ],
+            "delivery_method_ids": [
+              "instant_inventory",
+              "instant_openapi"
+            ],
+            "available_qty": 113,
+            "reserved_qty": 0,
+            "min_qty": 1,
+            "offer_currency": "CNY",
+            "unit_price": 663.5417,
+            "unit_name": "",
+            "other_pricing": [],
+            "qty_metric": "1",
+            "wholesale_details": [],
+            "other_wholesale_details": [],
+            "supported_countries": [],
+            "display_to": {},
+            "status": "live",
+            "created_at": 1716353237600,
+            "updated_at": 1785212826734,
+            "cat_id": "e2116db2-512a-4dea-bf09-bd24d9783a2a",
+            "ancestor_id": "e2116db2-512a-4dea-bf09-bd24d9783a2a",
+            "lgc_products_id": "220745",
+            "lgc_category_id": "24115",
+            "total_success_order": 0,
+            "is_bundle": false,
+            "decimal_places": 2,
+            "formatted_unit_price": "0",
+            "attribute_description": {
+              "en": "",
+              "id": "",
+              "zh-CN": "",
+              "zh-TW": "",
+              "ko": ""
+            }
+          },
+          {
+            "converted_unit_price": 99.680081,
+            "display_currency": "SGD",
+            "display_price": "99.68",
+            "offer_group": "/8f15bbe0",
+            "offer_id": "G1715140782334KY",
+            "relation_id": "1eaaf432-4eeb-423f-9c2b-6b205992d6e4",
+            "service_id": "fdf75033-56ee-4ce6-929c-1f9c93a4c642",
+            "brand_id": "9853ae0e-2a86-44de-870d-c1896f54b602",
+            "region_id": "7d30e8c8-dd06-429c-9d14-56025ad62aaf",
+            "title": "CNY 500",
+            "description": "",
+            "offer_attributes": [
+              {
+                "collection_id": "fac2110b",
+                "dataset_id": "8f15bbe0"
+              }
+            ],
+            "filter_attributes": {
+              "fac2110b": [
+                "8f15bbe0"
+              ]
+            },
+            "offer_group_attributes": {
+              "fac2110b": [
+                "8f15bbe0"
+              ]
+            },
+            "delivery_mode": [
+              "instant_inventory",
+              "instant_openapi"
+            ],
+            "delivery_method_ids": [
+              "instant_inventory",
+              "instant_openapi"
+            ],
+            "available_qty": 260,
+            "reserved_qty": 0,
+            "min_qty": 1,
+            "offer_currency": "CNY",
+            "unit_price": 511.9896,
+            "unit_name": "",
+            "other_pricing": [],
+            "qty_metric": "1",
+            "wholesale_details": [],
+            "other_wholesale_details": [],
+            "supported_countries": [],
+            "display_to": {},
+            "status": "live",
+            "created_at": 1715140782334,
+            "updated_at": 1785212813699,
+            "cat_id": "088b3ab0-00d8-499c-8a21-d41cdeb4a485",
+            "ancestor_id": "088b3ab0-00d8-499c-8a21-d41cdeb4a485",
+            "lgc_products_id": "173846",
+            "lgc_category_id": "24115",
+            "total_success_order": 0,
+            "is_bundle": false,
+            "decimal_places": 2,
+            "formatted_unit_price": "0",
+            "attribute_description": {
+              "en": "",
+              "id": "",
+              "zh-CN": "",
+              "zh-TW": "",
+              "ko": ""
+            }
+          },
+          {
+            "converted_unit_price": 39.828978,
+            "display_currency": "SGD",
+            "display_price": "39.83",
+            "offer_group": "/ec5cc99f",
+            "offer_id": "G1716508635984VE",
+            "relation_id": "1eaaf432-4eeb-423f-9c2b-6b205992d6e4",
+            "service_id": "fdf75033-56ee-4ce6-929c-1f9c93a4c642",
+            "brand_id": "9853ae0e-2a86-44de-870d-c1896f54b602",
+            "region_id": "7d30e8c8-dd06-429c-9d14-56025ad62aaf",
+            "title": "CNY 200",
+            "description": "",
+            "offer_attributes": [
+              {
+                "collection_id": "fac2110b",
+                "dataset_id": "ec5cc99f"
+              }
+            ],
+            "filter_attributes": {
+              "fac2110b": [
+                "ec5cc99f"
+              ]
+            },
+            "offer_group_attributes": {
+              "fac2110b": [
+                "ec5cc99f"
+              ]
+            },
+            "delivery_mode": [
+              "instant_inventory",
+              "instant_openapi"
+            ],
+            "delivery_method_ids": [
+              "instant_inventory",
+              "instant_openapi"
+            ],
+            "available_qty": 16,
+            "reserved_qty": 0,
+            "min_qty": 1,
+            "offer_currency": "CNY",
+            "unit_price": 204.5747,
+            "unit_name": "",
+            "other_pricing": [],
+            "qty_metric": "1",
+            "wholesale_details": [],
+            "other_wholesale_details": [],
+            "supported_countries": [],
+            "display_to": {},
+            "status": "live",
+            "created_at": 1716508635984,
+            "updated_at": 1785284389753,
+            "cat_id": "e2116db2-512a-4dea-bf09-bd24d9783a2a",
+            "ancestor_id": "e2116db2-512a-4dea-bf09-bd24d9783a2a",
+            "lgc_products_id": "173847",
+            "lgc_category_id": "24115",
+            "total_success_order": 0,
+            "is_bundle": false,
+            "decimal_places": 2,
+            "formatted_unit_price": "0",
+            "attribute_description": {
+              "en": "",
+              "id": "",
+              "zh-CN": "",
+              "zh-TW": "",
+              "ko": ""
+            }
+          },
+          {
+            "converted_unit_price": 19.994264,
+            "display_currency": "SGD",
+            "display_price": "19.99",
+            "offer_group": "/9b17b9e9",
+            "offer_id": "G1716521296576GV",
+            "relation_id": "1eaaf432-4eeb-423f-9c2b-6b205992d6e4",
+            "service_id": "fdf75033-56ee-4ce6-929c-1f9c93a4c642",
+            "brand_id": "9853ae0e-2a86-44de-870d-c1896f54b602",
+            "region_id": "7d30e8c8-dd06-429c-9d14-56025ad62aaf",
+            "title": "CNY 100",
+            "description": "",
+            "offer_attributes": [
+              {
+                "collection_id": "fac2110b",
+                "dataset_id": "9b17b9e9"
+              }
+            ],
+            "filter_attributes": {
+              "fac2110b": [
+                "9b17b9e9"
+              ]
+            },
+            "offer_group_attributes": {
+              "fac2110b": [
+                "9b17b9e9"
+              ]
+            },
+            "delivery_mode": [
+              "instant_inventory",
+              "instant_openapi"
+            ],
+            "delivery_method_ids": [
+              "instant_inventory",
+              "instant_openapi"
+            ],
+            "available_qty": 60,
+            "reserved_qty": 0,
+            "min_qty": 1,
+            "offer_currency": "CNY",
+            "unit_price": 102.6971,
+            "unit_name": "",
+            "other_pricing": [],
+            "qty_metric": "1",
+            "wholesale_details": [],
+            "other_wholesale_details": [],
+            "supported_countries": [],
+            "display_to": {},
+            "status": "live",
+            "created_at": 1716521296576,
+            "updated_at": 1785274628285,
+            "cat_id": "e2116db2-512a-4dea-bf09-bd24d9783a2a",
+            "ancestor_id": "e2116db2-512a-4dea-bf09-bd24d9783a2a",
+            "lgc_products_id": "173848",
+            "lgc_category_id": "24115",
+            "total_success_order": 0,
+            "is_bundle": false,
+            "decimal_places": 2,
+            "formatted_unit_price": "0",
+            "attribute_description": {
+              "en": "",
+              "id": "",
+              "zh-CN": "",
+              "zh-TW": "",
+              "ko": ""
+            }
+          },
+          {
+            "converted_unit_price": 60.285752,
+            "display_currency": "SGD",
+            "display_price": "60.29",
+            "offer_group": "/a8c5bb60",
+            "offer_id": "G1716526106911ST",
+            "relation_id": "1eaaf432-4eeb-423f-9c2b-6b205992d6e4",
+            "service_id": "fdf75033-56ee-4ce6-929c-1f9c93a4c642",
+            "brand_id": "9853ae0e-2a86-44de-870d-c1896f54b602",
+            "region_id": "7d30e8c8-dd06-429c-9d14-56025ad62aaf",
+            "title": "CNY 300",
+            "description": "",
+            "offer_attributes": [
+              {
+                "collection_id": "fac2110b",
+                "dataset_id": "a8c5bb60"
+              }
+            ],
+            "filter_attributes": {
+              "fac2110b": [
+                "a8c5bb60"
+              ]
+            },
+            "offer_group_attributes": {
+              "fac2110b": [
+                "a8c5bb60"
+              ]
+            },
+            "delivery_mode": [
+              "instant_inventory",
+              "instant_openapi"
+            ],
+            "delivery_method_ids": [
+              "instant_inventory",
+              "instant_openapi"
+            ],
+            "available_qty": 0,
+            "reserved_qty": 0,
+            "min_qty": 1,
+            "offer_currency": "CNY",
+            "unit_price": 309.6474,
+            "unit_name": "",
+            "other_pricing": [],
+            "qty_metric": "1",
+            "wholesale_details": [],
+            "other_wholesale_details": [],
+            "supported_countries": [],
+            "display_to": {},
+            "status": "live",
+            "created_at": 1716526106911,
+            "updated_at": 1784194869286,
+            "cat_id": "e2116db2-512a-4dea-bf09-bd24d9783a2a",
+            "ancestor_id": "e2116db2-512a-4dea-bf09-bd24d9783a2a",
+            "lgc_products_id": "220393",
+            "lgc_category_id": "24115",
+            "total_success_order": 0,
+            "is_bundle": false,
+            "decimal_places": 2,
+            "formatted_unit_price": "0",
+            "is_sold_out": true,
+            "is_low_stock": true,
+            "attribute_description": {
+              "en": "",
+              "id": "",
+              "zh-CN": "",
+              "zh-TW": "",
+              "ko": ""
+            }
+          },
+          {
+            "converted_unit_price": 13.596114,
+            "display_currency": "SGD",
+            "display_price": "13.60",
+            "offer_group": "/b83ab9fe",
+            "offer_id": "G1753156027384GO",
+            "relation_id": "1eaaf432-4eeb-423f-9c2b-6b205992d6e4",
+            "service_id": "fdf75033-56ee-4ce6-929c-1f9c93a4c642",
+            "brand_id": "9853ae0e-2a86-44de-870d-c1896f54b602",
+            "region_id": "7d30e8c8-dd06-429c-9d14-56025ad62aaf",
+            "title": "CNY 68",
+            "description": "",
+            "offer_attributes": [
+              {
+                "collection_id": "fac2110b",
+                "dataset_id": "b83ab9fe"
+              }
+            ],
+            "filter_attributes": {
+              "fac2110b": [
+                "b83ab9fe"
+              ]
+            },
+            "offer_group_attributes": {
+              "fac2110b": [
+                "b83ab9fe"
+              ]
+            },
+            "delivery_mode": [
+              "instant_inventory",
+              "instant_openapi"
+            ],
+            "delivery_method_ids": [
+              "instant_inventory",
+              "instant_openapi"
+            ],
+            "available_qty": 0,
+            "reserved_qty": 0,
+            "min_qty": 1,
+            "offer_currency": "CNY",
+            "unit_price": 69.8341,
+            "unit_name": "",
+            "other_pricing": [],
+            "qty_metric": "1",
+            "wholesale_details": [],
+            "other_wholesale_details": [],
+            "supported_countries": [],
+            "display_to": {},
+            "status": "live",
+            "created_at": 1753156027400,
+            "updated_at": 1784171764196,
+            "cat_id": "e2116db2-512a-4dea-bf09-bd24d9783a2a",
+            "ancestor_id": "e2116db2-512a-4dea-bf09-bd24d9783a2a",
+            "lgc_products_id": "225972",
+            "lgc_category_id": "24115",
+            "total_success_order": 0,
+            "is_bundle": false,
+            "decimal_places": 2,
+            "formatted_unit_price": "0",
+            "is_sold_out": true,
+            "is_low_stock": true,
+            "attribute_description": {
+              "en": "",
+              "id": "",
+              "zh-CN": "",
+              "zh-TW": "",
+              "ko": ""
+            }
+          },
+          {
+            "converted_unit_price": 10.300082,
+            "display_currency": "SGD",
+            "display_price": "10.30",
+            "offer_group": "/52b526e3",
+            "offer_id": "G1715140810365VI",
+            "relation_id": "1eaaf432-4eeb-423f-9c2b-6b205992d6e4",
+            "service_id": "fdf75033-56ee-4ce6-929c-1f9c93a4c642",
+            "brand_id": "9853ae0e-2a86-44de-870d-c1896f54b602",
+            "region_id": "7d30e8c8-dd06-429c-9d14-56025ad62aaf",
+            "title": "CNY 50",
+            "description": "",
+            "offer_attributes": [
+              {
+                "collection_id": "fac2110b",
+                "dataset_id": "52b526e3"
+              }
+            ],
+            "filter_attributes": {
+              "fac2110b": [
+                "52b526e3"
+              ]
+            },
+            "offer_group_attributes": {
+              "fac2110b": [
+                "52b526e3"
+              ]
+            },
+            "delivery_mode": [
+              "instant_inventory",
+              "instant_openapi"
+            ],
+            "delivery_method_ids": [
+              "instant_inventory",
+              "instant_openapi"
+            ],
+            "available_qty": 0,
+            "reserved_qty": 0,
+            "min_qty": 1,
+            "offer_currency": "CNY",
+            "unit_price": 52.9046,
+            "unit_name": "",
+            "other_pricing": [],
+            "qty_metric": "1",
+            "wholesale_details": [],
+            "other_wholesale_details": [],
+            "supported_countries": [],
+            "display_to": {},
+            "status": "live",
+            "created_at": 1715140810365,
+            "updated_at": 1784194868044,
+            "cat_id": "088b3ab0-00d8-499c-8a21-d41cdeb4a485",
+            "ancestor_id": "088b3ab0-00d8-499c-8a21-d41cdeb4a485",
+            "lgc_products_id": "173850",
+            "lgc_category_id": "24115",
+            "total_success_order": 0,
+            "is_bundle": false,
+            "decimal_places": 2,
+            "formatted_unit_price": "0",
+            "is_sold_out": true,
+            "is_low_stock": true,
+            "attribute_description": {
+              "en": "",
+              "id": "",
+              "zh-CN": "",
+              "zh-TW": "",
+              "ko": ""
+            }
+          },
+          {
+            "converted_unit_price": 6.462808,
+            "display_currency": "SGD",
+            "display_price": "6.46",
+            "offer_group": "/6d83a99e",
+            "offer_id": "G1715141514375RL",
+            "relation_id": "1eaaf432-4eeb-423f-9c2b-6b205992d6e4",
+            "service_id": "fdf75033-56ee-4ce6-929c-1f9c93a4c642",
+            "brand_id": "9853ae0e-2a86-44de-870d-c1896f54b602",
+            "region_id": "7d30e8c8-dd06-429c-9d14-56025ad62aaf",
+            "title": "CNY 30",
+            "description": "",
+            "offer_attributes": [
+              {
+                "collection_id": "fac2110b",
+                "dataset_id": "6d83a99e"
+              }
+            ],
+            "filter_attributes": {
+              "fac2110b": [
+                "6d83a99e"
+              ]
+            },
+            "offer_group_attributes": {
+              "fac2110b": [
+                "6d83a99e"
+              ]
+            },
+            "delivery_mode": [
+              "instant_inventory",
+              "instant_openapi"
+            ],
+            "delivery_method_ids": [
+              "instant_inventory",
+              "instant_openapi"
+            ],
+            "available_qty": 0,
+            "reserved_qty": 0,
+            "min_qty": 1,
+            "offer_currency": "CNY",
+            "unit_price": 33.1951,
+            "unit_name": "",
+            "other_pricing": [],
+            "qty_metric": "1",
+            "wholesale_details": [],
+            "other_wholesale_details": [],
+            "supported_countries": [],
+            "display_to": {},
+            "status": "live",
+            "created_at": 1715141514375,
+            "updated_at": 1784194867306,
+            "cat_id": "088b3ab0-00d8-499c-8a21-d41cdeb4a485",
+            "ancestor_id": "088b3ab0-00d8-499c-8a21-d41cdeb4a485",
+            "lgc_products_id": "185973",
+            "lgc_category_id": "24115",
+            "total_success_order": 0,
+            "is_bundle": false,
+            "decimal_places": 2,
+            "formatted_unit_price": "0",
+            "is_sold_out": true,
+            "is_low_stock": true,
+            "attribute_description": {
+              "en": "",
+              "id": "",
+              "zh-CN": "",
+              "zh-TW": "",
+              "ko": ""
+            }
+          },
+          {
+            "converted_unit_price": 4.475493,
+            "display_currency": "SGD",
+            "display_price": "4.48",
+            "offer_group": "/9182bf56",
+            "offer_id": "G1715141515164IH",
+            "relation_id": "1eaaf432-4eeb-423f-9c2b-6b205992d6e4",
+            "service_id": "fdf75033-56ee-4ce6-929c-1f9c93a4c642",
+            "brand_id": "9853ae0e-2a86-44de-870d-c1896f54b602",
+            "region_id": "7d30e8c8-dd06-429c-9d14-56025ad62aaf",
+            "title": "CNY 20",
+            "description": "",
+            "offer_attributes": [
+              {
+                "collection_id": "fac2110b",
+                "dataset_id": "9182bf56"
+              }
+            ],
+            "filter_attributes": {
+              "fac2110b": [
+                "9182bf56"
+              ]
+            },
+            "offer_group_attributes": {
+              "fac2110b": [
+                "9182bf56"
+              ]
+            },
+            "delivery_mode": [
+              "instant_inventory",
+              "instant_openapi"
+            ],
+            "delivery_method_ids": [
+              "instant_inventory",
+              "instant_openapi"
+            ],
+            "available_qty": 0,
+            "reserved_qty": 0,
+            "min_qty": 1,
+            "offer_currency": "CNY",
+            "unit_price": 22.9876,
+            "unit_name": "",
+            "other_pricing": [],
+            "qty_metric": "1",
+            "wholesale_details": [],
+            "other_wholesale_details": [],
+            "supported_countries": [],
+            "display_to": {},
+            "status": "live",
+            "created_at": 1715141515165,
+            "updated_at": 1784513756498,
+            "cat_id": "088b3ab0-00d8-499c-8a21-d41cdeb4a485",
+            "ancestor_id": "088b3ab0-00d8-499c-8a21-d41cdeb4a485",
+            "lgc_products_id": "185974",
+            "lgc_category_id": "24115",
+            "total_success_order": 0,
+            "is_bundle": false,
+            "decimal_places": 2,
+            "formatted_unit_price": "0",
+            "is_sold_out": true,
+            "is_low_stock": true,
+            "attribute_description": {
+              "en": "",
+              "id": "",
+              "zh-CN": "",
+              "zh-TW": "",
+              "ko": ""
+            }
+          },
+          {
+            "converted_unit_price": 2.999146,
+            "display_currency": "SGD",
+            "display_price": "3.00",
+            "offer_group": "/f141a543",
+            "offer_id": "G1753156033769UK",
+            "relation_id": "1eaaf432-4eeb-423f-9c2b-6b205992d6e4",
+            "service_id": "fdf75033-56ee-4ce6-929c-1f9c93a4c642",
+            "brand_id": "9853ae0e-2a86-44de-870d-c1896f54b602",
+            "region_id": "7d30e8c8-dd06-429c-9d14-56025ad62aaf",
+            "title": "CNY 15",
+            "description": "",
+            "offer_attributes": [
+              {
+                "collection_id": "fac2110b",
+                "dataset_id": "f141a543"
+              }
+            ],
+            "filter_attributes": {
+              "fac2110b": [
+                "f141a543"
+              ]
+            },
+            "offer_group_attributes": {
+              "fac2110b": [
+                "f141a543"
+              ]
+            },
+            "delivery_mode": [
+              "instant_inventory",
+              "instant_openapi"
+            ],
+            "delivery_method_ids": [
+              "instant_inventory",
+              "instant_openapi"
+            ],
+            "available_qty": 0,
+            "reserved_qty": 0,
+            "min_qty": 1,
+            "offer_currency": "CNY",
+            "unit_price": 15.4046,
+            "unit_name": "",
+            "other_pricing": [],
+            "qty_metric": "1",
+            "wholesale_details": [],
+            "other_wholesale_details": [],
+            "supported_countries": [],
+            "display_to": {},
+            "status": "live",
+            "created_at": 1753156033776,
+            "updated_at": 1784171763817,
+            "cat_id": "e2116db2-512a-4dea-bf09-bd24d9783a2a",
+            "ancestor_id": "e2116db2-512a-4dea-bf09-bd24d9783a2a",
+            "lgc_products_id": "225973",
+            "lgc_category_id": "24115",
+            "total_success_order": 0,
+            "is_bundle": false,
+            "decimal_places": 2,
+            "formatted_unit_price": "0",
+            "is_sold_out": true,
+            "is_low_stock": true,
+            "attribute_description": {
+              "en": "",
+              "id": "",
+              "zh-CN": "",
+              "zh-TW": "",
+              "ko": ""
+            }
+          },
+          {
+            "converted_unit_price": 2.399321,
+            "display_currency": "SGD",
+            "display_price": "2.40",
+            "offer_group": "/1bdbc68b",
+            "offer_id": "G1753156045882DZ",
+            "relation_id": "1eaaf432-4eeb-423f-9c2b-6b205992d6e4",
+            "service_id": "fdf75033-56ee-4ce6-929c-1f9c93a4c642",
+            "brand_id": "9853ae0e-2a86-44de-870d-c1896f54b602",
+            "region_id": "7d30e8c8-dd06-429c-9d14-56025ad62aaf",
+            "title": "CNY 12",
+            "description": "",
+            "offer_attributes": [
+              {
+                "collection_id": "fac2110b",
+                "dataset_id": "1bdbc68b"
+              }
+            ],
+            "filter_attributes": {
+              "fac2110b": [
+                "1bdbc68b"
+              ]
+            },
+            "offer_group_attributes": {
+              "fac2110b": [
+                "1bdbc68b"
+              ]
+            },
+            "delivery_mode": [
+              "instant_inventory",
+              "instant_openapi"
+            ],
+            "delivery_method_ids": [
+              "instant_inventory",
+              "instant_openapi"
+            ],
+            "available_qty": 0,
+            "reserved_qty": 0,
+            "min_qty": 1,
+            "offer_currency": "CNY",
+            "unit_price": 12.3237,
+            "unit_name": "",
+            "other_pricing": [],
+            "qty_metric": "1",
+            "wholesale_details": [],
+            "other_wholesale_details": [],
+            "supported_countries": [],
+            "display_to": {},
+            "status": "live",
+            "created_at": 1753156045893,
+            "updated_at": 1784171764488,
+            "cat_id": "e2116db2-512a-4dea-bf09-bd24d9783a2a",
+            "ancestor_id": "e2116db2-512a-4dea-bf09-bd24d9783a2a",
+            "lgc_products_id": "225974",
+            "lgc_category_id": "24115",
+            "total_success_order": 0,
+            "is_bundle": false,
+            "decimal_places": 2,
+            "formatted_unit_price": "0",
+            "is_sold_out": true,
+            "is_low_stock": true,
+            "attribute_description": {
+              "en": "",
+              "id": "",
+              "zh-CN": "",
+              "zh-TW": "",
+              "ko": ""
+            }
+          },
+          {
+            "converted_unit_price": 2.221587,
+            "display_currency": "SGD",
+            "display_price": "2.22",
+            "offer_group": "/ad32aeb7",
+            "offer_id": "G1715141193364PX",
+            "relation_id": "1eaaf432-4eeb-423f-9c2b-6b205992d6e4",
+            "service_id": "fdf75033-56ee-4ce6-929c-1f9c93a4c642",
+            "brand_id": "9853ae0e-2a86-44de-870d-c1896f54b602",
+            "region_id": "7d30e8c8-dd06-429c-9d14-56025ad62aaf",
+            "title": "CNY 10",
+            "description": "",
+            "offer_attributes": [
+              {
+                "collection_id": "fac2110b",
+                "dataset_id": "ad32aeb7"
+              }
+            ],
+            "filter_attributes": {
+              "fac2110b": [
+                "ad32aeb7"
+              ]
+            },
+            "offer_group_attributes": {
+              "fac2110b": [
+                "ad32aeb7"
+              ]
+            },
+            "delivery_mode": [
+              "instant_inventory",
+              "instant_openapi"
+            ],
+            "delivery_method_ids": [
+              "instant_inventory",
+              "instant_openapi"
+            ],
+            "available_qty": 0,
+            "reserved_qty": 0,
+            "min_qty": 1,
+            "offer_currency": "CNY",
+            "unit_price": 11.4108,
+            "unit_name": "",
+            "other_pricing": [],
+            "qty_metric": "1",
+            "wholesale_details": [],
+            "other_wholesale_details": [],
+            "supported_countries": [],
+            "display_to": {},
+            "status": "live",
+            "created_at": 1715141193364,
+            "updated_at": 1784243736837,
+            "cat_id": "088b3ab0-00d8-499c-8a21-d41cdeb4a485",
+            "ancestor_id": "088b3ab0-00d8-499c-8a21-d41cdeb4a485",
+            "lgc_products_id": "179695",
+            "lgc_category_id": "24115",
+            "total_success_order": 0,
+            "is_bundle": false,
+            "decimal_places": 2,
+            "formatted_unit_price": "0",
+            "is_sold_out": true,
+            "is_low_stock": true,
+            "attribute_description": {
+              "en": "",
+              "id": "",
+              "zh-CN": "",
+              "zh-TW": "",
+              "ko": ""
+            }
+          },
+          {
+            "converted_unit_price": 1.373355,
+            "display_currency": "SGD",
+            "display_price": "1.37",
+            "offer_group": "/41e4f171",
+            "offer_id": "G1715142361933BA",
+            "relation_id": "1eaaf432-4eeb-423f-9c2b-6b205992d6e4",
+            "service_id": "fdf75033-56ee-4ce6-929c-1f9c93a4c642",
+            "brand_id": "9853ae0e-2a86-44de-870d-c1896f54b602",
+            "region_id": "7d30e8c8-dd06-429c-9d14-56025ad62aaf",
+            "title": "CNY 6",
+            "description": "",
+            "offer_attributes": [
+              {
+                "collection_id": "fac2110b",
+                "dataset_id": "41e4f171"
+              }
+            ],
+            "filter_attributes": {
+              "fac2110b": [
+                "41e4f171"
+              ]
+            },
+            "offer_group_attributes": {
+              "fac2110b": [
+                "41e4f171"
+              ]
+            },
+            "delivery_mode": [
+              "instant_inventory",
+              "instant_openapi"
+            ],
+            "delivery_method_ids": [
+              "instant_inventory",
+              "instant_openapi"
+            ],
+            "available_qty": 0,
+            "reserved_qty": 0,
+            "min_qty": 1,
+            "offer_currency": "CNY",
+            "unit_price": 7.054,
+            "unit_name": "",
+            "other_pricing": [],
+            "qty_metric": "1",
+            "wholesale_details": [],
+            "other_wholesale_details": [],
+            "supported_countries": [],
+            "display_to": {},
+            "status": "live",
+            "created_at": 1715142361933,
+            "updated_at": 1784194867799,
+            "cat_id": "088b3ab0-00d8-499c-8a21-d41cdeb4a485",
+            "ancestor_id": "088b3ab0-00d8-499c-8a21-d41cdeb4a485",
+            "lgc_products_id": "199306",
+            "lgc_category_id": "24115",
+            "total_success_order": 0,
+            "is_bundle": false,
+            "decimal_places": 2,
+            "formatted_unit_price": "0",
+            "is_sold_out": true,
+            "is_low_stock": true,
+            "attribute_description": {
+              "en": "",
+              "id": "",
+              "zh-CN": "",
+              "zh-TW": "",
+              "ko": ""
+            }
+          }
+        ],
+        "hot_offers": [
+          "G1715140817791MF",
+          "G1716508635984VE",
+          "G1715140782334KY"
+        ]
+      }
+    ]
+  },
+  "request_id": "7267ee37-fce0-49ae-9c2d-49dab49128e9"
+}
+
+=== https://sls.offgamers.com/offer/product_settings/service/fdf75033-56ee-4ce6-929c-1f9c93a4c642/brand/9853ae0e-2a86-44de-870d-c1896f54b602/product_settings
+{
+  "code": 2000,
+  "messages": [],
+  "payload": {
+    "service_id": "fdf75033-56ee-4ce6-929c-1f9c93a4c642",
+    "brand_id": "9853ae0e-2a86-44de-870d-c1896f54b602",
+    "results": [
+      {
+        "product_settings_type": "delivery_method",
+        "results": []
+      },
+      {
+        "product_settings_type": "purchase_form",
+        "results": []
+      }
+    ]
+  },
+  "request_id": "33c479a1-d2da-4bdd-8baa-ae298879ad6a"
+}
+

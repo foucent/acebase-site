@@ -1,0 +1,13 @@
+---
+description: AceBase chats/work stay inside acebase.cc only
+alwaysApply: true
+---
+
+# AceBase scope only
+
+When working in the **AceBase** project (`c:\1Work\acebase.cc`) or in a conversation focused on **acebase.cc**:
+
+- Only perform AceBase-related operations (docs, `mkdocs.yml`, overrides, assets, deploy for this site).
+- Do **not** edit, commit, or push other workspace projects by default (e.g. 向前课代表, TinyBox / S-cute, MyGear, Note).
+- If the user asks for work outside AceBase in an AceBase-focused chat, briefly refuse or ask them to switch to that project’s chat / confirm an exception.
+- Logs / 素材 / FAQ for 向前课代表 still belong in that project — do not mix them into AceBase unless the user explicitly overrides this rule in the same turn.

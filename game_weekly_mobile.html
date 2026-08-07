@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>游戏速览 - 移动端专享版</title>
+    <style>
+        @page {
+            size: 750px 1000px; /* 严格 3:4 比例 */
+            margin: 0;
+        }
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", Arial, "Noto Sans CJK SC", sans-serif;
+            color: #1f2937;
+            background-color: #fcf8f2; /* 略带复古质感的游戏报刊底色 */
+            line-height: 1.35;
+            width: 750px;
+            height: 1000px;
+            padding: 24px 20px;
+            position: relative;
+            overflow: hidden;
+            font-size: 15px;
+        }
+        
+        /* 顶部大栏 */
+        .header {
+            border: 4px solid #10b981; /* 游戏版采用活力翡翠绿 */
+            padding: 10px 14px;
+            margin-bottom: 14px;
+            background-color: #ffffff;
+            border-radius: 4px;
+        }
+        .header-top {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            border-bottom: 3px solid #10b981;
+            padding-bottom: 4px;
+            margin-bottom: 4px;
+        }
+        .logo {
+            font-size: 32px;
+            font-weight: 900;
+            color: #10b981;
+            letter-spacing: 2px;
+        }
+        .issue-info {
+            font-size: 16px;
+            font-weight: bold;
+            color: #4b5563;
+        }
+        .issue-info span {
+            font-size: 26px;
+            color: #10b981;
+            font-weight: 900;
+            margin-left: 4px;
+        }
+        .header-date {
+            font-size: 13px;
+            color: #6b7280;
+            font-weight: bold;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        /* 栏目样式 */
+        .section-title {
+            background-color: #10b981;
+            color: #ffffff;
+            font-size: 15px;
+            font-weight: bold;
+            padding: 4px 10px;
+            margin-bottom: 8px;
+            letter-spacing: 0.5px;
+            border-radius: 2px;
+            display: inline-block;
+        }
+        
+        /* 头条焦点 */
+        .hot-container {
+            background-color: #ffffff;
+            border: 1px solid #e5e7eb;
+            padding: 10px 12px;
+            margin-bottom: 14px;
+            border-radius: 4px;
+        }
+        .hot-item {
+            margin-bottom: 6px;
+        }
+        .hot-item:last-child {
+            margin-bottom: 0;
+        }
+        .hot-title {
+            font-size: 15px;
+            font-weight: bold;
+            color: #d97706; /* 核心焦点使用琥珀金 */
+            margin-bottom: 1px;
+        }
+        .hot-text {
+            font-size: 13.5px;
+            color: #374151;
+            text-align: justify;
+        }
+
+        /* 游戏大作/产业动态网格 */
+        .tech-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+            margin-bottom: 14px;
+        }
+        .project-card {
+            background-color: #ffffff;
+            border: 1px solid #e5e7eb;
+            padding: 8px 10px;
+            border-radius: 4px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .project-header {
+            font-size: 14.5px;
+            font-weight: bold;
+            color: #10b981;
+            border-bottom: 1px solid #f3f4f6;
+            padding-bottom: 2px;
+            margin-bottom: 3px;
+        }
+        .project-desc {
+            font-size: 12.5px;
+            color: #4b5563;
+            text-align: justify;
+        }
+
+        /* 底部双列布局 (业界风向 & 独家视点) */
+        .bottom-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+            height: 380px;
+        }
+        .bottom-cell {
+            background-color: #ffffff;
+            border: 1px solid #e5e7eb;
+            padding: 10px;
+            border-radius: 4px;
+            overflow: hidden;
+        }
+        
+        .info-list {
+            list-style: none;
+        }
+        .info-list li {
+            font-size: 12px;
+            color: #374151;
+            margin-bottom: 6px;
+            padding-left: 12px;
+            text-indent: -12px;
+            text-align: justify;
+            line-height: 1.35;
+        }
+        .info-list li::before {
+            content: "• ";
+            color: #10b981;
+            font-weight: bold;
+        }
+        .info-list li strong {
+            color: #10b981;
+        }
+        .opinion-list li::before {
+            content: "💬 ";
+        }
+        .opinion-list li strong {
+            color: #1f2937;
+        }
+
+        /* 底部标识 */
+        .footer-tag {
+            position: absolute;
+            bottom: 8px;
+            right: 20px;
+            font-size: 11px;
+            color: #9ca3af;
+            font-family: monospace;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 顶部大栏 -->
+    <div class="header">
+        <div class="header-top">
+            <div class="logo">GAME PLUS 游戏速览</div>
+            <div class="issue-info">NO.<span>129</span></div>
+        </div>
+        <div class="header-date">
+            <span>2026年5月22日 · 移动端简报</span>
+            <span>🎮 聚焦全球游戏大事</span>
+        </div>
+    </div>
+
+    <!-- 圈内热点 -->
+    <div class="section-title">头条焦点 / HOT TRACKS</div>
+    <div class="hot-container">
+        <div class="hot-item">
+            <div class="hot-title">① 《极限竞速：地平线6》尊享版抢先解锁</div>
+            <div class="hot-text">系列有史以来最宏大地图，舞台空降日本！本作媒体开分口碑爆棚，M站均分高达92，IGN更是给出10分满分。但首发版本出现闪退等优化硬伤，导致目前Steam整体好评率仅为60%（褒贬不一）。标准版5月19日登陆Xbox/PC，PS5版年内发售。</div>
+        </div>
+        <div class="hot-item" style="margin-top: 6px; border-top: 1px dashed #e5e7eb; padding-top: 6px;">
+            <div class="hot-title">② 《GTA6》全球解锁时间公开，不跳票了！</div>
+            <div class="hot-text">PlayStation商店正式揭晓全球各区解锁时刻。新西兰玩家成功抢占最早体验特权，国行版锁定11月19日（星期四）0点准时解锁。从商店动作来看，游戏大概率不会再次跳票，无数玩家已做好了“请假狂欢”的准备。</div>
+        </div>
+    </div>
+
+    <!-- 核心作品与动态 -->
+    <div class="section-title">新游与制作人动态 / NEW SHOT</div>
+    <div class="tech-container">
+        <div class="project-card">
+            <div class="project-header">宇树发布量产载人机甲</div>
+            <div class="project-desc">比起开车更想开高达！宇树科技王兴兴展示了首款量产载人机甲GD01。重约500公斤，定位民用交通工具，可双足行走，亦能变形成四足形态。官方售价390万起。</div>
+        </div>
+        <div class="project-card">
+            <div class="project-header">印度版GTA商店页上线</div>
+            <div class="project-desc">由印度本土团队打造的开放世界ARPG《马德拉斯计划》释出新预告，以金奈为舞台赞颂本土文化与情感。值得一提的是，R星旗下规模最大的工作室恰好也坐落于印度。</div>
+        </div>
+        <div class="project-card">
+            <div class="project-header">原田胜弘联手SNK建厂</div>
+            <div class="project-desc">前《铁拳》制作人原田胜弘宣布与老牌大厂SNK深度联手，成立全新游戏工作室。引发业界疯狂猜测：已被玩家遗忘的《拳皇》IP，或许将在此强强联手下迎来硬核3D化新生。</div>
+        </div>
+        <div class="project-card">
+            <div class="project-header">网易撤资名越，新游夭折</div>
+            <div class="project-desc">“如龙之父”名越工作室官网瘫痪，解散流言基本坐实。该工作室2022年由网易全资支持成立，开发4年仅放出一支预告，因完成开发仍需追加巨资，网易已于年初撤资，新作《龙帮》无望。</div>
+        </div>
+    </div>
+
+    <!-- 底部双列 -->
+    <div class="bottom-container">
+        <!-- 业界风向 -->
+        <div class="bottom-cell">
+            <div class="section-title" style="margin: -10px -10px 8px -10px; border-radius: 0; width: calc(100% + 20px);">业界风向 / INDUSTRY</div>
+            <ul class="info-list">
+                <li><strong>国行NS正式停网关服：</strong>周五晚间腾讯代理的国行NS正式终止一切网络服务，e商店、联机对战及兑换码功能彻底关闭，未来仅支持离线游玩。配件官方维修也将于年底终止。</li>
+                <li><strong>魁匠团推员工生育扶持：</strong>前蓝洞（Krafton）启动高额“育儿支持计划”，符合条件者每名新生儿最高可获1亿韩元（约50万人民币）奖励。</li>
+                <li><strong>重赏之下生育率翻倍：</strong>数据显示政策见效极快，今年1至4月公司员工共生育46名婴儿，相较去年同期几乎直接翻倍，引发玩家纷纷高呼让国内大厂跟进。</li>
+            </ul>
+        </div>
+        
+        <!-- 独家视点 -->
+        <div class="bottom-cell">
+            <div class="section-title" style="margin: -10px -10px 8px -10px; border-radius: 0; width: calc(100% + 20px); background-color: #6b7280;">老粉树洞 / OPINION</div>
+            <ul class="info-list opinion-list">
+                <li><strong>关于390万的载人机甲：</strong>“大家别急，等我攒钱买一个给大家做硬核评测。按照目前的赚钱速度，再努力攒个两百来年，基本就能全款拿下了。”</li>
+                <li><strong>关于《龙帮》网易撤资：</strong>“可惜了，本来还挺想看名越稔洋做完，好在游戏里切切实实扮演一回‘神·马东锡’的，这下彻底成了遗憾。”</li>
+                <li><strong>关于国行NS的终点：</strong>“作为曾经的项目一员，说不遗憾肯定是假的。但当时大家真的已经倾尽所有。有些事情的结局，或许从一开始就已经注定。大家点个赞吧！”</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="footer-tag">Game Plus Weekly · 3:4 Aspect Ratio</div>
+
+</body>
+</html>
