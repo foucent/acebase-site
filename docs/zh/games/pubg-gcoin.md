@@ -15,7 +15,6 @@ hide:
       <p class="mg-games__lead">以折扣价充值 PUBG 电脑版 G-COIN CDK，关注最新电竞新闻，观看顶尖 PUBG Twitch 主播。</p>
       <div class="mg-games__actions">
         <a class="mg-games__btn mg-games__btn--primary ab-crisp-open" href="#" data-crisp-msg="你好，我想咨询 PUBG G-COIN 充值的实时价格。">实时价格咨询</a>
-        <a class="mg-games__btn mg-games__btn--ghost" href="https://t.me/Acebase_cc" rel="noopener">开黑 / 上分</a>
       </div>
     </div>
   </section>

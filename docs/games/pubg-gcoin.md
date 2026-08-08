@@ -15,7 +15,6 @@ hide:
       <p class="mg-games__lead">Top up PUBG PC G-COIN CDK at a discount, follow the latest esports news, and watch the top PUBG Twitch streamers.</p>
       <div class="mg-games__actions">
         <a class="mg-games__btn mg-games__btn--primary ab-crisp-open" href="#" data-crisp-msg="Hi, I'd like a real-time price consultation for PUBG G-COIN top-up.">Real-time Price Consultation</a>
-        <a class="mg-games__btn mg-games__btn--ghost" href="https://t.me/Acebase_cc" rel="noopener">Squad / Boost</a>
       </div>
     </div>
   </section>
