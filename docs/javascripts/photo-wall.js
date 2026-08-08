@@ -1,4 +1,16 @@
 (function () {
+  var LANG = (document.documentElement.lang || "en").toLowerCase();
+  var isZh = LANG.indexOf("zh") === 0;
+  var T = {
+    close: isZh ? "关闭" : "Close",
+    prev: isZh ? "上一张" : "Previous",
+    next: isZh ? "下一张" : "Next",
+    crispQuote: isZh
+      ? "你好，我想咨询图库中的商品。"
+      : "Hi, I would like a quote from the photo wall.",
+    hideToday: isZh ? "今日不再显示" : "Hide for today",
+  };
+
   function shuffle(node) {
     if (!node) return;
     var items = Array.prototype.slice.call(node.children);
@@ -72,25 +84,27 @@
     );
   }
 
+  var lightboxSeq = 0;
+
   function createLightbox() {
     var root = document.createElement("div");
     root.className = "sc-lightbox";
-    root.id = "sc-lightbox";
+    root.id = "sc-lightbox-" + ++lightboxSeq;
     root.hidden = true;
     root.setAttribute("role", "dialog");
     root.setAttribute("aria-modal", "true");
     root.innerHTML =
-      '<button type="button" class="sc-lightbox__close" aria-label="Close">&times;</button>' +
-      '<button type="button" class="sc-lightbox__nav sc-lightbox__nav--prev" aria-label="Previous">‹</button>' +
+      '<button type="button" class="sc-lightbox__close" aria-label="' + T.close + '">&times;</button>' +
+      '<button type="button" class="sc-lightbox__nav sc-lightbox__nav--prev" aria-label="' + T.prev + '">‹</button>' +
       '<figure class="sc-lightbox__stage">' +
       '<div class="sc-lightbox__media">' +
       '<img class="sc-lightbox__img" alt="">' +
       '<div class="sc-lightbox__buy-wrap" hidden>' +
-      '<a class="sc-lightbox__buy ab-crisp-open" href="#" data-crisp-msg="Hi, I would like a quote from the photo wall.">' +
+      '<a class="sc-lightbox__buy ab-crisp-open" href="#" data-crisp-msg="' + T.crispQuote + '">' +
       chatIcon() +
       "<span>在线咨询</span>" +
       "</a>" +
-      '<button type="button" class="sc-lightbox__buy-dismiss" aria-label="Hide for today">&times;</button>' +
+      '<button type="button" class="sc-lightbox__buy-dismiss" aria-label="' + T.hideToday + '">&times;</button>' +
       "</div>" +
       "</div>" +
       '<figcaption class="sc-lightbox__cap"></figcaption>' +
@@ -236,10 +250,12 @@
   }
 
   function run() {
-    var wall = document.getElementById("sc-wall");
-    if (!wall) return;
-    shuffle(wall);
-    initLightbox(wall);
+    var walls = document.querySelectorAll(".sc-wall");
+    if (!walls.length) return;
+    walls.forEach(function (wall) {
+      shuffle(wall);
+      initLightbox(wall);
+    });
   }
 
   if (document.readyState === "loading") {

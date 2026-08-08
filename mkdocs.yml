@@ -19,6 +19,34 @@ theme:
     - navigation.indexes
 
 plugins:
+  - i18n:
+      docs_structure: folder
+      fallback_to_default: true
+      reconfigure_material: true
+      reconfigure_search: true
+      languages:
+        - locale: en
+          name: English
+          default: true
+          build: true
+        - locale: zh
+          name: 中文
+          build: true
+          nav:
+            - 首页: index.md
+            - 游戏:
+                - 账号租赁: games/steam-accounts.md
+                - PUBG Mobile: games/pubg-mobile.md
+                - PUBG G-COIN: games/pubg-gcoin.md
+                - 王者荣耀: games/honor-of-kings.md
+            - 画廊: gallery/index.md
+            - 关于:
+                - 常见问题与更新: shop/faq-and-updates.md
+                - 发货与配送: shop/shipping-and-delivery.md
+                - 充值安全指南: legal/safety.md
+                - 退货政策: legal/return-policy.md
+                - 反洗钱政策: legal/aml-policy.md
+                - 使用条款: legal/terms-of-use.md
   - search
   - minify:
       # HTML minification strips attribute quotes, breaking data-gallery JSON
@@ -28,14 +56,17 @@ plugins:
       minify_js: true
   - redirects:
       redirect_maps:
-        board-games.md: gallery/peripherals.md
-        peripherals.md: gallery/peripherals.md
-        keyboards.md: gallery/peripherals.md
-        keycaps.md: gallery/peripherals.md
-        mousepads.md: gallery/peripherals.md
+        board-games.md: gallery/index.md
+        peripherals.md: gallery/index.md
+        keyboards.md: gallery/index.md
+        keycaps.md: gallery/index.md
+        mousepads.md: gallery/index.md
+        gallery/wallpapers.md: gallery/index.md
+        gallery/peripherals.md: gallery/index.md
+        gallery/figures.md: gallery/index.md
+        gallery/coser.md: gallery/index.md
+        gallery/pre-owned.md: gallery/index.md
         guides/safety.md: legal/safety.md
-        gallery/coser.md: gallery/figures.md
-        gallery/pre-owned.md: gallery/figures.md
 
 markdown_extensions:
   - admonition
@@ -60,6 +91,7 @@ extra_css:
   - stylesheets/home.css
   - stylesheets/board-games.css
   - stylesheets/games.css
+  - stylesheets/currency.css
 
 extra_javascript:
   - javascripts/currency.js
@@ -70,6 +102,7 @@ extra_javascript:
   - javascripts/board-cart.js
   - javascripts/board-grid.js
   - javascripts/games-prices.js
+  - javascripts/games-steam-accounts.js
 
 watch:
   - overrides
@@ -96,13 +129,11 @@ extra:
 nav:
   - Home: index.md
   - Games:
+      - Account Rental: games/steam-accounts.md
       - PUBG Mobile: games/pubg-mobile.md
       - PUBG G-COIN: games/pubg-gcoin.md
       - Honor of Kings: games/honor-of-kings.md
-  - Gallery:
-      - Wallpapers: gallery/wallpapers.md
-      - Peripherals: gallery/peripherals.md
-      - Figures: gallery/figures.md
+  - Gallery: gallery/index.md
   - About:
       - FAQ & Updates: shop/faq-and-updates.md
       - Delivery: shop/shipping-and-delivery.md

@@ -1,0 +1,20 @@
+/* AceBase header currency switcher — text button inside Material .md-select */
+.ab-currency-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ab-currency-btn__sym {
+  font-size: .72rem;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: .02em;
+  white-space: nowrap;
+  padding-left: .35rem;
+}
+
+.md-select__link.is-active {
+  color: var(--md-accent-fg-color);
+  font-weight: 700;
+}

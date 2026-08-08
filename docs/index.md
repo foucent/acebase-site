@@ -43,11 +43,11 @@ description: Global esports hub — top-up and photo wall. Crisp for quotes.
           <span class="mg-home-cat__desc">Discount top-up</span>
         </span>
       </a>
-      <a class="mg-home-cat" href="/gallery/wallpapers/">
-        <img class="mg-home-cat__img" src="/assets/gallery/wallpapers/img_01.svg" alt="Wallpapers" loading="lazy">
+      <a class="mg-home-cat" href="/gallery/">
+        <img class="mg-home-cat__img" src="/assets/gallery/wallpapers/img_01.svg" alt="Gallery" loading="lazy">
         <span class="mg-home-cat__body">
-          <span class="mg-home-cat__name">Wallpapers</span>
-          <span class="mg-home-cat__desc">Gallery</span>
+          <span class="mg-home-cat__name">Gallery</span>
+          <span class="mg-home-cat__desc">Wallpapers, peripherals &amp; figures</span>
         </span>
       </a>
     </div>
@@ -79,7 +79,7 @@ description: Global esports hub — top-up and photo wall. Crisp for quotes.
 
 Popular top-ups and the photo wall — see each product page for tiers and reference prices.
 
-[PUBG Mobile](games/pubg-mobile.md) · [PUBG G-COIN](games/pubg-gcoin.md) · [Honor of Kings](games/honor-of-kings.md) · [Gallery](gallery/wallpapers.md)
+[PUBG Mobile](games/pubg-mobile.md) · [PUBG G-COIN](games/pubg-gcoin.md) · [Honor of Kings](games/honor-of-kings.md) · [Gallery](gallery/index.md)
 
 </div>
 

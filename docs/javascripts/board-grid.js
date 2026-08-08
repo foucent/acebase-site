@@ -19,7 +19,9 @@
   }
 
   function money(n) {
-    return "$" + (Math.round(n * 100) / 100).toFixed(n % 1 ? 2 : 0);
+    return window.AceBaseCurrency
+      ? window.AceBaseCurrency.formatFromBase(n)
+      : "$" + (Math.round(n * 100) / 100).toFixed(n % 1 ? 2 : 0);
   }
 
   function buildShopGrid() {

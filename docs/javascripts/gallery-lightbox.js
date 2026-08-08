@@ -1,4 +1,17 @@
 (function () {
+  var LANG = (document.documentElement.lang || "en").toLowerCase();
+  var isZh = LANG.indexOf("zh") === 0;
+  var T = {
+    preview: isZh ? "图片预览" : "Image preview",
+    close: isZh ? "关闭" : "Close",
+    prev: isZh ? "上一张" : "Previous",
+    next: isZh ? "下一张" : "Next",
+    hint: isZh ? "更多照片 — 左右滑动或使用箭头键" : "More photos — swipe or use arrows",
+    photo: isZh ? "照片 " : "Photo ",
+    viewAll: isZh ? "查看全部 " : "View all ",
+    photos: isZh ? " 张照片" : " photos",
+  };
+
   var items = [];
   var index = 0;
 
@@ -12,16 +25,16 @@
     root.hidden = true;
     root.setAttribute("role", "dialog");
     root.setAttribute("aria-modal", "true");
-    root.setAttribute("aria-label", "Image preview");
+    root.setAttribute("aria-label", T.preview);
     root.innerHTML =
-      '<button type="button" class="mg-lightbox__close" aria-label="Close">×</button>' +
-      '<button type="button" class="mg-lightbox__nav mg-lightbox__prev" aria-label="Previous">‹</button>' +
-      '<button type="button" class="mg-lightbox__nav mg-lightbox__next" aria-label="Next">›</button>' +
+      '<button type="button" class="mg-lightbox__close" aria-label="' + T.close + '">×</button>' +
+      '<button type="button" class="mg-lightbox__nav mg-lightbox__prev" aria-label="' + T.prev + '">‹</button>' +
+      '<button type="button" class="mg-lightbox__nav mg-lightbox__next" aria-label="' + T.next + '">›</button>' +
       '<div class="mg-lightbox__stage">' +
       '  <img class="mg-lightbox__img" alt="">' +
       '  <div class="mg-lightbox__meta">' +
       '    <div class="mg-lightbox__counter" aria-live="polite"></div>' +
-      '    <div class="mg-lightbox__hint">More photos — swipe or use arrows</div>' +
+      '    <div class="mg-lightbox__hint">' + T.hint + "</div>" +
       "  </div>" +
       '  <div class="mg-lightbox__dots" aria-hidden="true"></div>' +
       "</div>";
@@ -49,7 +62,7 @@
             (i === index ? " is-active" : "") +
             '" data-index="' +
             i +
-            '" aria-label="Photo ' +
+            '" aria-label="' + T.photo +
             (i + 1) +
             '"></button>'
           );
@@ -311,7 +324,7 @@
               moreBtn.setAttribute("role", "listitem");
               moreBtn.setAttribute(
                 "aria-label",
-                "View all " + gallery.length + " photos"
+                T.viewAll + gallery.length + T.photos
               );
               moreBtn.dataset.mgLightboxBound = "1";
               var moreImg = document.createElement("img");
@@ -343,7 +356,7 @@
             var badge2 = document.createElement("span");
             badge2.className = "mg-price-thumb-count";
             badge2.textContent = String(count);
-            badge2.title = count + " photos";
+            badge2.title = count + T.photos;
             wrap.appendChild(badge2);
           }
         }

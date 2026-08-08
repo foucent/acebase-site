@@ -1,6 +1,6 @@
 ---
-title: Peripherals Gallery
-description: AceBase peripherals photo gallery — keycaps and mousepads with multiple photos each. Browse, view full size, and chat for requests.
+title: Gallery
+description: AceBase gallery — gaming wallpapers, peripherals, and figure photos. Browse, view full size, and chat for requests.
 hide:
   - title
   - toc
@@ -8,21 +8,38 @@ hide:
 
 <div class="mg-shop" markdown="0">
 
-  <section class="mg-home-hero mg-home-hero--shop mg-hero-slides" aria-label="Peripherals gallery">
+  <section class="mg-home-hero mg-home-hero--shop mg-hero-slides" aria-label="Gallery">
     <div class="mg-hero-slides__track" aria-hidden="true">
-      <img class="mg-hero-slides__img is-active" src="/assets/keycaps/thumbs/kc-01-z-review-rinko-touch-cherry-profile-keyc.jpg" alt="" width="1200" height="900" decoding="async" fetchpriority="high">
-      <img class="mg-hero-slides__img" src="/assets/keycaps/thumbs/kc-02-fbb-sfc-keycaps.jpg" alt="" width="1200" height="900" decoding="async" loading="lazy">
-      <img class="mg-hero-slides__img" src="/assets/keycaps/thumbs/kc-03-yunzii-pudding-oem-profile-keycap-set.jpg" alt="" width="1200" height="900" decoding="async" loading="lazy">
-      <img class="mg-hero-slides__img" src="/assets/mousepads/thumbs/mp-01-esptiger-shan-hai-series-mousepad.jpg" alt="" width="1200" height="900" decoding="async" loading="lazy">
-      <img class="mg-hero-slides__img" src="/assets/mousepads/thumbs/mp-02-gamingpunk-drizzle-series-mousepad.jpg" alt="" width="1200" height="900" decoding="async" loading="lazy">
-      <img class="mg-hero-slides__img" src="/assets/mousepads/thumbs/mp-03-utyping-makoron-edition-mousepad.jpg" alt="" width="1200" height="900" decoding="async" loading="lazy">
+<img class="mg-hero-slides__img is-active" src="/assets/figures/06_ced1ce6bec/img_01.jpg" alt="" width="1200" height="900" decoding="async" fetchpriority="high">
+<img class="mg-hero-slides__img" src="/assets/figures/07_28b26b048a/img_01.jpg" alt="" width="1200" height="900" decoding="async" loading="lazy">
+<img class="mg-hero-slides__img" src="/assets/figures/12_1c50d7eed8/img_01.jpg" alt="" width="1200" height="900" decoding="async" loading="lazy">
+<img class="mg-hero-slides__img" src="/assets/figures/13_eca791cf5d/img_01.jpg" alt="" width="1200" height="900" decoding="async" loading="lazy">
+<img class="mg-hero-slides__img" src="/assets/figures/14_8c0461b1d3/img_01.jpg" alt="" width="1200" height="900" decoding="async" loading="lazy">
+<img class="mg-hero-slides__img" src="/assets/figures/15_c4b26e0238/img_01.jpg" alt="" width="1200" height="900" decoding="async" loading="lazy">
+<img class="mg-hero-slides__img" src="/assets/figures/16_ae176900aa/img_01.jpg" alt="" width="1200" height="900" decoding="async" loading="lazy">
+<img class="mg-hero-slides__img" src="/assets/figures/17_f551ed3530/img_01.jpg" alt="" width="1200" height="900" decoding="async" loading="lazy">
+<img class="mg-hero-slides__img" src="/assets/figures/18_2b9f2aad6e/img_01.jpg" alt="" width="1200" height="900" decoding="async" loading="lazy">
+<img class="mg-hero-slides__img" src="/assets/figures/19_e576641c9b/img_01.jpg" alt="" width="1200" height="900" decoding="async" loading="lazy">
+<img class="mg-hero-slides__img" src="/assets/figures/20_3eeb66d68d/img_01.jpg" alt="" width="1200" height="900" decoding="async" loading="lazy">
+<img class="mg-hero-slides__img" src="/assets/figures/21_e070503d/img_01.jpg" alt="" width="1200" height="900" decoding="async" loading="lazy">
+<img class="mg-hero-slides__img" src="/assets/figures/22_a078b4e2/img_01.jpg" alt="" width="1200" height="900" decoding="async" loading="lazy">
+<img class="mg-hero-slides__img" src="/assets/keycaps/thumbs/kc-01-z-review-rinko-touch-cherry-profile-keyc.jpg" alt="" width="1200" height="900" decoding="async" loading="lazy">
+<img class="mg-hero-slides__img" src="/assets/keycaps/thumbs/kc-02-fbb-sfc-keycaps.jpg" alt="" width="1200" height="900" decoding="async" loading="lazy">
+<img class="mg-hero-slides__img" src="/assets/keycaps/thumbs/kc-03-yunzii-pudding-oem-profile-keycap-set.jpg" alt="" width="1200" height="900" decoding="async" loading="lazy">
+<img class="mg-hero-slides__img" src="/assets/mousepads/thumbs/mp-01-esptiger-shan-hai-series-mousepad.jpg" alt="" width="1200" height="900" decoding="async" loading="lazy">
+<img class="mg-hero-slides__img" src="/assets/mousepads/thumbs/mp-02-gamingpunk-drizzle-series-mousepad.jpg" alt="" width="1200" height="900" decoding="async" loading="lazy">
+<img class="mg-hero-slides__img" src="/assets/mousepads/thumbs/mp-03-utyping-makoron-edition-mousepad.jpg" alt="" width="1200" height="900" decoding="async" loading="lazy">
+<img class="mg-hero-slides__img" src="/assets/gallery/figures/fig_01_01.jpg" alt="" width="1200" height="900" decoding="async" loading="lazy">
+<img class="mg-hero-slides__img" src="/assets/gallery/figures/fig_02_01.jpg" alt="" width="1200" height="900" decoding="async" loading="lazy">
+<img class="mg-hero-slides__img" src="/assets/gallery/figures/fig_03_01.jpg" alt="" width="1200" height="900" decoding="async" loading="lazy">
+<img class="mg-hero-slides__img" src="/assets/gallery/figures/fig_04_01.jpg" alt="" width="1200" height="900" decoding="async" loading="lazy">
     </div>
     <div class="mg-home-hero__inner">
       <p class="mg-home-hero__brand">AceBase</p>
-      <h1 class="mg-home-hero__title">Peripherals Gallery</h1>
-      <p class="mg-home-hero__lead">Keycap and mousepad photo collection — click a tile to view all photos of that product. For requests or submissions, please <a class="ab-crisp-open" href="#" data-crisp-msg="Hi, I want to request or submit peripherals photos.">contact us</a>.</p>
+      <h1 class="mg-home-hero__title">Gallery</h1>
+      <p class="mg-home-hero__lead">Wallpapers, peripherals, and figure photos. For requests or submissions, please <a class="ab-crisp-open" href="#" data-crisp-msg="Hi, I want to request or submit gallery photos.">contact us</a>.</p>
       <div class="mg-home-hero__actions">
-        <a class="mg-home-hero__btn mg-home-hero__btn--primary ab-crisp-open" href="#" data-crisp-msg="Hi, I'd like to ask about peripherals.">Live chat</a>
+        <a class="mg-home-hero__btn mg-home-hero__btn--primary ab-crisp-open" href="#" data-crisp-msg="Hi, I'd like to ask about the gallery.">Live chat</a>
         <a class="mg-home-hero__btn mg-home-hero__btn--ghost" href="/shop/faq-and-updates/">FAQ</a>
       </div>
     </div>
@@ -30,16 +47,42 @@ hide:
 
   <section class="mg-home-help">
     <p class="mg-home-help__links">
-      <a href="/gallery/wallpapers/">Wallpapers</a>
-      <a href="/gallery/figures/">Figures</a>
+      <a href="#wallpapers">Wallpapers</a>
+      <a href="#peripherals">Peripherals</a>
+      <a href="#figures">Figures</a>
     </p>
   </section>
 
 </div>
 
-## Peripherals Gallery <span class="mg-list-meta">Keycaps + Mousepads · Updated 07 Aug 2026</span>
+## Wallpapers <span class="mg-list-meta">Updated 07 Aug 2026</span> {#wallpapers}
 
-<div class="sc-wall" id="sc-wall" markdown="0">
+<div class="sc-wall" markdown="0">
+  <a class="sc-wall__tile sc-wall__tile--sm" href="/assets/figures/06_ced1ce6bec/img_01.jpg" data-gallery="[&quot;/assets/figures/06_ced1ce6bec/img_01.jpg&quot;, &quot;/assets/figures/06_ced1ce6bec/img_02.jpg&quot;, &quot;/assets/figures/06_ced1ce6bec/img_03.jpg&quot;, &quot;/assets/figures/06_ced1ce6bec/img_04.jpg&quot;]" data-buy="#"><img src="/assets/figures/06_ced1ce6bec/img_01.jpg" alt="" loading="lazy"><span class="sc-wall__count">4</span></a>
+  <a class="sc-wall__tile sc-wall__tile--md" href="/assets/figures/07_28b26b048a/img_01.jpg" data-gallery="[&quot;/assets/figures/07_28b26b048a/img_01.jpg&quot;, &quot;/assets/figures/07_28b26b048a/img_02.jpg&quot;, &quot;/assets/figures/07_28b26b048a/img_03.jpg&quot;, &quot;/assets/figures/07_28b26b048a/img_04.jpg&quot;, &quot;/assets/figures/07_28b26b048a/img_05.jpg&quot;, &quot;/assets/figures/07_28b26b048a/img_06.jpg&quot;]" data-buy="#"><img src="/assets/figures/07_28b26b048a/img_01.jpg" alt="" loading="lazy"><span class="sc-wall__count">6</span></a>
+  <a class="sc-wall__tile sc-wall__tile--lg" href="/assets/figures/12_1c50d7eed8/img_01.jpg" data-gallery="[&quot;/assets/figures/12_1c50d7eed8/img_01.jpg&quot;, &quot;/assets/figures/12_1c50d7eed8/img_02.jpg&quot;, &quot;/assets/figures/12_1c50d7eed8/img_03.jpg&quot;, &quot;/assets/figures/12_1c50d7eed8/img_04.jpg&quot;, &quot;/assets/figures/12_1c50d7eed8/img_05.jpg&quot;]" data-buy="#"><img src="/assets/figures/12_1c50d7eed8/img_01.jpg" alt="" loading="lazy"><span class="sc-wall__count">5</span></a>
+  <a class="sc-wall__tile sc-wall__tile--sm" href="/assets/figures/13_eca791cf5d/img_01.jpg" data-gallery="[&quot;/assets/figures/13_eca791cf5d/img_01.jpg&quot;, &quot;/assets/figures/13_eca791cf5d/img_02.jpg&quot;, &quot;/assets/figures/13_eca791cf5d/img_03.jpg&quot;, &quot;/assets/figures/13_eca791cf5d/img_04.jpg&quot;]" data-buy="#"><img src="/assets/figures/13_eca791cf5d/img_01.jpg" alt="" loading="lazy"><span class="sc-wall__count">4</span></a>
+  <a class="sc-wall__tile sc-wall__tile--md" href="/assets/figures/14_8c0461b1d3/img_01.jpg" data-gallery="[&quot;/assets/figures/14_8c0461b1d3/img_01.jpg&quot;, &quot;/assets/figures/14_8c0461b1d3/img_02.jpg&quot;, &quot;/assets/figures/14_8c0461b1d3/img_03.jpg&quot;, &quot;/assets/figures/14_8c0461b1d3/img_04.jpg&quot;]" data-buy="#"><img src="/assets/figures/14_8c0461b1d3/img_01.jpg" alt="" loading="lazy"><span class="sc-wall__count">4</span></a>
+  <a class="sc-wall__tile sc-wall__tile--lg" href="/assets/figures/15_c4b26e0238/img_01.jpg" data-gallery="[&quot;/assets/figures/15_c4b26e0238/img_01.jpg&quot;, &quot;/assets/figures/15_c4b26e0238/img_02.jpg&quot;, &quot;/assets/figures/15_c4b26e0238/img_03.jpg&quot;, &quot;/assets/figures/15_c4b26e0238/img_04.jpg&quot;, &quot;/assets/figures/15_c4b26e0238/img_05.jpg&quot;]" data-buy="#"><img src="/assets/figures/15_c4b26e0238/img_01.jpg" alt="" loading="lazy"><span class="sc-wall__count">5</span></a>
+  <a class="sc-wall__tile sc-wall__tile--sm" href="/assets/figures/16_ae176900aa/img_01.jpg" data-gallery="[&quot;/assets/figures/16_ae176900aa/img_01.jpg&quot;, &quot;/assets/figures/16_ae176900aa/img_02.jpg&quot;, &quot;/assets/figures/16_ae176900aa/img_03.jpg&quot;, &quot;/assets/figures/16_ae176900aa/img_04.jpg&quot;, &quot;/assets/figures/16_ae176900aa/img_05.jpg&quot;, &quot;/assets/figures/16_ae176900aa/img_06.jpg&quot;]" data-buy="#"><img src="/assets/figures/16_ae176900aa/img_01.jpg" alt="" loading="lazy"><span class="sc-wall__count">6</span></a>
+  <a class="sc-wall__tile sc-wall__tile--md" href="/assets/figures/17_f551ed3530/img_01.jpg" data-gallery="[&quot;/assets/figures/17_f551ed3530/img_01.jpg&quot;, &quot;/assets/figures/17_f551ed3530/img_02.jpg&quot;, &quot;/assets/figures/17_f551ed3530/img_03.jpg&quot;, &quot;/assets/figures/17_f551ed3530/img_04.jpg&quot;]" data-buy="#"><img src="/assets/figures/17_f551ed3530/img_01.jpg" alt="" loading="lazy"><span class="sc-wall__count">4</span></a>
+  <a class="sc-wall__tile sc-wall__tile--lg" href="/assets/figures/18_2b9f2aad6e/img_01.jpg" data-gallery="[&quot;/assets/figures/18_2b9f2aad6e/img_01.jpg&quot;, &quot;/assets/figures/18_2b9f2aad6e/img_02.jpg&quot;, &quot;/assets/figures/18_2b9f2aad6e/img_03.jpg&quot;]" data-buy="#"><img src="/assets/figures/18_2b9f2aad6e/img_01.jpg" alt="" loading="lazy"><span class="sc-wall__count">3</span></a>
+  <a class="sc-wall__tile sc-wall__tile--sm" href="/assets/figures/19_e576641c9b/img_01.jpg" data-gallery="[&quot;/assets/figures/19_e576641c9b/img_01.jpg&quot;, &quot;/assets/figures/19_e576641c9b/img_02.jpg&quot;, &quot;/assets/figures/19_e576641c9b/img_03.jpg&quot;]" data-buy="#"><img src="/assets/figures/19_e576641c9b/img_01.jpg" alt="" loading="lazy"><span class="sc-wall__count">3</span></a>
+  <a class="sc-wall__tile sc-wall__tile--md" href="/assets/figures/20_3eeb66d68d/img_01.jpg" data-gallery="[&quot;/assets/figures/20_3eeb66d68d/img_01.jpg&quot;, &quot;/assets/figures/20_3eeb66d68d/img_02.jpg&quot;, &quot;/assets/figures/20_3eeb66d68d/img_03.jpg&quot;, &quot;/assets/figures/20_3eeb66d68d/img_04.jpg&quot;]" data-buy="#"><img src="/assets/figures/20_3eeb66d68d/img_01.jpg" alt="" loading="lazy"><span class="sc-wall__count">4</span></a>
+  <a class="sc-wall__tile sc-wall__tile--lg" href="/assets/figures/21_e070503d/img_01.jpg" data-gallery="[&quot;/assets/figures/21_e070503d/img_01.jpg&quot;, &quot;/assets/figures/21_e070503d/img_02.jpg&quot;, &quot;/assets/figures/21_e070503d/img_03.jpg&quot;, &quot;/assets/figures/21_e070503d/img_04.jpg&quot;, &quot;/assets/figures/21_e070503d/img_05.jpg&quot;, &quot;/assets/figures/21_e070503d/img_06.jpg&quot;, &quot;/assets/figures/21_e070503d/img_07.jpg&quot;]" data-buy="#"><img src="/assets/figures/21_e070503d/img_01.jpg" alt="" loading="lazy"><span class="sc-wall__count">7</span></a>
+  <a class="sc-wall__tile sc-wall__tile--sm" href="/assets/figures/22_a078b4e2/img_01.jpg" data-gallery="[&quot;/assets/figures/22_a078b4e2/img_01.jpg&quot;, &quot;/assets/figures/22_a078b4e2/img_02.jpg&quot;, &quot;/assets/figures/22_a078b4e2/img_03.jpg&quot;, &quot;/assets/figures/22_a078b4e2/img_04.jpg&quot;, &quot;/assets/figures/22_a078b4e2/img_05.jpg&quot;, &quot;/assets/figures/22_a078b4e2/img_06.jpg&quot;, &quot;/assets/figures/22_a078b4e2/img_07.jpg&quot;, &quot;/assets/figures/22_a078b4e2/img_08.jpg&quot;, &quot;/assets/figures/22_a078b4e2/img_09.jpg&quot;]" data-buy="#"><img src="/assets/figures/22_a078b4e2/img_01.jpg" alt="" loading="lazy"><span class="sc-wall__count">9</span></a>
+  <a class="sc-wall__tile sc-wall__tile--sm" href="/assets/gallery/wallpapers/coser/coser_01_01.jpg" data-gallery="[&quot;/assets/gallery/wallpapers/coser/coser_01_01.jpg&quot;, &quot;/assets/gallery/wallpapers/coser/coser_01_02.jpg&quot;]" data-buy="#"><img src="/assets/gallery/wallpapers/coser/coser_01_01.jpg" alt="" loading="lazy"><span class="sc-wall__count">2</span></a>
+  <a class="sc-wall__tile sc-wall__tile--md" href="/assets/gallery/wallpapers/coser/coser_02_01.jpg" data-gallery="[&quot;/assets/gallery/wallpapers/coser/coser_02_01.jpg&quot;, &quot;/assets/gallery/wallpapers/coser/coser_02_02.jpg&quot;, &quot;/assets/gallery/wallpapers/coser/coser_02_03.jpg&quot;, &quot;/assets/gallery/wallpapers/coser/coser_02_04.jpg&quot;]" data-buy="#"><img src="/assets/gallery/wallpapers/coser/coser_02_01.jpg" alt="" loading="lazy"><span class="sc-wall__count">4</span></a>
+  <a class="sc-wall__tile sc-wall__tile--lg" href="/assets/gallery/wallpapers/coser/coser_03_01.jpg" data-gallery="[&quot;/assets/gallery/wallpapers/coser/coser_03_01.jpg&quot;, &quot;/assets/gallery/wallpapers/coser/coser_03_02.jpg&quot;, &quot;/assets/gallery/wallpapers/coser/coser_03_03.jpg&quot;, &quot;/assets/gallery/wallpapers/coser/coser_03_04.jpg&quot;, &quot;/assets/gallery/wallpapers/coser/coser_03_05.jpg&quot;, &quot;/assets/gallery/wallpapers/coser/coser_03_06.jpg&quot;, &quot;/assets/gallery/wallpapers/coser/coser_03_07.jpg&quot;, &quot;/assets/gallery/wallpapers/coser/coser_03_08.jpg&quot;, &quot;/assets/gallery/wallpapers/coser/coser_03_09.jpg&quot;, &quot;/assets/gallery/wallpapers/coser/coser_03_10.jpg&quot;, &quot;/assets/gallery/wallpapers/coser/coser_03_11.jpg&quot;, &quot;/assets/gallery/wallpapers/coser/coser_03_12.jpg&quot;, &quot;/assets/gallery/wallpapers/coser/coser_03_13.jpg&quot;, &quot;/assets/gallery/wallpapers/coser/coser_03_14.jpg&quot;, &quot;/assets/gallery/wallpapers/coser/coser_03_15.jpg&quot;, &quot;/assets/gallery/wallpapers/coser/coser_03_16.jpg&quot;, &quot;/assets/gallery/wallpapers/coser/coser_03_17.jpg&quot;, &quot;/assets/gallery/wallpapers/coser/coser_03_18.jpg&quot;]" data-buy="#"><img src="/assets/gallery/wallpapers/coser/coser_03_01.jpg" alt="" loading="lazy"><span class="sc-wall__count">18</span></a>
+  <a class="sc-wall__tile sc-wall__tile--sm" href="/assets/gallery/wallpapers/coser/coser_04_01.jpg" data-gallery="[&quot;/assets/gallery/wallpapers/coser/coser_04_01.jpg&quot;, &quot;/assets/gallery/wallpapers/coser/coser_04_02.jpg&quot;, &quot;/assets/gallery/wallpapers/coser/coser_04_03.jpg&quot;, &quot;/assets/gallery/wallpapers/coser/coser_04_04.jpg&quot;, &quot;/assets/gallery/wallpapers/coser/coser_04_05.jpg&quot;]" data-buy="#"><img src="/assets/gallery/wallpapers/coser/coser_04_01.jpg" alt="" loading="lazy"><span class="sc-wall__count">5</span></a>
+  <a class="sc-wall__tile sc-wall__tile--md" href="/assets/gallery/wallpapers/coser/coser_05_01.jpg" data-gallery="[&quot;/assets/gallery/wallpapers/coser/coser_05_01.jpg&quot;, &quot;/assets/gallery/wallpapers/coser/coser_05_02.jpg&quot;, &quot;/assets/gallery/wallpapers/coser/coser_05_03.jpg&quot;, &quot;/assets/gallery/wallpapers/coser/coser_05_04.jpg&quot;]" data-buy="#"><img src="/assets/gallery/wallpapers/coser/coser_05_01.jpg" alt="" loading="lazy"><span class="sc-wall__count">4</span></a>
+  <a class="sc-wall__tile sc-wall__tile--lg" href="/assets/gallery/wallpapers/coser/coser_06_01.jpg" data-gallery="[&quot;/assets/gallery/wallpapers/coser/coser_06_01.jpg&quot;, &quot;/assets/gallery/wallpapers/coser/coser_06_02.jpg&quot;, &quot;/assets/gallery/wallpapers/coser/coser_06_03.jpg&quot;]" data-buy="#"><img src="/assets/gallery/wallpapers/coser/coser_06_01.jpg" alt="" loading="lazy"><span class="sc-wall__count">3</span></a>
+</div>
+
+
+## Peripherals <span class="mg-list-meta">Keycaps + Mousepads · Updated 07 Aug 2026</span> {#peripherals}
+
+<div class="sc-wall" markdown="0">
   <a class="sc-wall__tile sc-wall__tile--sm" href="/assets/keycaps/thumbs/kc-01-z-review-rinko-touch-cherry-profile-keyc.jpg" data-gallery="[&quot;/assets/keycaps/thumbs/kc-01-z-review-rinko-touch-cherry-profile-keyc.jpg&quot;, &quot;/assets/keycaps/full/kc-01-z-review-rinko-touch-cherry-profile-keyc-1.jpg&quot;, &quot;/assets/keycaps/full/kc-01-z-review-rinko-touch-cherry-profile-keyc-2.jpg&quot;]" data-buy="#"><img src="/assets/keycaps/thumbs/kc-01-z-review-rinko-touch-cherry-profile-keyc.jpg" alt="" loading="lazy"><span class="sc-wall__count">3</span></a>
   <a class="sc-wall__tile sc-wall__tile--md" href="/assets/keycaps/thumbs/kc-02-fbb-sfc-keycaps.jpg" data-gallery="[&quot;/assets/keycaps/thumbs/kc-02-fbb-sfc-keycaps.jpg&quot;, &quot;/assets/keycaps/full/kc-02-fbb-sfc-keycaps-1.jpg&quot;, &quot;/assets/keycaps/full/kc-02-fbb-sfc-keycaps-2.jpg&quot;]" data-buy="#"><img src="/assets/keycaps/thumbs/kc-02-fbb-sfc-keycaps.jpg" alt="" loading="lazy"><span class="sc-wall__count">3</span></a>
   <a class="sc-wall__tile sc-wall__tile--lg" href="/assets/keycaps/thumbs/kc-03-yunzii-pudding-oem-profile-keycap-set.jpg" data-gallery="[&quot;/assets/keycaps/thumbs/kc-03-yunzii-pudding-oem-profile-keycap-set.jpg&quot;, &quot;/assets/keycaps/full/kc-03-yunzii-pudding-oem-profile-keycap-set-1.png&quot;, &quot;/assets/keycaps/full/kc-03-yunzii-pudding-oem-profile-keycap-set-2.png&quot;]" data-buy="#"><img src="/assets/keycaps/thumbs/kc-03-yunzii-pudding-oem-profile-keycap-set.jpg" alt="" loading="lazy"><span class="sc-wall__count">3</span></a>
@@ -116,3 +159,14 @@ hide:
   <a class="sc-wall__tile sc-wall__tile--md" href="/assets/mousepads/thumbs/mp-49-gitoper-final-gaze-anime-gaming-mouse-pa.jpg" data-gallery="[&quot;/assets/mousepads/thumbs/mp-49-gitoper-final-gaze-anime-gaming-mouse-pa.jpg&quot;, &quot;/assets/mousepads/full/mp-49-gitoper-final-gaze-anime-gaming-mouse-pa-1.jpg&quot;, &quot;/assets/mousepads/full/mp-49-gitoper-final-gaze-anime-gaming-mouse-pa-2.jpg&quot;, &quot;/assets/mousepads/full/mp-49-gitoper-final-gaze-anime-gaming-mouse-pa-3.jpg&quot;, &quot;/assets/mousepads/full/mp-49-gitoper-final-gaze-anime-gaming-mouse-pa-4.jpg&quot;]" data-buy="#"><img src="/assets/mousepads/thumbs/mp-49-gitoper-final-gaze-anime-gaming-mouse-pa.jpg" alt="" loading="lazy"><span class="sc-wall__count">5</span></a>
   <a class="sc-wall__tile sc-wall__tile--lg" href="/assets/mousepads/thumbs/mp-50-esptiger-po-ying-mousepad.jpg" data-gallery="[&quot;/assets/mousepads/thumbs/mp-50-esptiger-po-ying-mousepad.jpg&quot;, &quot;/assets/mousepads/full/mp-50-esptiger-po-ying-mousepad-1.jpg&quot;, &quot;/assets/mousepads/full/mp-50-esptiger-po-ying-mousepad-2.jpg&quot;]" data-buy="#"><img src="/assets/mousepads/thumbs/mp-50-esptiger-po-ying-mousepad.jpg" alt="" loading="lazy"><span class="sc-wall__count">3</span></a>
 </div>
+
+
+## Figures <span class="mg-list-meta">Updated 07 Aug 2026</span> {#figures}
+
+<div class="sc-wall" markdown="0">
+  <a class="sc-wall__tile sc-wall__tile--sm" href="/assets/gallery/figures/fig_01_01.jpg" data-gallery="[&quot;/assets/gallery/figures/fig_01_01.jpg&quot;, &quot;/assets/gallery/figures/fig_01_02.jpg&quot;, &quot;/assets/gallery/figures/fig_01_03.jpg&quot;, &quot;/assets/gallery/figures/fig_01_04.jpg&quot;, &quot;/assets/gallery/figures/fig_01_05.jpg&quot;]" data-buy="#"><img src="/assets/gallery/figures/fig_01_01.jpg" alt="" loading="lazy"><span class="sc-wall__count">5</span></a>
+  <a class="sc-wall__tile sc-wall__tile--md" href="/assets/gallery/figures/fig_02_01.jpg" data-gallery="[&quot;/assets/gallery/figures/fig_02_01.jpg&quot;, &quot;/assets/gallery/figures/fig_02_02.jpg&quot;, &quot;/assets/gallery/figures/fig_02_03.jpg&quot;, &quot;/assets/gallery/figures/fig_02_04.jpg&quot;, &quot;/assets/gallery/figures/fig_02_05.jpg&quot;, &quot;/assets/gallery/figures/fig_02_06.jpg&quot;, &quot;/assets/gallery/figures/fig_02_07.jpg&quot;, &quot;/assets/gallery/figures/fig_02_08.jpg&quot;, &quot;/assets/gallery/figures/fig_02_09.jpg&quot;, &quot;/assets/gallery/figures/fig_02_10.jpg&quot;, &quot;/assets/gallery/figures/fig_02_11.jpg&quot;, &quot;/assets/gallery/figures/fig_02_12.jpg&quot;, &quot;/assets/gallery/figures/fig_02_13.jpg&quot;, &quot;/assets/gallery/figures/fig_02_14.jpg&quot;, &quot;/assets/gallery/figures/fig_02_15.jpg&quot;, &quot;/assets/gallery/figures/fig_02_16.jpg&quot;, &quot;/assets/gallery/figures/fig_02_17.jpg&quot;, &quot;/assets/gallery/figures/fig_02_18.jpg&quot;, &quot;/assets/gallery/figures/fig_02_19.jpg&quot;, &quot;/assets/gallery/figures/fig_02_20.jpg&quot;, &quot;/assets/gallery/figures/fig_02_21.jpg&quot;, &quot;/assets/gallery/figures/fig_02_22.jpg&quot;, &quot;/assets/gallery/figures/fig_02_23.jpg&quot;]" data-buy="#"><img src="/assets/gallery/figures/fig_02_01.jpg" alt="" loading="lazy"><span class="sc-wall__count">23</span></a>
+  <a class="sc-wall__tile sc-wall__tile--lg" href="/assets/gallery/figures/fig_03_01.jpg" data-gallery="[&quot;/assets/gallery/figures/fig_03_01.jpg&quot;, &quot;/assets/gallery/figures/fig_03_02.jpg&quot;, &quot;/assets/gallery/figures/fig_03_03.jpg&quot;]" data-buy="#"><img src="/assets/gallery/figures/fig_03_01.jpg" alt="" loading="lazy"><span class="sc-wall__count">3</span></a>
+  <a class="sc-wall__tile sc-wall__tile--sm" href="/assets/gallery/figures/fig_04_01.jpg" data-gallery="[&quot;/assets/gallery/figures/fig_04_01.jpg&quot;, &quot;/assets/gallery/figures/fig_04_02.jpg&quot;, &quot;/assets/gallery/figures/fig_04_03.jpg&quot;, &quot;/assets/gallery/figures/fig_04_04.jpg&quot;, &quot;/assets/gallery/figures/fig_04_05.jpg&quot;]" data-buy="#"><img src="/assets/gallery/figures/fig_04_01.jpg" alt="" loading="lazy"><span class="sc-wall__count">5</span></a>
+</div>
+

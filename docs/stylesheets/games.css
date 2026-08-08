@@ -381,3 +381,178 @@
     font-size: 0.84rem !important;
   }
 }
+
+/* Steam Game Account rental — game grid + offer (eldorado-style) */
+/* Steam game accounts — compact row list (eldorado mobile-style) */
+.mg-games__game-grid {
+  display: flex;
+  flex-direction: column;
+  margin: 0.75rem 0 1.25rem;
+  border: 1px solid rgba(124, 58, 237, 0.16);
+  border-radius: 10px;
+  overflow: hidden;
+  background: #fff;
+}
+
+.mg-games__game-row {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  width: 100%;
+  padding: 0.6rem 0.8rem;
+  border: 0;
+  border-bottom: 1px solid rgba(124, 58, 237, 0.1);
+  background: #fff;
+  color: #0f172a;
+  cursor: pointer;
+  text-align: left;
+  transition: background 0.2s ease;
+}
+
+.mg-games__game-row:last-child {
+  border-bottom: 0;
+}
+
+.mg-games__game-icon {
+  flex: 0 0 auto;
+}
+
+.mg-games__game-icon img {
+  width: 36px;
+  height: 36px;
+  border-radius: 4px;
+  object-fit: cover;
+  margin: 0;
+}
+
+.mg-games__game-meta {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.05rem;
+}
+
+.mg-games__game-name {
+  font-size: 0.84rem;
+  font-weight: 700;
+  line-height: 1.2;
+  color: #0f172a;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.mg-games__game-sub {
+  font-size: 0.68rem;
+  color: #64748b;
+}
+
+.mg-games__game-price {
+  flex: 0 0 auto;
+  font-size: 0.84rem;
+  font-weight: 800;
+  color: #7c3aed;
+  white-space: nowrap;
+}
+
+.mg-games__offer {
+  margin: 0.5rem 0 0.25rem;
+}
+
+.mg-games__offer-card {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.85rem 1rem;
+  border: 1px solid rgba(124, 58, 237, 0.22);
+  border-radius: 10px;
+  background: #faf5ff;
+}
+
+.mg-games__offer-icon img {
+  width: 40px;
+  height: 40px;
+  border-radius: 6px;
+  object-fit: cover;
+  margin: 0;
+}
+
+.mg-games__offer-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.mg-games__offer-name {
+  margin: 0;
+  font-size: 0.92rem;
+  font-weight: 800;
+  color: #0f172a;
+}
+
+.mg-games__offer-sub {
+  font-size: 0.7rem;
+  color: #64748b;
+}
+
+.mg-games__offer-price {
+  font-size: 1.05rem;
+  font-weight: 800;
+  color: #7c3aed;
+  white-space: nowrap;
+}
+
+.mg-games__offer-buy {
+  white-space: nowrap;
+}
+
+@media (max-width: 600px) {
+  .mg-games__offer-card {
+    flex-wrap: wrap;
+  }
+
+  .mg-games__game-name {
+    font-size: 0.8rem;
+  }
+}
+
+/* Steam game accounts — pagination */
+.mg-games__pager-wrap {
+  margin: 0.75rem 0 0.25rem;
+}
+
+.mg-games__pager {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  flex-wrap: wrap;
+}
+
+.mg-games__pager-btn {
+  min-width: 2rem;
+  height: 2rem;
+  padding: 0 0.5rem;
+  border: 1px solid rgba(124, 58, 237, 0.25);
+  border-radius: 6px;
+  background: #fff;
+  color: #0f172a;
+  font-size: 0.8rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.mg-games__pager-btn:hover:not(:disabled):not(.is-active) {
+  background: #f5f3ff;
+}
+
+.mg-games__pager-btn.is-active {
+  background: #7c3aed;
+  color: #fff;
+  border-color: #7c3aed;
+}
+
+.mg-games__pager-btn:disabled {
+  opacity: 0.4;
+  cursor: default;
+}
