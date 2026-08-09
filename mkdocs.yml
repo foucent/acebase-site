@@ -34,11 +34,11 @@ plugins:
           build: true
           nav:
             - 首页: index.md
-            - 游戏:
-                - 账号租赁: games/steam-accounts.md
+            - 价格:
                 - PUBG Mobile: games/pubg-mobile.md
                 - PUBG G-COIN: games/pubg-gcoin.md
-                - 王者荣耀: games/honor-of-kings.md
+            - 租赁:
+                - 三角洲行动: games/delta-force.md
             - 画廊: gallery/index.md
             - 关于:
                 - 常见问题与更新: shop/faq-and-updates.md
@@ -66,6 +66,11 @@ plugins:
         gallery/figures.md: gallery/index.md
         gallery/coser.md: gallery/index.md
         gallery/pre-owned.md: gallery/index.md
+        games/honor-of-kings.md: games/pubg-mobile.md
+        games/steam-accounts.md: games/delta-force.md
+        games/valorant-accounts.md: games/delta-force.md
+        currency/index.md: index.md
+        games/buy-robux.md: index.md
         guides/safety.md: legal/safety.md
 
 markdown_extensions:
@@ -102,7 +107,7 @@ extra_javascript:
   - javascripts/board-cart.js
   - javascripts/board-grid.js
   - javascripts/games-prices.js
-  - javascripts/games-steam-accounts.js
+  - javascripts/delta-force-pager.js
 
 watch:
   - overrides
@@ -128,11 +133,11 @@ extra:
 
 nav:
   - Home: index.md
-  - Games:
-      - Account Rental: games/steam-accounts.md
+  - Prices:
       - PUBG Mobile: games/pubg-mobile.md
       - PUBG G-COIN: games/pubg-gcoin.md
-      - Honor of Kings: games/honor-of-kings.md
+  - Rental:
+      - Delta Force Accounts: games/delta-force.md
   - Gallery: gallery/index.md
   - About:
       - FAQ & Updates: shop/faq-and-updates.md

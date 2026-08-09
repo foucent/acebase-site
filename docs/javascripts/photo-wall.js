@@ -9,6 +9,8 @@
       ? "你好，我想咨询图库中的商品。"
       : "Hi, I would like a quote from the photo wall.",
     hideToday: isZh ? "今日不再显示" : "Hide for today",
+    loadMore: isZh ? "继续滚动加载更多" : "Scroll for more",
+    allLoaded: isZh ? "已全部加载" : "All photos loaded",
   };
 
   function shuffle(node) {
@@ -249,12 +251,93 @@
     );
   }
 
+  // Reveal tiles in batches as the user scrolls, so the initial page load
+  // stays small. Hidden tiles are display:none + loading="lazy", so their
+  // images are not fetched until a batch is revealed.
+  function initPagination(wall) {
+    var tiles = Array.prototype.slice.call(wall.querySelectorAll(".sc-wall__tile"));
+    var batchAttr = parseInt(wall.getAttribute("data-batch"), 10);
+    var BATCH = !isNaN(batchAttr) && batchAttr > 0 ? batchAttr : 12;
+    if (tiles.length <= BATCH) return;
+
+    var i, j;
+
+    // hide everything past the first batch
+    for (i = BATCH; i < tiles.length; i++) {
+      tiles[i].classList.add("sc-wall__tile--pending");
+    }
+
+    var sentinel = document.createElement("div");
+    sentinel.className = "sc-wall-load";
+    sentinel.setAttribute("role", "status");
+    sentinel.innerHTML =
+      '<span class="sc-wall-load__spinner" aria-hidden="true"></span>' +
+      '<span class="sc-wall-load__hint"></span>';
+    wall.parentNode.insertBefore(sentinel, wall.nextSibling);
+
+    var revealed = BATCH;
+    var done = false;
+    var observer = null;
+    var spinner = sentinel.querySelector(".sc-wall-load__spinner");
+    var hint = sentinel.querySelector(".sc-wall-load__hint");
+
+    function refreshHint() {
+      if (revealed >= tiles.length) {
+        done = true;
+        hint.textContent = T.allLoaded;
+        sentinel.classList.add("is-done");
+        if (observer) observer.disconnect();
+        return;
+      }
+      hint.textContent = T.loadMore;
+    }
+
+    function revealMore() {
+      if (done || revealed >= tiles.length) return;
+      var end = Math.min(revealed + BATCH, tiles.length);
+      for (i = revealed; i < end; i++) {
+        tiles[i].classList.remove("sc-wall__tile--pending");
+      }
+      revealed = end;
+      refreshHint();
+      // after reflow the sentinel may still be inside the viewport (very tall
+      // screens) — keep loading until it drops below the fold
+      if (revealed < tiles.length) {
+        requestAnimationFrame(function () {
+          if (sentinel.getBoundingClientRect().top < window.innerHeight) revealMore();
+        });
+      }
+    }
+
+    refreshHint();
+
+    if ("IntersectionObserver" in window) {
+      observer = new IntersectionObserver(
+        function (entries) {
+          entries.forEach(function (entry) {
+            if (entry.isIntersecting) revealMore();
+          });
+        },
+        { rootMargin: "800px 0px" } // start loading a bit before the fold
+      );
+      observer.observe(sentinel);
+    } else {
+      // fallback: no observer support, show everything
+      for (j = BATCH; j < tiles.length; j++) {
+        tiles[j].classList.remove("sc-wall__tile--pending");
+      }
+      revealed = tiles.length;
+      refreshHint();
+    }
+  }
+
   function run() {
     var walls = document.querySelectorAll(".sc-wall");
     if (!walls.length) return;
     walls.forEach(function (wall) {
-      shuffle(wall);
+      shuffle(wall); // final order first, so pagination reveals shuffled batches
       initLightbox(wall);
+      initPagination(wall);
     });
   }
 

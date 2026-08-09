@@ -63,6 +63,42 @@
   overflow: hidden;
 }
 
+/* Tiles waiting for the next "scroll for more" batch stay out of layout and
+   do not fetch their images until revealed. */
+.sc-wall__tile--pending {
+  display: none;
+}
+
+.sc-wall-load {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.55rem;
+  margin: 0.5rem 0 2rem;
+  padding: 0.75rem;
+  color: rgba(226, 232, 240, 0.72);
+  font-size: 0.82rem;
+}
+
+.sc-wall-load__spinner {
+  width: 1rem;
+  height: 1rem;
+  border: 2px solid rgba(226, 232, 240, 0.25);
+  border-top-color: #25d366;
+  border-radius: 50%;
+  animation: sc-wall-load-spin 0.8s linear infinite;
+}
+
+.sc-wall-load.is-done .sc-wall-load__spinner {
+  display: none;
+}
+
+@keyframes sc-wall-load-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
 .sc-wall__count {
   position: absolute;
   top: 0.4rem;

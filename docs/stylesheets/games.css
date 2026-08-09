@@ -556,3 +556,153 @@
   opacity: 0.4;
   cursor: default;
 }
+
+/* —— Delta Force accounts —— */
+.mg-df-hint {
+  margin: 0.25rem 0 1.25rem;
+  font-size: 0.82rem;
+  color: #64748b;
+}
+
+/* —— Delta Force accounts (grouped card, dark theme) —— */
+.mg-df-card {
+  display: block;
+  margin: 0 0 0.9rem;
+  padding: 0.65rem 0.75rem 0.75rem;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 0.5rem;
+  background: rgba(30, 41, 59, 0.6);
+}
+
+/* 头部：编号 + 段位徽章 */
+.mg-df-card__head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.6rem;
+  margin-bottom: 0.5rem;
+  font-size: 0.74rem;
+  color: #e2e8f0;
+}
+
+.mg-df-card__no {
+  font-weight: 900;
+  color: #f8fafc;
+  letter-spacing: 0.02em;
+  font-size: 0.82rem;
+}
+
+.mg-df-card__rank {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.14rem 0.5rem;
+  border-radius: 999px;
+  background: #14b8a6;
+  color: #042f2e;
+  font-size: 0.7rem;
+  font-weight: 900;
+}
+
+/* 价格行 */
+.mg-df-card__price {
+  display: flex;
+  align-items: baseline;
+  gap: 0.6rem;
+  margin-bottom: 0.55rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px dashed rgba(148, 163, 184, 0.35);
+}
+
+.mg-df-card__price-now {
+  font-size: 1.1rem;
+  font-weight: 900;
+  color: #fb923c;
+  line-height: 1;
+}
+
+.mg-df-card__price-meta {
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: #cbd5e1;
+}
+
+/* 分组网格 */
+.mg-df-card__groups {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.45rem 0.9rem;
+}
+
+.mg-df-card__group {
+  min-width: 0;
+}
+
+.mg-df-card__group-title {
+  margin: 0 0 0.2rem;
+  font-size: 0.64rem;
+  font-weight: 900;
+  letter-spacing: 0.06em;
+  color: #2dd4bf;
+  text-transform: uppercase;
+}
+
+.mg-df-card__group-row {
+  display: flex;
+  gap: 0.35rem;
+  font-size: 0.72rem;
+  line-height: 1.5;
+  color: #f1f5f9;
+}
+
+.mg-df-card__group-row .k {
+  flex: 0 0 auto;
+  color: #94a3b8;
+  min-width: 3.1rem;
+}
+
+.mg-df-card__group-row .v {
+  font-weight: 600;
+  color: #f8fafc;
+}
+
+.mg-df-card__group-row .v {
+  min-width: 0;
+  word-break: break-word;
+}
+
+@media (max-width: 600px) {
+  .mg-df-card__groups {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Delta Force 分区标题 */
+.mg-df-section {
+  margin: 1.8rem 0 0.9rem !important;
+  padding: 0.4rem 0.75rem !important;
+  border-left: 3px solid #14b8a6 !important;
+  background: rgba(20, 184, 166, 0.08);
+  font-size: 0.95rem !important;
+  font-weight: 800 !important;
+  color: #e2e8f0 !important;
+}
+
+/* 加载更多 */
+.mg-df-load {
+  margin: 1rem 0 0.5rem;
+  padding: 0.6rem;
+  text-align: center;
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: #14b8a6;
+  border: 1px dashed rgba(20, 184, 166, 0.4);
+  border-radius: 0.4rem;
+  background: rgba(20, 184, 166, 0.06);
+}
+
+.mg-df-load.is-end {
+  color: #64748b;
+  border-color: rgba(100, 116, 139, 0.3);
+  background: transparent;
+}

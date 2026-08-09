@@ -27,34 +27,9 @@ hide:
     <div class="mg-games__price-table" data-game="pubg-mobile" id="pubg-mobile-price-table">
       <p class="mg-games__loading">正在加载最新价格&hellip;</p>
     </div>
-    <p class="mg-games__hint">价格采集自全球主要第三方充值站点。</p>
+    <p class="mg-games__hint">价格数据采集自全球主要第三方充值站点。</p>
   </section>
 
-  <section class="mg-games__streamers">
-    <h2 class="mg-games__section-title">热门 Twitch 主播</h2>
-    <div class="mg-games__streamers-grid">
-      <a class="mg-games__streamer" href="https://www.twitch.tv/shroud" rel="noopener">
-        <span class="mg-games__streamer-avatar"><img src="/assets/games/streamers/shroud.svg" alt="Shroud" width="64" height="64" loading="lazy"></span>
-        <span class="mg-games__streamer-name">Shroud</span>
-        <span class="mg-games__streamer-meta">FPS 传奇</span>
-      </a>
-      <a class="mg-games__streamer" href="https://www.twitch.tv/summit1g" rel="noopener">
-        <span class="mg-games__streamer-avatar"><img src="/assets/games/streamers/summit1g.svg" alt="summit1g" width="64" height="64" loading="lazy"></span>
-        <span class="mg-games__streamer-name">summit1g</span>
-        <span class="mg-games__streamer-meta">FPS 老将</span>
-      </a>
-      <a class="mg-games__streamer" href="https://www.twitch.tv/s1mple" rel="noopener">
-        <span class="mg-games__streamer-avatar"><img src="/assets/games/streamers/s1mple.svg" alt="s1mple" width="64" height="64" loading="lazy"></span>
-        <span class="mg-games__streamer-name">s1mple</span>
-        <span class="mg-games__streamer-meta">GOAT</span>
-      </a>
-      <a class="mg-games__streamer" href="https://www.twitch.tv/tgltn" rel="noopener">
-        <span class="mg-games__streamer-avatar"><img src="/assets/games/streamers/tgltn.svg" alt="TGLTN" width="64" height="64" loading="lazy"></span>
-        <span class="mg-games__streamer-name">TGLTN</span>
-        <span class="mg-games__streamer-meta">PUBG 明星</span>
-      </a>
-    </div>
-  </section>
 
   <section class="mg-games__news">
     <h2 class="mg-games__section-title">PUBG Mobile 新闻</h2>

@@ -36,13 +36,6 @@ description: 全球电竞周边站 — 游戏充值折扣与图库。在线咨�
           <span class="mg-home-cat__desc">折扣充值</span>
         </span>
       </a>
-      <a class="mg-home-cat" href="/zh/games/honor-of-kings/">
-        <img class="mg-home-cat__img" src="/assets/games/honor-of-kings.svg" alt="Honor of Kings" loading="lazy">
-        <span class="mg-home-cat__body">
-          <span class="mg-home-cat__name">Honor of Kings</span>
-          <span class="mg-home-cat__desc">折扣充值</span>
-        </span>
-      </a>
       <a class="mg-home-cat" href="/zh/gallery/">
         <img class="mg-home-cat__img" src="/assets/gallery/wallpapers/img_01.svg" alt="画廊" loading="lazy">
         <span class="mg-home-cat__body">
@@ -79,6 +72,6 @@ description: 全球电竞周边站 — 游戏充值折扣与图库。在线咨�
 
 热门充值与图库 — 各商品页面查看档位与参考价格。
 
-[PUBG Mobile](/zh/games/pubg-mobile/) · [PUBG G-COIN](/zh/games/pubg-gcoin/) · [Honor of Kings](/zh/games/honor-of-kings/) · [画廊](/zh/gallery/)
+[PUBG Mobile](/zh/games/pubg-mobile/) · [PUBG G-COIN](/zh/games/pubg-gcoin/) · [画廊](/zh/gallery/)
 
 </div>

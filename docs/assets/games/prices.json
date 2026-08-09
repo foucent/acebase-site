@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-08",
+  "updated": "2026-08-10",
   "games": {
     "valorant": [
       {
@@ -229,74 +229,6 @@
         "title": "Cross-Gen Bundle XBox Key",
         "official": 109.99,
         "acebase": 81.22
-      }
-    ],
-    "honor-of-kings": [
-      {
-        "title": "16 Tokens",
-        "lowest": 0.19,
-        "highest": 0.19,
-        "average": 0.19
-      },
-      {
-        "title": "80 Tokens",
-        "lowest": 0.75,
-        "highest": 0.91,
-        "average": 0.83
-      },
-      {
-        "title": "240 Tokens",
-        "lowest": 2.29,
-        "highest": 2.81,
-        "average": 2.55
-      },
-      {
-        "title": "400 Tokens",
-        "lowest": 3.83,
-        "highest": 4.53,
-        "average": 4.18
-      },
-      {
-        "title": "560 Tokens",
-        "lowest": 5.37,
-        "highest": 6.35,
-        "average": 5.86
-      },
-      {
-        "title": "800 Tokens",
-        "lowest": 7.67,
-        "highest": 9.07,
-        "average": 8.37
-      },
-      {
-        "title": "1200 Tokens",
-        "lowest": 11.5,
-        "highest": 13.62,
-        "average": 12.56
-      },
-      {
-        "title": "2400 Tokens",
-        "lowest": 27.24,
-        "highest": 27.24,
-        "average": 27.24
-      },
-      {
-        "title": "2508 Tokens",
-        "lowest": 23.02,
-        "highest": 23.02,
-        "average": 23.02
-      },
-      {
-        "title": "4000 Tokens",
-        "lowest": 38.37,
-        "highest": 45.4,
-        "average": 41.88
-      },
-      {
-        "title": "8000 Tokens",
-        "lowest": 76.74,
-        "highest": 90.8,
-        "average": 83.77
       }
     ],
     "arena-breakout": [

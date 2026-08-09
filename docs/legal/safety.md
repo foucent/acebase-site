@@ -51,7 +51,7 @@ hide:
 
 <div class="admonition note mg-games__note">
   <p class="admonition-title">Related</p>
-  <p><a href="/games/pubg-mobile/">PUBG Mobile</a> · <a href="/games/pubg-gcoin/">PUBG G-COIN</a> · <a href="/games/honor-of-kings/">Honor of Kings</a> · <a href="/shop/faq-and-updates/">FAQ &amp; Updates</a></p>
+  <p><a href="/games/pubg-mobile/">PUBG Mobile</a> · <a href="/games/pubg-gcoin/">PUBG G-COIN</a> · <a href="/shop/faq-and-updates/">FAQ &amp; Updates</a></p>
 </div>
 
 <script type="application/ld+json">
