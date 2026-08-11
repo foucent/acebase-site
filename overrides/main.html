@@ -1,5 +1,56 @@
 {% extends "base.html" %}
 
+{% block extrahead %}
+  {# hreflang alternates (en = default at root, zh = mirrored under /zh/) #}
+  {% if page and page.canonical_url %}
+    {% set locale = i18n_page_locale | default("en") %}
+    {% set canonical = page.canonical_url %}
+    {% if locale == "zh" %}
+      {% set en_url = canonical | replace(config.site_url ~ "zh/", config.site_url, 1) %}
+      {% set zh_url = canonical %}
+    {% else %}
+      {% set en_url = canonical %}
+      {% set zh_url = canonical | replace(config.site_url, config.site_url ~ "zh/", 1) %}
+    {% endif %}
+    <link rel="alternate" hreflang="en" href="{{ en_url }}">
+    <link rel="alternate" hreflang="zh" href="{{ zh_url }}">
+    <link rel="alternate" hreflang="x-default" href="{{ en_url }}">
+  {% endif %}
+
+  {# Auto language redirect (runs synchronously in <head>, before render).
+     Rule: a manual choice stored in localStorage wins; otherwise the browser
+     language decides (zh → /zh/…, anything else → root en). #}
+  <script>
+    (function () {
+      try {
+        var KEY = "acebase_lang";
+        var saved = null;
+        try { saved = localStorage.getItem(KEY); } catch (e) {}
+        var wantZh = saved !== null
+          ? saved === "zh"
+          : (navigator.language || "en").toLowerCase().indexOf("zh") === 0;
+        var path = location.pathname;
+        var isZh = path === "/zh" || path.indexOf("/zh/") === 0;
+        var target = null;
+        if (wantZh && !isZh) {
+          target = path === "/" ? "/zh/" : "/zh" + path;
+        } else if (!wantZh && isZh) {
+          target = (path === "/zh" || path === "/zh/") ? "/" : path.replace(/^\/zh/, "");
+        }
+        if (target && target !== path) location.replace(target);
+      } catch (e) {}
+    })();
+    // Remember a manual language choice made via the header switcher.
+    document.addEventListener("click", function (e) {
+      var link = e.target && e.target.closest
+        ? e.target.closest("a.md-select__link[hreflang]")
+        : null;
+      if (!link) return;
+      try { localStorage.setItem("acebase_lang", link.getAttribute("hreflang")); } catch (e) {}
+    }, true);
+  </script>
+{% endblock %}
+
 {% block scripts %}
   {{ super() }}
   <script>window.AB_SNIPCART_KEY = {{ config.extra.snipcart_public_key | default("") | tojson }};</script>

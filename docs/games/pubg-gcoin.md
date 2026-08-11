@@ -1,6 +1,6 @@
 ---
-title: PUBG G-COIN Top-Up & Discounts
-description: Best PUBG G-COIN discount top-up, esports news and top Twitch streamers. Compare official vs AceBase prices and top up via live chat.
+title: PUBG G-COIN Top-Up Price Monitor & Discounts
+description: Real-time PUBG G-COIN price monitoring across the official store and third-party top-up sites. Compare lowest, highest and average prices per tier, spot discounts, and top up safely via live chat.
 hide:
   - title
   - toc
@@ -11,8 +11,8 @@ hide:
   <section class="mg-games__hero" style="--mg-games-hero-image: url('/assets/games/pubg-gcoin.svg')">
     <div class="mg-games__hero-body">
       <p class="mg-games__brand">AceBase</p>
-      <h1 class="mg-games__title">PUBG G-COIN Top-Up &amp; Discounts</h1>
-      <p class="mg-games__lead">Top up PUBG PC G-COIN CDK at a discount, follow the latest esports news, and watch the top PUBG Twitch streamers.</p>
+      <h1 class="mg-games__title">PUBG G-COIN Top-Up Price Monitor</h1>
+      <p class="mg-games__lead">We track PUBG G-COIN prices across the official store and major third-party top-up sites, so you always see the lowest, highest and average price per tier.</p>
       <div class="mg-games__actions">
         <a class="mg-games__btn mg-games__btn--primary ab-crisp-open" href="#" data-crisp-msg="Hi, I'd like a real-time price consultation for PUBG G-COIN top-up.">Real-time Price Consultation</a>
       </div>
@@ -21,57 +21,23 @@ hide:
 
   <section class="mg-games__prices" id="prices">
     <div class="mg-games__section-head">
-      <h2 class="mg-games__section-title">PUBG G-COIN CDK &mdash; Latest Price Monitor</h2>
+      <h2 class="mg-games__section-title">PUBG G-COIN &mdash; Latest Price Monitor</h2>
       <span class="mg-games__updated">Updated <span id="pubg-gcoin-updated">recently</span></span>
     </div>
     <div class="mg-games__price-table" data-game="pubg-gcoin" id="pubg-gcoin-price-table">
       <p class="mg-games__loading">Loading latest prices&hellip;</p>
     </div>
-    <p class="mg-games__hint">Prices default to USD (switchable in the header), compared across Bittopup &amp; SEAGM &mdash; lowest / highest / average per tier.</p>
+    <p class="mg-games__hint">Compared across the official store and third-party top-up sites &mdash; lowest / highest / average per tier (USD by default, switchable in the header).</p>
   </section>
 
-  <section class="mg-games__streamers">
-    <h2 class="mg-games__section-title">Popular Twitch Streamers</h2>
-    <div class="mg-games__streamers-grid">
-      <a class="mg-games__streamer" href="https://www.twitch.tv/shroud" rel="noopener">
-        <span class="mg-games__streamer-avatar"><img src="/assets/games/streamers/shroud.svg" alt="Shroud" width="64" height="64" loading="lazy"></span>
-        <span class="mg-games__streamer-name">Shroud</span>
-        <span class="mg-games__streamer-meta">FPS legend</span>
-      </a>
-      <a class="mg-games__streamer" href="https://www.twitch.tv/summit1g" rel="noopener">
-        <span class="mg-games__streamer-avatar"><img src="/assets/games/streamers/summit1g.svg" alt="summit1g" width="64" height="64" loading="lazy"></span>
-        <span class="mg-games__streamer-name">summit1g</span>
-        <span class="mg-games__streamer-meta">FPS veteran</span>
-      </a>
-      <a class="mg-games__streamer" href="https://www.twitch.tv/xchocobars" rel="noopener">
-        <span class="mg-games__streamer-avatar"><img src="/assets/games/streamers/xchocobars.svg" alt="xChocoBars" width="64" height="64" loading="lazy"></span>
-        <span class="mg-games__streamer-name">xChocoBars</span>
-        <span class="mg-games__streamer-meta">PUBG streamer</span>
-      </a>
-      <a class="mg-games__streamer" href="https://www.twitch.tv/kaymind" rel="noopener">
-        <span class="mg-games__streamer-avatar"><img src="/assets/games/streamers/kaymind.svg" alt="Kaymind" width="64" height="64" loading="lazy"></span>
-        <span class="mg-games__streamer-name">Kaymind</span>
-        <span class="mg-games__streamer-meta">Pro player</span>
-      </a>
-    </div>
-  </section>
-
-  <section class="mg-games__news">
-    <h2 class="mg-games__section-title">PUBG G-COIN News</h2>
-    <ul class="mg-games__news-list">
-      <li class="mg-games__news-item">
-        <span class="mg-games__news-date">2026-07-27</span>
-        <a href="https://liquipedia.net/" rel="noopener">PUBG Season update ships new weapons and ranked changes</a>
-      </li>
-      <li class="mg-games__news-item">
-        <span class="mg-games__news-date">2026-07-13</span>
-        <a href="https://liquipedia.net/" rel="noopener">Esports circuit announces next global tournament window</a>
-      </li>
-      <li class="mg-games__news-item">
-        <span class="mg-games__news-date">2026-06-30</span>
-        <a href="https://liquipedia.net/" rel="noopener">Player skins and crates rotate in the monthly store update</a>
-      </li>
-    </ul>
+  <section class="mg-games__faq" id="faq">
+    <h2 class="mg-games__section-title">PUBG G-COIN Top-Up FAQ</h2>
+    <p><strong>How often are PUBG G-COIN prices updated?</strong></p>
+    <p>Our monitor refreshes G-COIN prices on a regular schedule across the official store and third-party top-up sites. The last update is shown above the price table.</p>
+    <p><strong>How do I find the real-time lowest PUBG G-COIN price with AceBase?</strong></p>
+    <p>Open Real-time Price Consultation &mdash; our team will provide the latest quote in live chat.</p>
+    <p><strong>Why are AceBase G-COIN prices cheaper than the official store?</strong></p>
+    <p>We compare prices across multiple third-party top-up channels and pass the savings on. Prices fluctuate, so the monitor helps you buy when they are lowest.</p>
   </section>
 
 </div>
@@ -87,22 +53,32 @@ hide:
   "@graph": [
     {
       "@type": "Product",
-      "name": "PUBG G-COIN Top-Up",
-      "description": "Discounted PUBG G-COIN top-up (Global).",
+      "name": "PUBG G-COIN Top-Up Price Monitor",
+      "description": "Real-time PUBG G-COIN price monitoring across the official store and third-party top-up sites, with lowest, highest and average prices per tier and discounted top-up via live chat.",
       "brand": { "@type": "Brand", "name": "AceBase" },
+      "url": "https://acebase.cc/games/pubg-gcoin/",
       "offers": {
         "@type": "AggregateOffer",
         "priceCurrency": "USD",
-        "lowPrice": "3.11",
-        "highPrice": "62.28",
+        "lowPrice": "0.86",
+        "highPrice": "87.31",
+        "offerCount": "6",
         "availability": "https://schema.org/InStock"
       }
     },
     {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://acebase.cc/" },
+        { "@type": "ListItem", "position": 2, "name": "PUBG G-COIN Top-Up", "item": "https://acebase.cc/games/pubg-gcoin/" }
+      ]
+    },
+    {
       "@type": "FAQPage",
       "mainEntity": [
-        { "@type": "Question", "name": "How do I redeem G-COIN CDK?", "acceptedAnswer": { "@type": "Answer", "text": "We send the CDK to your email. Redeem it on the PUBG official redemption page or Steam client." } },
-        { "@type": "Question", "name": "Is G-COIN top-up safe?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. Codes are sourced from official channels. See our safety guide." } }
+        { "@type": "Question", "name": "How often are PUBG G-COIN prices updated?", "acceptedAnswer": { "@type": "Answer", "text": "Our monitor refreshes G-COIN prices on a regular schedule across the official store and third-party top-up sites. The last update is shown above the price table." } },
+        { "@type": "Question", "name": "How do I find the real-time lowest PUBG G-COIN price with AceBase?", "acceptedAnswer": { "@type": "Answer", "text": "Open Real-time Price Consultation and our team will provide the latest quote in live chat." } },
+        { "@type": "Question", "name": "Why are AceBase G-COIN prices cheaper than the official store?", "acceptedAnswer": { "@type": "Answer", "text": "We compare prices across multiple third-party top-up channels and pass the savings on. Prices fluctuate, so the monitor helps you buy when they are lowest." } }
       ]
     }
   ]

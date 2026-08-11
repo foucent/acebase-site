@@ -1,6 +1,6 @@
 ---
-title: PUBG G-COIN 充值 & 折扣
-description: PUBG G-COIN 折扣充值、电竞赛事新闻与顶级 Twitch 主播。对比官方与 AceBase 价格，通过在线咨询完成充值。
+title: PUBG G-COIN 充值价格监测 | G-COIN 全网低价对比
+description: 实时监测 PUBG G-COIN 全网充值价格，对比官方商城与多家第三方充值站点最低/最高/平均价，捕捉折扣并安全快捷充值。
 hide:
   - title
   - toc
@@ -11,8 +11,8 @@ hide:
   <section class="mg-games__hero" style="--mg-games-hero-image: url('/assets/games/pubg-gcoin.svg')">
     <div class="mg-games__hero-body">
       <p class="mg-games__brand">AceBase</p>
-      <h1 class="mg-games__title">PUBG G-COIN 充值 &amp; 折扣</h1>
-      <p class="mg-games__lead">以折扣价充值 PUBG 电脑版 G-COIN CDK，关注最新电竞新闻，观看顶尖 PUBG Twitch 主播。</p>
+      <h1 class="mg-games__title">PUBG G-COIN 充值价格监测</h1>
+      <p class="mg-games__lead">我们实时监测 PUBG G-COIN 在官方商城与多家第三方充值站点的价格，每档展示最低、最高与平均价。</p>
       <div class="mg-games__actions">
         <a class="mg-games__btn mg-games__btn--primary ab-crisp-open" href="#" data-crisp-msg="你好，我想咨询 PUBG G-COIN 充值的实时价格。">实时价格咨询</a>
       </div>
@@ -21,32 +21,23 @@ hide:
 
   <section class="mg-games__prices" id="prices">
     <div class="mg-games__section-head">
-      <h2 class="mg-games__section-title">PUBG G-COIN CDK &mdash; 最新价格监控</h2>
+      <h2 class="mg-games__section-title">PUBG G-COIN &mdash; 最新价格监控</h2>
       <span class="mg-games__updated">更新于 <span id="pubg-gcoin-updated">最近</span></span>
     </div>
     <div class="mg-games__price-table" data-game="pubg-gcoin" id="pubg-gcoin-price-table">
       <p class="mg-games__loading">正在加载最新价格&hellip;</p>
     </div>
-    <p class="mg-games__hint">价格数据采集自全球主要第三方充值站点。</p>
+    <p class="mg-games__hint">对比官方商城与多家第三方充值站点，展示每档最低/最高/平均价（默认 USD，可在页头切换货币）。</p>
   </section>
 
-
-  <section class="mg-games__news">
-    <h2 class="mg-games__section-title">PUBG G-COIN 新闻</h2>
-    <ul class="mg-games__news-list">
-      <li class="mg-games__news-item">
-        <span class="mg-games__news-date">2026-07-27</span>
-        <a href="https://liquipedia.net/" rel="noopener">PUBG 新赛季上线新武器与排位改动</a>
-      </li>
-      <li class="mg-games__news-item">
-        <span class="mg-games__news-date">2026-07-13</span>
-        <a href="https://liquipedia.net/" rel="noopener">电竞巡回赛公布下一个全球赛事窗口</a>
-      </li>
-      <li class="mg-games__news-item">
-        <span class="mg-games__news-date">2026-06-30</span>
-        <a href="https://liquipedia.net/" rel="noopener">月度商城更新轮换皮肤与宝箱</a>
-      </li>
-    </ul>
+  <section class="mg-games__faq" id="faq">
+    <h2 class="mg-games__section-title">PUBG G-COIN 充值常见问题</h2>
+    <p><strong>PUBG G-COIN 价格多久更新一次？</strong></p>
+    <p>价格监测定时刷新 G-COIN 价格，覆盖官方商城与第三方充值站点；价格表上方会显示最近更新时间。</p>
+    <p><strong>如何通过 AceBase 了解实时 PUBG G-COIN 最低价格？</strong></p>
+    <p>点击「实时价格咨询」，客服会在在线咨询中提供最新报价。</p>
+    <p><strong>为什么 AceBase 的 G-COIN 价格比官方便宜？</strong></p>
+    <p>我们对比多家第三方充值渠道的价格并让利给玩家。价格会波动，监测功能帮你抓住最低价时机。</p>
   </section>
 
 </div>
@@ -62,22 +53,32 @@ hide:
   "@graph": [
     {
       "@type": "Product",
-      "name": "PUBG G-COIN 充值",
-      "description": "PUBG G-COIN 折扣充值（全球服）。",
+      "name": "PUBG G-COIN 充值价格监测",
+      "description": "实时监测 PUBG G-COIN 全网充值价格，覆盖官方商城与第三方充值站点，逐档展示最低、最高与平均价，支持在线咨询折扣充值。",
       "brand": { "@type": "Brand", "name": "AceBase" },
+      "url": "https://acebase.cc/zh/games/pubg-gcoin/",
       "offers": {
         "@type": "AggregateOffer",
         "priceCurrency": "USD",
-        "lowPrice": "3.11",
-        "highPrice": "62.28",
+        "lowPrice": "0.86",
+        "highPrice": "87.31",
+        "offerCount": "6",
         "availability": "https://schema.org/InStock"
       }
     },
     {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "首页", "item": "https://acebase.cc/zh/" },
+        { "@type": "ListItem", "position": 2, "name": "PUBG G-COIN 充值", "item": "https://acebase.cc/zh/games/pubg-gcoin/" }
+      ]
+    },
+    {
       "@type": "FAQPage",
       "mainEntity": [
-        { "@type": "Question", "name": "如何兑换 G-COIN CDK？", "acceptedAnswer": { "@type": "Answer", "text": "我们会将 CDK 发送到你的邮箱。在 PUBG 官方兑换页面或 Steam 客户端中兑换即可。" } },
-        { "@type": "Question", "name": "G-COIN 充值安全吗？", "acceptedAnswer": { "@type": "Answer", "text": "安全。兑换码来自官方渠道，详见安全指南。" } }
+        { "@type": "Question", "name": "PUBG G-COIN 价格多久更新一次？", "acceptedAnswer": { "@type": "Answer", "text": "价格监测定时刷新 G-COIN 价格，覆盖官方商城与第三方充值站点，价格表上方显示最近更新时间。" } },
+        { "@type": "Question", "name": "如何通过 AceBase 了解实时 PUBG G-COIN 最低价格？", "acceptedAnswer": { "@type": "Answer", "text": "点击「实时价格咨询」，客服会在在线咨询中提供最新报价。" } },
+        { "@type": "Question", "name": "为什么 AceBase 的 G-COIN 价格比官方便宜？", "acceptedAnswer": { "@type": "Answer", "text": "我们对比多家第三方充值渠道的价格并让利给玩家。价格会波动，监测功能帮你抓住最低价时机。" } }
       ]
     }
   ]

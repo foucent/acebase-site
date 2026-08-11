@@ -1,6 +1,6 @@
 ---
-title: PUBG Mobile 充值 & 折扣
-description: PUBG Mobile 折扣充值、电竞赛事新闻与顶级 Twitch 主播。对比官方与 AceBase 价格，通过在线咨询完成充值。
+title: PUBG Mobile 充值价格监测 | UC 全网低价对比
+description: 实时监测 PUBG Mobile UC 全网充值价格，对比官方商城与多家第三方充值站点最低/最高/平均价，捕捉折扣并安全快捷充值。
 hide:
   - title
   - toc
@@ -11,8 +11,8 @@ hide:
   <section class="mg-games__hero" style="--mg-games-hero-image: url('/assets/games/pubg-mobile.svg')">
     <div class="mg-games__hero-body">
       <p class="mg-games__brand">AceBase</p>
-      <h1 class="mg-games__title">PUBG Mobile 充值 &amp; 折扣</h1>
-      <p class="mg-games__lead">以折扣价充值 UC（Unknown Cash），关注最新电竞新闻，观看顶尖 PUBG Mobile Twitch 主播。</p>
+      <h1 class="mg-games__title">PUBG Mobile 充值价格监测</h1>
+      <p class="mg-games__lead">我们实时监测 PUBG Mobile UC 在官方商城与多家第三方充值站点的价格，每档展示最低、最高与平均价。</p>
       <div class="mg-games__actions">
         <a class="mg-games__btn mg-games__btn--primary ab-crisp-open" href="#" data-crisp-msg="你好，我想咨询 PUBG Mobile 充值的实时价格。">实时价格咨询</a>
       </div>
@@ -27,26 +27,17 @@ hide:
     <div class="mg-games__price-table" data-game="pubg-mobile" id="pubg-mobile-price-table">
       <p class="mg-games__loading">正在加载最新价格&hellip;</p>
     </div>
-    <p class="mg-games__hint">价格数据采集自全球主要第三方充值站点。</p>
+    <p class="mg-games__hint">对比官方商城与多家第三方充值站点，展示每档最低/最高/平均价（默认 USD，可在页头切换货币）。</p>
   </section>
 
-
-  <section class="mg-games__news">
-    <h2 class="mg-games__section-title">PUBG Mobile 新闻</h2>
-    <ul class="mg-games__news-list">
-      <li class="mg-games__news-item">
-        <span class="mg-games__news-date">2026-07-29</span>
-        <a href="https://liquipedia.net/" rel="noopener">PMGC 预选赛升温 &mdash; 各赛区争夺决赛名额</a>
-      </li>
-      <li class="mg-games__news-item">
-        <span class="mg-games__news-date">2026-07-15</span>
-        <a href="https://liquipedia.net/" rel="noopener">新赛季带来地图改动与焕新的战斗通行证</a>
-      </li>
-      <li class="mg-games__news-item">
-        <span class="mg-games__news-date">2026-07-02</span>
-        <a href="https://liquipedia.net/" rel="noopener">顶级战队在下一个分赛段前调整阵容</a>
-      </li>
-    </ul>
+  <section class="mg-games__faq" id="faq">
+    <h2 class="mg-games__section-title">PUBG Mobile UC 充值常见问题</h2>
+    <p><strong>PUBG Mobile UC 价格多久更新一次？</strong></p>
+    <p>价格监测定时刷新 UC 价格，覆盖官方商城与第三方充值站点；价格表上方会显示最近更新时间。</p>
+    <p><strong>如何通过 AceBase 了解实时 PUBG Mobile UC 最低价格？</strong></p>
+    <p>点击「实时价格咨询」，客服会在在线咨询中提供最新报价。</p>
+    <p><strong>为什么 AceBase 的 UC 价格比官方便宜？</strong></p>
+    <p>我们对比多家第三方充值渠道的价格并让利给玩家。价格会波动，监测功能帮你抓住最低价时机。</p>
   </section>
 
 </div>
@@ -62,22 +53,32 @@ hide:
   "@graph": [
     {
       "@type": "Product",
-      "name": "PUBG Mobile 充值",
-      "description": "PUBG Mobile 折扣充值（全球服）。",
+      "name": "PUBG Mobile 充值价格监测",
+      "description": "实时监测 PUBG Mobile UC 全网充值价格，覆盖官方商城与第三方充值站点，逐档展示最低、最高与平均价，支持在线咨询折扣充值。",
       "brand": { "@type": "Brand", "name": "AceBase" },
+      "url": "https://acebase.cc/zh/games/pubg-mobile/",
       "offers": {
         "@type": "AggregateOffer",
         "priceCurrency": "USD",
-        "lowPrice": "0.79",
-        "highPrice": "321.76",
+        "lowPrice": "0.80",
+        "highPrice": "452.66",
+        "offerCount": "10",
         "availability": "https://schema.org/InStock"
       }
     },
     {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "首页", "item": "https://acebase.cc/zh/" },
+        { "@type": "ListItem", "position": 2, "name": "PUBG Mobile 充值", "item": "https://acebase.cc/zh/games/pubg-mobile/" }
+      ]
+    },
+    {
       "@type": "FAQPage",
       "mainEntity": [
-        { "@type": "Question", "name": "如何在 AceBase 充值 PUBG Mobile UC？", "acceptedAnswer": { "@type": "Answer", "text": "访问 PUBG Mobile 充值页面，选择档位，并在在线咨询中确认报价。" } },
-        { "@type": "Question", "name": "PUBG Mobile UC 充值安全吗？", "acceptedAnswer": { "@type": "Answer", "text": "安全。我们仅通过官方商城充值，详见安全指南。" } }
+        { "@type": "Question", "name": "PUBG Mobile UC 价格多久更新一次？", "acceptedAnswer": { "@type": "Answer", "text": "价格监测定时刷新 UC 价格，覆盖官方商城与第三方充值站点，价格表上方显示最近更新时间。" } },
+        { "@type": "Question", "name": "如何通过 AceBase 了解实时 PUBG Mobile UC 最低价格？", "acceptedAnswer": { "@type": "Answer", "text": "点击「实时价格咨询」，客服会在在线咨询中提供最新报价。" } },
+        { "@type": "Question", "name": "为什么 AceBase 的 UC 价格比官方便宜？", "acceptedAnswer": { "@type": "Answer", "text": "我们对比多家第三方充值渠道的价格并让利给玩家。价格会波动，监测功能帮你抓住最低价时机。" } }
       ]
     }
   ]
