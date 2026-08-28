@@ -14,7 +14,7 @@ hide:
       <h1 class="mg-games__title">RTX 4070 Ti Super</h1>
       <p class="mg-games__lead">Ada Lovelace 架构 &middot; 16GB GDDR6X &middot; DLSS 3 帧生成。全网价格走势与性能全貌（港币计价）。</p>
       <div class="mg-games__actions">
-        <a class="mg-games__btn mg-games__btn--primary ab-crisp-open" href="#" data-crisp-msg="你好，我想咨询 RTX 4070 Ti Super 显卡的实时价格。">显卡价格咨询</a>
+        <a class="mg-games__btn mg-games__btn--primary ab-crisp-open" href="#" data-crisp-msg="你好，我想咨询 PC 组装及搭配（RTX 4070 Ti Super）。">PC组装及搭配咨询</a>
       </div>
     </div>
   </section>
