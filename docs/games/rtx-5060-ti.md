@@ -1,6 +1,6 @@
 ---
 title: RTX 5060 Ti | 显卡价格监测
-description: RTX 5060 Ti 显卡价格监测与深度解析 —— Blackwell 2.0 架构、16GB GDDR7、DLSS 4 多帧生成。数据来自 Pangoly 全网价格监测，港币计价。
+description: RTX 5060 Ti 显卡价格监测与深度解析 —— Blackwell 2.0 架构、16GB GDDR7、DLSS 4 多帧生成，港币计价。
 hide:
   - title
   - toc
@@ -12,7 +12,7 @@ hide:
     <div class="mg-games__hero-body">
       <p class="mg-games__brand">AceBase</p>
       <h1 class="mg-games__title">RTX 5060 Ti</h1>
-      <p class="mg-games__lead">Blackwell 2.0 架构 &middot; 16GB GDDR7 &middot; DLSS 4 多帧生成。全网价格走势与性能全貌（港币计价），数据来自 Pangoly 全网价格监测。</p>
+      <p class="mg-games__lead">Blackwell 2.0 架构 &middot; 16GB GDDR7 &middot; DLSS 4 多帧生成。全网价格走势与性能全貌（港币计价）。</p>
       <div class="mg-games__actions">
         <a class="mg-games__btn mg-games__btn--primary ab-crisp-open" href="#" data-crisp-msg="你好，我想咨询 RTX 5060 Ti 显卡的实时价格。">显卡价格咨询</a>
       </div>

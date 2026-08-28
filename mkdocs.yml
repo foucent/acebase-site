@@ -99,9 +99,6 @@ extra:
     - icon: fontawesome/brands/youtube
       link: https://youtube.com/@acebase
       name: AceBase on YouTube
-    - icon: fontawesome/brands/discord
-      link: https://discord.gg/acebase
-      name: AceBase on Discord
 
 nav:
   - 首页: index.md
@@ -110,3 +107,10 @@ nav:
   - 显卡价格监测:
       - RTX 5060: games/rtx-5060.md
       - RTX 5060 Ti: games/rtx-5060-ti.md
+      - RTX 5050: games/rtx-5050.md
+      - RTX 3060: games/rtx-3060.md
+      - RTX 3060 Ti: games/rtx-3060-ti.md
+      - RTX 4070 Ti Super: games/rtx-4070-ti-super.md
+      - RTX 4080: games/rtx-4080.md
+      - RTX 4080 Super: games/rtx-4080-super.md
+      - RTX 4090: games/rtx-4090.md
