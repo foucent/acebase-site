@@ -129,7 +129,7 @@
     var gallery = [];
     var title = "";
     var lookId = "";
-    var buyUrl = "/shop/";
+    var buyUrl = "/gift-cards/";
     var idx = 0;
     var open = false;
     var buyTimer = null;
@@ -176,7 +176,7 @@
       gallery = parseGallery(tile);
       title = tile.getAttribute("title") || "";
       lookId = lookIdFromTile(tile, gallery);
-      buyUrl = tile.getAttribute("data-buy") || "/shop/";
+      buyUrl = tile.getAttribute("data-buy") || "/gift-cards/";
       buy.href = buyUrl;
       show(typeof start === "number" ? start : 0);
       box.hidden = false;

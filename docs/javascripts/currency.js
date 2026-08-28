@@ -1,8 +1,9 @@
 (function () {
   "use strict";
 
-  // Multi-currency (USD / TWD / HKD / EUR) price renderer + header switcher.
-  // All data-price / data-was / data-ab-amount values on the site are USD.
+  // Multi-currency (HKD / TWD) price renderer + header switcher.
+  // All data-price / data-was / data-ab-amount values on the site are USD
+  // (internal base); HKD and TWD are the only display currencies.
   // Rates come from open.er-api.com (free, no key), cached 24h; a fixed
   // fallback table keeps prices rendering if the API is unreachable.
 
@@ -10,11 +11,11 @@
   var RATES_KEY = "acebase_fx_rates";
   var RATES_TTL = 24 * 60 * 60 * 1000; // 24 hours
 
-  var CURRENCIES = ["USD", "TWD", "HKD", "EUR"];
-  var DEFAULT_RATES = { USD: 1, TWD: 32.5, HKD: 7.8, EUR: 0.92 };
-  var SYMBOLS = { USD: "US$", TWD: "NT$", HKD: "HK$", EUR: "€" };
+  var CURRENCIES = ["HKD", "TWD"];
+  var DEFAULT_RATES = { USD: 1, HKD: 7.8, TWD: 32.5 };
+  var SYMBOLS = { HKD: "HK$", TWD: "NT$" };
 
-  var current = "USD";
+  var current = "HKD";
   var rates = {};
   var listeners = [];
 

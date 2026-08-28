@@ -13,8 +13,8 @@
   border-radius: 0.75rem;
   min-height: 16.5rem;
   background:
-    linear-gradient(105deg, rgba(15, 61, 58, 0.92) 0%, rgba(15, 118, 110, 0.78) 48%, rgba(15, 23, 42, 0.55) 100%),
-    var(--mg-home-hero-image) center / cover no-repeat;
+    linear-gradient(105deg, rgba(15, 61, 58, 0.92) 0%, rgba(15, 118, 110, 0.78) 48%, rgba(15, 23, 42, 0.55) 100%)
+    center / cover no-repeat;
   box-shadow: 0 8px 28px rgba(15, 118, 110, 0.18);
 }
 
@@ -168,50 +168,6 @@
   line-height: 1.35;
 }
 
-.mg-home .mg-home-help {
-  margin: 0 0 0.35rem;
-  padding: 0.85rem 1rem;
-  border-radius: 0.55rem;
-  background: rgba(13, 148, 136, 0.14);
-  border: 1px solid rgba(94, 234, 212, 0.28);
-}
-
-.mg-home .mg-home-help__text {
-  margin: 0 0 0.55rem !important;
-  color: #99f6e4 !important;
-  font-size: 0.78rem !important;
-  font-weight: 500 !important;
-  line-height: 1.4 !important;
-}
-
-.mg-home .mg-home-help__links {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.45rem 0.85rem;
-  margin: 0 !important;
-}
-
-.mg-home .mg-home-help__links a {
-  color: #5eead4 !important;
-  font-size: 0.78rem !important;
-  font-weight: 700 !important;
-  text-decoration: none !important;
-}
-
-.mg-home .mg-home-help__links a:hover {
-  text-decoration: underline !important;
-}
-
-.md-typeset .mg-home-guides,
-.md-typeset .mg-home-gallery {
-  margin-top: 1.35rem;
-}
-
-.md-typeset .mg-home-guides h2,
-.md-typeset .mg-home-gallery h2 {
-  margin-top: 0 !important;
-}
-
 @media (max-width: 700px) {
   .mg-home {
     margin: 0 -0.8rem 0.75rem;
@@ -227,8 +183,8 @@
         rgba(15, 61, 58, 0.55) 0%,
         rgba(15, 118, 110, 0.72) 42%,
         rgba(15, 23, 42, 0.92) 100%
-      ),
-      var(--mg-home-hero-image) 72% center / cover no-repeat;
+      )
+      center / cover no-repeat;
     box-shadow: none;
   }
 
@@ -272,8 +228,7 @@
     font-size: 0.84rem !important;
   }
 
-  .mg-home .mg-home-cats,
-  .mg-home .mg-home-help {
+  .mg-home .mg-home-cats {
     margin-left: 0.8rem;
     margin-right: 0.8rem;
   }
@@ -323,29 +278,6 @@
     line-height: 1.3;
   }
 
-  .mg-home .mg-home-help {
-    margin-top: 0.15rem;
-    margin-bottom: 0.25rem;
-    padding: 0.9rem 0.95rem;
-  }
-
-  .mg-home .mg-home-help__text {
-    font-size: 0.76rem !important;
-  }
-
-  .mg-home .mg-home-help__links {
-    gap: 0.55rem 1rem;
-  }
-
-  .mg-home .mg-home-help__links a {
-    font-size: 0.8rem !important;
-  }
-
-  .md-typeset .mg-home-guides,
-  .md-typeset .mg-home-gallery {
-    margin-left: 0.8rem;
-    margin-right: 0.8rem;
-  }
 }
 
 @media (max-width: 380px) {
@@ -355,5 +287,112 @@
 
   .mg-home .mg-home-hero__title {
     font-size: 1.28rem !important;
+  }
+}
+
+/* ---------------------------------------------------------------------------
+   Guides worth reading — uncrate-style guide cards (mimics mygear.top home).
+   Thumbnail image, gold uppercase category rule, uppercase title, serif
+   excerpt, "Read More" link — 2-col grid, adapted for the dark theme.
+--------------------------------------------------------------------------- */
+.md-typeset .mg-guides {
+  margin: 0.2rem 0 0.5rem;
+}
+.md-typeset .mg-guides h2 {
+  margin-top: 0 !important;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #f8fafc;
+}
+.md-typeset .mg-guides__grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 2.2rem 1.6rem;
+  align-items: start;
+  margin: 1rem 0 0;
+}
+.md-typeset .mg-guide-card {
+  display: block;
+  color: inherit;
+  text-decoration: none;
+  -webkit-tap-highlight-color: transparent;
+}
+.md-typeset .mg-guide-card__media {
+  position: relative;
+  overflow: hidden;
+  aspect-ratio: 4 / 3;
+  background: #0f172a;
+  border-radius: 0.5rem;
+  border: 1px solid #1e293b;
+}
+.md-typeset .mg-guide-card__media img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease, opacity 0.3s ease;
+}
+.md-typeset .mg-guide-card:hover .mg-guide-card__media img,
+.md-typeset .mg-guide-card:focus .mg-guide-card__media img {
+  transform: scale(1.03);
+  opacity: 0.92;
+}
+.md-typeset .mg-guide-card__body {
+  padding-top: 0.85rem;
+}
+.md-typeset .mg-guide-card__cat {
+  display: inline-block;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 0.6rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #ae9e85;
+  border-bottom: 1px solid #ae9e85;
+  padding-bottom: 0.22rem;
+  margin-bottom: 0.7rem;
+}
+.md-typeset .mg-guide-card__title {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 1.35rem;
+  font-weight: 700;
+  line-height: 1.08;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+  color: #f8fafc;
+}
+.md-typeset .mg-guide-card:hover .mg-guide-card__title,
+.md-typeset .mg-guide-card:focus .mg-guide-card__title {
+  color: #ffffff;
+  text-decoration: underline;
+  text-underline-offset: 0.25em;
+  text-decoration-thickness: 1px;
+}
+.md-typeset .mg-guide-card__excerpt {
+  margin-top: 0.55rem;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 0.78rem;
+  line-height: 1.55;
+  color: #94a3b8;
+}
+.md-typeset .mg-guide-card__link {
+  display: inline-block;
+  margin-top: 0.65rem;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #ae9e85;
+  border-bottom: 1px solid transparent;
+}
+.md-typeset .mg-guide-card:hover .mg-guide-card__link,
+.md-typeset .mg-guide-card:focus .mg-guide-card__link {
+  border-bottom-color: #ae9e85;
+}
+@media (max-width: 759.98px) {
+  .md-typeset .mg-guides__grid {
+    grid-template-columns: 1fr;
+    gap: 1.6rem;
   }
 }

@@ -3,7 +3,7 @@ site_url: https://acebase.cc/
 theme:
   name: material
   custom_dir: overrides
-  language: en
+  language: zh
   palette:
     scheme: slate
     primary: custom
@@ -19,34 +19,6 @@ theme:
     - navigation.indexes
 
 plugins:
-  - i18n:
-      docs_structure: folder
-      fallback_to_default: true
-      reconfigure_material: true
-      reconfigure_search: true
-      languages:
-        - locale: en
-          name: English
-          default: true
-          build: true
-        - locale: zh
-          name: 中文
-          build: true
-          nav:
-            - 首页: index.md
-            - 价格:
-                - PUBG Mobile: games/pubg-mobile.md
-                - PUBG G-COIN: games/pubg-gcoin.md
-            - 租赁:
-                - 三角洲行动: games/delta-force.md
-            - 画廊: gallery/index.md
-            - 关于:
-                - 常见问题与更新: shop/faq-and-updates.md
-                - 发货与配送: shop/shipping-and-delivery.md
-                - 充值安全指南: legal/safety.md
-                - 退货政策: legal/return-policy.md
-                - 反洗钱政策: legal/aml-policy.md
-                - 使用条款: legal/terms-of-use.md
   - search
   - minify:
       # HTML minification strips attribute quotes, breaking data-gallery JSON
@@ -66,12 +38,11 @@ plugins:
         gallery/figures.md: gallery/index.md
         gallery/coser.md: gallery/index.md
         gallery/pre-owned.md: gallery/index.md
-        games/honor-of-kings.md: games/pubg-mobile.md
-        games/steam-accounts.md: games/delta-force.md
-        games/valorant-accounts.md: games/delta-force.md
+        games/honor-of-kings.md: index.md
+        games/steam-accounts.md: index.md
+        games/valorant-accounts.md: index.md
         currency/index.md: index.md
         games/buy-robux.md: index.md
-        guides/safety.md: legal/safety.md
 
 markdown_extensions:
   - admonition
@@ -89,7 +60,6 @@ markdown_extensions:
 
 extra_css:
   - stylesheets/extra.css
-  - stylesheets/offgamers-pubg.css
   - stylesheets/bittopup-product.css
   - stylesheets/preowned.css
   - stylesheets/photo-wall.css
@@ -97,6 +67,8 @@ extra_css:
   - stylesheets/board-games.css
   - stylesheets/games.css
   - stylesheets/currency.css
+  - stylesheets/gift-cards.css
+  - stylesheets/gpu.css
 
 extra_javascript:
   - javascripts/currency.js
@@ -106,8 +78,8 @@ extra_javascript:
   - javascripts/gallery-lightbox.js
   - javascripts/board-cart.js
   - javascripts/board-grid.js
+  - javascripts/gift-cards.js
   - javascripts/games-prices.js
-  - javascripts/delta-force-pager.js
 
 watch:
   - overrides
@@ -132,17 +104,9 @@ extra:
       name: AceBase on Discord
 
 nav:
-  - Home: index.md
-  - Prices:
-      - PUBG Mobile: games/pubg-mobile.md
-      - PUBG G-COIN: games/pubg-gcoin.md
-  - Rental:
-      - Delta Force Accounts: games/delta-force.md
-  - Gallery: gallery/index.md
-  - About:
-      - FAQ & Updates: shop/faq-and-updates.md
-      - Delivery: shop/shipping-and-delivery.md
-      - Top-Up Safety Guide: legal/safety.md
-      - Return Policy: legal/return-policy.md
-      - AML / CTF Policy: legal/aml-policy.md
-      - Terms of Use: legal/terms-of-use.md
+  - 首页: index.md
+  - 儲值: gift-cards/index.md
+  - 画廊: gallery/index.md
+  - 显卡价格监测:
+      - RTX 5060: games/rtx-5060.md
+      - RTX 5060 Ti: games/rtx-5060-ti.md

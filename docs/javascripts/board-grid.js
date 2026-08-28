@@ -25,18 +25,32 @@
   }
 
   function buildShopGrid() {
-    var wrap = $(".mg-price-table");
-    if (!wrap || wrap.dataset.mgGridReady === "1") return;
-    var table = wrap.querySelector("table");
-    if (!table) return;
-    wrap.dataset.mgGridReady = "1";
+    // Process every .mg-price-table (gift cards + cdkeys sections share the page).
+    $all(".mg-price-table").forEach(function (wrap) {
+      if (wrap.dataset.mgGridReady === "1") return;
+      var table = wrap.querySelector("table");
+      if (!table) return;
+      wrap.dataset.mgGridReady = "1";
 
-    var isEn = (document.documentElement.lang || "").toLowerCase().indexOf("en") === 0;
+      var isEn = (document.documentElement.lang || "").toLowerCase().indexOf("en") === 0;
+    // Gift cards: stock badge + a --giftcards grid so gift-cards.js can add
+    // the denomination dropdown to each card (mirrors mygear rubbers).
+    var isGift = wrap.classList.contains("mg-price-table--giftcards");
     var addLabel = isEn ? "Add to cart" : "加入购物车";
-    var badgeLabel = isEn ? "Proxy" : "代购";
+    var badgeLabel = isGift
+      ? isEn ? "In stock" : "在售"
+      : isEn ? "Proxy" : "代购";
+    var badgeCls = isGift
+      ? "mg-preowned-card__badge--stock"
+      : "mg-preowned-card__badge--proxy";
+    var cardCls = isGift
+      ? "mg-preowned-card mg-preowned-card--stock"
+      : "mg-preowned-card mg-preowned-card--proxy";
 
     var grid = document.createElement("div");
-    grid.className = "mg-preowned-grid mg-preowned-grid--shop";
+    grid.className =
+      "mg-preowned-grid mg-preowned-grid--shop" +
+      (isGift ? " mg-preowned-grid--giftcards" : "");
     grid.setAttribute("role", "list");
 
     $all("tbody tr", table).forEach(function (tr) {
@@ -49,7 +63,7 @@
       if (!name || !(price >= 0)) return;
 
       var card = document.createElement("article");
-      card.className = "mg-preowned-card mg-preowned-card--proxy";
+      card.className = cardCls;
       card.setAttribute("role", "listitem");
       card.dataset.name = name;
       card.dataset.price = String(price);
@@ -62,7 +76,7 @@
         media.appendChild(img);
       }
       var badge = document.createElement("span");
-      badge.className = "mg-preowned-card__badge mg-preowned-card__badge--proxy";
+      badge.className = "mg-preowned-card__badge " + badgeCls;
       badge.textContent = badgeLabel;
       media.appendChild(badge);
 
@@ -99,12 +113,13 @@
       table.remove();
     }
 
-    var meta = $(".mg-rubbers-showing");
-    if (meta) {
-      meta.textContent = isEn
-        ? "Showing " + grid.children.length + " results"
-        : "共 " + grid.children.length + " 款";
-    }
+      var meta = $(".mg-rubbers-showing");
+      if (meta) {
+        meta.textContent = isEn
+          ? "Showing " + grid.children.length + " results"
+          : "共 " + grid.children.length + " 款";
+      }
+    });
   }
 
   if (document.readyState === "loading") {
