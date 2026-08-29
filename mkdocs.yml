@@ -43,6 +43,8 @@ plugins:
         games/valorant-accounts.md: index.md
         currency/index.md: index.md
         games/buy-robux.md: index.md
+        games/pubg-mobile.md: games/topup-prices.md
+        games/pubg-gcoin.md: games/topup-prices.md
 
 markdown_extensions:
   - admonition
@@ -114,6 +116,5 @@ nav:
       - RTX 4080: games/rtx-4080.md
       - RTX 4080 Super: games/rtx-4080-super.md
       - RTX 4090: games/rtx-4090.md
-  - 游戏代储价格监测:
-      - PUBG Mobile: games/pubg-mobile.md
-      - PUBG G-COIN: games/pubg-gcoin.md
+  - 代储价格监测:
+      - 热门代储价格监测: games/topup-prices.md
