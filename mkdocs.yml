@@ -93,7 +93,7 @@ extra:
   snipcart_public_key: "MjA4M2Y2NmMtMjBmNi00Y2Q4LThlNzYtNDA1ZDhlNTU0OTQ2NjM5MjAxNTQ1NTQwOTM1OTI4"
   analytics:
     provider: google
-    property: G-Q77Y59HQ7K
+    property: G-N7QW2VCWYG
   social:
     - icon: material/controller-classic
       link: https://acebase.cc/
