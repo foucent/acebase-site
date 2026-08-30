@@ -23,9 +23,9 @@ description: 全球电竞周边站 — 游戏充值折扣与图库。在线咨�
     <h2 class="mg-home-section-title">商店</h2>
     <div class="mg-home-cats__grid">
       <a class="mg-home-cat" href="/gift-cards/">
-        <img class="mg-home-cat__img" src="/assets/gift-cards/fortnite-card.webp" alt="储值" loading="lazy">
+        <img class="mg-home-cat__img" src="/assets/gift-cards/fortnite-card.webp" alt="礼品卡" loading="lazy">
         <span class="mg-home-cat__body">
-          <span class="mg-home-cat__name">储值</span>
+          <span class="mg-home-cat__name">礼品卡</span>
           <span class="mg-home-cat__desc">礼品卡与数字卡密</span>
         </span>
       </a>

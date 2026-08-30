@@ -1,5 +1,5 @@
 ---
-title: 热门代储价格监测 | 代储价格监测
+title: 代储价格监测 | 代储价格监测
 description: 实时监测 PUBG Mobile UC 与 PUBG G-COIN 全网充值价格，对比官方商城与多家第三方充值站点最低/最高/平均价，捕捉折扣并安全快捷充值。
 hide:
   - title
@@ -11,10 +11,10 @@ hide:
   <section class="mg-games__hero" style="--mg-games-hero-image: url('/assets/games/pubg-mobile.svg')">
     <div class="mg-games__hero-body">
       <p class="mg-games__brand">AceBase</p>
-      <h1 class="mg-games__title">热门代储价格监测</h1>
+      <h1 class="mg-games__title">代储价格监测</h1>
       <p class="mg-games__lead">实时监测 PUBG Mobile UC 与 PUBG G-COIN 在官方商城与多家第三方充值站点的价格，每档展示最低、最高与平均价。</p>
       <div class="mg-games__actions">
-        <a class="mg-games__btn mg-games__btn--primary ab-crisp-open" href="#" data-crisp-msg="你好，我想咨询 PUBG 充值的实时价格。">实时价格咨询</a>
+        <a class="mg-games__btn mg-games__btn--primary ab-crisp-open" href="#" data-crisp-msg="你好，我想咨询 PUBG 充值的实时价格。">实时代储价格咨询</a>
       </div>
     </div>
   </section>
@@ -46,7 +46,7 @@ hide:
     <p><strong>PUBG 充值价格多久更新一次？</strong></p>
     <p>价格监测定时刷新 UC 与 G-COIN 价格，覆盖官方商城与第三方充值站点；价格表上方会显示最近更新时间。</p>
     <p><strong>如何通过 AceBase 了解实时最低价格？</strong></p>
-    <p>点击「实时价格咨询」，客服会在在线咨询中提供最新报价。</p>
+    <p>点击「实时代储价格咨询」，客服会在在线咨询中提供最新报价。</p>
     <p><strong>为什么 AceBase 的价格比官方便宜？</strong></p>
     <p>我们对比多家第三方充值渠道的价格并让利给玩家。价格会波动，监测功能帮你抓住最低价时机。</p>
   </section>
@@ -55,7 +55,7 @@ hide:
 
 <div class="admonition note mg-games__note">
   <p class="admonition-title">相关</p>
-  <p><a href="/games/rtx-5060/">RTX 5060</a> &middot; <a href="/gift-cards/">儲值</a> &middot; <a href="/gallery/">画廊</a></p>
+  <p><a href="/games/rtx-5060/">RTX 5060</a> &middot; <a href="/gift-cards/">礼品卡</a> &middot; <a href="/gallery/">画廊</a></p>
 </div>
 
 <script type="application/ld+json">
@@ -103,7 +103,7 @@ hide:
       "@type": "FAQPage",
       "mainEntity": [
         { "@type": "Question", "name": "PUBG 充值价格多久更新一次？", "acceptedAnswer": { "@type": "Answer", "text": "价格监测定时刷新 UC 与 G-COIN 价格，覆盖官方商城与第三方充值站点，价格表上方显示最近更新时间。" } },
-        { "@type": "Question", "name": "如何通过 AceBase 了解实时最低价格？", "acceptedAnswer": { "@type": "Answer", "text": "点击「实时价格咨询」，客服会在在线咨询中提供最新报价。" } },
+        { "@type": "Question", "name": "如何通过 AceBase 了解实时最低价格？", "acceptedAnswer": { "@type": "Answer", "text": "点击「实时代储价格咨询」，客服会在在线咨询中提供最新报价。" } },
         { "@type": "Question", "name": "为什么 AceBase 的价格比官方便宜？", "acceptedAnswer": { "@type": "Answer", "text": "我们对比多家第三方充值渠道的价格并让利给玩家。价格会波动，监测功能帮你抓住最低价时机。" } }
       ]
     }

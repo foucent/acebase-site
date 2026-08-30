@@ -23,14 +23,11 @@ hide:
       <p class="mg-home-hero__lead">电子礼品卡 · 卡密秒发。在商品下方选择面额，价格自动更新（默认 HKD，可在页头切换货币），覆盖 Amazon、Apple、Google Play、Netflix、Xbox、Kammelna 以及 Fortnite、Apex Legends、PSN、Nintendo、Steam 等 CDKeys 数字卡密。</p>
       <div class="mg-home-hero__actions">
         <a class="mg-home-hero__btn mg-home-hero__btn--primary ab-crisp-open" href="#" data-crisp-msg="你好，我想咨询礼品卡的价格与面额。">在线咨询</a>
-        <a class="mg-home-hero__btn mg-home-hero__btn--ghost" href="/games/rtx-5060/">显卡价格监测</a>
       </div>
     </div>
   </section>
 
 </div>
-
-## 在售礼品卡 <span class="mg-list-badge mg-list-badge--stock">在售</span>
 
 <div class="admonition note mg-games__note mg-list-note">
   <p class="admonition-title">在售</p>
@@ -50,13 +47,6 @@ hide:
 
 </div>
 
-## CDKeys 卡密 <span class="mg-list-badge mg-list-badge--stock">在售</span>
-
-<div class="admonition note mg-games__note mg-list-note">
-  <p class="admonition-title">在售</p>
-  <p>以下为<strong>数字卡密</strong>（激活码 / 充值码），支付后自动发放兑换码，通常几分钟内到账。目前<strong>全场 9 折</strong>促销中；在商品名下方<strong>选择面额</strong>，价格会自动更新。</p>
-</div>
-
 <div class="mg-price-table mg-price-table--giftcards mg-price-table--nopager" markdown="1">
 
 | | 商品 | 价格（USD） |
@@ -70,11 +60,6 @@ hide:
 | <img src="/assets/gift-cards/steam-wallet.png" alt="Steam 钱包充值码（美国）" data-denoms="5 USD:5.12,10 USD:10.16,20 USD:20.33,25 USD:25.19,30 USD:28.61,50 USD:47.69,100 USD:99.27" data-discount="-1%"> | Steam 钱包充值码（美国） | <span class="ab-money" data-ab-amount="5.12" data-ab-base="USD">US$ 5.12</span> |
 | <img src="/assets/gift-cards/gocash-card.png" alt="GoCash 充值卡（全球）" data-denoms="5 USD:4.31,10 USD:8.54,15 USD:13.49,20 USD:17.09,50 USD:43.19,100 USD:86.39" data-discount="-5%"> | GoCash 充值卡（全球） | <span class="ab-money" data-ab-amount="4.31" data-ab-base="USD">US$ 4.31</span> |
 
-</div>
-
-<div class="admonition note mg-games__note">
-  <p class="admonition-title">提示</p>
-  <p>Jawaker 礼品卡在供应方处已售罄，暂不提供。CDKeys 部分商品支持其他地区 / 币种版本（如 eShop EUR、JPY，Steam 多币种等），可在线咨询。地区与币种请在下单前与客服确认，卡密一经发放视为交付完成，通常不支持退款。</p>
 </div>
 
 ## 礼品卡常见问题
@@ -99,30 +84,22 @@ hide:
       "@type": "ItemList",
       "name": "礼品卡",
       "url": "https://acebase.cc/gift-cards/",
-      "numberOfItems": "6",
+      "numberOfItems": "14",
       "itemListElement": [
         { "@type": "Product", "position": 1, "name": "Amazon 礼品卡（美国）" },
         { "@type": "Product", "position": 2, "name": "Apple 礼品卡" },
         { "@type": "Product", "position": 3, "name": "Google Play 礼品卡" },
         { "@type": "Product", "position": 4, "name": "Netflix 礼品卡（美国）" },
         { "@type": "Product", "position": 5, "name": "Xbox Live 礼品卡" },
-        { "@type": "Product", "position": 6, "name": "Kammelna 礼品卡" }
-      ]
-    },
-    {
-      "@type": "ItemList",
-      "name": "CDKeys 卡密",
-      "url": "https://acebase.cc/gift-cards/#cdkeys-卡密",
-      "numberOfItems": "8",
-      "itemListElement": [
-        { "@type": "Product", "position": 1, "name": "Fortnite 充值卡（V-Bucks）" },
-        { "@type": "Product", "position": 2, "name": "Apex Legends 充值卡（Coins）" },
-        { "@type": "Product", "position": 3, "name": "PlayStation Network 充值卡（美国）" },
-        { "@type": "Product", "position": 4, "name": "PUBG G-COIN 卡密" },
-        { "@type": "Product", "position": 5, "name": "Nintendo Switch Online 会员资格" },
-        { "@type": "Product", "position": 6, "name": "Nintendo eShop 充值卡（美国）" },
-        { "@type": "Product", "position": 7, "name": "Steam 钱包充值码（美国）" },
-        { "@type": "Product", "position": 8, "name": "GoCash 充值卡（全球）" }
+        { "@type": "Product", "position": 6, "name": "Kammelna 礼品卡" },
+        { "@type": "Product", "position": 7, "name": "Fortnite 充值卡（V-Bucks）" },
+        { "@type": "Product", "position": 8, "name": "Apex Legends 充值卡（Coins）" },
+        { "@type": "Product", "position": 9, "name": "PlayStation Network 充值卡（美国）" },
+        { "@type": "Product", "position": 10, "name": "PUBG G-COIN 卡密" },
+        { "@type": "Product", "position": 11, "name": "Nintendo Switch Online 会员资格" },
+        { "@type": "Product", "position": 12, "name": "Nintendo eShop 充值卡（美国）" },
+        { "@type": "Product", "position": 13, "name": "Steam 钱包充值码（美国）" },
+        { "@type": "Product", "position": 14, "name": "GoCash 充值卡（全球）" }
       ]
     },
     {

@@ -104,7 +104,8 @@ extra:
 
 nav:
   - 首页: index.md
-  - 儲值: gift-cards/index.md
+  - 礼品卡: gift-cards/index.md
+  - 代储价格监测: games/topup-prices.md
   - 画廊: gallery/index.md
   - 显卡价格监测:
       - RTX 5060: games/rtx-5060.md
@@ -116,5 +117,3 @@ nav:
       - RTX 4080: games/rtx-4080.md
       - RTX 4080 Super: games/rtx-4080-super.md
       - RTX 4090: games/rtx-4090.md
-  - 代储价格监测:
-      - 热门代储价格监测: games/topup-prices.md
