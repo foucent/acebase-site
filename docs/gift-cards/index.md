@@ -20,18 +20,13 @@ hide:
     <div class="mg-home-hero__inner">
       <p class="mg-home-hero__brand">AceBase</p>
       <h1 class="mg-home-hero__title">礼品卡</h1>
-      <p class="mg-home-hero__lead">电子礼品卡 · 卡密秒发。在商品下方选择面额，价格自动更新（默认 HKD，可在页头切换货币），覆盖 Amazon、Apple、Google Play、Netflix、Xbox、Kammelna 以及 Fortnite、Apex Legends、PSN、Nintendo、Steam 等 CDKeys 数字卡密。</p>
+      <p class="mg-home-hero__lead">电子礼品卡 · 卡密秒发。覆盖 Amazon、Apple、Google Play、Netflix、Xbox、Kammelna 以及 Fortnite、Apex Legends、PSN、Nintendo、Steam 等 CDKeys 数字卡密。</p>
       <div class="mg-home-hero__actions">
         <a class="mg-home-hero__btn mg-home-hero__btn--primary ab-crisp-open" href="#" data-crisp-msg="你好，我想咨询礼品卡的价格与面额。">在线咨询</a>
       </div>
     </div>
   </section>
 
-</div>
-
-<div class="admonition note mg-games__note mg-list-note">
-  <p class="admonition-title">在售</p>
-  <p>以下礼品卡均为<strong>卡密直发</strong>，支付后自动发放，通常几分钟内到账。目前<strong>全场 9 折</strong>促销中；在商品名下方<strong>选择面额</strong>，价格会自动更新。</p>
 </div>
 
 <div class="mg-price-table mg-price-table--giftcards mg-price-table--nopager" markdown="1">

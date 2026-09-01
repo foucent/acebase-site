@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-10",
+  "updated": "2026-09-02",
   "games": {
     "valorant": [
       {
@@ -261,6 +261,136 @@
         "title": "13,000 + 640 Bonds",
         "official": 191.71,
         "acebase": 115.37
+      }
+    ],
+    "hok": [
+      {
+        "title": "80 点券",
+        "lowest": 0.75,
+        "highest": 0.83,
+        "average": 0.79
+      },
+      {
+        "title": "240 点券",
+        "lowest": 2.29,
+        "highest": 2.51,
+        "average": 2.4
+      },
+      {
+        "title": "400 点券",
+        "lowest": 3.83,
+        "highest": 4.18,
+        "average": 4.0
+      },
+      {
+        "title": "560 点券",
+        "lowest": 5.37,
+        "highest": 5.85,
+        "average": 5.61
+      },
+      {
+        "title": "800 + 30 点券",
+        "lowest": 7.67,
+        "highest": 8.36,
+        "average": 8.02
+      },
+      {
+        "title": "1200 + 45 点券",
+        "lowest": 11.5,
+        "highest": 12.92,
+        "average": 12.21
+      },
+      {
+        "title": "2400 + 108 点券",
+        "lowest": 23.02,
+        "highest": 26.16,
+        "average": 24.59
+      },
+      {
+        "title": "4000 + 180 点券",
+        "lowest": 38.37,
+        "highest": 43.76,
+        "average": 41.06
+      },
+      {
+        "title": "8000 + 360 点券",
+        "lowest": 76.75,
+        "highest": 87.14,
+        "average": 81.94
+      }
+    ],
+    "where-winds-meet": [
+      {
+        "title": "60 Echo Beads",
+        "lowest": 0.88,
+        "highest": 0.94,
+        "average": 0.91
+      },
+      {
+        "title": "180 Echo Beads",
+        "lowest": 2.68,
+        "highest": 2.71,
+        "average": 2.7
+      },
+      {
+        "title": "300 Echo Beads",
+        "lowest": 4.42,
+        "highest": 4.57,
+        "average": 4.5
+      },
+      {
+        "title": "600 Echo Beads",
+        "lowest": 8.86,
+        "highest": 9.08,
+        "average": 8.97
+      },
+      {
+        "title": "900 Echo Beads",
+        "lowest": 13.39,
+        "highest": 14.19,
+        "average": 13.79
+      },
+      {
+        "title": "1800 Echo Beads",
+        "lowest": 26.73,
+        "highest": 28.83,
+        "average": 27.78
+      },
+      {
+        "title": "3000 Echo Beads",
+        "lowest": 44.32,
+        "highest": 47.44,
+        "average": 45.88
+      },
+      {
+        "title": "6000 Echo Beads",
+        "lowest": 88.64,
+        "highest": 95.88,
+        "average": 92.26
+      },
+      {
+        "title": "12000 Echo Beads",
+        "lowest": 177.52,
+        "highest": 197.24,
+        "average": 187.38
+      },
+      {
+        "title": "Monthly Pass",
+        "lowest": 4.42,
+        "highest": 4.58,
+        "average": 4.5
+      },
+      {
+        "title": "Elite Battle Pass",
+        "lowest": 9.08,
+        "highest": 9.08,
+        "average": 9.08
+      },
+      {
+        "title": "Premium Battle Pass",
+        "lowest": 17.75,
+        "highest": 19.01,
+        "average": 18.38
       }
     ]
   },
