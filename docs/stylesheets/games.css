@@ -706,3 +706,289 @@
   border-color: rgba(100, 116, 139, 0.3);
   background: transparent;
 }
+
+/* —— 游戏资讯页内容面板（燕云十六声等）：chips / stats / intro / features / facts —— */
+
+.mg-games__panel {
+  margin: 0 0 1.4rem;
+  padding: 1.1rem 1.1rem 0.95rem;
+  border-radius: 0.6rem;
+  background: rgba(76, 29, 149, 0.07);
+  border: 1px solid rgba(124, 58, 237, 0.16);
+}
+
+.mg-games__panel .mg-games__section-title {
+  margin-bottom: 0.7rem !important;
+}
+
+/* 标签 chips（置于 hero 内时底色加深以保证可读） */
+.mg-games__chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin: 0.2rem 0 0.9rem !important;
+  padding: 0 !important;
+  list-style: none !important;
+}
+
+.mg-games__chip {
+  display: inline-block;
+  padding: 0.16rem 0.6rem;
+  border-radius: 999px;
+  background: rgba(15, 23, 42, 0.55);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: #e2e8f0 !important;
+  font-size: 0.7rem !important;
+  font-weight: 700 !important;
+  line-height: 1.5 !important;
+  white-space: nowrap;
+}
+
+.mg-games__chip--score {
+  border-color: rgba(37, 211, 102, 0.45);
+  background: rgba(37, 211, 102, 0.14);
+  color: #4ade80 !important;
+}
+
+/* 热度/口碑统计带 */
+.mg-games__stats {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.6rem;
+  margin: 0 0 1.4rem;
+}
+
+@media (min-width: 760px) {
+  .mg-games__stats {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+
+.mg-games__stat {
+  padding: 0.7rem 0.8rem;
+  border-radius: 0.6rem;
+  background: rgba(76, 29, 149, 0.07);
+  border: 1px solid rgba(124, 58, 237, 0.14);
+}
+
+.mg-games__stat-num {
+  display: block;
+  color: #e2e8f0;
+  font-size: 1.1rem;
+  font-weight: 900;
+  letter-spacing: -0.01em;
+  line-height: 1.15;
+}
+
+.mg-games__stat-num small {
+  font-size: 0.7rem;
+  font-weight: 800;
+  color: #a78bfa;
+}
+
+.mg-games__stat-label {
+  display: block;
+  margin-top: 0.14rem;
+  color: #64748b;
+  font-size: 0.68rem;
+  font-weight: 600;
+}
+
+/* 简介正文 */
+.mg-games__lead-text {
+  margin: 0 !important;
+  color: #cbd5e1 !important;
+  font-size: 0.88rem !important;
+  line-height: 1.75 !important;
+}
+
+.mg-games__lead-text + .mg-games__lead-text {
+  margin-top: 0.7rem !important;
+}
+
+.mg-games__lead-text strong {
+  color: #f1f5f9 !important;
+}
+
+/* 玩法特色卡片 */
+.mg-games__features {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.7rem;
+  margin: 0.9rem 0 0.2rem !important;
+}
+
+@media (min-width: 760px) {
+  .mg-games__features {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .mg-games__features .mg-games__feature:last-child:nth-child(odd) {
+    grid-column: 1 / -1;
+  }
+}
+
+.mg-games__feature {
+  padding: 0.9rem 0.95rem 0.85rem;
+  border-radius: 0.55rem;
+  background: rgba(30, 41, 59, 0.45);
+  border: 1px solid rgba(148, 163, 184, 0.16);
+}
+
+.mg-games__feature-title {
+  margin: 0 0 0.12rem !important;
+  color: #f1f5f9 !important;
+  font-size: 0.98rem !important;
+  font-weight: 800 !important;
+}
+
+.mg-games__feature-kicker {
+  margin: 0 0 0.45rem !important;
+  color: #a78bfa !important;
+  font-size: 0.7rem !important;
+  font-weight: 800 !important;
+  letter-spacing: 0.04em;
+}
+
+.mg-games__feature-motto {
+  display: inline-block;
+  margin: 0 0 0.55rem !important;
+  padding: 0.1rem 0.6rem;
+  border-radius: 999px;
+  background: rgba(124, 58, 237, 0.16);
+  color: #c4b5fd !important;
+  font-size: 0.7rem !important;
+  font-weight: 800 !important;
+  line-height: 1.5 !important;
+}
+
+.mg-games__feature p {
+  margin: 0 !important;
+  color: #94a3b8 !important;
+  font-size: 0.8rem !important;
+  line-height: 1.65 !important;
+}
+
+/* 游戏档案 key/value */
+.mg-games__facts {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0 1rem;
+  margin: 0 !important;
+}
+
+@media (min-width: 760px) {
+  .mg-games__facts {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+.mg-games__fact {
+  display: flex;
+  gap: 0.55rem;
+  padding: 0.4rem 0;
+  border-bottom: 1px dashed rgba(148, 163, 184, 0.18);
+  font-size: 0.8rem;
+  line-height: 1.45;
+}
+
+.mg-games__fact .k {
+  flex: 0 0 auto;
+  min-width: 4.3rem;
+  color: #94a3b8;
+  font-weight: 600;
+}
+
+.mg-games__fact .v {
+  min-width: 0;
+  color: #e2e8f0;
+  font-weight: 600;
+  word-break: break-word;
+}
+
+.mg-games__fact .v em {
+  font-style: normal;
+  color: #a78bfa;
+  font-weight: 800;
+}
+
+.mg-games__fact .v.mg-v-fill {
+  grid-column: 1 / -1;
+}
+
+.mg-games__fact--wide {
+  grid-column: 1 / -1;
+}
+
+/* 荣誉 badges */
+.mg-games__awards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 0.15rem 0 0.2rem !important;
+  padding: 0 !important;
+  list-style: none !important;
+}
+
+.mg-games__award {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.3rem 0.7rem;
+  border-radius: 999px;
+  background: rgba(245, 158, 11, 0.12);
+  border: 1px solid rgba(245, 158, 11, 0.3);
+  color: #fcd34d !important;
+  font-size: 0.72rem !important;
+  font-weight: 800 !important;
+  line-height: 1.4 !important;
+}
+
+.mg-games__award::before {
+  content: "";
+  width: 0.42rem;
+  height: 0.42rem;
+  flex: 0 0 auto;
+  border-radius: 50%;
+  background: #f59e0b;
+}
+
+/* 版本更新 / 开发者的话 */
+.mg-games__news-title {
+  color: #cbd5e1 !important;
+  font-size: 0.84rem !important;
+  font-weight: 600 !important;
+}
+
+.mg-games__quote {
+  margin: 0.6rem 0 0.2rem !important;
+  padding: 0.8rem 0.95rem 0.8rem 1.05rem;
+  border-radius: 0.55rem;
+  border-left: 3px solid #a78bfa;
+  background: rgba(76, 29, 149, 0.1);
+  color: #cbd5e1 !important;
+  font-size: 0.84rem !important;
+  line-height: 1.7 !important;
+}
+
+.mg-games__quote-cite {
+  display: block;
+  margin-top: 0.45rem !important;
+  color: #64748b !important;
+  font-size: 0.72rem !important;
+  font-style: normal !important;
+  font-weight: 600 !important;
+}
+
+/* 小字来源 */
+.mg-games__src {
+  color: #64748b !important;
+  font-size: 0.7rem !important;
+  font-weight: 500 !important;
+}
+
+@media (max-width: 700px) {
+  .mg-games__hero .mg-games__chips {
+    margin-bottom: 0.85rem !important;
+  }
+}

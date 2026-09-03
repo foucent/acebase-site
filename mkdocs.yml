@@ -38,13 +38,12 @@ plugins:
         gallery/figures.md: gallery/index.md
         gallery/coser.md: gallery/index.md
         gallery/pre-owned.md: gallery/index.md
-        games/honor-of-kings.md: index.md
+        games/honor-of-kings.md: games/hok.md
         games/steam-accounts.md: index.md
         games/valorant-accounts.md: index.md
         currency/index.md: index.md
         games/buy-robux.md: index.md
-        games/pubg-mobile.md: games/topup-prices.md
-        games/pubg-gcoin.md: games/topup-prices.md
+        games/topup-prices.md: games/pubg-mobile.md
 
 markdown_extensions:
   - admonition
@@ -105,8 +104,12 @@ extra:
 nav:
   - 首页: index.md
   - 礼品卡: gift-cards/index.md
-  - 代储价格监测: games/topup-prices.md
   - 画廊: gallery/index.md
+  - 代储价格监测:
+      - PUBG Mobile UC: games/pubg-mobile.md
+      - PUBG G-COIN: games/pubg-gcoin.md
+      - Honor of Kings: games/hok.md
+      - 燕云十六声: games/where-winds-meet.md
   - 显卡价格监测:
       - RTX 5060: games/rtx-5060.md
       - RTX 5060 Ti: games/rtx-5060-ti.md
