@@ -1,0 +1,37 @@
+{
+ "slug": "bixin-top-up",
+ "h1": "Bi Xin（比心）",
+ "title": "比心币 Bixin Diamonds 充值 - Bixin 充值服务 - Topuplist",
+ "tiers": [
+  {
+   "name": "10 比心币",
+   "sale": 1.94,
+   "original": 2.45
+  },
+  {
+   "name": "100 比心币",
+   "sale": 20.09,
+   "original": 24.6
+  },
+  {
+   "name": "500 比心币",
+   "sale": 100.43,
+   "original": 121.84
+  },
+  {
+   "name": "1000 比心币",
+   "sale": 206.72,
+   "original": 246.15
+  },
+  {
+   "name": "10000 比心钻石",
+   "sale": 20.09,
+   "original": 24.6
+  },
+  {
+   "name": "50000 比心钻石",
+   "sale": 100.43,
+   "original": 121.84
+  }
+ ]
+}

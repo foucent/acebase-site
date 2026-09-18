@@ -1,0 +1,153 @@
+{#-
+  AceBase header — uncrate.com's three-band structure.
+
+    band 1  black, centred wordmark, tools on the right
+    band 2  main nav, 28px, 1px black rule underneath
+    band 3  sub nav, 20px tan links, 1px black rules above and below
+
+  Measurements live in docs/stylesheets/header.css.
+
+  Contracts this file must keep alive — they are all load-bearing:
+    .md-header__inner      Material's flex row; the bands lay out inside it
+    label[for="__drawer"]  toggles #__drawer, rendered by base.html
+    label[for="__search"]  + partials/search.html provide search
+
+  Note that base.html renders the header *outside* .md-container, so the
+  header and the #__search / #__drawer checkboxes are siblings of body.
+-#}
+{% set home_url = config.extra.homepage | d(nav.homepage.url, true) | url %}
+
+{#- Sub-nav groups. uncrate shows the subcategories of the section you are
+    in; these mirror that using the pages that actually exist, so no link
+    here 404s and none of them restates the main nav above. -#}
+{% set subnav_gpu = [
+  ("RTX 5060 Ti", "games/rtx-5060-ti.md"),
+  ("RTX 5060", "games/rtx-5060.md"),
+  ("RTX 4090", "games/rtx-4090.md"),
+  ("RTX 4080 SUPER", "games/rtx-4080-super.md"),
+  ("RTX 4080", "games/rtx-4080.md")
+] %}
+{% set subnav_games = [
+  ("王者荣耀", "games/hok.md"),
+  ("PUBG Mobile", "games/pubg-mobile.md"),
+  ("PUBG G币", "games/pubg-gcoin.md"),
+  ("永劫无间", "games/arena-breakout.md"),
+  ("鸣潮", "games/where-winds-meet.md")
+] %}
+{% set subnav_hot = [
+  ("RTX 5060 Ti", "games/rtx-5060-ti.md"),
+  ("RTX 5060", "games/rtx-5060.md"),
+  ("RTX 4090", "games/rtx-4090.md"),
+  ("王者荣耀", "games/hok.md"),
+  ("PUBG Mobile", "games/pubg-mobile.md"),
+  ("鸣潮", "games/where-winds-meet.md")
+] %}
+{#- `hide: - navigation` removes the sidebar, so the drawer label must go with
+    it — otherwise it opens an empty panel. -#}
+{% set hide_nav = page.meta.hide and "navigation" in page.meta.hide if page.meta else false %}
+{% set u = page.url | d("", true) %}
+{% if u.startswith("games/rtx-") or u.startswith("games/gpu-prices") or u.startswith("pc-components") %}
+  {% set subnav = subnav_gpu %}
+{% elif u.startswith("games/") and not u.startswith("games/live-prices") %}
+  {% set subnav = subnav_games %}
+{% else %}
+  {% set subnav = subnav_hot %}
+{% endif %}
+
+<header class="md-header" data-md-component="header">
+  {#- band 1 — black -#}
+  <div class="ab-band">
+    {#- uncrate's family row, above the wordmark: the sibling sites and the
+        account handle on one centred line, uppercase, with a hairline under
+        them. The handle opens the channel list on hover or focus.
+
+        The handle's label is the brand rather than a configured string — the
+        menu below it holds the channels, which are exactly the youtube/* ones
+        main.html declares as sameAs. One list, so a channel cannot appear in
+        the menu without also being declared to crawlers. -#}
+    {% set family = config.extra.family | d([], true) %}
+    {% set channels = config.extra.channels | d([], true) %}
+    {% if family or channels %}
+      <div class="ab-family">
+        <ul class="ab-family__list">
+          {% for item in family %}
+            <li class="ab-family__item">
+              <a class="ab-family__link" href="{{ item.link | url }}">{{ item.label }}</a>
+            </li>
+          {% endfor %}
+          {% if channels %}
+            <li class="ab-family__item">
+              {#- A button, not a link: it opens the menu instead of navigating.
+                  Buttons take focus, so :focus-within hands the menu to the
+                  keyboard without any script. -#}
+              <button type="button" class="ab-family__toggle" aria-haspopup="true" aria-label="{{ config.site_name }}">
+                <span class="ab-family__at" aria-hidden="true">@</span>{{ config.site_name }}
+              </button>
+              <ul class="ab-family__menu">
+                {% for s in channels %}
+                  <li>
+                    <a href="{{ s.link }}" target="_blank" rel="noopener" title="{{ s.name }}" aria-label="{{ s.name }}">
+                      <span class="ab-family__at" aria-hidden="true">@</span>{{ s.name }}
+                    </a>
+                  </li>
+                {% endfor %}
+              </ul>
+            </li>
+          {% endif %}
+        </ul>
+      </div>
+    {% endif %}
+
+    <div class="ab-band__inner md-header__inner">
+      {% if not hide_nav %}
+        <label class="md-header__button md-icon ab-band__drawer" for="__drawer" aria-label="{{ lang.t('header') }}">
+          {% set icon = config.theme.icon.menu or "material/menu" %}
+          {% include ".icons/" ~ icon ~ ".svg" %}
+        </label>
+      {% endif %}
+
+      <a href="{{ home_url }}" class="ab-wordmark" title="{{ config.site_name | e }}" aria-label="{{ config.site_name | e }}" data-md-component="logo">
+        <span class="ab-wordmark__name">AceBase</span>
+      </a>
+
+      <div class="ab-band__tools">
+        {% if "material/search" in config.plugins %}
+          {% set search = config.plugins["material/search"] | attr("config") %}
+          {% if search.enabled %}
+            <label class="md-header__button md-icon ab-band__tool" for="__search" aria-label="{{ lang.t('search') }}">
+              {% set icon = config.theme.icon.search or "material/magnify" %}
+              {% include ".icons/" ~ icon ~ ".svg" %}
+            </label>
+            {% include "partials/search.html" %}
+          {% endif %}
+        {% endif %}
+      </div>
+    </div>
+  </div>
+
+  {#- band 2 — main nav -#}
+  <nav class="ab-mainnav" aria-label="{{ lang.t('tabs') }}">
+    <div class="ab-mainnav__inner">
+      <ul class="ab-mainnav__list">
+        {% for nav_item in nav.items %}
+          <li class="ab-mainnav__item">
+            <a class="ab-mainnav__link{% if nav_item.active %} is-active{% endif %}" href="{{ nav_item.url | url }}">{{ nav_item.title }}</a>
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
+  </nav>
+
+  {#- band 3 — sub nav -#}
+  {% if subnav %}
+    <nav class="ab-subnav" aria-label="{{ lang.t('nav') }}">
+      <div class="ab-subnav__inner">
+        <ul class="ab-subnav__list">
+          {% for label, href in subnav %}
+            <li class="ab-subnav__item"><a class="ab-subnav__link" href="{{ href | url }}">{{ label }}</a></li>
+          {% endfor %}
+        </ul>
+      </div>
+    </nav>
+  {% endif %}
+</header>

@@ -1,0 +1,47 @@
+{
+ "slug": "pubgm",
+ "h1": "PUBG MOBILE",
+ "title": "Topuplist PUBG MOBILE充值｜PUBG MOBILE UC快捷购买",
+ "tiers": [
+  {
+   "name": "600+60 UC",
+   "sale": 10.73,
+   "original": 12.64
+  },
+  {
+   "name": "300+25 UC",
+   "sale": 5.36,
+   "original": 6.31
+  },
+  {
+   "name": "60 UC",
+   "sale": 1.08,
+   "original": 1.25
+  },
+  {
+   "name": "1500+300 UC",
+   "sale": 27.99,
+   "original": 31.61
+  },
+  {
+   "name": "3000+850 UC",
+   "sale": 55.98,
+   "original": 63.23
+  },
+  {
+   "name": "6000+2100 UC",
+   "sale": 111.96,
+   "original": 126.48
+  },
+  {
+   "name": "12000+4200 UC",
+   "sale": 230.6,
+   "original": 252.97
+  },
+  {
+   "name": "18000+6300 UC",
+   "sale": 346.57,
+   "original": 379.46
+  }
+ ]
+}

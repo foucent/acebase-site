@@ -1,0 +1,57 @@
+{
+ "slug": "yalla-ludo",
+ "h1": "Yalla Ludo",
+ "title": "Topuplist Yalla Ludo 充值 | 安全购买金币和钻石",
+ "tiers": [
+  {
+   "name": "830 Diamonds",
+   "sale": 2.49,
+   "original": 3.78
+  },
+  {
+   "name": "2320 Diamonds",
+   "sale": 6.21,
+   "original": 7.58
+  },
+  {
+   "name": "5150 Diamonds",
+   "sale": 12.52,
+   "original": 15.17
+  },
+  {
+   "name": "13580 Diamonds",
+   "sale": 32.41,
+   "original": 37.93
+  },
+  {
+   "name": "27640 Diamonds",
+   "sale": 64.8,
+   "original": 75.88
+  },
+  {
+   "name": "55800 Diamonds",
+   "sale": 130.28,
+   "original": 151.78
+  },
+  {
+   "name": "68500 Gold",
+   "sale": 2.53,
+   "original": 3.78
+  },
+  {
+   "name": "223700 Gold",
+   "sale": 6.21,
+   "original": 7.58
+  },
+  {
+   "name": "1463320 Gold",
+   "sale": 12.52,
+   "original": 18.96
+  },
+  {
+   "name": "3666470 Gold",
+   "sale": 33,
+   "original": 37.93
+  }
+ ]
+}

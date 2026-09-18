@@ -1,0 +1,522 @@
+/* ============================================================
+   AceBase homepage — uncrate.com's magazine layout.
+
+   Measured off uncrate at a 1440 viewport and reproduced here:
+
+     content column   960px, centred
+     two-column grid  48.9583% + 2.08333% gutter  ==  repeat(2,1fr) + 20px gap
+     card             border 1px #c7c7c7, centred copy, image 3:2
+     hero             full 960 width, image 3:2 (960x641), copy centred
+     category label   12px bold uppercase, tan with a 1px matching underline
+     card title       28px, uppercase, letter-spacing .75px
+     hero title       32px; card excerpt 17px/25px, hero excerpt 18px/28px
+     palette          text #000, border #c7c7c7, accent #ae9e85, muted #666
+
+   uncrate sets headings in Knockout 49 and body copy in Sentinel, both
+   Cloud.typography licences. The stand-ins are a 900-weight system sans for
+   headings and a serif stack for excerpts, which is what gives the page its
+   editorial read. CJK is not condensed, so Chinese headlines run wider than
+   uncrate's — tracking and weight are the only levers available.
+
+   Markup comes from scripts/gen_home.py.
+   ============================================================ */
+
+.ab-mag {
+  --ab-sans: "PingFang SC", "Microsoft YaHei", Inter, -apple-system, "Segoe UI", sans-serif;
+  --ab-serif: Georgia, "Songti SC", "Times New Roman", SimSun, serif;
+  box-sizing: border-box;
+  max-width: 960px;
+  margin: 0 auto;
+  font-family: var(--ab-sans);
+  color: var(--ab-text);
+}
+
+.ab-mag *,
+.ab-mag *::before,
+.ab-mag *::after {
+  box-sizing: border-box;
+}
+
+/* ---------- category label ---------- */
+.md-typeset .ab-mag .ab-cat {
+  display: inline-block;
+  /* The card copy is a flex column, which stretches its children; without
+     this the category's underline runs the full width of the card instead of
+     hugging the label the way uncrate's inline-block does. */
+  align-self: center;
+  margin: 16px 0 17px;
+  padding: 0 0 3px;
+  border-bottom: 1px solid var(--ab-accent);
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  /* The decorative tan carries no text — the label itself is the deep
+     variant of the same hue, which clears 4.5:1 on white. */
+  color: var(--ab-accent-deep);
+}
+
+.md-typeset .ab-mag .ab-cat a {
+  color: inherit !important;
+  text-decoration: none !important;
+}
+
+/* ---------- date stamp ----------
+   uncrate runs "Updated on <date>" up the left edge. Rotated so it reads
+   bottom-to-top, and hung in the page margin so it costs the 960px column
+   no width; below ~1100px viewport that margin no longer exists, so it goes.
+
+   --ab-text-faint is uncrate's own #989898, but that is 2.88:1 on white and
+   this is 11px text, so the stamps take --ab-text-muted (#666, 5.7:1) and
+   keep their quietness from the size and the rotation instead. */
+.ab-mag .ab-stamp {
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  font-size: 11px;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: 0.5px;
+  white-space: nowrap;
+  color: var(--ab-text-muted);
+}
+
+/* ---------- hero ---------- */
+.md-typeset .ab-mag .ab-hero {
+  margin: 0 0 48px;
+  border: 1px solid var(--ab-line);
+  text-align: center;
+}
+
+.ab-hero__media {
+  position: relative;
+}
+
+.md-typeset .ab-mag .ab-hero__media img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: contain;
+  margin: 0;
+  border-bottom: 1px solid var(--ab-line);
+}
+
+/* The hero stamp sits on the chart, whose navy is dark enough for white text.
+   That is a property of the image, though, not of the page — so it carries its
+   own scrim rather than trusting whatever is loaded behind it. */
+.ab-mag .ab-stamp--hero {
+  position: absolute;
+  left: 12px;
+  top: 12px;
+  padding: 4px 8px;
+  background: rgba(0, 0, 0, 0.68);
+  color: #ffffff;
+}
+
+.md-typeset .ab-mag .ab-hero__copy {
+  padding: 0 20px 20px;
+}
+
+.md-typeset .ab-mag .ab-hero__title {
+  margin: 0 0 14px;
+  padding: 0;
+  border: 0;
+  font-size: 32px;
+  font-weight: 900;
+  line-height: 1.15;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  color: var(--ab-text);
+}
+
+.md-typeset .ab-mag .ab-hero__title a {
+  color: inherit !important;
+  text-decoration: none !important;
+}
+
+.md-typeset .ab-mag .ab-hero__title a:hover {
+  color: var(--ab-accent-deep) !important;
+}
+
+.md-typeset .ab-mag .ab-hero__excerpt {
+  max-width: 44rem;
+  margin: 0 auto 16px;
+  font-family: var(--ab-serif);
+  font-size: 18px;
+  line-height: 28px;
+  color: var(--ab-text-muted);
+}
+
+/* Article variant of the hero. The base .ab-hero is the homepage's centred
+   teaser; an article page reads like uncrate's — left-aligned copy under a
+   band of artwork. The band is height-capped because the game art is a square
+   800×800 cover: left at the base 4:3 it would stand 720px tall and push the
+   prices off the first screen. object-fit stays `contain` so no part of the
+   artwork is cropped, and the frame behind it reads as a deliberate plate. */
+.md-typeset .ab-mag .ab-hero--article {
+  text-align: left;
+}
+
+.md-typeset .ab-mag .ab-hero--article .ab-hero__media img {
+  aspect-ratio: auto;
+  height: 400px;
+  object-fit: contain;
+  background: var(--ab-panel-2);
+}
+
+/* A band holding a 12:5 product photo takes its height from the photo itself.
+   The fixed 400px above is sized for square artwork, which only overflows that
+   box on a phone: a 2.4:1 photo in a 356px-wide, 400px-tall plate would be a
+   148px strip over 250px of empty plate. Letting the ratio size the band keeps
+   the desktop band at its 400px and collapses it on narrow screens. */
+.md-typeset .ab-mag .ab-hero--photo .ab-hero__media img {
+  height: auto;
+}
+
+/* A band holding a brand mark, on the same plate. Two things rule out the
+   treatments above. A mark fills far less of its frame than a photo does, so
+   the 400px plate would be 400px of near-empty grey on every one of nineteen
+   articles. And the marks come from nineteen different sources whose own
+   ratios run from 1:1 to 6:1, so letting the ratio size the band — which is
+   what --photo above does — would give nineteen different band heights and
+   destroy the grid. A fixed height plus `contain` is the only construction
+   that makes a set of mismatched marks read as one set: it letterboxes rather
+   than crops, and the plate behind it still comes from --article's own
+   `background: var(--ab-panel-2)`, which is why the marks ship transparent. */
+.md-typeset .ab-mag .ab-hero--brand .ab-hero__media img {
+  height: 200px;
+  object-fit: contain;
+}
+
+@media screen and (max-width: 767px) {
+  .md-typeset .ab-mag .ab-hero--brand .ab-hero__media img {
+    height: 120px;
+  }
+}
+
+.md-typeset .ab-mag .ab-hero--article .ab-hero__title {
+  font-size: 30px;
+}
+
+.md-typeset .ab-mag .ab-hero--article .ab-hero__excerpt {
+  max-width: none;
+  margin: 0 0 18px;
+}
+
+/* Article pages stack several of these under the model jump list. The site
+   header is static, so nothing is covering the target — the offset is only
+   there to keep a jumped-to band off the very top edge, matching the 4.5rem
+   the summary cards used before. */
+.md-typeset .ab-mag .ab-hero--article {
+  scroll-margin-top: 4.5rem;
+}
+
+/* ---------- tier price list ----------
+   uncrate's Everyday Carry treatment: one line per tier, "名称 / $价格." —
+   a name, a slash, a price, nothing else. Used by article pages that lead
+   with the headline price instead of the full lowest/highest/average table.
+   The price takes --ab-green, the same colour the tables give their 最低
+   column, so "cheapest" reads the same way across the site. */
+.md-typeset .ab-mag .ab-ec-list {
+  margin: 0 0 20px;
+  font-family: var(--ab-serif);
+  font-size: 18px;
+  line-height: 1.9;
+  color: var(--ab-text);
+}
+
+.md-typeset .ab-mag .ab-ec-sep {
+  padding: 0 0.45em;
+  color: var(--ab-text-muted);
+}
+
+.md-typeset .ab-mag .ab-ec-price {
+  font-weight: 700;
+  color: var(--ab-green);
+}
+
+.md-typeset .ab-mag .ab-ec-foot {
+  margin: 0 0 18px;
+  font-size: 12px;
+  color: var(--ab-text-muted);
+}
+
+/* The tier ladder is fetched, so this line is what shows until it lands. It
+   reserves two rows' worth of height so the copy below it does not jump when
+   the ladder arrives — the tallest ladder on the price pages is 17 rows, so
+   reserving all of it would be worse than the shift. */
+.md-typeset .ab-mag .ab-ec-loading {
+  display: inline-block;
+  min-height: 3.8em;
+  font-size: 15px;
+  color: var(--ab-text-muted);
+}
+
+/* The saving against the source's own list price, carried on the entry tier —
+   the ladder is quoted at the reference price, so without this the page's one
+   discount signal would be invisible. Painted like .ab-card__off. */
+.md-typeset .ab-mag .ab-ec-off {
+  margin-left: 0.5em;
+  padding: 0.08em 0.45em;
+  border-radius: 999px;
+  background: rgba(21, 128, 61, 0.10);
+  font-family: var(--ab-sans);
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--ab-green);
+}
+
+/* ---------- sections ---------- */
+.ab-section {
+  position: relative;
+  margin: 0 0 56px;
+}
+
+.ab-section__head {
+  position: relative;
+  display: flex;
+  align-items: baseline;
+  gap: 16px;
+  margin: 0 0 20px;
+  padding: 0 0 10px;
+  border-bottom: 1px solid var(--ab-text);
+}
+
+.ab-section > .ab-section__head > .ab-stamp {
+  position: absolute;
+  left: -42px;
+  top: 3px;
+}
+
+.md-typeset .ab-mag .ab-section__title {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 24px;
+  font-weight: 900;
+  line-height: 1.2;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  color: var(--ab-text);
+}
+
+.md-typeset .ab-mag .ab-section__all {
+  margin-left: auto;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  white-space: nowrap;
+  color: var(--ab-accent-deep) !important;
+  text-decoration: none !important;
+}
+
+.md-typeset .ab-mag .ab-section__all:hover {
+  color: var(--ab-text) !important;
+}
+
+/* The dek under a section head. `ab-hero__excerpt` cannot be reused here: it
+   is centred with an auto margin, which fights the left-aligned head it would
+   sit beneath. */
+.md-typeset .ab-mag .ab-section__lead {
+  max-width: 52rem;
+  margin: -6px 0 0;
+  font-family: var(--ab-serif);
+  font-size: 18px;
+  line-height: 28px;
+  color: var(--ab-text-muted);
+}
+
+/* ---------- card grid ---------- */
+.ab-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.md-typeset .ab-mag .ab-card {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0 0 20px;
+  border: 1px solid var(--ab-line);
+  background: var(--ab-panel);
+  text-align: center;
+}
+
+/* ---------- media frames ----------
+
+   uncrate's grid is a uniform 3:2 because uncrate shoots 3:2. Almost nothing
+   here is: the GPU photos are 4:3, the game art 800x800, the gift-card art
+   360x480 and the wallpapers around 1:2. Cover-cropping those into a 3:2 box
+   took the ends off the wider ones and a third out of the rest, so each
+   section gets the frame its own images are drawn at. The generator tags the
+   card; the ratios live here so they stay in one place. */
+.md-typeset .ab-mag .ab-card__media img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: contain;
+  margin: 0;
+  border-bottom: 1px solid var(--ab-line);
+}
+
+/* The GPU product photos, drawn at 4:3 to match the box the charts used to
+   fill — the card itself sits in a white field inside that frame. */
+.md-typeset .ab-mag .ab-card--photo .ab-card__media img {
+  aspect-ratio: 4 / 3;
+}
+
+/* 800x800 game illustrations. */
+.md-typeset .ab-mag .ab-card--square .ab-card__media img {
+  aspect-ratio: 1 / 1;
+}
+
+/* 360x480 gift-card art, and the gallery's portrait wallpapers — those run
+   nearer 1:2, so cover takes a modest crop off a picture that is a wallpaper
+   at any proportion. */
+.md-typeset .ab-mag .ab-card--portrait .ab-card__media img {
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+}
+
+.md-typeset .ab-mag .ab-card__copy {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  padding: 0 20px;
+}
+
+.ab-card--text .ab-card__copy {
+  padding-top: 2px;
+}
+
+.md-typeset .ab-mag .ab-card__title {
+  margin: 0 0 12px;
+  padding: 0;
+  border: 0;
+  font-size: 26px;
+  font-weight: 900;
+  line-height: 1.15;
+  letter-spacing: 0.75px;
+  text-transform: uppercase;
+  color: var(--ab-text);
+}
+
+.md-typeset .ab-mag .ab-card__title a {
+  color: inherit !important;
+  text-decoration: none !important;
+}
+
+.md-typeset .ab-mag .ab-card__title a:hover {
+  color: var(--ab-accent-deep) !important;
+}
+
+.md-typeset .ab-mag .ab-card__excerpt {
+  margin: 0 0 14px;
+  font-family: var(--ab-serif);
+  font-size: 17px;
+  line-height: 25px;
+  color: var(--ab-text-muted);
+}
+
+/* Text-led cards carry the only number on the page that follows the currency
+   switcher, so it gets the weight of a price rather than of body copy. */
+.md-typeset .ab-mag .ab-card__meta {
+  margin: 0 0 14px;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--ab-text-muted);
+}
+
+.md-typeset .ab-mag .ab-card__meta .ab-money {
+  font-size: 15px;
+  font-weight: 800;
+  color: var(--ab-red);
+}
+
+.md-typeset .ab-mag .ab-card__off {
+  display: inline-block;
+  padding: 0.08em 0.4em;
+  border-radius: 999px;
+  background: rgba(21, 128, 61, 0.10);
+  color: var(--ab-green);
+  font-weight: 800;
+}
+
+.md-typeset .ab-mag .ab-card__more {
+  margin: auto 0 0;
+}
+
+.md-typeset .ab-mag .ab-card__more a,
+.md-typeset .ab-mag .ab-hero__more a {
+  display: inline-block;
+  padding-bottom: 2px;
+  border-bottom: 1px solid var(--ab-accent);
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  color: var(--ab-accent-deep) !important;
+  text-decoration: none !important;
+}
+
+.md-typeset .ab-mag .ab-card__more a:hover,
+.md-typeset .ab-mag .ab-hero__more a:hover {
+  color: var(--ab-text) !important;
+  border-bottom-color: var(--ab-text);
+}
+
+.md-typeset .ab-mag .ab-hero__more {
+  margin: 0;
+}
+
+/* ---------- footer note ---------- */
+.md-typeset .ab-mag .ab-mag__foot {
+  margin: 8px 0 0;
+  padding-top: 14px;
+  border-top: 1px solid var(--ab-line-soft);
+  font-size: 12px;
+  letter-spacing: 0.3px;
+  text-align: center;
+  color: var(--ab-text-muted);
+}
+
+/* ---------- narrow screens ----------
+   uncrate collapses .one-half to full width at 767px and drops the date
+   stamps; same here. */
+@media screen and (max-width: 1100px) {
+  .ab-section > .ab-section__head > .ab-stamp {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .ab-list {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .md-typeset .ab-mag .ab-hero {
+    margin-bottom: 36px;
+  }
+
+  .md-typeset .ab-mag .ab-hero__title {
+    font-size: 24px;
+  }
+
+  .md-typeset .ab-mag .ab-card__title {
+    font-size: 22px;
+  }
+
+  .md-typeset .ab-mag .ab-hero__excerpt {
+    font-size: 16px;
+    line-height: 25px;
+  }
+
+  .ab-section {
+    margin-bottom: 40px;
+  }
+
+  .md-typeset .ab-mag .ab-section__title {
+    font-size: 20px;
+  }
+}

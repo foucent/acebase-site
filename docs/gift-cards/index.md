@@ -33,12 +33,12 @@ hide:
 
 | | 礼品卡 | 价格（USD） |
 | :---: | --- | ---: |
-| <img src="/assets/gift-cards/amazon.png" alt="Amazon 礼品卡（美国）" data-denoms="5 USD:4.95,10 USD:9.90,20 USD:19.80,35 USD:34.65,50 USD:49.50,100 USD:99.00"> | Amazon 礼品卡（美国） | <span class="ab-money" data-ab-amount="4.95" data-ab-base="USD">US$ 4.95</span> |
-| <img src="/assets/gift-cards/apple.png" alt="Apple 礼品卡" data-denoms="5 USD:4.50,10 USD:9.00,20 USD:18.00,50 USD:45.00,100 USD:90.00,200 USD:181.80,500 USD:454.50"> | Apple 礼品卡 | <span class="ab-money" data-ab-amount="4.50" data-ab-base="USD">US$ 4.50</span> |
-| <img src="/assets/gift-cards/google.png" alt="Google Play 礼品卡" data-denoms="5 USD:4.95,10 USD:9.90,15 USD:14.85,25 USD:24.75,50 USD:49.50,100 USD:99.00"> | Google Play 礼品卡 | <span class="ab-money" data-ab-amount="4.95" data-ab-base="USD">US$ 4.95</span> |
-| <img src="/assets/gift-cards/netflix.png" alt="Netflix 礼品卡（美国）" data-denoms="20 USD:20.25,25 USD:25.20,30 USD:29.70,50 USD:49.50,60 USD:59.40,100 USD:94.50" data-discount="-16%"> | Netflix 礼品卡（美国） | <span class="ab-money" data-ab-amount="20.25" data-ab-base="USD">US$ 20.25</span> |
-| <img src="/assets/gift-cards/xbox.png" alt="Xbox Live 礼品卡" data-denoms="5 USD:4.59,10 USD:8.97,15 USD:13.49,20 USD:17.99,25 USD:22.03,50 USD:43.91,100 USD:88.19"> | Xbox Live 礼品卡 | <span class="ab-money" data-ab-amount="4.59" data-ab-base="USD">US$ 4.59</span> |
-| <img src="/assets/gift-cards/kammelna.png" alt="Kammelna 礼品卡" data-denoms="30 天:8.09,90 天:19.79,180 天:36.89,365 天:66.59,4000 金卡:11.42,12000 金卡:26.21,50000 金卡:103.41,100000 金卡:199.71,250000 金卡:485.91" data-discount="-4%"> | Kammelna 礼品卡 | <span class="ab-money" data-ab-amount="8.09" data-ab-base="USD">US$ 8.09</span> |
+| <img src="/assets/gift-cards/amazon.png" alt="Amazon 礼品卡（美国）" data-denoms="5 USD:4.95,10 USD:9.90,20 USD:19.80,35 USD:34.65,50 USD:49.50,100 USD:99.00"> | Amazon 礼品卡（美国） | <span class="ab-money" data-ab-amount="4.95" data-ab-base="USD">$4.95</span> |
+| <img src="/assets/gift-cards/apple.png" alt="Apple 礼品卡" data-denoms="5 USD:4.50,10 USD:9.00,20 USD:18.00,50 USD:45.00,100 USD:90.00,200 USD:181.80,500 USD:454.50"> | Apple 礼品卡 | <span class="ab-money" data-ab-amount="4.50" data-ab-base="USD">$4.50</span> |
+| <img src="/assets/gift-cards/google.png" alt="Google Play 礼品卡" data-denoms="5 USD:4.95,10 USD:9.90,15 USD:14.85,25 USD:24.75,50 USD:49.50,100 USD:99.00"> | Google Play 礼品卡 | <span class="ab-money" data-ab-amount="4.95" data-ab-base="USD">$4.95</span> |
+| <img src="/assets/gift-cards/netflix.png" alt="Netflix 礼品卡（美国）" data-denoms="20 USD:20.25,25 USD:25.20,30 USD:29.70,50 USD:49.50,60 USD:59.40,100 USD:94.50" data-discount="-16%"> | Netflix 礼品卡（美国） | <span class="ab-money" data-ab-amount="20.25" data-ab-base="USD">$20.25</span> |
+| <img src="/assets/gift-cards/xbox.png" alt="Xbox Live 礼品卡" data-denoms="5 USD:4.59,10 USD:8.97,15 USD:13.49,20 USD:17.99,25 USD:22.03,50 USD:43.91,100 USD:88.19"> | Xbox Live 礼品卡 | <span class="ab-money" data-ab-amount="4.59" data-ab-base="USD">$4.59</span> |
+| <img src="/assets/gift-cards/kammelna.png" alt="Kammelna 礼品卡" data-denoms="30 天:8.09,90 天:19.79,180 天:36.89,365 天:66.59,4000 金卡:11.42,12000 金卡:26.21,50000 金卡:103.41,100000 金卡:199.71,250000 金卡:485.91" data-discount="-4%"> | Kammelna 礼品卡 | <span class="ab-money" data-ab-amount="8.09" data-ab-base="USD">$8.09</span> |
 
 </div>
 
@@ -46,14 +46,14 @@ hide:
 
 | | 商品 | 价格（USD） |
 | :---: | --- | ---: |
-| <img src="/assets/gift-cards/fortnite-card.webp" alt="Fortnite 充值卡（V-Bucks）" data-denoms="1000 V-Bucks:8.99,2800 V-Bucks:22.49,5000 V-Bucks:35.99,13500 V-Bucks:89.99"> | Fortnite 充值卡（V-Bucks） | <span class="ab-money" data-ab-amount="8.99" data-ab-base="USD">US$ 8.99</span> |
-| <img src="/assets/gift-cards/apex-legends.png" alt="Apex Legends 充值卡（Coins）" data-denoms="1000 Coins:10.01,2150 Coins:20.18,4350 Coins:33.54,6700 Coins:49.76,10500 Coins:101.41" data-discount="-7%"> | Apex Legends 充值卡（Coins） | <span class="ab-money" data-ab-amount="10.01" data-ab-base="USD">US$ 10.01</span> |
-| <img src="/assets/gift-cards/playstation.webp" alt="PlayStation Network 充值卡（美国）" data-denoms="1 USD:1.07,2 USD:2.15,3 USD:3.04,4 USD:3.95,10 USD:9.00,25 USD:21.60,50 USD:44.10,75 USD:66.60,100 USD:89.10,150 USD:133.20,200 USD:178.20" data-discount="-40%"> | PlayStation Network 充值卡（美国） | <span class="ab-money" data-ab-amount="1.07" data-ab-base="USD">US$ 1.07</span> |
-| <img src="/assets/gift-cards/pubg-gcoins.webp" alt="PUBG G-COIN 卡密" data-denoms="100 G-COIN:0.81,510 G-COIN:4.10,1050 G-COIN:8.04,2700 G-COIN:20.54,5500 G-COIN:40.19,11200 G-COIN:79.74" data-discount="-9%"> | PUBG G-COIN 卡密 | <span class="ab-money" data-ab-amount="0.81" data-ab-base="USD">US$ 0.81</span> |
-| <img src="/assets/gift-cards/ns-membership.png" alt="Nintendo Switch Online 会员资格" data-denoms="3 个月:8.69,12 个月:19.13" data-discount="-23%"> | Nintendo Switch Online 会员资格 | <span class="ab-money" data-ab-amount="8.69" data-ab-base="USD">US$ 8.69</span> |
-| <img src="/assets/gift-cards/nintendo-eshop.png" alt="Nintendo eShop 充值卡（美国）" data-denoms="10 USD:8.81,20 USD:17.54,35 USD:30.14,50 USD:43.19" data-discount="-4%"> | Nintendo eShop 充值卡（美国） | <span class="ab-money" data-ab-amount="8.81" data-ab-base="USD">US$ 8.81</span> |
-| <img src="/assets/gift-cards/steam-wallet.png" alt="Steam 钱包充值码（美国）" data-denoms="5 USD:5.12,10 USD:10.16,20 USD:20.33,25 USD:25.19,30 USD:28.61,50 USD:47.69,100 USD:99.27" data-discount="-1%"> | Steam 钱包充值码（美国） | <span class="ab-money" data-ab-amount="5.12" data-ab-base="USD">US$ 5.12</span> |
-| <img src="/assets/gift-cards/gocash-card.png" alt="GoCash 充值卡（全球）" data-denoms="5 USD:4.31,10 USD:8.54,15 USD:13.49,20 USD:17.09,50 USD:43.19,100 USD:86.39" data-discount="-5%"> | GoCash 充值卡（全球） | <span class="ab-money" data-ab-amount="4.31" data-ab-base="USD">US$ 4.31</span> |
+| <img src="/assets/gift-cards/fortnite-card.webp" alt="Fortnite 充值卡（V-Bucks）" data-denoms="1000 V-Bucks:8.99,2800 V-Bucks:22.49,5000 V-Bucks:35.99,13500 V-Bucks:89.99"> | Fortnite 充值卡（V-Bucks） | <span class="ab-money" data-ab-amount="8.99" data-ab-base="USD">$8.99</span> |
+| <img src="/assets/gift-cards/apex-legends.png" alt="Apex Legends 充值卡（Coins）" data-denoms="1000 Coins:10.01,2150 Coins:20.18,4350 Coins:33.54,6700 Coins:49.76,10500 Coins:101.41" data-discount="-7%"> | Apex Legends 充值卡（Coins） | <span class="ab-money" data-ab-amount="10.01" data-ab-base="USD">$10.01</span> |
+| <img src="/assets/gift-cards/playstation.webp" alt="PlayStation Network 充值卡（美国）" data-denoms="1 USD:1.07,2 USD:2.15,3 USD:3.04,4 USD:3.95,10 USD:9.00,25 USD:21.60,50 USD:44.10,75 USD:66.60,100 USD:89.10,150 USD:133.20,200 USD:178.20" data-discount="-40%"> | PlayStation Network 充值卡（美国） | <span class="ab-money" data-ab-amount="1.07" data-ab-base="USD">$1.07</span> |
+| <img src="/assets/gift-cards/pubg-gcoins.webp" alt="PUBG G-COIN 卡密" data-denoms="100 G-COIN:0.81,510 G-COIN:4.10,1050 G-COIN:8.04,2700 G-COIN:20.54,5500 G-COIN:40.19,11200 G-COIN:79.74" data-discount="-9%"> | PUBG G-COIN 卡密 | <span class="ab-money" data-ab-amount="0.81" data-ab-base="USD">$0.81</span> |
+| <img src="/assets/gift-cards/ns-membership.png" alt="Nintendo Switch Online 会员资格" data-denoms="3 个月:8.69,12 个月:19.13" data-discount="-23%"> | Nintendo Switch Online 会员资格 | <span class="ab-money" data-ab-amount="8.69" data-ab-base="USD">$8.69</span> |
+| <img src="/assets/gift-cards/nintendo-eshop.png" alt="Nintendo eShop 充值卡（美国）" data-denoms="10 USD:8.81,20 USD:17.54,35 USD:30.14,50 USD:43.19" data-discount="-4%"> | Nintendo eShop 充值卡（美国） | <span class="ab-money" data-ab-amount="8.81" data-ab-base="USD">$8.81</span> |
+| <img src="/assets/gift-cards/steam-wallet.png" alt="Steam 钱包充值码（美国）" data-denoms="5 USD:5.12,10 USD:10.16,20 USD:20.33,25 USD:25.19,30 USD:28.61,50 USD:47.69,100 USD:99.27" data-discount="-1%"> | Steam 钱包充值码（美国） | <span class="ab-money" data-ab-amount="5.12" data-ab-base="USD">$5.12</span> |
+| <img src="/assets/gift-cards/gocash-card.png" alt="GoCash 充值卡（全球）" data-denoms="5 USD:4.31,10 USD:8.54,15 USD:13.49,20 USD:17.09,50 USD:43.19,100 USD:86.39" data-discount="-5%"> | GoCash 充值卡（全球） | <span class="ab-money" data-ab-amount="4.31" data-ab-base="USD">$4.31</span> |
 
 </div>
 

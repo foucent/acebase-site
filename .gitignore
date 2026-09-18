@@ -2,3 +2,11 @@ site/
 __pycache__/
 *.pyc
 .DS_Store
+
+# Raw downloads staged before they are cropped into docs/assets — currently
+# ~60MB of video and stills. Source material, not site content, and this repo
+# is public.
+素材/
+# Scratch screenshots and one-off browser probes.
+shots/
+probe_*.py

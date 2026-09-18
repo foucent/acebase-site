@@ -20,5 +20,5 @@
   <path d="M 70,545 L 205,392 L 340,466 L 475,473 L 610,330 L 730,120" fill="none" stroke="url(#g)" stroke-width="7" stroke-linejoin="round" stroke-linecap="round"/>
   <circle cx="730" cy="120" r="9" fill="#ef4444" stroke="#ffffff" stroke-width="3"/>
   <text x="70" y="82" fill="#f8fafc" font-family="Arial, Helvetica, sans-serif" font-size="46" font-weight="800" letter-spacing="1">RTX 4080 Super</text>
-  <text x="70" y="128" fill="#94a3b8" font-family="Arial, Helvetica, sans-serif" font-size="24">显卡价格监测 · 当前均价 HK$13,875</text>
+  <text x="70" y="128" fill="#94a3b8" font-family="Arial, Helvetica, sans-serif" font-size="24">显卡价格监测 · 当前均价 $1,782</text>
 </svg>

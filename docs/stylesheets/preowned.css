@@ -1,11 +1,8 @@
-/* AceBase pre-owned / knife merch — MyGear layout adapted for slate theme */
-
-:root {
-  --mg-ink: #e8e6f0;
-  --mg-ink-muted: #9ca3af;
-  --mg-accent: #a78bfa;
-  --mg-accent-2: #ef4444;
-}
+/* AceBase pre-owned / knife merch — MyGear layout adapted for the light theme.
+   NOTE: no :root block here on purpose. This file loads after extra.css, so a
+   :root declaration here would override the global tokens site-wide (that bug
+   is what turned the sidebar text near-white on a white background). The
+   --mg-ink / --mg-ink-muted used below resolve from extra.css. */
 
 /* —— Shop hero + slideshow —— */
 .mg-shop {
@@ -130,13 +127,13 @@
 }
 
 .mg-home-hero__btn--primary {
-  background: #25d366 !important;
-  color: #fff !important;
+  background: #ffffff !important;
+  color: #000000 !important;
 }
 
 .mg-home-hero__btn--primary:hover {
-  filter: brightness(1.08);
-  color: #fff !important;
+  background: var(--ab-accent) !important;
+  color: #000000 !important;
 }
 
 .mg-home-hero__btn--ghost {
@@ -155,8 +152,8 @@
   margin: 0 0 1rem;
   padding: 0.75rem 0.9rem;
   border-radius: 0.55rem;
-  border: 1px solid rgba(167, 139, 250, 0.22);
-  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid var(--ab-line);
+  background: var(--ab-panel-2);
 }
 
 .mg-home-help__links {
@@ -167,7 +164,7 @@
 }
 
 .mg-home-help__links a {
-  color: #c4b5fd !important;
+  color: var(--ab-accent-deep) !important;
   font-size: 0.78rem !important;
   font-weight: 700 !important;
   text-decoration: none !important;
@@ -183,8 +180,8 @@
   margin-left: 0.55rem;
   padding: 0.12rem 0.55rem;
   border-radius: 999px;
-  background: rgba(167, 139, 250, 0.14);
-  color: #c4b5fd !important;
+  background: rgba(174, 158, 133, 0.16);
+  color: var(--ab-accent-deep) !important;
   font-size: 0.72rem !important;
   font-weight: 700 !important;
   vertical-align: middle;
@@ -219,8 +216,8 @@
 }
 
 .mg-price-legend__stock {
-  background: rgba(34, 197, 94, 0.14);
-  color: #86efac;
+  background: rgba(21, 128, 61, 0.10);
+  color: var(--ab-green);
 }
 
 .mg-price-legend__stock::before,
@@ -232,16 +229,16 @@
 }
 
 .mg-price-legend__stock::before {
-  background: #22c55e;
+  background: var(--ab-green);
 }
 
 .mg-price-legend__sold {
-  background: rgba(148, 163, 184, 0.14);
-  color: #94a3b8;
+  background: rgba(120, 120, 120, 0.12);
+  color: var(--ab-text-muted);
 }
 
 .mg-price-legend__sold::before {
-  background: #64748b;
+  background: var(--ab-text-faint);
 }
 
 /* —— Hide source table once grid is built —— */
@@ -285,8 +282,8 @@
   min-width: 0;
   margin: 0;
   padding: 0 0 0.85rem;
-  background: rgba(255, 255, 255, 0.04);
-  border: 1px solid rgba(167, 139, 250, 0.18);
+  background: var(--ab-panel);
+  border: 1px solid var(--ab-line);
   border-radius: 0.75rem;
   overflow: hidden;
 }
@@ -296,7 +293,7 @@
   width: 100%;
   aspect-ratio: 1 / 1;
   overflow: hidden;
-  background: #1a1625;
+  background: var(--ab-panel-2);
 }
 
 .md-typeset .mg-preowned-card__media > img {
@@ -318,8 +315,8 @@
   z-index: 2;
   padding: 0.2rem 0.45rem;
   border-radius: 0.3rem;
-  background: rgba(15, 23, 42, 0.82);
-  color: #f8fafc;
+  background: rgba(0, 0, 0, 0.78);
+  color: #ffffff;
   font-size: 0.65rem;
   font-weight: 800;
   letter-spacing: 0.04em;
@@ -343,18 +340,18 @@
 
 .md-typeset .mg-preowned-card__price {
   margin: 0 0.75rem 0.65rem !important;
-  color: #c4b5fd !important;
+  color: var(--ab-red) !important;
   font-size: 1rem !important;
   font-weight: 800 !important;
 }
 
 .md-typeset .mg-preowned-card--sold .mg-preowned-card__title {
-  color: #94a3b8 !important;
+  color: var(--ab-text-muted) !important;
 }
 
 .md-typeset .mg-preowned-card--sold .mg-preowned-card__price,
 .md-typeset .mg-preowned-card--sold .mg-preowned-card__price del {
-  color: #64748b !important;
+  color: var(--ab-text-faint) !important;
 }
 
 .md-typeset .mg-preowned-card__wa {
@@ -365,7 +362,7 @@
   margin: auto 0.75rem 0 !important;
   padding: 0.5rem 0.7rem !important;
   border-radius: 0.45rem !important;
-  background: #25d366 !important;
+  background: var(--ab-green) !important;
   color: #fff !important;
   font-size: 0.78rem !important;
   font-weight: 700 !important;
@@ -378,7 +375,7 @@
 }
 
 .md-typeset .mg-preowned-card__wa--preorder {
-  background: rgba(167, 139, 250, 0.35) !important;
+  background: var(--ab-accent-deep) !important;
 }
 
 .mg-preowned-card__wa-icon {

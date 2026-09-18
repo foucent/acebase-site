@@ -4,17 +4,28 @@
   margin: -0.35rem 0 0.5rem;
 }
 
-/* Hero */
+/* Hero — a photo scrim, so it stays dark on the light theme: white text over
+   an arbitrary game image needs a dark base. The gradient is a neutral black
+   scrim (matching the header band) rather than the old purple, so it reads as
+   a photo banner instead of a dark island.
+   `var(--mg-games-hero-image, none)` is deliberate: pages without an image
+   leave the custom property unset, and a bare `var()` there would make the
+   whole shorthand invalid at computed-value time — which drops the gradient
+   too and leaves white text on white. */
 .mg-games__hero {
   position: relative;
   overflow: hidden;
   margin: 0 0 1.35rem;
   border-radius: 0.75rem;
   min-height: 15rem;
-  background:
-    linear-gradient(105deg, rgba(15, 23, 42, 0.94) 0%, rgba(76, 29, 149, 0.82) 52%, rgba(15, 23, 42, 0.6) 100%),
-    var(--mg-games-hero-image) center / cover no-repeat;
-  box-shadow: 0 8px 28px rgba(76, 29, 149, 0.22);
+  background-color: #1a1a1a;
+  background-image:
+    linear-gradient(105deg, rgba(0, 0, 0, 0.88) 0%, rgba(18, 18, 18, 0.66) 55%, rgba(0, 0, 0, 0.34) 100%),
+    var(--mg-games-hero-image, none);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.16);
 }
 
 .mg-games__hero-body {
@@ -26,7 +37,7 @@
 
 .mg-games__brand {
   margin: 0 0 0.55rem !important;
-  color: #a78bfa !important;
+  color: var(--ab-accent) !important;
   font-size: 0.78rem !important;
   font-weight: 800 !important;
   letter-spacing: 0.12em;
@@ -69,14 +80,14 @@
 }
 
 .mg-games__btn--primary {
-  background: #7c3aed !important;
-  color: #fff !important;
+  background: #ffffff !important;
+  color: #000000 !important;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.22);
 }
 
 .mg-games__btn--primary:hover {
-  background: #6d28d9 !important;
-  color: #fff !important;
+  background: var(--ab-accent) !important;
+  color: #000000 !important;
 }
 
 .mg-games__btn--ghost {
@@ -102,14 +113,14 @@
 
 .mg-games__section-title {
   margin: 0 !important;
-  color: #e2e8f0 !important;
+  color: var(--ab-text) !important;
   font-size: 1.15rem !important;
   font-weight: 800 !important;
   letter-spacing: -0.02em;
 }
 
 .mg-games__updated {
-  color: #64748b;
+  color: var(--ab-text-muted);
   font-size: 0.72rem !important;
   font-weight: 500;
 }
@@ -118,8 +129,17 @@
   margin: 0 0 1.4rem;
   padding: 1.1rem 1.1rem 0.9rem;
   border-radius: 0.6rem;
-  background: rgba(76, 29, 149, 0.07);
-  border: 1px solid rgba(124, 58, 237, 0.16);
+  background: var(--ab-panel-2);
+  border: 1px solid var(--ab-line);
+}
+
+/* The table is injected by games-prices.js into this div, which had no rule of
+   its own — so at 390px the five columns came to 397px inside a 344px card and
+   widened the whole document by 30px. Material's content.tables.scroll wraps
+   only markdown-authored tables; this one is built in JS, so it needs its own
+   scroll container. `width: 100%` on the table still fills when there is room. */
+.mg-games__price-table {
+  overflow-x: auto;
 }
 
 .mg-games__table {
@@ -131,11 +151,11 @@
 .mg-games__table td {
   padding: 0.55rem 0.7rem;
   text-align: left;
-  border-bottom: 1px solid rgba(148, 163, 184, 0.18);
+  border-bottom: 1px solid var(--ab-line-soft);
 }
 
 .mg-games__table th {
-  color: #94a3b8;
+  color: var(--ab-text-muted);
   font-size: 0.72rem;
   font-weight: 700;
   text-transform: uppercase;
@@ -143,24 +163,24 @@
 }
 
 .mg-games__table td {
-  color: #e2e8f0;
+  color: var(--ab-text);
   font-size: 0.84rem;
   font-weight: 600;
 }
 
 .mg-games__td-official {
-  color: #64748b !important;
+  color: var(--ab-text-muted) !important;
   text-decoration: line-through;
   font-weight: 500 !important;
 }
 
 .mg-games__td-acebase {
-  color: #a78bfa !important;
+  color: var(--ab-accent-deep) !important;
   font-weight: 800 !important;
 }
 
 .mg-games__td-off {
-  color: #25d366 !important;
+  color: var(--ab-green) !important;
   font-size: 0.74rem !important;
   font-weight: 700 !important;
   white-space: nowrap;
@@ -168,30 +188,30 @@
 
 /* Price-range table (lowest / highest / average) */
 .mg-games__td-lowest {
-  color: #25d366 !important;
+  color: var(--ab-green) !important;
   font-weight: 800 !important;
 }
 
 .mg-games__td-highest {
-  color: #f87171 !important;
+  color: var(--ab-red) !important;
   font-weight: 800 !important;
 }
 
 .mg-games__td-average {
-  color: #a78bfa !important;
+  color: var(--ab-accent-deep) !important;
   font-weight: 800 !important;
 }
 
 .mg-games__loading,
 .mg-games__empty {
   margin: 0.4rem 0 !important;
-  color: #64748b;
+  color: var(--ab-text-muted);
   font-size: 0.82rem;
 }
 
 .mg-games__hint {
   margin: 0.65rem 0 0 !important;
-  color: #64748b;
+  color: var(--ab-text-muted);
   font-size: 0.72rem !important;
 }
 
@@ -207,18 +227,18 @@
   align-items: baseline;
   gap: 0.6rem;
   padding: 0.55rem 0;
-  border-bottom: 1px solid rgba(148, 163, 184, 0.14);
+  border-bottom: 1px solid var(--ab-line-soft);
 }
 
 .mg-games__news-date {
   flex: 0 0 auto;
-  color: #64748b;
+  color: var(--ab-text-muted);
   font-size: 0.72rem;
   font-variant-numeric: tabular-nums;
 }
 
 .mg-games__news-item a {
-  color: #c4b5fd !important;
+  color: var(--ab-accent-deep) !important;
   font-size: 0.84rem !important;
   font-weight: 600 !important;
   text-decoration: none !important;
@@ -252,14 +272,14 @@
   gap: 0.4rem;
   padding: 0.85rem 0.7rem;
   border-radius: 0.55rem;
-  background: rgba(76, 29, 149, 0.08);
-  border: 1px solid rgba(124, 58, 237, 0.14);
+  background: var(--ab-panel-2);
+  border: 1px solid var(--ab-line);
   text-decoration: none !important;
   text-align: center;
 }
 
 .mg-games__streamer:hover {
-  background: rgba(124, 58, 237, 0.14);
+  background: rgba(174, 158, 133, 0.14);
 }
 
 .mg-games__streamer-avatar {
@@ -275,12 +295,12 @@
   height: 100%;
   border-radius: 50%;
   object-fit: cover;
-  border: 2px solid rgba(124, 58, 237, 0.5);
+  border: 2px solid var(--ab-accent);
 }
 
 .mg-games__streamer-name {
   display: block;
-  color: #e2e8f0 !important;
+  color: var(--ab-text) !important;
   font-size: 0.88rem !important;
   font-weight: 800 !important;
 }
@@ -288,14 +308,14 @@
 .mg-games__streamer-meta {
   display: block;
   margin-top: 0.15rem;
-  color: #64748b !important;
+  color: var(--ab-text-muted) !important;
   font-size: 0.7rem !important;
 }
 
-/* Guide page */
+/* Guide page — no photo behind it, so the scrim can run flat */
 .mg-games__hero--guide {
-  background:
-    linear-gradient(105deg, rgba(15, 23, 42, 0.94) 0%, rgba(76, 29, 149, 0.82) 52%, rgba(15, 23, 42, 0.6) 100%);
+  background-image:
+    linear-gradient(105deg, rgba(0, 0, 0, 0.88) 0%, rgba(18, 18, 18, 0.66) 55%, rgba(0, 0, 0, 0.34) 100%);
 }
 
 .mg-games__guide-grid {
@@ -313,33 +333,33 @@
 .mg-games__guide-card {
   padding: 0.9rem 1rem;
   border-radius: 0.55rem;
-  background: rgba(76, 29, 149, 0.08);
-  border: 1px solid rgba(124, 58, 237, 0.14);
+  background: var(--ab-panel-2);
+  border: 1px solid var(--ab-line);
 }
 
 .mg-games__guide-card h3 {
   margin: 0 0 0.4rem !important;
-  color: #e2e8f0 !important;
+  color: var(--ab-text) !important;
   font-size: 0.92rem !important;
   font-weight: 800 !important;
 }
 
 .mg-games__guide-card p {
   margin: 0 !important;
-  color: #94a3b8 !important;
+  color: var(--ab-text-muted) !important;
   font-size: 0.82rem !important;
   line-height: 1.55 !important;
 }
 
 .mg-games__faq p {
   margin: 0 0 0.8rem !important;
-  color: #cbd5e1 !important;
+  color: var(--ab-text-muted) !important;
   font-size: 0.84rem !important;
   line-height: 1.55 !important;
 }
 
 .mg-games__faq strong {
-  color: #e2e8f0 !important;
+  color: var(--ab-text) !important;
 }
 
 .mg-games__note {
@@ -388,10 +408,10 @@
   display: flex;
   flex-direction: column;
   margin: 0.75rem 0 1.25rem;
-  border: 1px solid rgba(124, 58, 237, 0.16);
+  border: 1px solid var(--ab-line);
   border-radius: 10px;
   overflow: hidden;
-  background: #fff;
+  background: var(--ab-panel);
 }
 
 .mg-games__game-row {
@@ -401,9 +421,9 @@
   width: 100%;
   padding: 0.6rem 0.8rem;
   border: 0;
-  border-bottom: 1px solid rgba(124, 58, 237, 0.1);
-  background: #fff;
-  color: #0f172a;
+  border-bottom: 1px solid var(--ab-line-soft);
+  background: var(--ab-panel);
+  color: var(--ab-text);
   cursor: pointer;
   text-align: left;
   transition: background 0.2s ease;
@@ -437,7 +457,7 @@
   font-size: 0.84rem;
   font-weight: 700;
   line-height: 1.2;
-  color: #0f172a;
+  color: var(--ab-text);
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -445,14 +465,14 @@
 
 .mg-games__game-sub {
   font-size: 0.68rem;
-  color: #64748b;
+  color: var(--ab-text-muted);
 }
 
 .mg-games__game-price {
   flex: 0 0 auto;
   font-size: 0.84rem;
   font-weight: 800;
-  color: #7c3aed;
+  color: var(--ab-accent-deep);
   white-space: nowrap;
 }
 
@@ -465,9 +485,9 @@
   align-items: center;
   gap: 0.75rem;
   padding: 0.85rem 1rem;
-  border: 1px solid rgba(124, 58, 237, 0.22);
+  border: 1px solid var(--ab-line);
   border-radius: 10px;
-  background: #faf5ff;
+  background: var(--ab-panel-2);
 }
 
 .mg-games__offer-icon img {
@@ -487,18 +507,18 @@
   margin: 0;
   font-size: 0.92rem;
   font-weight: 800;
-  color: #0f172a;
+  color: var(--ab-text);
 }
 
 .mg-games__offer-sub {
   font-size: 0.7rem;
-  color: #64748b;
+  color: var(--ab-text-muted);
 }
 
 .mg-games__offer-price {
   font-size: 1.05rem;
   font-weight: 800;
-  color: #7c3aed;
+  color: var(--ab-accent-deep);
   white-space: nowrap;
 }
 
@@ -532,10 +552,10 @@
   min-width: 2rem;
   height: 2rem;
   padding: 0 0.5rem;
-  border: 1px solid rgba(124, 58, 237, 0.25);
+  border: 1px solid var(--ab-line);
   border-radius: 6px;
-  background: #fff;
-  color: #0f172a;
+  background: var(--ab-panel);
+  color: var(--ab-text);
   font-size: 0.8rem;
   font-weight: 700;
   cursor: pointer;
@@ -543,13 +563,13 @@
 }
 
 .mg-games__pager-btn:hover:not(:disabled):not(.is-active) {
-  background: #f5f3ff;
+  background: var(--ab-panel-2);
 }
 
 .mg-games__pager-btn.is-active {
-  background: #7c3aed;
+  background: var(--ab-text);
   color: #fff;
-  border-color: #7c3aed;
+  border-color: var(--ab-text);
 }
 
 .mg-games__pager-btn:disabled {
@@ -561,17 +581,17 @@
 .mg-df-hint {
   margin: 0.25rem 0 1.25rem;
   font-size: 0.82rem;
-  color: #64748b;
+  color: var(--ab-text-muted);
 }
 
-/* —— Delta Force accounts (grouped card, dark theme) —— */
+/* —— Delta Force accounts (grouped card) —— */
 .mg-df-card {
   display: block;
   margin: 0 0 0.9rem;
   padding: 0.65rem 0.75rem 0.75rem;
-  border: 1px solid rgba(255, 255, 255, 0.12);
+  border: 1px solid var(--ab-line);
   border-radius: 0.5rem;
-  background: rgba(30, 41, 59, 0.6);
+  background: var(--ab-panel-2);
 }
 
 /* 头部：编号 + 段位徽章 */
@@ -582,12 +602,12 @@
   gap: 0.6rem;
   margin-bottom: 0.5rem;
   font-size: 0.74rem;
-  color: #e2e8f0;
+  color: var(--ab-text-muted);
 }
 
 .mg-df-card__no {
   font-weight: 900;
-  color: #f8fafc;
+  color: var(--ab-text);
   letter-spacing: 0.02em;
   font-size: 0.82rem;
 }
@@ -598,8 +618,8 @@
   gap: 0.35rem;
   padding: 0.14rem 0.5rem;
   border-radius: 999px;
-  background: #14b8a6;
-  color: #042f2e;
+  background: #0f766e;
+  color: #ffffff;
   font-size: 0.7rem;
   font-weight: 900;
 }
@@ -611,20 +631,20 @@
   gap: 0.6rem;
   margin-bottom: 0.55rem;
   padding-bottom: 0.5rem;
-  border-bottom: 1px dashed rgba(148, 163, 184, 0.35);
+  border-bottom: 1px dashed var(--ab-line);
 }
 
 .mg-df-card__price-now {
   font-size: 1.1rem;
   font-weight: 900;
-  color: #fb923c;
+  color: #b45309;
   line-height: 1;
 }
 
 .mg-df-card__price-meta {
   font-size: 0.72rem;
   font-weight: 600;
-  color: #cbd5e1;
+  color: var(--ab-text-muted);
 }
 
 /* 分组网格 */
@@ -643,7 +663,7 @@
   font-size: 0.64rem;
   font-weight: 900;
   letter-spacing: 0.06em;
-  color: #2dd4bf;
+  color: #0f766e;
   text-transform: uppercase;
 }
 
@@ -652,18 +672,18 @@
   gap: 0.35rem;
   font-size: 0.72rem;
   line-height: 1.5;
-  color: #f1f5f9;
+  color: var(--ab-text);
 }
 
 .mg-df-card__group-row .k {
   flex: 0 0 auto;
-  color: #94a3b8;
+  color: var(--ab-text-muted);
   min-width: 3.1rem;
 }
 
 .mg-df-card__group-row .v {
   font-weight: 600;
-  color: #f8fafc;
+  color: var(--ab-text);
 }
 
 .mg-df-card__group-row .v {
@@ -681,11 +701,11 @@
 .mg-df-section {
   margin: 1.8rem 0 0.9rem !important;
   padding: 0.4rem 0.75rem !important;
-  border-left: 3px solid #14b8a6 !important;
-  background: rgba(20, 184, 166, 0.08);
+  border-left: 3px solid #0f766e !important;
+  background: rgba(15, 118, 110, 0.08);
   font-size: 0.95rem !important;
   font-weight: 800 !important;
-  color: #e2e8f0 !important;
+  color: var(--ab-text) !important;
 }
 
 /* 加载更多 */
@@ -695,15 +715,15 @@
   text-align: center;
   font-size: 0.8rem;
   font-weight: 700;
-  color: #14b8a6;
-  border: 1px dashed rgba(20, 184, 166, 0.4);
+  color: #0f766e;
+  border: 1px dashed rgba(15, 118, 110, 0.4);
   border-radius: 0.4rem;
-  background: rgba(20, 184, 166, 0.06);
+  background: rgba(15, 118, 110, 0.06);
 }
 
 .mg-df-load.is-end {
-  color: #64748b;
-  border-color: rgba(100, 116, 139, 0.3);
+  color: var(--ab-text-muted);
+  border-color: var(--ab-line);
   background: transparent;
 }
 
@@ -713,8 +733,8 @@
   margin: 0 0 1.4rem;
   padding: 1.1rem 1.1rem 0.95rem;
   border-radius: 0.6rem;
-  background: rgba(76, 29, 149, 0.07);
-  border: 1px solid rgba(124, 58, 237, 0.16);
+  background: var(--ab-panel-2);
+  border: 1px solid var(--ab-line);
 }
 
 .mg-games__panel .mg-games__section-title {
@@ -731,13 +751,15 @@
   list-style: none !important;
 }
 
+/* Chips only ever appear inside the hero, so they stay light-on-dark.
+   The scrim is opaque enough now that white clears 4.5:1 against it. */
 .mg-games__chip {
   display: inline-block;
   padding: 0.16rem 0.6rem;
   border-radius: 999px;
-  background: rgba(15, 23, 42, 0.55);
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  color: #e2e8f0 !important;
+  background: rgba(0, 0, 0, 0.55);
+  border: 1px solid rgba(255, 255, 255, 0.30);
+  color: #ffffff !important;
   font-size: 0.7rem !important;
   font-weight: 700 !important;
   line-height: 1.5 !important;
@@ -745,9 +767,9 @@
 }
 
 .mg-games__chip--score {
-  border-color: rgba(37, 211, 102, 0.45);
-  background: rgba(37, 211, 102, 0.14);
-  color: #4ade80 !important;
+  border-color: rgba(110, 231, 183, 0.55);
+  background: rgba(0, 0, 0, 0.55);
+  color: #6ee7b7 !important;
 }
 
 /* 热度/口碑统计带 */
@@ -767,13 +789,13 @@
 .mg-games__stat {
   padding: 0.7rem 0.8rem;
   border-radius: 0.6rem;
-  background: rgba(76, 29, 149, 0.07);
-  border: 1px solid rgba(124, 58, 237, 0.14);
+  background: var(--ab-panel);
+  border: 1px solid var(--ab-line);
 }
 
 .mg-games__stat-num {
   display: block;
-  color: #e2e8f0;
+  color: var(--ab-text);
   font-size: 1.1rem;
   font-weight: 900;
   letter-spacing: -0.01em;
@@ -783,13 +805,13 @@
 .mg-games__stat-num small {
   font-size: 0.7rem;
   font-weight: 800;
-  color: #a78bfa;
+  color: var(--ab-accent-deep);
 }
 
 .mg-games__stat-label {
   display: block;
   margin-top: 0.14rem;
-  color: #64748b;
+  color: var(--ab-text-muted);
   font-size: 0.68rem;
   font-weight: 600;
 }
@@ -797,7 +819,7 @@
 /* 简介正文 */
 .mg-games__lead-text {
   margin: 0 !important;
-  color: #cbd5e1 !important;
+  color: var(--ab-text-muted) !important;
   font-size: 0.88rem !important;
   line-height: 1.75 !important;
 }
@@ -807,7 +829,7 @@
 }
 
 .mg-games__lead-text strong {
-  color: #f1f5f9 !important;
+  color: var(--ab-text) !important;
 }
 
 /* 玩法特色卡片 */
@@ -831,20 +853,20 @@
 .mg-games__feature {
   padding: 0.9rem 0.95rem 0.85rem;
   border-radius: 0.55rem;
-  background: rgba(30, 41, 59, 0.45);
-  border: 1px solid rgba(148, 163, 184, 0.16);
+  background: var(--ab-panel);
+  border: 1px solid var(--ab-line);
 }
 
 .mg-games__feature-title {
   margin: 0 0 0.12rem !important;
-  color: #f1f5f9 !important;
+  color: var(--ab-text) !important;
   font-size: 0.98rem !important;
   font-weight: 800 !important;
 }
 
 .mg-games__feature-kicker {
   margin: 0 0 0.45rem !important;
-  color: #a78bfa !important;
+  color: var(--ab-accent-deep) !important;
   font-size: 0.7rem !important;
   font-weight: 800 !important;
   letter-spacing: 0.04em;
@@ -855,8 +877,8 @@
   margin: 0 0 0.55rem !important;
   padding: 0.1rem 0.6rem;
   border-radius: 999px;
-  background: rgba(124, 58, 237, 0.16);
-  color: #c4b5fd !important;
+  background: rgba(174, 158, 133, 0.18);
+  color: var(--ab-accent-deep) !important;
   font-size: 0.7rem !important;
   font-weight: 800 !important;
   line-height: 1.5 !important;
@@ -864,7 +886,7 @@
 
 .mg-games__feature p {
   margin: 0 !important;
-  color: #94a3b8 !important;
+  color: var(--ab-text-muted) !important;
   font-size: 0.8rem !important;
   line-height: 1.65 !important;
 }
@@ -887,7 +909,7 @@
   display: flex;
   gap: 0.55rem;
   padding: 0.4rem 0;
-  border-bottom: 1px dashed rgba(148, 163, 184, 0.18);
+  border-bottom: 1px dashed var(--ab-line-soft);
   font-size: 0.8rem;
   line-height: 1.45;
 }
@@ -895,20 +917,20 @@
 .mg-games__fact .k {
   flex: 0 0 auto;
   min-width: 4.3rem;
-  color: #94a3b8;
+  color: var(--ab-text-muted);
   font-weight: 600;
 }
 
 .mg-games__fact .v {
   min-width: 0;
-  color: #e2e8f0;
+  color: var(--ab-text);
   font-weight: 600;
   word-break: break-word;
 }
 
 .mg-games__fact .v em {
   font-style: normal;
-  color: #a78bfa;
+  color: var(--ab-accent-deep);
   font-weight: 800;
 }
 
@@ -937,8 +959,8 @@
   padding: 0.3rem 0.7rem;
   border-radius: 999px;
   background: rgba(245, 158, 11, 0.12);
-  border: 1px solid rgba(245, 158, 11, 0.3);
-  color: #fcd34d !important;
+  border: 1px solid rgba(245, 158, 11, 0.35);
+  color: #92400e !important;
   font-size: 0.72rem !important;
   font-weight: 800 !important;
   line-height: 1.4 !important;
@@ -950,12 +972,12 @@
   height: 0.42rem;
   flex: 0 0 auto;
   border-radius: 50%;
-  background: #f59e0b;
+  background: #b45309;
 }
 
 /* 版本更新 / 开发者的话 */
 .mg-games__news-title {
-  color: #cbd5e1 !important;
+  color: var(--ab-text) !important;
   font-size: 0.84rem !important;
   font-weight: 600 !important;
 }
@@ -964,9 +986,9 @@
   margin: 0.6rem 0 0.2rem !important;
   padding: 0.8rem 0.95rem 0.8rem 1.05rem;
   border-radius: 0.55rem;
-  border-left: 3px solid #a78bfa;
-  background: rgba(76, 29, 149, 0.1);
-  color: #cbd5e1 !important;
+  border-left: 3px solid var(--ab-accent);
+  background: rgba(174, 158, 133, 0.10);
+  color: var(--ab-text-muted) !important;
   font-size: 0.84rem !important;
   line-height: 1.7 !important;
 }
@@ -974,7 +996,7 @@
 .mg-games__quote-cite {
   display: block;
   margin-top: 0.45rem !important;
-  color: #64748b !important;
+  color: var(--ab-text-muted) !important;
   font-size: 0.72rem !important;
   font-style: normal !important;
   font-weight: 600 !important;
@@ -982,7 +1004,7 @@
 
 /* 小字来源 */
 .mg-games__src {
-  color: #64748b !important;
+  color: var(--ab-text-muted) !important;
   font-size: 0.7rem !important;
   font-weight: 500 !important;
 }

@@ -19,9 +19,8 @@
   }
 
   function money(n) {
-    return window.AceBaseCurrency
-      ? window.AceBaseCurrency.formatFromBase(n)
-      : "$" + (Math.round(n * 100) / 100).toFixed(n % 1 ? 2 : 0);
+    // Source prices are USD; USD is the only currency displayed.
+    return "$" + (Math.round(n * 100) / 100).toFixed(n % 1 ? 2 : 0);
   }
 
   function buildShopGrid() {

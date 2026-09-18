@@ -1,0 +1,67 @@
+{
+ "slug": "douyin-top-up",
+ "h1": "Douyin（抖音）",
+ "title": "抖音充值 | 抖音钻石充值 - Topuplist",
+ "tiers": [
+  {
+   "name": "3000 Diamonds",
+   "sale": 61.23,
+   "original": 91.49
+  },
+  {
+   "name": "200 Diamonds",
+   "sale": 3.91,
+   "original": 5.34
+  },
+  {
+   "name": "1000 Diamonds",
+   "sale": 20.42,
+   "original": 26.69
+  },
+  {
+   "name": "8000 Diamonds",
+   "sale": 166.13,
+   "original": 213.48
+  },
+  {
+   "name": "300 Diamonds",
+   "sale": 5.87,
+   "original": 8.01
+  },
+  {
+   "name": "60 Diamonds",
+   "sale": 1.48,
+   "original": 1.83
+  },
+  {
+   "name": "100  Diamonds",
+   "sale": 2.52,
+   "original": 3.05
+  },
+  {
+   "name": "500 Diamonds",
+   "sale": 9.78,
+   "original": 13.34
+  },
+  {
+   "name": "2000 Diamonds",
+   "sale": 40.83,
+   "original": 53.37
+  },
+  {
+   "name": "5000 Diamonds",
+   "sale": 102.06,
+   "original": 133.42
+  },
+  {
+   "name": "10000 Diamonds",
+   "sale": 209.57,
+   "original": 266.84
+  },
+  {
+   "name": "20000 Diamonds",
+   "sale": 406.75,
+   "original": 533.69
+  }
+ ]
+}

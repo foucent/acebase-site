@@ -23,9 +23,8 @@
   }
 
   function money(n) {
-    return window.AceBaseCurrency
-      ? window.AceBaseCurrency.formatFromBase(n)
-      : "$" + (Math.round(n * 100) / 100).toFixed(n % 1 ? 2 : 0);
+    // Source prices are USD; USD is the only currency displayed.
+    return "$" + (Math.round(n * 100) / 100).toFixed(n % 1 ? 2 : 0);
   }
 
   function loadCart() {
@@ -81,7 +80,7 @@
     var lines = ["你好，我想咨询以下鼠标垫：", ""];
     cart.forEach(function (item, i) {
       lines.push(
-        (i + 1) + ". " + item.name + " × " + item.qty + " — US$" + money(item.price) + " /件"
+        (i + 1) + ". " + item.name + " × " + item.qty + " — " + money(item.price) + " /件"
       );
     });
     lines.push("");
@@ -311,7 +310,7 @@
 
     fab.hidden = count === 0;
     countEl.textContent = String(count);
-    totalEl.textContent = "$" + money(cartTotal(cart));
+    totalEl.textContent = money(cartTotal(cart));
 
     if (!cart.length) {
       itemsEl.innerHTML = '<p class="mg-cart-empty">购物车是空的。点击商品右侧 + 号加入。</p>';
@@ -332,7 +331,7 @@
             '<div class="mg-cart-line__name">' +
             item.name +
             "</div>" +
-            '<div class="mg-cart-line__price">US$' +
+            '<div class="mg-cart-line__price">' +
             money(item.price) +
             " each</div>" +
             "</div>" +

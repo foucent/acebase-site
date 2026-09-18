@@ -1,11 +1,17 @@
 site_name: AceBase
 site_url: https://acebase.cc/
+# Rendered by Material's partials/copyright.html in the footer bar.
+copyright: © 2026 AceBase.cc. All rights reserved.
 theme:
   name: material
   custom_dir: overrides
   language: zh
+  # Material otherwise emits a <link> to Google Fonts for Roboto / Roboto Mono
+  # on every page. The theme is built on system stacks instead, and the site is
+  # read mainly from mainland China, where that request just stalls.
+  font: false
   palette:
-    scheme: slate
+    scheme: default
     primary: custom
     accent: custom
   icon:
@@ -43,7 +49,7 @@ plugins:
         games/valorant-accounts.md: index.md
         currency/index.md: index.md
         games/buy-robux.md: index.md
-        games/topup-prices.md: games/pubg-mobile.md
+        games/rtx-5050.md: games/gpu-prices.md
 
 markdown_extensions:
   - admonition
@@ -61,18 +67,20 @@ markdown_extensions:
 
 extra_css:
   - stylesheets/extra.css
+  - stylesheets/header.css
   - stylesheets/bittopup-product.css
   - stylesheets/preowned.css
   - stylesheets/photo-wall.css
   - stylesheets/home.css
   - stylesheets/board-games.css
   - stylesheets/games.css
-  - stylesheets/currency.css
   - stylesheets/gift-cards.css
   - stylesheets/gpu.css
+  # Loads last: the magazine homepage owns the widest-reaching selectors, so
+  # it should win any specificity tie against the per-page sheets above.
+  - stylesheets/uncrate.css
 
 extra_javascript:
-  - javascripts/currency.js
   - javascripts/crisp.js
   - javascripts/hero-slides.js
   - javascripts/photo-wall.js
@@ -81,6 +89,7 @@ extra_javascript:
   - javascripts/board-grid.js
   - javascripts/gift-cards.js
   - javascripts/games-prices.js
+  - javascripts/live-prices.js
 
 watch:
   - overrides
@@ -93,20 +102,40 @@ extra:
   analytics:
     provider: google
     property: G-N7QW2VCWYG
-  social:
-    - icon: material/controller-classic
+  # uncrate's family row, in the black band above the wordmark: the sibling
+  # sites, then the handle whose menu drops the channels. Labels go through
+  # text-transform: uppercase, so write them in the brand's own casing.
+  # `link` takes a full URL or a site-root path.
+  family:
+    - label: AceBase.cc
       link: https://acebase.cc/
-      name: AceBase
-    - icon: fontawesome/brands/youtube
-      link: https://youtube.com/@acebase
-      name: AceBase on YouTube
+    # 站内的 SHOP 页（gift-cards/index.md）。shop.acebase.cc 解析不了，
+    # 子域开通后把 link 换成 https://shop.acebase.cc/ 即可。
+    - label: shop.AceBase.cc
+      link: /gift-cards/
+  # The site's own channels, read twice: header.html renders them as the menu
+  # under the @AceBase handle, main.html as the Organization node's sameAs. One
+  # list, so a channel cannot show up in the menu without also being declared to
+  # crawlers. `name` is the label; the @ is added by the template.
+  #
+  # Deliberately NOT named `social`: Material prints extra.social as a row of
+  # icons in the footer, and the footer carries the copyright line alone.
+  channels:
+    - link: https://www.youtube.com/@acebase.select
+      name: acebase.select
+    - link: https://www.youtube.com/@AceBase_cc
+      name: AceBase_cc
+    - link: https://www.youtube.com/@经典好车
+      name: 经典好车
+  # Material's footer prints "Made with Material for MkDocs" after the copyright
+  # unless this is false.
+  generator: false
 
 nav:
-  - 首页: index.md
-  - 礼品卡: gift-cards/index.md
-  - 画廊: gallery/index.md
-  - 代储价格监测:
-      - PUBG Mobile UC: games/pubg-mobile.md
-      - PUBG G-COIN: games/pubg-gcoin.md
-      - Honor of Kings: games/hok.md
-      - 燕云十六声: games/where-winds-meet.md
+  - HOME: index.md
+  - TECH: games/gpu-prices.md
+  - GAME: games/topup-prices.md
+  - APP: games/live-prices.md
+  - GEAR: pc-components/index.md
+  - STYLE: sim-gear/index.md
+  - SHOP: gift-cards/index.md

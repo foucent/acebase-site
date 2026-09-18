@@ -1,0 +1,37 @@
+{
+ "slug": "mango",
+ "h1": "Mango Live",
+ "title": "Mango Live 金币充值_Mango Coins直充 - Topuplist",
+ "tiers": [
+  {
+   "name": "3600 Diamonds",
+   "sale": 1.11,
+   "original": 1.34
+  },
+  {
+   "name": "14400 Diamonds",
+   "sale": 4.58,
+   "original": 5.57
+  },
+  {
+   "name": "28800 Diamonds",
+   "sale": 9.13,
+   "original": 11.16
+  },
+  {
+   "name": "64800 Diamonds",
+   "sale": 21.48,
+   "original": 24.79
+  },
+  {
+   "name": "126000 Diamonds",
+   "sale": 41.77,
+   "original": 47.12
+  },
+  {
+   "name": "244800 Diamonds",
+   "sale": 81.11,
+   "original": 93.01
+  }
+ ]
+}

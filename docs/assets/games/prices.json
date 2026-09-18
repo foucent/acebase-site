@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-02",
+  "updated": "2026-09-03",
   "games": {
     "valorant": [
       {
@@ -233,34 +233,46 @@
     ],
     "arena-breakout": [
       {
+        "title": "60 + 6 Bonds",
+        "lowest": 0.75,
+        "highest": 0.83,
+        "average": 0.78
+      },
+      {
         "title": "310 + 25 Bonds",
-        "official": 5.03,
-        "acebase": 3.02
+        "lowest": 3.8,
+        "highest": 4.16,
+        "average": 3.96
       },
       {
         "title": "630 + 45 Bonds",
-        "official": 9.86,
-        "acebase": 5.93
+        "lowest": 7.44,
+        "highest": 8.1,
+        "average": 7.76
       },
       {
-        "title": "1,580 + 110 Bonds",
-        "official": 24.5,
-        "acebase": 14.74
+        "title": "1580 + 110 Bonds",
+        "lowest": 18.51,
+        "highest": 20.26,
+        "average": 19.67
       },
       {
-        "title": "3,200 + 200 Bonds",
-        "official": 49.74,
-        "acebase": 29.93
+        "title": "3200 + 200 Bonds",
+        "lowest": 37.56,
+        "highest": 40.46,
+        "average": 39.49
       },
       {
-        "title": "6,500 + 320 Bonds",
-        "official": 95.85,
-        "acebase": 57.69
+        "title": "6500 + 320 Bonds",
+        "lowest": 72.39,
+        "highest": 84.79,
+        "average": 79.39
       },
       {
-        "title": "13,000 + 640 Bonds",
-        "official": 191.71,
-        "acebase": 115.37
+        "title": "13000 + 640 Bonds",
+        "lowest": 144.77,
+        "highest": 144.77,
+        "average": 144.77
       }
     ],
     "hok": [

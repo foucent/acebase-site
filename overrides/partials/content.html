@@ -1,6 +1,18 @@
 {% include "partials/tags.html" %}
 {% include "partials/actions.html" %}
-{% if "\u003ch1" not in page.content %}
+{#-
+  The fallback h1 exists so a page whose markdown opens with prose still gets
+  a heading. Two things stand it down:
+
+    "<h1" in page.content   the page renders its own heading
+    hide: - title           the page supplies its own heading in markup
+                            (the homepage's hero is one)
+
+  Material's own hide: values are navigation, toc, tags, footer and feedback —
+  `title` is this theme's addition, which is why the check lives here.
+-#}
+{% set hide_title = page.meta.hide and "title" in page.meta.hide if page.meta else false %}
+{% if not hide_title and "<h1" not in page.content %}
   <h1>{{ page.title | d(config.site_name, true)}}</h1>
 {% endif %}
 {{ page.content }}

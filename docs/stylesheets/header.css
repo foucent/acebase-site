@@ -1,0 +1,388 @@
+/* ============================================================
+   AceBase header — uncrate.com's three-band masthead.
+
+   Measurements come from uncrate's live CSS, scaled for CJK labels:
+
+     band 1  black, centred wordmark, tools right          min-height 84px
+     band 2  main nav  28px, 1px black rule underneath, gap 18px
+     band 3  sub nav   20px, 1px black rules above and below, 48px tall
+
+   Two deliberate departures from the original:
+
+   - uncrate's sub-nav links are #ae9e85, which is 2.6:1 on white and only
+     decorative at any size. Links use --ab-accent-deep (same hue, 5.9:1);
+     the raw tan survives as the hover underline, where it carries no text.
+   - The header is static rather than sticky. Three bands is ~190px, which
+     is far too much to pin, and uncrate's own header scrolls away too.
+
+   The markup this styles lives in overrides/partials/header.html, which also
+   documents the Material hooks (.md-header__inner) the markup relies on.
+   ============================================================ */
+
+.md-header {
+  /* Material pins the header and paints it --md-primary-fg-color. Both have
+     to go before the bands below can lay themselves out. */
+  position: static;
+  display: block;
+  background: var(--ab-bg);
+  box-shadow: none;
+  color: var(--ab-text);
+}
+
+.md-header__inner {
+  padding: 0;
+}
+
+/* Material gates .md-header__button on :not([hidden]), which outranks a bare
+   class — hence the compound selector and the !important. */
+.md-header__button.ab-band__drawer {
+  display: none !important;
+}
+
+/* Page frontmatter `hide: - navigation` removes the sidebar; without it the
+   drawer label below would open an empty panel. */
+.md-sidebar--primary[hidden] {
+  display: none !important;
+}
+
+/* ---------- band 1 — black ---------- */
+.ab-band {
+  position: relative;
+  z-index: 3;
+  background: var(--ab-header-bg);
+  color: var(--ab-header-fg);
+}
+
+.ab-band__inner {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  box-sizing: border-box;
+  max-width: 960px;
+  min-height: 84px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.ab-wordmark {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.3rem;
+  text-decoration: none !important;
+  color: var(--ab-header-fg) !important;
+  white-space: nowrap;
+}
+
+.ab-wordmark__name {
+  font-size: 2.1rem;
+  font-weight: 900;
+  line-height: 1;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.ab-band__tools {
+  position: relative;
+  z-index: 5;
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+/* ---------- band 1 family strip ----------
+   uncrate's slim family row, sitting on the black band above the wordmark:
+   the sibling sites and the account handle on one centred line, uppercase,
+   with a hairline under them. Numbers are uncrate's own — 12px/700 with 0.5px
+   of tracking, 24px between items, 13px above and 14px below, a 1px white
+   rule across the 960px column, and the channel menu hanging off the handle.
+
+   `px` throughout, and no rem: the strip is a fixed 960px column, so its
+   contents must not grow when Material steps the root font size up (20px →
+   22px at 100em → 24px at 125em). */
+.ab-family {
+  position: relative;
+  /* Above the wordmark row's tools (z-index 5) so the open menu is never
+     clipped by the search box. */
+  z-index: 6;
+}
+
+.ab-family__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 8px 24px;
+  box-sizing: border-box;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 13px 20px 14px;
+  list-style: none;
+  border-bottom: 1px solid var(--ab-header-fg);
+}
+
+.ab-family__item {
+  position: relative;
+}
+
+.ab-family__link,
+.ab-family__toggle,
+.ab-family__menu a {
+  display: block;
+  font-family: inherit;
+  font-size: 12px;
+  font-weight: 700;
+  /* uncrate's items are 15px tall, which is where the menu starts. */
+  line-height: 15px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  white-space: nowrap;
+  color: var(--ab-header-fg) !important;
+  text-decoration: none !important;
+  opacity: 0.85;
+  transition: opacity 0.15s ease, color 0.15s ease;
+}
+
+.ab-family__toggle {
+  /* A button, not a link — it opens the menu rather than going anywhere — so
+     it needs the button chrome taken off it. */
+  margin: 0;
+  padding: 0;
+  background: none;
+  border: 0;
+  cursor: pointer;
+}
+
+.ab-family__link:hover,
+.ab-family__link:focus-visible,
+.ab-family__toggle:hover,
+.ab-family__toggle:focus-visible,
+.ab-family__menu a:hover,
+.ab-family__menu a:focus-visible {
+  opacity: 1;
+  color: var(--ab-accent) !important;
+}
+
+/* uncrate's .atsign: the @ is spacing, not part of the name. */
+.ab-family__at {
+  padding-right: 2px;
+}
+
+/* Black on black, opened where uncrate opens @uncrate: at the handle's own
+   baseline box, 25px of lead-in, 20px of tail, and the box reaching 20px left
+   of the handle so the channel names line up under it. */
+.ab-family__menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: -20px;
+  z-index: 6;
+  margin: 0;
+  padding: 25px 20px 20px;
+  list-style: none;
+  background: var(--ab-header-bg);
+}
+
+.ab-family__menu a {
+  padding: 3px 0;
+}
+
+/* Hover, or keyboard focus anywhere inside the item. The toggle is a button,
+   so Tab lands on it, opens the menu, and the next Tab reaches the channels —
+   which is what keeps this usable without JS. */
+.ab-family__item:hover .ab-family__menu,
+.ab-family__item:focus-within .ab-family__menu {
+  display: block;
+}
+
+.ab-band__tool {
+  color: var(--ab-header-fg) !important;
+}
+
+/* ---------- band 2 — main nav ---------- */
+.ab-mainnav {
+  background: var(--ab-bg);
+  border-bottom: 1px solid var(--ab-text);
+  /* uncrate leaves a hairline gap between the two rules. */
+  margin-bottom: 3px;
+}
+
+.ab-mainnav__inner {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 20px 14px;
+}
+
+.ab-mainnav__list {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: baseline;
+  justify-content: center;
+  gap: 18px;
+  margin: 0;
+  padding: 0.75rem 0 0;
+  list-style: none;
+  /* Six CJK labels at 28px very nearly fill the 960px column; scrolling
+     beats wrapping when the viewport or the font stack pushes them over. */
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+
+.ab-mainnav__list::-webkit-scrollbar {
+  display: none;
+}
+
+.ab-mainnav__item {
+  flex: 0 0 auto;
+}
+
+.ab-mainnav__link {
+  display: inline-block;
+  font-size: 28px;
+  font-weight: 900;
+  line-height: 1;
+  letter-spacing: -0.01em;
+  white-space: nowrap;
+  color: var(--ab-text) !important;
+  text-decoration: none !important;
+}
+
+.ab-mainnav__link:hover,
+.ab-mainnav__link.is-active {
+  color: var(--ab-accent-deep) !important;
+}
+
+/* ---------- band 3 — sub nav ---------- */
+.ab-subnav {
+  background: var(--ab-bg);
+  border-top: 1px solid var(--ab-text);
+  border-bottom: 1px solid var(--ab-text);
+}
+
+.ab-subnav__inner {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 12px 20px 11px;
+}
+
+.ab-subnav__list {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+  height: 20px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+
+.ab-subnav__list::-webkit-scrollbar {
+  display: none;
+}
+
+.ab-subnav__item {
+  flex: 0 0 auto;
+}
+
+.ab-subnav__link {
+  display: inline-block;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 20px;
+  white-space: nowrap;
+  color: var(--ab-accent-deep) !important;
+  text-decoration: none !important;
+  /* The decorative tan, held back for the hover rule. */
+  border-bottom: 1px solid transparent;
+}
+
+.ab-subnav__link:hover {
+  color: var(--ab-text) !important;
+  border-bottom-color: var(--ab-accent);
+}
+
+/* ---------- narrow screens ----------
+   uncrate drops the sub-nav entirely below 768px and keeps the main nav on
+   one line. Same here, plus the drawer label, which is how the sidebar is
+   reached once the column collapses. */
+@media screen and (max-width: 76.1875em) {
+  .md-header__button.ab-band__drawer {
+    display: inline-block !important;
+  }
+}
+
+/* Six CJK labels at 28px need ~886px including padding, so anything under
+   ~1000px overflows the 960px column. Wrapping reads better than a row of
+   glyphs sliced in half at the right edge. */
+@media screen and (max-width: 1000px) {
+  .ab-mainnav__list {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 6px 16px;
+    overflow-x: visible;
+  }
+
+  .ab-mainnav__link {
+    font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .ab-band__inner {
+    min-height: 68px;
+    padding: 0 16px;
+  }
+
+  /* The band pads by 16px here, not 20, so the strip and the menu's left edge
+     follow it — otherwise the panel hangs 4px off the viewport. */
+  .ab-family__list {
+    gap: 6px 16px;
+    padding: 10px 16px 11px;
+  }
+
+  .ab-family__menu {
+    left: -16px;
+  }
+
+  /* The drawer label and the search icon sit ~200px apart on a 390px band,
+     which is not enough room for a viewport-centred 192px wordmark — it
+     renders underneath the search icon. Take it out of absolute centring and
+     let it occupy the gap instead; it can then never collide. */
+  .ab-wordmark {
+    position: static;
+    transform: none;
+    flex: 1 1 auto;
+    min-width: 0;
+    overflow: hidden;
+  }
+
+  .ab-wordmark__name {
+    font-size: 1.4rem;
+  }
+
+  .ab-mainnav__inner {
+    padding: 0 16px 10px;
+  }
+
+  .ab-mainnav__list {
+    gap: 6px 14px;
+    padding-top: 0.6rem;
+  }
+
+  .ab-mainnav__link {
+    font-size: 20px;
+  }
+
+  .ab-subnav {
+    display: none;
+  }
+}

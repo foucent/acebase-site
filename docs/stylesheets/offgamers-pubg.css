@@ -1,5 +1,6 @@
 /* OffGamers PUBG Mobile direct top-up — 1:1 layout tokens */
-@import url("https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,400;8..144,500;8..144,600&display=swap");
+/* No webfont import. This sheet is not in extra_css, so the import never
+   shipped — Roboto Flex below is a local-only name, as is Inter. */
 
 .md-content__inner:has(.og-pubg),
 .md-content__inner:has(.og-pubg) > * {

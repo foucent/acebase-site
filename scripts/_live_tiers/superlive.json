@@ -1,0 +1,62 @@
+{
+ "slug": "superlive",
+ "h1": "超级直播",
+ "title": "超级直播充值|充值 SuperLive 黄金和硬币 | Topuplist游戏",
+ "tiers": [
+  {
+   "name": "605金币",
+   "sale": 6.5,
+   "original": 7.87
+  },
+  {
+   "name": "1230金币",
+   "sale": 13.18,
+   "original": 15.74
+  },
+  {
+   "name": "3125金币",
+   "sale": 33.91,
+   "original": 40.65
+  },
+  {
+   "name": "6250金币",
+   "sale": 67.82,
+   "original": 78.7
+  },
+  {
+   "name": "10000金币",
+   "sale": 108.53,
+   "original": 118.07
+  },
+  {
+   "name": "13800金币",
+   "sale": 129.5,
+   "original": 155.79
+  },
+  {
+   "name": "20850金币",
+   "sale": 198.05,
+   "original": 236.8
+  },
+  {
+   "name": "43000金币",
+   "sale": 408.21,
+   "original": 497.38
+  },
+  {
+   "name": "50050金币",
+   "sale": 476.25,
+   "original": 573.91
+  },
+  {
+   "name": "71500金币",
+   "sale": 682.41,
+   "original": 828.98
+  },
+  {
+   "name": "100000金币",
+   "sale": 962.97,
+   "original": 1147.82
+  }
+ ]
+}

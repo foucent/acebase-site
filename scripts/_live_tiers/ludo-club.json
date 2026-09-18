@@ -1,0 +1,37 @@
+{
+ "slug": "ludo-club",
+ "h1": "Ludo Club",
+ "title": "Ludo Club 充值｜在 Topuplist 安全购买 Ludo Club 金币和现金",
+ "tiers": [
+  {
+   "name": "120 Cash",
+   "sale": 0.86,
+   "original": 1.01
+  },
+  {
+   "name": "250 Cash",
+   "sale": 1.59,
+   "original": 2.04
+  },
+  {
+   "name": "700 Cash",
+   "sale": 3.98,
+   "original": 5.1
+  },
+  {
+   "name": "3200 Cash",
+   "sale": 16.43,
+   "original": 20.43
+  },
+  {
+   "name": "10800 Cash",
+   "sale": 51.22,
+   "original": 61.32
+  },
+  {
+   "name": "20000 Cash",
+   "sale": 82.31,
+   "original": 95.82
+  }
+ ]
+}

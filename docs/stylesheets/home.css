@@ -1,8 +1,8 @@
 /* AceBase home — MyGear.Top home layout 1:1 (teal shop-forward) */
 
 .mg-home {
-  --mg-ink: #0f172a;
-  --mg-ink-muted: #64748b;
+  --mg-ink: var(--ab-text);
+  --mg-ink-muted: var(--ab-text-muted);
   margin: -0.35rem 0 0.5rem;
 }
 
@@ -71,14 +71,14 @@
 }
 
 .mg-home .mg-home-hero__btn--primary {
-  background: #25d366 !important;
-  color: #fff !important;
+  background: #ffffff !important;
+  color: #000000 !important;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.18);
 }
 
 .mg-home .mg-home-hero__btn--primary:hover {
-  background: #1ebe57 !important;
-  color: #fff !important;
+  background: var(--ab-accent) !important;
+  color: #000000 !important;
 }
 
 .mg-home .mg-home-hero__btn--ghost {
@@ -96,7 +96,7 @@
   margin: 0 0 0.75rem !important;
   padding: 0 !important;
   border: 0 !important;
-  color: #e2e8f0 !important;
+  color: var(--ab-text) !important;
   font-size: 0.72rem !important;
   font-weight: 800 !important;
   letter-spacing: 0.08em;
@@ -120,8 +120,8 @@
   min-height: 5.5rem;
   padding: 0.55rem;
   border-radius: 0.65rem;
-  background: #f8fafc;
-  border: 1px solid rgba(15, 118, 110, 0.14);
+  background: var(--ab-panel-2);
+  border: 1px solid var(--ab-line);
   text-decoration: none !important;
   color: inherit !important;
   font-weight: 500 !important;
@@ -142,7 +142,7 @@
   border-radius: 0.45rem;
   margin: 0 !important;
   flex-shrink: 0;
-  background: #e2e8f0;
+  background: var(--ab-line-soft);
 }
 
 .mg-home .mg-home-cat__body {
@@ -291,9 +291,9 @@
 }
 
 /* ---------------------------------------------------------------------------
-   Guides worth reading — uncrate-style guide cards (mimics mygear.top home).
-   Thumbnail image, gold uppercase category rule, uppercase title, serif
-   excerpt, "Read More" link — 2-col grid, adapted for the dark theme.
+   Guides worth reading — uncrate-style guide cards.
+   Thumbnail image, tan uppercase category rule, uppercase title, serif
+   excerpt, "Read More" link — 2-col grid.
 --------------------------------------------------------------------------- */
 .md-typeset .mg-guides {
   margin: 0.2rem 0 0.5rem;
@@ -302,7 +302,7 @@
   margin-top: 0 !important;
   font-size: 1.5rem;
   font-weight: 700;
-  color: #f8fafc;
+  color: var(--ab-text);
 }
 .md-typeset .mg-guides__grid {
   display: grid;
@@ -321,9 +321,9 @@
   position: relative;
   overflow: hidden;
   aspect-ratio: 4 / 3;
-  background: #0f172a;
+  background: var(--ab-panel-2);
   border-radius: 0.5rem;
-  border: 1px solid #1e293b;
+  border: 1px solid var(--ab-line);
 }
 .md-typeset .mg-guide-card__media img {
   display: block;
@@ -347,8 +347,8 @@
   font-weight: 700;
   letter-spacing: 0.05em;
   text-transform: uppercase;
-  color: #ae9e85;
-  border-bottom: 1px solid #ae9e85;
+  color: var(--ab-accent-deep);
+  border-bottom: 1px solid var(--ab-accent);
   padding-bottom: 0.22rem;
   margin-bottom: 0.7rem;
 }
@@ -359,11 +359,11 @@
   line-height: 1.08;
   letter-spacing: 0.01em;
   text-transform: uppercase;
-  color: #f8fafc;
+  color: var(--ab-text);
 }
 .md-typeset .mg-guide-card:hover .mg-guide-card__title,
 .md-typeset .mg-guide-card:focus .mg-guide-card__title {
-  color: #ffffff;
+  color: var(--ab-accent-deep);
   text-decoration: underline;
   text-underline-offset: 0.25em;
   text-decoration-thickness: 1px;
@@ -373,7 +373,7 @@
   font-family: Georgia, "Times New Roman", serif;
   font-size: 0.78rem;
   line-height: 1.55;
-  color: #94a3b8;
+  color: var(--ab-text-muted);
 }
 .md-typeset .mg-guide-card__link {
   display: inline-block;
@@ -383,12 +383,12 @@
   font-weight: 700;
   letter-spacing: 0.05em;
   text-transform: uppercase;
-  color: #ae9e85;
+  color: var(--ab-accent-deep);
   border-bottom: 1px solid transparent;
 }
 .md-typeset .mg-guide-card:hover .mg-guide-card__link,
 .md-typeset .mg-guide-card:focus .mg-guide-card__link {
-  border-bottom-color: #ae9e85;
+  border-bottom-color: var(--ab-accent-deep);
 }
 @media (max-width: 759.98px) {
   .md-typeset .mg-guides__grid {

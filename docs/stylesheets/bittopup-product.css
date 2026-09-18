@@ -1,5 +1,7 @@
 /* BitTopup product page — Arena Breakout Bonds */
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+/* No webfont import: Inter is a local-only name here and the stack falls back
+   to PingFang SC / Microsoft YaHei, which is what actually renders the CJK. */
+
 
 .md-content__inner:has(.bt-product),
 .md-content__inner:has(.bt-product) > * {
@@ -10,20 +12,11 @@
 .md-typeset:has(.bt-product) {
   font-family: Inter, "PingFang SC", "Microsoft YaHei", sans-serif;
   font-size: 14px;
-  color: #e5e7eb;
+  color: var(--ab-text);
 }
 
 .md-typeset .bt-product {
-  --bt-bg: #141416;
-  --bt-panel: #1c1c1f;
-  --bt-panel-2: #232327;
-  --bt-line: #2f2f35;
-  --bt-red: #ff4d5a;
-  --bt-red-hover: #ff6370;
-  --bt-green: #22c55e;
-  --bt-purple: #7c3aed;
-  --bt-muted: #9ca3af;
-  background: var(--bt-bg);
+  background: var(--ab-bg);
   margin: -1.2rem -1.2rem 0;
   padding: 0 0 2.5rem;
 }

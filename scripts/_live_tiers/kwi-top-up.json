@@ -1,0 +1,72 @@
+{
+ "slug": "kwi-top-up",
+ "h1": "快手",
+ "title": "快手金币充值 | 即时到账充值 - Topuplist",
+ "tiers": [
+  {
+   "name": "300 Coins",
+   "sale": 5.74,
+   "original": 6.86
+  },
+  {
+   "name": "500 Coins",
+   "sale": 9.68,
+   "original": 16.1
+  },
+  {
+   "name": "980 Coins",
+   "sale": 19.54,
+   "original": 22.21
+  },
+  {
+   "name": "1980 Coins",
+   "sale": 40.03,
+   "original": 44.94
+  },
+  {
+   "name": "2000 Coins",
+   "sale": 40.5,
+   "original": 45.32
+  },
+  {
+   "name": "3980 Coins",
+   "sale": 79.83,
+   "original": 90.28
+  },
+  {
+   "name": "5000 Coins",
+   "sale": 99.78,
+   "original": 113.63
+  },
+  {
+   "name": "6660 Coins",
+   "sale": 134.05,
+   "original": 151.09
+  },
+  {
+   "name": "10000 Coins",
+   "sale": 209.97,
+   "original": 226.02
+  },
+  {
+   "name": "18880 Coins",
+   "sale": 392.37,
+   "original": 428.35
+  },
+  {
+   "name": "30000 Coins",
+   "sale": 624.15,
+   "original": 680.6
+  },
+  {
+   "name": "50000 Coins",
+   "sale": 1052.98,
+   "original": 1131.44
+  },
+  {
+   "name": "100000 Coins",
+   "sale": 2128.9,
+   "original": 2305.34
+  }
+ ]
+}

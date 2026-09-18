@@ -20,5 +20,5 @@
   <path d="M 70,545 L 205,289 L 340,431 L 475,379 L 610,215 L 730,120" fill="none" stroke="url(#g)" stroke-width="7" stroke-linejoin="round" stroke-linecap="round"/>
   <circle cx="730" cy="120" r="9" fill="#ef4444" stroke="#ffffff" stroke-width="3"/>
   <text x="70" y="82" fill="#f8fafc" font-family="Arial, Helvetica, sans-serif" font-size="46" font-weight="800" letter-spacing="1">RTX 4070 Ti Super</text>
-  <text x="70" y="128" fill="#94a3b8" font-family="Arial, Helvetica, sans-serif" font-size="24">显卡价格监测 · 当前均价 HK$9,227</text>
+  <text x="70" y="128" fill="#94a3b8" font-family="Arial, Helvetica, sans-serif" font-size="24">显卡价格监测 · 当前均价 $1,163</text>
 </svg>

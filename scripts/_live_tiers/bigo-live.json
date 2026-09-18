@@ -1,0 +1,92 @@
+{
+ "slug": "bigo-live",
+ "h1": "Bigo Live",
+ "title": "BIGO LIVE 钻石充值 - 在 Topuplist 快速购买",
+ "tiers": [
+  {
+   "name": "300 Diamonds",
+   "sale": 7.31,
+   "original": 10.37
+  },
+  {
+   "name": "200 Diamonds",
+   "sale": 4.88,
+   "original": 7.08
+  },
+  {
+   "name": "100 Diamonds",
+   "sale": 2.44,
+   "original": 3.54
+  },
+  {
+   "name": "50 Diamonds",
+   "sale": 1.23,
+   "original": 1.64
+  },
+  {
+   "name": "500 Diamonds",
+   "sale": 12.14,
+   "original": 16.44
+  },
+  {
+   "name": "800 Diamonds",
+   "sale": 20.11,
+   "original": 25.3
+  },
+  {
+   "name": "1000 Diamonds",
+   "sale": 25.2,
+   "original": 34.41
+  },
+  {
+   "name": "1400 Diamonds",
+   "sale": 35.27,
+   "original": 46.8
+  },
+  {
+   "name": "1600 Diamonds",
+   "sale": 40.3,
+   "original": 53.13
+  },
+  {
+   "name": "2000 Diamonds",
+   "sale": 50.29,
+   "original": 66.41
+  },
+  {
+   "name": "3000 Diamonds",
+   "sale": 75.46,
+   "original": 102.46
+  },
+  {
+   "name": "4000 Diamonds",
+   "sale": 100.52,
+   "original": 132.81
+  },
+  {
+   "name": "5000 Diamonds",
+   "sale": 126.1,
+   "original": 174.56
+  },
+  {
+   "name": "6000 Diamonds",
+   "sale": 153.07,
+   "original": 203.65
+  },
+  {
+   "name": "8000 Diamonds",
+   "sale": 206.31,
+   "original": 271.38
+  },
+  {
+   "name": "10000 Diamonds",
+   "sale": 259.7,
+   "original": 339.99
+  },
+  {
+   "name": "14400 Diamonds",
+   "sale": 373.11,
+   "original": 490.41
+  }
+ ]
+}

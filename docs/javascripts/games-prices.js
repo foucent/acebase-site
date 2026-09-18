@@ -1,8 +1,10 @@
 (function () {
   "use strict";
 
-  // AceBase games hub: fetch shared prices.json and render the official-vs-AceBase
-  // comparison table on each .mg-games__price-table[data-game] block.
+  // AceBase games: fetch shared prices.json and render it into whichever of the
+  // two shapes the page asks for — the full official-vs-AceBase comparison
+  // table on each .mg-games__price-table[data-game] block, or the one-line-per-
+  // tier ladder on each .ab-ec-list[data-game] block.
 
   function $(sel, root) {
     return (root || document).querySelector(sel);
@@ -32,10 +34,9 @@
   };
 
   function money(n) {
-    // Prices in prices.json are USD; format via the header currency switcher.
-    return window.AceBaseCurrency
-      ? window.AceBaseCurrency.formatFromBase(n)
-      : "$" + (Math.round(n * 100) / 100).toFixed(2);
+    // Prices in prices.json are already USD, which is the only currency the
+    // site displays — so this is a straight format, not a conversion.
+    return "$" + (Math.round(n * 100) / 100).toFixed(2);
   }
 
   function esc(s) {
@@ -51,6 +52,42 @@
     var pct = Math.round((1 - acebase / official) * 100);
     if (pct <= 0) return "";
     return pct + "% OFF";
+  }
+
+  // The uncrate-style one-line-per-tier list — "100 G-COIN / $0.86." — used by
+  // article pages that show the headline price rather than the full range.
+  // Lowest is the price that matters here: the whole site's pitch is finding it.
+  // Rows keep their source order, which groups tiers by product line rather
+  // than by price — re-sorting would break that grouping. The trailing period
+  // is part of the treatment: the GPU pages bake it into their static rows, so
+  // a rendered row without one would be the only one on the site that reads
+  // differently.
+  function renderEcList(gameKey, rows, updated) {
+    var wrap = $('.ab-ec-list[data-game="' + gameKey + '"]');
+    if (!wrap) return;
+
+    var updEl = $("#" + gameKey + "-updated");
+    if (updEl && updated) updEl.textContent = updated;
+
+    // prices.json holds two row shapes. The official-vs-AceBase one carries no
+    // `lowest`, and money(undefined) would print "$NaN" — so it is treated as
+    // no data rather than rendered. No page lists one of those games today.
+    if (!rows || !rows.length || rows[0].lowest == null) {
+      wrap.innerHTML = '<span class="ab-ec-loading">' + T.emptySoon + "</span>";
+      return;
+    }
+
+    wrap.innerHTML = rows
+      .map(function (r) {
+        return (
+          '<span class="ab-ec-item">' +
+          esc(r.title || T.topup) +
+          '<span class="ab-ec-sep">/</span>' +
+          '<span class="ab-ec-price">' + money(r.lowest) + "</span>" +
+          ".</span>"
+        );
+      })
+      .join("<br>");
   }
 
   function renderGame(gameKey, rows, updated) {
@@ -119,27 +156,45 @@
 
   function init() {
     var tables = $all(".mg-games__price-table[data-game]");
-    if (!tables.length) return;
+    var ecLists = $all(".ab-ec-list[data-game]");
+    if (!tables.length && !ecLists.length) return;
 
     var games = {};
     var updated = "";
     var failed = false;
-    var loaded = false;
 
     function renderAll() {
       if (failed) {
         tables.forEach(function (t) {
           t.innerHTML = '<p class="mg-games__empty">' + T.emptyErr + "</p>";
         });
+        ecLists.forEach(function (l) {
+          l.innerHTML = '<span class="ab-ec-loading">' + T.emptyErr + "</span>";
+        });
         return;
+      }
+      // The overview's own date, and every article's, come from the data file:
+      // the page is hand-written, so a literal date would be stale the next
+      // time prices.json is merged.
+      if (updated) {
+        $all(".js-prices-updated").forEach(function (el) {
+          el.textContent = updated;
+        });
       }
       tables.forEach(function (t) {
         var key = t.getAttribute("data-game");
         renderGame(key, games[key], updated);
       });
+      ecLists.forEach(function (l) {
+        var key = l.getAttribute("data-game");
+        renderEcList(key, games[key], updated);
+      });
     }
 
-    fetch("/assets/games/prices.json")
+    // Cache-bust so a stale browser copy of prices.json can never show an old
+    // schema (e.g. official/AceBase) after the site is rebuilt. Bump the
+    // version to match prices.json "updated" when new data is merged.
+    fetch("/assets/games/prices.json?v=" + (window.AceBasePricesVer || "20260903"))
       .then(function (r) {
         if (!r.ok) throw new Error("http " + r.status);
         return r.json();
@@ -147,7 +202,6 @@
       .then(function (data) {
         games = (data && data.games) || {};
         updated = (data && data.updated) || "";
-        loaded = true;
         renderAll();
       })
       .catch(function (err) {
@@ -155,13 +209,6 @@
         failed = true;
         renderAll();
       });
-
-    // Re-render prices when the header currency switcher changes.
-    if (window.AceBaseCurrency && window.AceBaseCurrency.onChange) {
-      window.AceBaseCurrency.onChange(function () {
-        if (loaded) renderAll();
-      });
-    }
   }
 
   if (document.readyState === "loading") {

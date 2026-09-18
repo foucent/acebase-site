@@ -76,15 +76,15 @@
   gap: 0.55rem;
   margin: 0.5rem 0 2rem;
   padding: 0.75rem;
-  color: rgba(226, 232, 240, 0.72);
+  color: var(--ab-text-muted);
   font-size: 0.82rem;
 }
 
 .sc-wall-load__spinner {
   width: 1rem;
   height: 1rem;
-  border: 2px solid rgba(226, 232, 240, 0.25);
-  border-top-color: #25d366;
+  border: 2px solid var(--ab-line);
+  border-top-color: var(--ab-green);
   border-radius: 50%;
   animation: sc-wall-load-spin 0.8s linear infinite;
 }
@@ -183,8 +183,8 @@ body.sc-lightbox-open {
   gap: 0.4rem;
   padding: 0.6rem 1rem;
   border-radius: 0.35rem;
-  background: #25d366;
-  color: #fff !important;
+  background: #ffffff;
+  color: #000000 !important;
   font-size: 0.82rem;
   font-weight: 700;
   line-height: 1.15;
@@ -218,8 +218,8 @@ body.sc-lightbox-open {
 }
 
 .sc-lightbox__buy:hover {
-  background: #1ebe57;
-  color: #fff !important;
+  background: var(--ab-accent);
+  color: #000000 !important;
 }
 
 .sc-lightbox__buy-dismiss {

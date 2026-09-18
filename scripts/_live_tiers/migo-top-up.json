@@ -1,0 +1,77 @@
+{
+ "slug": "migo-top-up",
+ "h1": "MIGO LIVE",
+ "title": "MIGO LIVE 充值 |购买 MIGO 钻石和金币 | Topuplist游戏",
+ "tiers": [
+  {
+   "name": "14000 金币",
+   "sale": 2.14,
+   "original": 2.47
+  },
+  {
+   "name": "28000 金币",
+   "sale": 4.25,
+   "original": 4.95
+  },
+  {
+   "name": "56000 金币",
+   "sale": 8.5,
+   "original": 9.9
+  },
+  {
+   "name": "65000 金币",
+   "sale": 9.87,
+   "original": 12.4
+  },
+  {
+   "name": "93500 金币",
+   "sale": 14.5,
+   "original": 18.59
+  },
+  {
+   "name": "112000 金币",
+   "sale": 17.62,
+   "original": 19.39
+  },
+  {
+   "name": "130000 金币",
+   "sale": 20.62,
+   "original": 21.35
+  },
+  {
+   "name": "211000  金币",
+   "sale": 34.53,
+   "original": 41.31
+  },
+  {
+   "name": "220000 金币",
+   "sale": 34.87,
+   "original": 49.6
+  },
+  {
+   "name": "325000 金币",
+   "sale": 51.52,
+   "original": 61.98
+  },
+  {
+   "name": "336000 金币",
+   "sale": 54.31,
+   "original": 68.7
+  },
+  {
+   "name": "650000 金币",
+   "sale": 103.01,
+   "original": 137.66
+  },
+  {
+   "name": "672000 金币",
+   "sale": 106.5,
+   "original": 143.87
+  },
+  {
+   "name": "1344000 金币",
+   "sale": 218.99,
+   "original": 297.67
+  }
+ ]
+}

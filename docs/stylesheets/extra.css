@@ -1,72 +1,107 @@
-﻿/* AceBase — BitTopup-inspired site theme */
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap");
+﻿/* AceBase — uncrate-inspired site theme */
+
+/* No webfonts. The theme is built on the system stacks (see --ab-sans and
+   --ab-serif in the token block below): the headings want a heavy CJK sans and
+   the excerpts want a serif, and both are resident on every target platform.
+   Inter is still named in those stacks, but nothing loads it — it is picked up
+   only where it is already installed, and PingFang SC or Microsoft YaHei takes
+   over everywhere else. Dropping the Google Fonts @import also removes the
+   last third-party request from the critical path, which matters for a site
+   read mainly from mainland China. */
 
 body {
-  font-family: Inter, "PingFang SC", "Microsoft YaHei", sans-serif;
+  font-family: "PingFang SC", "Microsoft YaHei", Inter, -apple-system, "Segoe UI", sans-serif;
 }
 
-:root,
-[data-md-color-scheme="slate"] {
-  /* BitTopup tokens */
-  --bt-bg: #141416;
-  --bt-panel: #1c1c1f;
-  --bt-panel-2: #232327;
-  --bt-line: #2f2f35;
-  --bt-red: #ff4d5a;
-  --bt-red-hover: #ff6370;
-  --bt-green: #22c55e;
-  --bt-purple: #7c3aed;
+/* ============================================================
+   AceBase design tokens — uncrate-derived light palette.
+   Black header band over a white body, tan accent.
+   The --ab-* family is the semantic layer. The older --bt-* and
+   --mg-* names are kept as aliases so existing per-component
+   rules keep resolving; migrate them to --ab-* as each file is
+   touched.
+
+   NOTE: never write a `*` immediately followed by `/` inside a
+   comment in this file — it closes the comment early and the
+   browser drops the rule that follows (that is how the :root
+   block below was silently disappearing).
+   ============================================================ */
+:root {
+  /* Surfaces + ink */
+  --ab-bg: #ffffff;
+  --ab-panel: #ffffff;
+  --ab-panel-2: #f7f7f7;
+  --ab-line: #c7c7c7;
+  --ab-line-soft: #e4e4e4;
+  --ab-text: #000000;
+  --ab-text-muted: #666666;      /* 5.7:1 on white — the lightest text that passes */
+  --ab-text-faint: #989898;      /* 2.9:1 — uncrate's own tone, but decorative
+                                    only: rules, separators, placeholder marks.
+                                    Never put text on it. */
+
+  /* Accents. --ab-accent is uncrate's own tan and is decorative only
+     (rules, underlines, borders) — at 2.6:1 on white it must never carry
+     text. --ab-accent-deep is the text-safe variant of the same hue
+     (5.9:1), used for links, active nav and category labels. */
+  --ab-accent: #ae9e85;
+  --ab-accent-deep: #6f6250;
+  --ab-green: #116b33;
+  --ab-red: #c02434;
+  --ab-purple: #6d28d9;
+
+  /* Header band stays black in the light theme */
+  --ab-header-bg: #000000;
+  --ab-header-fg: #ffffff;
+
+  /* Legacy BitTopup aliases */
+  --bt-bg: var(--ab-bg);
+  --bt-panel: var(--ab-panel);
+  --bt-panel-2: var(--ab-panel-2);
+  --bt-line: var(--ab-line);
+  --bt-red: var(--ab-red);
+  --bt-red-hover: #d92d3c;
+  --bt-green: var(--ab-green);
+  --bt-purple: var(--ab-purple);
   --bt-purple-deep: #4c1d95;
   --bt-purple-mid: #6d28d9;
-  --bt-muted: #9ca3af;
-  --bt-text: #e5e7eb;
+  --bt-muted: var(--ab-text-muted);
+  --bt-text: var(--ab-text);
   --bt-white: #ffffff;
 
   /* Material overrides */
-  --md-primary-fg-color: #7c3aed;
-  --md-primary-fg-color--light: #a78bfa;
-  --md-primary-fg-color--dark: #5b21b6;
+  --md-primary-fg-color: #000000;
+  --md-primary-fg-color--light: #333333;
+  --md-primary-fg-color--dark: #000000;
   --md-primary-bg-color: #ffffff;
   --md-primary-bg-color--light: #ffffff;
-  --md-accent-fg-color: #ff4d5a;
-  --md-accent-fg-color--transparent: rgba(255, 77, 90, 0.12);
+  --md-accent-fg-color: var(--ab-accent-deep);
+  --md-accent-fg-color--transparent: rgba(174, 158, 133, 0.15);
   --md-accent-bg-color: #ffffff;
-  --md-default-fg-color: #e5e7eb;
-  --md-default-fg-color--light: #d1d5db;
-  --md-default-fg-color--lighter: #9ca3af;
-  --md-default-fg-color--lightest: #6b7280;
-  --md-default-bg-color: #141416;
-  --md-default-bg-color--light: #1c1c1f;
-  --md-default-bg-color--lighter: #232327;
-  --md-default-bg-color--lightest: #2f2f35;
-  --md-code-bg-color: #1c1c1f;
-  --md-code-fg-color: #e5e7eb;
-  --md-typeset-a-color: #a78bfa;
-  --md-typeset-table-color: rgba(255, 255, 255, 0.06);
-  --md-footer-bg-color: #111114;
-  --md-footer-bg-color--dark: #0a0a0b;
+  --md-default-fg-color: #000000;
+  --md-default-fg-color--light: #333333;
+  --md-default-fg-color--lighter: #666666;
+  --md-default-fg-color--lightest: #c7c7c7;
+  --md-default-bg-color: #ffffff;
+  --md-default-bg-color--light: #f7f7f7;
+  --md-default-bg-color--lighter: #f0f0f0;
+  --md-default-bg-color--lightest: #e4e4e4;
+  --md-code-bg-color: #f7f7f7;
+  --md-code-fg-color: #000000;
+  --md-typeset-a-color: var(--ab-accent-deep);
+  --md-typeset-table-color: rgba(0, 0, 0, 0.08);
+  --md-footer-bg-color: #000000;
+  --md-footer-bg-color--dark: #000000;
 
   /* Legacy aliases used below */
-  --mg-ink: #f3f4f6;
-  --mg-ink-muted: #9ca3af;
-  --mg-nav-active-bg: rgba(124, 58, 237, 0.22);
-  --mg-nav-section: #c4b5fd;
-  --mg-card-border: rgba(255, 255, 255, 0.1);
+  --mg-ink: var(--ab-text);
+  --mg-ink-muted: var(--ab-text-muted);
+  --mg-nav-active-bg: rgba(174, 158, 133, 0.18);
+  --mg-nav-section: var(--ab-accent-deep);
+  --mg-card-border: var(--ab-line);
 }
 
-.md-header {
-  background: linear-gradient(90deg, #4c1d95 0%, #6d28d9 48%, #7c3aed 100%) !important;
-  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.06);
-}
-
-.md-tabs {
-  background: #1c1c1f !important;
-}
-
-.md-tabs__link--active,
-.md-tabs__link:hover {
-  color: #c4b5fd !important;
-}
+/* The header and its two nav bands live in stylesheets/header.css, which
+   loads right after this file. */
 
 .md-nav--primary .md-nav__title {
   color: var(--mg-ink);
@@ -145,7 +180,7 @@ body {
 }
 
 .md-nav--primary .md-nav__link--active {
-  color: #c4b5fd !important;
+  color: var(--ab-text) !important;
   font-weight: 700 !important;
   background-color: var(--mg-nav-active-bg) !important;
   border-radius: 0.35rem;
@@ -164,16 +199,16 @@ body {
 
 .md-nav--secondary .md-nav__link--active,
 .md-nav--secondary .md-nav__link:hover {
-  color: #c4b5fd;
+  color: var(--ab-accent-deep);
   font-weight: 700;
-  border-left-color: var(--bt-purple);
+  border-left-color: var(--ab-accent);
 }
 
 .md-typeset h1 {
   color: var(--mg-ink);
   font-weight: 800;
   letter-spacing: -0.02em;
-  border-bottom: 2px solid rgba(124, 58, 237, 0.45);
+  border-bottom: 2px solid var(--ab-text);
   padding-bottom: 0.35rem;
 }
 
@@ -184,16 +219,29 @@ body {
 }
 
 .md-typeset h3 {
-  color: #ddd6fe;
+  color: var(--mg-ink);
   font-weight: 700;
 }
 
 .md-typeset a {
-  color: #a78bfa;
+  color: var(--ab-accent-deep);
 }
 
 .md-typeset a:hover {
-  color: #c4b5fd;
+  color: var(--ab-text);
+}
+
+/* Links that sit on the dark photo heroes must not inherit the body link
+   colour — dark tan on a black scrim is invisible. */
+.md-typeset .mg-home-hero__lead a,
+.md-typeset .mg-games__lead a {
+  color: var(--ab-accent);
+  text-decoration: underline;
+}
+
+.md-typeset .mg-home-hero__lead a:hover,
+.md-typeset .mg-games__lead a:hover {
+  color: #ffffff;
 }
 
 .md-typeset .ab-meta {
@@ -207,35 +255,35 @@ body {
   margin: 0 0.25rem 0.25rem 0;
   padding: 0.12rem 0.45rem;
   border-radius: 0.25rem;
-  background: rgba(124, 58, 237, 0.22);
-  color: #c4b5fd;
+  background: rgba(174, 158, 133, 0.20);
+  color: var(--ab-accent-deep);
   font-size: 0.72rem;
   font-weight: 700;
 }
 
 .md-typeset .ab-tag--warn {
   background: rgba(245, 158, 11, 0.18);
-  color: #fbbf24;
+  color: #92400e;
 }
 
 .md-typeset .ab-tag--hot {
   background: rgba(255, 77, 90, 0.18);
-  color: #ff8a94;
+  color: #b91c1c;
 }
 
 .md-typeset .ab-tag--risk-low {
   background: rgba(34, 197, 94, 0.18);
-  color: #4ade80;
+  color: var(--ab-green);
 }
 
 .md-typeset .ab-tag--risk-mid {
   background: rgba(245, 158, 11, 0.18);
-  color: #fbbf24;
+  color: #92400e;
 }
 
 .md-typeset .ab-tag--risk-high {
   background: rgba(255, 77, 90, 0.18);
-  color: #ff8a94;
+  color: #b91c1c;
 }
 
 .md-typeset .ab-card-grid {
@@ -257,8 +305,8 @@ body {
 }
 
 .md-typeset .ab-card:hover {
-  border-color: rgba(124, 58, 237, 0.55);
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
+  border-color: var(--ab-accent-deep);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.10);
   transform: translateY(-1px);
 }
 
@@ -274,13 +322,47 @@ body {
   line-height: 1.45;
 }
 
+/* Material defaults that land just under 4.5:1 on a white body.
+   Not part of the theme rewrite — but they show up on every page's
+   search dialog and footer, so they're worth clearing out. */
+.md-search-result__meta {
+  color: var(--ab-text-muted);
+}
+
+.md-copyright {
+  color: rgba(255, 255, 255, 0.62);
+}
+
+/* Material's meta bar is a flex row built for a copyright line on the left and
+   a row of social icons on the right. This site renders no social list — the
+   channels live in the header — so the line is the bar's only child, and
+   `space-between` parks it against the left edge. Centre it instead.
+
+   Three parts, because Material's own rule is not one shape: the line takes
+   `width: 100%` under 45em and `width: auto` above it (so `justify-content`
+   only bites on desktop), and it carries `margin: auto .6rem` — the auto for
+   vertical centring, the .6rem for the gap the icons would have made. */
+.md-footer-meta__inner {
+  justify-content: center;
+}
+
+.md-copyright {
+  width: auto;
+  margin: auto 0;
+  text-align: center;
+}
+
+.md-select__link.is-active {
+  color: var(--ab-accent-deep);
+}
+
 .md-typeset table {
   font-size: 0.88rem;
 }
 
 .md-typeset table:not([class]) th {
   background: var(--bt-panel-2);
-  color: #f3f4f6;
+  color: var(--ab-text);
   border-color: var(--bt-line);
 }
 
@@ -297,7 +379,7 @@ body {
 
 .md-typeset .admonition-title,
 .md-typeset summary {
-  background: rgba(124, 58, 237, 0.16) !important;
+  background: rgba(174, 158, 133, 0.16) !important;
 }
 
 /* Crisp close button */
@@ -315,24 +397,26 @@ body {
   padding: 0;
   border: 0;
   border-radius: 999px;
-  background: var(--bt-panel-2);
-  color: #fff;
+  background: var(--ab-panel-2);
+  color: var(--ab-text);
+  border: 1px solid var(--ab-line);
   cursor: pointer;
-  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
 }
 
 .ab-crisp-close.is-visible {
   display: flex;
 }
 
-/* OffGamers-style product page — retinted to BitTopup dark */
+/* OffGamers-style product page — local palette, mapped onto the global
+   light tokens so this page can't drift back to the dark theme. */
 .md-typeset .og-product {
-  --og-accent: #7c3aed;
-  --og-accent-dark: #a78bfa;
-  --og-ink: #f3f4f6;
-  --og-muted: #9ca3af;
-  --og-border: #2f2f35;
-  --og-bg-soft: #1c1c1f;
+  --og-accent: var(--ab-accent-deep);
+  --og-accent-dark: var(--ab-accent-deep);
+  --og-ink: var(--ab-text);
+  --og-muted: var(--ab-text-muted);
+  --og-border: var(--ab-line);
+  --og-bg-soft: var(--ab-panel-2);
   --og-radius: 10px;
   font-size: 0.92rem;
   color: var(--og-ink);
@@ -377,9 +461,9 @@ body {
   margin: 0 0 1.1rem;
   padding: 0.65rem 0.85rem;
   border-radius: 8px;
-  background: rgba(124, 58, 237, 0.16);
-  border: 1px solid rgba(167, 139, 250, 0.35);
-  color: #ddd6fe;
+  background: rgba(174, 158, 133, 0.16);
+  border: 1px solid rgba(174, 158, 133, 0.45);
+  color: var(--ab-accent-deep);
   font-size: 0.84rem;
   font-weight: 600;
 }
@@ -391,7 +475,7 @@ body {
   width: 1.25rem;
   height: 1.25rem;
   border-radius: 999px;
-  background: var(--bt-purple);
+  background: var(--ab-accent-deep);
   color: #fff;
   font-size: 0.72rem;
   font-weight: 800;
@@ -483,9 +567,9 @@ body {
 }
 
 .md-typeset .og-chip--active {
-  border-color: rgba(167, 139, 250, 0.55);
-  background: rgba(124, 58, 237, 0.22);
-  color: #c4b5fd;
+  border-color: var(--ab-accent-deep);
+  background: rgba(174, 158, 133, 0.22);
+  color: var(--ab-accent-deep);
 }
 
 .md-typeset .og-chip + .og-chip {
@@ -516,9 +600,9 @@ body {
   margin: 0.85rem 0;
   padding: 0.85rem 1rem;
   border-radius: 8px;
-  border: 1px solid rgba(255, 77, 90, 0.35);
-  background: rgba(255, 77, 90, 0.12);
-  color: #fecaca;
+  border: 1px solid rgba(192, 36, 52, 0.35);
+  background: rgba(192, 36, 52, 0.08);
+  color: #b91c1c;
   font-size: 0.8rem;
   line-height: 1.5;
 }
@@ -559,14 +643,14 @@ body {
 }
 
 .md-typeset .og-denom:hover:not(:disabled) {
-  border-color: rgba(167, 139, 250, 0.55);
+  border-color: var(--ab-accent-deep);
 }
 
 .md-typeset .og-denom.is-active {
-  border-color: var(--bt-purple);
-  box-shadow: inset 0 0 0 1px var(--bt-purple);
-  color: #c4b5fd;
-  background: rgba(124, 58, 237, 0.16);
+  border-color: var(--ab-accent-deep);
+  box-shadow: inset 0 0 0 1px var(--ab-accent-deep);
+  color: var(--ab-accent-deep);
+  background: rgba(174, 158, 133, 0.16);
 }
 
 .md-typeset .og-denom.is-sold-out {
@@ -607,7 +691,7 @@ body {
 }
 
 .md-typeset .og-qty__btn:hover {
-  background: #2a2a30;
+  background: var(--ab-line-soft);
 }
 
 .md-typeset .og-qty__input {
@@ -616,7 +700,7 @@ body {
   border: 0;
   border-left: 1px solid var(--og-border);
   border-right: 1px solid var(--og-border);
-  background: #111114;
+  background: var(--ab-panel);
   color: var(--og-ink);
   text-align: center;
   font: inherit;
@@ -640,7 +724,7 @@ body {
 .md-typeset .og-total__value {
   font-size: 1.35rem;
   font-weight: 800;
-  color: #fff;
+  color: var(--ab-text);
 }
 
 .md-typeset .og-buy-btn {
@@ -654,7 +738,7 @@ body {
   font-size: 0.95rem;
   font-weight: 800;
   cursor: pointer;
-  box-shadow: 0 8px 18px rgba(255, 77, 90, 0.28);
+  box-shadow: 0 8px 18px rgba(192, 36, 52, 0.22);
 }
 
 .md-typeset .og-buy-btn:hover {
@@ -672,9 +756,9 @@ body {
 .md-typeset .og-overview {
   margin: 0 0 1.4rem;
   padding: 1rem 1.1rem;
-  border-left: 4px solid var(--bt-purple);
+  border-left: 4px solid var(--ab-accent);
   border-radius: 0 8px 8px 0;
-  background: rgba(124, 58, 237, 0.14);
+  background: rgba(174, 158, 133, 0.12);
 }
 
 .md-typeset .og-overview__title {
@@ -685,7 +769,7 @@ body {
 
 .md-typeset .og-overview p {
   margin: 0;
-  color: #ddd6fe;
+  color: var(--ab-text-muted);
   font-size: 0.86rem;
 }
 
@@ -702,7 +786,7 @@ body {
 
 .md-typeset .og-content p,
 .md-typeset .og-content li {
-  color: #d1d5db;
+  color: var(--ab-text-muted);
   line-height: 1.65;
 }
 

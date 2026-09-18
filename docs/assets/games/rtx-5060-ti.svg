@@ -20,5 +20,5 @@
   <path d="M 70,330 L 220,250 L 370,200 L 520,170 L 730,95" fill="none" stroke="url(#g)" stroke-width="7" stroke-linejoin="round" stroke-linecap="round"/>
   <circle cx="730" cy="95" r="9" fill="#ef4444" stroke="#ffffff" stroke-width="3"/>
   <text x="70" y="82" fill="#f8fafc" font-family="Arial, Helvetica, sans-serif" font-size="46" font-weight="800" letter-spacing="1">RTX 5060 Ti</text>
-  <text x="70" y="128" fill="#94a3b8" font-family="Arial, Helvetica, sans-serif" font-size="24">显卡价格监测 · 当前均价 HK$6,240</text>
+  <text x="70" y="128" fill="#94a3b8" font-family="Arial, Helvetica, sans-serif" font-size="24">显卡价格监测 · 当前均价 $802</text>
 </svg>

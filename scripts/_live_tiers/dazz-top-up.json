@@ -1,0 +1,52 @@
+{
+ "slug": "dazz-top-up",
+ "h1": "Dazz Live",
+ "title": "Dazz Live Coins 低价充值 | 最低价格 - Topuplist",
+ "tiers": [
+  {
+   "name": "25000 Coins",
+   "sale": 3.49,
+   "original": 5.05
+  },
+  {
+   "name": "50000 Coins",
+   "sale": 6.99,
+   "original": 8.84
+  },
+  {
+   "name": "100000 Coins",
+   "sale": 14.19,
+   "original": 16.43
+  },
+  {
+   "name": "150000 Coins",
+   "sale": 21.83,
+   "original": 25.29
+  },
+  {
+   "name": "2500000 Coins",
+   "sale": 375.9,
+   "original": 505.95
+  },
+  {
+   "name": "4000000 Coins",
+   "sale": 601.06,
+   "original": 632.44
+  },
+  {
+   "name": "200000 Coins",
+   "sale": 29.09,
+   "original": 37.93
+  },
+  {
+   "name": "300000 Coins",
+   "sale": 43.8,
+   "original": 50.58
+  },
+  {
+   "name": "500000 Coins",
+   "sale": 72.87,
+   "original": 88.53
+  }
+ ]
+}

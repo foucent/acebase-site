@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600" role="img" aria-label="模拟装置 · 模拟方向盘">
+  <defs>
+    <radialGradient id="glow" cx="0.5" cy="0.42" r="0.72">
+      <stop offset="0%" stop-color="#a78bfa" stop-opacity="0.3"/>
+      <stop offset="55%" stop-color="#1e293b" stop-opacity="0.06"/>
+      <stop offset="100%" stop-color="#0f172a" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="800" height="600" fill="#0f172a"/>
+  <rect width="800" height="600" fill="url(#glow)"/>
+  <g stroke="#1e293b" stroke-width="1" opacity="0.9">
+    <line x1="100" y1="0" x2="100" y2="600"/><line x1="200" y1="0" x2="200" y2="600"/>
+    <line x1="300" y1="0" x2="300" y2="600"/><line x1="400" y1="0" x2="400" y2="600"/>
+    <line x1="500" y1="0" x2="500" y2="600"/><line x1="600" y1="0" x2="600" y2="600"/>
+    <line x1="700" y1="0" x2="700" y2="600"/>
+    <line x1="0" y1="100" x2="800" y2="100"/><line x1="0" y1="200" x2="800" y2="200"/>
+    <line x1="0" y1="300" x2="800" y2="300"/><line x1="0" y1="400" x2="800" y2="400"/>
+    <line x1="0" y1="500" x2="800" y2="500"/>
+  </g>
+  <!-- rim band -->
+  <circle cx="400" cy="300" r="150" fill="none" stroke="#1e293b" stroke-width="42"/>
+  <circle cx="400" cy="300" r="150" fill="none" stroke="#475569" stroke-width="4"/>
+  <circle cx="400" cy="300" r="132" fill="none" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+  <!-- spokes (three-spoke, pointing down) -->
+  <g stroke="#334155" stroke-width="20" stroke-linecap="round" fill="none">
+    <path d="M400 344 L400 428"/>
+    <path d="M438 322 L502 367"/>
+    <path d="M362 322 L298 367"/>
+  </g>
+  <!-- centre hub -->
+  <circle cx="400" cy="300" r="46" fill="#0f172a" stroke="#64748b" stroke-width="6"/>
+  <circle cx="400" cy="300" r="30" fill="none" stroke="rgba(255,255,255,0.12)" stroke-width="1"/>
+</svg>

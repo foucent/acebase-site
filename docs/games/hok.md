@@ -47,7 +47,7 @@ hide:
     <div class="mg-games__price-table" data-game="hok" id="hok-price-table">
       <p class="mg-games__loading">正在加载最新价格&hellip;</p>
     </div>
-    <p class="mg-games__hint">对比多家第三方充值站点，展示每档最低/最高/平均价（港币计价，可在页头切换货币）。</p>
+    <p class="mg-games__hint">对比多家第三方充值站点，展示每档最低/最高/平均价（美元计价）。</p>
   </section>
 
   <section class="mg-games__faq" id="faq">
@@ -68,7 +68,7 @@ hide:
 
 <div class="admonition note mg-games__note">
   <p class="admonition-title">相关</p>
-  <p><a href="/games/pubg-mobile/">PUBG Mobile UC</a> &middot; <a href="/games/pubg-gcoin/">PUBG G-COIN</a> &middot; <a href="/games/where-winds-meet/">燕云十六声</a> &middot; <a href="/gift-cards/">礼品卡</a></p>
+  <p><a href="/games/topup-prices/">代储价格监测总览</a> &middot; <a href="/games/pubg-mobile/">PUBG Mobile UC</a> &middot; <a href="/games/pubg-gcoin/">PUBG G-COIN</a> &middot; <a href="/games/arena-breakout/">Arena Breakout</a> &middot; <a href="/games/where-winds-meet/">燕云十六声</a> &middot; <a href="/gift-cards/">礼品卡</a></p>
 </div>
 
 <script type="application/ld+json">

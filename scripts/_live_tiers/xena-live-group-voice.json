@@ -1,0 +1,42 @@
+{
+ "slug": "xena-live-group-voice",
+ "h1": "Xena Live：群组语音",
+ "title": "Xena Live 金币充值 - 最高立减18% | Topuplist",
+ "tiers": [
+  {
+   "name": "3350 Coins",
+   "sale": 0.53,
+   "original": 0.62
+  },
+  {
+   "name": "6700 Coins",
+   "sale": 1.05,
+   "original": 1.25
+  },
+  {
+   "name": "33500 Coins",
+   "sale": 5.2,
+   "original": 6.31
+  },
+  {
+   "name": "67500 Coins",
+   "sale": 10.4,
+   "original": 12.64
+  },
+  {
+   "name": "202500 Coins",
+   "sale": 32.61,
+   "original": 37.93
+  },
+  {
+   "name": "406800 Coins",
+   "sale": 65.22,
+   "original": 75.88
+  },
+  {
+   "name": "680000 Coins",
+   "sale": 108.71,
+   "original": 126.48
+  }
+ ]
+}

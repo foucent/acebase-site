@@ -6,13 +6,12 @@
   // Loaded AFTER board-grid.js. Each product image carries
   //   data-denoms="LABEL:USD,LABEL:USD,..."
   //   data-discount="-16%"            (optional)
-  // Picking a denomination updates the card price (in the header-selected
-  // currency) and the "+ add to cart" button's data-name / data-price.
+  // Picking a denomination updates the card price and the "+ add to cart"
+  // button's data-name / data-price.
 
   function money(usd) {
-    return window.AceBaseCurrency
-      ? window.AceBaseCurrency.formatFromBase(usd)
-      : "US$ " + (Math.round(usd * 100) / 100).toFixed(2);
+    // data-denoms prices are USD; USD is the only currency displayed.
+    return "$" + (Math.round(usd * 100) / 100).toFixed(2);
   }
 
   function parseDenoms(img) {
@@ -83,13 +82,6 @@
     }
     sel.addEventListener("change", apply);
     apply();
-
-    // Keep the card price correct when the header currency changes.
-    if (window.AceBaseCurrency && AceBaseCurrency.onChange) {
-      AceBaseCurrency.onChange(function () {
-        if (priceEl.dataset.usd) renderPrice(priceEl, parseFloat(priceEl.dataset.usd));
-      });
-    }
   }
 
   function init() {

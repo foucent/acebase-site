@@ -1,5 +1,34 @@
 {% extends "base.html" %}
 
+{% block extrahead %}
+  {#- Declare the site's own accounts to search engines.
+
+      Every page gets one Organization node naming acebase.cc and listing the
+      YouTube channels under sameAs — which is how a crawler learns those three
+      accounts and this domain are the same entity, rather than three unrelated
+      channels that happen to be linked.
+
+      The list comes from extra.channels in mkdocs.yml — the same list
+      header.html renders as the menu under the @AceBase handle. One source,
+      two audiences: a channel added to the config cannot end up visible but
+      undeclared, or declared but not visible. -#}
+  {% set channels = config.extra.channels | d([], true) %}
+  {% if channels %}
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": {{ config.site_name | tojson }},
+      "url": {{ config.site_url | tojson }},
+      "sameAs": [
+        {% for s in channels %}{{ s.link | tojson }}{{ "," if not loop.last }}
+        {% endfor %}
+      ]
+    }
+    </script>
+  {% endif %}
+{% endblock %}
+
 {% block scripts %}
   {{ super() }}
   <script>window.AB_SNIPCART_KEY = {{ config.extra.snipcart_public_key | default("") | tojson }};</script>
