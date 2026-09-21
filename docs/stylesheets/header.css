@@ -234,8 +234,10 @@
   margin: 0;
   padding: 0.75rem 0 0;
   list-style: none;
-  /* Six CJK labels at 28px very nearly fill the 960px column; scrolling
-     beats wrapping when the viewport or the font stack pushes them over. */
+  /* Seven CJK labels at 28px span ~727px of the 920px column (measured
+     2026-09-22, the day CAR became the seventh), so up here nothing overflows;
+     scrolling is insurance against a wider font stack, not a load-bearing
+     behaviour. */
   overflow-x: auto;
   scrollbar-width: none;
 }
@@ -274,9 +276,12 @@
   }
 }
 
-/* Six CJK labels at 28px need ~886px including padding, so anything under
-   ~1000px overflows the 960px column. Wrapping reads better than a row of
-   glyphs sliced in half at the right edge. */
+/* Seven CJK labels at 28px are ~727px of the 920px column (measured
+   2026-09-22), so they still fit on one row well below this breakpoint — the
+   wrap only actually happens around 600px. It is here at 1000px because
+   wrapping beats a row of glyphs sliced in half at the right edge, and
+   wrapping early costs nothing. Was written for six labels at ~886px, which
+   was already conservative. */
 @media screen and (max-width: 1000px) {
   .ab-mainnav__list {
     flex-wrap: wrap;

@@ -23,6 +23,7 @@ cd c:\1Work\acebase.cc
 | `/tech/` | 显卡价格参考（RTX 全系） |
 | `/sim-gear/` | STYLE（球拍与器材） |
 | `/wellness/` | 健康生活（筹备中） |
+| `/car/` | CAR（汽车实拍图集，6 套 91 张，由 `_tmp_ocr/car_prep/prep.py` 生成） |
 | `/faq/` | 购买指南（下单流程 / 付款 / 费用 / 常见问题） |
 | `/gallery/` | 相册（手办 / 模型照片墙） |
 | `/pc-components/` | 电脑组件 |
