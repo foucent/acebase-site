@@ -18,11 +18,15 @@ cd c:\1Work\acebase.cc
 
 | 路径 | 说明 |
 | --- | --- |
-| `/` | Home（本周推荐） |
-| `/shop/faq-and-updates/` 等 | FAQ / 发货与到账 / 关于与政策 |
-| `/topup/pubg-mobile-direct/` | PUBG Mobile UC 代充（Global） |
-| `/topup/pubg-gcoin/` 等 | 人工代充商品页（G-COIN / 暗区 / 三角洲 / HOK） |
+| `/` | Home（本周推荐，由 `scripts/gen_home.py` 生成，勿手改） |
+| `/topup/` | 代储与礼品卡价格参考（游戏代储 / 礼品卡 / 直播代储） |
+| `/tech/` | 显卡价格参考（RTX 全系） |
+| `/sim-gear/` | STYLE（球拍与器材） |
+| `/wellness/` | 健康生活（筹备中） |
+| `/faq/` | 购买指南（下单流程 / 付款 / 费用 / 常见问题） |
 | `/gallery/` | 相册（手办 / 模型照片墙） |
+| `/pc-components/` | 电脑组件 |
+| `/games/gpu-deals/` | 显卡好价参考 |
 
 ## 部署
 
