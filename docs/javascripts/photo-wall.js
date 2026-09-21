@@ -13,6 +13,13 @@
     allLoaded: isZh ? "已全部加载" : "All photos loaded",
   };
 
+  // Cards that open the lightbox from outside the wall. /sim-gear/ is their
+  // first user: the photo sets are drawn as magazine cards, so the grid and the
+  // type are uncrate.css's, and only the click is the wall's. They carry their
+  // own data-gallery exactly like a tile does, and nothing else — no shuffle
+  // (the page's order is the reading order) and no pagination.
+  var CARD_SEL = ".ab-card--lightbox";
+
   function shuffle(node) {
     if (!node) return;
     var items = Array.prototype.slice.call(node.children);
@@ -111,13 +118,16 @@
       "</div>" +
       '<figcaption class="sc-lightbox__cap"></figcaption>' +
       "</figure>" +
-      '<button type="button" class="sc-lightbox__nav sc-lightbox__nav--next" aria-label="Next">›</button>';
+      '<button type="button" class="sc-lightbox__nav sc-lightbox__nav--next" aria-label="' + T.next + '">›</button>';
     document.body.appendChild(root);
     return root;
   }
 
-  function initLightbox(wall) {
-    var tiles = Array.prototype.slice.call(wall.querySelectorAll(".sc-wall__tile"));
+  // One box per scope. callers pass their own selector, and the scopes never
+  // overlap — the wall's tiles are not cards, and the cards are not in a wall —
+  // so nothing is ever bound twice.
+  function initLightbox(scope, sel) {
+    var tiles = Array.prototype.slice.call(scope.querySelectorAll(sel));
     if (!tiles.length) return;
 
     var box = createLightbox();
@@ -129,7 +139,11 @@
     var gallery = [];
     var title = "";
     var lookId = "";
-    var buyUrl = "/gift-cards/";
+    // Fallback only: every tile and card on the site writes its own data-buy
+    // ("#" today, so the click opens the chat instead of navigating). This is
+    // what a future tile that forgets the attribute would land on, so it points
+    // at the price page rather than the /gift-cards/ redirect stub.
+    var buyUrl = "/topup/";
     var idx = 0;
     var open = false;
     var buyTimer = null;
@@ -174,9 +188,15 @@
 
     function openGallery(tile, start) {
       gallery = parseGallery(tile);
-      title = tile.getAttribute("title") || "";
+      // No URLs and no href: opening the box anyway would be a black screen
+      // with nothing to say why.
+      if (!gallery.length) return;
+      // data-caption first: a `title` on a whole card would tooltip it on every
+      // hover. The wall tiles set title and never data-caption, and nothing
+      // sets both.
+      title = tile.getAttribute("data-caption") || tile.getAttribute("title") || "";
       lookId = lookIdFromTile(tile, gallery);
-      buyUrl = tile.getAttribute("data-buy") || "/gift-cards/";
+      buyUrl = tile.getAttribute("data-buy") || "/topup/";
       buy.href = buyUrl;
       show(typeof start === "number" ? start : 0);
       box.hidden = false;
@@ -333,12 +353,14 @@
 
   function run() {
     var walls = document.querySelectorAll(".sc-wall");
-    if (!walls.length) return;
+    var cards = document.querySelectorAll(CARD_SEL);
+    if (!walls.length && !cards.length) return;
     walls.forEach(function (wall) {
       shuffle(wall); // final order first, so pagination reveals shuffled batches
-      initLightbox(wall);
+      initLightbox(wall, ".sc-wall__tile");
       initPagination(wall);
     });
+    if (cards.length) initLightbox(document, CARD_SEL);
   }
 
   if (document.readyState === "loading") {

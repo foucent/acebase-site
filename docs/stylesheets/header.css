@@ -1,19 +1,24 @@
 /* ============================================================
-   AceBase header — uncrate.com's three-band masthead.
+   AceBase header — uncrate.com's masthead, two bands.
 
    Measurements come from uncrate's live CSS, scaled for CJK labels:
 
      band 1  black, centred wordmark, tools right          min-height 84px
      band 2  main nav  28px, 1px black rule underneath, gap 18px
-     band 3  sub nav   20px, 1px black rules above and below, 48px tall
+
+   uncrate has a third band there, a row of sub-links that swaps with the
+   section you are in. This header does not: the pages it listed are all
+   reachable from their section's own landing page, and where it was not a
+   duplicate of that page it was padding — an entry point that only existed
+   for readers who happened to already be in the right section.
 
    Two deliberate departures from the original:
 
-   - uncrate's sub-nav links are #ae9e85, which is 2.6:1 on white and only
-     decorative at any size. Links use --ab-accent-deep (same hue, 5.9:1);
-     the raw tan survives as the hover underline, where it carries no text.
-   - The header is static rather than sticky. Three bands is ~190px, which
-     is far too much to pin, and uncrate's own header scrolls away too.
+   - uncrate's links are #ae9e85, which is 2.6:1 on white and only decorative
+     at any size. Links on white use --ab-accent-deep (same hue, 5.9:1); the
+     raw tan is kept for the black family row, where it reads fine.
+   - The header is static rather than sticky. uncrate's own header scrolls
+     away too, and a pinned masthead this tall costs more than it gives.
 
    The markup this styles lives in overrides/partials/header.html, which also
    documents the Material hooks (.md-header__inner) the markup relies on.
@@ -209,8 +214,9 @@
 .ab-mainnav {
   background: var(--ab-bg);
   border-bottom: 1px solid var(--ab-text);
-  /* uncrate leaves a hairline gap between the two rules. */
-  margin-bottom: 3px;
+  /* No margin below it: uncrate's 3px is the hairline gap between this rule
+     and the sub-nav's own top rule, and there is no band 3 here to pair with. */
+  margin-bottom: 0;
 }
 
 .ab-mainnav__inner {
@@ -258,61 +264,9 @@
   color: var(--ab-accent-deep) !important;
 }
 
-/* ---------- band 3 — sub nav ---------- */
-.ab-subnav {
-  background: var(--ab-bg);
-  border-top: 1px solid var(--ab-text);
-  border-bottom: 1px solid var(--ab-text);
-}
-
-.ab-subnav__inner {
-  max-width: 960px;
-  margin: 0 auto;
-  padding: 12px 20px 11px;
-}
-
-.ab-subnav__list {
-  display: flex;
-  flex-wrap: nowrap;
-  align-items: center;
-  justify-content: center;
-  gap: 18px;
-  height: 20px;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  overflow-x: auto;
-  scrollbar-width: none;
-}
-
-.ab-subnav__list::-webkit-scrollbar {
-  display: none;
-}
-
-.ab-subnav__item {
-  flex: 0 0 auto;
-}
-
-.ab-subnav__link {
-  display: inline-block;
-  font-size: 20px;
-  font-weight: 600;
-  line-height: 20px;
-  white-space: nowrap;
-  color: var(--ab-accent-deep) !important;
-  text-decoration: none !important;
-  /* The decorative tan, held back for the hover rule. */
-  border-bottom: 1px solid transparent;
-}
-
-.ab-subnav__link:hover {
-  color: var(--ab-text) !important;
-  border-bottom-color: var(--ab-accent);
-}
-
 /* ---------- narrow screens ----------
-   uncrate drops the sub-nav entirely below 768px and keeps the main nav on
-   one line. Same here, plus the drawer label, which is how the sidebar is
+   uncrate keeps the main nav on one line below 768px; this header lets it
+   wrap instead, and shows the drawer label, which is how the sidebar is
    reached once the column collapses. */
 @media screen and (max-width: 76.1875em) {
   .md-header__button.ab-band__drawer {
@@ -380,9 +334,5 @@
 
   .ab-mainnav__link {
     font-size: 20px;
-  }
-
-  .ab-subnav {
-    display: none;
   }
 }

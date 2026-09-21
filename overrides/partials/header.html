@@ -1,11 +1,16 @@
 {#-
-  AceBase header — uncrate.com's three-band structure.
+  AceBase header — uncrate.com's masthead, two bands.
 
     band 1  black, centred wordmark, tools on the right
     band 2  main nav, 28px, 1px black rule underneath
-    band 3  sub nav, 20px tan links, 1px black rules above and below
 
   Measurements live in docs/stylesheets/header.css.
+
+  uncrate carries a third band — a row of sub-links that swaps with the
+  section you are in. It is not here. Every page it listed is reachable from
+  its section's landing page (that page is the nav tab), so it was mostly a
+  second copy of the tab you had just clicked, and its hand-written URL list
+  was a standing source of 404s.
 
   Contracts this file must keep alive — they are all load-bearing:
     .md-header__inner      Material's flex row; the bands lay out inside it
@@ -16,43 +21,9 @@
   header and the #__search / #__drawer checkboxes are siblings of body.
 -#}
 {% set home_url = config.extra.homepage | d(nav.homepage.url, true) | url %}
-
-{#- Sub-nav groups. uncrate shows the subcategories of the section you are
-    in; these mirror that using the pages that actually exist, so no link
-    here 404s and none of them restates the main nav above. -#}
-{% set subnav_gpu = [
-  ("RTX 5060 Ti", "games/rtx-5060-ti.md"),
-  ("RTX 5060", "games/rtx-5060.md"),
-  ("RTX 4090", "games/rtx-4090.md"),
-  ("RTX 4080 SUPER", "games/rtx-4080-super.md"),
-  ("RTX 4080", "games/rtx-4080.md")
-] %}
-{% set subnav_games = [
-  ("王者荣耀", "games/hok.md"),
-  ("PUBG Mobile", "games/pubg-mobile.md"),
-  ("PUBG G币", "games/pubg-gcoin.md"),
-  ("永劫无间", "games/arena-breakout.md"),
-  ("鸣潮", "games/where-winds-meet.md")
-] %}
-{% set subnav_hot = [
-  ("RTX 5060 Ti", "games/rtx-5060-ti.md"),
-  ("RTX 5060", "games/rtx-5060.md"),
-  ("RTX 4090", "games/rtx-4090.md"),
-  ("王者荣耀", "games/hok.md"),
-  ("PUBG Mobile", "games/pubg-mobile.md"),
-  ("鸣潮", "games/where-winds-meet.md")
-] %}
 {#- `hide: - navigation` removes the sidebar, so the drawer label must go with
     it — otherwise it opens an empty panel. -#}
 {% set hide_nav = page.meta.hide and "navigation" in page.meta.hide if page.meta else false %}
-{% set u = page.url | d("", true) %}
-{% if u.startswith("games/rtx-") or u.startswith("games/gpu-prices") or u.startswith("pc-components") %}
-  {% set subnav = subnav_gpu %}
-{% elif u.startswith("games/") and not u.startswith("games/live-prices") %}
-  {% set subnav = subnav_games %}
-{% else %}
-  {% set subnav = subnav_hot %}
-{% endif %}
 
 <header class="md-header" data-md-component="header">
   {#- band 1 — black -#}
@@ -137,17 +108,5 @@
       </ul>
     </div>
   </nav>
-
-  {#- band 3 — sub nav -#}
-  {% if subnav %}
-    <nav class="ab-subnav" aria-label="{{ lang.t('nav') }}">
-      <div class="ab-subnav__inner">
-        <ul class="ab-subnav__list">
-          {% for label, href in subnav %}
-            <li class="ab-subnav__item"><a class="ab-subnav__link" href="{{ href | url }}">{{ label }}</a></li>
-          {% endfor %}
-        </ul>
-      </div>
-    </nav>
-  {% endif %}
 </header>
+

@@ -44,12 +44,39 @@ plugins:
         gallery/figures.md: gallery/index.md
         gallery/coser.md: gallery/index.md
         gallery/pre-owned.md: gallery/index.md
-        games/honor-of-kings.md: games/hok.md
+        games/honor-of-kings.md: topup/index.md
         games/steam-accounts.md: index.md
         games/valorant-accounts.md: index.md
         currency/index.md: index.md
         games/buy-robux.md: index.md
-        games/rtx-5050.md: games/gpu-prices.md
+        games/rtx-5050.md: tech/index.md
+        games/gpu-prices.md: tech/index.md
+        # 八个型号页 2026-09-21 下线，旧 URL 一并指回总览页，免得留下 404。
+        games/rtx-5060.md: tech/index.md
+        games/rtx-5060-ti.md: tech/index.md
+        games/rtx-4070-ti-super.md: tech/index.md
+        games/rtx-4080.md: tech/index.md
+        games/rtx-4080-super.md: tech/index.md
+        games/rtx-4090.md: tech/index.md
+        games/rtx-3060.md: tech/index.md
+        games/rtx-3060-ti.md: tech/index.md
+        # 代储价格页 2026-09-21 从 /games/topup-prices/ 提到顶层 /topup/，
+        # 和 /tech/ 并列。旧 URL 指过去，免得留下 404。
+        games/topup-prices.md: topup/index.md
+        # 五个游戏详情页 2026-09-21 下线 —— /topup 的卡片自己就把档位和价格列全了，
+        # 详情页只是同一份数据的第二个入口。旧 URL 指回总览页对应那张卡的锚点。
+        games/pubg-mobile.md: topup/index.md
+        games/pubg-gcoin.md: topup/index.md
+        games/hok.md: topup/index.md
+        games/arena-breakout.md: topup/index.md
+        games/where-winds-meet.md: topup/index.md
+        # 礼品卡页 2026-09-21 整页下线 —— 十三个商品按 /topup 的卡片模板重排后
+        # 搬进了那一页的第二段，hero 和 FAQ 随页走。旧 URL 指过去。
+        gift-cards/index.md: topup/index.md
+        # 直播代储页 2026-09-21 整页下线 —— 十四个平台按同一张模板重排，成了
+        # /topup 的第三段；这一页的生成器、渲染器、样式和数据文件一并退休，
+        # 价格改由 prices.json 供。旧 URL 指过去。
+        games/live-prices.md: topup/index.md
 
 markdown_extensions:
   - admonition
@@ -68,14 +95,14 @@ markdown_extensions:
 extra_css:
   - stylesheets/extra.css
   - stylesheets/header.css
-  - stylesheets/bittopup-product.css
   - stylesheets/preowned.css
   - stylesheets/photo-wall.css
   - stylesheets/home.css
   - stylesheets/board-games.css
   - stylesheets/games.css
   - stylesheets/gift-cards.css
-  - stylesheets/gpu.css
+  # gpu.css was retired 2026-09-21 with the /games/live-prices/ page: the only
+  # class left in it, .mg-gpu-models, was that page's anchor-pill row.
   # Loads last: the magazine homepage owns the widest-reaching selectors, so
   # it should win any specificity tie against the per-page sheets above.
   - stylesheets/uncrate.css
@@ -88,8 +115,10 @@ extra_javascript:
   - javascripts/board-cart.js
   - javascripts/board-grid.js
   - javascripts/gift-cards.js
+  # live-prices.js was retired 2026-09-21 with the page it served: its
+  # .ab-ec-list[data-product] targets are gone and /topup renders every card,
+  # these fourteen included, through games-prices.js.
   - javascripts/games-prices.js
-  - javascripts/live-prices.js
 
 watch:
   - overrides
@@ -109,10 +138,11 @@ extra:
   family:
     - label: AceBase.cc
       link: https://acebase.cc/
-    # 站内的 SHOP 页（gift-cards/index.md）。shop.acebase.cc 解析不了，
-    # 子域开通后把 link 换成 https://shop.acebase.cc/ 即可。
+    # 站内的礼品卡专区 —— 2026-09-21 起就是 /topup/ 的第二段（旧的
+    # gift-cards/index.md 已整页下线）。shop.acebase.cc 解析不了，子域开通后
+    # 把 link 换成 https://shop.acebase.cc/ 即可。
     - label: shop.AceBase.cc
-      link: /gift-cards/
+      link: /topup/
   # The site's own channels, read twice: header.html renders them as the menu
   # under the @AceBase handle, main.html as the Organization node's sameAs. One
   # list, so a channel cannot show up in the menu without also being declared to
@@ -133,9 +163,10 @@ extra:
 
 nav:
   - HOME: index.md
-  - TECH: games/gpu-prices.md
-  - GAME: games/topup-prices.md
-  - APP: games/live-prices.md
-  - GEAR: pc-components/index.md
+  - TECH: tech/index.md
+  - TOP-UP: topup/index.md
   - STYLE: sim-gear/index.md
-  - SHOP: gift-cards/index.md
+  - WELLNESS: wellness/index.md
+  # SHOP 这一项 2026-09-21 删除：礼品卡搬进 /topup/ 之后，同一个页面挂在
+  # TOP-UP 和 SHOP 两个标签下没有意义。首页的 SHOP 分组仍然保留
+  # （gen_home.py 的 GROUP_ORDER），只是不再有独立的顶部入口。

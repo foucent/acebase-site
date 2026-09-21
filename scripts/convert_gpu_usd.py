@@ -191,7 +191,7 @@ def main() -> int:
     args = ap.parse_args()
 
     report: list[str] = []
-    files = sorted(DOCS.glob("games/rtx-*.md")) + [DOCS / "games/gpu-prices.md"]
+    files = sorted(DOCS.glob("games/rtx-*.md")) + [DOCS / "tech" / "index.md"]
     report.append("charts:")
     md_changed = 0
 

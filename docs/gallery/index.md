@@ -1,6 +1,7 @@
 ---
 title: 画廊
 description: AceBase 画廊 — 游戏壁纸与手办照片。浏览、查看大图，或通过在线咨询获取。
+updated: 2026-09-18
 hide:
   - title
   - toc

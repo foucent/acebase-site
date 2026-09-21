@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-03",
+  "updated": "2026-09-21",
   "games": {
     "valorant": [
       {
@@ -404,7 +404,1465 @@
         "highest": 19.01,
         "average": 18.38
       }
+    ],
+    "amazon-gift-card-us": [
+      {
+        "title": "5 USD",
+        "lowest": 4.95,
+        "highest": 4.95,
+        "average": 4.95
+      },
+      {
+        "title": "10 USD",
+        "lowest": 9.9,
+        "highest": 9.9,
+        "average": 9.9
+      },
+      {
+        "title": "20 USD",
+        "lowest": 19.8,
+        "highest": 19.8,
+        "average": 19.8
+      },
+      {
+        "title": "35 USD",
+        "lowest": 34.65,
+        "highest": 34.65,
+        "average": 34.65
+      },
+      {
+        "title": "50 USD",
+        "lowest": 49.5,
+        "highest": 49.5,
+        "average": 49.5
+      },
+      {
+        "title": "100 USD",
+        "lowest": 99.0,
+        "highest": 99.0,
+        "average": 99.0
+      }
+    ],
+    "apple-gift-card": [
+      {
+        "title": "5 USD",
+        "lowest": 4.5,
+        "highest": 4.5,
+        "average": 4.5
+      },
+      {
+        "title": "10 USD",
+        "lowest": 9.0,
+        "highest": 9.0,
+        "average": 9.0
+      },
+      {
+        "title": "20 USD",
+        "lowest": 18.0,
+        "highest": 18.0,
+        "average": 18.0
+      },
+      {
+        "title": "50 USD",
+        "lowest": 45.0,
+        "highest": 45.0,
+        "average": 45.0
+      },
+      {
+        "title": "100 USD",
+        "lowest": 90.0,
+        "highest": 90.0,
+        "average": 90.0
+      },
+      {
+        "title": "200 USD",
+        "lowest": 181.8,
+        "highest": 181.8,
+        "average": 181.8
+      },
+      {
+        "title": "500 USD",
+        "lowest": 454.5,
+        "highest": 454.5,
+        "average": 454.5
+      }
+    ],
+    "google-play-gift-card": [
+      {
+        "title": "5 USD",
+        "lowest": 4.95,
+        "highest": 4.95,
+        "average": 4.95
+      },
+      {
+        "title": "10 USD",
+        "lowest": 9.9,
+        "highest": 9.9,
+        "average": 9.9
+      },
+      {
+        "title": "15 USD",
+        "lowest": 14.85,
+        "highest": 14.85,
+        "average": 14.85
+      },
+      {
+        "title": "25 USD",
+        "lowest": 24.75,
+        "highest": 24.75,
+        "average": 24.75
+      },
+      {
+        "title": "50 USD",
+        "lowest": 49.5,
+        "highest": 49.5,
+        "average": 49.5
+      },
+      {
+        "title": "100 USD",
+        "lowest": 99.0,
+        "highest": 99.0,
+        "average": 99.0
+      }
+    ],
+    "netflix-gift-card-us": [
+      {
+        "title": "20 USD",
+        "lowest": 20.25,
+        "highest": 20.25,
+        "average": 20.25
+      },
+      {
+        "title": "25 USD",
+        "lowest": 25.2,
+        "highest": 25.2,
+        "average": 25.2
+      },
+      {
+        "title": "30 USD",
+        "lowest": 29.7,
+        "highest": 29.7,
+        "average": 29.7
+      },
+      {
+        "title": "50 USD",
+        "lowest": 49.5,
+        "highest": 49.5,
+        "average": 49.5
+      },
+      {
+        "title": "60 USD",
+        "lowest": 59.4,
+        "highest": 59.4,
+        "average": 59.4
+      },
+      {
+        "title": "100 USD",
+        "lowest": 94.5,
+        "highest": 94.5,
+        "average": 94.5
+      }
+    ],
+    "xbox-gift-card": [
+      {
+        "title": "5 USD",
+        "lowest": 4.59,
+        "highest": 4.59,
+        "average": 4.59
+      },
+      {
+        "title": "10 USD",
+        "lowest": 8.97,
+        "highest": 8.97,
+        "average": 8.97
+      },
+      {
+        "title": "15 USD",
+        "lowest": 13.49,
+        "highest": 13.49,
+        "average": 13.49
+      },
+      {
+        "title": "20 USD",
+        "lowest": 17.99,
+        "highest": 17.99,
+        "average": 17.99
+      },
+      {
+        "title": "25 USD",
+        "lowest": 22.03,
+        "highest": 22.03,
+        "average": 22.03
+      },
+      {
+        "title": "50 USD",
+        "lowest": 43.91,
+        "highest": 43.91,
+        "average": 43.91
+      },
+      {
+        "title": "100 USD",
+        "lowest": 88.19,
+        "highest": 88.19,
+        "average": 88.19
+      }
+    ],
+    "kammelna-gift-card": [
+      {
+        "title": "30 天",
+        "lowest": 8.09,
+        "highest": 8.09,
+        "average": 8.09
+      },
+      {
+        "title": "90 天",
+        "lowest": 19.79,
+        "highest": 19.79,
+        "average": 19.79
+      },
+      {
+        "title": "180 天",
+        "lowest": 36.89,
+        "highest": 36.89,
+        "average": 36.89
+      },
+      {
+        "title": "365 天",
+        "lowest": 66.59,
+        "highest": 66.59,
+        "average": 66.59
+      },
+      {
+        "title": "4000 金卡",
+        "lowest": 11.42,
+        "highest": 11.42,
+        "average": 11.42
+      },
+      {
+        "title": "12000 金卡",
+        "lowest": 26.21,
+        "highest": 26.21,
+        "average": 26.21
+      },
+      {
+        "title": "50000 金卡",
+        "lowest": 103.41,
+        "highest": 103.41,
+        "average": 103.41
+      },
+      {
+        "title": "100000 金卡",
+        "lowest": 199.71,
+        "highest": 199.71,
+        "average": 199.71
+      },
+      {
+        "title": "250000 金卡",
+        "lowest": 485.91,
+        "highest": 485.91,
+        "average": 485.91
+      }
+    ],
+    "fortnite-vbucks-card": [
+      {
+        "title": "1000 V-Bucks",
+        "lowest": 8.99,
+        "highest": 8.99,
+        "average": 8.99
+      },
+      {
+        "title": "2800 V-Bucks",
+        "lowest": 22.49,
+        "highest": 22.49,
+        "average": 22.49
+      },
+      {
+        "title": "5000 V-Bucks",
+        "lowest": 35.99,
+        "highest": 35.99,
+        "average": 35.99
+      },
+      {
+        "title": "13500 V-Bucks",
+        "lowest": 89.99,
+        "highest": 89.99,
+        "average": 89.99
+      }
+    ],
+    "apex-legends-coins-card": [
+      {
+        "title": "1000 Coins",
+        "lowest": 10.01,
+        "highest": 10.01,
+        "average": 10.01
+      },
+      {
+        "title": "2150 Coins",
+        "lowest": 20.18,
+        "highest": 20.18,
+        "average": 20.18
+      },
+      {
+        "title": "4350 Coins",
+        "lowest": 33.54,
+        "highest": 33.54,
+        "average": 33.54
+      },
+      {
+        "title": "6700 Coins",
+        "lowest": 49.76,
+        "highest": 49.76,
+        "average": 49.76
+      },
+      {
+        "title": "10500 Coins",
+        "lowest": 101.41,
+        "highest": 101.41,
+        "average": 101.41
+      }
+    ],
+    "playstation-network-card-us": [
+      {
+        "title": "1 USD",
+        "lowest": 1.07,
+        "highest": 1.07,
+        "average": 1.07
+      },
+      {
+        "title": "2 USD",
+        "lowest": 2.15,
+        "highest": 2.15,
+        "average": 2.15
+      },
+      {
+        "title": "3 USD",
+        "lowest": 3.04,
+        "highest": 3.04,
+        "average": 3.04
+      },
+      {
+        "title": "4 USD",
+        "lowest": 3.95,
+        "highest": 3.95,
+        "average": 3.95
+      },
+      {
+        "title": "10 USD",
+        "lowest": 9.0,
+        "highest": 9.0,
+        "average": 9.0
+      },
+      {
+        "title": "25 USD",
+        "lowest": 21.6,
+        "highest": 21.6,
+        "average": 21.6
+      },
+      {
+        "title": "50 USD",
+        "lowest": 44.1,
+        "highest": 44.1,
+        "average": 44.1
+      },
+      {
+        "title": "75 USD",
+        "lowest": 66.6,
+        "highest": 66.6,
+        "average": 66.6
+      },
+      {
+        "title": "100 USD",
+        "lowest": 89.1,
+        "highest": 89.1,
+        "average": 89.1
+      },
+      {
+        "title": "150 USD",
+        "lowest": 133.2,
+        "highest": 133.2,
+        "average": 133.2
+      },
+      {
+        "title": "200 USD",
+        "lowest": 178.2,
+        "highest": 178.2,
+        "average": 178.2
+      }
+    ],
+    "nintendo-switch-online": [
+      {
+        "title": "3 个月",
+        "lowest": 8.69,
+        "highest": 8.69,
+        "average": 8.69
+      },
+      {
+        "title": "12 个月",
+        "lowest": 19.13,
+        "highest": 19.13,
+        "average": 19.13
+      }
+    ],
+    "nintendo-eshop-card-us": [
+      {
+        "title": "10 USD",
+        "lowest": 8.81,
+        "highest": 8.81,
+        "average": 8.81
+      },
+      {
+        "title": "20 USD",
+        "lowest": 17.54,
+        "highest": 17.54,
+        "average": 17.54
+      },
+      {
+        "title": "35 USD",
+        "lowest": 30.14,
+        "highest": 30.14,
+        "average": 30.14
+      },
+      {
+        "title": "50 USD",
+        "lowest": 43.19,
+        "highest": 43.19,
+        "average": 43.19
+      }
+    ],
+    "steam-wallet-card-us": [
+      {
+        "title": "5 USD",
+        "lowest": 5.12,
+        "highest": 5.12,
+        "average": 5.12
+      },
+      {
+        "title": "10 USD",
+        "lowest": 10.16,
+        "highest": 10.16,
+        "average": 10.16
+      },
+      {
+        "title": "20 USD",
+        "lowest": 20.33,
+        "highest": 20.33,
+        "average": 20.33
+      },
+      {
+        "title": "25 USD",
+        "lowest": 25.19,
+        "highest": 25.19,
+        "average": 25.19
+      },
+      {
+        "title": "30 USD",
+        "lowest": 28.61,
+        "highest": 28.61,
+        "average": 28.61
+      },
+      {
+        "title": "50 USD",
+        "lowest": 47.69,
+        "highest": 47.69,
+        "average": 47.69
+      },
+      {
+        "title": "100 USD",
+        "lowest": 99.27,
+        "highest": 99.27,
+        "average": 99.27
+      }
+    ],
+    "gocash-card": [
+      {
+        "title": "5 USD",
+        "lowest": 4.31,
+        "highest": 4.31,
+        "average": 4.31
+      },
+      {
+        "title": "10 USD",
+        "lowest": 8.54,
+        "highest": 8.54,
+        "average": 8.54
+      },
+      {
+        "title": "15 USD",
+        "lowest": 13.49,
+        "highest": 13.49,
+        "average": 13.49
+      },
+      {
+        "title": "20 USD",
+        "lowest": 17.09,
+        "highest": 17.09,
+        "average": 17.09
+      },
+      {
+        "title": "50 USD",
+        "lowest": 43.19,
+        "highest": 43.19,
+        "average": 43.19
+      },
+      {
+        "title": "100 USD",
+        "lowest": 86.39,
+        "highest": 86.39,
+        "average": 86.39
+      }
+    ],
+    "douyin-top-up": [
+      {
+        "title": "60 Diamonds",
+        "lowest": 1.16,
+        "highest": 1.16,
+        "average": 1.16,
+        "off": "-19%"
+      },
+      {
+        "title": "100  Diamonds",
+        "lowest": 1.97,
+        "highest": 1.97,
+        "average": 1.97
+      },
+      {
+        "title": "200 Diamonds",
+        "lowest": 3.06,
+        "highest": 3.06,
+        "average": 3.06
+      },
+      {
+        "title": "300 Diamonds",
+        "lowest": 4.6,
+        "highest": 4.6,
+        "average": 4.6
+      },
+      {
+        "title": "500 Diamonds",
+        "lowest": 7.66,
+        "highest": 7.66,
+        "average": 7.66
+      },
+      {
+        "title": "1000 Diamonds",
+        "lowest": 16.0,
+        "highest": 16.0,
+        "average": 16.0
+      },
+      {
+        "title": "2000 Diamonds",
+        "lowest": 31.98,
+        "highest": 31.98,
+        "average": 31.98
+      },
+      {
+        "title": "3000 Diamonds",
+        "lowest": 47.96,
+        "highest": 47.96,
+        "average": 47.96
+      },
+      {
+        "title": "5000 Diamonds",
+        "lowest": 79.95,
+        "highest": 79.95,
+        "average": 79.95
+      },
+      {
+        "title": "8000 Diamonds",
+        "lowest": 130.13,
+        "highest": 130.13,
+        "average": 130.13
+      },
+      {
+        "title": "10000 Diamonds",
+        "lowest": 164.16,
+        "highest": 164.16,
+        "average": 164.16
+      },
+      {
+        "title": "20000 Diamonds",
+        "lowest": 318.62,
+        "highest": 318.62,
+        "average": 318.62
+      }
+    ],
+    "kwi-top-up": [
+      {
+        "title": "300 Coins",
+        "lowest": 4.5,
+        "highest": 4.5,
+        "average": 4.5,
+        "off": "-16%"
+      },
+      {
+        "title": "500 Coins",
+        "lowest": 7.58,
+        "highest": 7.58,
+        "average": 7.58
+      },
+      {
+        "title": "980 Coins",
+        "lowest": 15.31,
+        "highest": 15.31,
+        "average": 15.31
+      },
+      {
+        "title": "1980 Coins",
+        "lowest": 31.36,
+        "highest": 31.36,
+        "average": 31.36
+      },
+      {
+        "title": "2000 Coins",
+        "lowest": 31.72,
+        "highest": 31.72,
+        "average": 31.72
+      },
+      {
+        "title": "3980 Coins",
+        "lowest": 62.53,
+        "highest": 62.53,
+        "average": 62.53
+      },
+      {
+        "title": "5000 Coins",
+        "lowest": 78.16,
+        "highest": 78.16,
+        "average": 78.16
+      },
+      {
+        "title": "6660 Coins",
+        "lowest": 105.0,
+        "highest": 105.0,
+        "average": 105.0
+      },
+      {
+        "title": "10000 Coins",
+        "lowest": 164.47,
+        "highest": 164.47,
+        "average": 164.47
+      },
+      {
+        "title": "18880 Coins",
+        "lowest": 307.35,
+        "highest": 307.35,
+        "average": 307.35
+      },
+      {
+        "title": "30000 Coins",
+        "lowest": 488.91,
+        "highest": 488.91,
+        "average": 488.91
+      },
+      {
+        "title": "50000 Coins",
+        "lowest": 824.82,
+        "highest": 824.82,
+        "average": 824.82
+      },
+      {
+        "title": "100000 Coins",
+        "lowest": 1667.61,
+        "highest": 1667.61,
+        "average": 1667.61
+      }
+    ],
+    "bigo-live": [
+      {
+        "title": "50 Diamonds",
+        "lowest": 0.96,
+        "highest": 0.96,
+        "average": 0.96,
+        "off": "-25%"
+      },
+      {
+        "title": "100 Diamonds",
+        "lowest": 1.91,
+        "highest": 1.91,
+        "average": 1.91
+      },
+      {
+        "title": "200 Diamonds",
+        "lowest": 3.82,
+        "highest": 3.82,
+        "average": 3.82
+      },
+      {
+        "title": "300 Diamonds",
+        "lowest": 5.73,
+        "highest": 5.73,
+        "average": 5.73
+      },
+      {
+        "title": "500 Diamonds",
+        "lowest": 9.51,
+        "highest": 9.51,
+        "average": 9.51
+      },
+      {
+        "title": "800 Diamonds",
+        "lowest": 15.75,
+        "highest": 15.75,
+        "average": 15.75
+      },
+      {
+        "title": "1000 Diamonds",
+        "lowest": 19.74,
+        "highest": 19.74,
+        "average": 19.74
+      },
+      {
+        "title": "1400 Diamonds",
+        "lowest": 27.63,
+        "highest": 27.63,
+        "average": 27.63
+      },
+      {
+        "title": "1600 Diamonds",
+        "lowest": 31.57,
+        "highest": 31.57,
+        "average": 31.57
+      },
+      {
+        "title": "2000 Diamonds",
+        "lowest": 39.39,
+        "highest": 39.39,
+        "average": 39.39
+      },
+      {
+        "title": "3000 Diamonds",
+        "lowest": 59.11,
+        "highest": 59.11,
+        "average": 59.11
+      },
+      {
+        "title": "4000 Diamonds",
+        "lowest": 78.74,
+        "highest": 78.74,
+        "average": 78.74
+      },
+      {
+        "title": "5000 Diamonds",
+        "lowest": 98.78,
+        "highest": 98.78,
+        "average": 98.78
+      },
+      {
+        "title": "6000 Diamonds",
+        "lowest": 119.9,
+        "highest": 119.9,
+        "average": 119.9
+      },
+      {
+        "title": "8000 Diamonds",
+        "lowest": 161.61,
+        "highest": 161.61,
+        "average": 161.61
+      },
+      {
+        "title": "10000 Diamonds",
+        "lowest": 203.43,
+        "highest": 203.43,
+        "average": 203.43
+      },
+      {
+        "title": "14400 Diamonds",
+        "lowest": 292.27,
+        "highest": 292.27,
+        "average": 292.27
+      }
+    ],
+    "mico-top-up": [
+      {
+        "title": "445 币",
+        "lowest": 3.7,
+        "highest": 3.7,
+        "average": 3.7,
+        "off": "-10%"
+      },
+      {
+        "title": "500 币",
+        "lowest": 4.15,
+        "highest": 4.15,
+        "average": 4.15
+      },
+      {
+        "title": "900 币",
+        "lowest": 7.47,
+        "highest": 7.47,
+        "average": 7.47
+      },
+      {
+        "title": "1100 币",
+        "lowest": 9.15,
+        "highest": 9.15,
+        "average": 9.15
+      },
+      {
+        "title": "2200 币",
+        "lowest": 19.07,
+        "highest": 19.07,
+        "average": 19.07
+      },
+      {
+        "title": "2730 币",
+        "lowest": 24.21,
+        "highest": 24.21,
+        "average": 24.21
+      },
+      {
+        "title": "3300 币",
+        "lowest": 29.27,
+        "highest": 29.27,
+        "average": 29.27
+      },
+      {
+        "title": "5500 币",
+        "lowest": 48.77,
+        "highest": 48.77,
+        "average": 48.77
+      },
+      {
+        "title": "5700 币",
+        "lowest": 50.54,
+        "highest": 50.54,
+        "average": 50.54
+      },
+      {
+        "title": "8550 币",
+        "lowest": 75.81,
+        "highest": 75.81,
+        "average": 75.81
+      },
+      {
+        "title": "8800 币",
+        "lowest": 78.03,
+        "highest": 78.03,
+        "average": 78.03
+      },
+      {
+        "title": "11000 币",
+        "lowest": 98.75,
+        "highest": 98.75,
+        "average": 98.75
+      },
+      {
+        "title": "22000 币",
+        "lowest": 203.12,
+        "highest": 203.12,
+        "average": 203.12
+      },
+      {
+        "title": "33000 币",
+        "lowest": 301.95,
+        "highest": 301.95,
+        "average": 301.95
+      },
+      {
+        "title": "55000 币",
+        "lowest": 503.93,
+        "highest": 503.93,
+        "average": 503.93
+      }
+    ],
+    "poppo-live": [
+      {
+        "title": "43500 Coins",
+        "lowest": 4.4,
+        "highest": 4.4,
+        "average": 4.4,
+        "off": "-21%"
+      },
+      {
+        "title": "83000 Coins",
+        "lowest": 8.38,
+        "highest": 8.38,
+        "average": 8.38
+      },
+      {
+        "title": "88000 Coins",
+        "lowest": 8.75,
+        "highest": 8.75,
+        "average": 8.75
+      },
+      {
+        "title": "178000 Coins",
+        "lowest": 18.48,
+        "highest": 18.48,
+        "average": 18.48
+      },
+      {
+        "title": "270000 Coins",
+        "lowest": 28.47,
+        "highest": 28.47,
+        "average": 28.47
+      },
+      {
+        "title": "350000 Coins",
+        "lowest": 36.33,
+        "highest": 36.33,
+        "average": 36.33
+      },
+      {
+        "title": "450000 Coins",
+        "lowest": 47.43,
+        "highest": 47.43,
+        "average": 47.43
+      },
+      {
+        "title": "700000 Coins",
+        "lowest": 72.67,
+        "highest": 72.67,
+        "average": 72.67
+      },
+      {
+        "title": "870000 Coins",
+        "lowest": 91.67,
+        "highest": 91.67,
+        "average": 91.67
+      },
+      {
+        "title": "920000 Coins",
+        "lowest": 95.67,
+        "highest": 95.67,
+        "average": 95.67
+      },
+      {
+        "title": "1780000 Coins",
+        "lowest": 193.56,
+        "highest": 193.56,
+        "average": 193.56
+      },
+      {
+        "title": "2730000 Coins",
+        "lowest": 292.47,
+        "highest": 292.47,
+        "average": 292.47
+      }
+    ],
+    "tango-live-recharge": [
+      {
+        "title": "150 Coins",
+        "lowest": 0.85,
+        "highest": 0.85,
+        "average": 0.85,
+        "off": "-12%"
+      },
+      {
+        "title": "300 金币",
+        "lowest": 1.57,
+        "highest": 1.57,
+        "average": 1.57
+      },
+      {
+        "title": "750 金币",
+        "lowest": 3.92,
+        "highest": 3.92,
+        "average": 3.92
+      },
+      {
+        "title": "1500 金币",
+        "lowest": 7.85,
+        "highest": 7.85,
+        "average": 7.85
+      },
+      {
+        "title": "2250 金币",
+        "lowest": 12.05,
+        "highest": 12.05,
+        "average": 12.05
+      },
+      {
+        "title": "3750 金币",
+        "lowest": 20.4,
+        "highest": 20.4,
+        "average": 20.4
+      },
+      {
+        "title": "7500 金币",
+        "lowest": 40.7,
+        "highest": 40.7,
+        "average": 40.7
+      },
+      {
+        "title": "15000 金币",
+        "lowest": 81.35,
+        "highest": 81.35,
+        "average": 81.35
+      },
+      {
+        "title": "30000 金币",
+        "lowest": 168.49,
+        "highest": 168.49,
+        "average": 168.49
+      },
+      {
+        "title": "37500 金币",
+        "lowest": 211.84,
+        "highest": 211.84,
+        "average": 211.84
+      },
+      {
+        "title": "75000 金币",
+        "lowest": 419.18,
+        "highest": 419.18,
+        "average": 419.18
+      },
+      {
+        "title": "120000 金币",
+        "lowest": 676.49,
+        "highest": 676.49,
+        "average": 676.49
+      },
+      {
+        "title": "150000 金币",
+        "lowest": 850.3,
+        "highest": 850.3,
+        "average": 850.3
+      }
+    ],
+    "mango": [
+      {
+        "title": "3600 Diamonds",
+        "lowest": 0.87,
+        "highest": 0.87,
+        "average": 0.87,
+        "off": "-17%"
+      },
+      {
+        "title": "14400 Diamonds",
+        "lowest": 3.59,
+        "highest": 3.59,
+        "average": 3.59
+      },
+      {
+        "title": "28800 Diamonds",
+        "lowest": 7.15,
+        "highest": 7.15,
+        "average": 7.15
+      },
+      {
+        "title": "64800 Diamonds",
+        "lowest": 16.83,
+        "highest": 16.83,
+        "average": 16.83
+      },
+      {
+        "title": "126000 Diamonds",
+        "lowest": 32.72,
+        "highest": 32.72,
+        "average": 32.72
+      },
+      {
+        "title": "244800 Diamonds",
+        "lowest": 63.54,
+        "highest": 63.54,
+        "average": 63.54
+      }
+    ],
+    "migo-top-up": [
+      {
+        "title": "14000 金币",
+        "lowest": 1.68,
+        "highest": 1.68,
+        "average": 1.68,
+        "off": "-13%"
+      },
+      {
+        "title": "28000 金币",
+        "lowest": 3.33,
+        "highest": 3.33,
+        "average": 3.33
+      },
+      {
+        "title": "56000 金币",
+        "lowest": 6.66,
+        "highest": 6.66,
+        "average": 6.66
+      },
+      {
+        "title": "65000 金币",
+        "lowest": 7.73,
+        "highest": 7.73,
+        "average": 7.73
+      },
+      {
+        "title": "93500 金币",
+        "lowest": 11.36,
+        "highest": 11.36,
+        "average": 11.36
+      },
+      {
+        "title": "112000 金币",
+        "lowest": 13.8,
+        "highest": 13.8,
+        "average": 13.8
+      },
+      {
+        "title": "130000 金币",
+        "lowest": 16.15,
+        "highest": 16.15,
+        "average": 16.15
+      },
+      {
+        "title": "211000  金币",
+        "lowest": 27.05,
+        "highest": 27.05,
+        "average": 27.05
+      },
+      {
+        "title": "220000 金币",
+        "lowest": 27.31,
+        "highest": 27.31,
+        "average": 27.31
+      },
+      {
+        "title": "325000 金币",
+        "lowest": 40.36,
+        "highest": 40.36,
+        "average": 40.36
+      },
+      {
+        "title": "336000 金币",
+        "lowest": 42.54,
+        "highest": 42.54,
+        "average": 42.54
+      },
+      {
+        "title": "650000 金币",
+        "lowest": 80.69,
+        "highest": 80.69,
+        "average": 80.69
+      },
+      {
+        "title": "672000 金币",
+        "lowest": 83.42,
+        "highest": 83.42,
+        "average": 83.42
+      },
+      {
+        "title": "1344000 金币",
+        "lowest": 171.54,
+        "highest": 171.54,
+        "average": 171.54
+      }
+    ],
+    "superlive": [
+      {
+        "title": "605金币",
+        "lowest": 5.09,
+        "highest": 5.09,
+        "average": 5.09,
+        "off": "-17%"
+      },
+      {
+        "title": "1230金币",
+        "lowest": 10.32,
+        "highest": 10.32,
+        "average": 10.32
+      },
+      {
+        "title": "3125金币",
+        "lowest": 26.56,
+        "highest": 26.56,
+        "average": 26.56
+      },
+      {
+        "title": "6250金币",
+        "lowest": 53.12,
+        "highest": 53.12,
+        "average": 53.12
+      },
+      {
+        "title": "10000金币",
+        "lowest": 85.01,
+        "highest": 85.01,
+        "average": 85.01
+      },
+      {
+        "title": "13800金币",
+        "lowest": 101.44,
+        "highest": 101.44,
+        "average": 101.44
+      },
+      {
+        "title": "20850金币",
+        "lowest": 155.14,
+        "highest": 155.14,
+        "average": 155.14
+      },
+      {
+        "title": "43000金币",
+        "lowest": 319.76,
+        "highest": 319.76,
+        "average": 319.76
+      },
+      {
+        "title": "50050金币",
+        "lowest": 373.06,
+        "highest": 373.06,
+        "average": 373.06
+      },
+      {
+        "title": "71500金币",
+        "lowest": 534.55,
+        "highest": 534.55,
+        "average": 534.55
+      },
+      {
+        "title": "100000金币",
+        "lowest": 754.32,
+        "highest": 754.32,
+        "average": 754.32
+      }
+    ],
+    "dazz-top-up": [
+      {
+        "title": "25000 Coins",
+        "lowest": 2.73,
+        "highest": 2.73,
+        "average": 2.73,
+        "off": "-31%"
+      },
+      {
+        "title": "50000 Coins",
+        "lowest": 5.48,
+        "highest": 5.48,
+        "average": 5.48
+      },
+      {
+        "title": "100000 Coins",
+        "lowest": 11.12,
+        "highest": 11.12,
+        "average": 11.12
+      },
+      {
+        "title": "150000 Coins",
+        "lowest": 17.1,
+        "highest": 17.1,
+        "average": 17.1
+      },
+      {
+        "title": "200000 Coins",
+        "lowest": 22.79,
+        "highest": 22.79,
+        "average": 22.79
+      },
+      {
+        "title": "300000 Coins",
+        "lowest": 34.31,
+        "highest": 34.31,
+        "average": 34.31
+      },
+      {
+        "title": "500000 Coins",
+        "lowest": 57.08,
+        "highest": 57.08,
+        "average": 57.08
+      },
+      {
+        "title": "2500000 Coins",
+        "lowest": 294.45,
+        "highest": 294.45,
+        "average": 294.45
+      },
+      {
+        "title": "4000000 Coins",
+        "lowest": 470.82,
+        "highest": 470.82,
+        "average": 470.82
+      }
+    ],
+    "xena-live-group-voice": [
+      {
+        "title": "3350 Coins",
+        "lowest": 0.42,
+        "highest": 0.42,
+        "average": 0.42,
+        "off": "-14%"
+      },
+      {
+        "title": "6700 Coins",
+        "lowest": 0.82,
+        "highest": 0.82,
+        "average": 0.82
+      },
+      {
+        "title": "33500 Coins",
+        "lowest": 4.07,
+        "highest": 4.07,
+        "average": 4.07
+      },
+      {
+        "title": "67500 Coins",
+        "lowest": 8.15,
+        "highest": 8.15,
+        "average": 8.15
+      },
+      {
+        "title": "202500 Coins",
+        "lowest": 25.54,
+        "highest": 25.54,
+        "average": 25.54
+      },
+      {
+        "title": "406800 Coins",
+        "lowest": 51.09,
+        "highest": 51.09,
+        "average": 51.09
+      },
+      {
+        "title": "680000 Coins",
+        "lowest": 85.15,
+        "highest": 85.15,
+        "average": 85.15
+      }
+    ],
+    "bixin-top-up": [
+      {
+        "title": "10 比心币",
+        "lowest": 1.52,
+        "highest": 1.52,
+        "average": 1.52,
+        "off": "-21%"
+      },
+      {
+        "title": "100 比心币",
+        "lowest": 15.74,
+        "highest": 15.74,
+        "average": 15.74
+      },
+      {
+        "title": "10000 比心钻石",
+        "lowest": 15.74,
+        "highest": 15.74,
+        "average": 15.74
+      },
+      {
+        "title": "500 比心币",
+        "lowest": 78.67,
+        "highest": 78.67,
+        "average": 78.67
+      },
+      {
+        "title": "50000 比心钻石",
+        "lowest": 78.67,
+        "highest": 78.67,
+        "average": 78.67
+      },
+      {
+        "title": "1000 比心币",
+        "lowest": 161.93,
+        "highest": 161.93,
+        "average": 161.93
+      }
+    ],
+    "ludo-club": [
+      {
+        "title": "120 Cash",
+        "lowest": 0.67,
+        "highest": 0.67,
+        "average": 0.67,
+        "off": "-15%"
+      },
+      {
+        "title": "250 Cash",
+        "lowest": 1.25,
+        "highest": 1.25,
+        "average": 1.25
+      },
+      {
+        "title": "700 Cash",
+        "lowest": 3.12,
+        "highest": 3.12,
+        "average": 3.12
+      },
+      {
+        "title": "3200 Cash",
+        "lowest": 12.87,
+        "highest": 12.87,
+        "average": 12.87
+      },
+      {
+        "title": "10800 Cash",
+        "lowest": 40.12,
+        "highest": 40.12,
+        "average": 40.12
+      },
+      {
+        "title": "20000 Cash",
+        "lowest": 64.48,
+        "highest": 64.48,
+        "average": 64.48
+      }
+    ],
+    "yalla-ludo": [
+      {
+        "title": "830 Diamonds",
+        "lowest": 1.95,
+        "highest": 1.95,
+        "average": 1.95,
+        "off": "-34%"
+      },
+      {
+        "title": "68500 Gold",
+        "lowest": 1.98,
+        "highest": 1.98,
+        "average": 1.98
+      },
+      {
+        "title": "2320 Diamonds",
+        "lowest": 4.86,
+        "highest": 4.86,
+        "average": 4.86
+      },
+      {
+        "title": "223700 Gold",
+        "lowest": 4.86,
+        "highest": 4.86,
+        "average": 4.86
+      },
+      {
+        "title": "5150 Diamonds",
+        "lowest": 9.81,
+        "highest": 9.81,
+        "average": 9.81
+      },
+      {
+        "title": "1463320 Gold",
+        "lowest": 9.81,
+        "highest": 9.81,
+        "average": 9.81
+      },
+      {
+        "title": "13580 Diamonds",
+        "lowest": 25.39,
+        "highest": 25.39,
+        "average": 25.39
+      },
+      {
+        "title": "3666470 Gold",
+        "lowest": 25.85,
+        "highest": 25.85,
+        "average": 25.85
+      },
+      {
+        "title": "27640 Diamonds",
+        "lowest": 50.76,
+        "highest": 50.76,
+        "average": 50.76
+      },
+      {
+        "title": "55800 Diamonds",
+        "lowest": 102.05,
+        "highest": 102.05,
+        "average": 102.05
+      }
     ]
   },
-  "currency": "USD"
+  "currency": "USD",
+  "fx": {
+    "SGD": 0.783322,
+    "asOf": "Mon, 21 Sep 2026 00:02:31 +0000"
+  }
 }

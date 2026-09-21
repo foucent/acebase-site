@@ -101,18 +101,6 @@
   border-bottom: 1px solid var(--ab-line);
 }
 
-/* The hero stamp sits on the chart, whose navy is dark enough for white text.
-   That is a property of the image, though, not of the page — so it carries its
-   own scrim rather than trusting whatever is loaded behind it. */
-.ab-mag .ab-stamp--hero {
-  position: absolute;
-  left: 12px;
-  top: 12px;
-  padding: 4px 8px;
-  background: rgba(0, 0, 0, 0.68);
-  color: #ffffff;
-}
-
 .md-typeset .ab-mag .ab-hero__copy {
   padding: 0 20px 20px;
 }
@@ -173,26 +161,12 @@
   height: auto;
 }
 
-/* A band holding a brand mark, on the same plate. Two things rule out the
-   treatments above. A mark fills far less of its frame than a photo does, so
-   the 400px plate would be 400px of near-empty grey on every one of nineteen
-   articles. And the marks come from nineteen different sources whose own
-   ratios run from 1:1 to 6:1, so letting the ratio size the band — which is
-   what --photo above does — would give nineteen different band heights and
-   destroy the grid. A fixed height plus `contain` is the only construction
-   that makes a set of mismatched marks read as one set: it letterboxes rather
-   than crops, and the plate behind it still comes from --article's own
-   `background: var(--ab-panel-2)`, which is why the marks ship transparent. */
-.md-typeset .ab-mag .ab-hero--brand .ab-hero__media img {
-  height: 200px;
-  object-fit: contain;
-}
-
-@media screen and (max-width: 767px) {
-  .md-typeset .ab-mag .ab-hero--brand .ab-hero__media img {
-    height: 120px;
-  }
-}
+/* `--brand` lived here: an `ab-hero` band holding a brand mark on a fixed
+   200px plate, for the fourteen 24:5 marks on /games/live-prices/. That page
+   went on 2026-09-21 and the marks moved onto /topup/ as ordinary cards, where
+   the 24:5 frame in the card's media box does the same letterboxing job. The
+   other two treatments for that plate are still in use: `--photo` above and
+   `--article` below. */
 
 .md-typeset .ab-mag .ab-hero--article .ab-hero__title {
   font-size: 30px;
@@ -201,6 +175,682 @@
 .md-typeset .ab-mag .ab-hero--article .ab-hero__excerpt {
   max-width: none;
   margin: 0 0 18px;
+}
+
+/* ---------- folded band copy ----------
+   The GPU bands keep their lead sentence visible and put the price rows and the
+   fetch date behind a click, the way an uncrate listing keeps one line out and
+   the rest behind Read More. It is a <details>, not a script: the summary is a
+   real focusable control, so the fold opens from the keyboard and survives
+   JavaScript being off — on a page whose whole point is the figures, a fold
+   that needed JS to open would hide them from anyone whose JS failed.
+
+   Material dresses <details> as an admonition: a blue rule, a tinted title bar,
+   a mask icon on the title's ::before and a chevron on its ::after. The first
+   two rules take all of that off before anything below can lay out. The
+   background needs the !important because extra.css paints every summary and
+   every details in the theme's admonition colours with !important of its own —
+   the fold is not an admonition, so it answers at the same weight. */
+.md-typeset .ab-mag .ab-fold,
+.md-typeset .ab-mag .ab-fold__summary {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background: none !important;
+  box-shadow: none;
+}
+
+.md-typeset .ab-mag .ab-fold {
+  font-size: inherit;
+}
+
+.md-typeset .ab-mag .ab-fold__summary::before,
+.md-typeset .ab-mag .ab-fold__summary::after {
+  display: none;
+}
+
+/* The lead is set exactly like the .ab-hero__excerpt it replaces, so a band
+   reads the same whether or not it has been opened. */
+.md-typeset .ab-mag .ab-fold__summary {
+  display: block;
+  max-width: 44rem;
+  margin: 0 0 18px;
+  font-family: var(--ab-serif);
+  font-size: 18px;
+  font-weight: inherit;
+  line-height: 28px;
+  color: var(--ab-text-muted);
+  cursor: pointer;
+  list-style: none;
+}
+
+.md-typeset .ab-mag .ab-hero--article .ab-fold__summary {
+  max-width: none;
+}
+
+.md-typeset .ab-mag .ab-fold__summary::-webkit-details-marker {
+  display: none;
+}
+
+.md-typeset .ab-mag .ab-fold__summary:hover .ab-fold__lead {
+  color: var(--ab-text);
+}
+
+/* The cue borrows the .ab-hero__more link treatment — same size, same tan rule
+   under it — so it reads as the same kind of affordance as the links beside
+   it. */
+.md-typeset .ab-mag .ab-fold__cue {
+  margin-left: 6px;
+  padding-bottom: 2px;
+  border-bottom: 1px solid var(--ab-accent);
+  font-family: var(--ab-sans);
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  white-space: nowrap;
+  color: var(--ab-accent-deep);
+}
+
+.md-typeset .ab-mag .ab-fold__summary:hover .ab-fold__cue {
+  border-bottom-color: var(--ab-text);
+  color: var(--ab-text);
+}
+
+/* One cue at a time. Both live in the markup rather than in ::after content so
+   the words stay in the document, where a translator or a screen reader can
+   reach them. */
+.md-typeset .ab-mag .ab-fold__cue-less,
+.md-typeset .ab-mag .ab-fold[open] .ab-fold__cue-more {
+  display: none;
+}
+
+.md-typeset .ab-mag .ab-fold[open] .ab-fold__cue-less {
+  display: inline;
+}
+
+/* ---------- the same fold inside a card ----------
+   /tech lists the nine models as cards rather than as full-width bands, so the
+   fold turns up in a column roughly a third the width. Everything above is
+   measured for a band and has to come down a size: the lead matches
+   .ab-card__excerpt (the line it stands in for), the cue leaves the run-on of
+   the lead for an action line of its own, and the rows tighten, because
+   "历史最低（2025-12-25）" and a price at 18px with 1.9 leading wrap inside
+   270px, and four rows of that reads as a wall.
+
+   These rows are also the one part of the card that does not take .ab-card's
+   centring. The rest of the copy is a sentence and reads as one; this is a
+   short table, and a table is read down its column — centred, the figure being
+   compared sits somewhere new on every row. So the label takes the left edge,
+   the figures share a column of their own (the grid, below), and everything
+   above and below them stays centred.
+
+   First, one thing has to be got out of the way. extra.css carries a legacy
+   `.md-typeset .ab-card span` rule — 0.82rem / 1.45 — from the card template
+   these replaced, and it matches every span inside every card, these included.
+   A directly-matching rule beats inheritance, so it was quietly setting the
+   size of type this block thought it owned: the price rows rendered at 16.4px
+   where the card asks for 15, the lead at 16.4px where the summary asks for 17,
+   and the cue's own inner spans at 16.4px grey — the one word on the card that
+   is supposed to read as a link, rendering as neither the size nor the colour
+   its rule gives it. Hand these spans back to inheritance and let the rules
+   below decide; the cue rule wins over this one on specificity, so the cue
+   itself keeps its own size while the 展开/收起 inside it follows.
+
+   The four are named one by one rather than as `.ab-fold span`: that selector
+   counts four classes and would outrank the cue's own rule below, pulling the
+   cue up to the summary's 17px. .ab-fold__act is in the list for a second
+   reason — it is a span itself, so it was passing 1.45 down to the <em> and the
+   <a> inside it, which no rule of theirs could reach. */
+.md-typeset .ab-mag .ab-card .ab-fold__lead,
+.md-typeset .ab-mag .ab-card .ab-fold__act,
+.md-typeset .ab-mag .ab-card .ab-ec-list span,
+.md-typeset .ab-mag .ab-card .ab-fold__cue span {
+  font-size: inherit;
+  line-height: inherit;
+}
+
+/* Sizes only, above: colour stays alone because .ab-ec-price sits inside the
+   fold too and its green is not something to inherit away. The cue's own words
+   do need it back — the legacy rule was painting the one word on the card that
+   is meant to read as a link in muted grey. */
+.md-typeset .ab-mag .ab-card .ab-fold__cue span {
+  color: inherit;
+}
+
+.md-typeset .ab-mag .ab-card .ab-fold__summary {
+  margin-bottom: 0;
+  font-size: 17px;
+  line-height: 25px;
+}
+
+.md-typeset .ab-mag .ab-card .ab-ec-list {
+  margin: 14px 0 0;
+  font-size: 15px;
+  line-height: 1.75;
+}
+
+.md-typeset .ab-mag .ab-card .ab-ec-foot {
+  margin: 12px 0 0;
+  font-size: 11px;
+}
+
+/* ---------- the price block, readable with the fold shut ----------
+   The four rows are the reason the card exists, and shut they were the one
+   thing it did not show: a photo, a model name, a sentence, and what anything
+   costs was behind the fold. Two things are owed to a reader who has not
+   opened it — the price, and a sign that there is more.
+
+   A shut <details> hides its content whole; there is no partially open one. So
+   the rows cannot stay inside the fold and be half readable, and they sit
+   beside it instead: the fold's own `open` attribute reaches them through the
+   sibling combinator, `.ab-fold[open] ~ .ab-ec-list`. No :has() and nothing
+   that needs JavaScript — the fold is a state holder now, owning `open` and the
+   cue that flips with it, and the block it "reveals" is the next sibling.
+
+       shut   当前市场均价         $419.    <- red, 21px
+              历史最低（2025-12-25） $254.
+              近 30 天均价         $406.    <- the cut, under the fade
+              展开 或 去亚马逊购买
+
+       open   all four rows, then the footnote, then 收起 或 去亚马逊购买
+
+   The rows are a two column grid, and the label column is max-content, so the
+   figures all start on the same line however wide the label is. That is what
+   the slash used to do — it separated the two runs, and without it they would
+   be one run of text with the value starting at a different x on every row.
+   The full stop came inside the price when the slash left: left outside it, it
+   would be a third item in the grid and would start a column of its own. The
+   <br>s between rows are hidden for the same reason — a break has no business
+   in a grid cell, and measured, each one takes a 26.25px row of its own and
+   sends the next label into the figure column.
+
+   The type is --ab-sans where the ladder on the article pages is --ab-serif,
+   and the figures take a Latin-first stack on top of it: --ab-sans leads with
+   the CJK faces, which is right for a sentence and heavy for a column of
+   digits. Inter or Segoe UI carry the cleaner numerals, with tabular figures
+   so the column is aligned digit for digit and not just at the left edge.
+
+   The cut is the sign, so it has to land mid-row rather than between two. The
+   block is 36.75px for its first row and 26.25px for each of the other three:
+   the first is taller because its price is 21px and .ab-ec-list states
+   line-height as a ratio, which resolves against each element's own size. 84px
+   holds the first two rows whole and most of the third, and the mask fades the
+   last 22px so the cut reads as an edge and not as a fault.
+
+   Not a guessed number: every one of the nine cards was measured at 1440, 1100,
+   900, 767, 600, 480, 390, 375, 360, 340 and 320px, and the cut was checked
+   against the third row's own box at each of them — above the block's bottom
+   edge and ending below it, everywhere. What would break it is a wrapped row
+   above the cut, so that is what the measurement looked for — and the two rows
+   that come close are not the same row. The dated lowest is a long label with
+   a short price (230px in the grid, 226px as a line) and the four-figure range
+   is a short label with a long price (306px in the grid, 201px as a line), so
+   of the four rows the range is the only one that ever strains, and it is the
+   one below the cut.
+
+   The red is --ab-red, which is what .ab-card__meta .ab-money already paints a
+   price in, so the number reads as a price here the way it does there.
+
+   Two classes, not one, because the rows and the fold are two things. --ec is
+   the block: the grid, the shared figure column, the type. --fold is what the
+   card does with it: clip it, fade it, hide the footnote behind it, put the
+   action line in the space it reserves. Every 显卡 card on /tech carries both.
+   The Osmo Pocket 3 card carries --ec alone — its block is two rows, no taller
+   than it looks, so there is nothing to clip and nothing for a 展开 cue to
+   open; the same cap of 84px would never be reached and the 22px fade would
+   land across the second row, greying a row it is not hiding. */
+.md-typeset .ab-mag .ab-card--ec .ab-ec-list {
+  display: grid;
+  grid-template-columns: max-content minmax(0, 1fr);
+  column-gap: 1.1em;
+  text-align: left;
+  font-family: var(--ab-sans);
+}
+
+/* The cut, and the reason the block is clipped at all: 84px holds two rows and
+   most of a third, so a shut card shows what the model costs and says there is
+   more by cutting one row in half rather than ending on a clean edge. */
+.md-typeset .ab-mag .ab-card--fold .ab-ec-list {
+  max-height: 84px;
+  overflow: hidden;
+  -webkit-mask-image: linear-gradient(to bottom, #000 calc(100% - 22px), transparent);
+  mask-image: linear-gradient(to bottom, #000 calc(100% - 22px), transparent);
+}
+
+/* A maximum is the right shape for a ladder that runs past the window, and the
+   wrong one for a card whose ladder is shorter than it. Nintendo Switch Online
+   sells two tiers — 64px of rows — so that card came out 20px short of the
+   PlayStation card beside it on every two-column width, the last ragged row on
+   /topup once the titles and the sentences were pinned. Fixed for --shop alone:
+   the five game cards all run past 84px and must keep clipping to it, and
+   --goods above turns the window off entirely.
+
+   With the height pinned the mask fades its last 22px over empty space and
+   paints nothing, which is the same no-op it is on a four-line sentence whose
+   box the fold never dims. */
+.md-typeset .ab-mag .ab-card--shop .ab-ec-list {
+  height: 84px;
+}
+
+.md-typeset .ab-mag .ab-card--shop .ab-fold[open] ~ .ab-ec-list {
+  height: auto;
+}
+
+.md-typeset .ab-mag .ab-card--ec .ab-ec-list br {
+  display: none;
+}
+
+/* contents, so the label and the price are what the grid places rather than
+   the row around them — the row keeps its place in the markup and gives up its
+   box. */
+.md-typeset .ab-mag .ab-card--ec .ab-ec-item {
+  display: contents;
+}
+
+.md-typeset .ab-mag .ab-card--ec .ab-ec-label {
+  color: var(--ab-text-muted);
+}
+
+.md-typeset .ab-mag .ab-card--ec .ab-ec-price {
+  font-family: Inter, "Segoe UI", "Helvetica Neue", Arial, var(--ab-sans);
+  font-variant-numeric: tabular-nums;
+}
+
+/* Under 390px the grid has to go, and the threshold is not the one the first
+   measurement suggested. In the grid every price starts where the label column
+   ends — 174px, set by "历史最低（2025-12-25）" — so a four-figure range like
+   "$2,019 – $3,975." needs 306px of block to sit on one line, whatever its own
+   label is. A 390px viewport leaves 316px and a 375px one leaves 301, and at
+   301 the price wraps inside its column. The card measured first was the RTX
+   5050, whose ranges are three figures, and it holds at 320; four of the nine
+   have the longer ones.
+
+   As a line rather than a grid the same content needs far less room, because
+   the price no longer starts after the widest label — only after its own. The
+   widest row becomes the dated lowest with its price, 226px against the 246px a
+   320px viewport leaves, and the four-figure row is 201px. So the value keeps
+   its column, read from the other end: the label takes the left edge and the
+   auto margin pushes the price to the right one. Auto margin rather than
+   justify-content because it is the same rule either way — one line or the
+   second one, if a longer date or a five-figure price ever puts the price on a
+   line of its own, it still lands against the right edge instead of the left. */
+@media screen and (max-width: 389px) {
+  .md-typeset .ab-mag .ab-card--ec .ab-ec-list {
+    display: block;
+  }
+
+  .md-typeset .ab-mag .ab-card--ec .ab-ec-item {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: 0 0.75em;
+  }
+
+  .md-typeset .ab-mag .ab-card--ec .ab-ec-price {
+    margin-left: auto;
+    text-align: right;
+  }
+}
+
+.md-typeset .ab-mag .ab-card--fold .ab-fold[open] ~ .ab-ec-list {
+  max-height: none;
+  overflow: visible;
+  -webkit-mask-image: none;
+  mask-image: none;
+}
+
+.md-typeset .ab-mag .ab-card--ec .ab-ec-item:first-child .ab-ec-price {
+  color: var(--ab-red);
+  font-size: 21px;
+}
+
+/* The footnote dates the block it sits under, so it belongs with the four rows
+   rather than with the one line the shut card shows. */
+.md-typeset .ab-mag .ab-card--fold .ab-ec-foot {
+  display: none;
+}
+
+.md-typeset .ab-mag .ab-card--fold .ab-fold[open] ~ .ab-ec-foot {
+  display: block;
+}
+
+/* The action line itself lives further down, beside .ab-card__more: it shares
+   its leaf treatment with the homepage's CTA and has to be written after that
+   rule to win on source order. */
+
+/* ---------- the action line, at the bottom of the card ----------
+   A <details> always renders its <summary> before the content it reveals, so
+   once the card had rows below the lead, the control came out between them:
+
+       Blackwell 架构、8GB GDDR7 的中端显卡，现价 $419，近 30 天上涨 6.3%。
+       收起 或 去亚马逊购买                      <- the row, in the middle
+       当前市场均价 / $419.
+       …
+
+   The summary cannot follow the rows in source order, and reordering it is not
+   available either: `display: flex` on <details> plus `order` on the summary
+   does nothing, because Chrome renders a <details> through a shadow slot — the
+   summary is not a flex item of it, and the closed state stops hiding the rows.
+   Measured, not assumed.
+
+   So the row leaves the flow instead. The copy column becomes the containing
+   block and reserves the row's height as bottom padding; the row is pinned into
+   that padding, which puts it under whatever the card ends with — the footnote
+   when open, the cut price block when shut.
+
+   The summary has to go back to `position: static` first, or it intercepts:
+   the computed style says a summary is `position: relative` — no rule naming it
+   turned up when the stylesheets were walked, so it is the theme's, set from
+   somewhere this file cannot see — and an absolutely positioned box resolves
+   against the nearest positioned ancestor. Left alone, `bottom: 0` measured to
+   the summary's own bottom edge and the row sat at 933-961px shut and 932-960px
+   open, the same middle it started in. Static, it lands at the copy column's
+   bottom: 979-1007 shut and 1127-1155 open, below the footnote at 1109.
+
+   The reservation is a flat 46px for a 28px row. Measured at 1440, 1100, 900,
+   767, 600, 480, 390, 360 and 320px the row's own width is 151-160px against
+   246-693px of space, so it has at least 86px of slack and does not wrap at any
+   of them. A wrapped row would be taller than the padding and would land on the
+   block above it, so that measurement is the thing this number rests on.
+
+   The two 数码好物 cards drop it to the row's own 28px, further down beside the
+   rest of their rules. The 18px that gives up was slack on those two cards and
+   nothing else: their footnote is revealed by the fold but sits in flow *above*
+   this padding, so the only thing the 18px ever held was the gap between the
+   sentence and the row — which is exactly the room the fade now needs.
+
+   `.ab-card--fold` scopes the two rules below. They hang off .ab-card__copy,
+   which every card on the site has, and without a hook only these nine carry
+   the homepage's forty-one cards would each reserve 46px for a row they never
+   draw. The descendants above do not need it: .ab-fold__lead and the rest exist
+   nowhere but here.
+
+   `margin-top: auto` is what pins the fold — and with it everything after it —
+   to the bottom of the copy column. That used to fall to .ab-card__more's own
+   `margin: auto 0 0`, and dropping it would leave the line floating wherever
+   the prose happened to end on a card the grid has stretched. */
+.md-typeset .ab-mag .ab-card--fold .ab-card__copy {
+  position: relative;
+  padding-bottom: 46px;
+}
+
+.md-typeset .ab-mag .ab-card--fold .ab-fold {
+  margin-top: auto;
+}
+
+/* ---------- what folds when the price block is too short to ----------
+   The two 数码好物 cards carry a two row price block, below the 84px cap and now
+   with no window around it at all, so the block can never be what gets cut. What
+   can still overrun the card is the sentence — the Action 5 Pro's spec line
+   wraps to three lines where every other card's takes two, which was 25px of
+   extra card and a pair of cards that did not match each other.
+
+   Both cards put that sentence *below* the block — 标题 → 价格 → 句子, where
+   the 显卡 cards read 句子 → 价格. Nothing here cares which side it is on: the
+   clamp is on the sentence, and the block's own `margin: 14px 0 0` and the
+   sentence's 25px lines simply swap places, which is why both cards still
+   measure 652px against the 显卡 cards' copy column.
+
+   One consequence of the swap is worth naming, because it is the reason the
+   block is asserted uncut. A block below the fold is un-clipped on open by
+   `.ab-fold[open] ~ .ab-ec-list`, a sibling combinator that only reaches
+   forward; a block *above* the fold cannot be reached by it at all. These two
+   blocks are two rows with no cap left on them, so the rule being dead costs
+   nothing — but it is dead on these two cards, and a third row would be cut
+   with nothing able to open it. (The rule that would have done it is the one
+   the --goods block above switches off, so this is now a property of the CSS
+   rather than a coincidence of row count.)
+
+   So on these two the fold moves up a level and holds the sentence instead —
+   and the sentence is cut the way a 显卡 card's block is cut: two lines shown,
+   the third sliced by the same fade, the rest behind the 展开 cue. The card
+   stays on the same 287px copy column as its neighbours.
+
+   A fade rather than the ellipsis this used to wear (`-webkit-line-clamp: 2`),
+   because the fade is the cue this page already teaches. The 显卡 cards say
+   "there is more" by cutting a row in half, and an ellipsis says it a different
+   way in the one place a reader has just learned the first.
+
+   The 18px of fade does not come out of the card, and it does not come out of
+   the sentence's own two lines either — both would have shown. It comes out of
+   two pockets of slack that were already on the copy column and were already
+   painting nothing:
+
+     * the price block's 84px window. Two rows are 63px, and `align-content:
+       start` packs them at the top, so the bottom 21px was empty and the block's
+       own fade painted over that emptiness. Here the window is dropped to the
+       63px it actually holds and the same 21px becomes a margin above the
+       sentence — the sentence does not move, because 63 + 21 is the 84 the
+       block used to occupy.
+     * the 46px the copy column reserves for the action row. The row is 28px and
+       is pinned to the bottom, so the 18px above it was empty too. The reserve
+       drops to those 28px and the sentence's box grows by the 18.
+
+   Adding both up: the sentence's box is 50px of two lines plus 18 of fade, and
+   the action row is where it always was. Every element on the card measures
+   what it measured before — which is the only reason the two cards still come
+   to 652px with the 显卡 cards beside them.
+
+   The row is 28px tall and now has exactly 28px reserved, so it must not wrap;
+   it never has at any width, and the assertion that it still does not is in
+   verify_osmo.py rather than in this comment.
+
+   A sentence that fits in two lines is not dimmed by any of this: the fade
+   starts exactly at the second line's bottom edge, so for Pocket 3 it paints
+   nothing, the same trick the block plays one element above it. */
+.md-typeset .ab-mag .ab-card--goods .ab-ec-list {
+  max-height: none;
+  overflow: visible;
+  -webkit-mask-image: none;
+  mask-image: none;
+}
+
+.md-typeset .ab-mag .ab-card--goods .ab-fold {
+  margin-top: 21px;
+}
+
+.md-typeset .ab-mag .ab-card--goods .ab-card__copy {
+  padding-bottom: 28px;
+}
+
+.md-typeset .ab-mag .ab-card--goods .ab-fold__lead {
+  display: block;
+  height: 68px;
+  overflow: hidden;
+  -webkit-mask-image: linear-gradient(to bottom, #000 calc(100% - 18px), transparent);
+  mask-image: linear-gradient(to bottom, #000 calc(100% - 18px), transparent);
+}
+
+.md-typeset .ab-mag .ab-card--goods .ab-fold[open] .ab-fold__lead {
+  height: auto;
+  overflow: visible;
+  -webkit-mask-image: none;
+  mask-image: none;
+}
+
+/* ---------- the one line height these two cards have to agree on ----------
+   Every rule above decides where the sentence is cut. None of them decides
+   how tall the title is, and the title is the only thing on these two cards
+   whose height depends on how its text happens to wrap.
+
+   标题 → 价格 → 句子 is the order they read, so the title sits above the
+   fold — above every rule that could have absorbed a line. "DJI Osmo Action
+   5 Pro" is the longer of the two names, and measured on this page it takes
+   two lines at two separate column widths: below 343px while the title is
+   26px, and below 296px while it is the 22px that 767px switches it to.
+   Those two widths land on two separate viewport bands — 768–836px, where
+   the grid is still two columns, and 372px and under, where it is one — and
+   nothing wraps in the 372–767px between them. On each band the two cards
+   fall 30px and 25px apart, on a grid that keeps every other pair level.
+
+   Reserving two lines for every --goods title takes the wrap out of the
+   card's height. The query is a container, not a viewport, because the
+   column is what decides the wrap: a viewport breakpoint would have to name
+   both bands and would go stale the moment either name changed length,
+   which is exactly the brittleness this avoids. 360px is the column width
+   at which even the 26px title still fits on one line — at 1440px the
+   column measures 417px, so the desktop card keeps the 652px its 显卡
+   neighbour has, and the band below 372px is covered by the same number.
+   The 360 leaves a few px of slack over the 343 the 26px title actually
+   needs, because the fallback font decides those last few and this site
+   loads none. One band pays for that slack: at 840–870px the reservation
+   is on where nothing would have wrapped, and the two cards come out 30px
+   taller than the 显卡 card below them. That card shares no row with them
+   — three cards in a two column grid leave it alone in the second — so
+   the row that does hold a pair is still level, which is the whole point.
+
+   `2lh` rather than a px figure: line-height is the number that decides how
+   tall two lines are, and 2lh is that number read back — it stays right if
+   the title's type ever moves. */
+.ab-card--goods .ab-card__copy {
+  container-type: inline-size;
+}
+
+@container (max-width: 360px) {
+  .md-typeset .ab-mag .ab-card--goods .ab-card__title {
+    min-height: 2lh;
+  }
+}
+
+/* The same reservation, for /topup's five brand cards, on a different element.
+   The only thing on those cards whose height follows how its text wraps is the
+   sentence — the price block below the fold is cut to a flat 84px whether it
+   holds six tiers or twelve, and every title is one short name.
+
+   The blurbs are 60 to 66 characters and they do not cross together. Measured
+   on that page, three lines hold down to a *content* box of 372px and all five
+   are on four by 322px; in between only some have flipped — at 352px 燕云十六声
+   and Honor of Kings are on four while PUBG Mobile and Arena Breakout are
+   still on three, which puts the two cards sharing a row 25px apart. That is
+   the whole defect, and it lands on 800-840px of viewport, where the grid is
+   still two columns. Below 767px it is one column and no card has a row
+   partner to disagree with.
+
+   All the numbers here are content boxes: the query measures one, and the copy
+   column spends 20px of padding a side, so a 400px query answers at a 440px
+   column and a 930px viewport rather than the 860 the border boxes suggest.
+
+   400 clears the 372 where the last blurb flips by 28px, and the slack is on
+   purpose — the last few px of a wrap are the fallback font's and this site
+   loads none. It is paid for on 840-930px, where nothing would have wrapped
+   and all five cards come out one line taller together. They stay level with
+   each other, which is the point; above 930px nothing is reserved at all.
+
+   `4lh`, not a px figure, for the reason `2lh` above gives. */
+.ab-card--brand .ab-card__copy {
+  container-type: inline-size;
+}
+
+@container (max-width: 400px) {
+  .md-typeset .ab-mag .ab-card--brand .ab-fold__lead {
+    /* Blockified for the reason the --goods rule above is: the lead is a
+       <span>, and min-height does not apply to an inline non-replaced box.
+       Without this the reservation measured here is silently a no-op. */
+    display: block;
+    min-height: 4lh;
+  }
+}
+
+/* ---------- and the reservation the wide --shop cards need on top ----------
+   The paragraph above says the brand cards' only variable-height element is
+   the sentence. That was true of five short game names and stops being true
+   the moment thirteen product names move in beside them — "PlayStation
+   Network 充值卡（美国）" and "Nintendo Switch Online 会员资格" take two lines
+   in a column that fits "Honor of Kings" on one, three once the column is
+   narrow. Same two cards then sit 30px apart on a grid that keeps every other
+   pair level, so the title gets a reservation of its own.
+
+   The fourteen live-platform cards that arrived on /topup's third section on
+   2026-09-21 carry `--shop` as well, and for the same reason: "Xena Live：
+   群组语音" is not a short word either. The modifier names the card shape —
+   title and sentence both able to run long — not the section it sits in. Their
+   sentences are the shortest of the three groups, so these numbers are not
+   re-measured for them; the equal-height assertion in verify_topup_cards.py is
+   what would catch it if that stopped being true.
+
+   Both numbers are measured on /topup, in content boxes, across 768-1440px:
+
+     title   three lines at 340px and below, two from 342px up. The query
+             switches at 350 — the 10px of slack is the same fallback-font
+             allowance the two paragraphs above take, and it is paid for on
+             816-836px of viewport, where a title that would have held two
+             lines is given three.
+     lead    the four-line reservation above stops at 400px, and past it the
+             longest of the thirteen gift cards wraps to three. Below 400
+             nothing is asked for here — that rule already answers.
+
+   Every value here is a container query, not a viewport one, for the reason
+   the --goods paragraph gives: the column decides the wrap, not the window.
+   The one viewport condition is the grid's own — below 768px .ab-list is a
+   single column, no card has a row partner, and none of this is asked for.
+   Reusing that exact breakpoint rather than guessing a container width is
+   what keeps the reservation off the one-column band, where it would only
+   be air: at 500-767px the copy column is 426px and wider, comfortably
+   inside the range these queries reserve for. */
+@media screen and (min-width: 768px) {
+  @container (max-width: 350px) {
+    .md-typeset .ab-mag .ab-card--shop .ab-card__title {
+      min-height: 3lh;
+    }
+  }
+
+  @container (min-width: 351px) {
+    .md-typeset .ab-mag .ab-card--shop .ab-card__title {
+      min-height: 2lh;
+    }
+
+    .md-typeset .ab-mag .ab-card--shop .ab-fold__lead {
+      /* The lead is the summary's only in-flow child — the action row beside
+         it is absolutely positioned into the card's reserved padding — so
+         blockifying it here is invisible, and it is what gives min-height
+         something to apply to. */
+      display: block;
+      min-height: 3lh;
+    }
+  }
+}
+
+/* The block used to hold --fold's 84px window with only 63px of rows in it, and
+   `align-content: start` kept those rows packed at the top rather than stretched
+   over the slack. The window is gone — the rows are the block's height now, and
+   the 21px it used to hold is the margin above the sentence, where it can do
+   some work instead of being painted over. `align-content` goes with it: with no
+   slack to distribute there is nothing left for it to decide. */
+
+.md-typeset .ab-mag .ab-card--fold .ab-fold__summary {
+  position: static;
+}
+
+/* The cards carry the model ids — the jump list that used to point at them is
+   gone, but `/tech/#rtx-5050` is still a link anyone can be sent, so they keep
+   the offset off the top edge the bands had. */
+.md-typeset .ab-mag .ab-card {
+  scroll-margin-top: 4.5rem;
+}
+
+/* A grid whose cards open. The default grid stretches every card in a row to
+   the tallest, which is what keeps a row of closed cards even — and what puts
+   a few hundred pixels of nothing into the card beside an opened one. Measured
+   both ways on /tech: closed, every card is 536px either way, so the stretch
+   is not what makes that page tidy; the fixed media frame is. Opened, the
+   stretch is the only thing that moves the neighbour (684px), so this page
+   opts out of it. */
+.ab-list--expandable {
+  align-items: start;
+}
+
+/* The homepage feed, where the reason is sharper than on /tech. A category
+   page holds one kind of card; the feed mixes text-only cards with three image
+   ratios in the same grid, and the stretch is what decides how a row of them
+   reads. Left on, a live-platform card — a title, a one-line note and a price,
+   maybe 180px of content — is padded out to the height of the 3:4 gift-card
+   portrait beside it, and because .ab-card__copy is `flex: 1` the padding lands
+   *inside* the card as a hole between the note and the CTA. `start` sizes each
+   card to its own content, so the row is ragged at the bottom instead of
+   hollow in the middle. */
+.ab-list--feed {
+  align-items: start;
 }
 
 /* Article pages stack several of these under the model jump list. The site
@@ -300,20 +950,6 @@
   color: var(--ab-text);
 }
 
-.md-typeset .ab-mag .ab-section__all {
-  margin-left: auto;
-  font-size: 13px;
-  font-weight: 700;
-  letter-spacing: 0.5px;
-  white-space: nowrap;
-  color: var(--ab-accent-deep) !important;
-  text-decoration: none !important;
-}
-
-.md-typeset .ab-mag .ab-section__all:hover {
-  color: var(--ab-text) !important;
-}
-
 /* The dek under a section head. `ab-hero__excerpt` cannot be reused here: it
    is centred with an auto margin, which fights the left-aligned head it would
    sit beneath. */
@@ -379,6 +1015,20 @@
   object-fit: cover;
 }
 
+/* The brand wordmarks, all drawn on one 2400x500 canvas. The mark itself sits
+   in a 300px band across the middle (y=100..400) and is centred in it, so the
+   set reads as a set by height while the widths run from 300px — PUBG G-COIN,
+   a square icon — to 1188px, Arena Breakout's. That canvas margin is the whole
+   mechanism, so the frame takes the canvas's own ratio rather than tightening
+   to the marks: tightened, the square icon would come out a quarter the width
+   of the widest mark and the set would stop reading as one.
+
+   Not --photo, either. A 4.8:1 mark in a 4:3 frame letterboxes to a 540x112
+   strip inside a 540x405 plate — 146px of dead panel above and below it. */
+.md-typeset .ab-mag .ab-card--brand .ab-card__media img {
+  aspect-ratio: 24 / 5;
+}
+
 .md-typeset .ab-mag .ab-card__copy {
   display: flex;
   flex: 1;
@@ -418,6 +1068,20 @@
   line-height: 25px;
   color: var(--ab-text-muted);
 }
+
+/* `.ab-card__lead` lived here: the dek on a card with no fold. Its last user was
+   the 数码好物 cards on /tech, which now carry their sentence inside the fold
+   like the 显卡 cards do, so the class and its 17/25 came out rather than sit
+   dead. The 显卡 cards keep the same type through .ab-fold__summary's own
+   17/25 — that is the rule to copy if a sentence-led card is ever added. */
+
+/* `.ab-card--ec .ab-card__more { margin-top: 14px }` lived here — /topup's five
+   game cards were the only --ec cards with a link row under them, and with no
+   reserved strip to pin one into the row needed a real top margin of its own
+   (`margin: auto 0 0` resolves to zero under .ab-list--expandable, where the
+   column is only as tall as its content). Those cards lost the row on
+   2026-09-21, when the five game detail pages behind it were retired and the
+   price block itself became the whole card, so the rule came out with them. */
 
 /* Text-led cards carry the only number on the page that follows the currency
    switcher, so it gets the weight of a price rather than of body copy. */
@@ -466,6 +1130,88 @@
   border-bottom-color: var(--ab-text);
 }
 
+/* ---------- the card's action line ----------
+   uncrate closes a listing entry with "Read More or Buy from X": one centred
+   line, both links set alike, a small connective between them. Both grids that
+   have one use this block — /tech, where the first link is the 展开 cue and
+   opens the model's price rows, and the homepage's TECH cards, where the first
+   link is 阅读全文 and goes to the model page. Listed together so the two
+   cannot drift into looking like different components.
+
+   The /tech row has a structural constraint the homepage's does not: its cue is
+   what opens the fold and has to stay inside <summary> — a summary is a real
+   focusable control, which is why the fold is built on <details> at all, and it
+   has to keep working with JavaScript off. The buy link belongs in the same row
+   but not in the summary's label, so it rides along as a sibling of the
+   control. A click on an interactive descendant does not run the summary's
+   activation behaviour, so the link follows without toggling.
+
+   Colour is split the way the rest of the site splits it: --ab-accent (#ae9e85,
+   uncrate's own tan) is the 1px rule, --ab-accent-deep is the text, because the
+   tan is decorative and does not carry type.
+
+   Written here, after .ab-card__more a, on purpose: that rule matches the split
+   row's links too, at the same specificity, so every override below — 13px to
+   15, 700 to 400, uppercase off, sans to serif — only lands because it comes
+   later in the file. */
+.md-typeset .ab-mag .ab-card .ab-fold__act,
+.md-typeset .ab-mag .ab-card__more--split {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: center;
+  gap: 0 8px;
+}
+
+/* Only the fold's row is positioned; the homepage's split row is the card's
+   last child in flow and carries .ab-card__more's own `margin: auto 0 0`, which
+   is what pins it to the bottom of the copy column on a card the grid has
+   stretched. The fold's row is pinned into the padding reserved above, against
+   the same `.ab-card--fold` hook the containing block is set on, so it carries
+   no margin of its own. */
+.md-typeset .ab-mag .ab-card--fold .ab-fold__act {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin-top: 0;
+}
+
+.md-typeset .ab-mag .ab-card .ab-fold__cue,
+.md-typeset .ab-mag .ab-fold__buy,
+.md-typeset .ab-mag .ab-card__more--split a {
+  margin-left: 0;
+  padding-bottom: 2px;
+  border-bottom: 1px solid var(--ab-accent);
+  font-family: var(--ab-serif);
+  font-size: 15px;
+  font-weight: 400;
+  letter-spacing: 0;
+  text-transform: none;
+  /* Stated because the legacy `.md-typeset .ab-card span` rule sets a *ratio*,
+     1.45, and a ratio resolves against each element's own font-size — so the
+     cue, which sets 15px, landed at 21.75px while the link beside it inherited
+     a flat 25px and the two underlines sat a pixel apart. */
+  line-height: inherit;
+}
+
+.md-typeset .ab-mag .ab-fold__buy {
+  color: var(--ab-accent-deep) !important;
+  text-decoration: none !important;
+}
+
+.md-typeset .ab-mag .ab-fold__buy:hover {
+  color: var(--ab-text) !important;
+  border-bottom-color: var(--ab-text);
+}
+
+.md-typeset .ab-mag .ab-fold__or,
+.md-typeset .ab-mag .ab-card__or {
+  font-size: 15px;
+  font-style: normal;
+  color: var(--ab-text-muted);
+}
+
 .md-typeset .ab-mag .ab-hero__more {
   margin: 0;
 }
@@ -507,9 +1253,27 @@
     font-size: 22px;
   }
 
-  .md-typeset .ab-mag .ab-hero__excerpt {
+  .md-typeset .ab-mag .ab-hero__excerpt,
+  .md-typeset .ab-mag .ab-fold__summary {
     font-size: 16px;
     line-height: 25px;
+  }
+
+  /* Restated at this weight because the card-scoped rule above is more
+     specific than the one it is written beside. */
+  .md-typeset .ab-mag .ab-card .ab-fold__summary {
+    font-size: 16px;
+  }
+
+  /* The action line comes up with the lead above it. It is the only thing on a
+     card that is meant to be tapped, so at 15px it would be the smallest type
+     on the page and the hardest of them to hit. */
+  .md-typeset .ab-mag .ab-fold__buy,
+  .md-typeset .ab-mag .ab-card__more--split a,
+  .md-typeset .ab-mag .ab-fold__or,
+  .md-typeset .ab-mag .ab-card__or,
+  .md-typeset .ab-mag .ab-card .ab-fold__cue {
+    font-size: 16px;
   }
 
   .ab-section {

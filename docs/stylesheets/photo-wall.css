@@ -136,6 +136,14 @@ body.sc-lightbox-open {
   display: none;
 }
 
+/* A magazine card that opens the lightbox — the same class is photo-wall.js's
+   opener selector. Only the affordance belongs here: the card itself is
+   uncrate.css's, the dialog above is this file's. Hover already lifts every
+   .ab-card, so there is nothing else to say. */
+.ab-card--lightbox {
+  cursor: pointer;
+}
+
 .sc-lightbox__stage {
   margin: 0;
   max-width: min(92vw, 42rem);

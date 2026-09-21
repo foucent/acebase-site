@@ -135,7 +135,7 @@ def article(m: dict, level: int, anchor: bool) -> str:
       <img src="/assets/games/{m["slug"]}.jpg" alt="{art_alt(m)}" loading="lazy" decoding="async">
     </div>
     <div class="ab-hero__copy">
-      <p class="ab-cat"><a href="/games/gpu-prices/">显卡价格参考</a></p>
+      <p class="ab-cat"><a href="/tech/">显卡价格参考</a></p>
       <h{level} class="ab-hero__title">{m["name"]}</h{level}>
       <p class="ab-hero__excerpt">{excerpt(m)}</p>
 
@@ -167,6 +167,7 @@ def build_overview(models: list[dict], related: str, date: str) -> str:
     return f'''---
 title: 显卡价格参考 | RTX 显卡行情总览
 description: AceBase 显卡价格参考 —— 逐个型号列出 NVIDIA GeForce RTX 50/40/30 系共 {len(models)} 个型号的当前市场均价、历史最低与近 30 天区间（美元计价）。数据更新至 {date}。
+updated: {date}
 hide:
   - title
   - toc
@@ -199,7 +200,7 @@ hide:
       "@type": "WebPage",
       "name": "显卡价格参考",
       "description": "AceBase 显卡价格参考总览，覆盖 RTX 50/40/30 系 {len(models)} 个型号的当前市场均价、历史最低与近 30 天区间。数据更新至 {date}。",
-      "url": "https://acebase.cc/games/gpu-prices/"
+      "url": "https://acebase.cc/tech/"
     }},
     {{
       "@type": "ItemList",
@@ -213,8 +214,7 @@ hide:
       "@type": "BreadcrumbList",
       "itemListElement": [
         {{ "@type": "ListItem", "position": 1, "name": "首页", "item": "https://acebase.cc/" }},
-        {{ "@type": "ListItem", "position": 2, "name": "电脑组件", "item": "https://acebase.cc/pc-components/" }},
-        {{ "@type": "ListItem", "position": 3, "name": "显卡价格参考", "item": "https://acebase.cc/games/gpu-prices/" }}
+        {{ "@type": "ListItem", "position": 2, "name": "显卡价格参考", "item": "https://acebase.cc/tech/" }}
       ]
     }}
   ]
@@ -229,6 +229,11 @@ def build_model_page(old: str, m: dict, related: str) -> str:
     The frontmatter description is rewritten because the homepage card for this
     page is generated from it (gen_home.excerpt_of), and the old one advertised
     a 深度解析 that no longer exists on the page.
+
+    `updated` is rebuilt from the same fetch date the body prints, and it has to
+    be: this function writes the whole frontmatter block from scratch and keeps
+    only `title`, so a hand-added key would be dropped on the next run. The
+    homepage sorts its cards by that key.
     """
     head = re.match(r"^---\r?\n(.*?)\r?\n---", old, re.S).group(1)
     title = re.search(r"^title:\s*(.+)$", head, re.M).group(1).strip()
@@ -238,6 +243,7 @@ def build_model_page(old: str, m: dict, related: str) -> str:
     return f'''---
 title: {title}
 description: {desc}
+updated: {m["date"]}
 hide:
   - title
   - toc

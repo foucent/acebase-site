@@ -1,40 +1,123 @@
 ---
-title: 模拟装置 | 模拟驾驶与飞行装备
-description: AceBase 模拟装置专区 —— 模拟驾驶与飞行装备（方向盘、踏板、摇杆、座舱支架等）即将上线，可在线咨询到货与报价。
+title: STYLE | 穿搭写真图集
+description: AceBase STYLE —— 穿搭写真图集，8 套共 18 张，点开卡片即可在页内看整套。
+updated: 2026-09-21
 hide:
   - title
   - toc
 ---
 
-<div class="mg-shop" markdown="0">
+<div class="ab-mag" markdown="0">
 
-  <section class="mg-home-hero mg-home-hero--shop mg-hero-slides">
-    <div class="mg-home-hero__inner">
-      <p class="mg-home-hero__brand">AceBase &middot; 模拟装置</p>
-      <h1 class="mg-home-hero__title">模拟装置</h1>
-      <p class="mg-home-hero__lead">模拟驾驶与飞行装备专区正在筹备——方向盘与踏板、飞行摇杆、座舱支架与显示器等模拟装置即将陆续上架，支持在线咨询到货与报价。</p>
-      <div class="mg-home-hero__actions">
-        <a class="mg-home-hero__btn mg-home-hero__btn--primary ab-crisp-open" href="#" data-crisp-msg="你好，我想咨询模拟装置。">在线咨询模拟装置</a>
+  <section class="ab-section" id="style">
+    <header class="ab-section__head">
+      <span class="ab-stamp" aria-hidden="true">更新于 2026-09-21</span>
+      <h1 class="ab-section__title">穿搭写真</h1>
+    </header>
+    <div class="ab-list">
+    <article class="ab-card ab-card--portrait ab-card--lightbox" id="style-02" data-gallery="[&quot;/assets/gallery/wallpapers/style/style_02_01.jpg&quot;, &quot;/assets/gallery/wallpapers/style/style_02_02.jpg&quot;]" data-caption="可爱蝴蝶结登场" data-look="style-02" data-buy="#">
+      <a class="ab-card__media" href="/assets/gallery/wallpapers/style/style_02_01.jpg" tabindex="-1" aria-hidden="true">
+        <img src="/assets/gallery/wallpapers/style/style_02_01.jpg" alt="" fetchpriority="high" decoding="async">
+      </a>
+      <div class="ab-card__copy">
+        <p class="ab-cat">画廊</p>
+        <h3 class="ab-card__title"><a href="/assets/gallery/wallpapers/style/style_02_01.jpg">可爱蝴蝶结登场</a></h3>
+        <p class="ab-card__excerpt">点开可看整套。</p>
+        <p class="ab-card__more"><a href="/assets/gallery/wallpapers/style/style_02_01.jpg">查看图集</a></p>
       </div>
+    </article>
+
+    <article class="ab-card ab-card--portrait ab-card--lightbox" id="style-03" data-gallery="[&quot;/assets/gallery/wallpapers/style/style_03_01.jpg&quot;, &quot;/assets/gallery/wallpapers/style/style_03_02.jpg&quot;]" data-caption="高跟鞋 · 连裤袜" data-look="style-03" data-buy="#">
+      <a class="ab-card__media" href="/assets/gallery/wallpapers/style/style_03_01.jpg" tabindex="-1" aria-hidden="true">
+        <img src="/assets/gallery/wallpapers/style/style_03_01.jpg" alt="" loading="lazy" decoding="async">
+      </a>
+      <div class="ab-card__copy">
+        <p class="ab-cat">画廊</p>
+        <h3 class="ab-card__title"><a href="/assets/gallery/wallpapers/style/style_03_01.jpg">高跟鞋 · 连裤袜</a></h3>
+        <p class="ab-card__excerpt">点开可看整套。</p>
+        <p class="ab-card__more"><a href="/assets/gallery/wallpapers/style/style_03_01.jpg">查看图集</a></p>
+      </div>
+    </article>
+
+    <article class="ab-card ab-card--portrait ab-card--lightbox" id="style-04" data-gallery="[&quot;/assets/gallery/wallpapers/style/style_04_01.jpg&quot;, &quot;/assets/gallery/wallpapers/style/style_04_02.jpg&quot;, &quot;/assets/gallery/wallpapers/style/style_04_03.jpg&quot;, &quot;/assets/gallery/wallpapers/style/style_04_04.jpg&quot;]" data-caption="来选一张最喜欢的吧！" data-look="style-04" data-buy="#">
+      <a class="ab-card__media" href="/assets/gallery/wallpapers/style/style_04_01.jpg" tabindex="-1" aria-hidden="true">
+        <img src="/assets/gallery/wallpapers/style/style_04_01.jpg" alt="" loading="lazy" decoding="async">
+      </a>
+      <div class="ab-card__copy">
+        <p class="ab-cat">画廊</p>
+        <h3 class="ab-card__title"><a href="/assets/gallery/wallpapers/style/style_04_01.jpg">来选一张最喜欢的吧！</a></h3>
+        <p class="ab-card__excerpt">点开可看整套。</p>
+        <p class="ab-card__more"><a href="/assets/gallery/wallpapers/style/style_04_01.jpg">查看图集</a></p>
+      </div>
+    </article>
+
+    <article class="ab-card ab-card--portrait ab-card--lightbox" id="style-05" data-gallery="[&quot;/assets/gallery/wallpapers/style/style_05_01.jpg&quot;, &quot;/assets/gallery/wallpapers/style/style_05_02.jpg&quot;]" data-caption="水墨" data-look="style-05" data-buy="#">
+      <a class="ab-card__media" href="/assets/gallery/wallpapers/style/style_05_01.jpg" tabindex="-1" aria-hidden="true">
+        <img src="/assets/gallery/wallpapers/style/style_05_01.jpg" alt="" loading="lazy" decoding="async">
+      </a>
+      <div class="ab-card__copy">
+        <p class="ab-cat">画廊</p>
+        <h3 class="ab-card__title"><a href="/assets/gallery/wallpapers/style/style_05_01.jpg">水墨</a></h3>
+        <p class="ab-card__excerpt">点开可看整套。</p>
+        <p class="ab-card__more"><a href="/assets/gallery/wallpapers/style/style_05_01.jpg">查看图集</a></p>
+      </div>
+    </article>
+
+    <article class="ab-card ab-card--portrait ab-card--lightbox" id="style-06" data-gallery="[&quot;/assets/gallery/wallpapers/style/style_06_01.jpg&quot;, &quot;/assets/gallery/wallpapers/style/style_06_02.jpg&quot;]" data-caption="祝你好运，要天天开心" data-look="style-06" data-buy="#">
+      <a class="ab-card__media" href="/assets/gallery/wallpapers/style/style_06_01.jpg" tabindex="-1" aria-hidden="true">
+        <img src="/assets/gallery/wallpapers/style/style_06_01.jpg" alt="" loading="lazy" decoding="async">
+      </a>
+      <div class="ab-card__copy">
+        <p class="ab-cat">画廊</p>
+        <h3 class="ab-card__title"><a href="/assets/gallery/wallpapers/style/style_06_01.jpg">祝你好运，要天天开心</a></h3>
+        <p class="ab-card__excerpt">点开可看整套。</p>
+        <p class="ab-card__more"><a href="/assets/gallery/wallpapers/style/style_06_01.jpg">查看图集</a></p>
+      </div>
+    </article>
+
+    <article class="ab-card ab-card--portrait ab-card--lightbox" id="style-07" data-gallery="[&quot;/assets/gallery/wallpapers/style/style_07_01.jpg&quot;, &quot;/assets/gallery/wallpapers/style/style_07_02.jpg&quot;]" data-caption="紫裙摆" data-look="style-07" data-buy="#">
+      <a class="ab-card__media" href="/assets/gallery/wallpapers/style/style_07_01.jpg" tabindex="-1" aria-hidden="true">
+        <img src="/assets/gallery/wallpapers/style/style_07_01.jpg" alt="" loading="lazy" decoding="async">
+      </a>
+      <div class="ab-card__copy">
+        <p class="ab-cat">画廊</p>
+        <h3 class="ab-card__title"><a href="/assets/gallery/wallpapers/style/style_07_01.jpg">紫裙摆</a></h3>
+        <p class="ab-card__excerpt">点开可看整套。</p>
+        <p class="ab-card__more"><a href="/assets/gallery/wallpapers/style/style_07_01.jpg">查看图集</a></p>
+      </div>
+    </article>
+
+    <article class="ab-card ab-card--portrait ab-card--lightbox" id="style-08" data-gallery="[&quot;/assets/gallery/wallpapers/style/style_08_01.jpg&quot;, &quot;/assets/gallery/wallpapers/style/style_08_02.jpg&quot;]" data-caption="薄雾余灰" data-look="style-08" data-buy="#">
+      <a class="ab-card__media" href="/assets/gallery/wallpapers/style/style_08_01.jpg" tabindex="-1" aria-hidden="true">
+        <img src="/assets/gallery/wallpapers/style/style_08_01.jpg" alt="" loading="lazy" decoding="async">
+      </a>
+      <div class="ab-card__copy">
+        <p class="ab-cat">画廊</p>
+        <h3 class="ab-card__title"><a href="/assets/gallery/wallpapers/style/style_08_01.jpg">薄雾余灰</a></h3>
+        <p class="ab-card__excerpt">点开可看整套。</p>
+        <p class="ab-card__more"><a href="/assets/gallery/wallpapers/style/style_08_01.jpg">查看图集</a></p>
+      </div>
+    </article>
+
+    <article class="ab-card ab-card--portrait ab-card--lightbox" id="style-09" data-gallery="[&quot;/assets/gallery/wallpapers/style/style_09_01.jpg&quot;, &quot;/assets/gallery/wallpapers/style/style_09_02.jpg&quot;]" data-caption="蝉鸣不止的夏日总会结束" data-look="style-09" data-buy="#">
+      <a class="ab-card__media" href="/assets/gallery/wallpapers/style/style_09_01.jpg" tabindex="-1" aria-hidden="true">
+        <img src="/assets/gallery/wallpapers/style/style_09_01.jpg" alt="" loading="lazy" decoding="async">
+      </a>
+      <div class="ab-card__copy">
+        <p class="ab-cat">画廊</p>
+        <h3 class="ab-card__title"><a href="/assets/gallery/wallpapers/style/style_09_01.jpg">蝉鸣不止的夏日总会结束</a></h3>
+        <p class="ab-card__excerpt">点开可看整套。</p>
+        <p class="ab-card__more"><a href="/assets/gallery/wallpapers/style/style_09_01.jpg">查看图集</a></p>
+      </div>
+    </article>
     </div>
   </section>
 
 </div>
 
 <div class="admonition note mg-games__note">
-  <p class="admonition-title">专区建设中</p>
-  <p>模拟驾驶与飞行装备正在筹备中，将覆盖以下方向，敬请期待：</p>
-  <ul>
-    <li><strong>模拟驾驶</strong>：赛车方向盘、踏板、手刹与排挡等。</li>
-    <li><strong>飞行模拟</strong>：飞行摇杆、节流阀、脚舵等。</li>
-    <li><strong>座舱与支架</strong>：模拟座舱支架、显示器支架与震动反馈等周边。</li>
-  </ul>
-  <p>需要到货提醒或提前预订，可随时<a class="ab-crisp-open" href="#" data-crisp-msg="你好，我想预订模拟装置。">在线咨询</a>。</p>
-</div>
-
-<div class="admonition note mg-games__note">
   <p class="admonition-title">相关</p>
-  <p><a href="/">首页</a> &middot; <a href="/pc-components/">电脑组件</a> &middot; <a href="/gift-cards/">礼品卡</a> &middot; <a href="/gallery/">画廊</a> &middot; <a href="/games/topup-prices/">代储价格监测总览</a></p>
+  <p><a href="/">首页</a> &middot; <a href="/pc-components/">电脑组件</a> &middot; <a href="/wellness/">健康生活</a> &middot; <a href="/gallery/">画廊</a> &middot; <a href="/topup/">代储与礼品卡价格参考</a></p>
 </div>
 
 <script type="application/ld+json">
@@ -43,15 +126,29 @@ hide:
   "@graph": [
     {
       "@type": "WebPage",
-      "name": "模拟装置",
-      "description": "AceBase 模拟装置专区，覆盖模拟驾驶与飞行装备（方向盘、踏板、摇杆、座舱支架等），即将上线。",
+      "name": "STYLE · 穿搭写真",
+      "description": "AceBase STYLE —— 穿搭写真图集，8 套共 18 张，点开卡片即可在页内看整套。",
       "url": "https://acebase.cc/sim-gear/"
+    },
+    {
+      "@type": "ItemList",
+      "name": "穿搭写真图集",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "item": { "@type": "ImageObject", "name": "可爱蝴蝶结登场", "contentUrl": "https://acebase.cc/assets/gallery/wallpapers/style/style_02_01.jpg", "url": "https://acebase.cc/sim-gear/#style-02" } },
+        { "@type": "ListItem", "position": 2, "item": { "@type": "ImageObject", "name": "高跟鞋 · 连裤袜", "contentUrl": "https://acebase.cc/assets/gallery/wallpapers/style/style_03_01.jpg", "url": "https://acebase.cc/sim-gear/#style-03" } },
+        { "@type": "ListItem", "position": 3, "item": { "@type": "ImageObject", "name": "来选一张最喜欢的吧！", "contentUrl": "https://acebase.cc/assets/gallery/wallpapers/style/style_04_01.jpg", "url": "https://acebase.cc/sim-gear/#style-04" } },
+        { "@type": "ListItem", "position": 4, "item": { "@type": "ImageObject", "name": "水墨", "contentUrl": "https://acebase.cc/assets/gallery/wallpapers/style/style_05_01.jpg", "url": "https://acebase.cc/sim-gear/#style-05" } },
+        { "@type": "ListItem", "position": 5, "item": { "@type": "ImageObject", "name": "祝你好运，要天天开心", "contentUrl": "https://acebase.cc/assets/gallery/wallpapers/style/style_06_01.jpg", "url": "https://acebase.cc/sim-gear/#style-06" } },
+        { "@type": "ListItem", "position": 6, "item": { "@type": "ImageObject", "name": "紫裙摆", "contentUrl": "https://acebase.cc/assets/gallery/wallpapers/style/style_07_01.jpg", "url": "https://acebase.cc/sim-gear/#style-07" } },
+        { "@type": "ListItem", "position": 7, "item": { "@type": "ImageObject", "name": "薄雾余灰", "contentUrl": "https://acebase.cc/assets/gallery/wallpapers/style/style_08_01.jpg", "url": "https://acebase.cc/sim-gear/#style-08" } },
+        { "@type": "ListItem", "position": 8, "item": { "@type": "ImageObject", "name": "蝉鸣不止的夏日总会结束", "contentUrl": "https://acebase.cc/assets/gallery/wallpapers/style/style_09_01.jpg", "url": "https://acebase.cc/sim-gear/#style-09" } }
+      ]
     },
     {
       "@type": "BreadcrumbList",
       "itemListElement": [
         { "@type": "ListItem", "position": 1, "name": "首页", "item": "https://acebase.cc/" },
-        { "@type": "ListItem", "position": 2, "name": "模拟装置", "item": "https://acebase.cc/sim-gear/" }
+        { "@type": "ListItem", "position": 2, "name": "STYLE", "item": "https://acebase.cc/sim-gear/" }
       ]
     }
   ]

@@ -54,14 +54,27 @@
     return pct + "% OFF";
   }
 
-  // The uncrate-style one-line-per-tier list — "100 G-COIN / $0.86." — used by
-  // article pages that show the headline price rather than the full range.
-  // Lowest is the price that matters here: the whole site's pitch is finding it.
-  // Rows keep their source order, which groups tiers by product line rather
-  // than by price — re-sorting would break that grouping. The trailing period
-  // is part of the treatment: the GPU pages bake it into their static rows, so
-  // a rendered row without one would be the only one on the site that reads
-  // differently.
+  // The one-line-per-tier price block. Lowest is the price that matters here:
+  // the whole site's pitch is finding it. Rows keep their source order, which
+  // groups tiers by product line rather than by price — re-sorting would break
+  // that grouping.
+  //
+  // It has two shapes, and the markup differs enough that the container has to
+  // pick one rather than a stylesheet adapting a single shape:
+  //
+  //   ladder — "100 G-COIN / $0.86." in a row, on the article and price-band
+  //            pages that show the headline price rather than the full range.
+  //            The name is bare text and the separator is its own span.
+  //   card   — the same pair as the two cells of .ab-card--ec's label/price
+  //            grid. There the row gives up its box (.ab-ec-item is
+  //            `display: contents`) so the *label and price* are what the grid
+  //            places: a bare text node would become an anonymous grid item and
+  //            the "/" would take a column of its own.
+  //
+  // Both keep the trailing period, because the GPU pages bake it into their
+  // static rows and a rendered row without one would be the only row on the
+  // site that reads differently. Where it sits follows the same split: inside
+  // .ab-ec-price on a card (as in "$419." there), outside it on the ladder.
   function renderEcList(gameKey, rows, updated) {
     var wrap = $('.ab-ec-list[data-game="' + gameKey + '"]');
     if (!wrap) return;
@@ -77,13 +90,49 @@
       return;
     }
 
+    var isCard = !!wrap.closest(".ab-card--ec");
+
+    // Two sources, because the two kinds of saving are not the same thing. The
+    // gift cards carry `data-discount`: the source's own list-price discount,
+    // printed verbatim and never recomputed off the tier prices, because it
+    // describes the whole card against a list price that is not in prices.json
+    // at all (PSN's -40% is not the difference between any two numbers on its
+    // card). The live-platform cards carry `off` on their entry row instead:
+    // that saving *is* list against reference, it moves every time the FX is
+    // re-run, and typing it onto the card would leave the page quoting a stale
+    // number. Cards with neither get an empty string.
+    var off = wrap.getAttribute("data-discount") || (rows[0] && rows[0].off) || "";
+
     wrap.innerHTML = rows
-      .map(function (r) {
+      .map(function (r, i) {
+        var label = esc(r.title || T.topup);
+        var price = money(r.lowest);
+        // Entry tier only: a card holds one saving figure and sixteen of them
+        // down the ladder is noise.
+        //
+        // It goes *inside* .ab-ec-price rather than beside it. In the card shape
+        // .ab-ec-item is `display: contents`, so a third child would be placed
+        // by the grid as a cell of its own and land in column one of the next
+        // row; under 390px the row turns flex and it would crowd in there
+        // instead. Nested here, the grid still sees exactly two cells.
+        var pill = (i === 0 && off)
+          ? '<span class="ab-ec-off">' + esc(off) + "</span>"
+          : "";
+
+        if (isCard) {
+          return (
+            '<span class="ab-ec-item">' +
+            '<span class="ab-ec-label">' + label + "</span>" +
+            '<span class="ab-ec-price">' + price + pill + ".</span>" +
+            "</span>"
+          );
+        }
+
         return (
           '<span class="ab-ec-item">' +
-          esc(r.title || T.topup) +
+          label +
           '<span class="ab-ec-sep">/</span>' +
-          '<span class="ab-ec-price">' + money(r.lowest) + "</span>" +
+          '<span class="ab-ec-price">' + price + pill + "</span>" +
           ".</span>"
         );
       })
@@ -193,8 +242,11 @@
 
     // Cache-bust so a stale browser copy of prices.json can never show an old
     // schema (e.g. official/AceBase) after the site is rebuilt. Bump the
-    // version to match prices.json "updated" when new data is merged.
-    fetch("/assets/games/prices.json?v=" + (window.AceBasePricesVer || "20260903"))
+    // version to match prices.json "updated" when new data is merged — a stale
+    // copy is served silently, so a bump missed here shows a returning reader
+    // the *old* file, which for a newly added key means 价格即将上线 until their
+    // cache happens to turn over.
+    fetch("/assets/games/prices.json?v=" + (window.AceBasePricesVer || "20260921"))
       .then(function (r) {
         if (!r.ok) throw new Error("http " + r.status);
         return r.json();

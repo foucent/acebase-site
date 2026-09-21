@@ -1,15 +1,34 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-"""Generate docs/index.md — the uncrate-style magazine homepage.
+"""Generate docs/index.md — the front page, assembled entirely from other pages.
 
-The homepage is a curated front page, not an index: a handful of sections,
-each a short selection rather than the full set. Everything numeric comes
-from the same files the inner pages use, so the two can never drift:
+The homepage has no content of its own. Every card is a product that already
+exists on one of the category pages; nothing here is hand-picked, so there is
+nothing here to update when a price moves — update the category page and the
+front page follows. The only editorial decision left is the date each page
+carries, which decides the order.
 
-    docs/assets/games/prices.json        game top-up tiers (USD)
-    docs/assets/games/live-prices.json   live-streaming platform tiers (USD)
-    docs/gift-cards/index.md             gift-card denominations (USD)
-    docs/games/*.md frontmatter          card titles and excerpts
+The date is authored, not derived, and lives in the page's frontmatter as
+`updated:`. File mtime was the obvious alternative and is the wrong one: a
+fresh `git clone` stamps every file with the checkout time, so the front page
+would reorder itself on a machine it was never edited on, and a stylesheet
+tweak would push unrelated pages to the top. A page missing the key is skipped
+loudly rather than silently — see page_date().
+
+Every category is capped at CATEGORY_LIMIT entries. Fourteen live-streaming
+platforms or thirteen gift cards all carry one date, because that is how they
+are updated, so without a cap whichever category was touched last would take
+the whole page. Within a category the newest go first; between categories the
+order is purely by date.
+
+Everything numeric comes from the same files the inner pages use, so the two
+can never drift:
+
+    docs/assets/games/prices.json        every /topup tier: games, cards,
+                                         live platforms (USD)
+    docs/topup/index.md                  the kickers, pictures and sentences
+    docs/gallery/index.md                gallery set captions and covers
+    docs/games/*.md frontmatter          card titles, excerpts, dates
 
 Prices are emitted as .ab-money spans. Every price on the site is USD — that is
 the base currency the data files are stored in and the only one displayed — so
@@ -23,7 +42,7 @@ from __future__ import annotations
 
 import json
 import re
-from datetime import datetime, timezone
+import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -46,7 +65,7 @@ def money(amount: float) -> str:
 
 def frontmatter(rel: str) -> dict:
     """Minimal YAML frontmatter reader — avoids a PyYAML dependency for the
-    two flat scalar keys we need."""
+    three flat scalar keys we need."""
     text = (DOCS / rel).read_text(encoding="utf-8")
     m = re.match(r"^---\r?\n(.*?)\r?\n---", text, re.S)
     if not m:
@@ -57,6 +76,24 @@ def frontmatter(rel: str) -> dict:
         if km:
             out[km.group(1)] = km.group(2).strip().strip('"').strip("'")
     return out
+
+
+def page_date(rel: str) -> str | None:
+    """A page's `updated:` frontmatter, or None if it has none.
+
+    None takes every card on that page off the homepage. That is deliberate —
+    a page with no date has no defensible place in a list sorted by date, and
+    pretending otherwise (today's date, mtime, a neighbour's date) would put an
+    invented figure on the front page. But it must not be quiet: a page that
+    silently stopped appearing on the homepage is a page nobody would notice
+    had gone, so it says so on stderr and the build carries on.
+    """
+    date = frontmatter(rel).get("updated", "").strip()
+    if not re.fullmatch(r"\d{4}-\d{2}-\d{2}", date):
+        print(f"  ! {rel}: no usable `updated:` in the frontmatter — its "
+              f"products are off the homepage", file=sys.stderr)
+        return None
+    return date
 
 
 def excerpt_of(rel: str, fallback: str = "") -> str:
@@ -78,11 +115,6 @@ def excerpt_of(rel: str, fallback: str = "") -> str:
     return body or desc
 
 
-def mtime(rel: str) -> str:
-    ts = (DOCS / rel).stat().st_mtime
-    return datetime.fromtimestamp(ts, tz=timezone.utc).strftime("%Y-%m-%d")
-
-
 def esc(text: str) -> str:
     return (text.replace("&", "&amp;").replace("<", "&lt;")
                 .replace(">", "&gt;").replace('"', "&quot;"))
@@ -90,102 +122,198 @@ def esc(text: str) -> str:
 
 # ---------------------------------------------------------------- content
 
-# GPU models, newest first. Drawn from docs/games/*.md so the excerpt matches
-# the destination page word for word.
-GPU_CARDS = [
-    ("RTX 5060 Ti", "games/rtx-5060-ti.md", "/assets/games/rtx-5060-ti-card.jpg"),
-    ("RTX 5060", "games/rtx-5060.md", "/assets/games/rtx-5060-card.jpg"),
-    ("RTX 4090", "games/rtx-4090.md", "/assets/games/rtx-4090-card.jpg"),
-    ("RTX 4080 Super", "games/rtx-4080-super.md", "/assets/games/rtx-4080-super-card.jpg"),
-]
-
-# The rest of the range, for the GEAR section. Split rather than repeated: the
-# two sections lead to different pages (TECH to the price tables, GEAR to the
-# component hub), and the same four cards twice on one screen reads as a bug.
-# RTX 5050 is absent because it has no page of its own — it survives only as an
-# inline card on gpu-prices — so there is nothing to link a card to.
-GEAR_CARDS = [
-    ("RTX 4070 Ti Super", "games/rtx-4070-ti-super.md", "/assets/games/rtx-4070-ti-super-card.jpg"),
-    ("RTX 4080", "games/rtx-4080.md", "/assets/games/rtx-4080-card.jpg"),
-    ("RTX 3060 Ti", "games/rtx-3060-ti.md", "/assets/games/rtx-3060-ti-card.jpg"),
-    ("RTX 3060", "games/rtx-3060.md", "/assets/games/rtx-3060-card.jpg"),
-]
-
-# 模拟装置 has no stock yet, so its three announced directions are the cards —
-# written from that page's own placeholder text rather than invented products.
-SIM_CARDS = [
-    ("模拟驾驶", "赛车方向盘、踏板、手刹与排挡等。"),
-    ("飞行模拟", "飞行摇杆、节流阀、脚舵等。"),
-    ("座舱与支架", "模拟座舱支架、显示器支架与震动反馈等周边。"),
-]
+# GPU models, newest first — empty since the eight RTX 40/30 系 and 5060/5060 Ti
+# pages were retired. A card here is a link to a model's own page, and the only
+# model still on the site is RTX 5050, which has never had one: it survives as a
+# card on /tech with no destination. So TECH is now the deals band alone, and
+# the list stays as the place a future model page would be declared.
+GPU_CARDS: list[tuple[str, str, str]] = []
 
 # Games: image-led where an illustration exists, text-led where it does not.
 # pubg-gcoin deliberately shares no illustration with pubg-mobile — a repeated
 # picture reads as a mistake, so it takes the text treatment instead.
+#
+# (title, key, illustration) — the key is the name the tier data is filed under
+# in prices.json and the id of that game's card on /topup, which is where the
+# card now sends a reader: the five game pages were retired on 2026-09-21 and
+# their price block is part of the /topup card. The titles here stay the
+# homepage's own — it names the two Chinese games in Chinese where /topup names
+# them in English. The sentence under each title is read off /topup instead of
+# kept here, so there is one copy of it.
 GAME_CARDS = [
-    ("王者荣耀", "games/hok.md", "/assets/games/honor-of-kings.svg", "hok"),
-    ("PUBG Mobile", "games/pubg-mobile.md", "/assets/games/pubg-mobile.svg", "pubg-mobile"),
-    ("PUBG G-COIN", "games/pubg-gcoin.md", None, "pubg-gcoin"),
-    ("暗区突围", "games/arena-breakout.md", None, "arena-breakout"),
-    ("燕云十六声", "games/where-winds-meet.md", None, "where-winds-meet"),
+    ("王者荣耀", "hok", "/assets/games/honor-of-kings.svg"),
+    ("PUBG Mobile", "pubg-mobile", "/assets/games/pubg-mobile.svg"),
+    ("PUBG G-COIN", "pubg-gcoin", None),
+    ("暗区突围", "arena-breakout", None),
+    ("燕云十六声", "where-winds-meet", None),
 ]
 
-LIVE_PICKS = [
-    ("douyin-top-up", "抖音直播"),
-    ("bigo-live", "Bigo Live"),
-    ("kwi-top-up", "快手"),
-    ("tango-live-recharge", "Tango Live"),
-]
+# The one-page deal band. It is a single SKU rather than a model range, so its
+# title and photo are read off the page — the page already names the exact card
+# and its price, and a copy of that name here would be a second place to keep
+# in step.
+DEAL_PAGE = "games/gpu-deals.md"
 
-GIFT_PICKS = [
-    "Amazon 礼品卡（美国）",
-    "Apple 礼品卡",
-    "Netflix 礼品卡（美国）",
-    "PlayStation Network 充值卡（美国）",
-    "Steam 钱包充值码（美国）",
-    "Nintendo eShop 充值卡（美国）",
-]
+# Where a GPU card sends a reader who wants to buy one. Amazon's front page,
+# not a listing for the card: AceBase quotes what a model costs, it does not
+# stock one, so the honest destination is the marketplace itself. The link is
+# outbound and opens in a new tab; the card's own title still goes to the model
+# page, so the reader keeps both routes.
+AMAZON_HOME = "https://www.amazon.com/"
 
-# Real captions lifted from docs/gallery/index.md. The image is the first frame
-# of the set, the same one the wall tile shows; the card frame is 3:4 against a
-# 0.56-ratio photo, so `object-fit: cover` crops it to the middle 75%.
-GALLERY_PICKS = [
-    ("穿搭写真", "/assets/gallery/wallpapers/style/style_01_01.jpg"),
-    ("夜航星电竞", "/assets/gallery/wallpapers/nightvoyage/nightvoyage_01_01.jpg"),
-    ("三角洲行动", "/assets/gallery/wallpapers/anime/anime_01_01.jpg"),
-    ("中二病也要谈恋爱", "/assets/gallery/wallpapers/anime/anime_03_01.jpg"),
-]
+# The card kickers, in the order the feed falls back to when two categories
+# share a date. TECH leads because it holds the page's own product photos.
+GROUP_ORDER = ["TECH", "直播代储", "TOP-UP", "STYLE", "SHOP"]
+
+# How many entries one category may put on the front page. The homepage itself
+# is not capped — see the module docstring.
+CATEGORY_LIMIT = 10
 
 
-def parse_gift_cards() -> dict[str, dict]:
-    """Pull image, denominations and headline price out of the gift-card page's
-    generated markdown table."""
-    text = (DOCS / "gift-cards" / "index.md").read_text(encoding="utf-8")
-    row = re.compile(
-        r'<img src="(?P<img>[^"]+)" alt="(?P<alt>[^"]+)"'
-        r'(?P<rest>[^>]*)>\s*\|\s*(?P<name>[^|]+?)\s*\|\s*'
-        r'<span class="ab-money" data-ab-amount="(?P<price>[\d.]+)"'
-    )
-    found: dict[str, dict] = {}
-    for m in row.finditer(text):
-        denoms = re.search(r'data-denoms="([^"]+)"', m.group("rest"))
-        discount = re.search(r'data-discount="([^"]+)"', m.group("rest"))
-        found[m.group("name").strip()] = {
-            "img": m.group("img"),
-            "alt": m.group("alt"),
-            "price": float(m.group("price")),
-            "denoms": [d.split(":")[0] for d in denoms.group(1).split(",")] if denoms else [],
-            "discount": discount.group(1) if discount else "",
-        }
+def parse_shop_cards() -> list[dict]:
+    """Every SHOP card on /topup, in page order.
+
+    The thirteen gift cards and cdkeys moved off /gift-cards/ onto /topup/ on
+    2026-09-21, and the markdown table this used to read went with that page.
+    It reads the cards themselves now.
+
+    Split on `<article ` and parse one block at a time: a single regex with a
+    lazy tail matches straight across two cards the moment one of them is
+    missing an element, and a picture quietly taken from the card below it is
+    not something a printed line count would show. A block that is missing what
+    is needed is named on stderr rather than counted and dropped.
+
+    The kicker does the selecting — `ab-cat` SHOP, the same bare string
+    GROUP_ORDER holds — so a fourteenth card added to /topup reaches the front
+    page with no edit here and there is no key list to fall out of step. It is
+    also why that kicker has to stay plain text: anything else inside it, a pill
+    or an image, would fail the comparison and take all thirteen off the page.
+    """
+    text = (DOCS / "topup" / "index.md").read_text(encoding="utf-8")
+    found: list[dict] = []
+    for block in text.split("<article ")[1:]:
+        cat = re.search(r'<p class="ab-cat">(.*?)</p>', block, re.S)
+        if not cat or cat.group(1).strip() != "SHOP":
+            continue
+        cid = re.search(r'id="([^"]+)"', block)
+        title = re.search(r'<h3 class="ab-card__title">(.*?)</h3>', block, re.S)
+        art = re.search(r'data-art="([^"]+)"', block)
+        if not (cid and title and art):
+            print("  ! a SHOP card on /topup is missing id, <h3> or data-art: "
+                  + repr(re.sub(r"\s+", " ", block[:80])), file=sys.stderr)
+            continue
+        off = re.search(r'data-discount="([^"]+)"', block)
+        found.append({
+            "id": cid.group(1),
+            "name": re.sub(r"<[^>]+>", "", title.group(1)).strip(),
+            "art": art.group(1),
+            "off": off.group(1) if off else "",
+        })
     return found
+
+
+def parse_live_cards() -> list[dict]:
+    """Every card in /topup's third section, in page order.
+
+    The fourteen live-streaming platforms moved off /games/live-prices/ onto
+    /topup/ on 2026-09-21, and the data file this used to read went with that
+    page. It reads the cards themselves now, the way the gift cards above them
+    are read.
+
+    Selected by section, not by kicker: the other two sections carry the site's
+    own names (TOP-UP, SHOP) but these cards keep their platform's category —
+    直播, 语音, 陪玩社交, 休闲游戏 — which is the only thing on the front page
+    that tells a reader what kind of product a card is. A named section is also
+    the sturdier boundary; the kickers here are six different strings and are
+    meant to stay that way.
+    """
+    text = (DOCS / "topup" / "index.md").read_text(encoding="utf-8")
+    start = text.index('<section class="ab-section" id="live">')
+    section = text[start:text.index("</section>", start)]
+    found: list[dict] = []
+    for block in section.split("<article ")[1:]:
+        cid = re.search(r'id="([^"]+)"', block)
+        title = re.search(r'<h3 class="ab-card__title">(.*?)</h3>', block, re.S)
+        cat = re.search(r'<p class="ab-cat">(.*?)</p>', block, re.S)
+        lead = re.search(r'<span class="ab-fold__lead">(.*?)</span>', block, re.S)
+        if not (cid and title and cat and lead):
+            print("  ! a live card on /topup is missing id, <h3>, ab-cat or the "
+                  "fold lead: " + repr(re.sub(r"\s+", " ", block[:80])),
+                  file=sys.stderr)
+            continue
+        found.append({
+            "id": cid.group(1),
+            "name": re.sub(r"<[^>]+>", "", title.group(1)).strip(),
+            "cat": cat.group(1).strip(),
+            "lead": lead.group(1).strip(),
+        })
+    return found
+
+
+def parse_deal_cards() -> list[tuple[str, str]]:
+    """(title, image) for each band on the deals page, in page order."""
+    text = (DOCS / DEAL_PAGE).read_text(encoding="utf-8")
+    band = re.compile(
+        r'<article class="ab-hero ab-hero--article[^"]*">\s*'
+        r'<div class="ab-hero__media">\s*<img src="(?P<img>[^"]+)"[^>]*>.*?'
+        r'<h2 class="ab-hero__title">(?P<title>.*?)</h2>', re.S)
+    return [(re.sub(r"<[^>]+>", "", m.group("title")).strip(), m.group("img"))
+            for m in band.finditer(text)]
+
+
+def topup_blurbs() -> dict[str, str]:
+    """game key -> the one-sentence description on that game's /topup card.
+
+    The five game pages that used to be excerpted here are gone, and the
+    description they carried is now the opening sentence of the /topup card —
+    same words, so this reads them rather than keeping a second copy that could
+    drift. Keyed off the card's own id, which is the prices.json key.
+    """
+    text = (DOCS / "topup" / "index.md").read_text(encoding="utf-8")
+    card_re = re.compile(
+        r'<article class="ab-card[^"]*" id="(?P<id>[^"]+)">.*?'
+        r'<span class="ab-fold__lead">(?P<lead>.*?)</span>', re.S)
+    return {m.group("id"): m.group("lead").strip() for m in card_re.finditer(text)}
+
+
+def parse_gallery_sets() -> list[tuple[str, str]]:
+    """(caption, cover) for every wall tile that carries one, in wall order.
+
+    The tiles whose alt is empty are the figure-photo sets. The gallery page has
+    no name for them, and inventing one here would put a title on the homepage
+    that the page it links to does not use — so they stay off the front page and
+    STYLE never fills its ten.
+    """
+    text = (DOCS / "gallery" / "index.md").read_text(encoding="utf-8")
+    tile = re.compile(
+        r'<a class="sc-wall__tile[^"]*" href="[^"]+"[^>]*>'
+        r'<img src="(?P<img>[^"]+)" alt="(?P<alt>[^"]*)"')
+    return [(m.group("alt").strip(), m.group("img"))
+            for m in tile.finditer(text) if m.group("alt").strip()]
 
 
 # ---------------------------------------------------------------- markup
 
-def card(title, href, cat, excerpt, img=None, meta="", more="阅读全文", media="") -> str:
+def card(title, href, cat, excerpt, img=None, meta="", more="阅读全文", media="",
+         more_href=None, more_or=None) -> str:
     """`media` names the frame the image is drawn at — see the media-frames
     block in uncrate.css. It is the source's own ratio, not a house one:
-    "photo" 4:3, "square" 1:1, "portrait" 3:4."""
+    "photo" 4:3, "square" 1:1, "portrait" 3:4.
+
+    `more_href` points the CTA somewhere other than the card itself: the GPU
+    cards offer to buy, so their link leaves the site while the title and the
+    image stay on it. An absolute href opens in a new tab; nothing else about
+    the card changes.
+
+    `more_or` is a (label, url) pair that turns the CTA into the two-link action
+    line — 阅读全文 或 去亚马逊购买 — the same one /tech puts under each of its
+    cards, so the two grids read as one component. The first link keeps the
+    card's own destination; the pair is the second.
+
+    `more=None` drops the link row altogether. The TOP-UP cards use it: they
+    send a reader to the anchoring card on /topup, which is also where the title
+    and the picture already point, so a third route to the same anchor would be
+    a row that only repeats what the card has just said."""
     media_html = ""
     cls = "ab-card ab-card--text"
     if img:
@@ -194,165 +322,183 @@ def card(title, href, cat, excerpt, img=None, meta="", more="阅读全文", medi
                       f'\n        <img src="{img}" alt="" loading="lazy" decoding="async">'
                       f'\n      </a>')
     meta_html = f'\n        <p class="ab-card__meta">{meta}</p>' if meta else ""
+
+    def link(label, url, indent):
+        blank = ' target="_blank" rel="noopener"' if url.startswith("http") else ""
+        return f'{indent}<a href="{url}"{blank}>{label}</a>'
+
+    more_url = more_href or href
+    if more is None:
+        more_html = ""
+    elif more_or:
+        label2, url2 = more_or
+        more_html = (
+            '\n        <p class="ab-card__more ab-card__more--split">\n'
+            + link(more, more_url, " " * 10) + "\n"
+            + f'{" " * 10}<em class="ab-card__or">或</em>\n'
+            + link(label2, url2, " " * 10) + "\n"
+            + "        </p>")
+    else:
+        blank = ' target="_blank" rel="noopener"' if more_url.startswith("http") else ""
+        more_html = f'\n        <p class="ab-card__more"><a href="{more_url}"{blank}>{more}</a></p>'
     return f'''    <article class="{cls}">{media_html}
       <div class="ab-card__copy">
         <p class="ab-cat">{esc(cat)}</p>
         <h3 class="ab-card__title"><a href="{href}">{esc(title)}</a></h3>
-        <p class="ab-card__excerpt">{esc(excerpt)}</p>{meta_html}
-        <p class="ab-card__more"><a href="{href}">{more}</a></p>
+        <p class="ab-card__excerpt">{esc(excerpt)}</p>{meta_html}{more_html}
       </div>
     </article>'''
 
 
-def section(sec_id, title, stamp, cards, all_href=None, all_label=None,
-            tail=None) -> str:
-    """`tail` renders as its own grid under the first one.
+def section(sec_id, title, stamp, cards) -> str:
+    """One grid of cards under one head.
 
-    The grid stretches every card in a row to the tallest of them, which is
-    what keeps a row of image cards even. It is the wrong thing when the row
-    mixes treatments: a short text card beside a 3:4 portrait gets padded out
-    to the portrait's height and reads as an empty box. A section whose two
-    halves are different kinds of card therefore takes a second grid rather
-    than a longer first one.
+    The list carries `ab-list--feed`: the feed mixes text-only cards with three
+    different image ratios, and the grid stretches every card in a row to the
+    tallest of them, which would pad a two-line live-platform card out to the
+    height of the 3:4 portrait beside it. See the rule in uncrate.css.
     """
-    head_all = ""
-    if all_href:
-        head_all = (f'\n      <a class="ab-section__all" href="{all_href}">'
-                    f'{esc(all_label)} &rarr;</a>')
-    tail_html = ""
-    if tail:
-        tail_html = f'''
-    <div class="ab-list">
-{chr(10).join(tail)}
-    </div>'''
     return f'''
   <section class="ab-section" id="{sec_id}">
     <header class="ab-section__head">
       <span class="ab-stamp" aria-hidden="true">更新于 {stamp}</span>
-      <h2 class="ab-section__title">{esc(title)}</h2>{head_all}
+      <h2 class="ab-section__title">{esc(title)}</h2>
     </header>
-    <div class="ab-list">
+    <div class="ab-list ab-list--feed">
 {chr(10).join(cards)}
-    </div>{tail_html}
+    </div>
   </section>'''
 
 
 def build() -> str:
     prices = load_json("assets/games/prices.json")
-    live = load_json("assets/games/live-prices.json")
-    gifts = parse_gift_cards()
 
-    sections = []
+    pools: dict[str, list[tuple[str, str]]] = {}
 
-    # ---- 显卡价格参考 -------------------------------------------------
-    gpu_cards = [
-        card(name, "/" + rel.replace(".md", "/"), "TECH",
-             excerpt_of(rel), img, media="photo")
-        for name, rel, img in GPU_CARDS
-    ]
-    sections.append(section(
-        "gpu", "TECH", "2026-09-09", gpu_cards,
-        "/games/gpu-prices/", "全部 9 个型号"))
+    # ---- TECH：显卡型号 + 好价 ------------------------------------------
+    # GPU_CARDS 现在是空的（型号页已下线），这一段只剩显卡好价。循环留着不删，
+    # 是为了哪天再加型号页时不必把它重写一遍。
+    # 卡片按钮行和 /tech 上那张显卡卡一样，是一行两个链接：阅读全文 或 去亚马逊
+    # 购买。/tech 那张的第一个链接是「展开」（页面上确实有个折叠档位表），这里
+    # 没有折叠，第一个链接就落在卡片自己要通向的页面上 —— 标题和图之外再给一个
+    # 入口，和 uncrate 的 Read More 一个道理。
+    tech: list[tuple[str, str]] = []
+    for name, rel, img in GPU_CARDS:
+        date = page_date(rel)
+        if date:
+            tech.append((date, card(
+                name, "/" + rel.replace(".md", "/"), "TECH", excerpt_of(rel),
+                img, media="photo", more="阅读全文",
+                more_or=("去亚马逊购买", AMAZON_HOME))))
+    deal_date = page_date(DEAL_PAGE)
+    if deal_date:
+        for title, img in parse_deal_cards():
+            tech.append((deal_date, card(
+                title, "/" + DEAL_PAGE.replace(".md", "/"), "TECH",
+                excerpt_of(DEAL_PAGE), img, media="photo", more="阅读全文",
+                more_or=("去亚马逊购买", AMAZON_HOME))))
+    pools["TECH"] = tech
 
-    # ---- GEAR ---------------------------------------------------------
-    gear_cards = [
-        card(name, "/" + rel.replace(".md", "/"), "GEAR",
-             excerpt_of(rel), img, media="photo")
-        for name, rel, img in GEAR_CARDS
-    ]
-    sections.append(section(
-        "gear", "GEAR", mtime("pc-components/index.md"), gear_cards,
-        "/pc-components/", "全部 9 个型号"))
+    # /topup 的日期先算出来：这一页 2026-09-21 起装着三段商品 —— 5 款游戏、
+    # 13 张礼品卡与卡密、14 个直播平台 —— 三段同一天更新，页面也只有一个
+    # updated。三段的卡片日期都取这一个值。
+    topup_date = page_date("topup/index.md")
 
-    # ---- 代储价格参考 -------------------------------------------------
-    game_cards = []
-    for name, rel, img, key in GAME_CARDS:
-        tiers = prices["games"].get(key, [])
-        meta = ""
-        if not img and tiers:
-            lo = min(t.get("lowest", t.get("acebase", 0)) for t in tiers)
-            meta = f"{money(lo)} 起 · {len(tiers)} 个档位"
-        game_cards.append(card(name, "/" + rel.replace(".md", "/"),
-                               "GAME", excerpt_of(rel), img, meta,
-                               media="square"))
-    sections.append(section(
-        "topup", "GAME", prices["updated"], game_cards,
-        "/games/topup-prices/", "全部 10 款游戏"))
+    # ---- 直播代储：/topup 第三段的 14 个平台 ----------------------------
+    # 这一组在导航里没有自己的一格，卡片挂在 TECH 下面，但配额是独立的一份 ——
+    # 14 个平台同一天更新，和显卡好价共用一个 10 条的上限会把好价挤掉。
+    #
+    # 这十张是纯文字卡：/games/live-prices/ 那张老页给每张卡配过一条 24:5 的
+    # 品牌横带，首页从来没用过它，搬进 /topup 之后也不用 —— 卡片自己的媒体框
+    # 已经在用那张图了，首页再放一次就是同一页上两张一样的图。
+    if topup_date:
+        pool = []
+        for g in parse_live_cards():
+            tiers = prices["games"].get(g["id"], [])
+            if not tiers:
+                print(f"  ! {g['id']} 不在 prices.json 里 —— "
+                      f"先跑 scripts/merge_live_prices.py", file=sys.stderr)
+                continue
+            lo = min(t["lowest"] for t in tiers)
+            pool.append((topup_date, card(
+                g["name"], f"/topup/#{g['id']}", g["cat"], g["lead"],
+                None, f"{money(lo)} 起 · {len(tiers)} 个档位", "查看档位")))
+        pools["直播代储"] = pool
 
-    # ---- 直播代储价格参考 ---------------------------------------------
-    live_cards = []
-    for key, label in LIVE_PICKS:
-        item = live["products"].get(key)
-        if not item:
-            continue
-        tiers = item.get("tiers", [])
-        lo = min(t["ref"] for t in tiers) if tiers else 0
-        meta = f"{money(lo)} 起 · {len(tiers)} 个档位"
-        # The note opens by naming the platform, which the title already says.
-        note = re.sub(r"^[^，。]{1,24}?是", "", item.get("note", "")).strip()
-        live_cards.append(card(label, "/games/live-prices/",
-                               item.get("badge", "直播代储"), note,
-                               None, meta, "查看档位"))
-    sections.append(section(
-        "live", "APP", live["updated"], live_cards,
-        "/games/live-prices/", "全部 14 个平台"))
+    # ---- TOP-UP：全部 5 款游戏 -----------------------------------------
+    # href 是 /topup 上那张卡的锚点，不是另一个页面 —— 详情页 2026-09-21 下线后
+    # 卡片就是终点。既然标题和图已经把读者送过去了，卡片不再带 footer 链接：
+    # /topup 自己的卡上那个「查看档位」同一批去掉，首页这张是同一张卡。
+    if topup_date:
+        blurbs = topup_blurbs()
+        pool = []
+        for name, key, art in GAME_CARDS:
+            tiers = prices["games"].get(key, [])
+            meta = ""
+            if tiers:
+                lo = min(t.get("lowest", t.get("acebase", 0)) for t in tiers)
+                meta = f"{money(lo)} 起 · {len(tiers)} 个档位"
+            pool.append((topup_date, card(
+                name, f"/topup/#{key}", "TOP-UP", blurbs.get(key, ""),
+                art, meta, more=None, media="square")))
+        pools["TOP-UP"] = pool
 
-    # ---- STYLE --------------------------------------------------------
-    # Text-led at the top: the section has no products to photograph yet.
-    # The gallery picks ride at the end of it rather than in a section of
-    # their own — both are the look-at-this half of the site, the half that
-    # is not a price table. Each gallery card keeps its own 画廊 label and
-    # its own link, so a reader can still tell which half they are in.
-    # The stamp takes the newer of the two, so it tracks whichever moved.
-    sim_cards = [
-        card(title, "/sim-gear/", "STYLE", desc, None, "", "查看专区")
-        for title, desc in SIM_CARDS
-    ]
-    gallery_cards = [
-        card(caption, "/gallery/", "画廊", "出自 AceBase 图库，点开可看整套。", img,
-             more="查看图集", media="portrait")
-        for caption, img in GALLERY_PICKS
-    ]
-    sections.append(section(
-        "style", "STYLE",
-        max(mtime("sim-gear/index.md"), mtime("gallery/index.md")),
-        sim_cards, "/sim-gear/", "专区主页", tail=gallery_cards))
+    # ---- STYLE：图库里有标题的图集 -------------------------------------
+    gallery_date = page_date("gallery/index.md")
+    if gallery_date:
+        pools["STYLE"] = [(gallery_date, card(
+            caption, "/gallery/", "画廊", "点开可看整套。",
+            img, more="查看图集", media="portrait"))
+            for caption, img in parse_gallery_sets()]
 
-    # ---- 礼品卡 -------------------------------------------------------
-    gift_cards = []
-    for name in GIFT_PICKS:
-        g = gifts.get(name)
-        if not g:
-            continue
-        denoms = g["denoms"]
-        span = f"{denoms[0]} – {denoms[-1]}" if len(denoms) > 1 else (denoms[0] if denoms else "")
-        meta = f"{money(g['price'])} 起 · 面额 {span}"
-        if g["discount"]:
-            meta += f" · <span class='ab-card__off'>{esc(g['discount'])}</span>"
-        gift_cards.append(card(name, "/gift-cards/", "SHOP",
-                               f"{len(denoms)} 种面额可选，卡密秒发。" if denoms else "卡密秒发。",
-                               g["img"], meta, "查看面额", media="portrait"))
-    sections.append(section(
-        "gift-cards", "SHOP", mtime("gift-cards/index.md"), gift_cards,
-        "/gift-cards/", "全部 14 款"))
+    # ---- SHOP：/topup 第二段的 13 张礼品卡与卡密 -------------------------
+    # /gift-cards/ 2026-09-21 整页下线，商品按 /topup 的卡片模板重排，成了那一页的
+    # 第二段。所以这里既没有第二个页面也没有第二份价格：面额和价都从 /topup 的卡和
+    # 它读的那份 prices.json 来，卡上的 data-art 是首页唯一还需要的 3:4 配图
+    # ——/topup 自己用的是 24:5 品牌条，两者不同图。
+    #
+    # 日期跟着 /topup 走：两段同一天更新，页面也没有第二个 updated。首页那 10 条
+    # 上限之内，第 10 张因此从「PUBG G-COIN 卡密」换成了 Nintendo Switch Online。
+    shop_date = topup_date
+    if shop_date:
+        pool = []
+        for g in parse_shop_cards():
+            tiers = prices["games"].get(g["id"], [])
+            if not tiers:
+                print(f"  ! {g['id']} 不在 prices.json 里 —— "
+                      f"先跑 scripts/merge_giftcard_prices.py", file=sys.stderr)
+                continue
+            lo = min(t["lowest"] for t in tiers)
+            span = (f"{tiers[0]['title']} – {tiers[-1]['title']}"
+                    if len(tiers) > 1 else tiers[0]["title"])
+            meta = f"{money(lo)} 起 · 面额 {span}"
+            if g["off"]:
+                meta += f" · <span class='ab-card__off'>{esc(g['off'])}</span>"
+            pool.append((shop_date, card(
+                g["name"], f"/topup/#{g['id']}", "SHOP",
+                f"{len(tiers)} 种面额可选，卡密秒发。",
+                g["art"], meta, "查看面额", media="portrait")))
+        pools["SHOP"] = pool
 
-    # ---- hero ---------------------------------------------------------
-    hero = f'''  <article class="ab-hero">
-    <div class="ab-hero__media">
-      <a href="/games/gpu-prices/">
-        <img src="/assets/games/rtx-5050-card.jpg" alt="显卡价格参考" fetchpriority="high" decoding="async">
-      </a>
-      <span class="ab-stamp ab-stamp--hero" aria-hidden="true">更新于 2026-09-09</span>
-    </div>
-    <div class="ab-hero__copy">
-      <p class="ab-cat"><a href="/games/gpu-prices/">TECH</a></p>
-      <h2 class="ab-hero__title"><a href="/games/gpu-prices/">9 款 RTX 显卡，全网均价一次看完</a></h2>
-      <p class="ab-hero__excerpt">{esc(excerpt_of("games/gpu-prices.md"))}</p>
-      <p class="ab-hero__more"><a href="/games/gpu-prices/">阅读全文</a></p>
-    </div>
-  </article>'''
+    # ---- 排序 ----------------------------------------------------------
+    # Per category: newest first, then capped. Across categories: by date, and
+    # for a date two categories share, by GROUP_ORDER. Two stable passes rather
+    # than one compound key, because a sort key that mixes a descending date
+    # with ascending tie-breakers is a key nobody can read.
+    items: list[tuple[str, str, int, str]] = []
+    for group in GROUP_ORDER:
+        pool = sorted(pools.get(group, []), key=lambda t: t[0], reverse=True)
+        for order, (date, html) in enumerate(pool[:CATEGORY_LIMIT]):
+            items.append((date, group, order, html))
+    items.sort(key=lambda t: (GROUP_ORDER.index(t[1]), t[2]))
+    items.sort(key=lambda t: t[0], reverse=True)
 
-    latest = max(prices["updated"], live["updated"])
+    cards = [html for _date, _group, _order, html in items]
+    stamp = max((date for date, _g, _o, _h in items), default="")
+    print(f"  {len(cards)} cards: " + "、".join(
+        f"{g} {sum(1 for i in items if i[1] == g)}" for g in GROUP_ORDER
+        if any(i[1] == g for i in items)))
+
     return f'''---
 title: AceBase — 游戏代储、礼品卡与显卡价格参考
 description: AceBase 汇集游戏代储、直播平台充值、电子礼品卡与 RTX 显卡价格参考，逐档对比并在同一页呈现最新行情。
@@ -364,11 +510,9 @@ hide:
 ---
 
 <div class="ab-mag" markdown="0">
+{section("latest", "最近更新", stamp, cards)}
 
-{hero}
-{''.join(sections)}
-
-  <p class="ab-mag__foot">全部数据更新至 {latest} · 报价以在线咨询为准</p>
+  <p class="ab-mag__foot">全部数据更新至 {stamp} · 报价以在线咨询为准</p>
 
 </div>
 '''
@@ -376,5 +520,6 @@ hide:
 
 if __name__ == "__main__":
     out = DOCS / "index.md"
-    out.write_text(build(), encoding="utf-8")
-    print(f"wrote {out} ({len(build().splitlines())} lines)")
+    body = build()
+    out.write_text(body, encoding="utf-8")
+    print(f"wrote {out} ({len(body.splitlines())} lines)")

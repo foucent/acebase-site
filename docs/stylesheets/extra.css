@@ -53,7 +53,7 @@ body {
   --ab-header-bg: #000000;
   --ab-header-fg: #ffffff;
 
-  /* Legacy BitTopup aliases */
+  /* Legacy --bt-* aliases, kept for pages written before the --ab-* tokens */
   --bt-bg: var(--ab-bg);
   --bt-panel: var(--ab-panel);
   --bt-panel-2: var(--ab-panel-2);
@@ -408,7 +408,7 @@ body {
   display: flex;
 }
 
-/* OffGamers-style product page — local palette, mapped onto the global
+/* The .og-product article page — local palette, mapped onto the global
    light tokens so this page can't drift back to the dark theme. */
 .md-typeset .og-product {
   --og-accent: var(--ab-accent-deep);
