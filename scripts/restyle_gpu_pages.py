@@ -227,7 +227,7 @@ def build_model_page(old: str, m: dict, related: str) -> str:
     """A standalone model page: the same one-article body, its own head.
 
     The frontmatter description is rewritten because the homepage card for this
-    page is generated from it (gen_home.excerpt_of), and the old one advertised
+    page is generated from it (ab_cards.excerpt_of), and the old one advertised
     a 深度解析 that no longer exists on the page.
 
     `updated` is rebuilt from the same fetch date the body prints, and it has to

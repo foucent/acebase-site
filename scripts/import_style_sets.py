@@ -9,9 +9,9 @@ block for each set, ready to paste into ``docs/sim-gear/index.md``.
 
 It prints the markup rather than writing the page because the STYLE page is
 hand-written — only ``docs/index.md`` is generated, and that one stays the
-generator's alone. The card body itself comes from ``gen_home.card()``, the
-same function that draws the homepage's 穿搭写真 card, so the two grids cannot
-drift into looking like two different components. What this script adds is the
+generator's alone. The card body itself comes from ``ab_cards.card()``, the
+same component every other card on the site is drawn with, so the two grids
+cannot drift into looking like two different components. What this script adds is the
 four attributes that turn the card into a lightbox opener (see the CARD_SEL
 block in photo-wall.js).
 
@@ -59,9 +59,9 @@ PAGE = DOCS / "sim-gear" / "index.md"
 MANIFEST = ROOT / "scripts" / "_style_sets_20260921.json"
 
 sys.path.insert(0, str(ROOT / "scripts"))
-from gen_home import card, esc  # noqa: E402  the homepage's own card builder
+from ab_cards import card, esc  # noqa: E402  the site's shared card builder
 
-# The card body, identical to the homepage's STYLE pool (gen_home.py, "STYLE").
+# The card body, the same one ab_cards.card() draws for every grid on the site.
 CAT = "画廊"
 EXCERPT = "点开可看整套。"
 MORE = "查看图集"
@@ -198,7 +198,7 @@ def markup(setdef: dict, first: bool) -> str:
         f' data-look="{setdef["slug"]}"'
         f' data-buy="#">'
     )
-    assert old in body, "gen_home.card() 的形状变了，注入点要重新锚定"
+    assert old in body, "ab_cards.card() 的形状变了，注入点要重新锚定"
     body = body.replace(old, new, 1)
     if first:
         # The first card is above the fold on every width.

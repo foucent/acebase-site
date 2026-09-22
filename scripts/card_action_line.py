@@ -37,7 +37,7 @@ DOCS = ROOT / "docs"
 PAGE = DOCS / "tech" / "index.md"
 
 sys.path.insert(0, str(ROOT / "scripts"))
-from gen_home import AMAZON_HOME  # noqa: E402
+from ab_cards import AMAZON_HOME  # noqa: E402
 
 EXPECTED = 9
 

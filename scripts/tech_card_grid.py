@@ -12,7 +12,7 @@ What moves and what does not:
   * The figures do not move. Each card's four price rows are lifted verbatim
     out of the band that used to hold them, markup and all.
   * The visible line on each card is the model page's own frontmatter
-    description, read through gen_home.excerpt_of — the same function that
+    description, read through ab_cards.excerpt_of — the same function that
     writes the homepage card. One model therefore reads identically in both
     places; a card whose line came from anywhere else would say one thing on
     the homepage and another here.
@@ -45,7 +45,7 @@ SRC = DOCS / "games" / "gpu-prices.md"
 DST = DOCS / "tech" / "index.md"
 
 sys.path.insert(0, str(ROOT / "scripts"))
-from gen_home import AMAZON_HOME, esc, excerpt_of  # noqa: E402
+from ab_cards import AMAZON_HOME, esc, excerpt_of  # noqa: E402
 
 # A band, whole. Anchored on the id and on the closing </article> so nothing
 # inside can end the match early.

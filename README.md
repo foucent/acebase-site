@@ -18,7 +18,7 @@ cd c:\1Work\acebase.cc
 
 | 路径 | 说明 |
 | --- | --- |
-| `/` | Home（本周推荐，由 `scripts/gen_home.py` 生成，勿手改） |
+| `/` | 首页（各类目最新 6 条，由 `scripts/gen_home.py` 生成，勿手改；改完任何类目页都要重跑一次） |
 | `/topup/` | 代储与礼品卡价格参考（游戏代储 / 礼品卡 / 直播代储） |
 | `/tech/` | 显卡价格参考（RTX 全系） |
 | `/sim-gear/` | STYLE（球拍与器材） |
