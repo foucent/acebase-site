@@ -153,7 +153,6 @@ hide:
       <span class="ab-stamp" aria-hidden="true">更新于 <span class="js-prices-updated">2026-09-21</span></span>
       <h2 class="ab-section__title">礼品卡与卡密</h2>
     </header>
-    <p class="ab-section__lead">上半段是 6 个品牌的电子礼品卡，下半段是 7 个游戏与平台的充值卡密 —— 每张列出当前在售的全部面额与参考价，展开即可看完整档位（美元计价，持续更新）。</p>
 
     <div class="ab-list ab-list--expandable">
     <article class="ab-card ab-card--brand ab-card--shop ab-card--fold ab-card--ec" id="amazon-gift-card-us">
@@ -501,7 +500,7 @@ hide:
       <span class="ab-stamp" aria-hidden="true">更新于 <span class="js-prices-updated">2026-09-21</span></span>
       <h2 class="ab-section__title">直播与语音平台代储</h2>
     </header>
-    <p class="ab-section__lead">覆盖 14 个直播、语音与社交平台 —— 逐个列出该平台当前在售的全部充值档位与参考价（美元计价，持续更新）。</p>
+
     <div class="ab-list ab-list--expandable">
     <article class="ab-card ab-card--brand ab-card--shop ab-card--fold ab-card--ec" id="douyin-top-up">
       <div class="ab-card__media">
