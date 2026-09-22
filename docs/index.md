@@ -148,6 +148,72 @@ hide:
         <p class="ab-card__more"><a href="/assets/gallery/wallpapers/style/style_07_01.jpg">查看图集</a></p>
       </div>
     </article>
+    <article class="ab-card ab-card--portrait ab-card--lightbox" id="gear-01" data-gallery="[&quot;/assets/gallery/gear/gear_01_01.jpg&quot;, &quot;/assets/gallery/gear/gear_01_02.jpg&quot;, &quot;/assets/gallery/gear/gear_01_03.jpg&quot;, &quot;/assets/gallery/gear/gear_01_04.jpg&quot;, &quot;/assets/gallery/gear/gear_01_05.jpg&quot;, &quot;/assets/gallery/gear/gear_01_06.jpg&quot;]" data-caption="亚萨卡长胶底板" data-look="gear-01" data-buy="#">
+      <a class="ab-card__media" href="/assets/gallery/gear/gear_01_01.jpg" tabindex="-1" aria-hidden="true">
+        <img src="/assets/gallery/gear/gear_01_01.jpg" alt="" decoding="async">
+      </a>
+      <div class="ab-card__copy">
+        <p class="ab-cat">装备</p>
+        <h3 class="ab-card__title"><a href="/assets/gallery/gear/gear_01_01.jpg">亚萨卡长胶底板</a></h3>
+        <p class="ab-card__excerpt">点开可看整套。</p>
+        <p class="ab-card__more"><a href="/assets/gallery/gear/gear_01_01.jpg">查看图集</a></p>
+      </div>
+    </article>
+    <article class="ab-card ab-card--portrait ab-card--lightbox" id="gear-02" data-gallery="[&quot;/assets/gallery/gear/gear_02_01.jpg&quot;, &quot;/assets/gallery/gear/gear_02_02.jpg&quot;, &quot;/assets/gallery/gear/gear_02_03.jpg&quot;, &quot;/assets/gallery/gear/gear_02_04.jpg&quot;, &quot;/assets/gallery/gear/gear_02_05.jpg&quot;, &quot;/assets/gallery/gear/gear_02_06.jpg&quot;]" data-caption="拍套与长胶胶皮" data-look="gear-02" data-buy="#">
+      <a class="ab-card__media" href="/assets/gallery/gear/gear_02_04.jpg" tabindex="-1" aria-hidden="true">
+        <img src="/assets/gallery/gear/gear_02_04.jpg" alt="" loading="lazy" decoding="async">
+      </a>
+      <div class="ab-card__copy">
+        <p class="ab-cat">装备</p>
+        <h3 class="ab-card__title"><a href="/assets/gallery/gear/gear_02_04.jpg">拍套与长胶胶皮</a></h3>
+        <p class="ab-card__excerpt">点开可看整套。</p>
+        <p class="ab-card__more"><a href="/assets/gallery/gear/gear_02_04.jpg">查看图集</a></p>
+      </div>
+    </article>
+    <article class="ab-card ab-card--portrait ab-card--lightbox" id="gear-03" data-gallery="[&quot;/assets/gallery/gear/gear_03_01.jpg&quot;, &quot;/assets/gallery/gear/gear_03_02.jpg&quot;, &quot;/assets/gallery/gear/gear_03_03.jpg&quot;, &quot;/assets/gallery/gear/gear_03_04.jpg&quot;, &quot;/assets/gallery/gear/gear_03_05.jpg&quot;, &quot;/assets/gallery/gear/gear_03_06.jpg&quot;]" data-caption="亚萨卡底板三块" data-look="gear-03" data-buy="#">
+      <a class="ab-card__media" href="/assets/gallery/gear/gear_03_04.jpg" tabindex="-1" aria-hidden="true">
+        <img src="/assets/gallery/gear/gear_03_04.jpg" alt="" loading="lazy" decoding="async">
+      </a>
+      <div class="ab-card__copy">
+        <p class="ab-cat">装备</p>
+        <h3 class="ab-card__title"><a href="/assets/gallery/gear/gear_03_04.jpg">亚萨卡底板三块</a></h3>
+        <p class="ab-card__excerpt">点开可看整套。</p>
+        <p class="ab-card__more"><a href="/assets/gallery/gear/gear_03_04.jpg">查看图集</a></p>
+      </div>
+    </article>
+    <article class="ab-card ab-card--portrait ab-card--lightbox" id="gear-04" data-gallery="[&quot;/assets/gallery/gear/gear_04_01.jpg&quot;, &quot;/assets/gallery/gear/gear_04_02.jpg&quot;, &quot;/assets/gallery/gear/gear_04_03.jpg&quot;, &quot;/assets/gallery/gear/gear_04_04.jpg&quot;]" data-caption="亚萨卡 DYNA MAX 17" data-look="gear-04" data-buy="#">
+      <a class="ab-card__media" href="/assets/gallery/gear/gear_04_01.jpg" tabindex="-1" aria-hidden="true">
+        <img src="/assets/gallery/gear/gear_04_01.jpg" alt="" loading="lazy" decoding="async">
+      </a>
+      <div class="ab-card__copy">
+        <p class="ab-cat">装备</p>
+        <h3 class="ab-card__title"><a href="/assets/gallery/gear/gear_04_01.jpg">亚萨卡 DYNA MAX 17</a></h3>
+        <p class="ab-card__excerpt">点开可看整套。</p>
+        <p class="ab-card__more"><a href="/assets/gallery/gear/gear_04_01.jpg">查看图集</a></p>
+      </div>
+    </article>
+    <article class="ab-card ab-card--portrait ab-card--lightbox" id="gear-05" data-gallery="[&quot;/assets/gallery/gear/gear_05_01.jpg&quot;, &quot;/assets/gallery/gear/gear_05_02.jpg&quot;]" data-caption="雨果签名胶皮" data-look="gear-05" data-buy="#">
+      <a class="ab-card__media" href="/assets/gallery/gear/gear_05_01.jpg" tabindex="-1" aria-hidden="true">
+        <img src="/assets/gallery/gear/gear_05_01.jpg" alt="" loading="lazy" decoding="async">
+      </a>
+      <div class="ab-card__copy">
+        <p class="ab-cat">装备</p>
+        <h3 class="ab-card__title"><a href="/assets/gallery/gear/gear_05_01.jpg">雨果签名胶皮</a></h3>
+        <p class="ab-card__excerpt">点开可看整套。</p>
+        <p class="ab-card__more"><a href="/assets/gallery/gear/gear_05_01.jpg">查看图集</a></p>
+      </div>
+    </article>
+    <article class="ab-card ab-card--portrait ab-card--lightbox" id="gear-06" data-gallery="[&quot;/assets/gallery/gear/gear_06_01.jpg&quot;, &quot;/assets/gallery/gear/gear_06_02.jpg&quot;, &quot;/assets/gallery/gear/gear_06_03.jpg&quot;, &quot;/assets/gallery/gear/gear_06_04.jpg&quot;, &quot;/assets/gallery/gear/gear_06_05.jpg&quot;]" data-caption="给小球拍粘胶皮" data-look="gear-06" data-buy="#">
+      <a class="ab-card__media" href="/assets/gallery/gear/gear_06_01.jpg" tabindex="-1" aria-hidden="true">
+        <img src="/assets/gallery/gear/gear_06_01.jpg" alt="" loading="lazy" decoding="async">
+      </a>
+      <div class="ab-card__copy">
+        <p class="ab-cat">装备</p>
+        <h3 class="ab-card__title"><a href="/assets/gallery/gear/gear_06_01.jpg">给小球拍粘胶皮</a></h3>
+        <p class="ab-card__excerpt">点开可看整套。</p>
+        <p class="ab-card__more"><a href="/assets/gallery/gear/gear_06_01.jpg">查看图集</a></p>
+      </div>
+    </article>
     <article class="ab-card ab-card--brand ab-card--fold ab-card--ec" id="pubg-mobile">
       <div class="ab-card__media">
         <img src="/assets/games/brand/pubg-mobile.png" alt="PUBG Mobile UC 代储价格参考" decoding="async">

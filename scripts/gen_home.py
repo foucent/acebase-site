@@ -6,7 +6,8 @@ The homepage has no content of its own. The rule is one line: **every card on
 the front page is the newest six cards of a category, copied out of that
 category's page.**
 
-`Category` means the top-level nav in mkdocs.yml — TECH, TOP-UP, STYLE, FAQ —
+`Category` means the top-level nav in mkdocs.yml — TECH, TOP-UP, STYLE, GEAR,
+FAQ —
 read from that file rather than listed here, so a category added to the nav
 reaches the front page with no edit to this script. A category whose page holds
 no cards (FAQ) contributes nothing; "如果有的话" is the whole of that rule, and
