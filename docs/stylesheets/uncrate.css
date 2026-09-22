@@ -713,10 +713,13 @@
   }
 }
 
-/* The same reservation, for /topup's five brand cards, on a different element.
+/* The same reservation, for /topup's brand cards, on a different element.
    The only thing on those cards whose height follows how its text wraps is the
    sentence — the price block below the fold is cut to a flat 84px whether it
-   holds six tiers or twelve, and every title is one short name.
+   holds six tiers or twelve, and every title is one short name. That last
+   clause stopped being true when the long product names moved in, and the title
+   reservation that answers for them is in the block below; this rule is the
+   one that answers for the sentence, on `--brand`, which is both shapes.
 
    The blurbs are 60 to 66 characters and they do not cross together. Measured
    on that page, three lines hold down to a *content* box of 372px and all five
@@ -752,33 +755,46 @@
   }
 }
 
-/* ---------- and the reservation the wide --shop cards need on top ----------
+/* ---------- and the reservation every card in that grid needs on top -------
    The paragraph above says the brand cards' only variable-height element is
-   the sentence. That was true of five short game names and stops being true
-   the moment thirteen product names move in beside them — "PlayStation
+   the sentence. That was true of five short game names and stopped being true
+   the moment the long product names moved in beside them — "PlayStation
    Network 充值卡（美国）" and "Nintendo Switch Online 会员资格" take two lines
    in a column that fits "Honor of Kings" on one, three once the column is
-   narrow. Same two cards then sit 30px apart on a grid that keeps every other
-   pair level, so the title gets a reservation of its own.
+   narrow. The two cards sharing a row then sit 30px apart on a grid that keeps
+   every other pair level, so the title gets a reservation of its own. Long
+   titles are not a gift-card thing either: "Xena Live：群组语音" is one of the
+   live-platform names. The modifier names the card shape — title and sentence
+   both able to run long — not the section it sits in.
 
-   The fourteen live-platform cards that arrived on /topup's third section on
-   2026-09-21 carry `--shop` as well, and for the same reason: "Xena Live：
-   群组语音" is not a short word either. The modifier names the card shape —
-   title and sentence both able to run long — not the section it sits in. Their
-   sentences are the shortest of the three groups, so these numbers are not
-   re-measured for them; the equal-height assertion in verify_topup_cards.py is
-   what would catch it if that stopped being true.
+   Both rules hang off `--brand`, which is every card on /topup, and not off
+   `--shop`, which is only twenty-seven of them. That is the one thing here
+   that changed after it was written, and it is worth the paragraph. Until
+   2026-09-22 /topup/ was three grids — five game cards, thirteen gift cards,
+   fourteen live platforms — and no row ever held one shape beside the other,
+   so a reservation tuned for one family could not disturb another and the
+   narrower selector was the honest one. Merging the three sections into one
+   grid put 燕云十六声 (plain `--brand`) in a row with Amazon 礼品卡（美国）
+   (`--shop`), and the pair came out 30px apart: the shop card reserved a second
+   title line and the brand card reserved none. The fix is not a third number
+   for the mixed pair — it is to say once, on the selector both shapes share,
+   what a card in this grid reserves. `--shop` still means what its name says
+   further up the file, where the two shapes genuinely differ: the price ladder
+   that pins a `--shop` fold to a flat 84px because its longest tier is short.
 
-   Both numbers are measured on /topup, in content boxes, across 768-1440px:
+   The two numbers are measured on /topup, in content boxes, across 768-1440px:
 
      title   three lines at 340px and below, two from 342px up. The query
              switches at 350 — the 10px of slack is the same fallback-font
              allowance the two paragraphs above take, and it is paid for on
              816-836px of viewport, where a title that would have held two
              lines is given three.
-     lead    the four-line reservation above stops at 400px, and past it the
-             longest of the thirteen gift cards wraps to three. Below 400
-             nothing is asked for here — that rule already answers.
+     lead    four lines at 400px and below — the rule above, which answers for
+             both shapes now that it is the only one in that band — and three
+             past it, where the longest gift-card sentence lands. The fourteen
+             live-platform sentences are the shortest of the three groups and
+             were never re-measured; the equal-height assertion in
+             verify_topup_cards.py is what would catch it if that changed.
 
    Every value here is a container query, not a viewport one, for the reason
    the --goods paragraph gives: the column decides the wrap, not the window.
@@ -787,24 +803,34 @@
    Reusing that exact breakpoint rather than guessing a container width is
    what keeps the reservation off the one-column band, where it would only
    be air: at 500-767px the copy column is 426px and wider, comfortably
-   inside the range these queries reserve for. */
+   inside the range these queries reserve for.
+
+   The cost, paid knowingly: the five game cards, whose names never reach two
+   lines at 1440px, each carry one reserved line they do not fill, and the
+   twenty-seven cards that are `--shop` carry the four-line lead reserve down
+   to a 400px column where three would have done. A row that is level is worth
+   more than a card that is tight — that is the rule at the top of this file,
+   and it is asserted width by width in verify_topup_cards.py. */
 @media screen and (min-width: 768px) {
   @container (max-width: 350px) {
-    .md-typeset .ab-mag .ab-card--shop .ab-card__title {
+    .md-typeset .ab-mag .ab-card--brand .ab-card__title {
       min-height: 3lh;
     }
   }
 
   @container (min-width: 351px) {
-    .md-typeset .ab-mag .ab-card--shop .ab-card__title {
+    .md-typeset .ab-mag .ab-card--brand .ab-card__title {
       min-height: 2lh;
     }
+  }
 
-    .md-typeset .ab-mag .ab-card--shop .ab-fold__lead {
+  @container (min-width: 401px) {
+    .md-typeset .ab-mag .ab-card--brand .ab-fold__lead {
       /* The lead is the summary's only in-flow child — the action row beside
          it is absolutely positioned into the card's reserved padding — so
          blockifying it here is invisible, and it is what gives min-height
-         something to apply to. */
+         something to apply to. Below 401px the rule above has already done
+         both, which is why this one only carries the three-line figure. */
       display: block;
       min-height: 3lh;
     }
