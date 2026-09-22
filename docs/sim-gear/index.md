@@ -10,10 +10,6 @@ hide:
 <div class="ab-mag" markdown="0">
 
   <section class="ab-section" id="style">
-    <header class="ab-section__head">
-      <span class="ab-stamp" aria-hidden="true">更新于 2026-09-22</span>
-      <h1 class="ab-section__title">穿搭与汽车</h1>
-    </header>
     <div class="ab-list">
     <article class="ab-card ab-card--portrait ab-card--lightbox" id="style-02" data-gallery="[&quot;/assets/gallery/wallpapers/style/style_02_01.jpg&quot;, &quot;/assets/gallery/wallpapers/style/style_02_02.jpg&quot;]" data-caption="可爱蝴蝶结登场" data-look="style-02" data-buy="#">
       <a class="ab-card__media" href="/assets/gallery/wallpapers/style/style_02_01.jpg" tabindex="-1" aria-hidden="true">

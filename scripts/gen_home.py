@@ -32,10 +32,11 @@ into a single grid — but the loop still reads sections, because that is how a
 page that grows a second one gets dated.
 
 The frontmatter's `updated:` is the fallback for a section that carries no
-stamp — /topup/ and /tech/, which lost their heads on 2026-09-22, are dated this
-way; /sim-gear/ still carries one. It is not a substitute for a stamp: a page
-that has cards and no date at all is named on stderr rather than dated by
-guesswork, because an invented date would reorder the whole front page.
+stamp, and since 2026-09-22 that is every page with cards on it: /topup/,
+/tech/ and /sim-gear/ all lost their section heads that day. It is not a
+substitute for a stamp: a page that has cards and no date at all is named on
+stderr rather than dated by guesswork, because an invented date would reorder
+the whole front page.
 
 Run from the repo root:  python scripts/gen_home.py
 """
@@ -92,10 +93,14 @@ def nav_categories() -> list[tuple[str, str]]:
     return out
 
 
-# A section head's date, in both spellings the site uses:
-#   更新于 2026-09-22                              (/tech, /sim-gear)
-#   更新于 <span class="js-prices-updated">…</span>  (/topup — rewritten in the
+# A section head's date, in both spellings the site has used:
+#   更新于 2026-09-22                              (/sim-gear's head, until
+#                                                    2026-09-22)
+#   更新于 <span class="js-prices-updated">…</span>  (/topup's, rewritten in the
 #                                                    browser from prices.json)
+# No page has a head stamp today — every page that carries cards lost its head
+# on 2026-09-22 — so the whole front page is dated by frontmatter. This stays
+# for the page that grows a head back.
 STAMP = re.compile(r"更新于\s*(?:<span[^>]*>)?\s*(\d{4}-\d{2}-\d{2})")
 # …and it has to be found inside a head. Every card also carries a
 # `数据更新于 2026-09-21` footer of its own, so an unscoped search over the
