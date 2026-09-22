@@ -80,6 +80,13 @@ plugins:
         # 旧 FAQ 页（f8b7ba5 随 shop 目录一起下线）一直没人接手，URL 是 404；
         # /faq/ 是它的继任者，指过去。
         shop/faq-and-updates.md: faq/index.md
+        # /car/ 2026-09-22 并入 /sim-gear/ —— 汽车实拍图集不再单独成类目，六张卡
+        # 进了 STYLE 页的同一个网格。旧 URL 指回首页：mkdocs 的 redirects 只能
+        # 整页跳，/car/#car-01 那种锚点带不过去，指到 /sim-gear/ 也只能落页首。
+        car/index.md: index.md
+        # /wellness/ 2026-09-22 删除 —— 「健康生活」筹备页从没有过卡片，也没上过
+        # 首页，没有内容可以搬。
+        wellness/index.md: index.md
 
 markdown_extensions:
   - admonition
@@ -168,11 +175,9 @@ nav:
   - HOME: index.md
   - TECH: tech/index.md
   - TOP-UP: topup/index.md
+  # STYLE 这一格 2026-09-22 起装两个图集：穿搭写真与汽车实拍。原来单列的
+  # WELLNESS（筹备中，从没有过卡片）与 CAR（六张卡）都在这一天删除。
   - STYLE: sim-gear/index.md
-  - WELLNESS: wellness/index.md
-  # 2026-09-22 加：汽车实拍图集。和 STYLE 一样是「进来看图」的页，不卖东西，
-  # 所以挨着 WELLNESS 排，排在帮助页前面。
-  - CAR: car/index.md
   # 2026-09-21 加：全站唯一一份「怎么买」的说明，不挂在任何商品类目下，
   # 自己是一个入口；放在最后，是这一排里唯一的帮助页。
   - FAQ: faq/index.md

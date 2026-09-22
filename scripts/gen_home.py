@@ -6,12 +6,11 @@ The homepage has no content of its own. The rule is one line: **every card on
 the front page is the newest six cards of a category, copied out of that
 category's page.**
 
-`Category` means the top-level nav in mkdocs.yml — TECH, TOP-UP, STYLE,
-WELLNESS, CAR, FAQ — read from that file rather than listed here, so a category
-added to the nav reaches the front page with no edit to this script. A category
-whose page holds no cards (WELLNESS, FAQ) contributes nothing; "如果有的话" is
-the whole of that rule, and the run summary prints a 0 so a category cannot
-quietly stop contributing.
+`Category` means the top-level nav in mkdocs.yml — TECH, TOP-UP, STYLE, FAQ —
+read from that file rather than listed here, so a category added to the nav
+reaches the front page with no edit to this script. A category whose page holds
+no cards (FAQ) contributes nothing; "如果有的话" is the whole of that rule, and
+the run summary prints a 0 so a category cannot quietly stop contributing.
 
 The cards are copied, not re-drawn. This script used to rebuild each one from a
 per-category pool of its own — its own title, its own excerpt, its own picture,
@@ -91,7 +90,7 @@ def nav_categories() -> list[tuple[str, str]]:
 
 
 # A section head's date, in both spellings the site uses:
-#   更新于 2026-09-22                              (/car, /tech, /sim-gear)
+#   更新于 2026-09-22                              (/tech, /sim-gear)
 #   更新于 <span class="js-prices-updated">…</span>  (/topup — rewritten in the
 #                                                    browser from prices.json)
 STAMP = re.compile(r"更新于\s*(?:<span[^>]*>)?\s*(\d{4}-\d{2}-\d{2})")

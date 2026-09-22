@@ -21,9 +21,7 @@ cd c:\1Work\acebase.cc
 | `/` | 首页（各类目最新 6 条，由 `scripts/gen_home.py` 生成，勿手改；改完任何类目页都要重跑一次） |
 | `/topup/` | 代储与礼品卡价格参考（游戏代储 / 礼品卡 / 直播代储） |
 | `/tech/` | 显卡价格参考（RTX 全系） |
-| `/sim-gear/` | STYLE（球拍与器材） |
-| `/wellness/` | 健康生活（筹备中） |
-| `/car/` | CAR（汽车实拍图集，6 套 91 张，由 `_tmp_ocr/car_prep/prep.py` 生成） |
+| `/sim-gear/` | STYLE（穿搭写真 8 套 18 张 + 汽车实拍 6 套 91 张，同一个网格） |
 | `/faq/` | 购买指南（下单流程 / 付款 / 费用 / 常见问题） |
 | `/gallery/` | 相册（手办 / 模型照片墙） |
 | `/pc-components/` | 电脑组件 |
