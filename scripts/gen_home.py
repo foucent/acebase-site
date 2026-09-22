@@ -98,10 +98,12 @@ def nav_categories() -> list[tuple[str, str]]:
 STAMP = re.compile(r"更新于\s*(?:<span[^>]*>)?\s*(\d{4}-\d{2}-\d{2})")
 # …and it has to be found inside a head. Every card also carries a
 # `数据更新于 2026-09-21` footer of its own, so an unscoped search over the
-# section would take the first card's footer for the section's date: /topup/ and
-# /tech/ have no heads since 2026-09-22 and would be dated by whichever price
-# card happens to be written first — a card's own date moving would reorder the
-# front page. A section with no head has no stamp, and falls back as below.
+# section would take the first card's footer for the section's date: /topup/ has
+# no head since 2026-09-22 and would be dated by whichever price card happens to
+# be written first — a card's own date moving would reorder the front page.
+# (/tech/ has no head either but no footers to trip over since its price cards
+# came out on 2026-09-22.) A section with no head has no stamp, and falls back
+# as below.
 HEAD = re.compile(r'<header class="ab-section__head">(.*?)</header>', re.S)
 # A lookahead, so finditer reports where each section starts rather than
 # consuming the tag: those offsets are what cards_of() indexes the file with.

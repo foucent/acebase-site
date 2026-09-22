@@ -49,17 +49,19 @@ plugins:
         games/valorant-accounts.md: index.md
         currency/index.md: index.md
         games/buy-robux.md: index.md
-        games/rtx-5050.md: tech/index.md
-        games/gpu-prices.md: tech/index.md
-        # 八个型号页 2026-09-21 下线，旧 URL 一并指回总览页，免得留下 404。
-        games/rtx-5060.md: tech/index.md
-        games/rtx-5060-ti.md: tech/index.md
-        games/rtx-4070-ti-super.md: tech/index.md
-        games/rtx-4080.md: tech/index.md
-        games/rtx-4080-super.md: tech/index.md
-        games/rtx-4090.md: tech/index.md
-        games/rtx-3060.md: tech/index.md
-        games/rtx-3060-ti.md: tech/index.md
+        # 显卡相关的十个旧 URL 2026-09-22 起全部指 /games/gpu-deals/ —— /tech/ 从
+        # 这一天起是电竞房与桌搭实拍图集，不再讲任何显卡价，全站还在讲显卡价的
+        # 只剩这一页。下面八个型号页是 2026-09-21 下线的，当初指回当时的总览页。
+        games/rtx-5050.md: games/gpu-deals.md
+        games/gpu-prices.md: games/gpu-deals.md
+        games/rtx-5060.md: games/gpu-deals.md
+        games/rtx-5060-ti.md: games/gpu-deals.md
+        games/rtx-4070-ti-super.md: games/gpu-deals.md
+        games/rtx-4080.md: games/gpu-deals.md
+        games/rtx-4080-super.md: games/gpu-deals.md
+        games/rtx-4090.md: games/gpu-deals.md
+        games/rtx-3060.md: games/gpu-deals.md
+        games/rtx-3060-ti.md: games/gpu-deals.md
         # 代储价格页 2026-09-21 从 /games/topup-prices/ 提到顶层 /topup/，
         # 和 /tech/ 并列。旧 URL 指过去，免得留下 404。
         games/topup-prices.md: topup/index.md

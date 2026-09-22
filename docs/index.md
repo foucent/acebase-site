@@ -16,89 +16,9 @@ hide:
       <h2 class="ab-section__title">最近更新</h2>
     </header>
     <div class="ab-list ab-list--feed">
-    <article class="ab-card ab-card--photo ab-card--fold ab-card--ec ab-card--goods" id="osmo-pocket-3">
-      <div class="ab-card__media">
-        <img src="/assets/games/osmo-pocket-3-card.jpg" alt="DJI Osmo Pocket 3 口袋云台相机价格参考" loading="lazy" decoding="async" fetchpriority="high">
-      </div>
-      <div class="ab-card__copy">
-        <p class="ab-cat">TECH</p>
-        <h3 class="ab-card__title">DJI Osmo Pocket 3</h3>
-
-        <p class="ab-ec-list">
-          <span class="ab-ec-item"><span class="ab-ec-label">价格</span><span class="ab-ec-price">$284.9</span></span><br>
-          <span class="ab-ec-item"><span class="ab-ec-label">渠道</span><span class="ab-ec-price">京东</span></span>
-        </p>
-        <details class="ab-fold">
-          <summary class="ab-fold__summary">
-            <span class="ab-fold__lead">三轴机械云台、4K/120fps 拍摄、2 英寸可旋转触摸屏的口袋云台相机，免运费。</span>
-            <span class="ab-fold__act">
-              <span class="ab-fold__cue"><span class="ab-fold__cue-more">展开</span><span class="ab-fold__cue-less">收起</span></span>
-              <em class="ab-fold__or">或</em>
-              <a class="ab-fold__buy ab-crisp-open" href="#" data-crisp-msg="你好，我想咨询 DJI Osmo Pocket 3 的实时价格。">查询实时价格</a>
-            </span>
-          </summary>
-        </details>
-
-        <p class="ab-ec-foot">数据更新于 2026-09-21 &middot; 报价以在线咨询为准</p>
-      </div>
-    </article>
-    <article class="ab-card ab-card--photo ab-card--fold ab-card--ec ab-card--goods" id="osmo-action-5-pro">
-      <div class="ab-card__media">
-        <img src="/assets/games/osmo-action-5-pro-card.jpg" alt="DJI Osmo Action 5 Pro 运动相机价格参考" loading="lazy" decoding="async">
-      </div>
-      <div class="ab-card__copy">
-        <p class="ab-cat">TECH</p>
-        <h3 class="ab-card__title">DJI Osmo Action 5 Pro</h3>
-
-        <p class="ab-ec-list">
-          <span class="ab-ec-item"><span class="ab-ec-label">价格</span><span class="ab-ec-price">$282.51</span></span><br>
-          <span class="ab-ec-item"><span class="ab-ec-label">渠道</span><span class="ab-ec-price">京东</span></span>
-        </p>
-        <details class="ab-fold">
-          <summary class="ab-fold__summary">
-            <span class="ab-fold__lead">1/1.3 英寸传感器、13.5 挡动态范围、4K/60fps 高动态低光、前后双 OLED 高亮触摸屏、4 小时续航，标准版内置 47GB。这个价格实在太好了这个价格实在太好了这个价格实在太好了这个价格实在太好了</span>
-            <span class="ab-fold__act">
-              <span class="ab-fold__cue"><span class="ab-fold__cue-more">展开</span><span class="ab-fold__cue-less">收起</span></span>
-              <em class="ab-fold__or">或</em>
-              <a class="ab-fold__buy ab-crisp-open" href="#" data-crisp-msg="你好，我想咨询 DJI Osmo Action 5 Pro 的实时价格。">查询实时价格</a>
-            </span>
-          </summary>
-        </details>
-
-        <p class="ab-ec-foot">数据更新于 2026-09-20 &middot; 报价以在线咨询为准</p>
-      </div>
-    </article>
-    <article class="ab-card ab-card--photo ab-card--fold ab-card--ec" id="rtx-5050">
-      <div class="ab-card__media">
-        <img src="/assets/games/rtx-5050.jpg" alt="RTX 5050 显卡价格参考" loading="lazy" decoding="async">
-      </div>
-      <div class="ab-card__copy">
-        <p class="ab-cat">TECH</p>
-        <h3 class="ab-card__title">RTX 5050</h3>
-        <details class="ab-fold">
-          <summary class="ab-fold__summary">
-            <span class="ab-fold__lead">Blackwell 架构、8GB GDDR7 的中端显卡，现价 $419，近 30 天上涨 6.3%。</span>
-            <span class="ab-fold__act">
-              <span class="ab-fold__cue"><span class="ab-fold__cue-more">展开</span><span class="ab-fold__cue-less">收起</span></span>
-              <em class="ab-fold__or">或</em>
-              <a class="ab-fold__buy ab-crisp-open" href="#" data-crisp-msg="你好，我想咨询 RTX 5050 的实时价格。">查询实时价格</a>
-            </span>
-          </summary>
-        </details>
-
-        <p class="ab-ec-list">
-          <span class="ab-ec-item"><span class="ab-ec-label">当前市场均价</span><span class="ab-ec-price">$419.</span></span><br>
-          <span class="ab-ec-item"><span class="ab-ec-label">历史最低（2025-12-25）</span><span class="ab-ec-price">$254.</span></span><br>
-          <span class="ab-ec-item"><span class="ab-ec-label">近 30 天均价</span><span class="ab-ec-price">$406.</span></span><br>
-          <span class="ab-ec-item"><span class="ab-ec-label">近 30 天区间</span><span class="ab-ec-price">$388 – $419.</span></span>
-        </p>
-
-        <p class="ab-ec-foot">数据更新于 2026-09-09 &middot; 报价以在线咨询为准</p>
-      </div>
-    </article>
     <article class="ab-card ab-card--portrait ab-card--lightbox" id="desk-01" data-gallery="[&quot;/assets/gallery/desk/desk_01_01.jpg&quot;, &quot;/assets/gallery/desk/desk_01_02.jpg&quot;, &quot;/assets/gallery/desk/desk_01_03.jpg&quot;, &quot;/assets/gallery/desk/desk_01_04.jpg&quot;, &quot;/assets/gallery/desk/desk_01_05.jpg&quot;, &quot;/assets/gallery/desk/desk_01_06.jpg&quot;, &quot;/assets/gallery/desk/desk_01_07.jpg&quot;]" data-caption="开放式 ITX 装机" data-look="desk-01" data-buy="#">
       <a class="ab-card__media" href="/assets/gallery/desk/desk_01_01.jpg" tabindex="-1" aria-hidden="true">
-        <img src="/assets/gallery/desk/desk_01_01.jpg" alt="" decoding="async">
+        <img src="/assets/gallery/desk/desk_01_01.jpg" alt="" decoding="async" fetchpriority="high">
       </a>
       <div class="ab-card__copy">
         <p class="ab-cat">装机</p>
@@ -127,6 +47,39 @@ hide:
         <h3 class="ab-card__title"><a href="/assets/gallery/desk/desk_03_01.jpg">暖光双屏桌面</a></h3>
         <p class="ab-card__excerpt">点开可看整套。</p>
         <p class="ab-card__more"><a href="/assets/gallery/desk/desk_03_01.jpg">查看图集</a></p>
+      </div>
+    </article>
+    <article class="ab-card ab-card--portrait ab-card--lightbox" id="desk-04" data-gallery="[&quot;/assets/gallery/desk/desk_04_01.jpg&quot;, &quot;/assets/gallery/desk/desk_04_02.jpg&quot;, &quot;/assets/gallery/desk/desk_04_03.jpg&quot;, &quot;/assets/gallery/desk/desk_04_04.jpg&quot;, &quot;/assets/gallery/desk/desk_04_05.jpg&quot;, &quot;/assets/gallery/desk/desk_04_06.jpg&quot;, &quot;/assets/gallery/desk/desk_04_07.jpg&quot;, &quot;/assets/gallery/desk/desk_04_08.jpg&quot;, &quot;/assets/gallery/desk/desk_04_09.jpg&quot;]" data-caption="临窗曲面屏电竞房" data-look="desk-04" data-buy="#">
+      <a class="ab-card__media" href="/assets/gallery/desk/desk_04_01.jpg" tabindex="-1" aria-hidden="true">
+        <img src="/assets/gallery/desk/desk_04_01.jpg" alt="" loading="lazy" decoding="async">
+      </a>
+      <div class="ab-card__copy">
+        <p class="ab-cat">桌搭</p>
+        <h3 class="ab-card__title"><a href="/assets/gallery/desk/desk_04_01.jpg">临窗曲面屏电竞房</a></h3>
+        <p class="ab-card__excerpt">点开可看整套。</p>
+        <p class="ab-card__more"><a href="/assets/gallery/desk/desk_04_01.jpg">查看图集</a></p>
+      </div>
+    </article>
+    <article class="ab-card ab-card--portrait ab-card--lightbox" id="desk-05" data-gallery="[&quot;/assets/gallery/desk/desk_05_01.jpg&quot;, &quot;/assets/gallery/desk/desk_05_02.jpg&quot;, &quot;/assets/gallery/desk/desk_05_03.jpg&quot;, &quot;/assets/gallery/desk/desk_05_04.jpg&quot;, &quot;/assets/gallery/desk/desk_05_05.jpg&quot;, &quot;/assets/gallery/desk/desk_05_06.jpg&quot;]" data-caption="苹果设备桌面" data-look="desk-05" data-buy="#">
+      <a class="ab-card__media" href="/assets/gallery/desk/desk_05_01.jpg" tabindex="-1" aria-hidden="true">
+        <img src="/assets/gallery/desk/desk_05_01.jpg" alt="" loading="lazy" decoding="async">
+      </a>
+      <div class="ab-card__copy">
+        <p class="ab-cat">桌搭</p>
+        <h3 class="ab-card__title"><a href="/assets/gallery/desk/desk_05_01.jpg">苹果设备桌面</a></h3>
+        <p class="ab-card__excerpt">点开可看整套。</p>
+        <p class="ab-card__more"><a href="/assets/gallery/desk/desk_05_01.jpg">查看图集</a></p>
+      </div>
+    </article>
+    <article class="ab-card ab-card--portrait ab-card--lightbox" id="desk-06" data-gallery="[&quot;/assets/gallery/desk/desk_06_01.jpg&quot;, &quot;/assets/gallery/desk/desk_06_02.jpg&quot;, &quot;/assets/gallery/desk/desk_06_03.jpg&quot;]" data-caption="帘前双屏工位" data-look="desk-06" data-buy="#">
+      <a class="ab-card__media" href="/assets/gallery/desk/desk_06_01.jpg" tabindex="-1" aria-hidden="true">
+        <img src="/assets/gallery/desk/desk_06_01.jpg" alt="" loading="lazy" decoding="async">
+      </a>
+      <div class="ab-card__copy">
+        <p class="ab-cat">桌搭</p>
+        <h3 class="ab-card__title"><a href="/assets/gallery/desk/desk_06_01.jpg">帘前双屏工位</a></h3>
+        <p class="ab-card__excerpt">点开可看整套。</p>
+        <p class="ab-card__more"><a href="/assets/gallery/desk/desk_06_01.jpg">查看图集</a></p>
       </div>
     </article>
     <article class="ab-card ab-card--portrait ab-card--lightbox" id="style-02" data-gallery="[&quot;/assets/gallery/wallpapers/style/style_02_01.jpg&quot;, &quot;/assets/gallery/wallpapers/style/style_02_02.jpg&quot;]" data-caption="可爱蝴蝶结登场" data-look="style-02" data-buy="#">

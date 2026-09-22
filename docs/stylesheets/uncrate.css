@@ -848,9 +848,9 @@
   position: static;
 }
 
-/* The cards carry the model ids — the jump list that used to point at them is
-   gone, but `/tech/#rtx-5050` is still a link anyone can be sent, so they keep
-   the offset off the top edge the bands had. */
+/* The cards carry the ids — the jump lists that used to point at them are gone,
+   but `/tech/#desk-01` is still a link anyone can be sent, so they keep the
+   offset off the top edge the bands had. */
 .md-typeset .ab-mag .ab-card {
   scroll-margin-top: 4.5rem;
 }

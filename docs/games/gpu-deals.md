@@ -14,7 +14,7 @@ hide:
       <span class="ab-stamp" aria-hidden="true">更新于 2026-09-20</span>
       <h1 class="ab-section__title">显卡好价参考</h1>
     </header>
-    <p class="ab-section__lead">这里记的是具体品牌型号的成交价，以及这个价是怎么构成的 —— 活动价、优惠券、会员立减各扣多少。和「显卡价格参考」互为对照：那边告诉你某个型号大概什么行情，这边告诉你某个具体 SKU 现在能到什么价（美元计价）。</p>
+    <p class="ab-section__lead">这里记的是具体品牌型号的成交价，以及这个价是怎么构成的 —— 活动价、优惠券、会员立减各扣多少。全站的显卡行情只在这一页，别处不再重复：这边告诉你某个具体 SKU 现在能到什么价（美元计价）。</p>
   </section>
 
   <article class="ab-hero ab-hero--article ab-hero--photo">
@@ -22,7 +22,7 @@ hide:
       <img src="/assets/games/rtx-5060.jpg" alt="微星 RTX 5060 万图师 2X OC 显卡价格参考" fetchpriority="high" decoding="async">
     </div>
     <div class="ab-hero__copy">
-      <p class="ab-cat"><a href="/tech/">显卡价格参考</a></p>
+      <p class="ab-cat"><a href="/tech/">电竞房与桌搭</a></p>
       <h2 class="ab-hero__title">微星 RTX 5060 8G 万图师 2X OC</h2>
       <details class="ab-fold">
         <summary class="ab-fold__summary">
@@ -51,7 +51,7 @@ hide:
 
 <div class="admonition note mg-games__note">
   <p class="admonition-title">相关</p>
-  <p><a href="/tech/">显卡价格参考</a> &middot; <a href="/pc-components/">电脑组件</a> &middot; <a href="/topup/">代储与礼品卡价格参考</a> &middot; <a href="/faq/">购买指南</a></p>
+  <p><a href="/tech/">电竞房与桌搭</a> &middot; <a href="/pc-components/">电脑组件</a> &middot; <a href="/topup/">代储与礼品卡价格参考</a> &middot; <a href="/faq/">购买指南</a></p>
 </div>
 
 <script type="application/ld+json">
@@ -82,7 +82,7 @@ hide:
       "@type": "BreadcrumbList",
       "itemListElement": [
         { "@type": "ListItem", "position": 1, "name": "首页", "item": "https://acebase.cc/" },
-        { "@type": "ListItem", "position": 2, "name": "显卡价格参考", "item": "https://acebase.cc/tech/" },
+        { "@type": "ListItem", "position": 2, "name": "电竞房与桌搭", "item": "https://acebase.cc/tech/" },
         { "@type": "ListItem", "position": 3, "name": "显卡好价参考", "item": "https://acebase.cc/games/gpu-deals/" }
       ]
     }
