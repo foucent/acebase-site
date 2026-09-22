@@ -22,17 +22,19 @@ markup that drives them came along. Two things are touched on the way: the
 indentation is normalised to the front page's depth, and the source page's own
 first-image priority is taken off (the front page promotes its own first card).
 
-`Newest` is a section's own 更新于 date, not the page's. A page can hold more
-than one section and they do not have to be in date order — /tech puts its
-prices (09-21) above its photo sets (09-22) — so the section a card sits in is
-what dates it. Within one date the page's own order stands. The consequence
-worth knowing: a page whose cards all share one date, which is every page but
-/tech, is ordered by position alone, so the six taken are the six written first.
+`Newest` is a section head's own 更新于 date, not the page's. A page can hold
+more than one section and they do not have to be in date order, so the section a
+card sits in is what dates it; within one date the page's own order stands, so
+the six taken are the six written first. No page on the site has more than one
+section today — /topup/ had three and /tech/ two until 2026-09-22 merged each
+into a single grid — but the loop still reads sections, because that is how a
+page that grows a second one gets dated.
 
 The frontmatter's `updated:` is the fallback for a section that carries no
-stamp. It is not a substitute for one: a page that has cards and no date at all
-is named on stderr rather than dated by guesswork, because an invented date
-would reorder the whole front page.
+stamp — /topup/ and /tech/, which lost their heads on 2026-09-22, are dated this
+way; /sim-gear/ still carries one. It is not a substitute for a stamp: a page
+that has cards and no date at all is named on stderr rather than dated by
+guesswork, because an invented date would reorder the whole front page.
 
 Run from the repo root:  python scripts/gen_home.py
 """
@@ -94,6 +96,13 @@ def nav_categories() -> list[tuple[str, str]]:
 #   更新于 <span class="js-prices-updated">…</span>  (/topup — rewritten in the
 #                                                    browser from prices.json)
 STAMP = re.compile(r"更新于\s*(?:<span[^>]*>)?\s*(\d{4}-\d{2}-\d{2})")
+# …and it has to be found inside a head. Every card also carries a
+# `数据更新于 2026-09-21` footer of its own, so an unscoped search over the
+# section would take the first card's footer for the section's date: /topup/ and
+# /tech/ have no heads since 2026-09-22 and would be dated by whichever price
+# card happens to be written first — a card's own date moving would reorder the
+# front page. A section with no head has no stamp, and falls back as below.
+HEAD = re.compile(r'<header class="ab-section__head">(.*?)</header>', re.S)
 # A lookahead, so finditer reports where each section starts rather than
 # consuming the tag: those offsets are what cards_of() indexes the file with.
 SECTION = re.compile(r'(?=<section class="ab-section")')
@@ -138,7 +147,8 @@ def cards_of(rel: str) -> list[tuple[str, str, str]]:
     bounds = [0] + [m.start() for m in SECTION.finditer(text)] + [len(text)]
     for start, end in zip(bounds, bounds[1:]):
         chunk = text[start:end]
-        date = STAMP.search(chunk)
+        head = HEAD.search(chunk)
+        date = STAMP.search(head.group(1)) if head else None
         date = date.group(1) if date else stamp
         for art in ARTICLE.finditer(chunk):
             cls = CLASS.match(art.group(0))

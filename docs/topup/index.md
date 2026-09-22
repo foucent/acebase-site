@@ -10,11 +10,6 @@ hide:
 <div class="ab-mag" markdown="0">
 
   <section class="ab-section">
-    <header class="ab-section__head">
-      <span class="ab-stamp" aria-hidden="true">更新于 <span class="js-prices-updated">2026-09-21</span></span>
-      <h1 class="ab-section__title">代储与礼品卡价格参考</h1>
-    </header>
-
     <div class="ab-list ab-list--expandable">
     <article class="ab-card ab-card--brand ab-card--fold ab-card--ec" id="pubg-mobile">
       <div class="ab-card__media">
@@ -145,16 +140,6 @@ hide:
         <p class="ab-ec-foot">手游 &middot; PC &middot; 数据更新于 <span class="js-prices-updated">2026-09-21</span> &middot; 报价以在线咨询为准</p>
       </div>
     </article>
-    </div>
-  </section>
-
-  <section class="ab-section" id="gift-cards">
-    <header class="ab-section__head">
-      <span class="ab-stamp" aria-hidden="true">更新于 <span class="js-prices-updated">2026-09-21</span></span>
-      <h2 class="ab-section__title">礼品卡与卡密</h2>
-    </header>
-
-    <div class="ab-list ab-list--expandable">
     <article class="ab-card ab-card--brand ab-card--shop ab-card--fold ab-card--ec" id="amazon-gift-card-us">
       <div class="ab-card__media">
         <img src="/assets/games/brand/amazon-gift-card-us.png" alt="Amazon 礼品卡（美国）价格参考" loading="lazy" decoding="async">
@@ -492,16 +477,6 @@ hide:
         <p class="ab-ec-foot">全球 &middot; 数据更新于 <span class="js-prices-updated">2026-09-21</span> &middot; 报价以在线咨询为准</p>
       </div>
     </article>
-    </div>
-  </section>
-
-  <section class="ab-section" id="live">
-    <header class="ab-section__head">
-      <span class="ab-stamp" aria-hidden="true">更新于 <span class="js-prices-updated">2026-09-21</span></span>
-      <h2 class="ab-section__title">直播与语音平台代储</h2>
-    </header>
-
-    <div class="ab-list ab-list--expandable">
     <article class="ab-card ab-card--brand ab-card--shop ab-card--fold ab-card--ec" id="douyin-top-up">
       <div class="ab-card__media">
         <img src="/assets/games/brand/douyin-top-up.png" alt="抖音直播 代储价格参考" loading="lazy" decoding="async">

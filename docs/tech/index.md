@@ -10,10 +10,6 @@ hide:
 <div class="ab-mag" markdown="0">
 
   <section class="ab-section">
-    <header class="ab-section__head">
-      <span class="ab-stamp" aria-hidden="true">更新于 2026-09-21</span>
-      <h1 class="ab-section__title">数码价格参考</h1>
-    </header>
     <p class="ab-section__lead">显卡跟踪 RTX 5050 的行情均价，数码好物记录具体商品的价格与购买渠道。两类都按美元计价，报价以在线咨询为准。</p>
 
     <div class="ab-list ab-list--expandable">
@@ -98,19 +94,9 @@ hide:
         <p class="ab-ec-foot">数据更新于 2026-09-09 &middot; 报价以在线咨询为准</p>
       </div>
     </article>
-    </div>
-  </section>
-
-  <!-- 第二段 2026-09-22 加：这一段不卖东西，是别人装好的桌面。
-       卡片区由 _tmp_ocr/tech_prep/prep.py 按下面那对注释整段重写，价格区它碰不到。 -->
-  <section class="ab-section" id="desk">
-    <header class="ab-section__head">
-      <span class="ab-stamp" aria-hidden="true">更新于 2026-09-22</span>
-      <h2 class="ab-section__title">电竞房与桌搭</h2>
-    </header>
-    <p class="ab-section__lead">九套桌面与装机实拍，点开卡片即可在页内看整套。</p>
-    <div class="ab-list">
-      <!-- desk-cards:start -->
+    <!-- 下面九张 desk 卡由 _tmp_ocr/tech_prep/prep.py 按这对注释整段重写，价格卡
+         它碰不到；图集那块 JSON-LD 同理，见页尾那对 desk-jsonld 注释。 -->
+    <!-- desk-cards:start -->
     <article class="ab-card ab-card--portrait ab-card--lightbox" id="desk-01" data-gallery="[&quot;/assets/gallery/desk/desk_01_01.jpg&quot;, &quot;/assets/gallery/desk/desk_01_02.jpg&quot;, &quot;/assets/gallery/desk/desk_01_03.jpg&quot;, &quot;/assets/gallery/desk/desk_01_04.jpg&quot;, &quot;/assets/gallery/desk/desk_01_05.jpg&quot;, &quot;/assets/gallery/desk/desk_01_06.jpg&quot;, &quot;/assets/gallery/desk/desk_01_07.jpg&quot;]" data-caption="开放式 ITX 装机" data-look="desk-01" data-buy="#">
       <a class="ab-card__media" href="/assets/gallery/desk/desk_01_01.jpg" tabindex="-1" aria-hidden="true">
         <img src="/assets/gallery/desk/desk_01_01.jpg" alt="" fetchpriority="high" decoding="async">
@@ -210,7 +196,7 @@ hide:
         <p class="ab-card__more"><a href="/assets/gallery/desk/desk_09_01.jpg">查看图集</a></p>
       </div>
     </article>
-      <!-- desk-cards:end -->
+    <!-- desk-cards:end -->
     </div>
   </section>
 
@@ -293,7 +279,7 @@ hide:
       "@type": "ImageGallery",
       "name": "电竞房与桌搭",
       "description": "AceBase 数码价格参考页尾的桌面与装机实拍图集，73 张，更新于 2026-09-22。",
-      "url": "https://acebase.cc/tech/#desk"
+      "url": "https://acebase.cc/tech/"
     }
   ]
 }
