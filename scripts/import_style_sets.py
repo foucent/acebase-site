@@ -15,6 +15,10 @@ cannot drift into looking like two different components. What this script adds i
 four attributes that turn the card into a lightbox opener (see the CARD_SEL
 block in photo-wall.js).
 
+The page holds cards this importer did not make — the six car cards and
+style-10 — so ``--check`` compares its own eight and lists the rest in
+``NOT_MINE`` rather than calling them extra.
+
 The set ORDER is authored, not derived. The download timestamps run out of
 order (130700…130852), so sorting the folder cannot produce the reading order,
 and the numbering decides both the filenames and the card order. The table
@@ -70,6 +74,19 @@ MEDIA = "portrait"  # the 3:4 cover frame — the homepage's 穿搭写真 card u
 MAX_W = 1440
 QUALITY = 82
 FIRST_SET = 2  # style_01 is already on /gallery/ as the 穿搭写真 tile
+
+# Cards on the STYLE page that this importer did not make, and so must not be
+# reported as drift by --check. Two groups: the six car cards, merged into
+# /sim-gear/ from the retired /car/ page on 2026-09-22, and style-10, added by
+# hand on 2026-09-23 (its three frames and its markup come from
+# _tmp_ocr/style10_prep/prep.py, outside this repo, which prints the card by
+# calling markup() below). Without this list --check has been failing on the car
+# cards since the merge — it lists them as 多余的卡片, and because the check
+# stopped being able to pass, nobody read its output either way.
+NOT_MINE = {
+    "car-01", "car-02", "car-03", "car-04", "car-05", "car-06",
+    "style-10",
+}
 
 # (title derived from the filename, title to show on the card).
 # The order IS the style_NN numbering and the card order. One entry is
@@ -257,13 +274,15 @@ def main() -> None:
 
     if args.check:
         live = page_articles()
-        drift = [k for k in live if k not in {s["slug"] for s in setdefs}]
+        drift = [k for k in live if k not in {s["slug"] for s in setdefs}
+                 and k not in NOT_MINE]
         for setdef, block in zip(setdefs, blocks):
             if live.get(setdef["slug"]) != block:
                 raise SystemExit(f"{setdef['slug']} 和页面上的不一样，跑一次不带参数的。")
         if drift:
             raise SystemExit(f"页面上有多余的卡片：{drift}")
-        print(f"页面上 {len(live)} 张卡与脚本重生的一致。")
+        print(f"脚本管的 {len(setdefs)} 张卡与页面上的逐字一致"
+              f"（页面上另有 {len(NOT_MINE)} 张不归它管，见 NOT_MINE）。")
         return
 
     if not args.dry_run:

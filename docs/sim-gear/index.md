@@ -1,7 +1,7 @@
 ---
 title: STYLE | 穿搭与汽车图集
-description: AceBase STYLE —— 穿搭写真 8 套 18 张、汽车实拍 6 套 91 张，点开卡片即可在页内看整套。
-updated: 2026-09-22
+description: AceBase STYLE —— 穿搭写真 9 套 21 张、汽车实拍 6 套 91 张，点开卡片即可在页内看整套。
+updated: 2026-09-23
 hide:
   - title
   - toc
@@ -107,6 +107,21 @@ hide:
       </div>
     </article>
 
+    <!-- style-10：2026-09-23 加的一张，素材是 Downloads\新建文件夹 里三张
+         截图（粉色碎花层叠短裙配白上衣）。出图与卡片的生成器在仓库外：
+         _tmp_ocr/style10_prep/prep.py —— 它只打印卡片，页面是手写的。 -->
+    <article class="ab-card ab-card--portrait ab-card--lightbox" id="style-10" data-gallery="[&quot;/assets/gallery/wallpapers/style/style_10_01.jpg&quot;, &quot;/assets/gallery/wallpapers/style/style_10_02.jpg&quot;, &quot;/assets/gallery/wallpapers/style/style_10_03.jpg&quot;]" data-caption="Pink floral tiered ruffle mini skirt with white blouse" data-look="style-10" data-buy="#">
+      <a class="ab-card__media" href="/assets/gallery/wallpapers/style/style_10_01.jpg" tabindex="-1" aria-hidden="true">
+        <img src="/assets/gallery/wallpapers/style/style_10_01.jpg" alt="" loading="lazy" decoding="async">
+      </a>
+      <div class="ab-card__copy">
+        <p class="ab-cat">画廊</p>
+        <h3 class="ab-card__title"><a href="/assets/gallery/wallpapers/style/style_10_01.jpg">Pink floral tiered ruffle mini skirt with white blouse</a></h3>
+        <p class="ab-card__excerpt">点开可看整套。</p>
+        <p class="ab-card__more"><a href="/assets/gallery/wallpapers/style/style_10_01.jpg">查看图集</a></p>
+      </div>
+    </article>
+
     <!-- car-01…06：2026-09-22 从已下线的 /car/ 页整段并入，卡片未作改动。 -->
 
     <article class="ab-card ab-card--portrait ab-card--lightbox" id="car-01" data-gallery="[&quot;/assets/gallery/car/car_01_01.jpg&quot;, &quot;/assets/gallery/car/car_01_02.jpg&quot;, &quot;/assets/gallery/car/car_01_03.jpg&quot;, &quot;/assets/gallery/car/car_01_04.jpg&quot;, &quot;/assets/gallery/car/car_01_05.jpg&quot;, &quot;/assets/gallery/car/car_01_06.jpg&quot;, &quot;/assets/gallery/car/car_01_07.jpg&quot;, &quot;/assets/gallery/car/car_01_08.jpg&quot;, &quot;/assets/gallery/car/car_01_09.jpg&quot;, &quot;/assets/gallery/car/car_01_10.jpg&quot;, &quot;/assets/gallery/car/car_01_11.jpg&quot;, &quot;/assets/gallery/car/car_01_12.jpg&quot;]" data-caption="宝马 5 系" data-look="car-01" data-buy="#">
@@ -197,7 +212,7 @@ hide:
     {
       "@type": "WebPage",
       "name": "STYLE · 穿搭与汽车",
-      "description": "AceBase STYLE —— 穿搭写真 8 套 18 张、汽车实拍 6 套 91 张，点开卡片即可在页内看整套。",
+      "description": "AceBase STYLE —— 穿搭写真 9 套 21 张、汽车实拍 6 套 91 张，点开卡片即可在页内看整套。",
       "url": "https://acebase.cc/sim-gear/"
     },
     {
@@ -212,12 +227,13 @@ hide:
         { "@type": "ListItem", "position": 6, "item": { "@type": "ImageObject", "name": "紫裙摆", "contentUrl": "https://acebase.cc/assets/gallery/wallpapers/style/style_07_01.jpg", "url": "https://acebase.cc/sim-gear/#style-07" } },
         { "@type": "ListItem", "position": 7, "item": { "@type": "ImageObject", "name": "薄雾余灰", "contentUrl": "https://acebase.cc/assets/gallery/wallpapers/style/style_08_01.jpg", "url": "https://acebase.cc/sim-gear/#style-08" } },
         { "@type": "ListItem", "position": 8, "item": { "@type": "ImageObject", "name": "蝉鸣不止的夏日总会结束", "contentUrl": "https://acebase.cc/assets/gallery/wallpapers/style/style_09_01.jpg", "url": "https://acebase.cc/sim-gear/#style-09" } },
-        { "@type": "ListItem", "position": 9, "item": { "@type": "ImageObject", "name": "宝马 5 系", "contentUrl": "https://acebase.cc/assets/gallery/car/car_01_01.jpg", "url": "https://acebase.cc/sim-gear/#car-01" } },
-        { "@type": "ListItem", "position": 10, "item": { "@type": "ImageObject", "name": "凌志 LS", "contentUrl": "https://acebase.cc/assets/gallery/car/car_02_01.jpg", "url": "https://acebase.cc/sim-gear/#car-02" } },
-        { "@type": "ListItem", "position": 11, "item": { "@type": "ImageObject", "name": "保时捷卡宴 Turbo", "contentUrl": "https://acebase.cc/assets/gallery/car/car_03_01.jpg", "url": "https://acebase.cc/sim-gear/#car-03" } },
-        { "@type": "ListItem", "position": 12, "item": { "@type": "ImageObject", "name": "宝马 X6", "contentUrl": "https://acebase.cc/assets/gallery/car/car_04_01.jpg", "url": "https://acebase.cc/sim-gear/#car-04" } },
-        { "@type": "ListItem", "position": 13, "item": { "@type": "ImageObject", "name": "奥迪 Q7", "contentUrl": "https://acebase.cc/assets/gallery/car/car_05_01.jpg", "url": "https://acebase.cc/sim-gear/#car-05" } },
-        { "@type": "ListItem", "position": 14, "item": { "@type": "ImageObject", "name": "路虎揽胜", "contentUrl": "https://acebase.cc/assets/gallery/car/car_06_01.jpg", "url": "https://acebase.cc/sim-gear/#car-06" } }
+        { "@type": "ListItem", "position": 9, "item": { "@type": "ImageObject", "name": "Pink floral tiered ruffle mini skirt with white blouse", "contentUrl": "https://acebase.cc/assets/gallery/wallpapers/style/style_10_01.jpg", "url": "https://acebase.cc/sim-gear/#style-10" } },
+        { "@type": "ListItem", "position": 10, "item": { "@type": "ImageObject", "name": "宝马 5 系", "contentUrl": "https://acebase.cc/assets/gallery/car/car_01_01.jpg", "url": "https://acebase.cc/sim-gear/#car-01" } },
+        { "@type": "ListItem", "position": 11, "item": { "@type": "ImageObject", "name": "凌志 LS", "contentUrl": "https://acebase.cc/assets/gallery/car/car_02_01.jpg", "url": "https://acebase.cc/sim-gear/#car-02" } },
+        { "@type": "ListItem", "position": 12, "item": { "@type": "ImageObject", "name": "保时捷卡宴 Turbo", "contentUrl": "https://acebase.cc/assets/gallery/car/car_03_01.jpg", "url": "https://acebase.cc/sim-gear/#car-03" } },
+        { "@type": "ListItem", "position": 13, "item": { "@type": "ImageObject", "name": "宝马 X6", "contentUrl": "https://acebase.cc/assets/gallery/car/car_04_01.jpg", "url": "https://acebase.cc/sim-gear/#car-04" } },
+        { "@type": "ListItem", "position": 14, "item": { "@type": "ImageObject", "name": "奥迪 Q7", "contentUrl": "https://acebase.cc/assets/gallery/car/car_05_01.jpg", "url": "https://acebase.cc/sim-gear/#car-05" } },
+        { "@type": "ListItem", "position": 15, "item": { "@type": "ImageObject", "name": "路虎揽胜", "contentUrl": "https://acebase.cc/assets/gallery/car/car_06_01.jpg", "url": "https://acebase.cc/sim-gear/#car-06" } }
       ]
     },
     {
