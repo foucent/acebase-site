@@ -103,20 +103,16 @@
 
 /* ---------- band 1 family strip ----------
    uncrate's slim family row, sitting on the black band above the wordmark:
-   the sibling sites and the account handle on one centred line, uppercase,
-   with a hairline under them. Numbers are uncrate's own — 12px/700 with 0.5px
-   of tracking, 24px between items, 13px above and 14px below, a 1px white
-   rule across the 960px column, and the channel menu hanging off the handle.
+   the sibling sites and the brand on one centred line, uppercase, with a
+   hairline under them. Numbers are uncrate's own — 12px/700 with 0.5px of
+   tracking, 24px between items, 13px above and 14px below, and a 1px white
+   rule across the 960px column. (uncrate hangs a channel menu off the handle;
+   this strip had one too until 2026-09-23, and now opens the chat window
+   instead — so nothing here is positioned or stacked any more.)
 
    `px` throughout, and no rem: the strip is a fixed 960px column, so its
    contents must not grow when Material steps the root font size up (20px →
    22px at 100em → 24px at 125em). */
-.ab-family {
-  position: relative;
-  /* Above the wordmark row's tools (z-index 5) so the open menu is never
-     clipped by the search box. */
-  z-index: 6;
-}
 
 .ab-family__list {
   display: flex;
@@ -136,9 +132,7 @@
   position: relative;
 }
 
-.ab-family__link,
-.ab-family__toggle,
-.ab-family__menu a {
+.ab-family__link {
   display: block;
   font-family: inherit;
   font-size: 12px;
@@ -154,22 +148,8 @@
   transition: opacity 0.15s ease, color 0.15s ease;
 }
 
-.ab-family__toggle {
-  /* A button, not a link — it opens the menu rather than going anywhere — so
-     it needs the button chrome taken off it. */
-  margin: 0;
-  padding: 0;
-  background: none;
-  border: 0;
-  cursor: pointer;
-}
-
 .ab-family__link:hover,
-.ab-family__link:focus-visible,
-.ab-family__toggle:hover,
-.ab-family__toggle:focus-visible,
-.ab-family__menu a:hover,
-.ab-family__menu a:focus-visible {
+.ab-family__link:focus-visible {
   opacity: 1;
   color: var(--ab-accent) !important;
 }
@@ -177,33 +157,6 @@
 /* uncrate's .atsign: the @ is spacing, not part of the name. */
 .ab-family__at {
   padding-right: 2px;
-}
-
-/* Black on black, opened where uncrate opens @uncrate: at the handle's own
-   baseline box, 25px of lead-in, 20px of tail, and the box reaching 20px left
-   of the handle so the channel names line up under it. */
-.ab-family__menu {
-  display: none;
-  position: absolute;
-  top: 100%;
-  left: -20px;
-  z-index: 6;
-  margin: 0;
-  padding: 25px 20px 20px;
-  list-style: none;
-  background: var(--ab-header-bg);
-}
-
-.ab-family__menu a {
-  padding: 3px 0;
-}
-
-/* Hover, or keyboard focus anywhere inside the item. The toggle is a button,
-   so Tab lands on it, opens the menu, and the next Tab reaches the channels —
-   which is what keeps this usable without JS. */
-.ab-family__item:hover .ab-family__menu,
-.ab-family__item:focus-within .ab-family__menu {
-  display: block;
 }
 
 .ab-band__tool {
@@ -301,15 +254,11 @@
     padding: 0 16px;
   }
 
-  /* The band pads by 16px here, not 20, so the strip and the menu's left edge
-     follow it — otherwise the panel hangs 4px off the viewport. */
+  /* 16px rather than the 20px above: the band's own padding is 16px on a
+     narrow screen. */
   .ab-family__list {
     gap: 6px 16px;
     padding: 10px 16px 11px;
-  }
-
-  .ab-family__menu {
-    left: -16px;
   }
 
   /* The drawer label and the search icon sit ~200px apart on a 390px band,

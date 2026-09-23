@@ -29,16 +29,21 @@
   {#- band 1 — black -#}
   <div class="ab-band">
     {#- uncrate's family row, above the wordmark: the sibling sites and the
-        account handle on one centred line, uppercase, with a hairline under
-        them. The handle opens the channel list on hover or focus.
+        brand on one centred line, uppercase, with a hairline under them.
 
-        The handle's label is the brand rather than a configured string — the
-        menu below it holds the channels, which are exactly the youtube/* ones
-        main.html declares as sameAs. One list, so a channel cannot appear in
-        the menu without also being declared to crawlers. -#}
+        The brand item used to be the @AceBase handle, opening a menu of the
+        site's own youtube channels on hover or focus. Since 2026-09-23 it
+        opens the chat window instead — same label, no menu. The channels are
+        still declared to crawlers by main.html, which reads the same
+        extra.channels list for the Organization node's sameAs; they are simply
+        not rendered anywhere on the page now, so that list is read once.
+
+        The opener is a plain <a class="ab-crisp-open" href="#">, the same
+        markup the site's other CTAs use: crisp.js intercepts a click on any
+        .ab-crisp-open element, wherever it is. The label says "@ AceBase" and
+        not what it does, so the accessible name and the tooltip say it. -#}
     {% set family = config.extra.family | d([], true) %}
-    {% set channels = config.extra.channels | d([], true) %}
-    {% if family or channels %}
+    {% if family %}
       <div class="ab-family">
         <ul class="ab-family__list">
           {% for item in family %}
@@ -46,25 +51,11 @@
               <a class="ab-family__link" href="{{ item.link | url }}">{{ item.label }}</a>
             </li>
           {% endfor %}
-          {% if channels %}
-            <li class="ab-family__item">
-              {#- A button, not a link: it opens the menu instead of navigating.
-                  Buttons take focus, so :focus-within hands the menu to the
-                  keyboard without any script. -#}
-              <button type="button" class="ab-family__toggle" aria-haspopup="true" aria-label="{{ config.site_name }}">
-                <span class="ab-family__at" aria-hidden="true">@</span>{{ config.site_name }}
-              </button>
-              <ul class="ab-family__menu">
-                {% for s in channels %}
-                  <li>
-                    <a href="{{ s.link }}" target="_blank" rel="noopener" title="{{ s.name }}" aria-label="{{ s.name }}">
-                      <span class="ab-family__at" aria-hidden="true">@</span>{{ s.name }}
-                    </a>
-                  </li>
-                {% endfor %}
-              </ul>
-            </li>
-          {% endif %}
+          <li class="ab-family__item">
+            <a class="ab-family__link ab-crisp-open" href="#" title="在线咨询" aria-label="在线咨询" data-crisp-msg="你好，我想咨询一下。">
+              <span class="ab-family__at" aria-hidden="true">@</span>{{ config.site_name }}
+            </a>
+          </li>
         </ul>
       </div>
     {% endif %}

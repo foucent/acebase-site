@@ -144,7 +144,7 @@ extra:
     provider: google
     property: G-N7QW2VCWYG
   # uncrate's family row, in the black band above the wordmark: the sibling
-  # sites, then the handle whose menu drops the channels. Labels go through
+  # sites. header.html renders the chat opener after them. Labels go through
   # text-transform: uppercase, so write them in the brand's own casing.
   # `link` takes a full URL or a site-root path.
   family:
@@ -155,10 +155,12 @@ extra:
     # 把 link 换成 https://shop.acebase.cc/ 即可。
     - label: shop.AceBase.cc
       link: /topup/
-  # The site's own channels, read twice: header.html renders them as the menu
-  # under the @AceBase handle, main.html as the Organization node's sameAs. One
-  # list, so a channel cannot show up in the menu without also being declared to
-  # crawlers. `name` is the label; the @ is added by the template.
+  # The site's own channels, read once, by main.html, which declares them as
+  # the Organization node's sameAs. header.html used to render them as a menu
+  # under the @AceBase handle in the family row; since 2026-09-23 that handle
+  # opens the chat window instead, so nothing on the page lists them any more —
+  # a crawler still learns them, a visitor no longer sees them. `name` is the
+  # label.
   #
   # Deliberately NOT named `social`: Material prints extra.social as a row of
   # icons in the footer, and the footer carries the copyright line alone.

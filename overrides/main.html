@@ -8,10 +8,12 @@
       accounts and this domain are the same entity, rather than three unrelated
       channels that happen to be linked.
 
-      The list comes from extra.channels in mkdocs.yml — the same list
-      header.html renders as the menu under the @AceBase handle. One source,
-      two audiences: a channel added to the config cannot end up visible but
-      undeclared, or declared but not visible. -#}
+      The list comes from extra.channels in mkdocs.yml. It used to be read
+      twice — header.html rendered the same list as the menu under the @AceBase
+      handle, so a channel could not be visible without being declared or
+      declared without being visible. Since 2026-09-23 that handle opens the
+      chat window instead, so this is the only reader left: the channels are
+      declared to crawlers and shown to nobody. -#}
   {% set channels = config.extra.channels | d([], true) %}
   {% if channels %}
     <script type="application/ld+json">
