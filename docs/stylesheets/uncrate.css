@@ -939,8 +939,7 @@
    The two-column band is the one place the two do not match, and it is the title
    rather than this rule: 暗夜优雅 (Noir Elegance) wraps to two lines at 768 — 46px
    wider than the copy column there — so the column is 183.2px, past the
-   min-height, and the card is 23.1px taller than its one-line neighbour. The
-   grid stretches a row to its tallest card, so the two bottoms still line up;
+   min-height, and the card is 23.1px taller than its one-line neighbour.
    style-10's long English title already does this to its own row.
 
    .ab-fold__lead has no part in this card: the summary holds nothing but the
@@ -971,6 +970,29 @@
   .md-typeset .ab-mag .ab-card--reveal .ab-card__copy {
     min-height: 155px;
   }
+}
+
+/* Matching the plain card's height is only half of it: the grid then has to let
+   the card be that height. `.ab-list` stretches every card in a row to the
+   tallest one — the rule /topup/'s equal-height assertion is written against —
+   and this card's neighbour is Garb: Vintage Grace: a three-line sentence and
+   three priced pieces, a 297.3px copy column against this card's 160px. Since
+   --fold pins the action row to the bottom of the copy column (padding-bottom:
+   46px plus bottom: 0), all 137.3px of that slack landed between the title and
+   展开 或 查看图集 — a hole in the middle of the card, which is what the user
+   asked about on 2026-09-23 (为什么…这里有如此大的空白). align-self: start takes
+   the card out of the stretch: it stands at its own 791.3px, px-for-px the
+   plain card, and the slack becomes page white under the card instead. The two
+   cover images still line up top and bottom — both are drawn at the same
+   aspect-ratio — so what differs is the caption column's length, which is what
+   the neighbour's extra prose is.
+
+   Stated on --reveal rather than on the page: /style/ has one other stretched
+   card, car-01, sat 59.8px taller by its 851.2px row-mate, and there the same
+   void falls below a paragraph of prose where nobody has noticed it. If that
+   should go the same way, it is this rule with the class it wears. */
+.md-typeset .ab-mag .ab-card--reveal {
+  align-self: start;
 }
 
 .md-typeset .ab-mag .ab-card--look .ab-ec-price,
