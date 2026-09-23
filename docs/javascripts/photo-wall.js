@@ -13,11 +13,13 @@
     allLoaded: isZh ? "已全部加载" : "All photos loaded",
   };
 
-  // Cards that open the lightbox from outside the wall. /style/ is their
-  // first user: the photo sets are drawn as magazine cards, so the grid and the
-  // type are uncrate.css's, and only the click is the wall's. They carry their
-  // own data-gallery exactly like a tile does, and nothing else — no shuffle
-  // (the page's order is the reading order) and no pagination.
+  // Cards that open the lightbox from outside the wall. /style/ was their first
+  // user — the photo sets are drawn as magazine cards, so the grid and the type
+  // are uncrate.css's, and only the click is the wall's. They carry their own
+  // data-gallery exactly like a tile does, and nothing else — no shuffle (the
+  // page's order is the reading order) and no pagination. That page left the
+  // site on 2026-09-24 (STYLE became Gift Cards and its fifteen photo-set cards
+  // went with it); /tech/ and /gear/ are what wears the class now.
   var CARD_SEL = ".ab-card--lightbox";
 
   function shuffle(node) {
@@ -219,10 +221,11 @@
         // A card may carry a fold of its own. style-02 on /style/ did — the
         // sentence, then the three priced pieces behind a 展开 cue — and the
         // homepage copies the cards whole, so this selector used to reach cards
-        // with a control inside them. Its fold is gone as of 2026-09-23 (a
-        // second piece replaced the third, and the 49px window it left behind had
-        // nothing to hide), so no card on the site is both a lightbox tile and a
-        // fold today, and this is the trap for the next one. The fold's clicks are
+        // with a control inside them. Its fold went on 2026-09-23 (a second piece
+        // replaced the third, and the 49px window it left behind had nothing to
+        // hide), and the card itself followed the rest of STYLE off the site on
+        // 2026-09-24, so no card on the site is both a lightbox tile and a fold
+        // today, and this is the trap for the next one. The fold's clicks are
         // the fold's: without this the listener would preventDefault the
         // <summary>'s own toggle and open the box in its place, and there is no
         // other way to the rows. The 查看图集 link in that row is the one click

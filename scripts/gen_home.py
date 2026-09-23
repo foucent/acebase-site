@@ -6,8 +6,8 @@ The homepage has no content of its own. The rule is one line: **every card on
 the front page is the newest six cards of a category, copied out of that
 category's page.**
 
-`Category` means the top-level nav in mkdocs.yml — TECH, TOP-UP, STYLE, GEAR,
-FAQ —
+`Category` means the top-level nav in mkdocs.yml — TECH, TOP-UP, Gift Cards,
+GEAR, FAQ —
 read from that file rather than listed here, so a category added to the nav
 reaches the front page with no edit to this script. A category whose page holds
 no cards (FAQ) contributes nothing; "如果有的话" is the whole of that rule, and
@@ -33,7 +33,8 @@ page that grows a second one gets dated.
 
 The frontmatter's `updated:` is the fallback for a section that carries no
 stamp, and since 2026-09-22 that is every page with cards on it: /topup/,
-/tech/ and /style/ all lost their section heads that day. It is not a
+/tech/ and /style/ (today /gift-cards/) all lost their section heads that day.
+It is not a
 substitute for a stamp: a page that has cards and no date at all is named on
 stderr rather than dated by guesswork, because an invented date would reorder
 the whole front page.
@@ -68,13 +69,17 @@ def nav_categories() -> list[tuple[str, str]]:
     the nav here is flat, one `- LABEL: path` per line, and pulling in a parser
     for six lines is not worth a dependency.
 
-    Three things it has to get right. The label may carry a hyphen (TOP-UP), so
-    `\\w+` will not do. The comments interleaved between the entries sit at
-    exactly the entries' own indent, so they have to be skipped by name rather
-    than by shape. And the block has to be bounded: `extra.family` and
-    `extra.channels` are also `- key: value` lists, and `extra:` comes *before*
-    `nav:` in the file, so a scan that is not anchored to the two-space indent
-    and closed at the next top-level key finds those first.
+    Three things it has to get right. The label may carry a hyphen (TOP-UP) **or
+    a space** (Gift Cards, added 2026-09-24) — the pattern was `[\\w-]+` until
+    that day, and a label with a space in it simply did not match: the category
+    dropped off the homepage with no error anywhere, which is the one failure
+    mode here that nothing else would catch. So the label is now everything up
+    to the colon. The comments interleaved between the entries sit at exactly
+    the entries' own indent, so they have to be skipped by name rather than by
+    shape. And the block has to be bounded: `extra.family` and `extra.channels`
+    are also `- key: value` lists, and `extra:` comes *before* `nav:` in the
+    file, so a scan that is not anchored to the two-space indent and closed at
+    the next top-level key finds those first.
     """
     lines = MKDOCS.read_text(encoding="utf-8").splitlines()
     try:
@@ -85,9 +90,9 @@ def nav_categories() -> list[tuple[str, str]]:
     for line in lines[start + 1:]:
         if line.strip() and not line[:1].isspace():
             break                                   # the next top-level key
-        entry = re.match(r"^  - ([\w-]+):\s*(\S+)\s*$", line)
+        entry = re.match(r"^  - ([^:]+?):\s*(\S+)\s*$", line)
         if entry:
-            out.append((entry.group(1), entry.group(2)))
+            out.append((entry.group(1).strip(), entry.group(2)))
     if not out:
         sys.exit("mkdocs.yml 的 nav 里一条都没解析出来")
     return out
@@ -172,7 +177,7 @@ def cards_of(rel: str) -> list[tuple[str, str, str]]:
               f"frontmatter 也没有可用的 updated: —— 这几张不上首页",
               file=sys.stderr)
     # Stable, so cards sharing a section date keep the page's own order — which
-    # is the only order a one-section page like /style/ has.
+    # is the only order a one-section page like /gift-cards/ has.
     out.sort(key=lambda t: t[0], reverse=True)
     return out
 

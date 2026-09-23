@@ -1,6 +1,18 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-"""Import the eight 穿搭写真 sets from the download folder into the STYLE page.
+"""已退休：2026-09-24 随 STYLE 图集一起。
+
+STYLE 改名 Gift Cards，页上那 15 张图集卡（穿搭 9 + 汽车 6）连图带页整个离开
+站点，``docs/assets/gallery/wallpapers/style/`` 与 ``.../car/`` 一并删除。这个
+导入器产出的东西在站上一件都不剩，连同它写出的
+``scripts/_style_sets_20260921.json`` 也一起退休 —— 那份 JSON 是纯列表，塞不
+进注释，它的唯一读者就是本脚本，说明记在这里。留着当历史，别再跑（照
+``scripts/tech_card_grid.py`` 的先例）。下面原文里的 ``docs/style/index.md``
+读作当时的路径，那页今天是 ``docs/gift-cards/index.md``，内容也已换过。
+
+---
+
+Import the eight 穿搭写真 sets from the download folder into the STYLE page.
 
 The source is a folder of douyin stills (``~/Downloads/style``), one post per
 download timestamp: 18 files, 8 sets. This script writes the web-sized copies

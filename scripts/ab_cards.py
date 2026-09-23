@@ -8,7 +8,7 @@ pages (see gen_home.py) — so the component moved here, where the scripts that
 still build cards can reach it without importing a generator they have nothing
 to do with:
 
-    import_style_sets.py   card, esc            还在跑：/style/ 的八张卡
+    import_style_sets.py   card, esc            已退休：2026-09-24 随 /style/ 一起
     tech_card_grid.py      AMAZON_HOME, esc, excerpt_of
     card_action_line.py    AMAZON_HOME
 
@@ -17,6 +17,9 @@ were written and they are histories of a past edit rather than tools to re-run.
 What matters here is that the function they call produces the same markup it
 did then: the card body is one component, and a card on /style/ that came out
 of `card()` has to keep looking like every other card on the site.
+(`import_style_sets.py` 那一行是 2026-09-24 改的 —— 它管的 /style/ 图集页
+ 被改名成 Gift Cards 并清空，卡片现在从 /topup/ 搬来，不再由 `card()` 生成。
+ 脚本本身留着当历史，别再跑。)
 
 What did NOT come along is `money()`. Its only callers were the homepage's own
 five pools, and those are gone; a `.ab-money` span on the site now comes from
