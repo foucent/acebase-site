@@ -47,14 +47,22 @@ hide:
       </div>
     </article>
 
-    <article class="ab-card ab-card--portrait ab-card--lightbox" id="style-03" data-gallery="[&quot;/assets/gallery/wallpapers/style/style_03_01.jpg&quot;, &quot;/assets/gallery/wallpapers/style/style_03_02.jpg&quot;]" data-caption="高跟鞋 · 连裤袜" data-look="style-03" data-buy="#">
+    <!-- style-03：2026-09-23 用户按 style-02 的写法换掉了它的文字（主题名 + 一句话 +
+         两件带价单品）。它只有两件，两行 49px 比任何「切一刀」的窗口都矮，折起来没有
+         东西可露，所以这张只带 --ec --look、不带 --fold：两行都露，「查看图集」还是
+         卡自己那行 .ab-card__more。 -->
+    <article class="ab-card ab-card--portrait ab-card--lightbox ab-card--ec ab-card--look" id="style-03" data-gallery="[&quot;/assets/gallery/wallpapers/style/style_03_01.jpg&quot;, &quot;/assets/gallery/wallpapers/style/style_03_02.jpg&quot;]" data-caption="穿搭主题：暗夜优雅 (Noir Elegance)" data-look="style-03" data-buy="#">
       <a class="ab-card__media" href="/assets/gallery/wallpapers/style/style_03_01.jpg" tabindex="-1" aria-hidden="true">
         <img src="/assets/gallery/wallpapers/style/style_03_01.jpg" alt="" loading="lazy" decoding="async">
       </a>
       <div class="ab-card__copy">
         <p class="ab-cat">STYLE</p>
-        <h3 class="ab-card__title"><a href="/assets/gallery/wallpapers/style/style_03_01.jpg">高跟鞋 · 连裤袜</a></h3>
-        <p class="ab-card__excerpt">点开可看整套。</p>
+        <h3 class="ab-card__title"><a href="/assets/gallery/wallpapers/style/style_03_01.jpg">穿搭主题：暗夜优雅 (Noir Elegance)</a></h3>
+        <p class="ab-card__excerpt">红底漆皮高跟鞋搭配菱格纹透肉连裤袜，打造经典聚焦腿部线条的精致造型。</p>
+        <p class="ab-ec-list">
+          <span class="ab-ec-item"><span class="ab-ec-label">红底漆皮细高跟鞋</span><span class="ab-ec-price">$795.</span></span>
+          <span class="ab-ec-item"><span class="ab-ec-label">菱格纹薄透连裤袜</span><span class="ab-ec-price">$38.</span></span>
+        </p>
         <p class="ab-card__more"><a href="/assets/gallery/wallpapers/style/style_03_01.jpg">查看图集</a></p>
       </div>
     </article>
@@ -244,7 +252,7 @@ hide:
       "name": "穿搭与汽车图集",
       "itemListElement": [
         { "@type": "ListItem", "position": 1, "item": { "@type": "ImageObject", "name": "Garb: Vintage Grace", "contentUrl": "https://acebase.cc/assets/gallery/wallpapers/style/style_02_01.jpg", "url": "https://acebase.cc/style/#style-02" } },
-        { "@type": "ListItem", "position": 2, "item": { "@type": "ImageObject", "name": "高跟鞋 · 连裤袜", "contentUrl": "https://acebase.cc/assets/gallery/wallpapers/style/style_03_01.jpg", "url": "https://acebase.cc/style/#style-03" } },
+        { "@type": "ListItem", "position": 2, "item": { "@type": "ImageObject", "name": "穿搭主题：暗夜优雅 (Noir Elegance)", "contentUrl": "https://acebase.cc/assets/gallery/wallpapers/style/style_03_01.jpg", "url": "https://acebase.cc/style/#style-03" } },
         { "@type": "ListItem", "position": 3, "item": { "@type": "ImageObject", "name": "来选一张最喜欢的吧！", "contentUrl": "https://acebase.cc/assets/gallery/wallpapers/style/style_04_01.jpg", "url": "https://acebase.cc/style/#style-04" } },
         { "@type": "ListItem", "position": 4, "item": { "@type": "ImageObject", "name": "水墨", "contentUrl": "https://acebase.cc/assets/gallery/wallpapers/style/style_05_01.jpg", "url": "https://acebase.cc/style/#style-05" } },
         { "@type": "ListItem", "position": 5, "item": { "@type": "ImageObject", "name": "祝你好运，要天天开心", "contentUrl": "https://acebase.cc/assets/gallery/wallpapers/style/style_06_01.jpg", "url": "https://acebase.cc/style/#style-06" } },

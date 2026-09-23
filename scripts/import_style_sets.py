@@ -15,8 +15,9 @@ cannot drift into looking like two different components. What this script adds i
 four attributes that turn the card into a lightbox opener (see the CARD_SEL
 block in photo-wall.js).
 
-The page holds cards this importer did not make — the six car cards and
-style-10 — so ``--check`` compares its own eight and lists the rest in
+The page holds cards this importer did not make — the six car cards, style-10,
+and the two look cards the user rewrote by hand (style-02, style-03) — so
+``--check`` compares the six it can still draw and lists the rest in
 ``NOT_MINE`` rather than calling them extra.
 
 The set ORDER is authored, not derived. The download timestamps run out of
@@ -95,13 +96,19 @@ FIRST_SET = 2  # style_01 is already on /gallery/ as the 穿搭写真 tile
 #               shape is beyond card(), which escapes `excerpt` into one run of
 #               text, so the card was hand-written instead. Its pictures are
 #               still the set's.
+#   style-03    the same treatment, same day, from the same page — a 主题名, a
+#               sentence, and two priced pieces. Two rows are too short to fold,
+#               so this one is --ec --look with no --fold: the rows show and
+#               查看图集 keeps its own .ab-card__more line. Hand-written for the
+#               same reason; its pictures are still the set's.
 #
 # Without this list --check has been failing since the merge — it lists the car
 # cards as 多余的卡片, and because the check stopped being able to pass, nobody
-# read its output either way. It now watches the seven cards it can still draw.
+# read its output either way. It now watches the six cards it can still draw.
 NOT_MINE = {
     "car-01", "car-02", "car-03", "car-04", "car-05", "car-06",
     "style-02",
+    "style-03",
     "style-10",
 }
 
