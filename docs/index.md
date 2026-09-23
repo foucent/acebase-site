@@ -25,7 +25,6 @@ hide:
         <h3 class="ab-card__title"><a href="/assets/gallery/wallpapers/style/style_02_01.jpg">Garb: Vintage Grace</a></h3>
         <details class="ab-fold">
           <summary class="ab-fold__summary">
-            <span class="ab-fold__lead">Classic two-tone Mary Jane pumps lead this sweet academia look with a lace-trimmed pleated mini skirt and vintage ruffle crew socks.</span>
             <span class="ab-fold__act">
               <span class="ab-fold__cue"><span class="ab-fold__cue-more">展开</span><span class="ab-fold__cue-less">收起</span></span>
               <em class="ab-fold__or">或</em>

@@ -838,15 +838,16 @@
 }
 
 /* ---------- a look card: the pieces it names, and what they cost ----------
-   Two cards on /style/ wear this shape: style-02, a 穿搭 look whose copy is a
-   sentence and then the three pieces that make the outfit, each with what it
-   costs, and style-03, which is the same block with two pieces and no sentence.
+   Two cards on /style/ wear this shape: style-02, a 穿搭 look whose copy is the
+   three pieces that make the outfit, each with what it costs, and style-03, the
+   same block with two pieces. Neither has a sentence — style-02 had one until
+   the user took it away on 2026-09-23, the same day the other card was built.
    Both take --ec for the block — the grid, the shared figure column, the muted
-   labels, the black figures — and style-02 adds --fold for the cut: the fade,
-   the reserved action row and the 展开 cue come from that. The three departures
-   below are what makes the shape a look card rather than a /topup/ one; the name
-   says the shape rather than the card, and the second look card wanted all
-   three.
+   labels, the black figures — and style-02 adds --fold for the cut: the
+   reserved action row and the 展开 cue come from that, and, since the sentence
+   left, no fade. The three departures below are what makes the shape a look card
+   rather than a /topup/ one; the name says the shape rather than the card, and
+   the second look card wanted all three.
 
    Where it departs from /topup/'s rows, and why:
 
@@ -884,19 +885,35 @@
 
    The cut is --fold's window with this block's own number, and it is style-02's
    alone: style-03 has two rows and nothing to cut, so it carries no --fold and
-   no window (see the no-fold look card below). At 14px and 1.75 the rows are
-   24.5px, so 69px holds the first two whole and 20px of the third,
-   under the same 22px fade and for the same reason: the cut has to land inside
-   a row rather than between two, or it reads as an edge instead of as a sign
-   that there is more. Opening gives the third row the 4.5px it was short by,
-   which is the growth a /topup/ card takes too (84px of window against 89.25px
-   of rows) — 5px on a card, paid on every one of them there and once here.
+   no window (see the no-fold look card below). That number is 49px — exactly
+   the 49px the other look card's two rows take — because the same user asked
+   this card for two things at once: take its sentence away, and keep it level
+   with 暗夜优雅 (Noir Elegance). Equal height is what fixes it. The copy column
+   is 93.3px of 标签 and 标题, then the block, then the reservation for the action
+   row; style-03's is 93.3 + its 49 + a 14px gap + the 27.8px 查看图集 line =
+   184.1px, and this card's comes to 184.3 with the same three numbers. Measured
+   at 1440: 815.6px against 815.4px.
 
-   Where a row wraps to two lines the cut still lands inside one: 69px holds the
-   first row whole and 20px of the second, so the second row's first line sits
-   under the fade rather than under the edge — the same sign, at a taller row.
-   Measured shut on the two bands where the names wrap: 147px of rows against
-   the 69px window at 768px and at 390, 196px at 360. */
+   Two rows is what makes that arithmetic possible, and it is also why the third
+   row is nowhere to be seen shut. At 14px and 1.75 the rows are 24.5px, so two
+   of them are 49 and the third begins exactly where the window ends — no
+   sliver, no half-row. That is the difference between this card and every
+   /topup/ one, where 84px of window over 89.25px of rows cuts the third row in
+   half and the cut itself is the sign that there is more. Here the sign is 展开
+   或 查看图集, and the two look cards side by side wear the same block whether
+   or not a third row is behind it.
+
+   The fade goes with the sentence. --fold's 22px gradient paints the last 22px
+   of the window, and in a 49px window that is the back half of the second row:
+   it would grey a row it is not hiding, which is the thing --ec's own note above
+   says a mask must never do. There is nothing to disguise either — the cut falls
+   between two rows, where the block's edge is the empty strip under the second
+   row's text.
+
+   Where a row wraps to two lines the window holds one row rather than two —
+   147px of rows behind it at 768px, 196 at 360 — and the cut still falls
+   between rows, so the reasoning is the same at a taller row. Opening gives the
+   third row its 24.5px back, which is the growth a /topup/ card takes too. */
 .md-typeset .ab-mag .ab-card--look .ab-ec-list {
   font-size: 14px;
 }
@@ -918,18 +935,51 @@
    style-03 shows its two rows outright — and a cap it never reaches would be
    dead weight on it, until the day a label wraps to two lines at some narrow
    width and it stops being dead: a max-height with no overflow:hidden does not
-   clip, it ends the box early and lets the row paint over the line beneath it. */
+   clip, it ends the box early and lets the row paint over the line beneath it.
+
+   The mask is off for the reason the paragraph above gives, and the top margin
+   is --topup/'s `margin: 14px 0 0` with that half dropped. The sentence that
+   used to stand between the title and this block is gone, and what is left
+   between them is a 0-height <details>, so the block's own 14px either adds to
+   the title's 12px margin or — collapsing through the empty box — replaces it.
+   This card wants the title's 12 either way, which is where 暗夜优雅's block
+   sits too. */
 .md-typeset .ab-mag .ab-card--look.ab-card--fold .ab-ec-list {
-  max-height: 69px;
+  max-height: 49px;
+  margin-top: 0;
+  -webkit-mask-image: none;
+  mask-image: none;
+}
+
+/* What the sentence left behind: a summary with no in-flow child. The action row
+   inside it is absolutely positioned into the copy's reserved strip, so the only
+   thing still giving the <details> a height is Material's own
+   `summary { min-height: 1rem }` — 20px here, the root being 125% — and 20px of
+   nothing between the title and the block is exactly the half of the card this
+   change is about. */
+.md-typeset .ab-mag .ab-card--look.ab-card--fold .ab-fold__summary {
+  min-height: 0;
+}
+
+/* The reservation, down from --fold's flat 46px to the row's own 28px plus the
+   14px gap 暗夜优雅's 查看图集 takes above it: 42px, and the two copy columns
+   come to 184.3px and 184.1px — the row measures 27.8px, which is the 0.2px.
+   The 18px that gives up was slack on --fold's own cards, held open for the gap
+   between a sentence and the row under it; this card has no sentence, and the
+   fade that used to spend those 18px is gone with it. The row still must not
+   wrap: measured at 1440 it is 160px of the 417px column, the same measurement
+   the 46px rested on. */
+.md-typeset .ab-mag .ab-card--look.ab-card--fold .ab-card__copy {
+  padding-bottom: 42px;
 }
 
 /* ---------- a look card with no fold ----------
-   style-03 is the other look card, and it has nothing to cut: no sentence, and
-   two rows of 49px where style-02 has three. --fold's rules are stated on
-   --look.--fold or on --fold itself, so a look card without it gets none of them
-   — no window, no reserved strip, no 展开 cue — and the rows simply flow: 标签,
-   标题, the two rows, then 查看图集 in the copy's own .ab-card__more, the link
-   every other card on the page ends with.
+   style-03 is the other look card, and it has nothing to cut: two rows of 49px,
+   where style-02 has three and a window over the first two of them. --fold's
+   rules are stated on --look.--fold or on --fold itself, so a look card without
+   it gets none of them — no window, no reserved strip, no 展开 cue — and the
+   rows simply flow: 标签, 标题, the two rows, then 查看图集 in the copy's own
+   .ab-card__more, the link every other card on the page ends with.
 
    The user settled on that on 2026-09-23, the third shape this card took in one
    day: cut to two rows, then concealed behind 展开 (收起时两件都藏，点展开才出现),
@@ -952,13 +1002,17 @@
 
    align-self: start belongs to --look rather than to this one card: .ab-card__more
    is `margin: auto 0 0`, so a card stretched past its content shows the slack as
-   a void above its closing link — this card's row-mate is Garb: Vintage Grace at
-   928.6px, and the card would carry a hole where its rows now are. Standing at
-   its own height puts that slack in the page under the card, where it reads as a
-   ragged row rather than as a broken card; the two covers still line up, being
-   drawn at the same aspect-ratio. car-01, one row down, has the same void inside
-   a plain card (59.8px) and is left alone: it is not a look card, and the fix
-   there would be the grid's rather than the card's. */
+   a void above its closing link. The two look cards stand 0.2px apart now (815.6
+   and 815.4 at 1440), so nothing in their row stretches them today — but that is
+   the state the sentence's removal created, not a property of this rule. It was
+   written while Garb: Vintage Grace still carried its sentence and ran 113.2px
+   longer than the card beside it, which the grid pulled up to match: the slack
+   landed between the rows and the action line, a hole in the middle of the card.
+   Standing at its own height puts the slack in the page under the card, where it
+   reads as a ragged row rather than as a broken card; the two covers still line
+   up, being drawn at the same aspect-ratio. car-01, one row down, has the same
+   void inside a plain card (59.8px) and is left alone: it is not a look card,
+   and the fix there would be the grid's rather than the card's. */
 .md-typeset .ab-mag .ab-card--look {
   align-self: start;
 }

@@ -18,6 +18,11 @@ hide:
          后面，折起来露前两行、点开展开，价格走右边的列、黑色。三处取舍
          （14px 行、1fr 标签列、价格用正文色）连同量出来的数一并写在
          uncrate.css 的「a look card」一段里，这里不再重复。
+         当天稍晚那句话也被用户删了（「Garb: Vintage Grace 下面那句去掉」），
+         同时要求高度与 style-03 一致：两个要求只能由同一个形状满足 —— 收起的
+         窗口从 69px 收到 49px（正好两行），第三件完全落在窗口外，卡片因此与
+         style-03 逐像素等高。窗口卡在两行之间，22px 的渐隐只会把第二行弄暗，
+         所以这张卡上它也去掉了。数字见 uncrate.css「a look card」那一段。
          两种形状都不是 ab_cards.card() 造得出来的（它把 excerpt 转义成一段纯文字），
          所以这张从 scripts/import_style_sets.py 的 --check 里挪进了 NOT_MINE。
          折卡里的点击由 photo-wall.js 让给 <summary>（见那里的 initLightbox）。 -->
@@ -30,7 +35,6 @@ hide:
         <h3 class="ab-card__title"><a href="/assets/gallery/wallpapers/style/style_02_01.jpg">Garb: Vintage Grace</a></h3>
         <details class="ab-fold">
           <summary class="ab-fold__summary">
-            <span class="ab-fold__lead">Classic two-tone Mary Jane pumps lead this sweet academia look with a lace-trimmed pleated mini skirt and vintage ruffle crew socks.</span>
             <span class="ab-fold__act">
               <span class="ab-fold__cue"><span class="ab-fold__cue-more">展开</span><span class="ab-fold__cue-less">收起</span></span>
               <em class="ab-fold__or">或</em>
