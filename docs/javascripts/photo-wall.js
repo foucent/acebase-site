@@ -19,7 +19,9 @@
   // data-gallery exactly like a tile does, and nothing else — no shuffle (the
   // page's order is the reading order) and no pagination. That page left the
   // site on 2026-09-24 (STYLE became Gift Cards and its fifteen photo-set cards
-  // went with it); /tech/ and /gear/ are what wears the class now.
+  // went with it); /tech/ is what wears the class now, plus the homepage, which
+  // carries a slice of /tech/'s own cards. /gear/ wore it too until that same
+  // day, when GEAR became CDKeys and its eleven photo sets left the site.
   var CARD_SEL = ".ab-card--lightbox";
 
   function shuffle(node) {

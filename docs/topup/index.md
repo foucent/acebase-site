@@ -1,6 +1,6 @@
 ---
 title: 代储与礼品卡价格参考 | 游戏充值 · 礼品卡 · 直播代储行情
-description: AceBase 代储与礼品卡价格参考 —— PUBG Mobile UC、Honor of Kings 等 5 款游戏的代储档位，Fortnite、Apex Legends、PlayStation、Nintendo、Steam、GoCash 等 7 种充值卡与卡密，以及抖音、快手、Bigo Live、MICO、Poppo Live、Tango Live、MIGO LIVE 等 14 个直播与语音平台的逐档参考价（美元计价）。数据更新至 2026-09-21。
+description: AceBase 代储与礼品卡价格参考 —— PUBG Mobile UC、Honor of Kings 等 5 款游戏的代储档位，以及抖音、快手、Bigo Live、MICO、Poppo Live、Tango Live、MIGO LIVE 等 14 个直播与语音平台的逐档参考价（美元计价）。数据更新至 2026-09-21。
 updated: 2026-09-24
 hide:
   - title
@@ -140,187 +140,12 @@ hide:
         <p class="ab-ec-foot">手游 &middot; PC &middot; 数据更新于 <span class="js-prices-updated">2026-09-21</span> &middot; 报价以在线咨询为准</p>
       </div>
     </article>
-    <article class="ab-card ab-card--brand ab-card--shop ab-card--fold ab-card--ec" id="fortnite-vbucks-card">
-      <div class="ab-card__media">
-        <img src="/assets/games/brand/fortnite-vbucks-card.png" alt="Fortnite 充值卡（V-Bucks）价格参考" loading="lazy" decoding="async">
-      </div>
-      <div class="ab-card__copy">
-        <p class="ab-cat">SHOP</p>
-        <h3 class="ab-card__title">Fortnite 充值卡（V-Bucks）</h3>
-        <details class="ab-fold">
-          <summary class="ab-fold__summary">
-            <span class="ab-fold__lead">《Fortnite 堡垒之夜》V-Bucks 充值，用于购买战斗通行证与商城外观；Epic 账号通用，各平台余额共享。</span>
-            <span class="ab-fold__act">
-              <span class="ab-fold__cue"><span class="ab-fold__cue-more">展开</span><span class="ab-fold__cue-less">收起</span></span>
-              <em class="ab-fold__or">或</em>
-              <a class="ab-fold__buy ab-crisp-open" href="#" data-crisp-msg="你好，我想咨询 Fortnite 充值卡（V-Bucks）的实时价格。">查询实时价格</a>
-            </span>
-          </summary>
-        </details>
 
-        <p class="ab-ec-list" data-game="fortnite-vbucks-card" data-art="/assets/gift-cards/fortnite-card.webp">
-          <span class="ab-ec-loading">正在加载最新价格&hellip;</span>
-        </p>
 
-        <p class="ab-ec-foot">全平台 &middot; Epic &middot; 数据更新于 <span class="js-prices-updated">2026-09-21</span> &middot; 报价以在线咨询为准</p>
-      </div>
-    </article>
 
-    <article class="ab-card ab-card--brand ab-card--shop ab-card--fold ab-card--ec" id="apex-legends-coins-card">
-      <div class="ab-card__media">
-        <img src="/assets/games/brand/apex-legends-coins-card.png" alt="Apex Legends 充值卡（Coins）价格参考" loading="lazy" decoding="async">
-      </div>
-      <div class="ab-card__copy">
-        <p class="ab-cat">SHOP</p>
-        <h3 class="ab-card__title">Apex Legends 充值卡（Coins）</h3>
-        <details class="ab-fold">
-          <summary class="ab-fold__summary">
-            <span class="ab-fold__lead">《Apex 英雄》Apex Coins 充值，用于购买战斗通行证与商城外观；PC 与主机平台账号均可兑换。</span>
-            <span class="ab-fold__act">
-              <span class="ab-fold__cue"><span class="ab-fold__cue-more">展开</span><span class="ab-fold__cue-less">收起</span></span>
-              <em class="ab-fold__or">或</em>
-              <a class="ab-fold__buy ab-crisp-open" href="#" data-crisp-msg="你好，我想咨询 Apex Legends 充值卡（Coins）的实时价格。">查询实时价格</a>
-            </span>
-          </summary>
-        </details>
 
-        <p class="ab-ec-list" data-game="apex-legends-coins-card" data-discount="-7%" data-art="/assets/gift-cards/apex-legends.png">
-          <span class="ab-ec-loading">正在加载最新价格&hellip;</span>
-        </p>
 
-        <p class="ab-ec-foot">PC &middot; 主机 &middot; 数据更新于 <span class="js-prices-updated">2026-09-21</span> &middot; 报价以在线咨询为准</p>
-      </div>
-    </article>
 
-    <article class="ab-card ab-card--brand ab-card--shop ab-card--fold ab-card--ec" id="playstation-network-card-us">
-      <div class="ab-card__media">
-        <img src="/assets/games/brand/playstation-network-card-us.png" alt="PlayStation Network 充值卡（美国）价格参考" loading="lazy" decoding="async">
-      </div>
-      <div class="ab-card__copy">
-        <p class="ab-cat">SHOP</p>
-        <h3 class="ab-card__title">PlayStation Network 充值卡（美国）</h3>
-        <details class="ab-fold">
-          <summary class="ab-fold__summary">
-            <span class="ab-fold__lead">美区 PSN 钱包充值，用于购买游戏、DLC 与 PS Plus 会员；仅限美区账号兑换，余额直接进钱包。</span>
-            <span class="ab-fold__act">
-              <span class="ab-fold__cue"><span class="ab-fold__cue-more">展开</span><span class="ab-fold__cue-less">收起</span></span>
-              <em class="ab-fold__or">或</em>
-              <a class="ab-fold__buy ab-crisp-open" href="#" data-crisp-msg="你好，我想咨询 PlayStation Network 充值卡（美国）的实时价格。">查询实时价格</a>
-            </span>
-          </summary>
-        </details>
-
-        <p class="ab-ec-list" data-game="playstation-network-card-us" data-discount="-40%" data-art="/assets/gift-cards/playstation.webp">
-          <span class="ab-ec-loading">正在加载最新价格&hellip;</span>
-        </p>
-
-        <p class="ab-ec-foot">主机 &middot; 美区 &middot; 数据更新于 <span class="js-prices-updated">2026-09-21</span> &middot; 报价以在线咨询为准</p>
-      </div>
-    </article>
-
-    <article class="ab-card ab-card--brand ab-card--shop ab-card--fold ab-card--ec" id="nintendo-switch-online">
-      <div class="ab-card__media">
-        <img src="/assets/games/brand/nintendo-switch-online.png" alt="Nintendo Switch Online 会员资格价格参考" loading="lazy" decoding="async">
-      </div>
-      <div class="ab-card__copy">
-        <p class="ab-cat">SHOP</p>
-        <h3 class="ab-card__title">Nintendo Switch Online 会员资格</h3>
-        <details class="ab-fold">
-          <summary class="ab-fold__summary">
-            <span class="ab-fold__lead">任天堂 Switch Online 会员，解锁联机对战、经典游戏库与云存档；按所选时长开通，美区账号可用。</span>
-            <span class="ab-fold__act">
-              <span class="ab-fold__cue"><span class="ab-fold__cue-more">展开</span><span class="ab-fold__cue-less">收起</span></span>
-              <em class="ab-fold__or">或</em>
-              <a class="ab-fold__buy ab-crisp-open" href="#" data-crisp-msg="你好，我想咨询 Nintendo Switch Online 会员资格的实时价格。">查询实时价格</a>
-            </span>
-          </summary>
-        </details>
-
-        <p class="ab-ec-list" data-game="nintendo-switch-online" data-discount="-23%" data-art="/assets/gift-cards/ns-membership.png">
-          <span class="ab-ec-loading">正在加载最新价格&hellip;</span>
-        </p>
-
-        <p class="ab-ec-foot">Switch &middot; 会员订阅 &middot; 数据更新于 <span class="js-prices-updated">2026-09-21</span> &middot; 报价以在线咨询为准</p>
-      </div>
-    </article>
-
-    <article class="ab-card ab-card--brand ab-card--shop ab-card--fold ab-card--ec" id="nintendo-eshop-card-us">
-      <div class="ab-card__media">
-        <img src="/assets/games/brand/nintendo-eshop-card-us.png" alt="Nintendo eShop 充值卡（美国）价格参考" loading="lazy" decoding="async">
-      </div>
-      <div class="ab-card__copy">
-        <p class="ab-cat">SHOP</p>
-        <h3 class="ab-card__title">Nintendo eShop 充值卡（美国）</h3>
-        <details class="ab-fold">
-          <summary class="ab-fold__summary">
-            <span class="ab-fold__lead">美区 eShop 钱包充值，可买 Switch 数字版游戏、DLC 与会员；仅限美区账号兑换，余额长期有效。</span>
-            <span class="ab-fold__act">
-              <span class="ab-fold__cue"><span class="ab-fold__cue-more">展开</span><span class="ab-fold__cue-less">收起</span></span>
-              <em class="ab-fold__or">或</em>
-              <a class="ab-fold__buy ab-crisp-open" href="#" data-crisp-msg="你好，我想咨询 Nintendo eShop 充值卡（美国）的实时价格。">查询实时价格</a>
-            </span>
-          </summary>
-        </details>
-
-        <p class="ab-ec-list" data-game="nintendo-eshop-card-us" data-discount="-4%" data-art="/assets/gift-cards/nintendo-eshop.png">
-          <span class="ab-ec-loading">正在加载最新价格&hellip;</span>
-        </p>
-
-        <p class="ab-ec-foot">Switch &middot; 美区 &middot; 数据更新于 <span class="js-prices-updated">2026-09-21</span> &middot; 报价以在线咨询为准</p>
-      </div>
-    </article>
-
-    <article class="ab-card ab-card--brand ab-card--shop ab-card--fold ab-card--ec" id="steam-wallet-card-us">
-      <div class="ab-card__media">
-        <img src="/assets/games/brand/steam-wallet-card-us.png" alt="Steam 钱包充值码（美国）价格参考" loading="lazy" decoding="async">
-      </div>
-      <div class="ab-card__copy">
-        <p class="ab-cat">SHOP</p>
-        <h3 class="ab-card__title">Steam 钱包充值码（美国）</h3>
-        <details class="ab-fold">
-          <summary class="ab-fold__summary">
-            <span class="ab-fold__lead">Steam 钱包充值，用于购买游戏、DLC 与创意工坊物品；仅限美区账号兑换，余额进钱包。</span>
-            <span class="ab-fold__act">
-              <span class="ab-fold__cue"><span class="ab-fold__cue-more">展开</span><span class="ab-fold__cue-less">收起</span></span>
-              <em class="ab-fold__or">或</em>
-              <a class="ab-fold__buy ab-crisp-open" href="#" data-crisp-msg="你好，我想咨询 Steam 钱包充值码（美国）的实时价格。">查询实时价格</a>
-            </span>
-          </summary>
-        </details>
-
-        <p class="ab-ec-list" data-game="steam-wallet-card-us" data-discount="-1%" data-art="/assets/gift-cards/steam-wallet.png">
-          <span class="ab-ec-loading">正在加载最新价格&hellip;</span>
-        </p>
-
-        <p class="ab-ec-foot">PC &middot; 美区 &middot; 数据更新于 <span class="js-prices-updated">2026-09-21</span> &middot; 报价以在线咨询为准</p>
-      </div>
-    </article>
-
-    <article class="ab-card ab-card--brand ab-card--shop ab-card--fold ab-card--ec" id="gocash-card">
-      <div class="ab-card__media">
-        <img src="/assets/games/brand/gocash-card.png" alt="GoCash 充值卡（全球）价格参考" loading="lazy" decoding="async">
-      </div>
-      <div class="ab-card__copy">
-        <p class="ab-cat">SHOP</p>
-        <h3 class="ab-card__title">GoCash 充值卡（全球）</h3>
-        <details class="ab-fold">
-          <summary class="ab-fold__summary">
-            <span class="ab-fold__lead">GoCash 全球通用充值卡，可用于游戏与平台内购结算；卡密秒发，全球区账号均可兑换。</span>
-            <span class="ab-fold__act">
-              <span class="ab-fold__cue"><span class="ab-fold__cue-more">展开</span><span class="ab-fold__cue-less">收起</span></span>
-              <em class="ab-fold__or">或</em>
-              <a class="ab-fold__buy ab-crisp-open" href="#" data-crisp-msg="你好，我想咨询 GoCash 充值卡（全球）的实时价格。">查询实时价格</a>
-            </span>
-          </summary>
-        </details>
-
-        <p class="ab-ec-list" data-game="gocash-card" data-discount="-5%" data-art="/assets/gift-cards/gocash-card.png">
-          <span class="ab-ec-loading">正在加载最新价格&hellip;</span>
-        </p>
-
-        <p class="ab-ec-foot">全球 &middot; 数据更新于 <span class="js-prices-updated">2026-09-21</span> &middot; 报价以在线咨询为准</p>
-      </div>
-    </article>
     <article class="ab-card ab-card--brand ab-card--shop ab-card--fold ab-card--ec" id="douyin-top-up">
       <div class="ab-card__media">
         <img src="/assets/games/brand/douyin-top-up.png" alt="抖音直播 代储价格参考" loading="lazy" decoding="async">
@@ -692,7 +517,7 @@ hide:
 
 <div class="admonition note mg-games__note">
   <p class="admonition-title">相关</p>
-  <p><a href="/tech/">电竞房与桌搭</a> &middot; <a href="/pc-components/">电脑组件</a> &middot; <a href="/gift-cards/">Gift Cards</a> &middot; <a href="/gear/">GEAR</a> &middot; <a href="/gallery/">画廊</a> &middot; <a href="/faq/">购买指南</a></p>
+  <p><a href="/tech/">电竞房与桌搭</a> &middot; <a href="/pc-components/">电脑组件</a> &middot; <a href="/gift-cards/">Gift Cards</a> &middot; <a href="/cdkeys/">CDKeys</a> &middot; <a href="/gallery/">画廊</a> &middot; <a href="/faq/">购买指南</a></p>
 </div>
 
 <script type="application/ld+json">
@@ -702,40 +527,33 @@ hide:
     {
       "@type": "WebPage",
       "name": "代储与礼品卡价格参考",
-      "description": "AceBase 代储与礼品卡价格参考，5 款游戏的各档位充值参考价，Fortnite、Apex Legends、PlayStation Network、Nintendo、Steam、GoCash 共 7 种充值卡与卡密的逐档参考价，以及抖音、快手、Bigo Live、MICO、Poppo Live、Tango Live、Mango Live、MIGO LIVE、超级直播、Dazz Live、Xena Live、比心、Ludo Club、Yalla Ludo 共 14 个直播与语音平台的充值档位。数据更新至 2026-09-21。",
+      "description": "AceBase 代储与礼品卡价格参考，5 款游戏的各档位充值参考价，以及抖音、快手、Bigo Live、MICO、Poppo Live、Tango Live、Mango Live、MIGO LIVE、超级直播、Dazz Live、Xena Live、比心、Ludo Club、Yalla Ludo 共 14 个直播与语音平台的充值档位。数据更新至 2026-09-21。",
       "url": "https://acebase.cc/topup/"
     },
     {
       "@type": "ItemList",
       "name": "代储与礼品卡价格参考",
-      "numberOfItems": "26",
+      "numberOfItems": "19",
       "itemListElement": [
         { "@type": "Product", "position": 1, "name": "PUBG Mobile UC", "url": "https://acebase.cc/topup/#pubg-mobile" },
         { "@type": "Product", "position": 2, "name": "PUBG G-COIN", "url": "https://acebase.cc/topup/#pubg-gcoin" },
         { "@type": "Product", "position": 3, "name": "Honor of Kings", "url": "https://acebase.cc/topup/#hok" },
         { "@type": "Product", "position": 4, "name": "Arena Breakout", "url": "https://acebase.cc/topup/#arena-breakout" },
         { "@type": "Product", "position": 5, "name": "燕云十六声", "url": "https://acebase.cc/topup/#where-winds-meet" },
-        { "@type": "Product", "position": 6, "name": "Fortnite 充值卡（V-Bucks）", "url": "https://acebase.cc/topup/#fortnite-vbucks-card" },
-        { "@type": "Product", "position": 7, "name": "Apex Legends 充值卡（Coins）", "url": "https://acebase.cc/topup/#apex-legends-coins-card" },
-        { "@type": "Product", "position": 8, "name": "PlayStation Network 充值卡（美国）", "url": "https://acebase.cc/topup/#playstation-network-card-us" },
-        { "@type": "Product", "position": 9, "name": "Nintendo Switch Online 会员资格", "url": "https://acebase.cc/topup/#nintendo-switch-online" },
-        { "@type": "Product", "position": 10, "name": "Nintendo eShop 充值卡（美国）", "url": "https://acebase.cc/topup/#nintendo-eshop-card-us" },
-        { "@type": "Product", "position": 11, "name": "Steam 钱包充值码（美国）", "url": "https://acebase.cc/topup/#steam-wallet-card-us" },
-        { "@type": "Product", "position": 12, "name": "GoCash 充值卡（全球）", "url": "https://acebase.cc/topup/#gocash-card" },
-        { "@type": "Product", "position": 13, "name": "抖音直播", "url": "https://acebase.cc/topup/#douyin-top-up" },
-        { "@type": "Product", "position": 14, "name": "快手", "url": "https://acebase.cc/topup/#kwi-top-up" },
-        { "@type": "Product", "position": 15, "name": "Bigo Live", "url": "https://acebase.cc/topup/#bigo-live" },
-        { "@type": "Product", "position": 16, "name": "MICO", "url": "https://acebase.cc/topup/#mico-top-up" },
-        { "@type": "Product", "position": 17, "name": "Poppo Live", "url": "https://acebase.cc/topup/#poppo-live" },
-        { "@type": "Product", "position": 18, "name": "Tango Live", "url": "https://acebase.cc/topup/#tango-live-recharge" },
-        { "@type": "Product", "position": 19, "name": "Mango Live", "url": "https://acebase.cc/topup/#mango" },
-        { "@type": "Product", "position": 20, "name": "MIGO LIVE", "url": "https://acebase.cc/topup/#migo-top-up" },
-        { "@type": "Product", "position": 21, "name": "超级直播", "url": "https://acebase.cc/topup/#superlive" },
-        { "@type": "Product", "position": 22, "name": "Dazz Live", "url": "https://acebase.cc/topup/#dazz-top-up" },
-        { "@type": "Product", "position": 23, "name": "Xena Live：群组语音", "url": "https://acebase.cc/topup/#xena-live-group-voice" },
-        { "@type": "Product", "position": 24, "name": "比心", "url": "https://acebase.cc/topup/#bixin-top-up" },
-        { "@type": "Product", "position": 25, "name": "Ludo Club", "url": "https://acebase.cc/topup/#ludo-club" },
-        { "@type": "Product", "position": 26, "name": "Yalla Ludo", "url": "https://acebase.cc/topup/#yalla-ludo" }
+        { "@type": "Product", "position": 6, "name": "抖音直播", "url": "https://acebase.cc/topup/#douyin-top-up" },
+        { "@type": "Product", "position": 7, "name": "快手", "url": "https://acebase.cc/topup/#kwi-top-up" },
+        { "@type": "Product", "position": 8, "name": "Bigo Live", "url": "https://acebase.cc/topup/#bigo-live" },
+        { "@type": "Product", "position": 9, "name": "MICO", "url": "https://acebase.cc/topup/#mico-top-up" },
+        { "@type": "Product", "position": 10, "name": "Poppo Live", "url": "https://acebase.cc/topup/#poppo-live" },
+        { "@type": "Product", "position": 11, "name": "Tango Live", "url": "https://acebase.cc/topup/#tango-live-recharge" },
+        { "@type": "Product", "position": 12, "name": "Mango Live", "url": "https://acebase.cc/topup/#mango" },
+        { "@type": "Product", "position": 13, "name": "MIGO LIVE", "url": "https://acebase.cc/topup/#migo-top-up" },
+        { "@type": "Product", "position": 14, "name": "超级直播", "url": "https://acebase.cc/topup/#superlive" },
+        { "@type": "Product", "position": 15, "name": "Dazz Live", "url": "https://acebase.cc/topup/#dazz-top-up" },
+        { "@type": "Product", "position": 16, "name": "Xena Live：群组语音", "url": "https://acebase.cc/topup/#xena-live-group-voice" },
+        { "@type": "Product", "position": 17, "name": "比心", "url": "https://acebase.cc/topup/#bixin-top-up" },
+        { "@type": "Product", "position": 18, "name": "Ludo Club", "url": "https://acebase.cc/topup/#ludo-club" },
+        { "@type": "Product", "position": 19, "name": "Yalla Ludo", "url": "https://acebase.cc/topup/#yalla-ludo" }
       ]
     },
     {

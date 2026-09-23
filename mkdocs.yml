@@ -102,6 +102,11 @@ plugins:
         # 浏览器实测 /sim-gear/#style-05 → /style/#style-05）—— 那些锚点现在
         # 不在了，所以跟着 /style/ 一起指首页。
         sim-gear/index.md: index.md
+        # /gear/ 2026-09-24 整页让位 —— GEAR（乒乓球拍与装备实拍 11 组 67 张）被
+        # 用户改名成 CDKeys，原来的十一张图集卡与 docs/assets/gallery/gear/ 下的
+        # 67 张图一并撤掉，页面在同一个目录上重写成充值卡（docs/cdkeys/）。
+        # 那些卡连同锚点全没了，指回首页 —— 跟 /style/、/wellness/ 同一种处置。
+        gear/index.md: index.md
         # /wellness/ 2026-09-22 删除 —— 「健康生活」筹备页从没有过卡片，也没上过
         # 首页，没有内容可以搬。
         wellness/index.md: index.md
@@ -205,10 +210,14 @@ nav:
   # GIFT CARDS）—— **带空格的标签要 gen_home.py 认账**，那个正则 2026-09-24
   # 跟着放宽了，见 scripts/gen_home.py。
   - Gift Cards: gift-cards/index.md
-  # 2026-09-22 加：乒乓球拍与装备实拍，11 组 67 张，生成器在仓库外
-  # _tmp_ocr/gear_prep/prep.py（它写整页，手改会被覆盖）。放在 Gift Cards 之后、
-  # FAQ 之前 —— 这是第十一组实拍图集，FAQ 那一排唯一的帮助页位置不动。
-  - GEAR: gear/index.md
+  # 2026-09-24 改名：这一格原来叫 GEAR（乒乓球拍与装备实拍，11 组 67 张的灯箱
+  # 图集，2026-09-22 加），整页由仓库外的 _tmp_ocr/gear_prep/prep.py 生成 ——
+  # 那个生成器当天跟着退休，否则下次重跑就把 11 张卡写回来。用户把它改名成
+  # CDKeys、清空原卡片，七张明写「充值卡 / 充值码」的卡从 /topup/ 搬了过来
+  # （就是那页自己称作「7 种充值卡与卡密」的一组）；那 11 组实拍图连图一起离开
+  # 站点，旧 /gear/ 指回首页。目录随之 git mv 到 docs/cdkeys/。位置不动：
+  # 放在 Gift Cards 之后、FAQ 之前。
+  - CDKeys: cdkeys/index.md
   # 2026-09-21 加：全站唯一一份「怎么买」的说明，不挂在任何商品类目下，
   # 自己是一个入口；放在最后，是这一排里唯一的帮助页。
   - FAQ: faq/index.md

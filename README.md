@@ -22,7 +22,7 @@ cd c:\1Work\acebase.cc
 | `/topup/` | 代储与礼品卡价格参考（游戏代储 / 礼品卡 / 直播代储） |
 | `/tech/` | 电竞房与桌搭（九套实拍，73 张） |
 | `/gift-cards/` | Gift Cards（六张礼品卡：Amazon / Apple / Google Play / Netflix / Xbox / Kammelna） |
-| `/gear/` | GEAR（乒乓球拍与装备实拍，11 组 67 张） |
+| `/cdkeys/` | CDKeys（七张充值卡与充值码：Fortnite / Apex Legends / PlayStation Network / Nintendo Switch Online / Nintendo eShop / Steam 钱包 / GoCash） |
 | `/faq/` | 购买指南（下单流程 / 付款 / 费用 / 常见问题） |
 | `/gallery/` | 相册（手办 / 模型照片墙） |
 | `/pc-components/` | 电脑组件 |
