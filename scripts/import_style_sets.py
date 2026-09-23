@@ -88,11 +88,13 @@ FIRST_SET = 2  # style_01 is already on /gallery/ as the 穿搭写真 tile
 #               come from _tmp_ocr/style10_prep/prep.py, outside this repo,
 #               which prints the card by calling markup() below).
 #   style-02    one of the eight, but the user replaced its copy on 2026-09-23 —
-#               a look name, a sentence, then three pieces each on its own line
-#               with a price. card() escapes `excerpt` into a single run of
-#               text, so a card with a second .ab-card__excerpt and <br>s is
-#               not something it can draw, and the card was hand-written
-#               instead. Its pictures are still the set's.
+#               a look name, a sentence, then three pieces each with a price.
+#               Later the same day it became a fold card like /topup/'s: the
+#               sentence stays out, the three pieces sit behind a 展开 cue in an
+#               .ab-ec-list grid, and the card carries --fold --ec --look. Either
+#               shape is beyond card(), which escapes `excerpt` into one run of
+#               text, so the card was hand-written instead. Its pictures are
+#               still the set's.
 #
 # Without this list --check has been failing since the merge — it lists the car
 # cards as 多余的卡片, and because the check stopped being able to pass, nobody

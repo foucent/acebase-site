@@ -16,16 +16,29 @@ hide:
       <h2 class="ab-section__title">最近更新</h2>
     </header>
     <div class="ab-list ab-list--feed">
-    <article class="ab-card ab-card--portrait ab-card--lightbox" id="style-02" data-gallery="[&quot;/assets/gallery/wallpapers/style/style_02_01.jpg&quot;, &quot;/assets/gallery/wallpapers/style/style_02_02.jpg&quot;]" data-caption="Garb: Vintage Grace" data-look="style-02" data-buy="#">
+    <article class="ab-card ab-card--portrait ab-card--lightbox ab-card--fold ab-card--ec ab-card--look" id="style-02" data-gallery="[&quot;/assets/gallery/wallpapers/style/style_02_01.jpg&quot;, &quot;/assets/gallery/wallpapers/style/style_02_02.jpg&quot;]" data-caption="Garb: Vintage Grace" data-look="style-02" data-buy="#">
       <a class="ab-card__media" href="/assets/gallery/wallpapers/style/style_02_01.jpg" tabindex="-1" aria-hidden="true">
         <img src="/assets/gallery/wallpapers/style/style_02_01.jpg" alt="" decoding="async" fetchpriority="high">
       </a>
       <div class="ab-card__copy">
         <p class="ab-cat">STYLE</p>
         <h3 class="ab-card__title"><a href="/assets/gallery/wallpapers/style/style_02_01.jpg">Garb: Vintage Grace</a></h3>
-        <p class="ab-card__excerpt">Classic two-tone Mary Jane pumps lead this sweet academia look with a lace-trimmed pleated mini skirt and vintage ruffle crew socks.</p>
-        <p class="ab-card__excerpt">Sumei Select Two-Tone Cap-Toe Mary Jane Pumps / $88.<br>AceBase Bow Accent Lace-Trimmed Pleated Mini Skirt / $65.<br>AceBase Vintage Floral Ruffle Crew Socks / $18.</p>
-        <p class="ab-card__more"><a href="/assets/gallery/wallpapers/style/style_02_01.jpg">查看图集</a></p>
+        <details class="ab-fold">
+          <summary class="ab-fold__summary">
+            <span class="ab-fold__lead">Classic two-tone Mary Jane pumps lead this sweet academia look with a lace-trimmed pleated mini skirt and vintage ruffle crew socks.</span>
+            <span class="ab-fold__act">
+              <span class="ab-fold__cue"><span class="ab-fold__cue-more">展开</span><span class="ab-fold__cue-less">收起</span></span>
+              <em class="ab-fold__or">或</em>
+              <a class="ab-fold__buy" href="/assets/gallery/wallpapers/style/style_02_01.jpg">查看图集</a>
+            </span>
+          </summary>
+        </details>
+
+        <p class="ab-ec-list">
+          <span class="ab-ec-item"><span class="ab-ec-label">Sumei Select Two-Tone Cap-Toe Mary Jane Pumps</span><span class="ab-ec-price">$88.</span></span>
+          <span class="ab-ec-item"><span class="ab-ec-label">AceBase Bow Accent Lace-Trimmed Pleated Mini Skirt</span><span class="ab-ec-price">$65.</span></span>
+          <span class="ab-ec-item"><span class="ab-ec-label">AceBase Vintage Floral Ruffle Crew Socks</span><span class="ab-ec-price">$18.</span></span>
+        </p>
       </div>
     </article>
     <article class="ab-card ab-card--portrait ab-card--lightbox" id="style-03" data-gallery="[&quot;/assets/gallery/wallpapers/style/style_03_01.jpg&quot;, &quot;/assets/gallery/wallpapers/style/style_03_02.jpg&quot;]" data-caption="高跟鞋 · 连裤袜" data-look="style-03" data-buy="#">

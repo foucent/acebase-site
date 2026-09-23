@@ -14,18 +14,36 @@ hide:
     <!-- style-02：2026-09-23 用户把这张卡的文字整个换掉了 —— 原来的标题
          「可爱蝴蝶结登场」与介绍「点开可看整套。」换成了一套 look 的名字、一句话
          介绍，和三件单品（各自一行，带价）。图片仍是那两帧，一个字没动。
-         这条介绍不是 ab_cards.card() 能造出来的形状（它把 excerpt 转义成一段纯文字），
-         所以这张从 scripts/import_style_sets.py 的 --check 里挪进了 NOT_MINE。 -->
-    <article class="ab-card ab-card--portrait ab-card--lightbox" id="style-02" data-gallery="[&quot;/assets/gallery/wallpapers/style/style_02_01.jpg&quot;, &quot;/assets/gallery/wallpapers/style/style_02_02.jpg&quot;]" data-caption="Garb: Vintage Grace" data-look="style-02" data-buy="#">
+         同日又按 /topup/ 的折卡改了形：句子留在明面上，三件单品收在 ab-fold
+         后面，折起来露前两行、点开展开，价格走右边的列、黑色。三处取舍
+         （14px 行、1fr 标签列、价格用正文色）连同量出来的数一并写在
+         uncrate.css 的「a look card」一段里，这里不再重复。
+         两种形状都不是 ab_cards.card() 造得出来的（它把 excerpt 转义成一段纯文字），
+         所以这张从 scripts/import_style_sets.py 的 --check 里挪进了 NOT_MINE。
+         折卡里的点击由 photo-wall.js 让给 <summary>（见那里的 initLightbox）。 -->
+    <article class="ab-card ab-card--portrait ab-card--lightbox ab-card--fold ab-card--ec ab-card--look" id="style-02" data-gallery="[&quot;/assets/gallery/wallpapers/style/style_02_01.jpg&quot;, &quot;/assets/gallery/wallpapers/style/style_02_02.jpg&quot;]" data-caption="Garb: Vintage Grace" data-look="style-02" data-buy="#">
       <a class="ab-card__media" href="/assets/gallery/wallpapers/style/style_02_01.jpg" tabindex="-1" aria-hidden="true">
         <img src="/assets/gallery/wallpapers/style/style_02_01.jpg" alt="" fetchpriority="high" decoding="async">
       </a>
       <div class="ab-card__copy">
         <p class="ab-cat">STYLE</p>
         <h3 class="ab-card__title"><a href="/assets/gallery/wallpapers/style/style_02_01.jpg">Garb: Vintage Grace</a></h3>
-        <p class="ab-card__excerpt">Classic two-tone Mary Jane pumps lead this sweet academia look with a lace-trimmed pleated mini skirt and vintage ruffle crew socks.</p>
-        <p class="ab-card__excerpt">Sumei Select Two-Tone Cap-Toe Mary Jane Pumps / $88.<br>AceBase Bow Accent Lace-Trimmed Pleated Mini Skirt / $65.<br>AceBase Vintage Floral Ruffle Crew Socks / $18.</p>
-        <p class="ab-card__more"><a href="/assets/gallery/wallpapers/style/style_02_01.jpg">查看图集</a></p>
+        <details class="ab-fold">
+          <summary class="ab-fold__summary">
+            <span class="ab-fold__lead">Classic two-tone Mary Jane pumps lead this sweet academia look with a lace-trimmed pleated mini skirt and vintage ruffle crew socks.</span>
+            <span class="ab-fold__act">
+              <span class="ab-fold__cue"><span class="ab-fold__cue-more">展开</span><span class="ab-fold__cue-less">收起</span></span>
+              <em class="ab-fold__or">或</em>
+              <a class="ab-fold__buy" href="/assets/gallery/wallpapers/style/style_02_01.jpg">查看图集</a>
+            </span>
+          </summary>
+        </details>
+
+        <p class="ab-ec-list">
+          <span class="ab-ec-item"><span class="ab-ec-label">Sumei Select Two-Tone Cap-Toe Mary Jane Pumps</span><span class="ab-ec-price">$88.</span></span>
+          <span class="ab-ec-item"><span class="ab-ec-label">AceBase Bow Accent Lace-Trimmed Pleated Mini Skirt</span><span class="ab-ec-price">$65.</span></span>
+          <span class="ab-ec-item"><span class="ab-ec-label">AceBase Vintage Floral Ruffle Crew Socks</span><span class="ab-ec-price">$18.</span></span>
+        </p>
       </div>
     </article>
 

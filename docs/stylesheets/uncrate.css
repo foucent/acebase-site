@@ -837,6 +837,98 @@
   }
 }
 
+/* ---------- a look card: one sentence, and the pieces it names ----------
+   style-02 on /style/ is the only card of this shape: a 穿搭 look rather than a
+   game or a model, whose copy is a sentence and then the three pieces that make
+   the outfit, each with what it costs. It takes --ec for the block and --fold
+   for the cut — the grid, the shared figure column, the fade, the reserved
+   action row and the 展开 cue all come from those two — and differs in the
+   three things below. The name says the shape rather than the card, because a
+   second look card would want all three.
+
+   Where it departs from /topup/'s rows, and why:
+
+     * 14px, not the 15px .ab-ec-list states for a card. The longest label here,
+       "AceBase Bow Accent Lace-Trimmed Pleated Mini Skirt", is 360px at 14px;
+       at 15px it is 386px, and with the 16.5px column gap and a 28px price the
+       row wants 431px of the 417px the copy column has at 1440. The middle row
+       would wrap where the two around it did not. At 14px the longest row is
+       403px, so it holds one line as long as its label column is 363.7px or
+       wider, and the column is that wide at a 950px viewport and from 470px
+       down to the one-column band above 767. Measured across both mouths of the
+       band: one line at 950 with a 363.7px column, wrapped at 940 with 358.7,
+       one line again at 470 with 363.7 and wrapped at 460 with 353.7. Through
+       the two-column widths in between — 768 to 949 — the column is 272 to
+       363px and the names wrap there. That much is the user's own call of
+       2026-09-23: the names are the content here, and truncating them to hold a
+       line would cost more than the wrap does.
+
+     * The figure column sits at the right edge, not after the widest label.
+       --ec's max-content is what lines a column of prices up under a column of
+       tiers, and on /topup/ the labels are short enough that the two columns
+       together are narrower than the card. Here the widest label is 360px of a
+       417px column: max-content sizes the label column to the text and cannot
+       shrink it, so the price column would start past the card's right edge and
+       take the card's own overflow with it. 1fr on the label keeps every price
+       in its own column against the right edge, which is the same column the
+       sub-390px fallback already gives them, and lets a long label wrap inside
+       its own instead of pushing.
+
+     * The price is --ab-text, not the ladder's green with its entry tier in
+       red. Every figure here is the same kind of number — a piece's price, not
+       a lowest against a range — so there is no cheapest one to paint and
+       nothing for the 21px first-child headline to announce. Black is what the
+       sentence above them is set in, and the rows are that sentence continuing.
+
+   The cut is --fold's window with this block's own number. At 14px and 1.75 the
+   rows are 24.5px, so 69px holds the first two whole and 20px of the third,
+   under the same 22px fade and for the same reason: the cut has to land inside
+   a row rather than between two, or it reads as an edge instead of as a sign
+   that there is more. Opening gives the third row the 4.5px it was short by,
+   which is the growth a /topup/ card takes too (84px of window against 89.25px
+   of rows) — 5px on a card, paid on every one of them there and once here.
+
+   Where a row wraps to two lines the cut still lands inside one: 69px holds the
+   first row whole and 20px of the second, so the second row's first line sits
+   under the fade rather than under the edge — the same sign, at a taller row.
+   Measured shut on the two bands where the names wrap: 147px of rows against
+   the 69px window at 768px and at 390, 196px at 360. */
+.md-typeset .ab-mag .ab-card--look .ab-ec-list {
+  font-size: 14px;
+  max-height: 69px;
+}
+
+.md-typeset .ab-mag .ab-card--look .ab-ec-price,
+.md-typeset .ab-mag .ab-card--look .ab-ec-item:first-child .ab-ec-price {
+  color: var(--ab-text);
+  font-size: inherit;
+}
+
+/* One column rule, stated inside the band where the grid is a grid: below 390px
+   --ec has already turned the block into lines with the price pushed right, and
+   this selector would outrank that by source order alone — same specificity,
+   further down the file — whether it meant to or not. */
+@media screen and (min-width: 390px) {
+  .md-typeset .ab-mag .ab-card--look .ab-ec-list {
+    grid-template-columns: minmax(0, 1fr) max-content;
+  }
+}
+
+/* The other half of that same band, where --ec's lines are wrapping flex rows.
+   A label's max-content width is what decides the wrap there, and this card's
+   labels are wider than the column: measured at 390 and down, every one of the
+   three pushed its price onto a line of its own, so the row meant to read
+   "name …… price" read as two lines with the figure under the name. A zero
+   basis and `min-width: 0` let the label shrink instead of pushing, and the
+   price keeps the line it started on. Scoped to this card because /topup/'s
+   labels are two to eight characters and have never come near the edge. */
+@media screen and (max-width: 389px) {
+  .md-typeset .ab-mag .ab-card--look .ab-ec-label {
+    flex: 1 1 0;
+    min-width: 0;
+  }
+}
+
 /* The block used to hold --fold's 84px window with only 63px of rows in it, and
    `align-content: start` kept those rows packed at the top rather than stretched
    over the slack. The window is gone — the rows are the block's height now, and

@@ -216,6 +216,18 @@
 
     tiles.forEach(function (tile) {
       tile.addEventListener("click", function (e) {
+        // A card may carry a fold of its own. style-02 on /style/ does — the
+        // sentence, then the three priced pieces behind a 展开 cue — and the
+        // homepage copies that card whole, so this selector now reaches cards
+        // with a control inside them. The fold's clicks are the fold's: without
+        // this the listener would preventDefault the <summary>'s own toggle and
+        // open the box in its place, and there is no other way to the rows. The
+        // 查看图集 link in that row is the one click inside it that is still the
+        // card's own way in, so it is let through.
+        var fold = e.target && e.target.closest
+          ? e.target.closest(".ab-fold")
+          : null;
+        if (fold && !e.target.closest(".ab-fold__buy")) return;
         e.preventDefault();
         openGallery(tile, 0);
       });
