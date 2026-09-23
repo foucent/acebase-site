@@ -11,14 +11,20 @@ hide:
 
   <section class="ab-section" id="style">
     <div class="ab-list">
-    <article class="ab-card ab-card--portrait ab-card--lightbox" id="style-02" data-gallery="[&quot;/assets/gallery/wallpapers/style/style_02_01.jpg&quot;, &quot;/assets/gallery/wallpapers/style/style_02_02.jpg&quot;]" data-caption="可爱蝴蝶结登场" data-look="style-02" data-buy="#">
+    <!-- style-02：2026-09-23 用户把这张卡的文字整个换掉了 —— 原来的标题
+         「可爱蝴蝶结登场」与介绍「点开可看整套。」换成了一套 look 的名字、一句话
+         介绍，和三件单品（各自一行，带价）。图片仍是那两帧，一个字没动。
+         这条介绍不是 ab_cards.card() 能造出来的形状（它把 excerpt 转义成一段纯文字），
+         所以这张从 scripts/import_style_sets.py 的 --check 里挪进了 NOT_MINE。 -->
+    <article class="ab-card ab-card--portrait ab-card--lightbox" id="style-02" data-gallery="[&quot;/assets/gallery/wallpapers/style/style_02_01.jpg&quot;, &quot;/assets/gallery/wallpapers/style/style_02_02.jpg&quot;]" data-caption="Garb: Vintage Grace" data-look="style-02" data-buy="#">
       <a class="ab-card__media" href="/assets/gallery/wallpapers/style/style_02_01.jpg" tabindex="-1" aria-hidden="true">
         <img src="/assets/gallery/wallpapers/style/style_02_01.jpg" alt="" fetchpriority="high" decoding="async">
       </a>
       <div class="ab-card__copy">
         <p class="ab-cat">STYLE</p>
-        <h3 class="ab-card__title"><a href="/assets/gallery/wallpapers/style/style_02_01.jpg">可爱蝴蝶结登场</a></h3>
-        <p class="ab-card__excerpt">点开可看整套。</p>
+        <h3 class="ab-card__title"><a href="/assets/gallery/wallpapers/style/style_02_01.jpg">Garb: Vintage Grace</a></h3>
+        <p class="ab-card__excerpt">Classic two-tone Mary Jane pumps lead this sweet academia look with a lace-trimmed pleated mini skirt and vintage ruffle crew socks.</p>
+        <p class="ab-card__excerpt">Sumei Select Two-Tone Cap-Toe Mary Jane Pumps / $88.<br>AceBase Bow Accent Lace-Trimmed Pleated Mini Skirt / $65.<br>AceBase Vintage Floral Ruffle Crew Socks / $18.</p>
         <p class="ab-card__more"><a href="/assets/gallery/wallpapers/style/style_02_01.jpg">查看图集</a></p>
       </div>
     </article>
@@ -219,7 +225,7 @@ hide:
       "@type": "ItemList",
       "name": "穿搭与汽车图集",
       "itemListElement": [
-        { "@type": "ListItem", "position": 1, "item": { "@type": "ImageObject", "name": "可爱蝴蝶结登场", "contentUrl": "https://acebase.cc/assets/gallery/wallpapers/style/style_02_01.jpg", "url": "https://acebase.cc/style/#style-02" } },
+        { "@type": "ListItem", "position": 1, "item": { "@type": "ImageObject", "name": "Garb: Vintage Grace", "contentUrl": "https://acebase.cc/assets/gallery/wallpapers/style/style_02_01.jpg", "url": "https://acebase.cc/style/#style-02" } },
         { "@type": "ListItem", "position": 2, "item": { "@type": "ImageObject", "name": "高跟鞋 · 连裤袜", "contentUrl": "https://acebase.cc/assets/gallery/wallpapers/style/style_03_01.jpg", "url": "https://acebase.cc/style/#style-03" } },
         { "@type": "ListItem", "position": 3, "item": { "@type": "ImageObject", "name": "来选一张最喜欢的吧！", "contentUrl": "https://acebase.cc/assets/gallery/wallpapers/style/style_04_01.jpg", "url": "https://acebase.cc/style/#style-04" } },
         { "@type": "ListItem", "position": 4, "item": { "@type": "ImageObject", "name": "水墨", "contentUrl": "https://acebase.cc/assets/gallery/wallpapers/style/style_05_01.jpg", "url": "https://acebase.cc/style/#style-05" } },

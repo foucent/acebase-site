@@ -79,16 +79,27 @@ MAX_W = 1440
 QUALITY = 82
 FIRST_SET = 2  # style_01 is already on /gallery/ as the 穿搭写真 tile
 
-# Cards on the STYLE page that this importer did not make, and so must not be
-# reported as drift by --check. Two groups: the six car cards, merged into
-# /style/ from the retired /car/ page on 2026-09-22, and style-10, added by
-# hand on 2026-09-23 (its three frames and its markup come from
-# _tmp_ocr/style10_prep/prep.py, outside this repo, which prints the card by
-# calling markup() below). Without this list --check has been failing on the car
-# cards since the merge — it lists them as 多余的卡片, and because the check
-# stopped being able to pass, nobody read its output either way.
+# Cards on the STYLE page this importer cannot reproduce, and so must not report
+# as drift by --check. Three groups, for two different reasons:
+#
+#   car-01…06   the six car cards, merged into /style/ from the retired /car/
+#               page on 2026-09-22. Not this importer's at all.
+#   style-10    added by hand on 2026-09-23 (its three frames and its markup
+#               come from _tmp_ocr/style10_prep/prep.py, outside this repo,
+#               which prints the card by calling markup() below).
+#   style-02    one of the eight, but the user replaced its copy on 2026-09-23 —
+#               a look name, a sentence, then three pieces each on its own line
+#               with a price. card() escapes `excerpt` into a single run of
+#               text, so a card with a second .ab-card__excerpt and <br>s is
+#               not something it can draw, and the card was hand-written
+#               instead. Its pictures are still the set's.
+#
+# Without this list --check has been failing since the merge — it lists the car
+# cards as 多余的卡片, and because the check stopped being able to pass, nobody
+# read its output either way. It now watches the seven cards it can still draw.
 NOT_MINE = {
     "car-01", "car-02", "car-03", "car-04", "car-05", "car-06",
+    "style-02",
     "style-10",
 }
 
@@ -276,17 +287,21 @@ def main() -> None:
 
     print()
 
+    stale = sorted({s["slug"] for s in setdefs} & NOT_MINE)
+
     if args.check:
         live = page_articles()
         drift = [k for k in live if k not in {s["slug"] for s in setdefs}
                  and k not in NOT_MINE]
         for setdef, block in zip(setdefs, blocks):
+            if setdef["slug"] in NOT_MINE:
+                continue
             if live.get(setdef["slug"]) != block:
                 raise SystemExit(f"{setdef['slug']} 和页面上的不一样，跑一次不带参数的。")
         if drift:
             raise SystemExit(f"页面上有多余的卡片：{drift}")
-        print(f"脚本管的 {len(setdefs)} 张卡与页面上的逐字一致"
-              f"（页面上另有 {len(NOT_MINE)} 张不归它管，见 NOT_MINE）。")
+        print(f"脚本管的 {len(setdefs) - len(stale)} 张卡与页面上的逐字一致"
+              f"（另有 {len(NOT_MINE)} 张不归它管，见 NOT_MINE）。")
         return
 
     if not args.dry_run:
@@ -297,6 +312,10 @@ def main() -> None:
         print(f"写入 {MANIFEST.relative_to(ROOT)}（{total_kb / 1024:.1f}MB 出图）")
         print()
 
+    if stale:
+        print(f"  ! {'、'.join(stale)} 的文案改过（见 NOT_MINE）—— 下面打印的这几张"
+              f"还是旧的，别拿它们覆盖页面。")
+        print()
     print('在 <div class="ab-list"> 里按顺序粘贴：')
     print()
     print("\n\n".join(blocks))

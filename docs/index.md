@@ -16,14 +16,15 @@ hide:
       <h2 class="ab-section__title">最近更新</h2>
     </header>
     <div class="ab-list ab-list--feed">
-    <article class="ab-card ab-card--portrait ab-card--lightbox" id="style-02" data-gallery="[&quot;/assets/gallery/wallpapers/style/style_02_01.jpg&quot;, &quot;/assets/gallery/wallpapers/style/style_02_02.jpg&quot;]" data-caption="可爱蝴蝶结登场" data-look="style-02" data-buy="#">
+    <article class="ab-card ab-card--portrait ab-card--lightbox" id="style-02" data-gallery="[&quot;/assets/gallery/wallpapers/style/style_02_01.jpg&quot;, &quot;/assets/gallery/wallpapers/style/style_02_02.jpg&quot;]" data-caption="Garb: Vintage Grace" data-look="style-02" data-buy="#">
       <a class="ab-card__media" href="/assets/gallery/wallpapers/style/style_02_01.jpg" tabindex="-1" aria-hidden="true">
         <img src="/assets/gallery/wallpapers/style/style_02_01.jpg" alt="" decoding="async" fetchpriority="high">
       </a>
       <div class="ab-card__copy">
         <p class="ab-cat">STYLE</p>
-        <h3 class="ab-card__title"><a href="/assets/gallery/wallpapers/style/style_02_01.jpg">可爱蝴蝶结登场</a></h3>
-        <p class="ab-card__excerpt">点开可看整套。</p>
+        <h3 class="ab-card__title"><a href="/assets/gallery/wallpapers/style/style_02_01.jpg">Garb: Vintage Grace</a></h3>
+        <p class="ab-card__excerpt">Classic two-tone Mary Jane pumps lead this sweet academia look with a lace-trimmed pleated mini skirt and vintage ruffle crew socks.</p>
+        <p class="ab-card__excerpt">Sumei Select Two-Tone Cap-Toe Mary Jane Pumps / $88.<br>AceBase Bow Accent Lace-Trimmed Pleated Mini Skirt / $65.<br>AceBase Vintage Floral Ruffle Crew Socks / $18.</p>
         <p class="ab-card__more"><a href="/assets/gallery/wallpapers/style/style_02_01.jpg">查看图集</a></p>
       </div>
     </article>
