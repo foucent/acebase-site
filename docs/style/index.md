@@ -22,32 +22,30 @@ hide:
          同时要求高度与 style-03 一致：两个要求只能由同一个形状满足 —— 收起的
          窗口从 69px 收到 49px（正好两行），第三件完全落在窗口外，卡片因此与
          style-03 逐像素等高。窗口卡在两行之间，22px 的渐隐只会把第二行弄暗，
-         所以这张卡上它也去掉了。数字见 uncrate.css「a look card」那一段。
-         两种形状都不是 ab_cards.card() 造得出来的（它把 excerpt 转义成一段纯文字），
+         所以这张卡上它也去掉了。
+         当天最后一遍是内容：标题换成「复古优雅 (Vintage Grace)」，三件换成两件
+         （黑白拼接玛丽珍粗跟鞋 $88. / 蕾丝花边提花中筒袜 $18.）。两件就是两行，
+         而窗口的 49px 正好是两行的高度 —— 再没有落在窗口外的东西，展开与收起
+         读出来完全一样，「折」当场变成按了没反应的控件。所以这一版连 --fold 和
+         <details> 一起去掉，落到与 style-03 逐字相同的形状：没有句子，两件带价
+         单品占住普通卡那行正文的位置，末尾照普通卡用 .ab-card__more。
+         折卡那四条规则（49px 窗口、关掉的渐隐、归零的 summary min-height、
+         42px 的预留）随之删除。
+         三种形状都不是 ab_cards.card() 造得出来的（它把 excerpt 转义成一段纯文字），
          所以这张从 scripts/import_style_sets.py 的 --check 里挪进了 NOT_MINE。
-         折卡里的点击由 photo-wall.js 让给 <summary>（见那里的 initLightbox）。 -->
-    <article class="ab-card ab-card--portrait ab-card--lightbox ab-card--fold ab-card--ec ab-card--look" id="style-02" data-gallery="[&quot;/assets/gallery/wallpapers/style/style_02_01.jpg&quot;, &quot;/assets/gallery/wallpapers/style/style_02_02.jpg&quot;]" data-caption="Garb: Vintage Grace" data-look="style-02" data-buy="#">
+         取舍与数字见 uncrate.css「a look card」那一段。 -->
+    <article class="ab-card ab-card--portrait ab-card--lightbox ab-card--ec ab-card--look" id="style-02" data-gallery="[&quot;/assets/gallery/wallpapers/style/style_02_01.jpg&quot;, &quot;/assets/gallery/wallpapers/style/style_02_02.jpg&quot;]" data-caption="复古优雅 (Vintage Grace)" data-look="style-02" data-buy="#">
       <a class="ab-card__media" href="/assets/gallery/wallpapers/style/style_02_01.jpg" tabindex="-1" aria-hidden="true">
         <img src="/assets/gallery/wallpapers/style/style_02_01.jpg" alt="" fetchpriority="high" decoding="async">
       </a>
       <div class="ab-card__copy">
         <p class="ab-cat">STYLE</p>
-        <h3 class="ab-card__title"><a href="/assets/gallery/wallpapers/style/style_02_01.jpg">Garb: Vintage Grace</a></h3>
-        <details class="ab-fold">
-          <summary class="ab-fold__summary">
-            <span class="ab-fold__act">
-              <span class="ab-fold__cue"><span class="ab-fold__cue-more">展开</span><span class="ab-fold__cue-less">收起</span></span>
-              <em class="ab-fold__or">或</em>
-              <a class="ab-fold__buy" href="/assets/gallery/wallpapers/style/style_02_01.jpg">查看图集</a>
-            </span>
-          </summary>
-        </details>
-
+        <h3 class="ab-card__title"><a href="/assets/gallery/wallpapers/style/style_02_01.jpg">复古优雅 (Vintage Grace)</a></h3>
         <p class="ab-ec-list">
-          <span class="ab-ec-item"><span class="ab-ec-label">Sumei Select Two-Tone Cap-Toe Mary Jane Pumps</span><span class="ab-ec-price">$88.</span></span>
-          <span class="ab-ec-item"><span class="ab-ec-label">AceBase Bow Accent Lace-Trimmed Pleated Mini Skirt</span><span class="ab-ec-price">$65.</span></span>
-          <span class="ab-ec-item"><span class="ab-ec-label">AceBase Vintage Floral Ruffle Crew Socks</span><span class="ab-ec-price">$18.</span></span>
+          <span class="ab-ec-item"><span class="ab-ec-label">黑白拼接玛丽珍粗跟鞋</span><span class="ab-ec-price">$88.</span></span>
+          <span class="ab-ec-item"><span class="ab-ec-label">蕾丝花边提花中筒袜</span><span class="ab-ec-price">$18.</span></span>
         </p>
+        <p class="ab-card__more"><a href="/assets/gallery/wallpapers/style/style_02_01.jpg">查看图集</a></p>
       </div>
     </article>
 
@@ -55,6 +53,8 @@ hide:
          最后落成「不折，两件单品就摆在明面上」：没有句子，两件带价单品占住普通卡那行
          正文的位置，末尾照普通卡用 .ab-card__more。前两轮（不折露两行 → 收进折卡里、
          与普通卡等高）都作废，三轮的取舍与数字见 HANDOFF.txt 的 AF 条。
+         当天最末一遍改动反过来把 style-02 也拉到了这个形状上（它也只剩两件），
+         两张 look 卡从此逐字相同、逐像素等高。
          这张卡上没有折卡，点击按普通卡走（photo-wall.js 的 <summary> 让位那一段不适用）。 -->
     <article class="ab-card ab-card--portrait ab-card--lightbox ab-card--ec ab-card--look" id="style-03" data-gallery="[&quot;/assets/gallery/wallpapers/style/style_03_01.jpg&quot;, &quot;/assets/gallery/wallpapers/style/style_03_02.jpg&quot;]" data-caption="暗夜优雅 (Noir Elegance)" data-look="style-03" data-buy="#">
       <a class="ab-card__media" href="/assets/gallery/wallpapers/style/style_03_01.jpg" tabindex="-1" aria-hidden="true">
@@ -255,7 +255,7 @@ hide:
       "@type": "ItemList",
       "name": "穿搭与汽车图集",
       "itemListElement": [
-        { "@type": "ListItem", "position": 1, "item": { "@type": "ImageObject", "name": "Garb: Vintage Grace", "contentUrl": "https://acebase.cc/assets/gallery/wallpapers/style/style_02_01.jpg", "url": "https://acebase.cc/style/#style-02" } },
+        { "@type": "ListItem", "position": 1, "item": { "@type": "ImageObject", "name": "复古优雅 (Vintage Grace)", "contentUrl": "https://acebase.cc/assets/gallery/wallpapers/style/style_02_01.jpg", "url": "https://acebase.cc/style/#style-02" } },
         { "@type": "ListItem", "position": 2, "item": { "@type": "ImageObject", "name": "暗夜优雅 (Noir Elegance)", "contentUrl": "https://acebase.cc/assets/gallery/wallpapers/style/style_03_01.jpg", "url": "https://acebase.cc/style/#style-03" } },
         { "@type": "ListItem", "position": 3, "item": { "@type": "ImageObject", "name": "来选一张最喜欢的吧！", "contentUrl": "https://acebase.cc/assets/gallery/wallpapers/style/style_04_01.jpg", "url": "https://acebase.cc/style/#style-04" } },
         { "@type": "ListItem", "position": 4, "item": { "@type": "ImageObject", "name": "水墨", "contentUrl": "https://acebase.cc/assets/gallery/wallpapers/style/style_05_01.jpg", "url": "https://acebase.cc/style/#style-05" } },

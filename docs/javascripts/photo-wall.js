@@ -216,14 +216,17 @@
 
     tiles.forEach(function (tile) {
       tile.addEventListener("click", function (e) {
-        // A card may carry a fold of its own. style-02 on /style/ does — the
+        // A card may carry a fold of its own. style-02 on /style/ did — the
         // sentence, then the three priced pieces behind a 展开 cue — and the
-        // homepage copies that card whole, so this selector now reaches cards
-        // with a control inside them. The fold's clicks are the fold's: without
-        // this the listener would preventDefault the <summary>'s own toggle and
-        // open the box in its place, and there is no other way to the rows. The
-        // 查看图集 link in that row is the one click inside it that is still the
-        // card's own way in, so it is let through.
+        // homepage copies the cards whole, so this selector used to reach cards
+        // with a control inside them. Its fold is gone as of 2026-09-23 (a
+        // second piece replaced the third, and the 49px window it left behind had
+        // nothing to hide), so no card on the site is both a lightbox tile and a
+        // fold today, and this is the trap for the next one. The fold's clicks are
+        // the fold's: without this the listener would preventDefault the
+        // <summary>'s own toggle and open the box in its place, and there is no
+        // other way to the rows. The 查看图集 link in that row is the one click
+        // inside it that is still the card's own way in, so it is let through.
         var fold = e.target && e.target.closest
           ? e.target.closest(".ab-fold")
           : null;

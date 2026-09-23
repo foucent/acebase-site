@@ -90,14 +90,15 @@ FIRST_SET = 2  # style_01 is already on /gallery/ as the 穿搭写真 tile
 #               which prints the card by calling markup() below).
 #   style-02    one of the eight, but the user replaced its copy on 2026-09-23 —
 #               a look name, a sentence, then three pieces each with a price.
-#               Later the same day it became a fold card like /topup/'s: the
-#               sentence stays out, the three pieces sit behind a 展开 cue in an
-#               .ab-ec-list grid, and the card carries --fold --ec --look. Later
-#               still the sentence went, and the card was asked to stand level
-#               with style-03: the window holds two rows and the third is behind
-#               展开. Either shape is beyond card(), which escapes `excerpt` into
-#               one run of text, so the card was hand-written instead. Its
-#               pictures are still the set's.
+#               Later the same day it became a fold card like /topup/'s (the three
+#               pieces behind a 展开 cue, --fold --ec --look), then lost the
+#               sentence and was asked to stand level with style-03, and finally
+#               lost the third piece: two rows are exactly the window's 49px, so
+#               the fold had nothing left to hide and the card took style-03's
+#               shape outright — no sentence, two priced rows, .ab-card__more's
+#               查看图集. Every one of those shapes is beyond card(), which
+#               escapes `excerpt` into one run of text, so the card was
+#               hand-written instead. Its pictures are still the set's.
 #   style-03    the same treatment, same day, from the same page, then rewritten
 #               three times that day: cut to two rows, then concealed behind a
 #               fold (收起时两件都藏，点展开才出现), and finally simply shown — no
