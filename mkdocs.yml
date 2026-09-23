@@ -82,10 +82,17 @@ plugins:
         # 旧 FAQ 页（f8b7ba5 随 shop 目录一起下线）一直没人接手，URL 是 404；
         # /faq/ 是它的继任者，指过去。
         shop/faq-and-updates.md: faq/index.md
-        # /car/ 2026-09-22 并入 /sim-gear/ —— 汽车实拍图集不再单独成类目，六张卡
-        # 进了 STYLE 页的同一个网格。旧 URL 指回首页：mkdocs 的 redirects 只能
-        # 整页跳，/car/#car-01 那种锚点带不过去，指到 /sim-gear/ 也只能落页首。
+        # /car/ 2026-09-22 并入当时的 /sim-gear/（今天叫 /style/）—— 汽车实拍
+        # 图集不再单独成类目，六张卡进了 STYLE 页的同一个网格。这一行指回首页是
+        # 留下的一处旧账：六张卡现在在 /style/ 上，改指 style/index.md 才能让
+        # /car/#car-01 落到 car-01 那张卡（存根是带锚点的，见下）。
         car/index.md: index.md
+        # /sim-gear/ 2026-09-23 改名 /style/ —— 目录 docs/sim-gear/ 跟着变成
+        # docs/style/，卡片上的分类标签也从「画廊」「实拍」统一成 STYLE。
+        # 存根会**带着锚点**跳：mkdocs-redirects 生成的页面先跑一段
+        # `location.href = "../style/" + (anchor ? "#" + anchor : "")`，
+        # 浏览器实测 /sim-gear/#style-05 → /style/#style-05。
+        sim-gear/index.md: style/index.md
         # /wellness/ 2026-09-22 删除 —— 「健康生活」筹备页从没有过卡片，也没上过
         # 首页，没有内容可以搬。
         wellness/index.md: index.md
@@ -181,7 +188,7 @@ nav:
   - TOP-UP: topup/index.md
   # STYLE 这一格 2026-09-22 起装两个图集：穿搭写真与汽车实拍。原来单列的
   # WELLNESS（筹备中，从没有过卡片）与 CAR（六张卡）都在这一天删除。
-  - STYLE: sim-gear/index.md
+  - STYLE: style/index.md
   # 2026-09-22 加：乒乓球拍与装备实拍，11 组 67 张，生成器在仓库外
   # _tmp_ocr/gear_prep/prep.py（它写整页，手改会被覆盖）。放在 STYLE 之后、
   # FAQ 之前 —— 这是第十一组实拍图集，FAQ 那一排唯一的帮助页位置不动。

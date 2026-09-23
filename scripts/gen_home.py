@@ -33,7 +33,7 @@ page that grows a second one gets dated.
 
 The frontmatter's `updated:` is the fallback for a section that carries no
 stamp, and since 2026-09-22 that is every page with cards on it: /topup/,
-/tech/ and /sim-gear/ all lost their section heads that day. It is not a
+/tech/ and /style/ all lost their section heads that day. It is not a
 substitute for a stamp: a page that has cards and no date at all is named on
 stderr rather than dated by guesswork, because an invented date would reorder
 the whole front page.
@@ -94,7 +94,7 @@ def nav_categories() -> list[tuple[str, str]]:
 
 
 # A section head's date, in both spellings the site has used:
-#   更新于 2026-09-22                              (/sim-gear's head, until
+#   更新于 2026-09-22                              (/style's head, until
 #                                                    2026-09-22)
 #   更新于 <span class="js-prices-updated">…</span>  (/topup's, rewritten in the
 #                                                    browser from prices.json)
@@ -172,7 +172,7 @@ def cards_of(rel: str) -> list[tuple[str, str, str]]:
               f"frontmatter 也没有可用的 updated: —— 这几张不上首页",
               file=sys.stderr)
     # Stable, so cards sharing a section date keep the page's own order — which
-    # is the only order a one-section page like /sim-gear/ has.
+    # is the only order a one-section page like /style/ has.
     out.sort(key=lambda t: t[0], reverse=True)
     return out
 

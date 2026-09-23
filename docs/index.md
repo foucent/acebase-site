@@ -21,7 +21,7 @@ hide:
         <img src="/assets/gallery/wallpapers/style/style_02_01.jpg" alt="" decoding="async" fetchpriority="high">
       </a>
       <div class="ab-card__copy">
-        <p class="ab-cat">画廊</p>
+        <p class="ab-cat">STYLE</p>
         <h3 class="ab-card__title"><a href="/assets/gallery/wallpapers/style/style_02_01.jpg">可爱蝴蝶结登场</a></h3>
         <p class="ab-card__excerpt">点开可看整套。</p>
         <p class="ab-card__more"><a href="/assets/gallery/wallpapers/style/style_02_01.jpg">查看图集</a></p>
@@ -32,7 +32,7 @@ hide:
         <img src="/assets/gallery/wallpapers/style/style_03_01.jpg" alt="" loading="lazy" decoding="async">
       </a>
       <div class="ab-card__copy">
-        <p class="ab-cat">画廊</p>
+        <p class="ab-cat">STYLE</p>
         <h3 class="ab-card__title"><a href="/assets/gallery/wallpapers/style/style_03_01.jpg">高跟鞋 · 连裤袜</a></h3>
         <p class="ab-card__excerpt">点开可看整套。</p>
         <p class="ab-card__more"><a href="/assets/gallery/wallpapers/style/style_03_01.jpg">查看图集</a></p>
@@ -43,7 +43,7 @@ hide:
         <img src="/assets/gallery/wallpapers/style/style_04_01.jpg" alt="" loading="lazy" decoding="async">
       </a>
       <div class="ab-card__copy">
-        <p class="ab-cat">画廊</p>
+        <p class="ab-cat">STYLE</p>
         <h3 class="ab-card__title"><a href="/assets/gallery/wallpapers/style/style_04_01.jpg">来选一张最喜欢的吧！</a></h3>
         <p class="ab-card__excerpt">点开可看整套。</p>
         <p class="ab-card__more"><a href="/assets/gallery/wallpapers/style/style_04_01.jpg">查看图集</a></p>
@@ -54,7 +54,7 @@ hide:
         <img src="/assets/gallery/wallpapers/style/style_05_01.jpg" alt="" loading="lazy" decoding="async">
       </a>
       <div class="ab-card__copy">
-        <p class="ab-cat">画廊</p>
+        <p class="ab-cat">STYLE</p>
         <h3 class="ab-card__title"><a href="/assets/gallery/wallpapers/style/style_05_01.jpg">水墨</a></h3>
         <p class="ab-card__excerpt">点开可看整套。</p>
         <p class="ab-card__more"><a href="/assets/gallery/wallpapers/style/style_05_01.jpg">查看图集</a></p>
@@ -65,7 +65,7 @@ hide:
         <img src="/assets/gallery/wallpapers/style/style_06_01.jpg" alt="" loading="lazy" decoding="async">
       </a>
       <div class="ab-card__copy">
-        <p class="ab-cat">画廊</p>
+        <p class="ab-cat">STYLE</p>
         <h3 class="ab-card__title"><a href="/assets/gallery/wallpapers/style/style_06_01.jpg">祝你好运，要天天开心</a></h3>
         <p class="ab-card__excerpt">点开可看整套。</p>
         <p class="ab-card__more"><a href="/assets/gallery/wallpapers/style/style_06_01.jpg">查看图集</a></p>
@@ -76,7 +76,7 @@ hide:
         <img src="/assets/gallery/wallpapers/style/style_07_01.jpg" alt="" loading="lazy" decoding="async">
       </a>
       <div class="ab-card__copy">
-        <p class="ab-cat">画廊</p>
+        <p class="ab-cat">STYLE</p>
         <h3 class="ab-card__title"><a href="/assets/gallery/wallpapers/style/style_07_01.jpg">紫裙摆</a></h3>
         <p class="ab-card__excerpt">点开可看整套。</p>
         <p class="ab-card__more"><a href="/assets/gallery/wallpapers/style/style_07_01.jpg">查看图集</a></p>

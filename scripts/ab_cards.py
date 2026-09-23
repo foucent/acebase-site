@@ -8,14 +8,14 @@ pages (see gen_home.py) — so the component moved here, where the scripts that
 still build cards can reach it without importing a generator they have nothing
 to do with:
 
-    import_style_sets.py   card, esc            还在跑：/sim-gear/ 的八张卡
+    import_style_sets.py   card, esc            还在跑：/style/ 的八张卡
     tech_card_grid.py      AMAZON_HOME, esc, excerpt_of
     card_action_line.py    AMAZON_HOME
 
 The two behind still name gen_home in their docstrings; that was true when they
 were written and they are histories of a past edit rather than tools to re-run.
 What matters here is that the function they call produces the same markup it
-did then: the card body is one component, and a card on /sim-gear/ that came out
+did then: the card body is one component, and a card on /style/ that came out
 of `card()` has to keep looking like every other card on the site.
 
 What did NOT come along is `money()`. Its only callers were the homepage's own

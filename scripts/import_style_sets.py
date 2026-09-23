@@ -5,7 +5,7 @@
 The source is a folder of douyin stills (``~/Downloads/style``), one post per
 download timestamp: 18 files, 8 sets. This script writes the web-sized copies
 into ``docs/assets/gallery/wallpapers/style/`` and prints the ``<article>``
-block for each set, ready to paste into ``docs/sim-gear/index.md``.
+block for each set, ready to paste into ``docs/style/index.md``.
 
 It prints the markup rather than writing the page because the STYLE page is
 hand-written — only ``docs/index.md`` is generated, and that one stays the
@@ -59,14 +59,18 @@ ROOT = Path(__file__).resolve().parent.parent
 DOCS = ROOT / "docs"
 SRC = Path.home() / "Downloads" / "style"
 OUT_DIR = DOCS / "assets" / "gallery" / "wallpapers" / "style"
-PAGE = DOCS / "sim-gear" / "index.md"
+PAGE = DOCS / "style" / "index.md"
 MANIFEST = ROOT / "scripts" / "_style_sets_20260921.json"
 
 sys.path.insert(0, str(ROOT / "scripts"))
 from ab_cards import card, esc  # noqa: E402  the site's shared card builder
 
 # The card body, the same one ab_cards.card() draws for every grid on the site.
-CAT = "画廊"
+# The label was 「画廊」 until 2026-09-23, when the page moved from /sim-gear/ to
+# /style/ and every card on it — these eight, style-10, and the six car cards
+# that used to read 「实拍」 — took the category's own name. uncrate.css
+# uppercases it, so the source string and the rendered STYLE differ in case.
+CAT = "STYLE"
 EXCERPT = "点开可看整套。"
 MORE = "查看图集"
 MEDIA = "portrait"  # the 3:4 cover frame — the homepage's 穿搭写真 card uses it
@@ -77,7 +81,7 @@ FIRST_SET = 2  # style_01 is already on /gallery/ as the 穿搭写真 tile
 
 # Cards on the STYLE page that this importer did not make, and so must not be
 # reported as drift by --check. Two groups: the six car cards, merged into
-# /sim-gear/ from the retired /car/ page on 2026-09-22, and style-10, added by
+# /style/ from the retired /car/ page on 2026-09-22, and style-10, added by
 # hand on 2026-09-23 (its three frames and its markup come from
 # _tmp_ocr/style10_prep/prep.py, outside this repo, which prints the card by
 # calling markup() below). Without this list --check has been failing on the car

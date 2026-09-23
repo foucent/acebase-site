@@ -16,7 +16,7 @@ hide:
         <img src="/assets/gallery/wallpapers/style/style_02_01.jpg" alt="" fetchpriority="high" decoding="async">
       </a>
       <div class="ab-card__copy">
-        <p class="ab-cat">画廊</p>
+        <p class="ab-cat">STYLE</p>
         <h3 class="ab-card__title"><a href="/assets/gallery/wallpapers/style/style_02_01.jpg">可爱蝴蝶结登场</a></h3>
         <p class="ab-card__excerpt">点开可看整套。</p>
         <p class="ab-card__more"><a href="/assets/gallery/wallpapers/style/style_02_01.jpg">查看图集</a></p>
@@ -28,7 +28,7 @@ hide:
         <img src="/assets/gallery/wallpapers/style/style_03_01.jpg" alt="" loading="lazy" decoding="async">
       </a>
       <div class="ab-card__copy">
-        <p class="ab-cat">画廊</p>
+        <p class="ab-cat">STYLE</p>
         <h3 class="ab-card__title"><a href="/assets/gallery/wallpapers/style/style_03_01.jpg">高跟鞋 · 连裤袜</a></h3>
         <p class="ab-card__excerpt">点开可看整套。</p>
         <p class="ab-card__more"><a href="/assets/gallery/wallpapers/style/style_03_01.jpg">查看图集</a></p>
@@ -40,7 +40,7 @@ hide:
         <img src="/assets/gallery/wallpapers/style/style_04_01.jpg" alt="" loading="lazy" decoding="async">
       </a>
       <div class="ab-card__copy">
-        <p class="ab-cat">画廊</p>
+        <p class="ab-cat">STYLE</p>
         <h3 class="ab-card__title"><a href="/assets/gallery/wallpapers/style/style_04_01.jpg">来选一张最喜欢的吧！</a></h3>
         <p class="ab-card__excerpt">点开可看整套。</p>
         <p class="ab-card__more"><a href="/assets/gallery/wallpapers/style/style_04_01.jpg">查看图集</a></p>
@@ -52,7 +52,7 @@ hide:
         <img src="/assets/gallery/wallpapers/style/style_05_01.jpg" alt="" loading="lazy" decoding="async">
       </a>
       <div class="ab-card__copy">
-        <p class="ab-cat">画廊</p>
+        <p class="ab-cat">STYLE</p>
         <h3 class="ab-card__title"><a href="/assets/gallery/wallpapers/style/style_05_01.jpg">水墨</a></h3>
         <p class="ab-card__excerpt">点开可看整套。</p>
         <p class="ab-card__more"><a href="/assets/gallery/wallpapers/style/style_05_01.jpg">查看图集</a></p>
@@ -64,7 +64,7 @@ hide:
         <img src="/assets/gallery/wallpapers/style/style_06_01.jpg" alt="" loading="lazy" decoding="async">
       </a>
       <div class="ab-card__copy">
-        <p class="ab-cat">画廊</p>
+        <p class="ab-cat">STYLE</p>
         <h3 class="ab-card__title"><a href="/assets/gallery/wallpapers/style/style_06_01.jpg">祝你好运，要天天开心</a></h3>
         <p class="ab-card__excerpt">点开可看整套。</p>
         <p class="ab-card__more"><a href="/assets/gallery/wallpapers/style/style_06_01.jpg">查看图集</a></p>
@@ -76,7 +76,7 @@ hide:
         <img src="/assets/gallery/wallpapers/style/style_07_01.jpg" alt="" loading="lazy" decoding="async">
       </a>
       <div class="ab-card__copy">
-        <p class="ab-cat">画廊</p>
+        <p class="ab-cat">STYLE</p>
         <h3 class="ab-card__title"><a href="/assets/gallery/wallpapers/style/style_07_01.jpg">紫裙摆</a></h3>
         <p class="ab-card__excerpt">点开可看整套。</p>
         <p class="ab-card__more"><a href="/assets/gallery/wallpapers/style/style_07_01.jpg">查看图集</a></p>
@@ -88,7 +88,7 @@ hide:
         <img src="/assets/gallery/wallpapers/style/style_08_01.jpg" alt="" loading="lazy" decoding="async">
       </a>
       <div class="ab-card__copy">
-        <p class="ab-cat">画廊</p>
+        <p class="ab-cat">STYLE</p>
         <h3 class="ab-card__title"><a href="/assets/gallery/wallpapers/style/style_08_01.jpg">薄雾余灰</a></h3>
         <p class="ab-card__excerpt">点开可看整套。</p>
         <p class="ab-card__more"><a href="/assets/gallery/wallpapers/style/style_08_01.jpg">查看图集</a></p>
@@ -100,7 +100,7 @@ hide:
         <img src="/assets/gallery/wallpapers/style/style_09_01.jpg" alt="" loading="lazy" decoding="async">
       </a>
       <div class="ab-card__copy">
-        <p class="ab-cat">画廊</p>
+        <p class="ab-cat">STYLE</p>
         <h3 class="ab-card__title"><a href="/assets/gallery/wallpapers/style/style_09_01.jpg">蝉鸣不止的夏日总会结束</a></h3>
         <p class="ab-card__excerpt">点开可看整套。</p>
         <p class="ab-card__more"><a href="/assets/gallery/wallpapers/style/style_09_01.jpg">查看图集</a></p>
@@ -115,7 +115,7 @@ hide:
         <img src="/assets/gallery/wallpapers/style/style_10_01.jpg" alt="" loading="lazy" decoding="async">
       </a>
       <div class="ab-card__copy">
-        <p class="ab-cat">画廊</p>
+        <p class="ab-cat">STYLE</p>
         <h3 class="ab-card__title"><a href="/assets/gallery/wallpapers/style/style_10_01.jpg">Pink floral tiered ruffle mini skirt with white blouse</a></h3>
         <p class="ab-card__excerpt">点开可看整套。</p>
         <p class="ab-card__more"><a href="/assets/gallery/wallpapers/style/style_10_01.jpg">查看图集</a></p>
@@ -129,7 +129,7 @@ hide:
         <img src="/assets/gallery/car/car_01_01.jpg" alt="" decoding="async">
       </a>
       <div class="ab-card__copy">
-        <p class="ab-cat">实拍</p>
+        <p class="ab-cat">STYLE</p>
         <h3 class="ab-card__title"><a href="/assets/gallery/car/car_01_01.jpg">宝马 5 系</a></h3>
         <p class="ab-card__excerpt">点开可看整套。</p>
         <p class="ab-card__more"><a href="/assets/gallery/car/car_01_01.jpg">查看图集</a></p>
@@ -141,7 +141,7 @@ hide:
         <img src="/assets/gallery/car/car_02_01.jpg" alt="" loading="lazy" decoding="async">
       </a>
       <div class="ab-card__copy">
-        <p class="ab-cat">实拍</p>
+        <p class="ab-cat">STYLE</p>
         <h3 class="ab-card__title"><a href="/assets/gallery/car/car_02_01.jpg">凌志 LS</a></h3>
         <p class="ab-card__excerpt">点开可看整套。</p>
         <p class="ab-card__more"><a href="/assets/gallery/car/car_02_01.jpg">查看图集</a></p>
@@ -153,7 +153,7 @@ hide:
         <img src="/assets/gallery/car/car_03_01.jpg" alt="" loading="lazy" decoding="async">
       </a>
       <div class="ab-card__copy">
-        <p class="ab-cat">实拍</p>
+        <p class="ab-cat">STYLE</p>
         <h3 class="ab-card__title"><a href="/assets/gallery/car/car_03_01.jpg">保时捷卡宴 Turbo</a></h3>
         <p class="ab-card__excerpt">点开可看整套。</p>
         <p class="ab-card__more"><a href="/assets/gallery/car/car_03_01.jpg">查看图集</a></p>
@@ -165,7 +165,7 @@ hide:
         <img src="/assets/gallery/car/car_04_01.jpg" alt="" loading="lazy" decoding="async">
       </a>
       <div class="ab-card__copy">
-        <p class="ab-cat">实拍</p>
+        <p class="ab-cat">STYLE</p>
         <h3 class="ab-card__title"><a href="/assets/gallery/car/car_04_01.jpg">宝马 X6</a></h3>
         <p class="ab-card__excerpt">点开可看整套。</p>
         <p class="ab-card__more"><a href="/assets/gallery/car/car_04_01.jpg">查看图集</a></p>
@@ -177,7 +177,7 @@ hide:
         <img src="/assets/gallery/car/car_05_01.jpg" alt="" loading="lazy" decoding="async">
       </a>
       <div class="ab-card__copy">
-        <p class="ab-cat">实拍</p>
+        <p class="ab-cat">STYLE</p>
         <h3 class="ab-card__title"><a href="/assets/gallery/car/car_05_01.jpg">奥迪 Q7</a></h3>
         <p class="ab-card__excerpt">点开可看整套。</p>
         <p class="ab-card__more"><a href="/assets/gallery/car/car_05_01.jpg">查看图集</a></p>
@@ -189,7 +189,7 @@ hide:
         <img src="/assets/gallery/car/car_06_01.jpg" alt="" loading="lazy" decoding="async">
       </a>
       <div class="ab-card__copy">
-        <p class="ab-cat">实拍</p>
+        <p class="ab-cat">STYLE</p>
         <h3 class="ab-card__title"><a href="/assets/gallery/car/car_06_01.jpg">路虎揽胜</a></h3>
         <p class="ab-card__excerpt">点开可看整套。</p>
         <p class="ab-card__more"><a href="/assets/gallery/car/car_06_01.jpg">查看图集</a></p>
@@ -213,34 +213,34 @@ hide:
       "@type": "WebPage",
       "name": "STYLE · 穿搭与汽车",
       "description": "AceBase STYLE —— 穿搭写真 9 套 21 张、汽车实拍 6 套 91 张，点开卡片即可在页内看整套。",
-      "url": "https://acebase.cc/sim-gear/"
+      "url": "https://acebase.cc/style/"
     },
     {
       "@type": "ItemList",
       "name": "穿搭与汽车图集",
       "itemListElement": [
-        { "@type": "ListItem", "position": 1, "item": { "@type": "ImageObject", "name": "可爱蝴蝶结登场", "contentUrl": "https://acebase.cc/assets/gallery/wallpapers/style/style_02_01.jpg", "url": "https://acebase.cc/sim-gear/#style-02" } },
-        { "@type": "ListItem", "position": 2, "item": { "@type": "ImageObject", "name": "高跟鞋 · 连裤袜", "contentUrl": "https://acebase.cc/assets/gallery/wallpapers/style/style_03_01.jpg", "url": "https://acebase.cc/sim-gear/#style-03" } },
-        { "@type": "ListItem", "position": 3, "item": { "@type": "ImageObject", "name": "来选一张最喜欢的吧！", "contentUrl": "https://acebase.cc/assets/gallery/wallpapers/style/style_04_01.jpg", "url": "https://acebase.cc/sim-gear/#style-04" } },
-        { "@type": "ListItem", "position": 4, "item": { "@type": "ImageObject", "name": "水墨", "contentUrl": "https://acebase.cc/assets/gallery/wallpapers/style/style_05_01.jpg", "url": "https://acebase.cc/sim-gear/#style-05" } },
-        { "@type": "ListItem", "position": 5, "item": { "@type": "ImageObject", "name": "祝你好运，要天天开心", "contentUrl": "https://acebase.cc/assets/gallery/wallpapers/style/style_06_01.jpg", "url": "https://acebase.cc/sim-gear/#style-06" } },
-        { "@type": "ListItem", "position": 6, "item": { "@type": "ImageObject", "name": "紫裙摆", "contentUrl": "https://acebase.cc/assets/gallery/wallpapers/style/style_07_01.jpg", "url": "https://acebase.cc/sim-gear/#style-07" } },
-        { "@type": "ListItem", "position": 7, "item": { "@type": "ImageObject", "name": "薄雾余灰", "contentUrl": "https://acebase.cc/assets/gallery/wallpapers/style/style_08_01.jpg", "url": "https://acebase.cc/sim-gear/#style-08" } },
-        { "@type": "ListItem", "position": 8, "item": { "@type": "ImageObject", "name": "蝉鸣不止的夏日总会结束", "contentUrl": "https://acebase.cc/assets/gallery/wallpapers/style/style_09_01.jpg", "url": "https://acebase.cc/sim-gear/#style-09" } },
-        { "@type": "ListItem", "position": 9, "item": { "@type": "ImageObject", "name": "Pink floral tiered ruffle mini skirt with white blouse", "contentUrl": "https://acebase.cc/assets/gallery/wallpapers/style/style_10_01.jpg", "url": "https://acebase.cc/sim-gear/#style-10" } },
-        { "@type": "ListItem", "position": 10, "item": { "@type": "ImageObject", "name": "宝马 5 系", "contentUrl": "https://acebase.cc/assets/gallery/car/car_01_01.jpg", "url": "https://acebase.cc/sim-gear/#car-01" } },
-        { "@type": "ListItem", "position": 11, "item": { "@type": "ImageObject", "name": "凌志 LS", "contentUrl": "https://acebase.cc/assets/gallery/car/car_02_01.jpg", "url": "https://acebase.cc/sim-gear/#car-02" } },
-        { "@type": "ListItem", "position": 12, "item": { "@type": "ImageObject", "name": "保时捷卡宴 Turbo", "contentUrl": "https://acebase.cc/assets/gallery/car/car_03_01.jpg", "url": "https://acebase.cc/sim-gear/#car-03" } },
-        { "@type": "ListItem", "position": 13, "item": { "@type": "ImageObject", "name": "宝马 X6", "contentUrl": "https://acebase.cc/assets/gallery/car/car_04_01.jpg", "url": "https://acebase.cc/sim-gear/#car-04" } },
-        { "@type": "ListItem", "position": 14, "item": { "@type": "ImageObject", "name": "奥迪 Q7", "contentUrl": "https://acebase.cc/assets/gallery/car/car_05_01.jpg", "url": "https://acebase.cc/sim-gear/#car-05" } },
-        { "@type": "ListItem", "position": 15, "item": { "@type": "ImageObject", "name": "路虎揽胜", "contentUrl": "https://acebase.cc/assets/gallery/car/car_06_01.jpg", "url": "https://acebase.cc/sim-gear/#car-06" } }
+        { "@type": "ListItem", "position": 1, "item": { "@type": "ImageObject", "name": "可爱蝴蝶结登场", "contentUrl": "https://acebase.cc/assets/gallery/wallpapers/style/style_02_01.jpg", "url": "https://acebase.cc/style/#style-02" } },
+        { "@type": "ListItem", "position": 2, "item": { "@type": "ImageObject", "name": "高跟鞋 · 连裤袜", "contentUrl": "https://acebase.cc/assets/gallery/wallpapers/style/style_03_01.jpg", "url": "https://acebase.cc/style/#style-03" } },
+        { "@type": "ListItem", "position": 3, "item": { "@type": "ImageObject", "name": "来选一张最喜欢的吧！", "contentUrl": "https://acebase.cc/assets/gallery/wallpapers/style/style_04_01.jpg", "url": "https://acebase.cc/style/#style-04" } },
+        { "@type": "ListItem", "position": 4, "item": { "@type": "ImageObject", "name": "水墨", "contentUrl": "https://acebase.cc/assets/gallery/wallpapers/style/style_05_01.jpg", "url": "https://acebase.cc/style/#style-05" } },
+        { "@type": "ListItem", "position": 5, "item": { "@type": "ImageObject", "name": "祝你好运，要天天开心", "contentUrl": "https://acebase.cc/assets/gallery/wallpapers/style/style_06_01.jpg", "url": "https://acebase.cc/style/#style-06" } },
+        { "@type": "ListItem", "position": 6, "item": { "@type": "ImageObject", "name": "紫裙摆", "contentUrl": "https://acebase.cc/assets/gallery/wallpapers/style/style_07_01.jpg", "url": "https://acebase.cc/style/#style-07" } },
+        { "@type": "ListItem", "position": 7, "item": { "@type": "ImageObject", "name": "薄雾余灰", "contentUrl": "https://acebase.cc/assets/gallery/wallpapers/style/style_08_01.jpg", "url": "https://acebase.cc/style/#style-08" } },
+        { "@type": "ListItem", "position": 8, "item": { "@type": "ImageObject", "name": "蝉鸣不止的夏日总会结束", "contentUrl": "https://acebase.cc/assets/gallery/wallpapers/style/style_09_01.jpg", "url": "https://acebase.cc/style/#style-09" } },
+        { "@type": "ListItem", "position": 9, "item": { "@type": "ImageObject", "name": "Pink floral tiered ruffle mini skirt with white blouse", "contentUrl": "https://acebase.cc/assets/gallery/wallpapers/style/style_10_01.jpg", "url": "https://acebase.cc/style/#style-10" } },
+        { "@type": "ListItem", "position": 10, "item": { "@type": "ImageObject", "name": "宝马 5 系", "contentUrl": "https://acebase.cc/assets/gallery/car/car_01_01.jpg", "url": "https://acebase.cc/style/#car-01" } },
+        { "@type": "ListItem", "position": 11, "item": { "@type": "ImageObject", "name": "凌志 LS", "contentUrl": "https://acebase.cc/assets/gallery/car/car_02_01.jpg", "url": "https://acebase.cc/style/#car-02" } },
+        { "@type": "ListItem", "position": 12, "item": { "@type": "ImageObject", "name": "保时捷卡宴 Turbo", "contentUrl": "https://acebase.cc/assets/gallery/car/car_03_01.jpg", "url": "https://acebase.cc/style/#car-03" } },
+        { "@type": "ListItem", "position": 13, "item": { "@type": "ImageObject", "name": "宝马 X6", "contentUrl": "https://acebase.cc/assets/gallery/car/car_04_01.jpg", "url": "https://acebase.cc/style/#car-04" } },
+        { "@type": "ListItem", "position": 14, "item": { "@type": "ImageObject", "name": "奥迪 Q7", "contentUrl": "https://acebase.cc/assets/gallery/car/car_05_01.jpg", "url": "https://acebase.cc/style/#car-05" } },
+        { "@type": "ListItem", "position": 15, "item": { "@type": "ImageObject", "name": "路虎揽胜", "contentUrl": "https://acebase.cc/assets/gallery/car/car_06_01.jpg", "url": "https://acebase.cc/style/#car-06" } }
       ]
     },
     {
       "@type": "BreadcrumbList",
       "itemListElement": [
         { "@type": "ListItem", "position": 1, "name": "首页", "item": "https://acebase.cc/" },
-        { "@type": "ListItem", "position": 2, "name": "STYLE", "item": "https://acebase.cc/sim-gear/" }
+        { "@type": "ListItem", "position": 2, "name": "STYLE", "item": "https://acebase.cc/style/" }
       ]
     }
   ]

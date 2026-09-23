@@ -13,7 +13,7 @@
     allLoaded: isZh ? "已全部加载" : "All photos loaded",
   };
 
-  // Cards that open the lightbox from outside the wall. /sim-gear/ is their
+  // Cards that open the lightbox from outside the wall. /style/ is their
   // first user: the photo sets are drawn as magazine cards, so the grid and the
   // type are uncrate.css's, and only the click is the wall's. They carry their
   // own data-gallery exactly like a tile does, and nothing else — no shuffle
