@@ -41,19 +41,27 @@ hide:
         </p>
       </div>
     </article>
-    <article class="ab-card ab-card--portrait ab-card--lightbox ab-card--ec ab-card--look" id="style-03" data-gallery="[&quot;/assets/gallery/wallpapers/style/style_03_01.jpg&quot;, &quot;/assets/gallery/wallpapers/style/style_03_02.jpg&quot;]" data-caption="穿搭主题：暗夜优雅 (Noir Elegance)" data-look="style-03" data-buy="#">
+    <article class="ab-card ab-card--portrait ab-card--lightbox ab-card--fold ab-card--ec ab-card--look ab-card--reveal" id="style-03" data-gallery="[&quot;/assets/gallery/wallpapers/style/style_03_01.jpg&quot;, &quot;/assets/gallery/wallpapers/style/style_03_02.jpg&quot;]" data-caption="暗夜优雅 (Noir Elegance)" data-look="style-03" data-buy="#">
       <a class="ab-card__media" href="/assets/gallery/wallpapers/style/style_03_01.jpg" tabindex="-1" aria-hidden="true">
         <img src="/assets/gallery/wallpapers/style/style_03_01.jpg" alt="" loading="lazy" decoding="async">
       </a>
       <div class="ab-card__copy">
         <p class="ab-cat">STYLE</p>
-        <h3 class="ab-card__title"><a href="/assets/gallery/wallpapers/style/style_03_01.jpg">穿搭主题：暗夜优雅 (Noir Elegance)</a></h3>
-        <p class="ab-card__excerpt">红底漆皮高跟鞋搭配菱格纹透肉连裤袜，打造经典聚焦腿部线条的精致造型。</p>
+        <h3 class="ab-card__title"><a href="/assets/gallery/wallpapers/style/style_03_01.jpg">暗夜优雅 (Noir Elegance)</a></h3>
+        <details class="ab-fold">
+          <summary class="ab-fold__summary">
+            <span class="ab-fold__act">
+              <span class="ab-fold__cue"><span class="ab-fold__cue-more">展开</span><span class="ab-fold__cue-less">收起</span></span>
+              <em class="ab-fold__or">或</em>
+              <a class="ab-fold__buy" href="/assets/gallery/wallpapers/style/style_03_01.jpg">查看图集</a>
+            </span>
+          </summary>
+        </details>
+
         <p class="ab-ec-list">
           <span class="ab-ec-item"><span class="ab-ec-label">红底漆皮细高跟鞋</span><span class="ab-ec-price">$795.</span></span>
           <span class="ab-ec-item"><span class="ab-ec-label">菱格纹薄透连裤袜</span><span class="ab-ec-price">$38.</span></span>
         </p>
-        <p class="ab-card__more"><a href="/assets/gallery/wallpapers/style/style_03_01.jpg">查看图集</a></p>
       </div>
     </article>
     <article class="ab-card ab-card--portrait ab-card--lightbox" id="style-04" data-gallery="[&quot;/assets/gallery/wallpapers/style/style_04_01.jpg&quot;, &quot;/assets/gallery/wallpapers/style/style_04_02.jpg&quot;, &quot;/assets/gallery/wallpapers/style/style_04_03.jpg&quot;, &quot;/assets/gallery/wallpapers/style/style_04_04.jpg&quot;]" data-caption="来选一张最喜欢的吧！" data-look="style-04" data-buy="#">
