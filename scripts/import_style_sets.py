@@ -96,15 +96,14 @@ FIRST_SET = 2  # style_01 is already on /gallery/ as the 穿搭写真 tile
 #               shape is beyond card(), which escapes `excerpt` into one run of
 #               text, so the card was hand-written instead. Its pictures are
 #               still the set's.
-#   style-03    the same treatment, same day, from the same page, then turned on
-#               its head the same day: the sentence went, the title dropped its
-#               主题名 prefix, and the two priced pieces went behind the fold
-#               instead of in front of it — 收起时两件都藏，点展开才出现. Its two
-#               rows are 49px, too short for any window that still cuts one in
-#               half, so it carries --reveal (see uncrate.css) rather than a
-#               window, and a min-height that brings the shut card to the height
-#               of a plain one. Hand-written for the same reason; its pictures
-#               are still the set's.
+#   style-03    the same treatment, same day, from the same page, then rewritten
+#               three times that day: cut to two rows, then concealed behind a
+#               fold (收起时两件都藏，点展开才出现), and finally simply shown — no
+#               sentence, the two priced pieces sitting where a plain card keeps
+#               its sentence, and .ab-card__more's 查看图集 at the end. It carries
+#               no --fold at all; see the no-fold look card in uncrate.css for
+#               why the fold lost. Hand-written for the same reason; its
+#               pictures are still the set's.
 #
 # Without this list --check has been failing since the merge — it lists the car
 # cards as 多余的卡片, and because the check stopped being able to pass, nobody

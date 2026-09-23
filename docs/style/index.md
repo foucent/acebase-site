@@ -47,31 +47,23 @@ hide:
       </div>
     </article>
 
-    <!-- style-03：2026-09-23 用户按 style-02 的写法换掉了它的文字，同日又改成
-         「收起时两件都藏、点开才露」：没有句子，两件单品收在折卡里，卡片默认高度靠
-         --reveal 的 min-height 与普通卡（来选一张最喜欢的吧！）配平。
-         折卡里的点击由 photo-wall.js 让给 <summary>（见那里的 initLightbox）。 -->
-    <article class="ab-card ab-card--portrait ab-card--lightbox ab-card--fold ab-card--ec ab-card--look ab-card--reveal" id="style-03" data-gallery="[&quot;/assets/gallery/wallpapers/style/style_03_01.jpg&quot;, &quot;/assets/gallery/wallpapers/style/style_03_02.jpg&quot;]" data-caption="暗夜优雅 (Noir Elegance)" data-look="style-03" data-buy="#">
+    <!-- style-03：2026-09-23 用户按 style-02 的写法换掉了它的文字，同日改了三轮，
+         最后落成「不折，两件单品就摆在明面上」：没有句子，两件带价单品占住普通卡那行
+         正文的位置，末尾照普通卡用 .ab-card__more。前两轮（不折露两行 → 收进折卡里、
+         与普通卡等高）都作废，三轮的取舍与数字见 HANDOFF.txt 的 AF 条。
+         这张卡上没有折卡，点击按普通卡走（photo-wall.js 的 <summary> 让位那一段不适用）。 -->
+    <article class="ab-card ab-card--portrait ab-card--lightbox ab-card--ec ab-card--look" id="style-03" data-gallery="[&quot;/assets/gallery/wallpapers/style/style_03_01.jpg&quot;, &quot;/assets/gallery/wallpapers/style/style_03_02.jpg&quot;]" data-caption="暗夜优雅 (Noir Elegance)" data-look="style-03" data-buy="#">
       <a class="ab-card__media" href="/assets/gallery/wallpapers/style/style_03_01.jpg" tabindex="-1" aria-hidden="true">
         <img src="/assets/gallery/wallpapers/style/style_03_01.jpg" alt="" loading="lazy" decoding="async">
       </a>
       <div class="ab-card__copy">
         <p class="ab-cat">STYLE</p>
         <h3 class="ab-card__title"><a href="/assets/gallery/wallpapers/style/style_03_01.jpg">暗夜优雅 (Noir Elegance)</a></h3>
-        <details class="ab-fold">
-          <summary class="ab-fold__summary">
-            <span class="ab-fold__act">
-              <span class="ab-fold__cue"><span class="ab-fold__cue-more">展开</span><span class="ab-fold__cue-less">收起</span></span>
-              <em class="ab-fold__or">或</em>
-              <a class="ab-fold__buy" href="/assets/gallery/wallpapers/style/style_03_01.jpg">查看图集</a>
-            </span>
-          </summary>
-        </details>
-
         <p class="ab-ec-list">
           <span class="ab-ec-item"><span class="ab-ec-label">红底漆皮细高跟鞋</span><span class="ab-ec-price">$795.</span></span>
           <span class="ab-ec-item"><span class="ab-ec-label">菱格纹薄透连裤袜</span><span class="ab-ec-price">$38.</span></span>
         </p>
+        <p class="ab-card__more"><a href="/assets/gallery/wallpapers/style/style_03_01.jpg">查看图集</a></p>
       </div>
     </article>
 
