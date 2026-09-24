@@ -16,13 +16,14 @@ hide:
       <h2 class="ab-section__title">最近更新</h2>
     </header>
     <div class="ab-list ab-list--feed">
-    <article class="ab-card ab-card--portrait ab-card--lightbox" id="gear-01" data-gallery="[&quot;/assets/gallery/gear/gear_01_01.jpg&quot;, &quot;/assets/gallery/gear/gear_01_02.jpg&quot;, &quot;/assets/gallery/gear/gear_01_03.jpg&quot;, &quot;/assets/gallery/gear/gear_01_04.jpg&quot;, &quot;/assets/gallery/gear/gear_01_05.jpg&quot;, &quot;/assets/gallery/gear/gear_01_06.jpg&quot;, &quot;/assets/gallery/gear/gear_01_07.jpg&quot;]" data-caption="开放式 ITX 装机" data-look="gear-01" data-buy="#">
+    <article class="ab-card ab-card--portrait ab-card--lightbox" id="gear-01" data-gallery="[&quot;/assets/gallery/gear/gear_01_01.jpg&quot;, &quot;/assets/gallery/gear/gear_01_02.jpg&quot;, &quot;/assets/gallery/gear/gear_01_03.jpg&quot;, &quot;/assets/gallery/gear/gear_01_04.jpg&quot;, &quot;/assets/gallery/gear/gear_01_05.jpg&quot;, &quot;/assets/gallery/gear/gear_01_06.jpg&quot;, &quot;/assets/gallery/gear/gear_01_07.jpg&quot;]" data-caption="XTIA Xproto-L V2 开放式机箱" data-look="gear-01" data-buy="#">
       <a class="ab-card__media" href="/assets/gallery/gear/gear_01_01.jpg" tabindex="-1" aria-hidden="true">
         <img src="/assets/gallery/gear/gear_01_01.jpg" alt="" decoding="async" fetchpriority="high">
       </a>
       <div class="ab-card__copy">
-        <p class="ab-cat">装机</p>
-        <h3 class="ab-card__title"><a href="/assets/gallery/gear/gear_01_01.jpg">开放式 ITX 装机</a></h3>
+        <p class="ab-cat">机箱</p>
+        <h3 class="ab-card__title"><a href="/assets/gallery/gear/gear_01_01.jpg">XTIA Xproto-L V2 开放式机箱</a></h3>
+        <p class="ab-card__meta"><span class="ab-money">$159</span></p>
         <p class="ab-card__excerpt">点开可看整套。</p>
         <p class="ab-card__more"><a href="/assets/gallery/gear/gear_01_01.jpg">查看图集</a></p>
       </div>

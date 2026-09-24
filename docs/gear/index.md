@@ -14,13 +14,14 @@ hide:
     <!-- 下面十二张 gear 卡由 _tmp_ocr/tech_prep/prep.py 按这对注释整段重写；图集
          那块 JSON-LD 同理，见页尾那对 gear-jsonld 注释。 -->
     <!-- gear-cards:start -->
-    <article class="ab-card ab-card--portrait ab-card--lightbox" id="gear-01" data-gallery="[&quot;/assets/gallery/gear/gear_01_01.jpg&quot;, &quot;/assets/gallery/gear/gear_01_02.jpg&quot;, &quot;/assets/gallery/gear/gear_01_03.jpg&quot;, &quot;/assets/gallery/gear/gear_01_04.jpg&quot;, &quot;/assets/gallery/gear/gear_01_05.jpg&quot;, &quot;/assets/gallery/gear/gear_01_06.jpg&quot;, &quot;/assets/gallery/gear/gear_01_07.jpg&quot;]" data-caption="开放式 ITX 装机" data-look="gear-01" data-buy="#">
+    <article class="ab-card ab-card--portrait ab-card--lightbox" id="gear-01" data-gallery="[&quot;/assets/gallery/gear/gear_01_01.jpg&quot;, &quot;/assets/gallery/gear/gear_01_02.jpg&quot;, &quot;/assets/gallery/gear/gear_01_03.jpg&quot;, &quot;/assets/gallery/gear/gear_01_04.jpg&quot;, &quot;/assets/gallery/gear/gear_01_05.jpg&quot;, &quot;/assets/gallery/gear/gear_01_06.jpg&quot;, &quot;/assets/gallery/gear/gear_01_07.jpg&quot;]" data-caption="XTIA Xproto-L V2 开放式机箱" data-look="gear-01" data-buy="#">
       <a class="ab-card__media" href="/assets/gallery/gear/gear_01_01.jpg" tabindex="-1" aria-hidden="true">
         <img src="/assets/gallery/gear/gear_01_01.jpg" alt="" fetchpriority="high" decoding="async">
       </a>
       <div class="ab-card__copy">
-        <p class="ab-cat">装机</p>
-        <h3 class="ab-card__title"><a href="/assets/gallery/gear/gear_01_01.jpg">开放式 ITX 装机</a></h3>
+        <p class="ab-cat">机箱</p>
+        <h3 class="ab-card__title"><a href="/assets/gallery/gear/gear_01_01.jpg">XTIA Xproto-L V2 开放式机箱</a></h3>
+        <p class="ab-card__meta"><span class="ab-money">$159</span></p>
         <p class="ab-card__excerpt">点开可看整套。</p>
         <p class="ab-card__more"><a href="/assets/gallery/gear/gear_01_01.jpg">查看图集</a></p>
       </div>
@@ -190,7 +191,7 @@ hide:
       "name": "电竞房与桌搭",
       "numberOfItems": "96",
       "itemListElement": [
-        { "@type": "ListItem", "position": 1, "item": { "@type": "ImageObject", "name": "开放式 ITX 装机", "contentUrl": "https://acebase.cc/assets/gallery/gear/gear_01_01.jpg", "url": "https://acebase.cc/gear/#gear-01" } },
+        { "@type": "ListItem", "position": 1, "item": { "@type": "ImageObject", "name": "XTIA Xproto-L V2 开放式机箱", "contentUrl": "https://acebase.cc/assets/gallery/gear/gear_01_01.jpg", "url": "https://acebase.cc/gear/#gear-01" } },
         { "@type": "ListItem", "position": 2, "item": { "@type": "ImageObject", "name": "超宽屏与白色外设", "contentUrl": "https://acebase.cc/assets/gallery/gear/gear_02_01.jpg", "url": "https://acebase.cc/gear/#gear-02" } },
         { "@type": "ListItem", "position": 3, "item": { "@type": "ImageObject", "name": "暖光双屏桌面", "contentUrl": "https://acebase.cc/assets/gallery/gear/gear_03_01.jpg", "url": "https://acebase.cc/gear/#gear-03" } },
         { "@type": "ListItem", "position": 4, "item": { "@type": "ImageObject", "name": "临窗曲面屏电竞房", "contentUrl": "https://acebase.cc/assets/gallery/gear/gear_04_01.jpg", "url": "https://acebase.cc/gear/#gear-04" } },
