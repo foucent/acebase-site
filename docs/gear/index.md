@@ -21,11 +21,10 @@ hide:
       <div class="ab-card__copy">
         <p class="ab-cat">机箱</p>
         <h3 class="ab-card__title"><a href="/assets/gallery/gear/gear_01_01.jpg">XTIA Xproto-L V2 开放式机箱</a></h3>
-        <p class="ab-card__meta"><span class="ab-money">$159</span></p>
         <p class="ab-card__more ab-card__more--split">
           <a href="/assets/gallery/gear/gear_01_01.jpg">查看图集</a>
           <em class="ab-card__or">或</em>
-          <a class="ab-crisp-open" href="#" data-crisp-msg="你好，我想咨询「XTIA Xproto-L V2 开放式机箱」的实时价格。">查询实时价格</a>
+          <a class="ab-crisp-open" href="#" data-crisp-msg="你好，我想咨询「XTIA Xproto-L V2 开放式机箱」的实时价格。">查询价格</a>
         </p>
       </div>
     </article>
@@ -39,7 +38,7 @@ hide:
         <p class="ab-card__more ab-card__more--split">
           <a href="/assets/gallery/gear/gear_02_01.jpg">查看图集</a>
           <em class="ab-card__or">或</em>
-          <a class="ab-crisp-open" href="#" data-crisp-msg="你好，我想咨询「超宽屏与白色外设」的实时价格。">查询实时价格</a>
+          <a class="ab-crisp-open" href="#" data-crisp-msg="你好，我想咨询「超宽屏与白色外设」的实时价格。">查询价格</a>
         </p>
       </div>
     </article>
@@ -53,7 +52,7 @@ hide:
         <p class="ab-card__more ab-card__more--split">
           <a href="/assets/gallery/gear/gear_03_01.jpg">查看图集</a>
           <em class="ab-card__or">或</em>
-          <a class="ab-crisp-open" href="#" data-crisp-msg="你好，我想咨询「暖光双屏桌面」的实时价格。">查询实时价格</a>
+          <a class="ab-crisp-open" href="#" data-crisp-msg="你好，我想咨询「暖光双屏桌面」的实时价格。">查询价格</a>
         </p>
       </div>
     </article>
@@ -67,7 +66,7 @@ hide:
         <p class="ab-card__more ab-card__more--split">
           <a href="/assets/gallery/gear/gear_04_01.jpg">查看图集</a>
           <em class="ab-card__or">或</em>
-          <a class="ab-crisp-open" href="#" data-crisp-msg="你好，我想咨询「临窗曲面屏电竞房」的实时价格。">查询实时价格</a>
+          <a class="ab-crisp-open" href="#" data-crisp-msg="你好，我想咨询「临窗曲面屏电竞房」的实时价格。">查询价格</a>
         </p>
       </div>
     </article>
@@ -81,7 +80,7 @@ hide:
         <p class="ab-card__more ab-card__more--split">
           <a href="/assets/gallery/gear/gear_05_01.jpg">查看图集</a>
           <em class="ab-card__or">或</em>
-          <a class="ab-crisp-open" href="#" data-crisp-msg="你好，我想咨询「苹果设备桌面」的实时价格。">查询实时价格</a>
+          <a class="ab-crisp-open" href="#" data-crisp-msg="你好，我想咨询「苹果设备桌面」的实时价格。">查询价格</a>
         </p>
       </div>
     </article>
@@ -95,7 +94,7 @@ hide:
         <p class="ab-card__more ab-card__more--split">
           <a href="/assets/gallery/gear/gear_06_01.jpg">查看图集</a>
           <em class="ab-card__or">或</em>
-          <a class="ab-crisp-open" href="#" data-crisp-msg="你好，我想咨询「帘前双屏工位」的实时价格。">查询实时价格</a>
+          <a class="ab-crisp-open" href="#" data-crisp-msg="你好，我想咨询「帘前双屏工位」的实时价格。">查询价格</a>
         </p>
       </div>
     </article>
@@ -109,7 +108,7 @@ hide:
         <p class="ab-card__more ab-card__more--split">
           <a href="/assets/gallery/gear/gear_07_01.jpg">查看图集</a>
           <em class="ab-card__or">或</em>
-          <a class="ab-crisp-open" href="#" data-crisp-msg="你好，我想咨询「海报墙桌面」的实时价格。">查询实时价格</a>
+          <a class="ab-crisp-open" href="#" data-crisp-msg="你好，我想咨询「海报墙桌面」的实时价格。">查询价格</a>
         </p>
       </div>
     </article>
@@ -123,7 +122,7 @@ hide:
         <p class="ab-card__more ab-card__more--split">
           <a href="/assets/gallery/gear/gear_08_01.jpg">查看图集</a>
           <em class="ab-card__or">或</em>
-          <a class="ab-crisp-open" href="#" data-crisp-msg="你好，我想咨询「双屏无线桌面」的实时价格。">查询实时价格</a>
+          <a class="ab-crisp-open" href="#" data-crisp-msg="你好，我想咨询「双屏无线桌面」的实时价格。">查询价格</a>
         </p>
       </div>
     </article>
@@ -137,7 +136,7 @@ hide:
         <p class="ab-card__more ab-card__more--split">
           <a href="/assets/gallery/gear/gear_09_01.jpg">查看图集</a>
           <em class="ab-card__or">或</em>
-          <a class="ab-crisp-open" href="#" data-crisp-msg="你好，我想咨询「竖屏副屏游戏桌面」的实时价格。">查询实时价格</a>
+          <a class="ab-crisp-open" href="#" data-crisp-msg="你好，我想咨询「竖屏副屏游戏桌面」的实时价格。">查询价格</a>
         </p>
       </div>
     </article>
@@ -151,7 +150,7 @@ hide:
         <p class="ab-card__more ab-card__more--split">
           <a href="/assets/gallery/gear/gear_10_01.jpg">查看图集</a>
           <em class="ab-card__or">或</em>
-          <a class="ab-crisp-open" href="#" data-crisp-msg="你好，我想咨询「OMP 桶椅拉力座舱」的实时价格。">查询实时价格</a>
+          <a class="ab-crisp-open" href="#" data-crisp-msg="你好，我想咨询「OMP 桶椅拉力座舱」的实时价格。">查询价格</a>
         </p>
       </div>
     </article>
@@ -165,7 +164,7 @@ hide:
         <p class="ab-card__more ab-card__more--split">
           <a href="/assets/gallery/gear/gear_11_01.jpg">查看图集</a>
           <em class="ab-card__or">或</em>
-          <a class="ab-crisp-open" href="#" data-crisp-msg="你好，我想咨询「Conspit 直驱座舱」的实时价格。">查询实时价格</a>
+          <a class="ab-crisp-open" href="#" data-crisp-msg="你好，我想咨询「Conspit 直驱座舱」的实时价格。">查询价格</a>
         </p>
       </div>
     </article>
@@ -179,7 +178,7 @@ hide:
         <p class="ab-card__more ab-card__more--split">
           <a href="/assets/gallery/gear/gear_12_05.jpg">查看图集</a>
           <em class="ab-card__or">或</em>
-          <a class="ab-crisp-open" href="#" data-crisp-msg="你好，我想咨询「Fanatec 方程式盘」的实时价格。">查询实时价格</a>
+          <a class="ab-crisp-open" href="#" data-crisp-msg="你好，我想咨询「Fanatec 方程式盘」的实时价格。">查询价格</a>
         </p>
       </div>
     </article>
