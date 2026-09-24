@@ -16,9 +16,75 @@ hide:
       <h2 class="ab-section__title">最近更新</h2>
     </header>
     <div class="ab-list ab-list--feed">
+    <article class="ab-card ab-card--portrait ab-card--lightbox" id="desk-01" data-gallery="[&quot;/assets/gallery/desk/desk_01_01.jpg&quot;, &quot;/assets/gallery/desk/desk_01_02.jpg&quot;, &quot;/assets/gallery/desk/desk_01_03.jpg&quot;, &quot;/assets/gallery/desk/desk_01_04.jpg&quot;, &quot;/assets/gallery/desk/desk_01_05.jpg&quot;, &quot;/assets/gallery/desk/desk_01_06.jpg&quot;, &quot;/assets/gallery/desk/desk_01_07.jpg&quot;]" data-caption="开放式 ITX 装机" data-look="desk-01" data-buy="#">
+      <a class="ab-card__media" href="/assets/gallery/desk/desk_01_01.jpg" tabindex="-1" aria-hidden="true">
+        <img src="/assets/gallery/desk/desk_01_01.jpg" alt="" decoding="async" fetchpriority="high">
+      </a>
+      <div class="ab-card__copy">
+        <p class="ab-cat">装机</p>
+        <h3 class="ab-card__title"><a href="/assets/gallery/desk/desk_01_01.jpg">开放式 ITX 装机</a></h3>
+        <p class="ab-card__excerpt">点开可看整套。</p>
+        <p class="ab-card__more"><a href="/assets/gallery/desk/desk_01_01.jpg">查看图集</a></p>
+      </div>
+    </article>
+    <article class="ab-card ab-card--portrait ab-card--lightbox" id="desk-02" data-gallery="[&quot;/assets/gallery/desk/desk_02_01.jpg&quot;, &quot;/assets/gallery/desk/desk_02_02.jpg&quot;, &quot;/assets/gallery/desk/desk_02_03.jpg&quot;, &quot;/assets/gallery/desk/desk_02_04.jpg&quot;, &quot;/assets/gallery/desk/desk_02_05.jpg&quot;, &quot;/assets/gallery/desk/desk_02_06.jpg&quot;, &quot;/assets/gallery/desk/desk_02_07.jpg&quot;, &quot;/assets/gallery/desk/desk_02_08.jpg&quot;, &quot;/assets/gallery/desk/desk_02_09.jpg&quot;, &quot;/assets/gallery/desk/desk_02_10.jpg&quot;, &quot;/assets/gallery/desk/desk_02_11.jpg&quot;, &quot;/assets/gallery/desk/desk_02_12.jpg&quot;, &quot;/assets/gallery/desk/desk_02_13.jpg&quot;, &quot;/assets/gallery/desk/desk_02_14.jpg&quot;, &quot;/assets/gallery/desk/desk_02_15.jpg&quot;]" data-caption="超宽屏与白色外设" data-look="desk-02" data-buy="#">
+      <a class="ab-card__media" href="/assets/gallery/desk/desk_02_01.jpg" tabindex="-1" aria-hidden="true">
+        <img src="/assets/gallery/desk/desk_02_01.jpg" alt="" loading="lazy" decoding="async">
+      </a>
+      <div class="ab-card__copy">
+        <p class="ab-cat">桌搭</p>
+        <h3 class="ab-card__title"><a href="/assets/gallery/desk/desk_02_01.jpg">超宽屏与白色外设</a></h3>
+        <p class="ab-card__excerpt">点开可看整套。</p>
+        <p class="ab-card__more"><a href="/assets/gallery/desk/desk_02_01.jpg">查看图集</a></p>
+      </div>
+    </article>
+    <article class="ab-card ab-card--portrait ab-card--lightbox" id="desk-03" data-gallery="[&quot;/assets/gallery/desk/desk_03_01.jpg&quot;, &quot;/assets/gallery/desk/desk_03_02.jpg&quot;, &quot;/assets/gallery/desk/desk_03_03.jpg&quot;, &quot;/assets/gallery/desk/desk_03_04.jpg&quot;, &quot;/assets/gallery/desk/desk_03_05.jpg&quot;, &quot;/assets/gallery/desk/desk_03_06.jpg&quot;, &quot;/assets/gallery/desk/desk_03_07.jpg&quot;, &quot;/assets/gallery/desk/desk_03_08.jpg&quot;]" data-caption="暖光双屏桌面" data-look="desk-03" data-buy="#">
+      <a class="ab-card__media" href="/assets/gallery/desk/desk_03_01.jpg" tabindex="-1" aria-hidden="true">
+        <img src="/assets/gallery/desk/desk_03_01.jpg" alt="" loading="lazy" decoding="async">
+      </a>
+      <div class="ab-card__copy">
+        <p class="ab-cat">桌搭</p>
+        <h3 class="ab-card__title"><a href="/assets/gallery/desk/desk_03_01.jpg">暖光双屏桌面</a></h3>
+        <p class="ab-card__excerpt">点开可看整套。</p>
+        <p class="ab-card__more"><a href="/assets/gallery/desk/desk_03_01.jpg">查看图集</a></p>
+      </div>
+    </article>
+    <article class="ab-card ab-card--portrait ab-card--lightbox" id="desk-04" data-gallery="[&quot;/assets/gallery/desk/desk_04_01.jpg&quot;, &quot;/assets/gallery/desk/desk_04_02.jpg&quot;, &quot;/assets/gallery/desk/desk_04_03.jpg&quot;, &quot;/assets/gallery/desk/desk_04_04.jpg&quot;, &quot;/assets/gallery/desk/desk_04_05.jpg&quot;, &quot;/assets/gallery/desk/desk_04_06.jpg&quot;, &quot;/assets/gallery/desk/desk_04_07.jpg&quot;, &quot;/assets/gallery/desk/desk_04_08.jpg&quot;, &quot;/assets/gallery/desk/desk_04_09.jpg&quot;]" data-caption="临窗曲面屏电竞房" data-look="desk-04" data-buy="#">
+      <a class="ab-card__media" href="/assets/gallery/desk/desk_04_01.jpg" tabindex="-1" aria-hidden="true">
+        <img src="/assets/gallery/desk/desk_04_01.jpg" alt="" loading="lazy" decoding="async">
+      </a>
+      <div class="ab-card__copy">
+        <p class="ab-cat">桌搭</p>
+        <h3 class="ab-card__title"><a href="/assets/gallery/desk/desk_04_01.jpg">临窗曲面屏电竞房</a></h3>
+        <p class="ab-card__excerpt">点开可看整套。</p>
+        <p class="ab-card__more"><a href="/assets/gallery/desk/desk_04_01.jpg">查看图集</a></p>
+      </div>
+    </article>
+    <article class="ab-card ab-card--portrait ab-card--lightbox" id="desk-05" data-gallery="[&quot;/assets/gallery/desk/desk_05_01.jpg&quot;, &quot;/assets/gallery/desk/desk_05_02.jpg&quot;, &quot;/assets/gallery/desk/desk_05_03.jpg&quot;, &quot;/assets/gallery/desk/desk_05_04.jpg&quot;, &quot;/assets/gallery/desk/desk_05_05.jpg&quot;, &quot;/assets/gallery/desk/desk_05_06.jpg&quot;]" data-caption="苹果设备桌面" data-look="desk-05" data-buy="#">
+      <a class="ab-card__media" href="/assets/gallery/desk/desk_05_01.jpg" tabindex="-1" aria-hidden="true">
+        <img src="/assets/gallery/desk/desk_05_01.jpg" alt="" loading="lazy" decoding="async">
+      </a>
+      <div class="ab-card__copy">
+        <p class="ab-cat">桌搭</p>
+        <h3 class="ab-card__title"><a href="/assets/gallery/desk/desk_05_01.jpg">苹果设备桌面</a></h3>
+        <p class="ab-card__excerpt">点开可看整套。</p>
+        <p class="ab-card__more"><a href="/assets/gallery/desk/desk_05_01.jpg">查看图集</a></p>
+      </div>
+    </article>
+    <article class="ab-card ab-card--portrait ab-card--lightbox" id="desk-06" data-gallery="[&quot;/assets/gallery/desk/desk_06_01.jpg&quot;, &quot;/assets/gallery/desk/desk_06_02.jpg&quot;, &quot;/assets/gallery/desk/desk_06_03.jpg&quot;]" data-caption="帘前双屏工位" data-look="desk-06" data-buy="#">
+      <a class="ab-card__media" href="/assets/gallery/desk/desk_06_01.jpg" tabindex="-1" aria-hidden="true">
+        <img src="/assets/gallery/desk/desk_06_01.jpg" alt="" loading="lazy" decoding="async">
+      </a>
+      <div class="ab-card__copy">
+        <p class="ab-cat">桌搭</p>
+        <h3 class="ab-card__title"><a href="/assets/gallery/desk/desk_06_01.jpg">帘前双屏工位</a></h3>
+        <p class="ab-card__excerpt">点开可看整套。</p>
+        <p class="ab-card__more"><a href="/assets/gallery/desk/desk_06_01.jpg">查看图集</a></p>
+      </div>
+    </article>
     <article class="ab-card ab-card--brand ab-card--fold ab-card--ec" id="pubg-mobile">
       <div class="ab-card__media">
-        <img src="/assets/games/brand/pubg-mobile.png" alt="PUBG Mobile UC 代储价格参考" decoding="async" fetchpriority="high">
+        <img src="/assets/games/brand/pubg-mobile.png" alt="PUBG Mobile UC 代储价格参考" decoding="async">
       </div>
       <div class="ab-card__copy">
         <p class="ab-cat">TOP-UP</p>
@@ -464,72 +530,6 @@ hide:
         </p>
 
         <p class="ab-ec-foot">PC &middot; 美区 &middot; 数据更新于 <span class="js-prices-updated">2026-09-21</span> &middot; 报价以在线咨询为准</p>
-      </div>
-    </article>
-    <article class="ab-card ab-card--portrait ab-card--lightbox" id="desk-01" data-gallery="[&quot;/assets/gallery/desk/desk_01_01.jpg&quot;, &quot;/assets/gallery/desk/desk_01_02.jpg&quot;, &quot;/assets/gallery/desk/desk_01_03.jpg&quot;, &quot;/assets/gallery/desk/desk_01_04.jpg&quot;, &quot;/assets/gallery/desk/desk_01_05.jpg&quot;, &quot;/assets/gallery/desk/desk_01_06.jpg&quot;, &quot;/assets/gallery/desk/desk_01_07.jpg&quot;]" data-caption="开放式 ITX 装机" data-look="desk-01" data-buy="#">
-      <a class="ab-card__media" href="/assets/gallery/desk/desk_01_01.jpg" tabindex="-1" aria-hidden="true">
-        <img src="/assets/gallery/desk/desk_01_01.jpg" alt="" decoding="async">
-      </a>
-      <div class="ab-card__copy">
-        <p class="ab-cat">装机</p>
-        <h3 class="ab-card__title"><a href="/assets/gallery/desk/desk_01_01.jpg">开放式 ITX 装机</a></h3>
-        <p class="ab-card__excerpt">点开可看整套。</p>
-        <p class="ab-card__more"><a href="/assets/gallery/desk/desk_01_01.jpg">查看图集</a></p>
-      </div>
-    </article>
-    <article class="ab-card ab-card--portrait ab-card--lightbox" id="desk-02" data-gallery="[&quot;/assets/gallery/desk/desk_02_01.jpg&quot;, &quot;/assets/gallery/desk/desk_02_02.jpg&quot;, &quot;/assets/gallery/desk/desk_02_03.jpg&quot;, &quot;/assets/gallery/desk/desk_02_04.jpg&quot;, &quot;/assets/gallery/desk/desk_02_05.jpg&quot;, &quot;/assets/gallery/desk/desk_02_06.jpg&quot;, &quot;/assets/gallery/desk/desk_02_07.jpg&quot;, &quot;/assets/gallery/desk/desk_02_08.jpg&quot;, &quot;/assets/gallery/desk/desk_02_09.jpg&quot;, &quot;/assets/gallery/desk/desk_02_10.jpg&quot;, &quot;/assets/gallery/desk/desk_02_11.jpg&quot;, &quot;/assets/gallery/desk/desk_02_12.jpg&quot;, &quot;/assets/gallery/desk/desk_02_13.jpg&quot;, &quot;/assets/gallery/desk/desk_02_14.jpg&quot;, &quot;/assets/gallery/desk/desk_02_15.jpg&quot;]" data-caption="超宽屏与白色外设" data-look="desk-02" data-buy="#">
-      <a class="ab-card__media" href="/assets/gallery/desk/desk_02_01.jpg" tabindex="-1" aria-hidden="true">
-        <img src="/assets/gallery/desk/desk_02_01.jpg" alt="" loading="lazy" decoding="async">
-      </a>
-      <div class="ab-card__copy">
-        <p class="ab-cat">桌搭</p>
-        <h3 class="ab-card__title"><a href="/assets/gallery/desk/desk_02_01.jpg">超宽屏与白色外设</a></h3>
-        <p class="ab-card__excerpt">点开可看整套。</p>
-        <p class="ab-card__more"><a href="/assets/gallery/desk/desk_02_01.jpg">查看图集</a></p>
-      </div>
-    </article>
-    <article class="ab-card ab-card--portrait ab-card--lightbox" id="desk-03" data-gallery="[&quot;/assets/gallery/desk/desk_03_01.jpg&quot;, &quot;/assets/gallery/desk/desk_03_02.jpg&quot;, &quot;/assets/gallery/desk/desk_03_03.jpg&quot;, &quot;/assets/gallery/desk/desk_03_04.jpg&quot;, &quot;/assets/gallery/desk/desk_03_05.jpg&quot;, &quot;/assets/gallery/desk/desk_03_06.jpg&quot;, &quot;/assets/gallery/desk/desk_03_07.jpg&quot;, &quot;/assets/gallery/desk/desk_03_08.jpg&quot;]" data-caption="暖光双屏桌面" data-look="desk-03" data-buy="#">
-      <a class="ab-card__media" href="/assets/gallery/desk/desk_03_01.jpg" tabindex="-1" aria-hidden="true">
-        <img src="/assets/gallery/desk/desk_03_01.jpg" alt="" loading="lazy" decoding="async">
-      </a>
-      <div class="ab-card__copy">
-        <p class="ab-cat">桌搭</p>
-        <h3 class="ab-card__title"><a href="/assets/gallery/desk/desk_03_01.jpg">暖光双屏桌面</a></h3>
-        <p class="ab-card__excerpt">点开可看整套。</p>
-        <p class="ab-card__more"><a href="/assets/gallery/desk/desk_03_01.jpg">查看图集</a></p>
-      </div>
-    </article>
-    <article class="ab-card ab-card--portrait ab-card--lightbox" id="desk-04" data-gallery="[&quot;/assets/gallery/desk/desk_04_01.jpg&quot;, &quot;/assets/gallery/desk/desk_04_02.jpg&quot;, &quot;/assets/gallery/desk/desk_04_03.jpg&quot;, &quot;/assets/gallery/desk/desk_04_04.jpg&quot;, &quot;/assets/gallery/desk/desk_04_05.jpg&quot;, &quot;/assets/gallery/desk/desk_04_06.jpg&quot;, &quot;/assets/gallery/desk/desk_04_07.jpg&quot;, &quot;/assets/gallery/desk/desk_04_08.jpg&quot;, &quot;/assets/gallery/desk/desk_04_09.jpg&quot;]" data-caption="临窗曲面屏电竞房" data-look="desk-04" data-buy="#">
-      <a class="ab-card__media" href="/assets/gallery/desk/desk_04_01.jpg" tabindex="-1" aria-hidden="true">
-        <img src="/assets/gallery/desk/desk_04_01.jpg" alt="" loading="lazy" decoding="async">
-      </a>
-      <div class="ab-card__copy">
-        <p class="ab-cat">桌搭</p>
-        <h3 class="ab-card__title"><a href="/assets/gallery/desk/desk_04_01.jpg">临窗曲面屏电竞房</a></h3>
-        <p class="ab-card__excerpt">点开可看整套。</p>
-        <p class="ab-card__more"><a href="/assets/gallery/desk/desk_04_01.jpg">查看图集</a></p>
-      </div>
-    </article>
-    <article class="ab-card ab-card--portrait ab-card--lightbox" id="desk-05" data-gallery="[&quot;/assets/gallery/desk/desk_05_01.jpg&quot;, &quot;/assets/gallery/desk/desk_05_02.jpg&quot;, &quot;/assets/gallery/desk/desk_05_03.jpg&quot;, &quot;/assets/gallery/desk/desk_05_04.jpg&quot;, &quot;/assets/gallery/desk/desk_05_05.jpg&quot;, &quot;/assets/gallery/desk/desk_05_06.jpg&quot;]" data-caption="苹果设备桌面" data-look="desk-05" data-buy="#">
-      <a class="ab-card__media" href="/assets/gallery/desk/desk_05_01.jpg" tabindex="-1" aria-hidden="true">
-        <img src="/assets/gallery/desk/desk_05_01.jpg" alt="" loading="lazy" decoding="async">
-      </a>
-      <div class="ab-card__copy">
-        <p class="ab-cat">桌搭</p>
-        <h3 class="ab-card__title"><a href="/assets/gallery/desk/desk_05_01.jpg">苹果设备桌面</a></h3>
-        <p class="ab-card__excerpt">点开可看整套。</p>
-        <p class="ab-card__more"><a href="/assets/gallery/desk/desk_05_01.jpg">查看图集</a></p>
-      </div>
-    </article>
-    <article class="ab-card ab-card--portrait ab-card--lightbox" id="desk-06" data-gallery="[&quot;/assets/gallery/desk/desk_06_01.jpg&quot;, &quot;/assets/gallery/desk/desk_06_02.jpg&quot;, &quot;/assets/gallery/desk/desk_06_03.jpg&quot;]" data-caption="帘前双屏工位" data-look="desk-06" data-buy="#">
-      <a class="ab-card__media" href="/assets/gallery/desk/desk_06_01.jpg" tabindex="-1" aria-hidden="true">
-        <img src="/assets/gallery/desk/desk_06_01.jpg" alt="" loading="lazy" decoding="async">
-      </a>
-      <div class="ab-card__copy">
-        <p class="ab-cat">桌搭</p>
-        <h3 class="ab-card__title"><a href="/assets/gallery/desk/desk_06_01.jpg">帘前双屏工位</a></h3>
-        <p class="ab-card__excerpt">点开可看整套。</p>
-        <p class="ab-card__more"><a href="/assets/gallery/desk/desk_06_01.jpg">查看图集</a></p>
       </div>
     </article>
     </div>

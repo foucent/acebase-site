@@ -1,7 +1,7 @@
 ---
 title: 电竞房与桌搭 | 实拍图集
-description: AceBase TECH —— 九套电竞房与桌搭实拍，共 73 张，点开卡片即可在页内看整套。
-updated: 2026-09-22
+description: AceBase TECH —— 十二套电竞房与桌搭实拍，共 96 张，点开卡片即可在页内看整套。
+updated: 2026-09-24
 hide:
   - title
   - toc
@@ -11,7 +11,7 @@ hide:
 
   <section class="ab-section">
     <div class="ab-list ab-list--expandable">
-    <!-- 下面九张 desk 卡由 _tmp_ocr/tech_prep/prep.py 按这对注释整段重写；图集
+    <!-- 下面十二张 desk 卡由 _tmp_ocr/tech_prep/prep.py 按这对注释整段重写；图集
          那块 JSON-LD 同理，见页尾那对 desk-jsonld 注释。 -->
     <!-- desk-cards:start -->
     <article class="ab-card ab-card--portrait ab-card--lightbox" id="desk-01" data-gallery="[&quot;/assets/gallery/desk/desk_01_01.jpg&quot;, &quot;/assets/gallery/desk/desk_01_02.jpg&quot;, &quot;/assets/gallery/desk/desk_01_03.jpg&quot;, &quot;/assets/gallery/desk/desk_01_04.jpg&quot;, &quot;/assets/gallery/desk/desk_01_05.jpg&quot;, &quot;/assets/gallery/desk/desk_01_06.jpg&quot;, &quot;/assets/gallery/desk/desk_01_07.jpg&quot;]" data-caption="开放式 ITX 装机" data-look="desk-01" data-buy="#">
@@ -113,6 +113,39 @@ hide:
         <p class="ab-card__more"><a href="/assets/gallery/desk/desk_09_01.jpg">查看图集</a></p>
       </div>
     </article>
+    <article class="ab-card ab-card--portrait ab-card--lightbox" id="desk-10" data-gallery="[&quot;/assets/gallery/desk/desk_10_01.jpg&quot;, &quot;/assets/gallery/desk/desk_10_02.jpg&quot;, &quot;/assets/gallery/desk/desk_10_03.jpg&quot;, &quot;/assets/gallery/desk/desk_10_04.jpg&quot;, &quot;/assets/gallery/desk/desk_10_05.jpg&quot;, &quot;/assets/gallery/desk/desk_10_06.jpg&quot;, &quot;/assets/gallery/desk/desk_10_07.jpg&quot;, &quot;/assets/gallery/desk/desk_10_08.jpg&quot;, &quot;/assets/gallery/desk/desk_10_09.jpg&quot;]" data-caption="OMP 桶椅拉力座舱" data-look="desk-10" data-buy="#">
+      <a class="ab-card__media" href="/assets/gallery/desk/desk_10_01.jpg" tabindex="-1" aria-hidden="true">
+        <img src="/assets/gallery/desk/desk_10_01.jpg" alt="" loading="lazy" decoding="async">
+      </a>
+      <div class="ab-card__copy">
+        <p class="ab-cat">模拟器</p>
+        <h3 class="ab-card__title"><a href="/assets/gallery/desk/desk_10_01.jpg">OMP 桶椅拉力座舱</a></h3>
+        <p class="ab-card__excerpt">点开可看整套。</p>
+        <p class="ab-card__more"><a href="/assets/gallery/desk/desk_10_01.jpg">查看图集</a></p>
+      </div>
+    </article>
+    <article class="ab-card ab-card--portrait ab-card--lightbox" id="desk-11" data-gallery="[&quot;/assets/gallery/desk/desk_11_01.jpg&quot;, &quot;/assets/gallery/desk/desk_11_02.jpg&quot;, &quot;/assets/gallery/desk/desk_11_03.jpg&quot;, &quot;/assets/gallery/desk/desk_11_04.jpg&quot;, &quot;/assets/gallery/desk/desk_11_05.jpg&quot;, &quot;/assets/gallery/desk/desk_11_06.jpg&quot;, &quot;/assets/gallery/desk/desk_11_07.jpg&quot;, &quot;/assets/gallery/desk/desk_11_08.jpg&quot;]" data-caption="Conspit 直驱座舱" data-look="desk-11" data-buy="#">
+      <a class="ab-card__media" href="/assets/gallery/desk/desk_11_01.jpg" tabindex="-1" aria-hidden="true">
+        <img src="/assets/gallery/desk/desk_11_01.jpg" alt="" loading="lazy" decoding="async">
+      </a>
+      <div class="ab-card__copy">
+        <p class="ab-cat">模拟器</p>
+        <h3 class="ab-card__title"><a href="/assets/gallery/desk/desk_11_01.jpg">Conspit 直驱座舱</a></h3>
+        <p class="ab-card__excerpt">点开可看整套。</p>
+        <p class="ab-card__more"><a href="/assets/gallery/desk/desk_11_01.jpg">查看图集</a></p>
+      </div>
+    </article>
+    <article class="ab-card ab-card--portrait ab-card--lightbox" id="desk-12" data-gallery="[&quot;/assets/gallery/desk/desk_12_01.jpg&quot;, &quot;/assets/gallery/desk/desk_12_02.jpg&quot;, &quot;/assets/gallery/desk/desk_12_03.jpg&quot;, &quot;/assets/gallery/desk/desk_12_04.jpg&quot;, &quot;/assets/gallery/desk/desk_12_05.jpg&quot;, &quot;/assets/gallery/desk/desk_12_06.jpg&quot;]" data-caption="Fanatec 方程式盘" data-look="desk-12" data-buy="#">
+      <a class="ab-card__media" href="/assets/gallery/desk/desk_12_05.jpg" tabindex="-1" aria-hidden="true">
+        <img src="/assets/gallery/desk/desk_12_05.jpg" alt="" loading="lazy" decoding="async">
+      </a>
+      <div class="ab-card__copy">
+        <p class="ab-cat">模拟器</p>
+        <h3 class="ab-card__title"><a href="/assets/gallery/desk/desk_12_05.jpg">Fanatec 方程式盘</a></h3>
+        <p class="ab-card__excerpt">点开可看整套。</p>
+        <p class="ab-card__more"><a href="/assets/gallery/desk/desk_12_05.jpg">查看图集</a></p>
+      </div>
+    </article>
     <!-- desk-cards:end -->
     </div>
   </section>
@@ -131,7 +164,7 @@ hide:
     {
       "@type": "WebPage",
       "name": "电竞房与桌搭",
-      "description": "AceBase TECH —— 九套电竞房与桌搭实拍，共 73 张，点开卡片即可在页内看整套。",
+      "description": "AceBase TECH —— 十二套电竞房与桌搭实拍，共 96 张，点开卡片即可在页内看整套。",
       "url": "https://acebase.cc/tech/"
     },
     {
@@ -155,7 +188,7 @@ hide:
     {
       "@type": "ItemList",
       "name": "电竞房与桌搭",
-      "numberOfItems": "73",
+      "numberOfItems": "96",
       "itemListElement": [
         { "@type": "ListItem", "position": 1, "item": { "@type": "ImageObject", "name": "开放式 ITX 装机", "contentUrl": "https://acebase.cc/assets/gallery/desk/desk_01_01.jpg", "url": "https://acebase.cc/tech/#desk-01" } },
         { "@type": "ListItem", "position": 2, "item": { "@type": "ImageObject", "name": "超宽屏与白色外设", "contentUrl": "https://acebase.cc/assets/gallery/desk/desk_02_01.jpg", "url": "https://acebase.cc/tech/#desk-02" } },
@@ -165,13 +198,16 @@ hide:
         { "@type": "ListItem", "position": 6, "item": { "@type": "ImageObject", "name": "帘前双屏工位", "contentUrl": "https://acebase.cc/assets/gallery/desk/desk_06_01.jpg", "url": "https://acebase.cc/tech/#desk-06" } },
         { "@type": "ListItem", "position": 7, "item": { "@type": "ImageObject", "name": "海报墙桌面", "contentUrl": "https://acebase.cc/assets/gallery/desk/desk_07_01.jpg", "url": "https://acebase.cc/tech/#desk-07" } },
         { "@type": "ListItem", "position": 8, "item": { "@type": "ImageObject", "name": "双屏无线桌面", "contentUrl": "https://acebase.cc/assets/gallery/desk/desk_08_01.jpg", "url": "https://acebase.cc/tech/#desk-08" } },
-        { "@type": "ListItem", "position": 9, "item": { "@type": "ImageObject", "name": "竖屏副屏游戏桌面", "contentUrl": "https://acebase.cc/assets/gallery/desk/desk_09_01.jpg", "url": "https://acebase.cc/tech/#desk-09" } }
+        { "@type": "ListItem", "position": 9, "item": { "@type": "ImageObject", "name": "竖屏副屏游戏桌面", "contentUrl": "https://acebase.cc/assets/gallery/desk/desk_09_01.jpg", "url": "https://acebase.cc/tech/#desk-09" } },
+        { "@type": "ListItem", "position": 10, "item": { "@type": "ImageObject", "name": "OMP 桶椅拉力座舱", "contentUrl": "https://acebase.cc/assets/gallery/desk/desk_10_01.jpg", "url": "https://acebase.cc/tech/#desk-10" } },
+        { "@type": "ListItem", "position": 11, "item": { "@type": "ImageObject", "name": "Conspit 直驱座舱", "contentUrl": "https://acebase.cc/assets/gallery/desk/desk_11_01.jpg", "url": "https://acebase.cc/tech/#desk-11" } },
+        { "@type": "ListItem", "position": 12, "item": { "@type": "ImageObject", "name": "Fanatec 方程式盘", "contentUrl": "https://acebase.cc/assets/gallery/desk/desk_12_05.jpg", "url": "https://acebase.cc/tech/#desk-12" } }
       ]
     },
     {
       "@type": "ImageGallery",
       "name": "电竞房与桌搭",
-      "description": "AceBase TECH —— 九套电竞房与桌搭实拍，共 73 张，更新于 2026-09-22。",
+      "description": "AceBase TECH —— 十二套电竞房与桌搭实拍，共 96 张，更新于 2026-09-24。",
       "url": "https://acebase.cc/tech/"
     }
   ]
