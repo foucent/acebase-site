@@ -20,7 +20,7 @@ cd c:\1Work\acebase.cc
 | --- | --- |
 | `/` | 首页（各类目最新 6 条，由 `scripts/gen_home.py` 生成，勿手改；改完任何类目页都要重跑一次） |
 | `/topup/` | 代储与礼品卡价格参考（游戏代储 / 礼品卡 / 直播代储） |
-| `/tech/` | 电竞房与桌搭（十二套实拍，96 张） |
+| `/gear/` | 电竞房与桌搭（十二套实拍，96 张） |
 | `/gift-cards/` | Gift Cards（六张礼品卡：Amazon / Apple / Google Play / Netflix / Xbox / Kammelna） |
 | `/cdkeys/` | CDKeys（七张充值卡与充值码：Fortnite / Apex Legends / PlayStation Network / Nintendo Switch Online / Nintendo eShop / Steam 钱包 / GoCash） |
 | `/faq/` | 购买指南（下单流程 / 付款 / 费用 / 常见问题） |

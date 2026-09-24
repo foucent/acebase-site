@@ -49,9 +49,10 @@ plugins:
         games/valorant-accounts.md: index.md
         currency/index.md: index.md
         games/buy-robux.md: index.md
-        # 显卡相关的十个旧 URL 2026-09-22 起全部指 /games/gpu-deals/ —— /tech/ 从
-        # 这一天起是电竞房与桌搭实拍图集，不再讲任何显卡价，全站还在讲显卡价的
-        # 只剩这一页。下面八个型号页是 2026-09-21 下线的，当初指回当时的总览页。
+        # 显卡相关的十个旧 URL 2026-09-22 起全部指 /games/gpu-deals/ —— /gear/
+        # （当时叫 /tech/）从这一天起是电竞房与桌搭实拍图集，不再讲任何显卡价，
+        # 全站还在讲显卡价的只剩这一页。下面八个型号页是 2026-09-21 下线的，
+        # 当初指回当时的总览页。
         games/rtx-5050.md: games/gpu-deals.md
         games/gpu-prices.md: games/gpu-deals.md
         games/rtx-5060.md: games/gpu-deals.md
@@ -63,7 +64,7 @@ plugins:
         games/rtx-3060.md: games/gpu-deals.md
         games/rtx-3060-ti.md: games/gpu-deals.md
         # 代储价格页 2026-09-21 从 /games/topup-prices/ 提到顶层 /topup/，
-        # 和 /tech/ 并列。旧 URL 指过去，免得留下 404。
+        # 和 /gear/（当时叫 /tech/）并列。旧 URL 指过去，免得留下 404。
         games/topup-prices.md: topup/index.md
         # 五个游戏详情页 2026-09-21 下线 —— /topup 的卡片自己就把档位和价格列全了，
         # 详情页只是同一份数据的第二个入口。旧 URL 指回总览页对应那张卡的锚点。
@@ -102,11 +103,20 @@ plugins:
         # 浏览器实测 /sim-gear/#style-05 → /style/#style-05）—— 那些锚点现在
         # 不在了，所以跟着 /style/ 一起指首页。
         sim-gear/index.md: index.md
-        # /gear/ 2026-09-24 整页让位 —— GEAR（乒乓球拍与装备实拍 11 组 67 张）被
-        # 用户改名成 CDKeys，原来的十一张图集卡与 docs/assets/gallery/gear/ 下的
-        # 67 张图一并撤掉，页面在同一个目录上重写成充值卡（docs/cdkeys/）。
-        # 那些卡连同锚点全没了，指回首页 —— 跟 /style/、/wellness/ 同一种处置。
-        gear/index.md: index.md
+        # /gear/ 2026-09-24 上午整页让位 —— GEAR（乒乓球拍与装备实拍 11 组 67 张）
+        # 被用户改名成 CDKeys，原来的十一张图集卡与 docs/assets/gallery/gear/ 下的
+        # 67 张图一并撤掉，页面在同一个目录上重写成充值卡（docs/cdkeys/）。那些卡
+        # 连同锚点全没了，当时指回首页 —— 跟 /style/、/wellness/ 同一种处置。
+        # **同一天下午这一行删掉了**：/tech/ 改名 /gear/，这个 URL 从「旧地址」
+        # 变回正式地址，留着存根只会把新页面顶走。下面那条指过去的跳转取而代之。
+        #
+        # /tech/ 2026-09-24 下午 改名为 /gear/ —— 这一格从 TECH 改名 GEAR，卡片 id 与
+        # 图片名也从 desk-NN / desk_NN_MM.jpg 换成 gear-NN / gear_NN_MM.jpg。
+        # **指 /gear/ 而不是首页**：内容搬到哪就指哪，十二张卡在新页上都在。唯一
+        # 的损失是锚点 —— 锚点跟着卡片改名（#desk-05 → #gear-05），存根虽然会把
+        # 老锚点带过去（location.href="../gear/" + "#desk-05"），但新页没有
+        # #desk-05 这个元素，浏览器停在页首。页级跳转仍然是赚的。
+        tech/index.md: gear/index.md
         # /wellness/ 2026-09-22 删除 —— 「健康生活」筹备页从没有过卡片，也没上过
         # 首页，没有内容可以搬。
         wellness/index.md: index.md
@@ -199,7 +209,15 @@ extra:
 
 nav:
   - HOME: index.md
-  - TECH: tech/index.md
+  # 2026-09-24 改名（当天第三次）：这一格原来叫 TECH，装着九套桌搭 + 三套赛车
+  # 模拟器实拍，共 96 张。用户把它改名 GEAR，URL 从 /tech/ 改成 /gear/；卡片 id
+  # 与图片名也从 desk-NN / desk_NN_MM.jpg 一并改成 gear-NN / gear_NN_MM.jpg，
+  # 资源目录 docs/assets/gallery/desk/ 改成 gear/。**这个 URL 是当天上午刚腾出来
+  # 的**——GEAR 原来正是这一格的名字，上午刚改成 CDKeys（见下面 CDKeys 那一格的
+  # 注释），旧 /gear/ 当时指回首页。所以 redirect_maps 里那条
+  # `gear/index.md: index.md` 必须删掉，否则新页面会被自己的存根顶走（STYLE →
+  # Gift Cards 那轮踩过同一个坑）。
+  - GEAR: gear/index.md
   - TOP-UP: topup/index.md
   # 2026-09-24 改名：这一格原来叫 STYLE，装着穿搭写真 9 套与汽车实拍 6 套两个
   # 图集（2026-09-22 由 WELLNESS 与 CAR 合并而来）。用户把它改名成 Gift Cards、
@@ -215,8 +233,11 @@ nav:
   # 那个生成器当天跟着退休，否则下次重跑就把 11 张卡写回来。用户把它改名成
   # CDKeys、清空原卡片，七张明写「充值卡 / 充值码」的卡从 /topup/ 搬了过来
   # （就是那页自己称作「7 种充值卡与卡密」的一组）；那 11 组实拍图连图一起离开
-  # 站点，旧 /gear/ 指回首页。目录随之 git mv 到 docs/cdkeys/。位置不动：
-  # 放在 Gift Cards 之后、FAQ 之前。
+  # 站点。目录随之 git mv 到 docs/cdkeys/。位置不动：放在 Gift Cards 之后、
+  # FAQ 之前。
+  # **注意**：这一轮里旧 /gear/ 曾指回首页（因为那 11 组卡的锚点全没了），但当天
+  # 下午 /gear/ 又被 TECH 那一格拿去用了 —— 现在它是电竞房与桌搭的正式 URL，
+  # redirect_maps 里那条 `gear/index.md: index.md` 已删，别再补回来。
   - CDKeys: cdkeys/index.md
   # 2026-09-21 加：全站唯一一份「怎么买」的说明，不挂在任何商品类目下，
   # 自己是一个入口；放在最后，是这一排里唯一的帮助页。

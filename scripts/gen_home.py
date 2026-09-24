@@ -6,8 +6,8 @@ The homepage has no content of its own. The rule is one line: **every card on
 the front page is the newest six cards of a category, copied out of that
 category's page.**
 
-`Category` means the top-level nav in mkdocs.yml — TECH, TOP-UP, Gift Cards,
-GEAR, FAQ —
+`Category` means the top-level nav in mkdocs.yml — GEAR, TOP-UP, Gift Cards,
+CDKeys, FAQ —
 read from that file rather than listed here, so a category added to the nav
 reaches the front page with no edit to this script. A category whose page holds
 no cards (FAQ) contributes nothing; "如果有的话" is the whole of that rule, and
@@ -33,7 +33,8 @@ page that grows a second one gets dated.
 
 The frontmatter's `updated:` is the fallback for a section that carries no
 stamp, and since 2026-09-22 that is every page with cards on it: /topup/,
-/tech/ and /style/ (today /gift-cards/) all lost their section heads that day.
+/tech/ (today /gear/) and /style/ (today /gift-cards/) all lost their
+section heads that day.
 It is not a
 substitute for a stamp: a page that has cards and no date at all is named on
 stderr rather than dated by guesswork, because an invented date would reorder
@@ -112,8 +113,8 @@ STAMP = re.compile(r"更新于\s*(?:<span[^>]*>)?\s*(\d{4}-\d{2}-\d{2})")
 # section would take the first card's footer for the section's date: /topup/ has
 # no head since 2026-09-22 and would be dated by whichever price card happens to
 # be written first — a card's own date moving would reorder the front page.
-# (/tech/ has no head either but no footers to trip over since its price cards
-# came out on 2026-09-22.) A section with no head has no stamp, and falls back
+# (/tech/ — today /gear/ — has no head either but no footers to trip over
+# since its price cards came out on 2026-09-22.) A section with no head has no stamp, and falls back
 # as below.
 HEAD = re.compile(r'<header class="ab-section__head">(.*?)</header>', re.S)
 # A lookahead, so finditer reports where each section starts rather than

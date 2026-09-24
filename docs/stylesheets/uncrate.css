@@ -843,8 +843,10 @@
 }
 
 /* The cards carry the ids — the jump lists that used to point at them are gone,
-   but `/tech/#desk-01` is still a link anyone can be sent, so they keep the
-   offset off the top edge the bands had. */
+   but a card URL is still a link anyone can be sent — `/gear/#gear-01` since
+   the 2026-09-24 rename (it was `/tech/#desk-01` for the two days before, and
+   those ids went with it) — so they keep the offset off the top edge the bands
+   had. */
 .md-typeset .ab-mag .ab-card {
   scroll-margin-top: 4.5rem;
 }
@@ -1158,7 +1160,13 @@
    link is 阅读全文 and goes to the model page. Listed together so the two
    cannot drift into looking like different components.
 
-   The /tech row has a structural constraint the homepage's does not: its cue is
+   (**Both names are as of when this was written.** /tech/ — the 显卡 page that
+   gave this row its first user — is /gear/ since 2026-09-24 and is the 桌搭
+   gallery now, so the price rows below belong to /topup/'s cards; the home
+   feed's cards are copied whole out of their category page and so wear that
+   page's own action line. Nothing in these rules depends on either name.)
+
+   The fold row has a structural constraint the homepage's does not: its cue is
    what opens the fold and has to stay inside <summary> — a summary is a real
    focusable control, which is why the fold is built on <details> at all, and it
    has to keep working with JavaScript off. The buy link belongs in the same row
