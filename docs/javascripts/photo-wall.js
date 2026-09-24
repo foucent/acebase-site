@@ -239,6 +239,16 @@
           ? e.target.closest(".ab-fold")
           : null;
         if (fold && !e.target.closest(".ab-fold__buy")) return;
+
+        // The split row's chat opener is the second exception, and it needs one
+        // more reason than the fold's: crisp.js binds its handler on the
+        // *document* in the capture phase, so the chat window is already opening
+        // by the time this fires — preventDefault here would not stop it, it
+        // would only put the box up over the window. /gear/'s twelve cards carry
+        // 「查看图集 · 或 · 查询实时价格」and the homepage copies six of them
+        // whole, so every one of them is a tile with this link inside it.
+        if (e.target.closest(".ab-crisp-open")) return;
+
         e.preventDefault();
         openGallery(tile, 0);
       });

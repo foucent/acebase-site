@@ -24,8 +24,11 @@ hide:
         <p class="ab-cat">机箱</p>
         <h3 class="ab-card__title"><a href="/assets/gallery/gear/gear_01_01.jpg">XTIA Xproto-L V2 开放式机箱</a></h3>
         <p class="ab-card__meta"><span class="ab-money">$159</span></p>
-        <p class="ab-card__excerpt">点开可看整套。</p>
-        <p class="ab-card__more"><a href="/assets/gallery/gear/gear_01_01.jpg">查看图集</a></p>
+        <p class="ab-card__more ab-card__more--split">
+          <a href="/assets/gallery/gear/gear_01_01.jpg">查看图集</a>
+          <em class="ab-card__or">或</em>
+          <a class="ab-crisp-open" href="#" data-crisp-msg="你好，我想咨询「XTIA Xproto-L V2 开放式机箱」的实时价格。">查询实时价格</a>
+        </p>
       </div>
     </article>
     <article class="ab-card ab-card--portrait ab-card--lightbox" id="gear-02" data-gallery="[&quot;/assets/gallery/gear/gear_02_01.jpg&quot;, &quot;/assets/gallery/gear/gear_02_02.jpg&quot;, &quot;/assets/gallery/gear/gear_02_03.jpg&quot;, &quot;/assets/gallery/gear/gear_02_04.jpg&quot;, &quot;/assets/gallery/gear/gear_02_05.jpg&quot;, &quot;/assets/gallery/gear/gear_02_06.jpg&quot;, &quot;/assets/gallery/gear/gear_02_07.jpg&quot;, &quot;/assets/gallery/gear/gear_02_08.jpg&quot;, &quot;/assets/gallery/gear/gear_02_09.jpg&quot;, &quot;/assets/gallery/gear/gear_02_10.jpg&quot;, &quot;/assets/gallery/gear/gear_02_11.jpg&quot;, &quot;/assets/gallery/gear/gear_02_12.jpg&quot;, &quot;/assets/gallery/gear/gear_02_13.jpg&quot;, &quot;/assets/gallery/gear/gear_02_14.jpg&quot;, &quot;/assets/gallery/gear/gear_02_15.jpg&quot;]" data-caption="超宽屏与白色外设" data-look="gear-02" data-buy="#">
@@ -35,8 +38,11 @@ hide:
       <div class="ab-card__copy">
         <p class="ab-cat">桌搭</p>
         <h3 class="ab-card__title"><a href="/assets/gallery/gear/gear_02_01.jpg">超宽屏与白色外设</a></h3>
-        <p class="ab-card__excerpt">点开可看整套。</p>
-        <p class="ab-card__more"><a href="/assets/gallery/gear/gear_02_01.jpg">查看图集</a></p>
+        <p class="ab-card__more ab-card__more--split">
+          <a href="/assets/gallery/gear/gear_02_01.jpg">查看图集</a>
+          <em class="ab-card__or">或</em>
+          <a class="ab-crisp-open" href="#" data-crisp-msg="你好，我想咨询「超宽屏与白色外设」的实时价格。">查询实时价格</a>
+        </p>
       </div>
     </article>
     <article class="ab-card ab-card--portrait ab-card--lightbox" id="gear-03" data-gallery="[&quot;/assets/gallery/gear/gear_03_01.jpg&quot;, &quot;/assets/gallery/gear/gear_03_02.jpg&quot;, &quot;/assets/gallery/gear/gear_03_03.jpg&quot;, &quot;/assets/gallery/gear/gear_03_04.jpg&quot;, &quot;/assets/gallery/gear/gear_03_05.jpg&quot;, &quot;/assets/gallery/gear/gear_03_06.jpg&quot;, &quot;/assets/gallery/gear/gear_03_07.jpg&quot;, &quot;/assets/gallery/gear/gear_03_08.jpg&quot;]" data-caption="暖光双屏桌面" data-look="gear-03" data-buy="#">
@@ -46,8 +52,11 @@ hide:
       <div class="ab-card__copy">
         <p class="ab-cat">桌搭</p>
         <h3 class="ab-card__title"><a href="/assets/gallery/gear/gear_03_01.jpg">暖光双屏桌面</a></h3>
-        <p class="ab-card__excerpt">点开可看整套。</p>
-        <p class="ab-card__more"><a href="/assets/gallery/gear/gear_03_01.jpg">查看图集</a></p>
+        <p class="ab-card__more ab-card__more--split">
+          <a href="/assets/gallery/gear/gear_03_01.jpg">查看图集</a>
+          <em class="ab-card__or">或</em>
+          <a class="ab-crisp-open" href="#" data-crisp-msg="你好，我想咨询「暖光双屏桌面」的实时价格。">查询实时价格</a>
+        </p>
       </div>
     </article>
     <article class="ab-card ab-card--portrait ab-card--lightbox" id="gear-04" data-gallery="[&quot;/assets/gallery/gear/gear_04_01.jpg&quot;, &quot;/assets/gallery/gear/gear_04_02.jpg&quot;, &quot;/assets/gallery/gear/gear_04_03.jpg&quot;, &quot;/assets/gallery/gear/gear_04_04.jpg&quot;, &quot;/assets/gallery/gear/gear_04_05.jpg&quot;, &quot;/assets/gallery/gear/gear_04_06.jpg&quot;, &quot;/assets/gallery/gear/gear_04_07.jpg&quot;, &quot;/assets/gallery/gear/gear_04_08.jpg&quot;, &quot;/assets/gallery/gear/gear_04_09.jpg&quot;]" data-caption="临窗曲面屏电竞房" data-look="gear-04" data-buy="#">
@@ -57,8 +66,11 @@ hide:
       <div class="ab-card__copy">
         <p class="ab-cat">桌搭</p>
         <h3 class="ab-card__title"><a href="/assets/gallery/gear/gear_04_01.jpg">临窗曲面屏电竞房</a></h3>
-        <p class="ab-card__excerpt">点开可看整套。</p>
-        <p class="ab-card__more"><a href="/assets/gallery/gear/gear_04_01.jpg">查看图集</a></p>
+        <p class="ab-card__more ab-card__more--split">
+          <a href="/assets/gallery/gear/gear_04_01.jpg">查看图集</a>
+          <em class="ab-card__or">或</em>
+          <a class="ab-crisp-open" href="#" data-crisp-msg="你好，我想咨询「临窗曲面屏电竞房」的实时价格。">查询实时价格</a>
+        </p>
       </div>
     </article>
     <article class="ab-card ab-card--portrait ab-card--lightbox" id="gear-05" data-gallery="[&quot;/assets/gallery/gear/gear_05_01.jpg&quot;, &quot;/assets/gallery/gear/gear_05_02.jpg&quot;, &quot;/assets/gallery/gear/gear_05_03.jpg&quot;, &quot;/assets/gallery/gear/gear_05_04.jpg&quot;, &quot;/assets/gallery/gear/gear_05_05.jpg&quot;, &quot;/assets/gallery/gear/gear_05_06.jpg&quot;]" data-caption="苹果设备桌面" data-look="gear-05" data-buy="#">
@@ -68,8 +80,11 @@ hide:
       <div class="ab-card__copy">
         <p class="ab-cat">桌搭</p>
         <h3 class="ab-card__title"><a href="/assets/gallery/gear/gear_05_01.jpg">苹果设备桌面</a></h3>
-        <p class="ab-card__excerpt">点开可看整套。</p>
-        <p class="ab-card__more"><a href="/assets/gallery/gear/gear_05_01.jpg">查看图集</a></p>
+        <p class="ab-card__more ab-card__more--split">
+          <a href="/assets/gallery/gear/gear_05_01.jpg">查看图集</a>
+          <em class="ab-card__or">或</em>
+          <a class="ab-crisp-open" href="#" data-crisp-msg="你好，我想咨询「苹果设备桌面」的实时价格。">查询实时价格</a>
+        </p>
       </div>
     </article>
     <article class="ab-card ab-card--portrait ab-card--lightbox" id="gear-06" data-gallery="[&quot;/assets/gallery/gear/gear_06_01.jpg&quot;, &quot;/assets/gallery/gear/gear_06_02.jpg&quot;, &quot;/assets/gallery/gear/gear_06_03.jpg&quot;]" data-caption="帘前双屏工位" data-look="gear-06" data-buy="#">
@@ -79,8 +94,11 @@ hide:
       <div class="ab-card__copy">
         <p class="ab-cat">桌搭</p>
         <h3 class="ab-card__title"><a href="/assets/gallery/gear/gear_06_01.jpg">帘前双屏工位</a></h3>
-        <p class="ab-card__excerpt">点开可看整套。</p>
-        <p class="ab-card__more"><a href="/assets/gallery/gear/gear_06_01.jpg">查看图集</a></p>
+        <p class="ab-card__more ab-card__more--split">
+          <a href="/assets/gallery/gear/gear_06_01.jpg">查看图集</a>
+          <em class="ab-card__or">或</em>
+          <a class="ab-crisp-open" href="#" data-crisp-msg="你好，我想咨询「帘前双屏工位」的实时价格。">查询实时价格</a>
+        </p>
       </div>
     </article>
     <article class="ab-card ab-card--brand ab-card--fold ab-card--ec" id="pubg-mobile">
