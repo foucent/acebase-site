@@ -90,6 +90,22 @@
       return;
     }
 
+    // The entry price again, inline at the end of the card's title. It has to be
+    // scripted: the title's hypothetical width is the whole line, so the CSS
+    // route would push the price onto a line of its own rather than into the
+    // end of the title, and the plate cards are the ones that show it. Filled
+    // here rather than in renderAll so the no-data branch above — which returns
+    // before this point — is what keeps money(undefined)'s "$NaN" off the
+    // title. `rows[0].lowest`, not a minimum over the rows: on every key in
+    // prices.json they are the same number, and rows[0] is the tier the ladder
+    // paints red, so the two figures are guaranteed to agree.
+    //
+    // On failure the fetch callback never gets here, the span stays empty, and
+    // :empty in uncrate.css keeps it out of the layout.
+    var card = wrap.closest(".ab-card");
+    var head = card && card.querySelector(".ab-card__title .ab-card__price");
+    if (head) head.textContent = money(rows[0].lowest);
+
     var isCard = !!wrap.closest(".ab-card--ec");
 
     // Two sources, because the two kinds of saving are not the same thing. The
@@ -103,6 +119,19 @@
     // number. Cards with neither get an empty string.
     var off = wrap.getAttribute("data-discount") || (rows[0] && rows[0].off) || "";
 
+    // The saving belongs on the corner badge, and on the live-platform cards
+    // the badge is the only place it can be written — the markup has no
+    // `data-discount` to copy, so the channel tag it ships with stands in until
+    // the number exists. Filled here rather than in the markup for the same
+    // reason the entry price is, and only when the badge is not already wearing
+    // the saving: `--off` is the flag uncrate.css paints green, and the nine
+    // hand-written badges carry it from the start.
+    var badge = card && card.querySelector(".ab-card__badge");
+    if (badge && off && !badge.classList.contains("ab-card__badge--off")) {
+      badge.textContent = off;
+      badge.classList.add("ab-card__badge--off");
+    }
+
     wrap.innerHTML = rows
       .map(function (r, i) {
         var label = esc(r.title || T.topup);
@@ -115,6 +144,12 @@
         // by the grid as a cell of its own and land in column one of the next
         // row; under 390px the row turns flex and it would crowd in there
         // instead. Nested here, the grid still sees exactly two cells.
+        //
+        // On the plate cards uncrate.css hides it — the badge above carries the
+        // same number, and at three columns the 74px pill was what pushed the
+        // entry row onto a second line. It is kept in the markup rather than
+        // dropped so a ladder that is not a plate still gets it, and so the
+        // badge's takeover stays one `display: none` to reverse.
         var pill = (i === 0 && off)
           ? '<span class="ab-ec-off">' + esc(off) + "</span>"
           : "";

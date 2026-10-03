@@ -824,6 +824,40 @@
     }
   }
 
+  /* Three to a row puts the copy column at 265px — 273 between 1024 and 1180,
+     where the grid is a few px wider — and that is under the 350 the two rules
+     above answer for. So both of their figures are being asked in a column
+     neither was measured in, and both come out wrong there, in opposite
+     directions: the sentence wants five lines rather than the four the rule
+     outside this block reserves, and the title wants two rather than the three
+     the 350-and-below rule reserves. The title is not close — at the 17px this
+     band sets, even "PlayStation Network 充值卡（美国）" holds two lines at
+     265px, and no card on the three pages takes three.
+
+     A band of its own rather than a bigger number on those rules, because the
+     next copy column up is 324px (a 768px viewport, still two columns) and it
+     wants four and three. Carrying these figures up to it would put a line of
+     air on every card between 768 and 1023 to pay for three columns of
+     viewport. 300 sits in the 273..324 gap — 27px clear above, 24 below —
+     which is the fallback-font allowance the paragraphs above take.
+
+     The two figures are zero-slack against today's wrapping, as the 351-and-
+     up title rule already is: 324px is the narrowest column the three-line
+     title case occurs in, and 265 is not near it.
+
+     Keyed on `--brand` like the rules it corrects — it and `--plate` select
+     the same cards, every one of them a price card on these three pages plus
+     its copy in the homepage feed. */
+  @container (max-width: 300px) {
+    .md-typeset .ab-mag .ab-card--brand .ab-card__title {
+      min-height: 2lh;
+    }
+
+    .md-typeset .ab-mag .ab-card--brand .ab-fold__lead {
+      min-height: 5lh;
+    }
+  }
+
   @container (min-width: 401px) {
     .md-typeset .ab-mag .ab-card--brand .ab-fold__lead {
       /* The lead is the summary's only in-flow child — the action row beside
@@ -1310,5 +1344,206 @@
 
   .md-typeset .ab-mag .ab-section__title {
     font-size: 20px;
+  }
+}
+
+
+/* ---------- the pricing grid's media plate --------------------------------
+
+   /gift-cards/, /cdkeys/ and /topup/ are the site's three price pages: the
+   same card the rest of the magazine draws, except that a price ladder sits
+   behind a 展开 cue where the other cards carry a sentence. On 2026-10-03 they
+   were restyled onto mygear.top's /rubbers/ look, at the user's request — a
+   centred plate at the head of the card, the entry price inline at the end of
+   the title, a square badge on the plate's corner, three to a row on a wide
+   screen. The fold, the ladder, its 84px window and the footnote are all
+   untouched: rubbers has no equivalent, and the ladder is how these pages are
+   read.
+
+   Two hooks, and where each one lands is the whole design:
+
+     ab-card--plate     on the <article>. Everything a card looks like — the
+                        plate, its radius, the hover lift, the badge, the
+                        inline price. It rides along when scripts/gen_home.py
+                        copies a card block to the homepage, which is why the
+                        homepage's eighteen price cards need no rules of their
+                        own. /gear/'s twelve cards are --portrait/--lightbox
+                        and carry neither class, and never see any of this.
+     ab-list--pricing   on the grid <div>, once per page. Only the column count
+                        and the type that follows from it — a homepage card in
+                        .ab-list--feed is a --plate card in a two-column grid
+                        and keeps the wider type.
+
+   Which gives the trap worth stating: --plate on the grid and not on the
+   cards — or merely forgetting to re-run gen_home.py — leaves the homepage
+   with new markup and none of this styling. The badge lands as a bare word
+   inside the plate, the empty price span pushes its 8px, the product shot
+   letterboxes into the 24:5 wordmark frame. Nothing errors, so it has to be
+   looked at.
+
+   The plate is a fixed 240x320, the same 3:4 as the product art so that art
+   fills it. Nineteen of the thirty-two have no product art — /topup/'s cards
+   are all 2400x500 wordmark banners — and `object-fit: contain` is what lets
+   the two kinds share one frame, and therefore one frame *height*. That
+   matters past tidiness: the page's own equal-height assertions compare plates
+   across a row, and a row here can mix the two kinds.
+
+   The frame's 24/5 comes from .ab-card--brand above; this section is after it
+   in the file and matches at the same 0-4-1, which is what retires it for
+   these cards. Moving this block above line 1050 would put the wordmarks back
+   into a letterbox and the product art into a hairline. */
+.md-typeset .ab-mag .ab-card--plate .ab-card__media {
+  /* Positioned, because it is the badge's containing block and nothing else
+     on the card is: without this the badge's nearest positioned ancestor is
+     .ab-section, and all thirty-two of them pile into its top-left corner. */
+  position: relative;
+  width: 240px;
+  max-width: 100%;
+  aspect-ratio: 3 / 4;
+  margin: 16px auto 0;
+  overflow: hidden;
+  border-radius: 0.55rem;
+}
+
+.md-typeset .ab-mag .ab-card--plate .ab-card__media img {
+  /* Absolutely placed so the frame, not the image, decides the box: the 3:4
+     shots and the 24:5 wordmarks then come out the same height, and the
+     wordmark's own 24/5 rule above cannot re-open the letterbox. */
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  aspect-ratio: auto;
+  object-fit: contain;
+  margin: 0;
+  /* The hairline the rest of the magazine rules under its media. There is no
+     banner to separate here — the plate floats on the card's own white. */
+  border: 0;
+}
+
+/* The card's own corners and lift. extra.css already rounds and lifts every
+   .ab-card on the site; uncrate.css takes the radius back off with its own
+   .ab-card rule at the same specificity but later in the file. The lift was
+   never taken back, so /gear/ has always floated on hover and these cards are
+   only being brought into line by restating both here, on --plate. */
+.md-typeset .ab-mag .ab-card--plate {
+  border-radius: 0.55rem;
+  transition: border-color 0.12s ease, box-shadow 0.12s ease, transform 0.12s ease;
+}
+
+.md-typeset .ab-mag .ab-card--plate:hover {
+  border-color: var(--ab-line);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  transform: translateY(-1px);
+}
+
+/* The corner badge, on the plate's top-left the way rubbers sets its own.
+
+   Two kinds of text land here. The nine cards carrying `data-discount` write
+   the saving straight into the markup, the way the channel tag is written, so
+   they show the same word with the script on or off. The fourteen live-platform
+   cards have no such attribute — their saving is list-against-reference, it
+   moves every time the FX is re-run, and typing it into the page would leave
+   the card quoting a stale number — so games-prices.js overwrites their
+   channel tag with the saving once prices.json lands. Until it does, and if it
+   never does, they keep the channel tag: a badge that degrades to a true word
+   rather than to an empty box. */
+.md-typeset .ab-mag .ab-card--plate .ab-card__badge {
+  position: absolute;
+  z-index: 2;
+  top: 10px;
+  left: 10px;
+  padding: 4px 8px;
+  border-radius: 0;
+  background: #92400e;
+  color: #ffffff;
+  font-family: var(--ab-sans);
+  font-size: 11px;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+/* The cards badging the saving itself rather than the channel — the same green
+   the ladder's own .ab-ec-off pill is painted in. */
+.md-typeset .ab-mag .ab-card--plate .ab-card__badge--off {
+  background: var(--ab-green);
+}
+
+/* The ladder's entry-row pill, off on every plate card — the badge is the
+   saving's one home here, and the two were saying the same number twice.
+
+   It is not only de-duplication. The pill is 74px at the 15px it inherits (not
+   the 13px declared: `.ab-ec-list span { font-size: inherit }` is 0-4-1 against
+   `.ab-ec-off`'s 0-3-0), and three columns cap the copy box at 265px however
+   wide the window is, because .ab-mag is max-width 960px. On the seven cards
+   whose labels are long — "3600 Diamonds", "43500 Coins" — the label column
+   takes 105-130px of that and leaves the price 111-135px for a 135px row. The
+   row wrapped, so the entry line stood 76px tall against the 36.75px it was
+   measured at, the 84px clip lost its second rung, and the pill split at its
+   own hyphen with "25%" landing under the 展开 或 查询实时价格 row. Hidden, the
+   entry row is `label | $x.xx.` and every row on all 32 cards is one line. */
+.md-typeset .ab-mag .ab-card--plate .ab-ec-off {
+  display: none;
+}
+
+/* The entry tier, inline at the end of the title. CSS cannot move the ladder's
+   own first price up here (the title's hypothetical width is the whole line,
+   so a flex row pushes the price onto the next one instead of into it), which
+   is why the markup carries an empty span and games-prices.js fills it in the
+   same tick it draws the ladder. */
+.md-typeset .ab-mag .ab-card--plate .ab-card__price {
+  display: inline;
+  margin: 0 0 0 8px;
+  font-size: 18px;
+  font-weight: 900;
+  /* 0, not the inherited ratio. At 18px the legacy `.ab-card span` rule
+     (extra.css) computes a 26.1px line box, and a box that tall sits its
+     descender ~0.65px below the 29.9px line's own — which lifts every title
+     line the price rides on by that much, so a two-line title measures 61
+     against the 59.8 the reservation above sets and the row goes 1px ragged.
+     A zero line box contributes only (ascent - descent)/2 above the baseline
+     and nothing below. Only the box shrinks; the digits are drawn on the
+     baseline either way. */
+  line-height: 0;
+  letter-spacing: 0;
+  color: var(--ab-red);
+  white-space: nowrap;
+}
+
+/* Load-bearing. The span is empty until the fetch lands, and an empty inline
+   box still pays its margin — every title on the page would trail 8px of
+   nothing while the ladder is in flight, and forever with the script off. */
+.md-typeset .ab-mag .ab-card--plate .ab-card__price:empty {
+  display: none;
+}
+
+/* Three to a row, and only from 1024px up. The ladder is a two-column grid of
+   its own — `max-content minmax(0, 1fr)` with a 1.1em gutter, see .ab-ec-list
+   above — whose longest row needs about 227px, and at three columns the copy
+   column measures 264px at every width from 1024 up (.ab-mag is capped at 960,
+   so the columns stop growing well before the viewport does). That leaves 37px
+   of slack. Two columns at 760px leave the copy column 189px, which is the
+   same ladder wrapping its own price onto a second line, so the breakpoint
+   cannot be the 768 the single-column rule uses.
+
+   The title comes down with it: 26px was measured against a 319px column, and
+   in 264px with a price now riding at the end of it the long names —
+   "PlayStation Network 充值卡（美国）", "Nintendo Switch Online 会员资格" —
+   would run to four lines. The two figures move together so the price stays
+   proportionally under the title, the way rubbers sets 14 against 17. */
+@media screen and (min-width: 1024px) {
+  .md-typeset .ab-mag .ab-list--pricing {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .md-typeset .ab-mag .ab-list--pricing .ab-card__title {
+    font-size: 17px;
+  }
+
+  .md-typeset .ab-mag .ab-list--pricing .ab-card__price {
+    margin-left: 6px;
+    font-size: 14px;
   }
 }

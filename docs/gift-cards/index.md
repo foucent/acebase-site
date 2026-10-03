@@ -20,14 +20,15 @@ hide:
 <div class="ab-mag" markdown="0">
 
   <section class="ab-section">
-    <div class="ab-list ab-list--expandable">
-    <article class="ab-card ab-card--brand ab-card--shop ab-card--fold ab-card--ec" id="amazon-gift-card-us">
+    <div class="ab-list ab-list--expandable ab-list--pricing">
+    <article class="ab-card ab-card--brand ab-card--shop ab-card--fold ab-card--ec ab-card--plate" id="amazon-gift-card-us">
       <div class="ab-card__media">
-        <img src="/assets/games/brand/amazon-gift-card-us.png" alt="Amazon 礼品卡（美国）价格参考" fetchpriority="high" decoding="async">
+        <span class="ab-card__badge">电子卡密</span>
+        <img src="/assets/gift-cards/amazon.png" alt="Amazon 礼品卡（美国）价格参考" fetchpriority="high" decoding="async">
       </div>
       <div class="ab-card__copy">
         <p class="ab-cat">Gift Cards</p>
-        <h3 class="ab-card__title">Amazon 礼品卡（美国）</h3>
+        <h3 class="ab-card__title">Amazon 礼品卡（美国）<span class="ab-card__price"></span></h3>
         <details class="ab-fold">
           <summary class="ab-fold__summary">
             <span class="ab-fold__lead">可在 amazon.com 抵扣自营商品，图书、数码、家居都收；卡密秒发，充进账户余额后长期有效，美区账号专用。</span>
@@ -39,7 +40,7 @@ hide:
           </summary>
         </details>
 
-        <p class="ab-ec-list" data-game="amazon-gift-card-us" data-art="/assets/gift-cards/amazon.png">
+        <p class="ab-ec-list" data-game="amazon-gift-card-us">
           <span class="ab-ec-loading">正在加载最新价格&hellip;</span>
         </p>
 
@@ -47,13 +48,14 @@ hide:
       </div>
     </article>
 
-    <article class="ab-card ab-card--brand ab-card--shop ab-card--fold ab-card--ec" id="apple-gift-card">
+    <article class="ab-card ab-card--brand ab-card--shop ab-card--fold ab-card--ec ab-card--plate" id="apple-gift-card">
       <div class="ab-card__media">
-        <img src="/assets/games/brand/apple-gift-card.png" alt="Apple 礼品卡价格参考" loading="lazy" decoding="async">
+        <span class="ab-card__badge">电子卡密</span>
+        <img src="/assets/gift-cards/apple.png" alt="Apple 礼品卡价格参考" loading="lazy" decoding="async">
       </div>
       <div class="ab-card__copy">
         <p class="ab-cat">Gift Cards</p>
-        <h3 class="ab-card__title">Apple 礼品卡</h3>
+        <h3 class="ab-card__title">Apple 礼品卡<span class="ab-card__price"></span></h3>
         <details class="ab-fold">
           <summary class="ab-fold__summary">
             <span class="ab-fold__lead">App Store 与 iTunes 通用，可买应用、订阅与游戏内购，也能在 Apple Store 抵扣硬件；余额进 Apple 账户后长期有效。</span>
@@ -65,7 +67,7 @@ hide:
           </summary>
         </details>
 
-        <p class="ab-ec-list" data-game="apple-gift-card" data-art="/assets/gift-cards/apple.png">
+        <p class="ab-ec-list" data-game="apple-gift-card">
           <span class="ab-ec-loading">正在加载最新价格&hellip;</span>
         </p>
 
@@ -73,13 +75,14 @@ hide:
       </div>
     </article>
 
-    <article class="ab-card ab-card--brand ab-card--shop ab-card--fold ab-card--ec" id="google-play-gift-card">
+    <article class="ab-card ab-card--brand ab-card--shop ab-card--fold ab-card--ec ab-card--plate" id="google-play-gift-card">
       <div class="ab-card__media">
-        <img src="/assets/games/brand/google-play-gift-card.png" alt="Google Play 礼品卡价格参考" loading="lazy" decoding="async">
+        <span class="ab-card__badge">电子卡密</span>
+        <img src="/assets/gift-cards/google.png" alt="Google Play 礼品卡价格参考" loading="lazy" decoding="async">
       </div>
       <div class="ab-card__copy">
         <p class="ab-cat">Gift Cards</p>
-        <h3 class="ab-card__title">Google Play 礼品卡</h3>
+        <h3 class="ab-card__title">Google Play 礼品卡<span class="ab-card__price"></span></h3>
         <details class="ab-fold">
           <summary class="ab-fold__summary">
             <span class="ab-fold__lead">用于 Google Play 购买应用、游戏、电子书与订阅，也可抵扣应用内购；兑换后余额进 Google 账户，长期有效。</span>
@@ -91,7 +94,7 @@ hide:
           </summary>
         </details>
 
-        <p class="ab-ec-list" data-game="google-play-gift-card" data-art="/assets/gift-cards/google.png">
+        <p class="ab-ec-list" data-game="google-play-gift-card">
           <span class="ab-ec-loading">正在加载最新价格&hellip;</span>
         </p>
 
@@ -99,13 +102,14 @@ hide:
       </div>
     </article>
 
-    <article class="ab-card ab-card--brand ab-card--shop ab-card--fold ab-card--ec" id="netflix-gift-card-us">
+    <article class="ab-card ab-card--brand ab-card--shop ab-card--fold ab-card--ec ab-card--plate" id="netflix-gift-card-us">
       <div class="ab-card__media">
-        <img src="/assets/games/brand/netflix-gift-card-us.png" alt="Netflix 礼品卡（美国）价格参考" loading="lazy" decoding="async">
+        <span class="ab-card__badge ab-card__badge--off">-16%</span>
+        <img src="/assets/gift-cards/netflix.png" alt="Netflix 礼品卡（美国）价格参考" loading="lazy" decoding="async">
       </div>
       <div class="ab-card__copy">
         <p class="ab-cat">Gift Cards</p>
-        <h3 class="ab-card__title">Netflix 礼品卡（美国）</h3>
+        <h3 class="ab-card__title">Netflix 礼品卡（美国）<span class="ab-card__price"></span></h3>
         <details class="ab-fold">
           <summary class="ab-fold__summary">
             <span class="ab-fold__lead">美区 Netflix 订阅专用，可抵扣各档套餐月费；卡密秒发，兑换后进账户余额，续费时自动优先扣除。</span>
@@ -117,7 +121,7 @@ hide:
           </summary>
         </details>
 
-        <p class="ab-ec-list" data-game="netflix-gift-card-us" data-discount="-16%" data-art="/assets/gift-cards/netflix.png">
+        <p class="ab-ec-list" data-game="netflix-gift-card-us" data-discount="-16%">
           <span class="ab-ec-loading">正在加载最新价格&hellip;</span>
         </p>
 
@@ -125,13 +129,14 @@ hide:
       </div>
     </article>
 
-    <article class="ab-card ab-card--brand ab-card--shop ab-card--fold ab-card--ec" id="xbox-gift-card">
+    <article class="ab-card ab-card--brand ab-card--shop ab-card--fold ab-card--ec ab-card--plate" id="xbox-gift-card">
       <div class="ab-card__media">
-        <img src="/assets/games/brand/xbox-gift-card.png" alt="Xbox Live 礼品卡价格参考" loading="lazy" decoding="async">
+        <span class="ab-card__badge">电子卡密</span>
+        <img src="/assets/gift-cards/xbox.png" alt="Xbox Live 礼品卡价格参考" loading="lazy" decoding="async">
       </div>
       <div class="ab-card__copy">
         <p class="ab-cat">Gift Cards</p>
-        <h3 class="ab-card__title">Xbox Live 礼品卡</h3>
+        <h3 class="ab-card__title">Xbox Live 礼品卡<span class="ab-card__price"></span></h3>
         <details class="ab-fold">
           <summary class="ab-fold__summary">
             <span class="ab-fold__lead">可在 Xbox 与 Microsoft Store 购买游戏、DLC 与订阅，也能买应用与影视；余额进微软账户，长期有效。</span>
@@ -143,7 +148,7 @@ hide:
           </summary>
         </details>
 
-        <p class="ab-ec-list" data-game="xbox-gift-card" data-art="/assets/gift-cards/xbox.png">
+        <p class="ab-ec-list" data-game="xbox-gift-card">
           <span class="ab-ec-loading">正在加载最新价格&hellip;</span>
         </p>
 
@@ -151,13 +156,14 @@ hide:
       </div>
     </article>
 
-    <article class="ab-card ab-card--brand ab-card--shop ab-card--fold ab-card--ec" id="kammelna-gift-card">
+    <article class="ab-card ab-card--brand ab-card--shop ab-card--fold ab-card--ec ab-card--plate" id="kammelna-gift-card">
       <div class="ab-card__media">
-        <img src="/assets/games/brand/kammelna-gift-card.png" alt="Kammelna 礼品卡价格参考" loading="lazy" decoding="async">
+        <span class="ab-card__badge ab-card__badge--off">-4%</span>
+        <img src="/assets/gift-cards/kammelna.png" alt="Kammelna 礼品卡价格参考" loading="lazy" decoding="async">
       </div>
       <div class="ab-card__copy">
         <p class="ab-cat">Gift Cards</p>
-        <h3 class="ab-card__title">Kammelna 礼品卡</h3>
+        <h3 class="ab-card__title">Kammelna 礼品卡<span class="ab-card__price"></span></h3>
         <details class="ab-fold">
           <summary class="ab-fold__summary">
             <span class="ab-fold__lead">中东热门在线纸牌平台 Kammelna 的充值卡，用于开通会员与购买金币牌桌道具；中东区账号兑换，卡密秒发。</span>
@@ -169,7 +175,7 @@ hide:
           </summary>
         </details>
 
-        <p class="ab-ec-list" data-game="kammelna-gift-card" data-discount="-4%" data-art="/assets/gift-cards/kammelna.png">
+        <p class="ab-ec-list" data-game="kammelna-gift-card" data-discount="-4%">
           <span class="ab-ec-loading">正在加载最新价格&hellip;</span>
         </p>
 
