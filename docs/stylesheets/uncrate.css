@@ -713,50 +713,28 @@
   }
 }
 
-/* The same reservation, for /topup's brand cards, on a different element.
-   The only thing on those cards whose height follows how its text wraps is the
-   sentence — the price block below the fold is cut to a flat 84px whether it
-   holds six tiers or twelve, and every title is one short name. That last
-   clause stopped being true when the long product names moved in, and the title
-   reservation that answers for them is in the block below; this rule is the
-   one that answers for the sentence, on `--brand`, which is both shapes.
+/* ---------- the title reservation every card in that grid needs -----------
 
-   The blurbs are 60 to 66 characters and they do not cross together. Measured
-   on that page, three lines hold down to a *content* box of 372px and all five
-   are on four by 322px; in between only some have flipped — at 352px 燕云十六声
-   and Honor of Kings are on four while PUBG Mobile and Arena Breakout are
-   still on three, which puts the two cards sharing a row 25px apart. That is
-   the whole defect, and it lands on 800-840px of viewport, where the grid is
-   still two columns. Below 767px it is one column and no card has a row
-   partner to disagree with.
+   This block used to reserve two heights on the price cards: the sentence
+   under the title, and the title itself. The sentence's half — a min-height on
+   .ab-fold__lead, band by band, keyed on `--brand` because every card on
+   /topup/ carried a blurb — came out on 2026-10-05. /topup/ was the last of
+   the three price pages still folding a ladder open; it followed /cdkeys/
+   (2026-10-04) and /gift-cards/ (2026-10-05) onto the spec picker and dropped
+   its blurbs in the same edit, so no `--brand` card on the site carries an
+   ab-fold__lead any more and there is no sentence left to reserve for. The
+   other ab-fold__lead rules in the file are not this card shape's and are
+   untouched; the one lead left on the site is the gpu-deals hero's.
 
-   All the numbers here are content boxes: the query measures one, and the copy
-   column spends 20px of padding a side, so a 400px query answers at a 440px
-   column and a 930px viewport rather than the 860 the border boxes suggest.
-
-   400 clears the 372 where the last blurb flips by 28px, and the slack is on
-   purpose — the last few px of a wrap are the fallback font's and this site
-   loads none. It is paid for on 840-930px, where nothing would have wrapped
-   and all five cards come out one line taller together. They stay level with
-   each other, which is the point; above 930px nothing is reserved at all.
-
-   `4lh`, not a px figure, for the reason `2lh` above gives. */
+   What stays is the title reservation below — the newer of the two, added when
+   the long product names moved in beside the short ones. `.ab-card__copy`
+   keeps its container so those rules can query the column. */
 .ab-card--brand .ab-card__copy {
   container-type: inline-size;
 }
 
-@container (max-width: 400px) {
-  .md-typeset .ab-mag .ab-card--brand .ab-fold__lead {
-    /* Blockified for the reason the --goods rule above is: the lead is a
-       <span>, and min-height does not apply to an inline non-replaced box.
-       Without this the reservation measured here is silently a no-op. */
-    display: block;
-    min-height: 4lh;
-  }
-}
-
 /* ---------- and the reservation every card in that grid needs on top -------
-   The paragraph above says the brand cards' only variable-height element is
+   The paragraph above says the brand cards' only variable-height element was
    the sentence. That was true of five short game names and stopped being true
    the moment the long product names moved in beside them — "PlayStation
    Network 充值卡（美国）" and "Nintendo Switch Online 会员资格" take two lines
@@ -767,7 +745,8 @@
    live-platform names. The modifier names the card shape — title and sentence
    both able to run long — not the section it sits in.
 
-   Both rules hang off `--brand`, which is every card on /topup, and not off
+   It hangs off `--brand`, which is every card on /topup/ and, since they came
+   onto the picker, every card on /cdkeys/ and /gift-cards/ too; it is not off
    `--shop`, which is only twenty-seven of them. That is the one thing here
    that changed after it was written, and it is worth the paragraph. Until
    2026-09-22 /topup/ was three grids — five game cards, thirteen gift cards,
@@ -782,19 +761,11 @@
    further up the file, where the two shapes genuinely differ: the price ladder
    that pins a `--shop` fold to a flat 84px because its longest tier is short.
 
-   The two numbers are measured on /topup, in content boxes, across 768-1440px:
-
-     title   three lines at 340px and below, two from 342px up. The query
-             switches at 350 — the 10px of slack is the same fallback-font
-             allowance the two paragraphs above take, and it is paid for on
-             816-836px of viewport, where a title that would have held two
-             lines is given three.
-     lead    four lines at 400px and below — the rule above, which answers for
-             both shapes now that it is the only one in that band — and three
-             past it, where the longest gift-card sentence lands. The fourteen
-             live-platform sentences are the shortest of the three groups and
-             were never re-measured; the equal-height assertion in
-             verify_topup_cards.py is what would catch it if that changed.
+   The number is measured on /topup, in content boxes, across 768-1440px:
+   three lines at 340px and below, two from 342px up. The query switches at 350
+   — the 10px of slack is the same fallback-font allowance the paragraphs above
+   take, and it is paid for on 816-836px of viewport, where a title that would
+   have held two lines is given three.
 
    Every value here is a container query, not a viewport one, for the reason
    the --goods paragraph gives: the column decides the wrap, not the window.
@@ -806,11 +777,9 @@
    inside the range these queries reserve for.
 
    The cost, paid knowingly: the five game cards, whose names never reach two
-   lines at 1440px, each carry one reserved line they do not fill, and the
-   twenty-seven cards that are `--shop` carry the four-line lead reserve down
-   to a 400px column where three would have done. A row that is level is worth
-   more than a card that is tight — that is the rule at the top of this file,
-   and it is asserted width by width in verify_topup_cards.py. */
+   lines at 1440px, each carry one reserved line they do not fill. A row that
+   is level is worth more than a card that is tight — that is the rule at the
+   top of this file, and it is asserted width by width in verify_topup_cards.py. */
 @media screen and (min-width: 768px) {
   @container (max-width: 350px) {
     .md-typeset .ab-mag .ab-card--brand .ab-card__title {
@@ -826,24 +795,22 @@
 
   /* Three to a row puts the copy column at 265px — 273 between 1024 and 1180,
      where the grid is a few px wider — and that is under the 350 the two rules
-     above answer for. So both of their figures are being asked in a column
-     neither was measured in, and both come out wrong there, in opposite
-     directions: the sentence wants five lines rather than the four the rule
-     outside this block reserves, and the title wants two rather than the three
-     the 350-and-below rule reserves. The title is not close — at the 17px this
-     band sets, even "PlayStation Network 充值卡（美国）" holds two lines at
-     265px, and no card on the three pages takes three.
+     above answer for. So their figure is being asked in a column it was not
+     measured in, and it comes out wrong there: the title wants two lines
+     rather than the three the 350-and-below rule reserves. It is not close —
+     at the 17px this band sets, even "PlayStation Network 充值卡（美国）"
+     holds two lines at 265px, and no card on the three pages takes three.
 
      A band of its own rather than a bigger number on those rules, because the
      next copy column up is 324px (a 768px viewport, still two columns) and it
-     wants four and three. Carrying these figures up to it would put a line of
-     air on every card between 768 and 1023 to pay for three columns of
-     viewport. 300 sits in the 273..324 gap — 27px clear above, 24 below —
-     which is the fallback-font allowance the paragraphs above take.
+     wants three. Carrying that figure up to it would put a line of air on
+     every card between 768 and 1023 to pay for three columns of viewport. 300
+     sits in the 273..324 gap — 27px clear above, 24 below — which is the
+     fallback-font allowance the paragraphs above take.
 
-     The two figures are zero-slack against today's wrapping, as the 351-and-
-     up title rule already is: 324px is the narrowest column the three-line
-     title case occurs in, and 265 is not near it.
+     The figure is zero-slack against today's wrapping, as the 351-and-up title
+     rule already is: 324px is the narrowest column the three-line title case
+     occurs in, and 265 is not near it.
 
      Keyed on `--brand` like the rules it corrects — it and `--plate` select
      the same cards, every one of them a price card on these three pages plus
@@ -851,32 +818,6 @@
   @container (max-width: 300px) {
     .md-typeset .ab-mag .ab-card--brand .ab-card__title {
       min-height: 2lh;
-    }
-
-    .md-typeset .ab-mag .ab-card--brand .ab-fold__lead {
-      /* 5lh, and /cdkeys/ was the page that paid for the figure being stale:
-         the same 257-265px copy column, but measured there on 2026-10-04 with
-         the min-height switched off in place, its blurbs came to three lines,
-         so 5lh was two lines of air between the blurb and the spec <select>.
-         Those seven cards have since dropped the lead altogether, which leaves
-         this rule answering for /topup/ and /gift-cards/ alone — and measured
-         there the same day (probe_lead_air.py), the air is two lines on 14 of
-         /topup/'s 19 cards and three on one, one or two lines on /gift-cards/'
-         six. Kept as it is rather than shortened: those two pages' blurbs are
-         not these blurbs, and nobody has asked for it. */
-      min-height: 5lh;
-    }
-  }
-
-  @container (min-width: 401px) {
-    .md-typeset .ab-mag .ab-card--brand .ab-fold__lead {
-      /* The lead is the summary's only in-flow child — the action row beside
-         it is absolutely positioned into the card's reserved padding — so
-         blockifying it here is invisible, and it is what gives min-height
-         something to apply to. Below 401px the rule above has already done
-         both, which is why this one only carries the three-line figure. */
-      display: block;
-      min-height: 3lh;
     }
   }
 }
@@ -1371,14 +1312,16 @@
 /* ---------- the pricing grid's media plate --------------------------------
 
    /gift-cards/, /cdkeys/ and /topup/ are the site's three price pages: the
-   same card the rest of the magazine draws, except that a price ladder sits
+   same card the rest of the magazine draws, except that a price ladder sat
    behind a 展开 cue where the other cards carry a sentence. On 2026-10-03 they
    were restyled onto mygear.top's /rubbers/ look, at the user's request — a
    centred plate at the head of the card, the entry price inline at the end of
    the title, a square badge on the plate's corner, three to a row on a wide
-   screen. The fold, the ladder, its 84px window and the footnote are all
-   untouched: rubbers has no equivalent, and the ladder is how these pages are
-   read.
+   screen. The fold, the ladder, its 84px window and the footnote were left
+   untouched then: rubbers has no equivalent, and the ladder is how these pages
+   are read. All three have since traded the ladder for the spec picker below —
+   /cdkeys/ on 2026-10-04, /gift-cards/ and /topup/ on 2026-10-05 — so no price
+   card on the site folds a ladder open any more.
 
    Two hooks, and where each one lands is the whole design:
 
@@ -1402,16 +1345,16 @@
    looked at.
 
    The plate is a fixed 240x320, the same 3:4 as the product art so that art
-   fills it. Nineteen of the thirty-two have no product art — /topup/'s cards
-   are all 2400x500 wordmark banners — and `object-fit: contain` is what lets
-   the two kinds share one frame, and therefore one frame *height*. That
-   matters past tidiness: the page's own equal-height assertions compare plates
-   across a row, and a row here can mix the two kinds.
+   fills it. It was shared with /topup/'s nineteen wordmark cards until
+   2026-10-05, when those moved onto the 5:2 banner below — their 2400x500
+   canvas fitted by width left the mark 30px tall in a mostly-empty frame, so
+   it was worth less than a frame of its own. What is left on the plate is the
+   3:4 art, on /gift-cards/ and /cdkeys/, which fills it edge for edge.
 
    The frame's 24/5 comes from .ab-card--brand above; this section is after it
    in the file and matches at the same 0-4-1, which is what retires it for
-   these cards. Moving this block above line 1050 would put the wordmarks back
-   into a letterbox and the product art into a hairline. */
+   these cards. Moving this block above line 1050 would put the art into a
+   hairline. */
 .md-typeset .ab-mag .ab-card--plate .ab-card__media {
   /* Positioned, because it is the badge's containing block and nothing else
      on the card is: without this the badge's nearest positioned ancestor is
@@ -1439,6 +1382,55 @@
   /* The hairline the rest of the magazine rules under its media. There is no
      banner to separate here — the plate floats on the card's own white. */
   border: 0;
+}
+
+/* ---------- the wordmark cards' banner, on /topup/ ------------------------
+
+   Every card on /topup/ carries a 2400x500 wordmark banner: the mark centred
+   in a 300px band (y=100..399), its width running 300px (MIGO, PUBG G-COIN)
+   to 1188px (Arena Breakout). The plate above fits that canvas *by width*,
+   because 2400 is the long side — 240/2400 = 0.1 — so the mark lands 30px
+   tall whatever its own width, with two thirds of the 240x320 frame empty
+   above and below it.
+
+   ab-card--wordmark gives that canvas a frame of its own ratio instead. 5:2
+   is the window, in canvas px, that holds the widest mark with a margin:
+   `cover` scales by height (5/2 is under the canvas's 24/5), so the visible
+   strip is 1250px wide — Arena Breakout's 1188 spans 606..1793 and fits,
+   centred, with ~31px either side — and the full 500px height shows, so no
+   mark is cropped either way. At three columns the copy column is ~280px, so
+   the mark lands 0.6 x (280/2.5) = 67px tall where the plate gave it 30.
+
+   The frame spans the copy column — 100% less the copy's own 20px a side —
+   rather than the plate's fixed 240, so the banner reads as one width with
+   the text under it. Everything else about the media is the plate's: the
+   radius, the position:relative the badge needs, the 16px top margin.
+
+   Its own modifier and not `--brand`, because every price card on the site
+   is --brand; only /topup/'s nineteen draw wordmarks. Rides on the article
+   the way --plate and --picker do, so gen_home.py carries it to the homepage
+   copies — re-run that after editing /topup/. */
+.md-typeset .ab-mag .ab-card--plate.ab-card--wordmark .ab-card__media {
+  width: calc(100% - 40px);
+  aspect-ratio: 5 / 2;
+}
+
+.md-typeset .ab-mag .ab-card--plate.ab-card--wordmark .ab-card__media img {
+  object-fit: cover;
+}
+
+/* The plate's badge sits on the picture with room to spare; the banner's does
+   not — a wide mark (Arena Breakout spans ~95% of the frame) runs under a
+   badge left at 10/10. The canvas keeps 100px of clear margin above the mark,
+   20% of the 500px height, and the full height shows, so the top 0.2 x H of
+   every banner is logo-free: ~22px at three columns. The badge is tucked into
+   that strip — 4px down, sized to 16px tall — so it never meets a mark,
+   whatever the mark's width. */
+.md-typeset .ab-mag .ab-card--plate.ab-card--wordmark .ab-card__badge {
+  top: 4px;
+  left: 8px;
+  padding: 2px 6px;
+  font-size: 10px;
 }
 
 /* The card's own corners and lift. extra.css already rounds and lifts every
@@ -1569,7 +1561,7 @@
 }
 
 
-/* ---------- the spec picker, on /cdkeys/ ----------------------------------
+/* ---------- the spec picker, on all three price pages --------------------
 
    On 2026-10-04 the user had /cdkeys/ read like mygear.top's /rubbers/ card:
    a labelled <select> where the price ladder used to be, and, in the same
@@ -1614,15 +1606,18 @@
    gone — this block no longer touches the frame.
 
    What it does touch is the copy's top edge, and that one is the same
-   subtraction. The other two price pages get their air under the picture from
-   their <p class="ab-cat"> line — 51px from frame to title on both, measured
-   on 2026-10-04 — and /cdkeys/ lost that line the same day it lost its blurb,
+   subtraction. All three price pages used to get their air under the picture
+   from a <p class="ab-cat"> line — 51px from frame to title, measured on
+   2026-10-04 — and /cdkeys/ lost that line the same day it lost its blurb,
    which left the frame sitting directly on the title: 0px, measured, and the
    user asked for the interval back. 16px, the frame's own top margin, so the
-   picture ends up floating in equal white above and below. Padding on the
-   column rather than a margin on the frame, so the frame rule above stays a
-   rule about the frame; the act row is pinned to this column's bottom edge and
-   rides down with it, which is where it should be. */
+   picture ends up floating in equal white above and below. /gift-cards/ and
+   /topup/ followed onto the picker on 2026-10-05 and gave up their own ab-cat
+   lines in the same edit, so all three take this padding and no price card
+   draws the cat line any more. Padding on the column rather than a margin on
+   the frame, so the frame rule above stays a rule about the frame; the act row
+   is pinned to this column's bottom edge and rides down with it, which is
+   where it should be. */
 
 .md-typeset .ab-mag .ab-card--picker .ab-card__copy {
   padding-top: 16px;

@@ -100,24 +100,20 @@ hide:
         </p>
       </div>
     </article>
-    <article class="ab-card ab-card--brand ab-card--fold ab-card--ec ab-card--plate" id="pubg-mobile">
+    <article class="ab-card ab-card--brand ab-card--fold ab-card--ec ab-card--plate ab-card--picker ab-card--wordmark" id="pubg-mobile">
       <div class="ab-card__media">
         <span class="ab-card__badge">手游</span>
         <img src="/assets/games/brand/pubg-mobile.png" alt="PUBG Mobile UC 代储价格参考" decoding="async">
       </div>
       <div class="ab-card__copy">
-        <p class="ab-cat">TOP-UP</p>
         <h3 class="ab-card__title">PUBG Mobile UC<span class="ab-card__price"></span></h3>
-        <details class="ab-fold">
-          <summary class="ab-fold__summary">
-            <span class="ab-fold__lead">《PUBG Mobile》是风靡全球的百人大逃杀战术竞技手游，免费游玩、含内购；UC 为游戏内充值货币，起充一档即可低价代充。</span>
+        <div class="ab-fold">
+          <div class="ab-fold__summary">
             <span class="ab-fold__act">
-              <span class="ab-fold__cue"><span class="ab-fold__cue-more">展开</span><span class="ab-fold__cue-less">收起</span></span>
-              <em class="ab-fold__or">或</em>
               <a class="ab-fold__buy ab-crisp-open" href="#" data-crisp-msg="你好，我想咨询 PUBG Mobile UC 的实时价格。">咨询实时价格或购买</a>
             </span>
-          </summary>
-        </details>
+          </div>
+        </div>
 
         <p class="ab-ec-list" data-game="pubg-mobile">
           <span class="ab-ec-loading">正在加载最新价格&hellip;</span>
@@ -126,24 +122,20 @@ hide:
         <p class="ab-ec-foot">手游 &middot; 数据更新于 <span class="js-prices-updated">2026-09-21</span> &middot; 报价以在线咨询为准</p>
       </div>
     </article>
-    <article class="ab-card ab-card--brand ab-card--fold ab-card--ec ab-card--plate" id="pubg-gcoin">
+    <article class="ab-card ab-card--brand ab-card--fold ab-card--ec ab-card--plate ab-card--picker ab-card--wordmark" id="pubg-gcoin">
       <div class="ab-card__media">
         <span class="ab-card__badge ab-card__badge--off">-9%</span>
         <img src="/assets/games/brand/pubg-gcoin.png" alt="PUBG G-COIN 代储价格参考" loading="lazy" decoding="async">
       </div>
       <div class="ab-card__copy">
-        <p class="ab-cat">TOP-UP</p>
         <h3 class="ab-card__title">PUBG G-COIN<span class="ab-card__price"></span></h3>
-        <details class="ab-fold">
-          <summary class="ab-fold__summary">
-            <span class="ab-fold__lead">《PUBG: Battlegrounds》是百人大逃杀射击游戏，现已免费游玩、含内购；G-COIN 为游戏内充值货币，支持 PC 与主机平台低价代充。</span>
+        <div class="ab-fold">
+          <div class="ab-fold__summary">
             <span class="ab-fold__act">
-              <span class="ab-fold__cue"><span class="ab-fold__cue-more">展开</span><span class="ab-fold__cue-less">收起</span></span>
-              <em class="ab-fold__or">或</em>
               <a class="ab-fold__buy ab-crisp-open" href="#" data-crisp-msg="你好，我想咨询 PUBG G-COIN 的实时价格。">咨询实时价格或购买</a>
             </span>
-          </summary>
-        </details>
+          </div>
+        </div>
 
         <p class="ab-ec-list" data-game="pubg-gcoin" data-discount="-9%">
           <span class="ab-ec-loading">正在加载最新价格&hellip;</span>
@@ -152,24 +144,20 @@ hide:
         <p class="ab-ec-foot">PC &middot; 主机 &middot; 数据更新于 <span class="js-prices-updated">2026-09-21</span> &middot; 报价以在线咨询为准</p>
       </div>
     </article>
-    <article class="ab-card ab-card--brand ab-card--fold ab-card--ec ab-card--plate" id="hok">
+    <article class="ab-card ab-card--brand ab-card--fold ab-card--ec ab-card--plate ab-card--picker ab-card--wordmark" id="hok">
       <div class="ab-card__media">
         <span class="ab-card__badge">手游</span>
         <img src="/assets/games/brand/hok.png" alt="Honor of Kings 代储价格参考" loading="lazy" decoding="async">
       </div>
       <div class="ab-card__copy">
-        <p class="ab-cat">TOP-UP</p>
         <h3 class="ab-card__title">Honor of Kings<span class="ab-card__price"></span></h3>
-        <details class="ab-fold">
-          <summary class="ab-fold__summary">
-            <span class="ab-fold__lead">《王者荣耀》（Honor of Kings）是全球人气最高的 5v5 MOBA 手游，免费游玩、含内购；点券为游戏内充值货币，起充一档即可低价代充。</span>
+        <div class="ab-fold">
+          <div class="ab-fold__summary">
             <span class="ab-fold__act">
-              <span class="ab-fold__cue"><span class="ab-fold__cue-more">展开</span><span class="ab-fold__cue-less">收起</span></span>
-              <em class="ab-fold__or">或</em>
               <a class="ab-fold__buy ab-crisp-open" href="#" data-crisp-msg="你好，我想咨询 Honor of Kings 点券的实时价格。">咨询实时价格或购买</a>
             </span>
-          </summary>
-        </details>
+          </div>
+        </div>
 
         <p class="ab-ec-list" data-game="hok">
           <span class="ab-ec-loading">正在加载最新价格&hellip;</span>
@@ -178,24 +166,20 @@ hide:
         <p class="ab-ec-foot">手游 &middot; 数据更新于 <span class="js-prices-updated">2026-09-21</span> &middot; 报价以在线咨询为准</p>
       </div>
     </article>
-    <article class="ab-card ab-card--brand ab-card--fold ab-card--ec ab-card--plate" id="arena-breakout">
+    <article class="ab-card ab-card--brand ab-card--fold ab-card--ec ab-card--plate ab-card--picker ab-card--wordmark" id="arena-breakout">
       <div class="ab-card__media">
         <span class="ab-card__badge">手游</span>
         <img src="/assets/games/brand/arena-breakout.png" alt="Arena Breakout 代储价格参考" loading="lazy" decoding="async">
       </div>
       <div class="ab-card__copy">
-        <p class="ab-cat">TOP-UP</p>
         <h3 class="ab-card__title">Arena Breakout<span class="ab-card__price"></span></h3>
-        <details class="ab-fold">
-          <summary class="ab-fold__summary">
-            <span class="ab-fold__lead">《暗区突围》（Arena Breakout）是硬核战术撤离射击手游，免费游玩、含内购；Bonds 为游戏内充值货币，起充一档即可低价代充。</span>
+        <div class="ab-fold">
+          <div class="ab-fold__summary">
             <span class="ab-fold__act">
-              <span class="ab-fold__cue"><span class="ab-fold__cue-more">展开</span><span class="ab-fold__cue-less">收起</span></span>
-              <em class="ab-fold__or">或</em>
               <a class="ab-fold__buy ab-crisp-open" href="#" data-crisp-msg="你好，我想咨询 Arena Breakout Bonds 的实时价格。">咨询实时价格或购买</a>
             </span>
-          </summary>
-        </details>
+          </div>
+        </div>
 
         <p class="ab-ec-list" data-game="arena-breakout">
           <span class="ab-ec-loading">正在加载最新价格&hellip;</span>
@@ -204,24 +188,20 @@ hide:
         <p class="ab-ec-foot">手游 &middot; 数据更新于 <span class="js-prices-updated">2026-09-21</span> &middot; 报价以在线咨询为准</p>
       </div>
     </article>
-    <article class="ab-card ab-card--brand ab-card--fold ab-card--ec ab-card--plate" id="where-winds-meet">
+    <article class="ab-card ab-card--brand ab-card--fold ab-card--ec ab-card--plate ab-card--picker ab-card--wordmark" id="where-winds-meet">
       <div class="ab-card__media">
         <span class="ab-card__badge">手游</span>
         <img src="/assets/games/brand/where-winds-meet.png" alt="燕云十六声 代储价格参考" loading="lazy" decoding="async">
       </div>
       <div class="ab-card__copy">
-        <p class="ab-cat">TOP-UP</p>
         <h3 class="ab-card__title">燕云十六声<span class="ab-card__price"></span></h3>
-        <details class="ab-fold">
-          <summary class="ab-fold__summary">
-            <span class="ab-fold__lead">《燕云十六声》（Where Winds Meet）是国产开放世界武侠大作，免费游玩、含内购；长鸣珠为游戏内充值货币，起充一档即可低价代充。</span>
+        <div class="ab-fold">
+          <div class="ab-fold__summary">
             <span class="ab-fold__act">
-              <span class="ab-fold__cue"><span class="ab-fold__cue-more">展开</span><span class="ab-fold__cue-less">收起</span></span>
-              <em class="ab-fold__or">或</em>
               <a class="ab-fold__buy ab-crisp-open" href="#" data-crisp-msg="你好，我想咨询 燕云十六声 长鸣珠的实时价格。">咨询实时价格或购买</a>
             </span>
-          </summary>
-        </details>
+          </div>
+        </div>
 
         <p class="ab-ec-list" data-game="where-winds-meet">
           <span class="ab-ec-loading">正在加载最新价格&hellip;</span>
@@ -230,24 +210,20 @@ hide:
         <p class="ab-ec-foot">手游 &middot; PC &middot; 数据更新于 <span class="js-prices-updated">2026-09-21</span> &middot; 报价以在线咨询为准</p>
       </div>
     </article>
-    <article class="ab-card ab-card--brand ab-card--shop ab-card--fold ab-card--ec ab-card--plate" id="douyin-top-up">
+    <article class="ab-card ab-card--brand ab-card--shop ab-card--fold ab-card--ec ab-card--plate ab-card--picker ab-card--wordmark" id="douyin-top-up">
       <div class="ab-card__media">
         <span class="ab-card__badge">平台代储</span>
         <img src="/assets/games/brand/douyin-top-up.png" alt="抖音直播 代储价格参考" loading="lazy" decoding="async">
       </div>
       <div class="ab-card__copy">
-        <p class="ab-cat">直播</p>
         <h3 class="ab-card__title">抖音直播<span class="ab-card__price"></span></h3>
-        <details class="ab-fold">
-          <summary class="ab-fold__summary">
-            <span class="ab-fold__lead">抖音是国内头部的短视频与直播平台，抖币用于直播打赏与送礼。</span>
+        <div class="ab-fold">
+          <div class="ab-fold__summary">
             <span class="ab-fold__act">
-              <span class="ab-fold__cue"><span class="ab-fold__cue-more">展开</span><span class="ab-fold__cue-less">收起</span></span>
-              <em class="ab-fold__or">或</em>
               <a class="ab-fold__buy ab-crisp-open" href="#" data-crisp-msg="你好，我想咨询抖音直播的实时价格。">咨询实时价格或购买</a>
             </span>
-          </summary>
-        </details>
+          </div>
+        </div>
 
         <p class="ab-ec-list" data-game="douyin-top-up">
           <span class="ab-ec-loading">正在加载最新价格&hellip;</span>
@@ -256,24 +232,20 @@ hide:
         <p class="ab-ec-foot">平台代储 &middot; 数据更新于 <span class="js-prices-updated">2026-09-21</span> &middot; 报价以在线咨询为准</p>
       </div>
     </article>
-    <article class="ab-card ab-card--brand ab-card--shop ab-card--fold ab-card--ec ab-card--plate" id="amazon-gift-card-us">
+    <article class="ab-card ab-card--brand ab-card--shop ab-card--fold ab-card--ec ab-card--plate ab-card--picker" id="amazon-gift-card-us">
       <div class="ab-card__media">
         <span class="ab-card__badge">电子卡密</span>
         <img src="/assets/gift-cards/amazon.png" alt="Amazon 礼品卡（美国）价格参考" decoding="async">
       </div>
       <div class="ab-card__copy">
-        <p class="ab-cat">Gift Cards</p>
         <h3 class="ab-card__title">Amazon 礼品卡（美国）<span class="ab-card__price"></span></h3>
-        <details class="ab-fold">
-          <summary class="ab-fold__summary">
-            <span class="ab-fold__lead">可在 amazon.com 抵扣自营商品，图书、数码、家居都收；卡密秒发，充进账户余额后长期有效，美区账号专用。</span>
+        <div class="ab-fold">
+          <div class="ab-fold__summary">
             <span class="ab-fold__act">
-              <span class="ab-fold__cue"><span class="ab-fold__cue-more">展开</span><span class="ab-fold__cue-less">收起</span></span>
-              <em class="ab-fold__or">或</em>
               <a class="ab-fold__buy ab-crisp-open" href="#" data-crisp-msg="你好，我想咨询 Amazon 礼品卡（美国）的实时价格。">咨询实时价格或购买</a>
             </span>
-          </summary>
-        </details>
+          </div>
+        </div>
 
         <p class="ab-ec-list" data-game="amazon-gift-card-us">
           <span class="ab-ec-loading">正在加载最新价格&hellip;</span>
@@ -282,24 +254,20 @@ hide:
         <p class="ab-ec-foot">电子卡密 &middot; 美区 &middot; 数据更新于 <span class="js-prices-updated">2026-09-21</span> &middot; 报价以在线咨询为准</p>
       </div>
     </article>
-    <article class="ab-card ab-card--brand ab-card--shop ab-card--fold ab-card--ec ab-card--plate" id="apple-gift-card">
+    <article class="ab-card ab-card--brand ab-card--shop ab-card--fold ab-card--ec ab-card--plate ab-card--picker" id="apple-gift-card">
       <div class="ab-card__media">
         <span class="ab-card__badge">电子卡密</span>
         <img src="/assets/gift-cards/apple.png" alt="Apple 礼品卡价格参考" loading="lazy" decoding="async">
       </div>
       <div class="ab-card__copy">
-        <p class="ab-cat">Gift Cards</p>
         <h3 class="ab-card__title">Apple 礼品卡<span class="ab-card__price"></span></h3>
-        <details class="ab-fold">
-          <summary class="ab-fold__summary">
-            <span class="ab-fold__lead">App Store 与 iTunes 通用，可买应用、订阅与游戏内购，也能在 Apple Store 抵扣硬件；余额进 Apple 账户后长期有效。</span>
+        <div class="ab-fold">
+          <div class="ab-fold__summary">
             <span class="ab-fold__act">
-              <span class="ab-fold__cue"><span class="ab-fold__cue-more">展开</span><span class="ab-fold__cue-less">收起</span></span>
-              <em class="ab-fold__or">或</em>
               <a class="ab-fold__buy ab-crisp-open" href="#" data-crisp-msg="你好，我想咨询 Apple 礼品卡的实时价格。">咨询实时价格或购买</a>
             </span>
-          </summary>
-        </details>
+          </div>
+        </div>
 
         <p class="ab-ec-list" data-game="apple-gift-card">
           <span class="ab-ec-loading">正在加载最新价格&hellip;</span>
@@ -308,24 +276,20 @@ hide:
         <p class="ab-ec-foot">电子卡密 &middot; App Store 与 iTunes &middot; 数据更新于 <span class="js-prices-updated">2026-09-21</span> &middot; 报价以在线咨询为准</p>
       </div>
     </article>
-    <article class="ab-card ab-card--brand ab-card--shop ab-card--fold ab-card--ec ab-card--plate" id="google-play-gift-card">
+    <article class="ab-card ab-card--brand ab-card--shop ab-card--fold ab-card--ec ab-card--plate ab-card--picker" id="google-play-gift-card">
       <div class="ab-card__media">
         <span class="ab-card__badge">电子卡密</span>
         <img src="/assets/gift-cards/google.png" alt="Google Play 礼品卡价格参考" loading="lazy" decoding="async">
       </div>
       <div class="ab-card__copy">
-        <p class="ab-cat">Gift Cards</p>
         <h3 class="ab-card__title">Google Play 礼品卡<span class="ab-card__price"></span></h3>
-        <details class="ab-fold">
-          <summary class="ab-fold__summary">
-            <span class="ab-fold__lead">用于 Google Play 购买应用、游戏、电子书与订阅，也可抵扣应用内购；兑换后余额进 Google 账户，长期有效。</span>
+        <div class="ab-fold">
+          <div class="ab-fold__summary">
             <span class="ab-fold__act">
-              <span class="ab-fold__cue"><span class="ab-fold__cue-more">展开</span><span class="ab-fold__cue-less">收起</span></span>
-              <em class="ab-fold__or">或</em>
               <a class="ab-fold__buy ab-crisp-open" href="#" data-crisp-msg="你好，我想咨询 Google Play 礼品卡的实时价格。">咨询实时价格或购买</a>
             </span>
-          </summary>
-        </details>
+          </div>
+        </div>
 
         <p class="ab-ec-list" data-game="google-play-gift-card">
           <span class="ab-ec-loading">正在加载最新价格&hellip;</span>
@@ -334,24 +298,20 @@ hide:
         <p class="ab-ec-foot">电子卡密 &middot; Google Play &middot; 数据更新于 <span class="js-prices-updated">2026-09-21</span> &middot; 报价以在线咨询为准</p>
       </div>
     </article>
-    <article class="ab-card ab-card--brand ab-card--shop ab-card--fold ab-card--ec ab-card--plate" id="netflix-gift-card-us">
+    <article class="ab-card ab-card--brand ab-card--shop ab-card--fold ab-card--ec ab-card--plate ab-card--picker" id="netflix-gift-card-us">
       <div class="ab-card__media">
         <span class="ab-card__badge ab-card__badge--off">-16%</span>
         <img src="/assets/gift-cards/netflix.png" alt="Netflix 礼品卡（美国）价格参考" loading="lazy" decoding="async">
       </div>
       <div class="ab-card__copy">
-        <p class="ab-cat">Gift Cards</p>
         <h3 class="ab-card__title">Netflix 礼品卡（美国）<span class="ab-card__price"></span></h3>
-        <details class="ab-fold">
-          <summary class="ab-fold__summary">
-            <span class="ab-fold__lead">美区 Netflix 订阅专用，可抵扣各档套餐月费；卡密秒发，兑换后进账户余额，续费时自动优先扣除。</span>
+        <div class="ab-fold">
+          <div class="ab-fold__summary">
             <span class="ab-fold__act">
-              <span class="ab-fold__cue"><span class="ab-fold__cue-more">展开</span><span class="ab-fold__cue-less">收起</span></span>
-              <em class="ab-fold__or">或</em>
               <a class="ab-fold__buy ab-crisp-open" href="#" data-crisp-msg="你好，我想咨询 Netflix 礼品卡（美国）的实时价格。">咨询实时价格或购买</a>
             </span>
-          </summary>
-        </details>
+          </div>
+        </div>
 
         <p class="ab-ec-list" data-game="netflix-gift-card-us" data-discount="-16%">
           <span class="ab-ec-loading">正在加载最新价格&hellip;</span>
@@ -360,24 +320,20 @@ hide:
         <p class="ab-ec-foot">电子卡密 &middot; 美区 &middot; 数据更新于 <span class="js-prices-updated">2026-09-21</span> &middot; 报价以在线咨询为准</p>
       </div>
     </article>
-    <article class="ab-card ab-card--brand ab-card--shop ab-card--fold ab-card--ec ab-card--plate" id="xbox-gift-card">
+    <article class="ab-card ab-card--brand ab-card--shop ab-card--fold ab-card--ec ab-card--plate ab-card--picker" id="xbox-gift-card">
       <div class="ab-card__media">
         <span class="ab-card__badge">电子卡密</span>
         <img src="/assets/gift-cards/xbox.png" alt="Xbox Live 礼品卡价格参考" loading="lazy" decoding="async">
       </div>
       <div class="ab-card__copy">
-        <p class="ab-cat">Gift Cards</p>
         <h3 class="ab-card__title">Xbox Live 礼品卡<span class="ab-card__price"></span></h3>
-        <details class="ab-fold">
-          <summary class="ab-fold__summary">
-            <span class="ab-fold__lead">可在 Xbox 与 Microsoft Store 购买游戏、DLC 与订阅，也能买应用与影视；余额进微软账户，长期有效。</span>
+        <div class="ab-fold">
+          <div class="ab-fold__summary">
             <span class="ab-fold__act">
-              <span class="ab-fold__cue"><span class="ab-fold__cue-more">展开</span><span class="ab-fold__cue-less">收起</span></span>
-              <em class="ab-fold__or">或</em>
               <a class="ab-fold__buy ab-crisp-open" href="#" data-crisp-msg="你好，我想咨询 Xbox Live 礼品卡的实时价格。">咨询实时价格或购买</a>
             </span>
-          </summary>
-        </details>
+          </div>
+        </div>
 
         <p class="ab-ec-list" data-game="xbox-gift-card">
           <span class="ab-ec-loading">正在加载最新价格&hellip;</span>
@@ -386,24 +342,20 @@ hide:
         <p class="ab-ec-foot">电子卡密 &middot; Xbox 与 Microsoft Store &middot; 数据更新于 <span class="js-prices-updated">2026-09-21</span> &middot; 报价以在线咨询为准</p>
       </div>
     </article>
-    <article class="ab-card ab-card--brand ab-card--shop ab-card--fold ab-card--ec ab-card--plate" id="kammelna-gift-card">
+    <article class="ab-card ab-card--brand ab-card--shop ab-card--fold ab-card--ec ab-card--plate ab-card--picker" id="kammelna-gift-card">
       <div class="ab-card__media">
         <span class="ab-card__badge ab-card__badge--off">-4%</span>
         <img src="/assets/gift-cards/kammelna.png" alt="Kammelna 礼品卡价格参考" loading="lazy" decoding="async">
       </div>
       <div class="ab-card__copy">
-        <p class="ab-cat">Gift Cards</p>
         <h3 class="ab-card__title">Kammelna 礼品卡<span class="ab-card__price"></span></h3>
-        <details class="ab-fold">
-          <summary class="ab-fold__summary">
-            <span class="ab-fold__lead">中东热门在线纸牌平台 Kammelna 的充值卡，用于开通会员与购买金币牌桌道具；中东区账号兑换，卡密秒发。</span>
+        <div class="ab-fold">
+          <div class="ab-fold__summary">
             <span class="ab-fold__act">
-              <span class="ab-fold__cue"><span class="ab-fold__cue-more">展开</span><span class="ab-fold__cue-less">收起</span></span>
-              <em class="ab-fold__or">或</em>
               <a class="ab-fold__buy ab-crisp-open" href="#" data-crisp-msg="你好，我想咨询 Kammelna 礼品卡的实时价格。">咨询实时价格或购买</a>
             </span>
-          </summary>
-        </details>
+          </div>
+        </div>
 
         <p class="ab-ec-list" data-game="kammelna-gift-card" data-discount="-4%">
           <span class="ab-ec-loading">正在加载最新价格&hellip;</span>
