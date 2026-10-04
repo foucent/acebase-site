@@ -1277,8 +1277,18 @@
   border-bottom-color: var(--ab-text);
 }
 
+/* The separator in a row of two tappable things: 「展开 或 咨询实时价格或购买」
+   on the price cards, 「查看图集 或 查询价格」 on /gear/. It carried no margin,
+   so the only air around it was the one space the markup's newlines collapse
+   to — measured 8px a side, and the same 8px at 1440 and at 390, because it is
+   the space's own width and not a share of the card — and on 2026-10-04 the
+   user asked for more. 6px a side, taking it to 14px, which puts the 或
+   between the two links rather than against either. In px rather than em on
+   purpose: the 16px bump further down shares these selectors and 6px reads
+   right at both sizes. */
 .md-typeset .ab-mag .ab-fold__or,
 .md-typeset .ab-mag .ab-card__or {
+  margin: 0 6px;
   font-size: 15px;
   font-style: normal;
   color: var(--ab-text-muted);
