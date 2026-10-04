@@ -25,6 +25,7 @@
     acebase: "AceBase",
     discount: isZh ? "折扣" : "Discount",
     topup: isZh ? "充值" : "Top-Up",
+    spec: isZh ? "规格" : "Spec",
     emptySoon: isZh
       ? "价格即将上线 — 请咨询在线客服获取最新报价。"
       : "Prices coming soon — ask our chat for the latest quote.",
@@ -52,6 +53,59 @@
     var pct = Math.round((1 - acebase / official) * 100);
     if (pct <= 0) return "";
     return pct + "% OFF";
+  }
+
+  // The third shape is the spec picker, on the /cdkeys/ cards that carry
+  // ab-card--picker. It is built where the ladder would have been: one labelled
+  // <select>, one option per tier, on the model of mygear.top's /rubbers/ card.
+  //
+  // One thing does not carry over. rubbers' options are colours and share a
+  // single price, so its title price never moves; these tiers are priced one
+  // by one, which is the whole reason the page exists, so the title's inline
+  // price is the *chosen* tier's and follows the select. The quote message
+  // follows it too — a reader who has picked a denomination should not have to
+  // repeat it to the chat.
+  //
+  // The original message is copied into data-crisp-base on the first pass, so
+  // switching tiers twice cannot append the spec twice. crisp.js reads
+  // data-crisp-msg at click time rather than at load, which is what lets it be
+  // rewritten here at all.
+  function renderPicker(wrap, card, rows) {
+    var head = card.querySelector(".ab-card__title .ab-card__price");
+    var buy = card.querySelector(".ab-fold__buy");
+    if (buy && !buy.getAttribute("data-crisp-base")) {
+      buy.setAttribute("data-crisp-base", buy.getAttribute("data-crisp-msg") || "");
+    }
+    var base = buy ? buy.getAttribute("data-crisp-base") : "";
+
+    wrap.innerHTML =
+      '<label class="ab-ec-pick">' +
+      '<span class="ab-ec-pick__label">' + esc(T.spec) + "</span>" +
+      '<select class="ab-ec-pick__select">' +
+      rows
+        .map(function (r) {
+          return "<option>" + esc(r.title || T.topup) + "</option>";
+        })
+        .join("") +
+      "</select></label>";
+
+    var sel = wrap.querySelector("select");
+
+    // selectedIndex rather than the option's text: the rows are the source of
+    // truth and the label is only what they are called.
+    function sync() {
+      var r = rows[sel.selectedIndex] || rows[0];
+      if (head) head.textContent = money(r.lowest);
+      if (buy && base) {
+        buy.setAttribute(
+          "data-crisp-msg",
+          base.replace(/[。.]\s*$/, "") + "，规格 " + r.title + "。"
+        );
+      }
+    }
+
+    sel.addEventListener("change", sync);
+    sync();
   }
 
   // The one-line-per-tier price block. Lowest is the price that matters here:
@@ -130,6 +184,16 @@
     if (badge && off && !badge.classList.contains("ab-card__badge--off")) {
       badge.textContent = off;
       badge.classList.add("ab-card__badge--off");
+    }
+
+    // /cdkeys/ draws a picker where the other price pages draw a ladder. Taken
+    // after the badge, not before the title price, so the saving still lands on
+    // a card whose own markup has no data-discount to copy — returning early
+    // from above would leave those cards wearing their channel tag with the
+    // number already in hand.
+    if (card && card.classList.contains("ab-card--picker")) {
+      renderPicker(wrap, card, rows);
+      return;
     }
 
     wrap.innerHTML = rows
