@@ -25,7 +25,7 @@ hide:
             <span class="ab-fold__act">
               <span class="ab-fold__cue"><span class="ab-fold__cue-more">展开</span><span class="ab-fold__cue-less">收起</span></span>
               <em class="ab-fold__or">或</em>
-              <a class="ab-fold__buy ab-crisp-open" href="#" data-crisp-msg="你好，我想咨询 PUBG Mobile UC 的实时价格。">查询实时价格</a>
+              <a class="ab-fold__buy ab-crisp-open" href="#" data-crisp-msg="你好，我想咨询 PUBG Mobile UC 的实时价格。">咨询实时价格或购买</a>
             </span>
           </summary>
         </details>
@@ -52,7 +52,7 @@ hide:
             <span class="ab-fold__act">
               <span class="ab-fold__cue"><span class="ab-fold__cue-more">展开</span><span class="ab-fold__cue-less">收起</span></span>
               <em class="ab-fold__or">或</em>
-              <a class="ab-fold__buy ab-crisp-open" href="#" data-crisp-msg="你好，我想咨询 PUBG G-COIN 的实时价格。">查询实时价格</a>
+              <a class="ab-fold__buy ab-crisp-open" href="#" data-crisp-msg="你好，我想咨询 PUBG G-COIN 的实时价格。">咨询实时价格或购买</a>
             </span>
           </summary>
         </details>
@@ -79,7 +79,7 @@ hide:
             <span class="ab-fold__act">
               <span class="ab-fold__cue"><span class="ab-fold__cue-more">展开</span><span class="ab-fold__cue-less">收起</span></span>
               <em class="ab-fold__or">或</em>
-              <a class="ab-fold__buy ab-crisp-open" href="#" data-crisp-msg="你好，我想咨询 Honor of Kings 点券的实时价格。">查询实时价格</a>
+              <a class="ab-fold__buy ab-crisp-open" href="#" data-crisp-msg="你好，我想咨询 Honor of Kings 点券的实时价格。">咨询实时价格或购买</a>
             </span>
           </summary>
         </details>
@@ -106,7 +106,7 @@ hide:
             <span class="ab-fold__act">
               <span class="ab-fold__cue"><span class="ab-fold__cue-more">展开</span><span class="ab-fold__cue-less">收起</span></span>
               <em class="ab-fold__or">或</em>
-              <a class="ab-fold__buy ab-crisp-open" href="#" data-crisp-msg="你好，我想咨询 Arena Breakout Bonds 的实时价格。">查询实时价格</a>
+              <a class="ab-fold__buy ab-crisp-open" href="#" data-crisp-msg="你好，我想咨询 Arena Breakout Bonds 的实时价格。">咨询实时价格或购买</a>
             </span>
           </summary>
         </details>
@@ -133,7 +133,7 @@ hide:
             <span class="ab-fold__act">
               <span class="ab-fold__cue"><span class="ab-fold__cue-more">展开</span><span class="ab-fold__cue-less">收起</span></span>
               <em class="ab-fold__or">或</em>
-              <a class="ab-fold__buy ab-crisp-open" href="#" data-crisp-msg="你好，我想咨询 燕云十六声 长鸣珠的实时价格。">查询实时价格</a>
+              <a class="ab-fold__buy ab-crisp-open" href="#" data-crisp-msg="你好，我想咨询 燕云十六声 长鸣珠的实时价格。">咨询实时价格或购买</a>
             </span>
           </summary>
         </details>
@@ -165,7 +165,7 @@ hide:
             <span class="ab-fold__act">
               <span class="ab-fold__cue"><span class="ab-fold__cue-more">展开</span><span class="ab-fold__cue-less">收起</span></span>
               <em class="ab-fold__or">或</em>
-              <a class="ab-fold__buy ab-crisp-open" href="#" data-crisp-msg="你好，我想咨询抖音直播的实时价格。">查询实时价格</a>
+              <a class="ab-fold__buy ab-crisp-open" href="#" data-crisp-msg="你好，我想咨询抖音直播的实时价格。">咨询实时价格或购买</a>
             </span>
           </summary>
         </details>
@@ -192,7 +192,7 @@ hide:
             <span class="ab-fold__act">
               <span class="ab-fold__cue"><span class="ab-fold__cue-more">展开</span><span class="ab-fold__cue-less">收起</span></span>
               <em class="ab-fold__or">或</em>
-              <a class="ab-fold__buy ab-crisp-open" href="#" data-crisp-msg="你好，我想咨询快手的实时价格。">查询实时价格</a>
+              <a class="ab-fold__buy ab-crisp-open" href="#" data-crisp-msg="你好，我想咨询快手的实时价格。">咨询实时价格或购买</a>
             </span>
           </summary>
         </details>
@@ -219,7 +219,7 @@ hide:
             <span class="ab-fold__act">
               <span class="ab-fold__cue"><span class="ab-fold__cue-more">展开</span><span class="ab-fold__cue-less">收起</span></span>
               <em class="ab-fold__or">或</em>
-              <a class="ab-fold__buy ab-crisp-open" href="#" data-crisp-msg="你好，我想咨询 Bigo Live 的实时价格。">查询实时价格</a>
+              <a class="ab-fold__buy ab-crisp-open" href="#" data-crisp-msg="你好，我想咨询 Bigo Live 的实时价格。">咨询实时价格或购买</a>
             </span>
           </summary>
         </details>
@@ -246,7 +246,7 @@ hide:
             <span class="ab-fold__act">
               <span class="ab-fold__cue"><span class="ab-fold__cue-more">展开</span><span class="ab-fold__cue-less">收起</span></span>
               <em class="ab-fold__or">或</em>
-              <a class="ab-fold__buy ab-crisp-open" href="#" data-crisp-msg="你好，我想咨询 MICO 的实时价格。">查询实时价格</a>
+              <a class="ab-fold__buy ab-crisp-open" href="#" data-crisp-msg="你好，我想咨询 MICO 的实时价格。">咨询实时价格或购买</a>
             </span>
           </summary>
         </details>
@@ -273,7 +273,7 @@ hide:
             <span class="ab-fold__act">
               <span class="ab-fold__cue"><span class="ab-fold__cue-more">展开</span><span class="ab-fold__cue-less">收起</span></span>
               <em class="ab-fold__or">或</em>
-              <a class="ab-fold__buy ab-crisp-open" href="#" data-crisp-msg="你好，我想咨询 Poppo Live 的实时价格。">查询实时价格</a>
+              <a class="ab-fold__buy ab-crisp-open" href="#" data-crisp-msg="你好，我想咨询 Poppo Live 的实时价格。">咨询实时价格或购买</a>
             </span>
           </summary>
         </details>
@@ -300,7 +300,7 @@ hide:
             <span class="ab-fold__act">
               <span class="ab-fold__cue"><span class="ab-fold__cue-more">展开</span><span class="ab-fold__cue-less">收起</span></span>
               <em class="ab-fold__or">或</em>
-              <a class="ab-fold__buy ab-crisp-open" href="#" data-crisp-msg="你好，我想咨询 Tango Live 的实时价格。">查询实时价格</a>
+              <a class="ab-fold__buy ab-crisp-open" href="#" data-crisp-msg="你好，我想咨询 Tango Live 的实时价格。">咨询实时价格或购买</a>
             </span>
           </summary>
         </details>
@@ -327,7 +327,7 @@ hide:
             <span class="ab-fold__act">
               <span class="ab-fold__cue"><span class="ab-fold__cue-more">展开</span><span class="ab-fold__cue-less">收起</span></span>
               <em class="ab-fold__or">或</em>
-              <a class="ab-fold__buy ab-crisp-open" href="#" data-crisp-msg="你好，我想咨询 Mango Live 的实时价格。">查询实时价格</a>
+              <a class="ab-fold__buy ab-crisp-open" href="#" data-crisp-msg="你好，我想咨询 Mango Live 的实时价格。">咨询实时价格或购买</a>
             </span>
           </summary>
         </details>
@@ -354,7 +354,7 @@ hide:
             <span class="ab-fold__act">
               <span class="ab-fold__cue"><span class="ab-fold__cue-more">展开</span><span class="ab-fold__cue-less">收起</span></span>
               <em class="ab-fold__or">或</em>
-              <a class="ab-fold__buy ab-crisp-open" href="#" data-crisp-msg="你好，我想咨询 MIGO LIVE 的实时价格。">查询实时价格</a>
+              <a class="ab-fold__buy ab-crisp-open" href="#" data-crisp-msg="你好，我想咨询 MIGO LIVE 的实时价格。">咨询实时价格或购买</a>
             </span>
           </summary>
         </details>
@@ -381,7 +381,7 @@ hide:
             <span class="ab-fold__act">
               <span class="ab-fold__cue"><span class="ab-fold__cue-more">展开</span><span class="ab-fold__cue-less">收起</span></span>
               <em class="ab-fold__or">或</em>
-              <a class="ab-fold__buy ab-crisp-open" href="#" data-crisp-msg="你好，我想咨询超级直播的实时价格。">查询实时价格</a>
+              <a class="ab-fold__buy ab-crisp-open" href="#" data-crisp-msg="你好，我想咨询超级直播的实时价格。">咨询实时价格或购买</a>
             </span>
           </summary>
         </details>
@@ -408,7 +408,7 @@ hide:
             <span class="ab-fold__act">
               <span class="ab-fold__cue"><span class="ab-fold__cue-more">展开</span><span class="ab-fold__cue-less">收起</span></span>
               <em class="ab-fold__or">或</em>
-              <a class="ab-fold__buy ab-crisp-open" href="#" data-crisp-msg="你好，我想咨询 Dazz Live 的实时价格。">查询实时价格</a>
+              <a class="ab-fold__buy ab-crisp-open" href="#" data-crisp-msg="你好，我想咨询 Dazz Live 的实时价格。">咨询实时价格或购买</a>
             </span>
           </summary>
         </details>
@@ -435,7 +435,7 @@ hide:
             <span class="ab-fold__act">
               <span class="ab-fold__cue"><span class="ab-fold__cue-more">展开</span><span class="ab-fold__cue-less">收起</span></span>
               <em class="ab-fold__or">或</em>
-              <a class="ab-fold__buy ab-crisp-open" href="#" data-crisp-msg="你好，我想咨询 Xena Live 的实时价格。">查询实时价格</a>
+              <a class="ab-fold__buy ab-crisp-open" href="#" data-crisp-msg="你好，我想咨询 Xena Live 的实时价格。">咨询实时价格或购买</a>
             </span>
           </summary>
         </details>
@@ -462,7 +462,7 @@ hide:
             <span class="ab-fold__act">
               <span class="ab-fold__cue"><span class="ab-fold__cue-more">展开</span><span class="ab-fold__cue-less">收起</span></span>
               <em class="ab-fold__or">或</em>
-              <a class="ab-fold__buy ab-crisp-open" href="#" data-crisp-msg="你好，我想咨询比心的实时价格。">查询实时价格</a>
+              <a class="ab-fold__buy ab-crisp-open" href="#" data-crisp-msg="你好，我想咨询比心的实时价格。">咨询实时价格或购买</a>
             </span>
           </summary>
         </details>
@@ -489,7 +489,7 @@ hide:
             <span class="ab-fold__act">
               <span class="ab-fold__cue"><span class="ab-fold__cue-more">展开</span><span class="ab-fold__cue-less">收起</span></span>
               <em class="ab-fold__or">或</em>
-              <a class="ab-fold__buy ab-crisp-open" href="#" data-crisp-msg="你好，我想咨询 Ludo Club 的实时价格。">查询实时价格</a>
+              <a class="ab-fold__buy ab-crisp-open" href="#" data-crisp-msg="你好，我想咨询 Ludo Club 的实时价格。">咨询实时价格或购买</a>
             </span>
           </summary>
         </details>
@@ -516,7 +516,7 @@ hide:
             <span class="ab-fold__act">
               <span class="ab-fold__cue"><span class="ab-fold__cue-more">展开</span><span class="ab-fold__cue-less">收起</span></span>
               <em class="ab-fold__or">或</em>
-              <a class="ab-fold__buy ab-crisp-open" href="#" data-crisp-msg="你好，我想咨询 Yalla Ludo 的实时价格。">查询实时价格</a>
+              <a class="ab-fold__buy ab-crisp-open" href="#" data-crisp-msg="你好，我想咨询 Yalla Ludo 的实时价格。">咨询实时价格或购买</a>
             </span>
           </summary>
         </details>

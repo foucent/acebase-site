@@ -35,7 +35,7 @@ hide:
             <span class="ab-fold__act">
               <span class="ab-fold__cue"><span class="ab-fold__cue-more">展开</span><span class="ab-fold__cue-less">收起</span></span>
               <em class="ab-fold__or">或</em>
-              <a class="ab-fold__buy ab-crisp-open" href="#" data-crisp-msg="你好，我想咨询 Amazon 礼品卡（美国）的实时价格。">查询实时价格</a>
+              <a class="ab-fold__buy ab-crisp-open" href="#" data-crisp-msg="你好，我想咨询 Amazon 礼品卡（美国）的实时价格。">咨询实时价格或购买</a>
             </span>
           </summary>
         </details>
@@ -62,7 +62,7 @@ hide:
             <span class="ab-fold__act">
               <span class="ab-fold__cue"><span class="ab-fold__cue-more">展开</span><span class="ab-fold__cue-less">收起</span></span>
               <em class="ab-fold__or">或</em>
-              <a class="ab-fold__buy ab-crisp-open" href="#" data-crisp-msg="你好，我想咨询 Apple 礼品卡的实时价格。">查询实时价格</a>
+              <a class="ab-fold__buy ab-crisp-open" href="#" data-crisp-msg="你好，我想咨询 Apple 礼品卡的实时价格。">咨询实时价格或购买</a>
             </span>
           </summary>
         </details>
@@ -89,7 +89,7 @@ hide:
             <span class="ab-fold__act">
               <span class="ab-fold__cue"><span class="ab-fold__cue-more">展开</span><span class="ab-fold__cue-less">收起</span></span>
               <em class="ab-fold__or">或</em>
-              <a class="ab-fold__buy ab-crisp-open" href="#" data-crisp-msg="你好，我想咨询 Google Play 礼品卡的实时价格。">查询实时价格</a>
+              <a class="ab-fold__buy ab-crisp-open" href="#" data-crisp-msg="你好，我想咨询 Google Play 礼品卡的实时价格。">咨询实时价格或购买</a>
             </span>
           </summary>
         </details>
@@ -116,7 +116,7 @@ hide:
             <span class="ab-fold__act">
               <span class="ab-fold__cue"><span class="ab-fold__cue-more">展开</span><span class="ab-fold__cue-less">收起</span></span>
               <em class="ab-fold__or">或</em>
-              <a class="ab-fold__buy ab-crisp-open" href="#" data-crisp-msg="你好，我想咨询 Netflix 礼品卡（美国）的实时价格。">查询实时价格</a>
+              <a class="ab-fold__buy ab-crisp-open" href="#" data-crisp-msg="你好，我想咨询 Netflix 礼品卡（美国）的实时价格。">咨询实时价格或购买</a>
             </span>
           </summary>
         </details>
@@ -143,7 +143,7 @@ hide:
             <span class="ab-fold__act">
               <span class="ab-fold__cue"><span class="ab-fold__cue-more">展开</span><span class="ab-fold__cue-less">收起</span></span>
               <em class="ab-fold__or">或</em>
-              <a class="ab-fold__buy ab-crisp-open" href="#" data-crisp-msg="你好，我想咨询 Xbox Live 礼品卡的实时价格。">查询实时价格</a>
+              <a class="ab-fold__buy ab-crisp-open" href="#" data-crisp-msg="你好，我想咨询 Xbox Live 礼品卡的实时价格。">咨询实时价格或购买</a>
             </span>
           </summary>
         </details>
@@ -170,7 +170,7 @@ hide:
             <span class="ab-fold__act">
               <span class="ab-fold__cue"><span class="ab-fold__cue-more">展开</span><span class="ab-fold__cue-less">收起</span></span>
               <em class="ab-fold__or">或</em>
-              <a class="ab-fold__buy ab-crisp-open" href="#" data-crisp-msg="你好，我想咨询 Kammelna 礼品卡的实时价格。">查询实时价格</a>
+              <a class="ab-fold__buy ab-crisp-open" href="#" data-crisp-msg="你好，我想咨询 Kammelna 礼品卡的实时价格。">咨询实时价格或购买</a>
             </span>
           </summary>
         </details>
@@ -192,7 +192,7 @@ hide:
   <p><strong>礼品卡多久到账？</strong></p>
   <p>卡密类礼品卡在支付成功后自动发放，通常几分钟内到账，可在订单详情中查看兑换码。</p>
   <p><strong>如何购买礼品卡？</strong></p>
-  <p>点击「查询实时价格」，客服会在聊天中确认品牌、面额与地区后完成下单与发货。</p>
+  <p>点击「咨询实时价格或购买」，客服会在聊天中确认品牌、面额与地区后完成下单与发货。</p>
   <p><strong>礼品卡支持哪些地区？</strong></p>
   <p>各品牌可购买地区以页面标注为准（如美国 / 日本 / 欧洲等）。购买前请确认您的账号地区与礼品卡地区一致，地区不符可能导致无法兑换。</p>
 
@@ -242,7 +242,7 @@ hide:
           "name": "如何购买礼品卡？",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "点击「查询实时价格」，客服会在聊天中确认品牌、面额与地区后完成下单与发货。"
+            "text": "点击「咨询实时价格或购买」，客服会在聊天中确认品牌、面额与地区后完成下单与发货。"
           }
         },
         {

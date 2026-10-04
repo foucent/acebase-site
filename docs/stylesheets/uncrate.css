@@ -1492,7 +1492,7 @@
    takes 105-130px of that and leaves the price 111-135px for a 135px row. The
    row wrapped, so the entry line stood 76px tall against the 36.75px it was
    measured at, the 84px clip lost its second rung, and the pill split at its
-   own hyphen with "25%" landing under the 展开 或 查询实时价格 row. Hidden, the
+   own hyphen with "25%" landing under the 展开 或 咨询实时价格或购买 row. Hidden, the
    entry row is `label | $x.xx.` and every row on all 32 cards is one line. */
 .md-typeset .ab-mag .ab-card--plate .ab-ec-off {
   display: none;
@@ -1591,7 +1591,7 @@
       block is written after both and matches at the same 0-4-0, which is what
       retires them here. The 46px .ab-card__copy reserves for the action line
       is --fold's, and staying is the point: the CTA keeps its place at the
-      foot of the card, one 查询实时价格 under the picker instead of under a
+      foot of the card, one 咨询实时价格或购买 under the picker instead of under a
       ladder. --fold also keeps .ab-ec-foot hidden, which is how these cards
       already read; the picker does not bring it back.
 
@@ -1601,9 +1601,22 @@
 
    Two rules on .ab-card__media used to stand here, the square and the crop,
    and the plate above is what answers for the frame again now that they are
-   gone. Nothing takes their place: the difference between the two pages'
-   pictures is now only that /gift-cards/ has a blurb under its title and
-   /cdkeys/ does not. */
+   gone — this block no longer touches the frame.
+
+   What it does touch is the copy's top edge, and that one is the same
+   subtraction. The other two price pages get their air under the picture from
+   their <p class="ab-cat"> line — 51px from frame to title on both, measured
+   on 2026-10-04 — and /cdkeys/ lost that line the same day it lost its blurb,
+   which left the frame sitting directly on the title: 0px, measured, and the
+   user asked for the interval back. 16px, the frame's own top margin, so the
+   picture ends up floating in equal white above and below. Padding on the
+   column rather than a margin on the frame, so the frame rule above stays a
+   rule about the frame; the act row is pinned to this column's bottom edge and
+   rides down with it, which is where it should be. */
+
+.md-typeset .ab-mag .ab-card--picker .ab-card__copy {
+  padding-top: 16px;
+}
 
 /* --ec makes the block a two-column grid, --fold clips it, --shop pins it.
    Back to a plain centred box: what lands inside is one label and one
