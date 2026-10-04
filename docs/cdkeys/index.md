@@ -30,7 +30,6 @@ hide:
         <h3 class="ab-card__title">Fortnite 充值卡（V-Bucks）<span class="ab-card__price"></span></h3>
         <div class="ab-fold">
           <div class="ab-fold__summary">
-            <span class="ab-fold__lead">《Fortnite 堡垒之夜》V-Bucks 充值，用于购买战斗通行证与商城外观；Epic 账号通用，各平台余额共享。</span>
             <span class="ab-fold__act">
               <a class="ab-fold__buy ab-crisp-open" href="#" data-crisp-msg="你好，我想咨询 Fortnite 充值卡（V-Bucks）的实时价格。">查询实时价格</a>
             </span>
@@ -53,7 +52,6 @@ hide:
         <h3 class="ab-card__title">Apex Legends 充值卡（Coins）<span class="ab-card__price"></span></h3>
         <div class="ab-fold">
           <div class="ab-fold__summary">
-            <span class="ab-fold__lead">《Apex 英雄》Apex Coins 充值，用于购买战斗通行证与商城外观；PC 与主机平台账号均可兑换。</span>
             <span class="ab-fold__act">
               <a class="ab-fold__buy ab-crisp-open" href="#" data-crisp-msg="你好，我想咨询 Apex Legends 充值卡（Coins）的实时价格。">查询实时价格</a>
             </span>
@@ -76,7 +74,6 @@ hide:
         <h3 class="ab-card__title">PlayStation Network 充值卡（美国）<span class="ab-card__price"></span></h3>
         <div class="ab-fold">
           <div class="ab-fold__summary">
-            <span class="ab-fold__lead">美区 PSN 钱包充值，用于购买游戏、DLC 与 PS Plus 会员；仅限美区账号兑换，余额直接进钱包。</span>
             <span class="ab-fold__act">
               <a class="ab-fold__buy ab-crisp-open" href="#" data-crisp-msg="你好，我想咨询 PlayStation Network 充值卡（美国）的实时价格。">查询实时价格</a>
             </span>
@@ -99,7 +96,6 @@ hide:
         <h3 class="ab-card__title">Nintendo Switch Online 会员资格<span class="ab-card__price"></span></h3>
         <div class="ab-fold">
           <div class="ab-fold__summary">
-            <span class="ab-fold__lead">任天堂 Switch Online 会员，解锁联机对战、经典游戏库与云存档；按所选时长开通，美区账号可用。</span>
             <span class="ab-fold__act">
               <a class="ab-fold__buy ab-crisp-open" href="#" data-crisp-msg="你好，我想咨询 Nintendo Switch Online 会员资格的实时价格。">查询实时价格</a>
             </span>
@@ -122,7 +118,6 @@ hide:
         <h3 class="ab-card__title">Nintendo eShop 充值卡（美国）<span class="ab-card__price"></span></h3>
         <div class="ab-fold">
           <div class="ab-fold__summary">
-            <span class="ab-fold__lead">美区 eShop 钱包充值，可买 Switch 数字版游戏、DLC 与会员；仅限美区账号兑换，余额长期有效。</span>
             <span class="ab-fold__act">
               <a class="ab-fold__buy ab-crisp-open" href="#" data-crisp-msg="你好，我想咨询 Nintendo eShop 充值卡（美国）的实时价格。">查询实时价格</a>
             </span>
@@ -145,7 +140,6 @@ hide:
         <h3 class="ab-card__title">Steam 钱包充值码（美国）<span class="ab-card__price"></span></h3>
         <div class="ab-fold">
           <div class="ab-fold__summary">
-            <span class="ab-fold__lead">Steam 钱包充值，用于购买游戏、DLC 与创意工坊物品；仅限美区账号兑换，余额进钱包。</span>
             <span class="ab-fold__act">
               <a class="ab-fold__buy ab-crisp-open" href="#" data-crisp-msg="你好，我想咨询 Steam 钱包充值码（美国）的实时价格。">查询实时价格</a>
             </span>
@@ -168,7 +162,6 @@ hide:
         <h3 class="ab-card__title">GoCash 充值卡（全球）<span class="ab-card__price"></span></h3>
         <div class="ab-fold">
           <div class="ab-fold__summary">
-            <span class="ab-fold__lead">GoCash 全球通用充值卡，可用于游戏与平台内购结算；卡密秒发，全球区账号均可兑换。</span>
             <span class="ab-fold__act">
               <a class="ab-fold__buy ab-crisp-open" href="#" data-crisp-msg="你好，我想咨询 GoCash 充值卡（全球）的实时价格。">查询实时价格</a>
             </span>
