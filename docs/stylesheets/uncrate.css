@@ -1562,31 +1562,30 @@
 /* ---------- the spec picker, on /cdkeys/ ----------------------------------
 
    On 2026-10-04 the user had /cdkeys/ read like mygear.top's /rubbers/ card:
-   the same square picture, and a labelled <select> where the price ladder used
-   to be. The two halves are one change — the picker is what the square is for,
-   and a card cannot take one without the other and still look like the page
-   it was copied from.
+   a labelled <select> where the price ladder used to be, and, in the same
+   request, the picture the size of rubbers' own. The two halves are one change
+   — the picker is what the square was for.
+
+   The square went back in the next request. "The picture on /cdkeys/ the same
+   size as the one on /gift-cards/" — so the 240x240 frame and the `cover` /
+   `object-position: top` on the image came out, and this block no longer
+   touches .ab-card__media at all. The square and its crop were a matched pair:
+   a square holding 360x480 art only fills with `cover`, and `cover` in a
+   square is precisely what made the picture smaller than the art it held.
+   Both pages now take the plate above — 240x320 at 3/4 with `contain` — and
+   all seven files are 360x480 exactly, so contain draws every one of them at
+   the frame's full 240x320, nothing letterboxed, which is what /gift-cards/
+   was already doing. Measured, both pages, in _tmp_ocr/probe_frame_size.py.
 
    ab-card--picker rides on the <article>, the way --plate does, so the six
-   /cdkeys/ cards scripts/gen_home.py copies to the homepage take the square
-   and the picker along with them. Scoping this to the grid div instead would
-   leave those six with the new markup and none of this styling — an unstyled
-   <select> under a 3:4 plate — and re-running gen_home.py is what carries the
-   markup over in the first place.
+   /cdkeys/ cards scripts/gen_home.py copies to the homepage take the picker
+   along with them. Scoping this to the grid div instead would leave those six
+   with the new markup and none of this styling — an unstyled <select> — and
+   re-running gen_home.py is what carries the markup over in the first place.
 
-   Three things this block does, and the one it deliberately does not re-open:
+   Two things this block does, and the one it deliberately does not re-open:
 
-   1. The picture. rubbers' own is a 240x240 cover, a photograph of a package
-      filling the box. These seven are 360x480 mock gift cards — measured, and
-      full bleed: no transparent margin for a square to sit in. So a square
-      cannot hold the whole art: `cover` crops 25% of the height, and
-      `contain` would draw the card 180 wide inside a 240 box, visibly smaller
-      than the photo it is being matched to. `object-position: top` is what
-      makes the crop free — the hanging notch, the logo and the platform icons
-      are all in the upper half, and what leaves is the empty colour at the
-      foot of the mock.
-
-   2. The ladder's window, switched off. --fold clips .ab-ec-list to 84px under
+   1. The ladder's window, switched off. --fold clips .ab-ec-list to 84px under
       a 22px fade and --shop pins that height, both because a ladder runs past
       the window. The picker is a single control and must not be clipped. This
       block is written after both and matches at the same 0-4-0, which is what
@@ -1596,18 +1595,15 @@
       ladder. --fold also keeps .ab-ec-foot hidden, which is how these cards
       already read; the picker does not bring it back.
 
-   3. The label. `.ab-ec-list span { font-size: inherit }` above is 0-4-1 and
+   2. The label. `.ab-ec-list span { font-size: inherit }` above is 0-4-1 and
       would pull the label up to the block's 15px, so these rules are written
-      a class longer — the same trap .ab-ec-off documents under --plate. */
+      a class longer — the same trap .ab-ec-off documents under --plate.
 
-.md-typeset .ab-mag .ab-card--picker .ab-card__media {
-  aspect-ratio: 1 / 1;
-}
-
-.md-typeset .ab-mag .ab-card--picker .ab-card__media img {
-  object-fit: cover;
-  object-position: top;
-}
+   Two rules on .ab-card__media used to stand here, the square and the crop,
+   and the plate above is what answers for the frame again now that they are
+   gone. Nothing takes their place: the difference between the two pages'
+   pictures is now only that /gift-cards/ has a blurb under its title and
+   /cdkeys/ does not. */
 
 /* --ec makes the block a two-column grid, --fold clips it, --shop pins it.
    Back to a plain centred box: what lands inside is one label and one
