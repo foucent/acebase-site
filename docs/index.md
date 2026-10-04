@@ -418,7 +418,6 @@ hide:
         <img src="/assets/gift-cards/fortnite-card.webp" alt="Fortnite 充值卡（V-Bucks）价格参考" decoding="async">
       </div>
       <div class="ab-card__copy">
-        <p class="ab-cat">CDKeys</p>
         <h3 class="ab-card__title">Fortnite 充值卡（V-Bucks）<span class="ab-card__price"></span></h3>
         <div class="ab-fold">
           <div class="ab-fold__summary">
@@ -442,7 +441,6 @@ hide:
         <img src="/assets/gift-cards/apex-legends.png" alt="Apex Legends 充值卡（Coins）价格参考" loading="lazy" decoding="async">
       </div>
       <div class="ab-card__copy">
-        <p class="ab-cat">CDKeys</p>
         <h3 class="ab-card__title">Apex Legends 充值卡（Coins）<span class="ab-card__price"></span></h3>
         <div class="ab-fold">
           <div class="ab-fold__summary">
@@ -466,7 +464,6 @@ hide:
         <img src="/assets/gift-cards/playstation.webp" alt="PlayStation Network 充值卡（美国）价格参考" loading="lazy" decoding="async">
       </div>
       <div class="ab-card__copy">
-        <p class="ab-cat">CDKeys</p>
         <h3 class="ab-card__title">PlayStation Network 充值卡（美国）<span class="ab-card__price"></span></h3>
         <div class="ab-fold">
           <div class="ab-fold__summary">
@@ -490,7 +487,6 @@ hide:
         <img src="/assets/gift-cards/ns-membership.png" alt="Nintendo Switch Online 会员资格价格参考" loading="lazy" decoding="async">
       </div>
       <div class="ab-card__copy">
-        <p class="ab-cat">CDKeys</p>
         <h3 class="ab-card__title">Nintendo Switch Online 会员资格<span class="ab-card__price"></span></h3>
         <div class="ab-fold">
           <div class="ab-fold__summary">
@@ -514,7 +510,6 @@ hide:
         <img src="/assets/gift-cards/nintendo-eshop.png" alt="Nintendo eShop 充值卡（美国）价格参考" loading="lazy" decoding="async">
       </div>
       <div class="ab-card__copy">
-        <p class="ab-cat">CDKeys</p>
         <h3 class="ab-card__title">Nintendo eShop 充值卡（美国）<span class="ab-card__price"></span></h3>
         <div class="ab-fold">
           <div class="ab-fold__summary">
@@ -538,7 +533,6 @@ hide:
         <img src="/assets/gift-cards/steam-wallet.png" alt="Steam 钱包充值码（美国）价格参考" loading="lazy" decoding="async">
       </div>
       <div class="ab-card__copy">
-        <p class="ab-cat">CDKeys</p>
         <h3 class="ab-card__title">Steam 钱包充值码（美国）<span class="ab-card__price"></span></h3>
         <div class="ab-fold">
           <div class="ab-fold__summary">

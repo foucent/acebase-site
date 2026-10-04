@@ -1668,3 +1668,69 @@
   outline-offset: 1px;
   border-color: var(--ab-accent-deep);
 }
+
+
+/* The blurb's reservation, re-measured for these cards — 2026-10-04, after the
+   reader said there was a lot of white between the blurb and the spec <select>
+   and asked for a shorter card.
+
+   The reservation is bought for a row, not for a card (the --brand paragraph
+   above): it holds two cards level when their sentences wrap to different
+   counts, and the price is a card that carries a line of air when its sentence
+   is short. On these seven the price had got out of step with the wrapping,
+   because the four-line figure was measured for a two-column copy column and
+   three columns are a different column. Measured on the seven, switching the
+   min-height off in place and reading the natural box:
+
+     copy column 265px (three columns, >=1024px)  blurbs take 3 lines, one 4
+                                                   (a second 4 at 1440, where
+                                                   the column is 257)
+     copy column 324px (two columns,  768-1023)   blurbs take 2 lines, two 3
+     copy column 358px (one column,   <768)       blurbs take 3 lines … but
+                                                  a one-column grid has no row
+                                                  partner to stay level with
+
+   so the old 5lh was two lines of air on six of the seven, and 4lh was one.
+   The figures below are the measured maximum per band, which is the least a
+   level row can be bought for; the fourth line stays at 265px only because
+   "Fortnite 充值卡（V-Bucks）" needs one — 17px of blurb in a 265px column is
+   what makes it long, and the six beside it take three lines or fewer, so one
+   line of air under a short blurb is the price of the row being level.
+
+   The bands are this file's own, so a --picker card copied to the homepage feed
+   — whose copy column is over 400px — still reads the --brand rule above it and
+   reserves 3lh, and measured there the lead takes 2 lines and Steam's 2lh title
+   takes 1: the same one line of air, left in place on purpose. The feed is
+   `align-items: start`, so it cannot level a row, and zeroing the reserve there
+   would hand back 25px a card; at 900px, where two of the six blurbs do reach
+   three lines, it would also stop the price cards sharing a feed row from
+   matching each other. That is a front-page decision and not this one, so
+   nothing below touches the feed.
+
+   Below 768px there is no row to level, and the 4lh the --shop paragraph
+   reserves is air under every blurb on the page: zeroed rather than left to
+   the fallback. It is the one band where these cards and the other two pages'
+   cards genuinely want different treatment, so it is also the one place this
+   block is not simply a re-measurement. */
+
+@media screen and (max-width: 767px) {
+  .md-typeset .ab-mag .ab-card--picker .ab-fold__lead {
+    min-height: 0;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  @container (max-width: 300px) {
+    .md-typeset .ab-mag .ab-card--picker .ab-fold__lead {
+      display: block;
+      min-height: 4lh;
+    }
+  }
+
+  @container (min-width: 301px) and (max-width: 400px) {
+    .md-typeset .ab-mag .ab-card--picker .ab-fold__lead {
+      display: block;
+      min-height: 3lh;
+    }
+  }
+}
