@@ -19,12 +19,13 @@
   // data-gallery exactly like a tile does, and nothing else — no shuffle (the
   // page's order is the reading order) and no pagination. That page left the
   // site on 2026-09-24 (STYLE became Gift Cards and its fifteen photo-set cards
-  // went with it); the 桌搭 gallery is what wears the class now — /tech/ until
-  // that afternoon and /gear/ since, the category having been renamed TECH →
-  // GEAR — plus the homepage, which carries a slice of its own cards. The
-  // earlier /gear/ (GEAR as the eleven ping-pong photo sets) wore it too, until
-  // the same day's second rename turned that GEAR into CDKeys and took its sets
-  // off the site — which is what freed the URL this rename then took over.
+  // went with it); the figure and desk galleries are what wear the class now —
+  // /tech/ until 2026-09-24, then /gear/ after that day's rename TECH → GEAR,
+  // and /figures/ since 2026-10-06 (the desk sets dropped and the path made to
+  // match its FIGURES label) — plus the homepage, which carries a slice of its
+  // own cards. The earlier /gear/ (GEAR as the eleven ping-pong photo sets)
+  // wore it too, until the same day's second rename turned that GEAR into
+  // CDKeys and took its sets off the site — which is what freed that URL.
   var CARD_SEL = ".ab-card--lightbox";
 
   function shuffle(node) {
@@ -244,7 +245,7 @@
         // more reason than the fold's: crisp.js binds its handler on the
         // *document* in the capture phase, so the chat window is already opening
         // by the time this fires — preventDefault here would not stop it, it
-        // would only put the box up over the window. /gear/'s twelve cards carry
+        // would only put the box up over the window. /figures/'s cards carry
         // 「查看图集 · 或 · 查询价格」and the homepage copies six of them whole,
         // so every one of them is a tile with this link inside it.
         if (e.target.closest(".ab-crisp-open")) return;

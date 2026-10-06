@@ -110,13 +110,26 @@ plugins:
         # **同一天下午这一行删掉了**：/tech/ 改名 /gear/，这个 URL 从「旧地址」
         # 变回正式地址，留着存根只会把新页面顶走。下面那条指过去的跳转取而代之。
         #
+        # /gear/ 2026-10-06 改名 /figures/ —— 栏目名先改成 FIGURES，用户随后要求
+        # 「路径也要改的和栏目名一样」，于是目录 git mv 到 docs/figures/。**这条
+        # 存根就是那一次的补偿**：/gear/ 从正式地址变回旧地址，不补就是 404。
+        # 锚点照旧会带过去（`/gear/#gear-13` → `/figures/#gear-13`），而卡片 id
+        # 这次**没跟着改**，所以锚点仍然有效 —— 这与 /tech/ 那次不同（那次 id
+        # 从 desk-NN 改成 gear-NN，老锚点全废）。
+        gear/index.md: figures/index.md
+        #
         # /tech/ 2026-09-24 下午 改名为 /gear/ —— 这一格从 TECH 改名 GEAR，卡片 id 与
         # 图片名也从 desk-NN / desk_NN_MM.jpg 换成 gear-NN / gear_NN_MM.jpg。
         # **指 /gear/ 而不是首页**：内容搬到哪就指哪，十二张卡在新页上都在。唯一
         # 的损失是锚点 —— 锚点跟着卡片改名（#desk-05 → #gear-05），存根虽然会把
         # 老锚点带过去（location.href="../gear/" + "#desk-05"），但新页没有
         # #desk-05 这个元素，浏览器停在页首。页级跳转仍然是赚的。
-        tech/index.md: gear/index.md
+        #
+        # 2026-10-06：这一行跟着页面路径改名改成 `figures/index.md` —— 那一格
+        # 当天先改名 FIGURES（标签），随后路径也改成 /figures/。指错就等于把
+        # /tech/ 这样的老 URL 送进一个不存在的页面。
+        tech/index.md: figures/index.md
+
         # /wellness/ 2026-09-22 删除 —— 「健康生活」筹备页从没有过卡片，也没上过
         # 首页，没有内容可以搬。
         wellness/index.md: index.md
@@ -218,16 +231,19 @@ nav:
   # `gear/index.md: index.md` 必须删掉，否则新页面会被自己的存根顶走（STYLE →
   # Gift Cards 那轮踩过同一个坑）。
   #
-  # 2026-10-06 改名（第四次）：标签从 GEAR 改成 **FIGURES**。用户原话是「我想将
-  # gear 的内容换成和手办相关的」，问过之后选的是**只改 nav 标签、卡片全留** ——
-  # 页面内容一个字没动（19 张：手办 7、桌搭 8、模拟器 3、机箱 1），**URL 仍是
-  # /gear/**，所以 redirect_maps 与卡片 id / 图片名 / 资源目录都不用碰。
-  # **代价是要知道**：标签叫 FIGURES 而页上还有 12 张电竞房与桌搭，名字比内容窄了；
-  # 用户看过内容占比后选的这个做法（另一个选项是把那 12 张搬走或删掉）。
-  # 页面自己的 `<title>` 仍是「电竞房与桌搭 | 实拍图集」——那是给搜索引擎看的，
-  # 和标签不是一回事，用户没要求改。gen_home.py 只用这个 label 打印一行统计，
-  # 所以首页的卡片内容与顺序都不受影响（重跑产物无变化）。
-  - FIGURES: gear/index.md
+  # 2026-10-06 改名（第四次，当天分了三步走完）：
+  #   1. 标签从 GEAR 改成 **FIGURES**（用户原话「我想将 gear 的内容换成和手办
+  #      相关的」，问过之后选的是**只改 nav 标签、卡片全留**）；
+  #   2. 随后用户要求删掉十二张桌搭卡（「卡片都删除」），于是页面上只剩七张手办
+  #      （gear-13…19），连图一起下线，**卡片 id 与图名保持 gear-NN 没重排**；
+  #   3. 再随后用户要求「路径也要改的和栏目名一样」，于是 **URL 从 /gear/ 改成
+  #      /figures/**（目录 git mv 到 docs/figures/，redirect_maps 里补了一条
+  #      `/gear/` 的存根 —— 见上面那一段）。
+  # **卡片 id / 图片名 / 资源目录 `docs/assets/gallery/gear/` 三样都没跟着改名**：
+  # 改 id 要连带动 58 个文件名、`data-gallery` 里的路径与 JSON-LD 的锚点，而
+  # **锚点一改名就救不回来**（见 /tech/ 那段的注释）。现在 `/figures/#gear-13`
+  # 这类锚点仍然有效，正是没动它们换来的。
+  - FIGURES: figures/index.md
   - TOP-UP: topup/index.md
   # 2026-09-24 改名：这一格原来叫 STYLE，装着穿搭写真 9 套与汽车实拍 6 套两个
   # 图集（2026-09-22 由 WELLNESS 与 CAR 合并而来）。用户把它改名成 Gift Cards、

@@ -33,7 +33,7 @@ page that grows a second one gets dated.
 
 The frontmatter's `updated:` is the fallback for a section that carries no
 stamp, and since 2026-09-22 that is every page with cards on it: /topup/,
-/tech/ (today /gear/) and /style/ (today /gift-cards/) all lost their
+/tech/ (today /figures/) and /style/ (today /gift-cards/) all lost their
 section heads that day.
 It is not a
 substitute for a stamp: a page that has cards and no date at all is named on
@@ -113,7 +113,7 @@ STAMP = re.compile(r"更新于\s*(?:<span[^>]*>)?\s*(\d{4}-\d{2}-\d{2})")
 # section would take the first card's footer for the section's date: /topup/ has
 # no head since 2026-09-22 and would be dated by whichever price card happens to
 # be written first — a card's own date moving would reorder the front page.
-# (/tech/ — today /gear/ — has no head either but no footers to trip over
+# (/tech/ — today /figures/ — has no head either but no footers to trip over
 # since its price cards came out on 2026-09-22.) A section with no head has no stamp, and falls back
 # as below.
 HEAD = re.compile(r'<header class="ab-section__head">(.*?)</header>', re.S)

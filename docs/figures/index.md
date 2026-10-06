@@ -131,13 +131,13 @@ hide:
       "@type": "WebPage",
       "name": "手办实拍图集",
       "description": "AceBase FIGURES —— 七套手办实拍，共 58 张，点开卡片即可在页内看整套。",
-      "url": "https://acebase.cc/gear/"
+      "url": "https://acebase.cc/figures/"
     },
     {
       "@type": "BreadcrumbList",
       "itemListElement": [
         { "@type": "ListItem", "position": 1, "name": "首页", "item": "https://acebase.cc/" },
-        { "@type": "ListItem", "position": 2, "name": "手办实拍图集", "item": "https://acebase.cc/gear/" }
+        { "@type": "ListItem", "position": 2, "name": "手办实拍图集", "item": "https://acebase.cc/figures/" }
       ]
     }
   ]
@@ -156,20 +156,20 @@ hide:
       "name": "手办实拍图集",
       "numberOfItems": "58",
       "itemListElement": [
-        { "@type": "ListItem", "position": 1, "item": { "@type": "ImageObject", "name": "初音未来 With You 2021 1/7", "contentUrl": "https://acebase.cc/assets/gallery/gear/gear_13_01.jpg", "url": "https://acebase.cc/gear/#gear-13" } },
-        { "@type": "ListItem", "position": 2, "item": { "@type": "ImageObject", "name": "流萤 春日手信", "contentUrl": "https://acebase.cc/assets/gallery/gear/gear_14_03.jpg", "url": "https://acebase.cc/gear/#gear-14" } },
-        { "@type": "ListItem", "position": 3, "item": { "@type": "ImageObject", "name": "风堇 Hyacine", "contentUrl": "https://acebase.cc/assets/gallery/gear/gear_15_05.jpg", "url": "https://acebase.cc/gear/#gear-15" } },
-        { "@type": "ListItem", "position": 4, "item": { "@type": "ImageObject", "name": "游戏机初音未来", "contentUrl": "https://acebase.cc/assets/gallery/gear/gear_16_01.jpg", "url": "https://acebase.cc/gear/#gear-16" } },
-        { "@type": "ListItem", "position": 5, "item": { "@type": "ImageObject", "name": "黄裙明日香", "contentUrl": "https://acebase.cc/assets/gallery/gear/gear_17_04.jpg", "url": "https://acebase.cc/gear/#gear-17" } },
-        { "@type": "ListItem", "position": 6, "item": { "@type": "ImageObject", "name": "紫伞与黑风衣", "contentUrl": "https://acebase.cc/assets/gallery/gear/gear_18_03.jpg", "url": "https://acebase.cc/gear/#gear-18" } },
-        { "@type": "ListItem", "position": 7, "item": { "@type": "ImageObject", "name": "CCSTOYS 山姆·费舍尔", "contentUrl": "https://acebase.cc/assets/gallery/gear/gear_19_01.jpg", "url": "https://acebase.cc/gear/#gear-19" } }
+        { "@type": "ListItem", "position": 1, "item": { "@type": "ImageObject", "name": "初音未来 With You 2021 1/7", "contentUrl": "https://acebase.cc/assets/gallery/gear/gear_13_01.jpg", "url": "https://acebase.cc/figures/#gear-13" } },
+        { "@type": "ListItem", "position": 2, "item": { "@type": "ImageObject", "name": "流萤 春日手信", "contentUrl": "https://acebase.cc/assets/gallery/gear/gear_14_03.jpg", "url": "https://acebase.cc/figures/#gear-14" } },
+        { "@type": "ListItem", "position": 3, "item": { "@type": "ImageObject", "name": "风堇 Hyacine", "contentUrl": "https://acebase.cc/assets/gallery/gear/gear_15_05.jpg", "url": "https://acebase.cc/figures/#gear-15" } },
+        { "@type": "ListItem", "position": 4, "item": { "@type": "ImageObject", "name": "游戏机初音未来", "contentUrl": "https://acebase.cc/assets/gallery/gear/gear_16_01.jpg", "url": "https://acebase.cc/figures/#gear-16" } },
+        { "@type": "ListItem", "position": 5, "item": { "@type": "ImageObject", "name": "黄裙明日香", "contentUrl": "https://acebase.cc/assets/gallery/gear/gear_17_04.jpg", "url": "https://acebase.cc/figures/#gear-17" } },
+        { "@type": "ListItem", "position": 6, "item": { "@type": "ImageObject", "name": "紫伞与黑风衣", "contentUrl": "https://acebase.cc/assets/gallery/gear/gear_18_03.jpg", "url": "https://acebase.cc/figures/#gear-18" } },
+        { "@type": "ListItem", "position": 7, "item": { "@type": "ImageObject", "name": "CCSTOYS 山姆·费舍尔", "contentUrl": "https://acebase.cc/assets/gallery/gear/gear_19_01.jpg", "url": "https://acebase.cc/figures/#gear-19" } }
       ]
     },
     {
       "@type": "ImageGallery",
       "name": "手办实拍图集",
       "description": "AceBase FIGURES —— 七套手办实拍，共 58 张，更新于 2026-10-06。",
-      "url": "https://acebase.cc/gear/"
+      "url": "https://acebase.cc/figures/"
     }
   ]
 }

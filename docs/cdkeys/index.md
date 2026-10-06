@@ -8,13 +8,13 @@ hide:
 ---
 
 <!-- 2026-09-24：这一格原来是 GEAR（乒乓球拍与装备实拍 11 组 67 张的灯箱图集页，
-     在 docs/gear/ 下，整页由仓库外的 _tmp_ocr/gear_prep/prep.py 生成）。用户要把它
+     在 docs/figures/ 下，整页由仓库外的 _tmp_ocr/gear_prep/prep.py 生成）。用户要把它
      改名成 CDKeys 并清空，七张充值卡与充值码从 /topup/ 的第二段整块搬到这里 ——
      markup 逐字照搬，只把卡上那行分类标签（原先是 SHOP）改成 CDKeys；第一张卡
      补上 fetchpriority，照 /topup/ 与 /gift-cards/ 的写法。
      价格阶梯不用改任何 JS：games-prices.js 全站加载，七个 data-game 在 prices.json
      里原样都在，data-art / data-discount 也跟着卡一起过来。
-     旧 /gear/ 指回首页（redirect_maps），那 11 组实拍图连图一起从站上撤掉 ——
+     旧 /figures/ 指回首页（redirect_maps），那 11 组实拍图连图一起从站上撤掉 ——
      整站副本 MyStyle.com（2026-09-24 做的）里还留着完整的一份。 -->
 
 <div class="ab-mag" markdown="0">
@@ -182,7 +182,7 @@ hide:
 
 <div class="admonition note mg-games__note">
   <p class="admonition-title">相关</p>
-  <p><a href="/">首页</a> &middot; <a href="/gear/">FIGURES</a> &middot; <a href="/topup/">代储与礼品卡价格参考</a> &middot; <a href="/gift-cards/">Gift Cards</a> &middot; <a href="/faq/">购买指南</a></p>
+  <p><a href="/">首页</a> &middot; <a href="/figures/">FIGURES</a> &middot; <a href="/topup/">代储与礼品卡价格参考</a> &middot; <a href="/gift-cards/">Gift Cards</a> &middot; <a href="/faq/">购买指南</a></p>
 </div>
 
 <script type="application/ld+json">

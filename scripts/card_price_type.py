@@ -1,7 +1,7 @@
 """Give /tech's price rows a label element and no slash.
 
 **One-off, already run — do not rerun.** Its subject is the 显卡 price rows that
-were on /tech/ (today /gear/) until 2026-09-22, when those nine cards left that
+were on /tech/ (today /figures/) until 2026-09-22, when those nine cards left that
 page for /games/gpu-deals/; the `.ab-ec-label` rows it reshapes are /topup/'s
 now. Kept for the reasoning.
 
@@ -19,7 +19,7 @@ to the figure anyway.
 
 This edits source, so it refuses to run twice and says what it found. Nothing
 here is generated: docs/tech/index.md was hand-maintained and no script wrote
-back to it. (Both halves are history — the page is docs/gear/index.md since the
+back to it. (Both halves are history — the page is docs/figures/index.md since
 2026-09-24 rename, and since 2026-09-22 an out-of-repo prep.py owns its two
 photo-card regions, price rows not among them.)
 
