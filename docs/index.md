@@ -12,7 +12,7 @@ hide:
 
   <section class="ab-section" id="latest">
     <header class="ab-section__head">
-      <span class="ab-stamp" aria-hidden="true">更新于 2026-09-24</span>
+      <span class="ab-stamp" aria-hidden="true">更新于 2026-10-06</span>
       <h2 class="ab-section__title">最近更新</h2>
     </header>
     <div class="ab-list ab-list--feed">
@@ -499,6 +499,6 @@ hide:
     </div>
   </section>
 
-  <p class="ab-mag__foot">全部数据更新至 2026-09-24 · 报价以在线咨询为准</p>
+  <p class="ab-mag__foot">全部数据更新至 2026-10-06 · 报价以在线咨询为准</p>
 
 </div>

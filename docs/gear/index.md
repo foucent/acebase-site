@@ -1,7 +1,7 @@
 ---
 title: 电竞房与桌搭 | 实拍图集
-description: AceBase GEAR —— 十二套电竞房与桌搭实拍，共 96 张，点开卡片即可在页内看整套。
-updated: 2026-09-24
+description: AceBase GEAR —— 十九套电竞房与桌搭实拍，共 154 张，点开卡片即可在页内看整套。
+updated: 2026-10-06
 hide:
   - title
   - toc
@@ -182,7 +182,105 @@ hide:
         </p>
       </div>
     </article>
-    <!-- gear-cards:end -->
+    <article class="ab-card ab-card--portrait ab-card--lightbox" id="gear-13" data-gallery="[&quot;/assets/gallery/gear/gear_13_01.jpg&quot;, &quot;/assets/gallery/gear/gear_13_02.jpg&quot;, &quot;/assets/gallery/gear/gear_13_03.jpg&quot;, &quot;/assets/gallery/gear/gear_13_04.jpg&quot;, &quot;/assets/gallery/gear/gear_13_05.jpg&quot;, &quot;/assets/gallery/gear/gear_13_06.jpg&quot;, &quot;/assets/gallery/gear/gear_13_07.jpg&quot;, &quot;/assets/gallery/gear/gear_13_08.jpg&quot;, &quot;/assets/gallery/gear/gear_13_09.jpg&quot;, &quot;/assets/gallery/gear/gear_13_10.jpg&quot;, &quot;/assets/gallery/gear/gear_13_11.jpg&quot;, &quot;/assets/gallery/gear/gear_13_12.jpg&quot;, &quot;/assets/gallery/gear/gear_13_13.jpg&quot;]" data-caption="初音未来 With You 2021 1/7" data-look="gear-13" data-buy="#">
+      <a class="ab-card__media" href="/assets/gallery/gear/gear_13_01.jpg" tabindex="-1" aria-hidden="true">
+        <img src="/assets/gallery/gear/gear_13_01.jpg" alt="" loading="lazy" decoding="async">
+      </a>
+      <div class="ab-card__copy">
+        <p class="ab-cat">手办</p>
+        <h3 class="ab-card__title"><a href="/assets/gallery/gear/gear_13_01.jpg">初音未来 With You 2021 1/7</a></h3>
+        <p class="ab-card__more ab-card__more--split">
+          <a href="/assets/gallery/gear/gear_13_01.jpg">查看图集</a>
+          <em class="ab-card__or">或</em>
+          <a class="ab-crisp-open" href="#" data-crisp-msg="你好，我想咨询「初音未来 With You 2021 1/7」的实时价格。">查询价格</a>
+        </p>
+      </div>
+    </article>
+    <article class="ab-card ab-card--portrait ab-card--lightbox" id="gear-14" data-gallery="[&quot;/assets/gallery/gear/gear_14_01.jpg&quot;, &quot;/assets/gallery/gear/gear_14_02.jpg&quot;, &quot;/assets/gallery/gear/gear_14_03.jpg&quot;, &quot;/assets/gallery/gear/gear_14_04.jpg&quot;]" data-caption="流萤 春日手信" data-look="gear-14" data-buy="#">
+      <a class="ab-card__media" href="/assets/gallery/gear/gear_14_03.jpg" tabindex="-1" aria-hidden="true">
+        <img src="/assets/gallery/gear/gear_14_03.jpg" alt="" loading="lazy" decoding="async">
+      </a>
+      <div class="ab-card__copy">
+        <p class="ab-cat">手办</p>
+        <h3 class="ab-card__title"><a href="/assets/gallery/gear/gear_14_03.jpg">流萤 春日手信</a></h3>
+        <p class="ab-card__more ab-card__more--split">
+          <a href="/assets/gallery/gear/gear_14_03.jpg">查看图集</a>
+          <em class="ab-card__or">或</em>
+          <a class="ab-crisp-open" href="#" data-crisp-msg="你好，我想咨询「流萤 春日手信」的实时价格。">查询价格</a>
+        </p>
+      </div>
+    </article>
+    <article class="ab-card ab-card--portrait ab-card--lightbox" id="gear-15" data-gallery="[&quot;/assets/gallery/gear/gear_15_01.jpg&quot;, &quot;/assets/gallery/gear/gear_15_02.jpg&quot;, &quot;/assets/gallery/gear/gear_15_03.jpg&quot;, &quot;/assets/gallery/gear/gear_15_04.jpg&quot;, &quot;/assets/gallery/gear/gear_15_05.jpg&quot;]" data-caption="风堇 Hyacine" data-look="gear-15" data-buy="#">
+      <a class="ab-card__media" href="/assets/gallery/gear/gear_15_05.jpg" tabindex="-1" aria-hidden="true">
+        <img src="/assets/gallery/gear/gear_15_05.jpg" alt="" loading="lazy" decoding="async">
+      </a>
+      <div class="ab-card__copy">
+        <p class="ab-cat">手办</p>
+        <h3 class="ab-card__title"><a href="/assets/gallery/gear/gear_15_05.jpg">风堇 Hyacine</a></h3>
+        <p class="ab-card__more ab-card__more--split">
+          <a href="/assets/gallery/gear/gear_15_05.jpg">查看图集</a>
+          <em class="ab-card__or">或</em>
+          <a class="ab-crisp-open" href="#" data-crisp-msg="你好，我想咨询「风堇 Hyacine」的实时价格。">查询价格</a>
+        </p>
+      </div>
+    </article>
+    <article class="ab-card ab-card--portrait ab-card--lightbox" id="gear-16" data-gallery="[&quot;/assets/gallery/gear/gear_16_01.jpg&quot;, &quot;/assets/gallery/gear/gear_16_02.jpg&quot;, &quot;/assets/gallery/gear/gear_16_03.jpg&quot;, &quot;/assets/gallery/gear/gear_16_04.jpg&quot;, &quot;/assets/gallery/gear/gear_16_05.jpg&quot;, &quot;/assets/gallery/gear/gear_16_06.jpg&quot;, &quot;/assets/gallery/gear/gear_16_07.jpg&quot;, &quot;/assets/gallery/gear/gear_16_08.jpg&quot;]" data-caption="游戏机初音未来" data-look="gear-16" data-buy="#">
+      <a class="ab-card__media" href="/assets/gallery/gear/gear_16_01.jpg" tabindex="-1" aria-hidden="true">
+        <img src="/assets/gallery/gear/gear_16_01.jpg" alt="" loading="lazy" decoding="async">
+      </a>
+      <div class="ab-card__copy">
+        <p class="ab-cat">手办</p>
+        <h3 class="ab-card__title"><a href="/assets/gallery/gear/gear_16_01.jpg">游戏机初音未来</a></h3>
+        <p class="ab-card__more ab-card__more--split">
+          <a href="/assets/gallery/gear/gear_16_01.jpg">查看图集</a>
+          <em class="ab-card__or">或</em>
+          <a class="ab-crisp-open" href="#" data-crisp-msg="你好，我想咨询「游戏机初音未来」的实时价格。">查询价格</a>
+        </p>
+      </div>
+    </article>
+    <article class="ab-card ab-card--portrait ab-card--lightbox" id="gear-17" data-gallery="[&quot;/assets/gallery/gear/gear_17_01.jpg&quot;, &quot;/assets/gallery/gear/gear_17_02.jpg&quot;, &quot;/assets/gallery/gear/gear_17_03.jpg&quot;, &quot;/assets/gallery/gear/gear_17_04.jpg&quot;, &quot;/assets/gallery/gear/gear_17_05.jpg&quot;, &quot;/assets/gallery/gear/gear_17_06.jpg&quot;, &quot;/assets/gallery/gear/gear_17_07.jpg&quot;]" data-caption="黄裙明日香" data-look="gear-17" data-buy="#">
+      <a class="ab-card__media" href="/assets/gallery/gear/gear_17_04.jpg" tabindex="-1" aria-hidden="true">
+        <img src="/assets/gallery/gear/gear_17_04.jpg" alt="" loading="lazy" decoding="async">
+      </a>
+      <div class="ab-card__copy">
+        <p class="ab-cat">手办</p>
+        <h3 class="ab-card__title"><a href="/assets/gallery/gear/gear_17_04.jpg">黄裙明日香</a></h3>
+        <p class="ab-card__more ab-card__more--split">
+          <a href="/assets/gallery/gear/gear_17_04.jpg">查看图集</a>
+          <em class="ab-card__or">或</em>
+          <a class="ab-crisp-open" href="#" data-crisp-msg="你好，我想咨询「黄裙明日香」的实时价格。">查询价格</a>
+        </p>
+      </div>
+    </article>
+    <article class="ab-card ab-card--portrait ab-card--lightbox" id="gear-18" data-gallery="[&quot;/assets/gallery/gear/gear_18_01.jpg&quot;, &quot;/assets/gallery/gear/gear_18_02.jpg&quot;, &quot;/assets/gallery/gear/gear_18_03.jpg&quot;, &quot;/assets/gallery/gear/gear_18_04.jpg&quot;, &quot;/assets/gallery/gear/gear_18_05.jpg&quot;]" data-caption="紫伞与黑风衣" data-look="gear-18" data-buy="#">
+      <a class="ab-card__media" href="/assets/gallery/gear/gear_18_03.jpg" tabindex="-1" aria-hidden="true">
+        <img src="/assets/gallery/gear/gear_18_03.jpg" alt="" loading="lazy" decoding="async">
+      </a>
+      <div class="ab-card__copy">
+        <p class="ab-cat">手办</p>
+        <h3 class="ab-card__title"><a href="/assets/gallery/gear/gear_18_03.jpg">紫伞与黑风衣</a></h3>
+        <p class="ab-card__more ab-card__more--split">
+          <a href="/assets/gallery/gear/gear_18_03.jpg">查看图集</a>
+          <em class="ab-card__or">或</em>
+          <a class="ab-crisp-open" href="#" data-crisp-msg="你好，我想咨询「紫伞与黑风衣」的实时价格。">查询价格</a>
+        </p>
+      </div>
+    </article>
+    <article class="ab-card ab-card--portrait ab-card--lightbox" id="gear-19" data-gallery="[&quot;/assets/gallery/gear/gear_19_01.jpg&quot;, &quot;/assets/gallery/gear/gear_19_02.jpg&quot;, &quot;/assets/gallery/gear/gear_19_03.jpg&quot;, &quot;/assets/gallery/gear/gear_19_04.jpg&quot;, &quot;/assets/gallery/gear/gear_19_05.jpg&quot;, &quot;/assets/gallery/gear/gear_19_06.jpg&quot;, &quot;/assets/gallery/gear/gear_19_07.jpg&quot;, &quot;/assets/gallery/gear/gear_19_08.jpg&quot;, &quot;/assets/gallery/gear/gear_19_09.jpg&quot;, &quot;/assets/gallery/gear/gear_19_10.jpg&quot;, &quot;/assets/gallery/gear/gear_19_11.jpg&quot;, &quot;/assets/gallery/gear/gear_19_12.jpg&quot;, &quot;/assets/gallery/gear/gear_19_13.jpg&quot;, &quot;/assets/gallery/gear/gear_19_14.jpg&quot;, &quot;/assets/gallery/gear/gear_19_15.jpg&quot;, &quot;/assets/gallery/gear/gear_19_16.jpg&quot;]" data-caption="CCSTOYS 山姆·费舍尔" data-look="gear-19" data-buy="#">
+      <a class="ab-card__media" href="/assets/gallery/gear/gear_19_01.jpg" tabindex="-1" aria-hidden="true">
+        <img src="/assets/gallery/gear/gear_19_01.jpg" alt="" loading="lazy" decoding="async">
+      </a>
+      <div class="ab-card__copy">
+        <p class="ab-cat">手办</p>
+        <h3 class="ab-card__title"><a href="/assets/gallery/gear/gear_19_01.jpg">CCSTOYS 山姆·费舍尔</a></h3>
+        <p class="ab-card__more ab-card__more--split">
+          <a href="/assets/gallery/gear/gear_19_01.jpg">查看图集</a>
+          <em class="ab-card__or">或</em>
+          <a class="ab-crisp-open" href="#" data-crisp-msg="你好，我想咨询「CCSTOYS 山姆·费舍尔」的实时价格。">查询价格</a>
+        </p>
+      </div>
+    </article>
+<!-- gear-cards:end -->
     </div>
   </section>
 
@@ -200,7 +298,7 @@ hide:
     {
       "@type": "WebPage",
       "name": "电竞房与桌搭",
-      "description": "AceBase GEAR —— 十二套电竞房与桌搭实拍，共 96 张，点开卡片即可在页内看整套。",
+      "description": "AceBase GEAR —— 十九套电竞房与桌搭实拍，共 154 张，点开卡片即可在页内看整套。",
       "url": "https://acebase.cc/gear/"
     },
     {
@@ -224,7 +322,7 @@ hide:
     {
       "@type": "ItemList",
       "name": "电竞房与桌搭",
-      "numberOfItems": "96",
+      "numberOfItems": "154",
       "itemListElement": [
         { "@type": "ListItem", "position": 1, "item": { "@type": "ImageObject", "name": "XTIA Xproto-L V2 开放式机箱", "contentUrl": "https://acebase.cc/assets/gallery/gear/gear_01_01.jpg", "url": "https://acebase.cc/gear/#gear-01" } },
         { "@type": "ListItem", "position": 2, "item": { "@type": "ImageObject", "name": "超宽屏与白色外设", "contentUrl": "https://acebase.cc/assets/gallery/gear/gear_02_01.jpg", "url": "https://acebase.cc/gear/#gear-02" } },
@@ -237,13 +335,20 @@ hide:
         { "@type": "ListItem", "position": 9, "item": { "@type": "ImageObject", "name": "竖屏副屏游戏桌面", "contentUrl": "https://acebase.cc/assets/gallery/gear/gear_09_01.jpg", "url": "https://acebase.cc/gear/#gear-09" } },
         { "@type": "ListItem", "position": 10, "item": { "@type": "ImageObject", "name": "OMP 桶椅拉力座舱", "contentUrl": "https://acebase.cc/assets/gallery/gear/gear_10_01.jpg", "url": "https://acebase.cc/gear/#gear-10" } },
         { "@type": "ListItem", "position": 11, "item": { "@type": "ImageObject", "name": "Conspit 直驱座舱", "contentUrl": "https://acebase.cc/assets/gallery/gear/gear_11_01.jpg", "url": "https://acebase.cc/gear/#gear-11" } },
-        { "@type": "ListItem", "position": 12, "item": { "@type": "ImageObject", "name": "Fanatec 方程式盘", "contentUrl": "https://acebase.cc/assets/gallery/gear/gear_12_05.jpg", "url": "https://acebase.cc/gear/#gear-12" } }
+        { "@type": "ListItem", "position": 12, "item": { "@type": "ImageObject", "name": "Fanatec 方程式盘", "contentUrl": "https://acebase.cc/assets/gallery/gear/gear_12_05.jpg", "url": "https://acebase.cc/gear/#gear-12" } },
+        { "@type": "ListItem", "position": 13, "item": { "@type": "ImageObject", "name": "初音未来 With You 2021 1/7", "contentUrl": "https://acebase.cc/assets/gallery/gear/gear_13_01.jpg", "url": "https://acebase.cc/gear/#gear-13" } },
+        { "@type": "ListItem", "position": 14, "item": { "@type": "ImageObject", "name": "流萤 春日手信", "contentUrl": "https://acebase.cc/assets/gallery/gear/gear_14_03.jpg", "url": "https://acebase.cc/gear/#gear-14" } },
+        { "@type": "ListItem", "position": 15, "item": { "@type": "ImageObject", "name": "风堇 Hyacine", "contentUrl": "https://acebase.cc/assets/gallery/gear/gear_15_05.jpg", "url": "https://acebase.cc/gear/#gear-15" } },
+        { "@type": "ListItem", "position": 16, "item": { "@type": "ImageObject", "name": "游戏机初音未来", "contentUrl": "https://acebase.cc/assets/gallery/gear/gear_16_01.jpg", "url": "https://acebase.cc/gear/#gear-16" } },
+        { "@type": "ListItem", "position": 17, "item": { "@type": "ImageObject", "name": "黄裙明日香", "contentUrl": "https://acebase.cc/assets/gallery/gear/gear_17_04.jpg", "url": "https://acebase.cc/gear/#gear-17" } },
+        { "@type": "ListItem", "position": 18, "item": { "@type": "ImageObject", "name": "紫伞与黑风衣", "contentUrl": "https://acebase.cc/assets/gallery/gear/gear_18_03.jpg", "url": "https://acebase.cc/gear/#gear-18" } },
+        { "@type": "ListItem", "position": 19, "item": { "@type": "ImageObject", "name": "CCSTOYS 山姆·费舍尔", "contentUrl": "https://acebase.cc/assets/gallery/gear/gear_19_01.jpg", "url": "https://acebase.cc/gear/#gear-19" } }
       ]
     },
     {
       "@type": "ImageGallery",
       "name": "电竞房与桌搭",
-      "description": "AceBase GEAR —— 十二套电竞房与桌搭实拍，共 96 张，更新于 2026-09-24。",
+      "description": "AceBase GEAR —— 十九套电竞房与桌搭实拍，共 154 张，更新于 2026-10-06。",
       "url": "https://acebase.cc/gear/"
     }
   ]
