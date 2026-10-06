@@ -42,7 +42,7 @@ hide:
         <div class="ab-fold">
           <div class="ab-fold__summary">
             <span class="ab-fold__act">
-              <a class="ab-fold__buy ab-crisp-open" href="#" data-crisp-msg="你好，我想咨询 Amazon 礼品卡（美国）的实时价格。">咨询实时价格或购买</a>
+              <a class="ab-fold__buy ab-crisp-open" href="#" data-crisp-msg="你好，我想咨询 Amazon 礼品卡（美国）的实时价格。">购买</a>
             </span>
           </div>
         </div>
@@ -64,7 +64,7 @@ hide:
         <div class="ab-fold">
           <div class="ab-fold__summary">
             <span class="ab-fold__act">
-              <a class="ab-fold__buy ab-crisp-open" href="#" data-crisp-msg="你好，我想咨询 Apple 礼品卡的实时价格。">咨询实时价格或购买</a>
+              <a class="ab-fold__buy ab-crisp-open" href="#" data-crisp-msg="你好，我想咨询 Apple 礼品卡的实时价格。">购买</a>
             </span>
           </div>
         </div>
@@ -86,7 +86,7 @@ hide:
         <div class="ab-fold">
           <div class="ab-fold__summary">
             <span class="ab-fold__act">
-              <a class="ab-fold__buy ab-crisp-open" href="#" data-crisp-msg="你好，我想咨询 Google Play 礼品卡的实时价格。">咨询实时价格或购买</a>
+              <a class="ab-fold__buy ab-crisp-open" href="#" data-crisp-msg="你好，我想咨询 Google Play 礼品卡的实时价格。">购买</a>
             </span>
           </div>
         </div>
@@ -108,7 +108,7 @@ hide:
         <div class="ab-fold">
           <div class="ab-fold__summary">
             <span class="ab-fold__act">
-              <a class="ab-fold__buy ab-crisp-open" href="#" data-crisp-msg="你好，我想咨询 Netflix 礼品卡（美国）的实时价格。">咨询实时价格或购买</a>
+              <a class="ab-fold__buy ab-crisp-open" href="#" data-crisp-msg="你好，我想咨询 Netflix 礼品卡（美国）的实时价格。">购买</a>
             </span>
           </div>
         </div>
@@ -130,7 +130,7 @@ hide:
         <div class="ab-fold">
           <div class="ab-fold__summary">
             <span class="ab-fold__act">
-              <a class="ab-fold__buy ab-crisp-open" href="#" data-crisp-msg="你好，我想咨询 Xbox Live 礼品卡的实时价格。">咨询实时价格或购买</a>
+              <a class="ab-fold__buy ab-crisp-open" href="#" data-crisp-msg="你好，我想咨询 Xbox Live 礼品卡的实时价格。">购买</a>
             </span>
           </div>
         </div>
@@ -152,7 +152,7 @@ hide:
         <div class="ab-fold">
           <div class="ab-fold__summary">
             <span class="ab-fold__act">
-              <a class="ab-fold__buy ab-crisp-open" href="#" data-crisp-msg="你好，我想咨询 Kammelna 礼品卡的实时价格。">咨询实时价格或购买</a>
+              <a class="ab-fold__buy ab-crisp-open" href="#" data-crisp-msg="你好，我想咨询 Kammelna 礼品卡的实时价格。">购买</a>
             </span>
           </div>
         </div>
@@ -171,7 +171,7 @@ hide:
 
 <div class="admonition note mg-games__note">
   <p class="admonition-title">相关</p>
-  <p><a href="/">首页</a> &middot; <a href="/gear/">电竞房与桌搭</a> &middot; <a href="/topup/">代储与礼品卡价格参考</a> &middot; <a href="/cdkeys/">CDKeys</a> &middot; <a href="/faq/">购买指南</a></p>
+  <p><a href="/">首页</a> &middot; <a href="/gear/">FIGURES</a> &middot; <a href="/topup/">代储与礼品卡价格参考</a> &middot; <a href="/cdkeys/">CDKeys</a> &middot; <a href="/faq/">购买指南</a></p>
 </div>
 
 <script type="application/ld+json">

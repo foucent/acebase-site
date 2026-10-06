@@ -828,10 +828,10 @@
 }
 
 /* The cards carry the ids — the jump lists that used to point at them are gone,
-   but a card URL is still a link anyone can be sent — `/gear/#gear-01` since
-   the 2026-09-24 rename (it was `/tech/#desk-01` for the two days before, and
-   those ids went with it) — so they keep the offset off the top edge the bands
-   had. */
+   but a card URL is still a link anyone can be sent — `/gear/#gear-13` since
+   2026-10-06 (before that `/gear/#gear-01`, and `/tech/#desk-01` for the two
+   days before that — those ids went when their cards did) — so they keep the
+   offset off the top edge the bands had. */
 .md-typeset .ab-mag .ab-card {
   scroll-margin-top: 4.5rem;
 }
@@ -1218,7 +1218,7 @@
   border-bottom-color: var(--ab-text);
 }
 
-/* The separator in a row of two tappable things: 「展开 或 咨询实时价格或购买」
+/* The separator in a row of two tappable things: 「展开 或 购买」
    on the price cards, 「查看图集 或 查询价格」 on /gear/. It carried no margin,
    so the only air around it was the one space the markup's newlines collapse
    to — measured 8px a side, and the same 8px at 1440 and at 390, because it is
@@ -1494,7 +1494,7 @@
    takes 105-130px of that and leaves the price 111-135px for a 135px row. The
    row wrapped, so the entry line stood 76px tall against the 36.75px it was
    measured at, the 84px clip lost its second rung, and the pill split at its
-   own hyphen with "25%" landing under the 展开 或 咨询实时价格或购买 row. Hidden, the
+   own hyphen with "25%" landing under the 展开 或 购买 row. Hidden, the
    entry row is `label | $x.xx.` and every row on all 32 cards is one line. */
 .md-typeset .ab-mag .ab-card--plate .ab-ec-off {
   display: none;
@@ -1593,7 +1593,7 @@
       block is written after both and matches at the same 0-4-0, which is what
       retires them here. The 46px .ab-card__copy reserves for the action line
       is --fold's, and staying is the point: the CTA keeps its place at the
-      foot of the card, one 咨询实时价格或购买 under the picker instead of under a
+      foot of the card, one 购买 under the picker instead of under a
       ladder. --fold also keeps .ab-ec-foot hidden, which is how these cards
       already read; the picker does not bring it back.
 

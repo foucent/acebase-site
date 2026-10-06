@@ -40,7 +40,7 @@ hide:
         <div class="ab-fold">
           <div class="ab-fold__summary">
             <span class="ab-fold__act">
-              <a class="ab-fold__buy ab-crisp-open" href="#" data-crisp-msg="你好，我想咨询 PUBG Mobile UC 的实时价格。">咨询实时价格或购买</a>
+              <a class="ab-fold__buy ab-crisp-open" href="#" data-crisp-msg="你好，我想咨询 PUBG Mobile UC 的实时价格。">购买</a>
             </span>
           </div>
         </div>
@@ -62,7 +62,7 @@ hide:
         <div class="ab-fold">
           <div class="ab-fold__summary">
             <span class="ab-fold__act">
-              <a class="ab-fold__buy ab-crisp-open" href="#" data-crisp-msg="你好，我想咨询 PUBG G-COIN 的实时价格。">咨询实时价格或购买</a>
+              <a class="ab-fold__buy ab-crisp-open" href="#" data-crisp-msg="你好，我想咨询 PUBG G-COIN 的实时价格。">购买</a>
             </span>
           </div>
         </div>
@@ -84,7 +84,7 @@ hide:
         <div class="ab-fold">
           <div class="ab-fold__summary">
             <span class="ab-fold__act">
-              <a class="ab-fold__buy ab-crisp-open" href="#" data-crisp-msg="你好，我想咨询 Honor of Kings 点券的实时价格。">咨询实时价格或购买</a>
+              <a class="ab-fold__buy ab-crisp-open" href="#" data-crisp-msg="你好，我想咨询 Honor of Kings 点券的实时价格。">购买</a>
             </span>
           </div>
         </div>
@@ -106,7 +106,7 @@ hide:
         <div class="ab-fold">
           <div class="ab-fold__summary">
             <span class="ab-fold__act">
-              <a class="ab-fold__buy ab-crisp-open" href="#" data-crisp-msg="你好，我想咨询 Arena Breakout Bonds 的实时价格。">咨询实时价格或购买</a>
+              <a class="ab-fold__buy ab-crisp-open" href="#" data-crisp-msg="你好，我想咨询 Arena Breakout Bonds 的实时价格。">购买</a>
             </span>
           </div>
         </div>
@@ -128,7 +128,7 @@ hide:
         <div class="ab-fold">
           <div class="ab-fold__summary">
             <span class="ab-fold__act">
-              <a class="ab-fold__buy ab-crisp-open" href="#" data-crisp-msg="你好，我想咨询 燕云十六声 长鸣珠的实时价格。">咨询实时价格或购买</a>
+              <a class="ab-fold__buy ab-crisp-open" href="#" data-crisp-msg="你好，我想咨询 燕云十六声 长鸣珠的实时价格。">购买</a>
             </span>
           </div>
         </div>
@@ -150,7 +150,7 @@ hide:
         <div class="ab-fold">
           <div class="ab-fold__summary">
             <span class="ab-fold__act">
-              <a class="ab-fold__buy ab-crisp-open" href="#" data-crisp-msg="你好，我想咨询抖音直播的实时价格。">咨询实时价格或购买</a>
+              <a class="ab-fold__buy ab-crisp-open" href="#" data-crisp-msg="你好，我想咨询抖音直播的实时价格。">购买</a>
             </span>
           </div>
         </div>
@@ -172,7 +172,7 @@ hide:
         <div class="ab-fold">
           <div class="ab-fold__summary">
             <span class="ab-fold__act">
-              <a class="ab-fold__buy ab-crisp-open" href="#" data-crisp-msg="你好，我想咨询快手的实时价格。">咨询实时价格或购买</a>
+              <a class="ab-fold__buy ab-crisp-open" href="#" data-crisp-msg="你好，我想咨询快手的实时价格。">购买</a>
             </span>
           </div>
         </div>
@@ -194,7 +194,7 @@ hide:
         <div class="ab-fold">
           <div class="ab-fold__summary">
             <span class="ab-fold__act">
-              <a class="ab-fold__buy ab-crisp-open" href="#" data-crisp-msg="你好，我想咨询 Bigo Live 的实时价格。">咨询实时价格或购买</a>
+              <a class="ab-fold__buy ab-crisp-open" href="#" data-crisp-msg="你好，我想咨询 Bigo Live 的实时价格。">购买</a>
             </span>
           </div>
         </div>
@@ -216,7 +216,7 @@ hide:
         <div class="ab-fold">
           <div class="ab-fold__summary">
             <span class="ab-fold__act">
-              <a class="ab-fold__buy ab-crisp-open" href="#" data-crisp-msg="你好，我想咨询 MICO 的实时价格。">咨询实时价格或购买</a>
+              <a class="ab-fold__buy ab-crisp-open" href="#" data-crisp-msg="你好，我想咨询 MICO 的实时价格。">购买</a>
             </span>
           </div>
         </div>
@@ -238,7 +238,7 @@ hide:
         <div class="ab-fold">
           <div class="ab-fold__summary">
             <span class="ab-fold__act">
-              <a class="ab-fold__buy ab-crisp-open" href="#" data-crisp-msg="你好，我想咨询 Poppo Live 的实时价格。">咨询实时价格或购买</a>
+              <a class="ab-fold__buy ab-crisp-open" href="#" data-crisp-msg="你好，我想咨询 Poppo Live 的实时价格。">购买</a>
             </span>
           </div>
         </div>
@@ -260,7 +260,7 @@ hide:
         <div class="ab-fold">
           <div class="ab-fold__summary">
             <span class="ab-fold__act">
-              <a class="ab-fold__buy ab-crisp-open" href="#" data-crisp-msg="你好，我想咨询 Tango Live 的实时价格。">咨询实时价格或购买</a>
+              <a class="ab-fold__buy ab-crisp-open" href="#" data-crisp-msg="你好，我想咨询 Tango Live 的实时价格。">购买</a>
             </span>
           </div>
         </div>
@@ -282,7 +282,7 @@ hide:
         <div class="ab-fold">
           <div class="ab-fold__summary">
             <span class="ab-fold__act">
-              <a class="ab-fold__buy ab-crisp-open" href="#" data-crisp-msg="你好，我想咨询 Mango Live 的实时价格。">咨询实时价格或购买</a>
+              <a class="ab-fold__buy ab-crisp-open" href="#" data-crisp-msg="你好，我想咨询 Mango Live 的实时价格。">购买</a>
             </span>
           </div>
         </div>
@@ -304,7 +304,7 @@ hide:
         <div class="ab-fold">
           <div class="ab-fold__summary">
             <span class="ab-fold__act">
-              <a class="ab-fold__buy ab-crisp-open" href="#" data-crisp-msg="你好，我想咨询 MIGO LIVE 的实时价格。">咨询实时价格或购买</a>
+              <a class="ab-fold__buy ab-crisp-open" href="#" data-crisp-msg="你好，我想咨询 MIGO LIVE 的实时价格。">购买</a>
             </span>
           </div>
         </div>
@@ -326,7 +326,7 @@ hide:
         <div class="ab-fold">
           <div class="ab-fold__summary">
             <span class="ab-fold__act">
-              <a class="ab-fold__buy ab-crisp-open" href="#" data-crisp-msg="你好，我想咨询超级直播的实时价格。">咨询实时价格或购买</a>
+              <a class="ab-fold__buy ab-crisp-open" href="#" data-crisp-msg="你好，我想咨询超级直播的实时价格。">购买</a>
             </span>
           </div>
         </div>
@@ -348,7 +348,7 @@ hide:
         <div class="ab-fold">
           <div class="ab-fold__summary">
             <span class="ab-fold__act">
-              <a class="ab-fold__buy ab-crisp-open" href="#" data-crisp-msg="你好，我想咨询 Dazz Live 的实时价格。">咨询实时价格或购买</a>
+              <a class="ab-fold__buy ab-crisp-open" href="#" data-crisp-msg="你好，我想咨询 Dazz Live 的实时价格。">购买</a>
             </span>
           </div>
         </div>
@@ -370,7 +370,7 @@ hide:
         <div class="ab-fold">
           <div class="ab-fold__summary">
             <span class="ab-fold__act">
-              <a class="ab-fold__buy ab-crisp-open" href="#" data-crisp-msg="你好，我想咨询 Xena Live 的实时价格。">咨询实时价格或购买</a>
+              <a class="ab-fold__buy ab-crisp-open" href="#" data-crisp-msg="你好，我想咨询 Xena Live 的实时价格。">购买</a>
             </span>
           </div>
         </div>
@@ -392,7 +392,7 @@ hide:
         <div class="ab-fold">
           <div class="ab-fold__summary">
             <span class="ab-fold__act">
-              <a class="ab-fold__buy ab-crisp-open" href="#" data-crisp-msg="你好，我想咨询比心的实时价格。">咨询实时价格或购买</a>
+              <a class="ab-fold__buy ab-crisp-open" href="#" data-crisp-msg="你好，我想咨询比心的实时价格。">购买</a>
             </span>
           </div>
         </div>
@@ -414,7 +414,7 @@ hide:
         <div class="ab-fold">
           <div class="ab-fold__summary">
             <span class="ab-fold__act">
-              <a class="ab-fold__buy ab-crisp-open" href="#" data-crisp-msg="你好，我想咨询 Ludo Club 的实时价格。">咨询实时价格或购买</a>
+              <a class="ab-fold__buy ab-crisp-open" href="#" data-crisp-msg="你好，我想咨询 Ludo Club 的实时价格。">购买</a>
             </span>
           </div>
         </div>
@@ -436,7 +436,7 @@ hide:
         <div class="ab-fold">
           <div class="ab-fold__summary">
             <span class="ab-fold__act">
-              <a class="ab-fold__buy ab-crisp-open" href="#" data-crisp-msg="你好，我想咨询 Yalla Ludo 的实时价格。">咨询实时价格或购买</a>
+              <a class="ab-fold__buy ab-crisp-open" href="#" data-crisp-msg="你好，我想咨询 Yalla Ludo 的实时价格。">购买</a>
             </span>
           </div>
         </div>
@@ -455,7 +455,7 @@ hide:
 
 <div class="admonition note mg-games__note">
   <p class="admonition-title">相关</p>
-  <p><a href="/">首页</a> &middot; <a href="/gear/">电竞房与桌搭</a> &middot; <a href="/gift-cards/">Gift Cards</a> &middot; <a href="/cdkeys/">CDKeys</a> &middot; <a href="/faq/">购买指南</a></p>
+  <p><a href="/">首页</a> &middot; <a href="/gear/">FIGURES</a> &middot; <a href="/gift-cards/">Gift Cards</a> &middot; <a href="/cdkeys/">CDKeys</a> &middot; <a href="/faq/">购买指南</a></p>
 </div>
 
 <script type="application/ld+json">

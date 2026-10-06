@@ -31,7 +31,7 @@ hide:
         <div class="ab-fold">
           <div class="ab-fold__summary">
             <span class="ab-fold__act">
-              <a class="ab-fold__buy ab-crisp-open" href="#" data-crisp-msg="你好，我想咨询 Fortnite 充值卡（V-Bucks）的实时价格。">咨询实时价格或购买</a>
+              <a class="ab-fold__buy ab-crisp-open" href="#" data-crisp-msg="你好，我想咨询 Fortnite 充值卡（V-Bucks）的实时价格。">购买</a>
             </span>
           </div>
         </div>
@@ -53,7 +53,7 @@ hide:
         <div class="ab-fold">
           <div class="ab-fold__summary">
             <span class="ab-fold__act">
-              <a class="ab-fold__buy ab-crisp-open" href="#" data-crisp-msg="你好，我想咨询 Apex Legends 充值卡（Coins）的实时价格。">咨询实时价格或购买</a>
+              <a class="ab-fold__buy ab-crisp-open" href="#" data-crisp-msg="你好，我想咨询 Apex Legends 充值卡（Coins）的实时价格。">购买</a>
             </span>
           </div>
         </div>
@@ -75,7 +75,7 @@ hide:
         <div class="ab-fold">
           <div class="ab-fold__summary">
             <span class="ab-fold__act">
-              <a class="ab-fold__buy ab-crisp-open" href="#" data-crisp-msg="你好，我想咨询 PlayStation Network 充值卡（美国）的实时价格。">咨询实时价格或购买</a>
+              <a class="ab-fold__buy ab-crisp-open" href="#" data-crisp-msg="你好，我想咨询 PlayStation Network 充值卡（美国）的实时价格。">购买</a>
             </span>
           </div>
         </div>
@@ -97,7 +97,7 @@ hide:
         <div class="ab-fold">
           <div class="ab-fold__summary">
             <span class="ab-fold__act">
-              <a class="ab-fold__buy ab-crisp-open" href="#" data-crisp-msg="你好，我想咨询 Nintendo Switch Online 会员资格的实时价格。">咨询实时价格或购买</a>
+              <a class="ab-fold__buy ab-crisp-open" href="#" data-crisp-msg="你好，我想咨询 Nintendo Switch Online 会员资格的实时价格。">购买</a>
             </span>
           </div>
         </div>
@@ -119,7 +119,7 @@ hide:
         <div class="ab-fold">
           <div class="ab-fold__summary">
             <span class="ab-fold__act">
-              <a class="ab-fold__buy ab-crisp-open" href="#" data-crisp-msg="你好，我想咨询 Nintendo eShop 充值卡（美国）的实时价格。">咨询实时价格或购买</a>
+              <a class="ab-fold__buy ab-crisp-open" href="#" data-crisp-msg="你好，我想咨询 Nintendo eShop 充值卡（美国）的实时价格。">购买</a>
             </span>
           </div>
         </div>
@@ -141,7 +141,7 @@ hide:
         <div class="ab-fold">
           <div class="ab-fold__summary">
             <span class="ab-fold__act">
-              <a class="ab-fold__buy ab-crisp-open" href="#" data-crisp-msg="你好，我想咨询 Steam 钱包充值码（美国）的实时价格。">咨询实时价格或购买</a>
+              <a class="ab-fold__buy ab-crisp-open" href="#" data-crisp-msg="你好，我想咨询 Steam 钱包充值码（美国）的实时价格。">购买</a>
             </span>
           </div>
         </div>
@@ -163,7 +163,7 @@ hide:
         <div class="ab-fold">
           <div class="ab-fold__summary">
             <span class="ab-fold__act">
-              <a class="ab-fold__buy ab-crisp-open" href="#" data-crisp-msg="你好，我想咨询 GoCash 充值卡（全球）的实时价格。">咨询实时价格或购买</a>
+              <a class="ab-fold__buy ab-crisp-open" href="#" data-crisp-msg="你好，我想咨询 GoCash 充值卡（全球）的实时价格。">购买</a>
             </span>
           </div>
         </div>
@@ -182,7 +182,7 @@ hide:
 
 <div class="admonition note mg-games__note">
   <p class="admonition-title">相关</p>
-  <p><a href="/">首页</a> &middot; <a href="/gear/">电竞房与桌搭</a> &middot; <a href="/topup/">代储与礼品卡价格参考</a> &middot; <a href="/gift-cards/">Gift Cards</a> &middot; <a href="/faq/">购买指南</a></p>
+  <p><a href="/">首页</a> &middot; <a href="/gear/">FIGURES</a> &middot; <a href="/topup/">代储与礼品卡价格参考</a> &middot; <a href="/gift-cards/">Gift Cards</a> &middot; <a href="/faq/">购买指南</a></p>
 </div>
 
 <script type="application/ld+json">
