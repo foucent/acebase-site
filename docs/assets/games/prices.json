@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-21",
+  "updated": "2026-10-09",
   "games": {
     "valorant": [
       {
@@ -1857,6 +1857,70 @@
         "lowest": 102.05,
         "highest": 102.05,
         "average": 102.05
+      }
+    ],
+    "gear-13": [
+      {
+        "title": "初音未来 With You 2021 1/7",
+        "lowest": 172.99,
+        "highest": 172.99,
+        "average": 172.99
+      }
+    ],
+    "gear-14": [
+      {
+        "title": "流萤 春日手信",
+        "lowest": 110.99,
+        "highest": 110.99,
+        "average": 110.99
+      }
+    ],
+    "gear-15": [
+      {
+        "title": "风堇 Hyacine",
+        "lowest": 146.99,
+        "highest": 146.99,
+        "average": 146.99
+      }
+    ],
+    "gear-16": [
+      {
+        "title": "游戏机初音未来",
+        "lowest": 225.99,
+        "highest": 225.99,
+        "average": 225.99
+      }
+    ],
+    "gear-17": [
+      {
+        "title": "黄裙明日香",
+        "lowest": 192.99,
+        "highest": 192.99,
+        "average": 192.99
+      }
+    ],
+    "gear-18": [
+      {
+        "title": "紫伞与黑风衣",
+        "lowest": 120.99,
+        "highest": 120.99,
+        "average": 120.99
+      }
+    ],
+    "gear-19": [
+      {
+        "title": "CCSTOYS 山姆·费舍尔",
+        "lowest": 168.99,
+        "highest": 168.99,
+        "average": 168.99
+      }
+    ],
+    "gear-20": [
+      {
+        "title": "猫猫《药屋少女的呢喃》1/7",
+        "lowest": 177.99,
+        "highest": 177.99,
+        "average": 177.99
       }
     ]
   },

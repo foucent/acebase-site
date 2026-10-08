@@ -196,6 +196,22 @@
       return;
     }
 
+    // /figures/ draws neither picker nor ladder: each card is one piece at one
+    // price, and that price is the entry figure already written into the title
+    // by the block above. The block is emptied rather than left holding its
+    // 「正在加载最新价格…」 placeholder — a card that ships a loading line and
+    // is never given rows of its own would read as a page that failed to load.
+    //
+    // It is a branch of its own rather than a reuse of --picker because the two
+    // answer different questions: the picker has rows a reader chooses between
+    // (denominations, specs), and these have exactly one. `return` before the
+    // ladder, and after the badge, so an --figure card with a data-discount
+    // would still get its corner tag.
+    if (card && card.classList.contains("ab-card--figure")) {
+      wrap.innerHTML = "";
+      return;
+    }
+
     wrap.innerHTML = rows
       .map(function (r, i) {
         var label = esc(r.title || T.topup);
@@ -345,7 +361,7 @@
     // copy is served silently, so a bump missed here shows a returning reader
     // the *old* file, which for a newly added key means 价格即将上线 until their
     // cache happens to turn over.
-    fetch("/assets/games/prices.json?v=" + (window.AceBasePricesVer || "20260921"))
+    fetch("/assets/games/prices.json?v=" + (window.AceBasePricesVer || "20261009"))
       .then(function (r) {
         if (!r.ok) throw new Error("http " + r.status);
         return r.json();

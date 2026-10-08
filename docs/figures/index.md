@@ -10,120 +10,184 @@ hide:
 <div class="ab-mag" markdown="0">
 
   <section class="ab-section">
-    <div class="ab-list ab-list--expandable">
+    <div class="ab-list ab-list--expandable ab-list--pricing">
     <!-- 下面十二张 gear 卡由 _tmp_ocr/tech_prep/prep.py 按这对注释整段重写；图集
          那块 JSON-LD 同理，见页尾那对 gear-jsonld 注释。 -->
     <!-- gear-cards:start -->
-    <article class="ab-card ab-card--portrait ab-card--lightbox" id="gear-13" data-gallery="[&quot;/assets/gallery/gear/gear_13_01.jpg&quot;, &quot;/assets/gallery/gear/gear_13_02.jpg&quot;, &quot;/assets/gallery/gear/gear_13_03.jpg&quot;, &quot;/assets/gallery/gear/gear_13_04.jpg&quot;, &quot;/assets/gallery/gear/gear_13_05.jpg&quot;, &quot;/assets/gallery/gear/gear_13_06.jpg&quot;, &quot;/assets/gallery/gear/gear_13_07.jpg&quot;, &quot;/assets/gallery/gear/gear_13_08.jpg&quot;, &quot;/assets/gallery/gear/gear_13_09.jpg&quot;, &quot;/assets/gallery/gear/gear_13_10.jpg&quot;, &quot;/assets/gallery/gear/gear_13_11.jpg&quot;, &quot;/assets/gallery/gear/gear_13_12.jpg&quot;, &quot;/assets/gallery/gear/gear_13_13.jpg&quot;]" data-caption="初音未来 With You 2021 1/7" data-look="gear-13" data-buy="#">
+    <article class="ab-card ab-card--brand ab-card--plate ab-card--figure ab-card--lightbox" id="gear-13" data-gallery="[&quot;/assets/gallery/gear/gear_13_01.jpg&quot;, &quot;/assets/gallery/gear/gear_13_02.jpg&quot;, &quot;/assets/gallery/gear/gear_13_03.jpg&quot;, &quot;/assets/gallery/gear/gear_13_04.jpg&quot;, &quot;/assets/gallery/gear/gear_13_05.jpg&quot;, &quot;/assets/gallery/gear/gear_13_06.jpg&quot;, &quot;/assets/gallery/gear/gear_13_07.jpg&quot;, &quot;/assets/gallery/gear/gear_13_08.jpg&quot;, &quot;/assets/gallery/gear/gear_13_09.jpg&quot;, &quot;/assets/gallery/gear/gear_13_10.jpg&quot;, &quot;/assets/gallery/gear/gear_13_11.jpg&quot;, &quot;/assets/gallery/gear/gear_13_12.jpg&quot;, &quot;/assets/gallery/gear/gear_13_13.jpg&quot;]" data-caption="初音未来 With You 2021 1/7" data-look="gear-13" data-buy="#">
       <a class="ab-card__media" href="/assets/gallery/gear/gear_13_01.jpg" tabindex="-1" aria-hidden="true">
+        <span class="ab-card__badge">手办</span>
         <img src="/assets/gallery/gear/gear_13_01.jpg" alt="" loading="lazy" decoding="async">
       </a>
       <div class="ab-card__copy">
-        <p class="ab-cat">手办</p>
-        <h3 class="ab-card__title"><a href="/assets/gallery/gear/gear_13_01.jpg">初音未来 With You 2021 1/7</a></h3>
-        <p class="ab-card__more ab-card__more--split">
-          <a href="/assets/gallery/gear/gear_13_01.jpg">查看图集</a>
-          <em class="ab-card__or">或</em>
-          <a class="ab-crisp-open" href="#" data-crisp-msg="你好，我想咨询「初音未来 With You 2021 1/7」的实时价格。">查询价格</a>
+        <h3 class="ab-card__title">初音未来 With You 2021 1/7<span class="ab-card__price"></span></h3>
+        <div class="ab-fold">
+          <div class="ab-fold__summary">
+            <span class="ab-fold__act">
+              <a class="ab-fold__buy ab-crisp-open" href="#" data-crisp-msg="你好，我想咨询「初音未来 With You 2021 1/7」的实时价格。">购买</a>
+            </span>
+          </div>
+        </div>
+
+        <p class="ab-ec-list" data-game="gear-13">
+          <span class="ab-ec-loading">正在加载最新价格&hellip;</span>
         </p>
+
+        <p class="ab-ec-foot">手办 &middot; 示例价 &middot; 报价以在线咨询为准</p>
       </div>
     </article>
-    <article class="ab-card ab-card--portrait ab-card--lightbox" id="gear-14" data-gallery="[&quot;/assets/gallery/gear/gear_14_01.jpg&quot;, &quot;/assets/gallery/gear/gear_14_02.jpg&quot;, &quot;/assets/gallery/gear/gear_14_03.jpg&quot;, &quot;/assets/gallery/gear/gear_14_04.jpg&quot;]" data-caption="流萤 春日手信" data-look="gear-14" data-buy="#">
+    <article class="ab-card ab-card--brand ab-card--plate ab-card--figure ab-card--lightbox" id="gear-14" data-gallery="[&quot;/assets/gallery/gear/gear_14_01.jpg&quot;, &quot;/assets/gallery/gear/gear_14_02.jpg&quot;, &quot;/assets/gallery/gear/gear_14_03.jpg&quot;, &quot;/assets/gallery/gear/gear_14_04.jpg&quot;]" data-caption="流萤 春日手信" data-look="gear-14" data-buy="#">
       <a class="ab-card__media" href="/assets/gallery/gear/gear_14_03.jpg" tabindex="-1" aria-hidden="true">
+        <span class="ab-card__badge">手办</span>
         <img src="/assets/gallery/gear/gear_14_03.jpg" alt="" loading="lazy" decoding="async">
       </a>
       <div class="ab-card__copy">
-        <p class="ab-cat">手办</p>
-        <h3 class="ab-card__title"><a href="/assets/gallery/gear/gear_14_03.jpg">流萤 春日手信</a></h3>
-        <p class="ab-card__more ab-card__more--split">
-          <a href="/assets/gallery/gear/gear_14_03.jpg">查看图集</a>
-          <em class="ab-card__or">或</em>
-          <a class="ab-crisp-open" href="#" data-crisp-msg="你好，我想咨询「流萤 春日手信」的实时价格。">查询价格</a>
+        <h3 class="ab-card__title">流萤 春日手信<span class="ab-card__price"></span></h3>
+        <div class="ab-fold">
+          <div class="ab-fold__summary">
+            <span class="ab-fold__act">
+              <a class="ab-fold__buy ab-crisp-open" href="#" data-crisp-msg="你好，我想咨询「流萤 春日手信」的实时价格。">购买</a>
+            </span>
+          </div>
+        </div>
+
+        <p class="ab-ec-list" data-game="gear-14">
+          <span class="ab-ec-loading">正在加载最新价格&hellip;</span>
         </p>
+
+        <p class="ab-ec-foot">手办 &middot; 示例价 &middot; 报价以在线咨询为准</p>
       </div>
     </article>
-    <article class="ab-card ab-card--portrait ab-card--lightbox" id="gear-15" data-gallery="[&quot;/assets/gallery/gear/gear_15_01.jpg&quot;, &quot;/assets/gallery/gear/gear_15_02.jpg&quot;, &quot;/assets/gallery/gear/gear_15_03.jpg&quot;, &quot;/assets/gallery/gear/gear_15_04.jpg&quot;, &quot;/assets/gallery/gear/gear_15_05.jpg&quot;]" data-caption="风堇 Hyacine" data-look="gear-15" data-buy="#">
+    <article class="ab-card ab-card--brand ab-card--plate ab-card--figure ab-card--lightbox" id="gear-15" data-gallery="[&quot;/assets/gallery/gear/gear_15_01.jpg&quot;, &quot;/assets/gallery/gear/gear_15_02.jpg&quot;, &quot;/assets/gallery/gear/gear_15_03.jpg&quot;, &quot;/assets/gallery/gear/gear_15_04.jpg&quot;, &quot;/assets/gallery/gear/gear_15_05.jpg&quot;]" data-caption="风堇 Hyacine" data-look="gear-15" data-buy="#">
       <a class="ab-card__media" href="/assets/gallery/gear/gear_15_05.jpg" tabindex="-1" aria-hidden="true">
+        <span class="ab-card__badge">手办</span>
         <img src="/assets/gallery/gear/gear_15_05.jpg" alt="" loading="lazy" decoding="async">
       </a>
       <div class="ab-card__copy">
-        <p class="ab-cat">手办</p>
-        <h3 class="ab-card__title"><a href="/assets/gallery/gear/gear_15_05.jpg">风堇 Hyacine</a></h3>
-        <p class="ab-card__more ab-card__more--split">
-          <a href="/assets/gallery/gear/gear_15_05.jpg">查看图集</a>
-          <em class="ab-card__or">或</em>
-          <a class="ab-crisp-open" href="#" data-crisp-msg="你好，我想咨询「风堇 Hyacine」的实时价格。">查询价格</a>
+        <h3 class="ab-card__title">风堇 Hyacine<span class="ab-card__price"></span></h3>
+        <div class="ab-fold">
+          <div class="ab-fold__summary">
+            <span class="ab-fold__act">
+              <a class="ab-fold__buy ab-crisp-open" href="#" data-crisp-msg="你好，我想咨询「风堇 Hyacine」的实时价格。">购买</a>
+            </span>
+          </div>
+        </div>
+
+        <p class="ab-ec-list" data-game="gear-15">
+          <span class="ab-ec-loading">正在加载最新价格&hellip;</span>
         </p>
+
+        <p class="ab-ec-foot">手办 &middot; 示例价 &middot; 报价以在线咨询为准</p>
       </div>
     </article>
-    <article class="ab-card ab-card--portrait ab-card--lightbox" id="gear-16" data-gallery="[&quot;/assets/gallery/gear/gear_16_01.jpg&quot;, &quot;/assets/gallery/gear/gear_16_02.jpg&quot;, &quot;/assets/gallery/gear/gear_16_03.jpg&quot;, &quot;/assets/gallery/gear/gear_16_04.jpg&quot;, &quot;/assets/gallery/gear/gear_16_05.jpg&quot;, &quot;/assets/gallery/gear/gear_16_06.jpg&quot;, &quot;/assets/gallery/gear/gear_16_07.jpg&quot;, &quot;/assets/gallery/gear/gear_16_08.jpg&quot;]" data-caption="游戏机初音未来" data-look="gear-16" data-buy="#">
+    <article class="ab-card ab-card--brand ab-card--plate ab-card--figure ab-card--lightbox" id="gear-16" data-gallery="[&quot;/assets/gallery/gear/gear_16_01.jpg&quot;, &quot;/assets/gallery/gear/gear_16_02.jpg&quot;, &quot;/assets/gallery/gear/gear_16_03.jpg&quot;, &quot;/assets/gallery/gear/gear_16_04.jpg&quot;, &quot;/assets/gallery/gear/gear_16_05.jpg&quot;, &quot;/assets/gallery/gear/gear_16_06.jpg&quot;, &quot;/assets/gallery/gear/gear_16_07.jpg&quot;, &quot;/assets/gallery/gear/gear_16_08.jpg&quot;]" data-caption="游戏机初音未来" data-look="gear-16" data-buy="#">
       <a class="ab-card__media" href="/assets/gallery/gear/gear_16_01.jpg" tabindex="-1" aria-hidden="true">
+        <span class="ab-card__badge">手办</span>
         <img src="/assets/gallery/gear/gear_16_01.jpg" alt="" loading="lazy" decoding="async">
       </a>
       <div class="ab-card__copy">
-        <p class="ab-cat">手办</p>
-        <h3 class="ab-card__title"><a href="/assets/gallery/gear/gear_16_01.jpg">游戏机初音未来</a></h3>
-        <p class="ab-card__more ab-card__more--split">
-          <a href="/assets/gallery/gear/gear_16_01.jpg">查看图集</a>
-          <em class="ab-card__or">或</em>
-          <a class="ab-crisp-open" href="#" data-crisp-msg="你好，我想咨询「游戏机初音未来」的实时价格。">查询价格</a>
+        <h3 class="ab-card__title">游戏机初音未来<span class="ab-card__price"></span></h3>
+        <div class="ab-fold">
+          <div class="ab-fold__summary">
+            <span class="ab-fold__act">
+              <a class="ab-fold__buy ab-crisp-open" href="#" data-crisp-msg="你好，我想咨询「游戏机初音未来」的实时价格。">购买</a>
+            </span>
+          </div>
+        </div>
+
+        <p class="ab-ec-list" data-game="gear-16">
+          <span class="ab-ec-loading">正在加载最新价格&hellip;</span>
         </p>
+
+        <p class="ab-ec-foot">手办 &middot; 示例价 &middot; 报价以在线咨询为准</p>
       </div>
     </article>
-    <article class="ab-card ab-card--portrait ab-card--lightbox" id="gear-17" data-gallery="[&quot;/assets/gallery/gear/gear_17_01.jpg&quot;, &quot;/assets/gallery/gear/gear_17_02.jpg&quot;, &quot;/assets/gallery/gear/gear_17_03.jpg&quot;, &quot;/assets/gallery/gear/gear_17_04.jpg&quot;, &quot;/assets/gallery/gear/gear_17_05.jpg&quot;, &quot;/assets/gallery/gear/gear_17_06.jpg&quot;, &quot;/assets/gallery/gear/gear_17_07.jpg&quot;]" data-caption="黄裙明日香" data-look="gear-17" data-buy="#">
+    <article class="ab-card ab-card--brand ab-card--plate ab-card--figure ab-card--lightbox" id="gear-17" data-gallery="[&quot;/assets/gallery/gear/gear_17_01.jpg&quot;, &quot;/assets/gallery/gear/gear_17_02.jpg&quot;, &quot;/assets/gallery/gear/gear_17_03.jpg&quot;, &quot;/assets/gallery/gear/gear_17_04.jpg&quot;, &quot;/assets/gallery/gear/gear_17_05.jpg&quot;, &quot;/assets/gallery/gear/gear_17_06.jpg&quot;, &quot;/assets/gallery/gear/gear_17_07.jpg&quot;]" data-caption="黄裙明日香" data-look="gear-17" data-buy="#">
       <a class="ab-card__media" href="/assets/gallery/gear/gear_17_04.jpg" tabindex="-1" aria-hidden="true">
+        <span class="ab-card__badge">手办</span>
         <img src="/assets/gallery/gear/gear_17_04.jpg" alt="" loading="lazy" decoding="async">
       </a>
       <div class="ab-card__copy">
-        <p class="ab-cat">手办</p>
-        <h3 class="ab-card__title"><a href="/assets/gallery/gear/gear_17_04.jpg">黄裙明日香</a></h3>
-        <p class="ab-card__more ab-card__more--split">
-          <a href="/assets/gallery/gear/gear_17_04.jpg">查看图集</a>
-          <em class="ab-card__or">或</em>
-          <a class="ab-crisp-open" href="#" data-crisp-msg="你好，我想咨询「黄裙明日香」的实时价格。">查询价格</a>
+        <h3 class="ab-card__title">黄裙明日香<span class="ab-card__price"></span></h3>
+        <div class="ab-fold">
+          <div class="ab-fold__summary">
+            <span class="ab-fold__act">
+              <a class="ab-fold__buy ab-crisp-open" href="#" data-crisp-msg="你好，我想咨询「黄裙明日香」的实时价格。">购买</a>
+            </span>
+          </div>
+        </div>
+
+        <p class="ab-ec-list" data-game="gear-17">
+          <span class="ab-ec-loading">正在加载最新价格&hellip;</span>
         </p>
+
+        <p class="ab-ec-foot">手办 &middot; 示例价 &middot; 报价以在线咨询为准</p>
       </div>
     </article>
-    <article class="ab-card ab-card--portrait ab-card--lightbox" id="gear-18" data-gallery="[&quot;/assets/gallery/gear/gear_18_01.jpg&quot;, &quot;/assets/gallery/gear/gear_18_02.jpg&quot;, &quot;/assets/gallery/gear/gear_18_03.jpg&quot;, &quot;/assets/gallery/gear/gear_18_04.jpg&quot;, &quot;/assets/gallery/gear/gear_18_05.jpg&quot;]" data-caption="紫伞与黑风衣" data-look="gear-18" data-buy="#">
+    <article class="ab-card ab-card--brand ab-card--plate ab-card--figure ab-card--lightbox" id="gear-18" data-gallery="[&quot;/assets/gallery/gear/gear_18_01.jpg&quot;, &quot;/assets/gallery/gear/gear_18_02.jpg&quot;, &quot;/assets/gallery/gear/gear_18_03.jpg&quot;, &quot;/assets/gallery/gear/gear_18_04.jpg&quot;, &quot;/assets/gallery/gear/gear_18_05.jpg&quot;]" data-caption="紫伞与黑风衣" data-look="gear-18" data-buy="#">
       <a class="ab-card__media" href="/assets/gallery/gear/gear_18_03.jpg" tabindex="-1" aria-hidden="true">
+        <span class="ab-card__badge">手办</span>
         <img src="/assets/gallery/gear/gear_18_03.jpg" alt="" loading="lazy" decoding="async">
       </a>
       <div class="ab-card__copy">
-        <p class="ab-cat">手办</p>
-        <h3 class="ab-card__title"><a href="/assets/gallery/gear/gear_18_03.jpg">紫伞与黑风衣</a></h3>
-        <p class="ab-card__more ab-card__more--split">
-          <a href="/assets/gallery/gear/gear_18_03.jpg">查看图集</a>
-          <em class="ab-card__or">或</em>
-          <a class="ab-crisp-open" href="#" data-crisp-msg="你好，我想咨询「紫伞与黑风衣」的实时价格。">查询价格</a>
+        <h3 class="ab-card__title">紫伞与黑风衣<span class="ab-card__price"></span></h3>
+        <div class="ab-fold">
+          <div class="ab-fold__summary">
+            <span class="ab-fold__act">
+              <a class="ab-fold__buy ab-crisp-open" href="#" data-crisp-msg="你好，我想咨询「紫伞与黑风衣」的实时价格。">购买</a>
+            </span>
+          </div>
+        </div>
+
+        <p class="ab-ec-list" data-game="gear-18">
+          <span class="ab-ec-loading">正在加载最新价格&hellip;</span>
         </p>
+
+        <p class="ab-ec-foot">手办 &middot; 示例价 &middot; 报价以在线咨询为准</p>
       </div>
     </article>
-    <article class="ab-card ab-card--portrait ab-card--lightbox" id="gear-19" data-gallery="[&quot;/assets/gallery/gear/gear_19_01.jpg&quot;, &quot;/assets/gallery/gear/gear_19_02.jpg&quot;, &quot;/assets/gallery/gear/gear_19_03.jpg&quot;, &quot;/assets/gallery/gear/gear_19_04.jpg&quot;, &quot;/assets/gallery/gear/gear_19_05.jpg&quot;, &quot;/assets/gallery/gear/gear_19_06.jpg&quot;, &quot;/assets/gallery/gear/gear_19_07.jpg&quot;, &quot;/assets/gallery/gear/gear_19_08.jpg&quot;, &quot;/assets/gallery/gear/gear_19_09.jpg&quot;, &quot;/assets/gallery/gear/gear_19_10.jpg&quot;, &quot;/assets/gallery/gear/gear_19_11.jpg&quot;, &quot;/assets/gallery/gear/gear_19_12.jpg&quot;, &quot;/assets/gallery/gear/gear_19_13.jpg&quot;, &quot;/assets/gallery/gear/gear_19_14.jpg&quot;, &quot;/assets/gallery/gear/gear_19_15.jpg&quot;, &quot;/assets/gallery/gear/gear_19_16.jpg&quot;]" data-caption="CCSTOYS 山姆·费舍尔" data-look="gear-19" data-buy="#">
+    <article class="ab-card ab-card--brand ab-card--plate ab-card--figure ab-card--lightbox" id="gear-19" data-gallery="[&quot;/assets/gallery/gear/gear_19_01.jpg&quot;, &quot;/assets/gallery/gear/gear_19_02.jpg&quot;, &quot;/assets/gallery/gear/gear_19_03.jpg&quot;, &quot;/assets/gallery/gear/gear_19_04.jpg&quot;, &quot;/assets/gallery/gear/gear_19_05.jpg&quot;, &quot;/assets/gallery/gear/gear_19_06.jpg&quot;, &quot;/assets/gallery/gear/gear_19_07.jpg&quot;, &quot;/assets/gallery/gear/gear_19_08.jpg&quot;, &quot;/assets/gallery/gear/gear_19_09.jpg&quot;, &quot;/assets/gallery/gear/gear_19_10.jpg&quot;, &quot;/assets/gallery/gear/gear_19_11.jpg&quot;, &quot;/assets/gallery/gear/gear_19_12.jpg&quot;, &quot;/assets/gallery/gear/gear_19_13.jpg&quot;, &quot;/assets/gallery/gear/gear_19_14.jpg&quot;, &quot;/assets/gallery/gear/gear_19_15.jpg&quot;, &quot;/assets/gallery/gear/gear_19_16.jpg&quot;]" data-caption="CCSTOYS 山姆·费舍尔" data-look="gear-19" data-buy="#">
       <a class="ab-card__media" href="/assets/gallery/gear/gear_19_01.jpg" tabindex="-1" aria-hidden="true">
+        <span class="ab-card__badge">手办</span>
         <img src="/assets/gallery/gear/gear_19_01.jpg" alt="" loading="lazy" decoding="async">
       </a>
       <div class="ab-card__copy">
-        <p class="ab-cat">手办</p>
-        <h3 class="ab-card__title"><a href="/assets/gallery/gear/gear_19_01.jpg">CCSTOYS 山姆·费舍尔</a></h3>
-        <p class="ab-card__more ab-card__more--split">
-          <a href="/assets/gallery/gear/gear_19_01.jpg">查看图集</a>
-          <em class="ab-card__or">或</em>
-          <a class="ab-crisp-open" href="#" data-crisp-msg="你好，我想咨询「CCSTOYS 山姆·费舍尔」的实时价格。">查询价格</a>
+        <h3 class="ab-card__title">CCSTOYS 山姆·费舍尔<span class="ab-card__price"></span></h3>
+        <div class="ab-fold">
+          <div class="ab-fold__summary">
+            <span class="ab-fold__act">
+              <a class="ab-fold__buy ab-crisp-open" href="#" data-crisp-msg="你好，我想咨询「CCSTOYS 山姆·费舍尔」的实时价格。">购买</a>
+            </span>
+          </div>
+        </div>
+
+        <p class="ab-ec-list" data-game="gear-19">
+          <span class="ab-ec-loading">正在加载最新价格&hellip;</span>
         </p>
+
+        <p class="ab-ec-foot">手办 &middot; 示例价 &middot; 报价以在线咨询为准</p>
       </div>
     </article>
-    <article class="ab-card ab-card--portrait ab-card--lightbox" id="gear-20" data-gallery="[&quot;/assets/gallery/gear/gear_20_01.jpg&quot;, &quot;/assets/gallery/gear/gear_20_02.jpg&quot;, &quot;/assets/gallery/gear/gear_20_03.jpg&quot;, &quot;/assets/gallery/gear/gear_20_04.jpg&quot;, &quot;/assets/gallery/gear/gear_20_05.jpg&quot;]" data-caption="猫猫《药屋少女的呢喃》1/7" data-look="gear-20" data-buy="#">
+    <article class="ab-card ab-card--brand ab-card--plate ab-card--figure ab-card--lightbox" id="gear-20" data-gallery="[&quot;/assets/gallery/gear/gear_20_01.jpg&quot;, &quot;/assets/gallery/gear/gear_20_02.jpg&quot;, &quot;/assets/gallery/gear/gear_20_03.jpg&quot;, &quot;/assets/gallery/gear/gear_20_04.jpg&quot;, &quot;/assets/gallery/gear/gear_20_05.jpg&quot;]" data-caption="猫猫《药屋少女的呢喃》1/7" data-look="gear-20" data-buy="#">
       <a class="ab-card__media" href="/assets/gallery/gear/gear_20_01.jpg" tabindex="-1" aria-hidden="true">
+        <span class="ab-card__badge">手办</span>
         <img src="/assets/gallery/gear/gear_20_01.jpg" alt="" loading="lazy" decoding="async">
       </a>
       <div class="ab-card__copy">
-        <p class="ab-cat">手办</p>
-        <h3 class="ab-card__title"><a href="/assets/gallery/gear/gear_20_01.jpg">猫猫《药屋少女的呢喃》1/7</a></h3>
-        <p class="ab-card__more ab-card__more--split">
-          <a href="/assets/gallery/gear/gear_20_01.jpg">查看图集</a>
-          <em class="ab-card__or">或</em>
-          <a class="ab-crisp-open" href="#" data-crisp-msg="你好，我想咨询「猫猫《药屋少女的呢喃》1/7」的实时价格。">查询价格</a>
+        <h3 class="ab-card__title">猫猫《药屋少女的呢喃》1/7<span class="ab-card__price"></span></h3>
+        <div class="ab-fold">
+          <div class="ab-fold__summary">
+            <span class="ab-fold__act">
+              <a class="ab-fold__buy ab-crisp-open" href="#" data-crisp-msg="你好，我想咨询「猫猫《药屋少女的呢喃》1/7」的实时价格。">购买</a>
+            </span>
+          </div>
+        </div>
+
+        <p class="ab-ec-list" data-game="gear-20">
+          <span class="ab-ec-loading">正在加载最新价格&hellip;</span>
         </p>
+
+        <p class="ab-ec-foot">手办 &middot; 示例价 &middot; 报价以在线咨询为准</p>
       </div>
     </article>
 <!-- gear-cards:end -->
