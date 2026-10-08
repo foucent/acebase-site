@@ -1,7 +1,7 @@
 ---
 title: 手办实拍图集 | FIGURES
-description: AceBase FIGURES —— 七套手办实拍，共 58 张，点开卡片即可在页内看整套。
-updated: 2026-10-06
+description: AceBase FIGURES —— 八套手办实拍，共 63 张，点开卡片即可在页内看整套。
+updated: 2026-10-09
 hide:
   - title
   - toc
@@ -112,6 +112,20 @@ hide:
         </p>
       </div>
     </article>
+    <article class="ab-card ab-card--portrait ab-card--lightbox" id="gear-20" data-gallery="[&quot;/assets/gallery/gear/gear_20_01.jpg&quot;, &quot;/assets/gallery/gear/gear_20_02.jpg&quot;, &quot;/assets/gallery/gear/gear_20_03.jpg&quot;, &quot;/assets/gallery/gear/gear_20_04.jpg&quot;, &quot;/assets/gallery/gear/gear_20_05.jpg&quot;]" data-caption="猫猫《药屋少女的呢喃》1/7" data-look="gear-20" data-buy="#">
+      <a class="ab-card__media" href="/assets/gallery/gear/gear_20_01.jpg" tabindex="-1" aria-hidden="true">
+        <img src="/assets/gallery/gear/gear_20_01.jpg" alt="" loading="lazy" decoding="async">
+      </a>
+      <div class="ab-card__copy">
+        <p class="ab-cat">手办</p>
+        <h3 class="ab-card__title"><a href="/assets/gallery/gear/gear_20_01.jpg">猫猫《药屋少女的呢喃》1/7</a></h3>
+        <p class="ab-card__more ab-card__more--split">
+          <a href="/assets/gallery/gear/gear_20_01.jpg">查看图集</a>
+          <em class="ab-card__or">或</em>
+          <a class="ab-crisp-open" href="#" data-crisp-msg="你好，我想咨询「猫猫《药屋少女的呢喃》1/7」的实时价格。">查询价格</a>
+        </p>
+      </div>
+    </article>
 <!-- gear-cards:end -->
     </div>
   </section>
@@ -130,7 +144,7 @@ hide:
     {
       "@type": "WebPage",
       "name": "手办实拍图集",
-      "description": "AceBase FIGURES —— 七套手办实拍，共 58 张，点开卡片即可在页内看整套。",
+      "description": "AceBase FIGURES —— 八套手办实拍，共 63 张，点开卡片即可在页内看整套。",
       "url": "https://acebase.cc/figures/"
     },
     {
@@ -154,7 +168,7 @@ hide:
     {
       "@type": "ItemList",
       "name": "手办实拍图集",
-      "numberOfItems": "58",
+      "numberOfItems": "63",
       "itemListElement": [
         { "@type": "ListItem", "position": 1, "item": { "@type": "ImageObject", "name": "初音未来 With You 2021 1/7", "contentUrl": "https://acebase.cc/assets/gallery/gear/gear_13_01.jpg", "url": "https://acebase.cc/figures/#gear-13" } },
         { "@type": "ListItem", "position": 2, "item": { "@type": "ImageObject", "name": "流萤 春日手信", "contentUrl": "https://acebase.cc/assets/gallery/gear/gear_14_03.jpg", "url": "https://acebase.cc/figures/#gear-14" } },
@@ -162,13 +176,14 @@ hide:
         { "@type": "ListItem", "position": 4, "item": { "@type": "ImageObject", "name": "游戏机初音未来", "contentUrl": "https://acebase.cc/assets/gallery/gear/gear_16_01.jpg", "url": "https://acebase.cc/figures/#gear-16" } },
         { "@type": "ListItem", "position": 5, "item": { "@type": "ImageObject", "name": "黄裙明日香", "contentUrl": "https://acebase.cc/assets/gallery/gear/gear_17_04.jpg", "url": "https://acebase.cc/figures/#gear-17" } },
         { "@type": "ListItem", "position": 6, "item": { "@type": "ImageObject", "name": "紫伞与黑风衣", "contentUrl": "https://acebase.cc/assets/gallery/gear/gear_18_03.jpg", "url": "https://acebase.cc/figures/#gear-18" } },
-        { "@type": "ListItem", "position": 7, "item": { "@type": "ImageObject", "name": "CCSTOYS 山姆·费舍尔", "contentUrl": "https://acebase.cc/assets/gallery/gear/gear_19_01.jpg", "url": "https://acebase.cc/figures/#gear-19" } }
+        { "@type": "ListItem", "position": 7, "item": { "@type": "ImageObject", "name": "CCSTOYS 山姆·费舍尔", "contentUrl": "https://acebase.cc/assets/gallery/gear/gear_19_01.jpg", "url": "https://acebase.cc/figures/#gear-19" } },
+        { "@type": "ListItem", "position": 8, "item": { "@type": "ImageObject", "name": "猫猫《药屋少女的呢喃》1/7", "contentUrl": "https://acebase.cc/assets/gallery/gear/gear_20_01.jpg", "url": "https://acebase.cc/figures/#gear-20" } }
       ]
     },
     {
       "@type": "ImageGallery",
       "name": "手办实拍图集",
-      "description": "AceBase FIGURES —— 七套手办实拍，共 58 张，更新于 2026-10-06。",
+      "description": "AceBase FIGURES —— 八套手办实拍，共 63 张，更新于 2026-10-09。",
       "url": "https://acebase.cc/figures/"
     }
   ]
