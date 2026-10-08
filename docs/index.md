@@ -35,7 +35,6 @@ hide:
           <span class="ab-ec-loading">正在加载最新价格&hellip;</span>
         </p>
 
-        <p class="ab-ec-foot">手办 &middot; 示例价 &middot; 报价以在线咨询为准</p>
       </div>
     </article>
     <article class="ab-card ab-card--brand ab-card--plate ab-card--figure ab-card--lightbox" id="gear-14" data-gallery="[&quot;/assets/gallery/gear/gear_14_01.jpg&quot;, &quot;/assets/gallery/gear/gear_14_02.jpg&quot;, &quot;/assets/gallery/gear/gear_14_03.jpg&quot;, &quot;/assets/gallery/gear/gear_14_04.jpg&quot;]" data-caption="流萤 春日手信" data-look="gear-14" data-buy="#">
@@ -57,7 +56,6 @@ hide:
           <span class="ab-ec-loading">正在加载最新价格&hellip;</span>
         </p>
 
-        <p class="ab-ec-foot">手办 &middot; 示例价 &middot; 报价以在线咨询为准</p>
       </div>
     </article>
     <article class="ab-card ab-card--brand ab-card--plate ab-card--figure ab-card--lightbox" id="gear-15" data-gallery="[&quot;/assets/gallery/gear/gear_15_01.jpg&quot;, &quot;/assets/gallery/gear/gear_15_02.jpg&quot;, &quot;/assets/gallery/gear/gear_15_03.jpg&quot;, &quot;/assets/gallery/gear/gear_15_04.jpg&quot;, &quot;/assets/gallery/gear/gear_15_05.jpg&quot;]" data-caption="风堇 Hyacine" data-look="gear-15" data-buy="#">
@@ -79,7 +77,6 @@ hide:
           <span class="ab-ec-loading">正在加载最新价格&hellip;</span>
         </p>
 
-        <p class="ab-ec-foot">手办 &middot; 示例价 &middot; 报价以在线咨询为准</p>
       </div>
     </article>
     <article class="ab-card ab-card--brand ab-card--plate ab-card--figure ab-card--lightbox" id="gear-16" data-gallery="[&quot;/assets/gallery/gear/gear_16_01.jpg&quot;, &quot;/assets/gallery/gear/gear_16_02.jpg&quot;, &quot;/assets/gallery/gear/gear_16_03.jpg&quot;, &quot;/assets/gallery/gear/gear_16_04.jpg&quot;, &quot;/assets/gallery/gear/gear_16_05.jpg&quot;, &quot;/assets/gallery/gear/gear_16_06.jpg&quot;, &quot;/assets/gallery/gear/gear_16_07.jpg&quot;, &quot;/assets/gallery/gear/gear_16_08.jpg&quot;]" data-caption="游戏机初音未来" data-look="gear-16" data-buy="#">
@@ -101,7 +98,6 @@ hide:
           <span class="ab-ec-loading">正在加载最新价格&hellip;</span>
         </p>
 
-        <p class="ab-ec-foot">手办 &middot; 示例价 &middot; 报价以在线咨询为准</p>
       </div>
     </article>
     <article class="ab-card ab-card--brand ab-card--plate ab-card--figure ab-card--lightbox" id="gear-17" data-gallery="[&quot;/assets/gallery/gear/gear_17_01.jpg&quot;, &quot;/assets/gallery/gear/gear_17_02.jpg&quot;, &quot;/assets/gallery/gear/gear_17_03.jpg&quot;, &quot;/assets/gallery/gear/gear_17_04.jpg&quot;, &quot;/assets/gallery/gear/gear_17_05.jpg&quot;, &quot;/assets/gallery/gear/gear_17_06.jpg&quot;, &quot;/assets/gallery/gear/gear_17_07.jpg&quot;]" data-caption="黄裙明日香" data-look="gear-17" data-buy="#">
@@ -123,7 +119,6 @@ hide:
           <span class="ab-ec-loading">正在加载最新价格&hellip;</span>
         </p>
 
-        <p class="ab-ec-foot">手办 &middot; 示例价 &middot; 报价以在线咨询为准</p>
       </div>
     </article>
     <article class="ab-card ab-card--brand ab-card--plate ab-card--figure ab-card--lightbox" id="gear-18" data-gallery="[&quot;/assets/gallery/gear/gear_18_01.jpg&quot;, &quot;/assets/gallery/gear/gear_18_02.jpg&quot;, &quot;/assets/gallery/gear/gear_18_03.jpg&quot;, &quot;/assets/gallery/gear/gear_18_04.jpg&quot;, &quot;/assets/gallery/gear/gear_18_05.jpg&quot;]" data-caption="紫伞与黑风衣" data-look="gear-18" data-buy="#">
@@ -145,7 +140,6 @@ hide:
           <span class="ab-ec-loading">正在加载最新价格&hellip;</span>
         </p>
 
-        <p class="ab-ec-foot">手办 &middot; 示例价 &middot; 报价以在线咨询为准</p>
       </div>
     </article>
     <article class="ab-card ab-card--brand ab-card--fold ab-card--ec ab-card--plate ab-card--picker ab-card--wordmark" id="pubg-mobile">
