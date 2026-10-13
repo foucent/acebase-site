@@ -14,7 +14,7 @@ hide:
       <h1 class="mg-home-hero__title">电脑组件</h1>
       <p class="mg-home-hero__lead">从显卡好价起步——看具体品牌型号的成交价怎么构成，以及架构与电竞装机搭配。CPU、主板、内存、电源等组件专区陆续上线。</p>
       <div class="mg-home-hero__actions">
-        <a class="mg-home-hero__btn mg-home-hero__btn--primary ab-crisp-open" href="#" data-crisp-msg="你好，我想咨询电脑组装（显卡等组件）的搭配与报价。">咨询装机与报价</a>
+        <a class="mg-home-hero__btn mg-home-hero__btn--primary ab-crisp-open" href="#" data-crisp-msg="你好，我要装机（显卡等组件），请给我搭配与报价。">咨询装机与报价</a>
       </div>
     </div>
   </section>
@@ -45,12 +45,12 @@ hide:
 
 <div class="admonition note mg-games__note">
   <p class="admonition-title">正在扩展</p>
-  <p>更多电脑组件（CPU、主板、内存、电源、机箱与散热）正在筹备中。需要整机搭配建议或当前装机报价，欢迎<a class="ab-crisp-open" href="#" data-crisp-msg="你好，我想咨询电脑组装与整机报价。">在线咨询</a>。</p>
+  <p>更多电脑组件（CPU、主板、内存、电源、机箱与散热）正在筹备中。需要整机搭配建议或当前装机报价，欢迎<a class="ab-crisp-open" href="#" data-crisp-msg="你好，我要装机，请给我整机报价。">在线咨询</a>。</p>
 </div>
 
 <div class="admonition note mg-games__note">
   <p class="admonition-title">相关</p>
-  <p><a href="/">首页</a> &middot; <a href="/figures/">FIGURES</a> &middot; <a href="/topup/">代储与礼品卡价格参考</a> &middot; <a href="/gift-cards/">Gift Cards</a> &middot; <a href="/cdkeys/">CDKeys</a> &middot; <a href="/faq/">购买指南</a></p>
+  <p><a href="/">首页</a> &middot; <a href="/figures/">FIGURES</a> &middot; <a href="/topup/">代储与礼品卡价格参考</a> &middot; <a href="/faq/">购买指南</a></p>
 </div>
 
 <script type="application/ld+json">

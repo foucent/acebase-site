@@ -12,7 +12,7 @@ hide:
 
   <section class="ab-section" id="latest">
     <header class="ab-section__head">
-      <span class="ab-stamp" aria-hidden="true">更新于 2026-10-09</span>
+      <span class="ab-stamp" aria-hidden="true">更新于 2026-10-13</span>
       <h2 class="ab-section__title">最近更新</h2>
     </header>
     <div class="ab-list ab-list--feed">
@@ -23,13 +23,12 @@ hide:
       </a>
       <div class="ab-card__copy">
         <h3 class="ab-card__title">初音未来 With You 2021 1/7<span class="ab-card__price"></span></h3>
-        <div class="ab-fold">
-          <div class="ab-fold__summary">
-            <span class="ab-fold__act">
-              <a class="ab-fold__buy ab-crisp-open" href="#" data-crisp-msg="你好，我想咨询「初音未来 With You 2021 1/7」的实时价格。">购买</a>
-            </span>
-          </div>
-        </div>
+        <p class="ab-card__excerpt">1/7 比例的演唱会造型，和伞、长发与花丛底座一次到位。</p>
+        <p class="ab-card__more ab-card__more--split">
+          <a href="/assets/gallery/gear/gear_13_01.jpg">查看图集</a>
+          <em class="ab-card__or">或</em>
+          <a class="ab-crisp-open" href="#" data-crisp-msg="你好，我要购买「初音未来 With You 2021 1/7」。">购买</a>
+        </p>
 
         <p class="ab-ec-list" data-game="gear-13">
           <span class="ab-ec-loading">正在加载最新价格&hellip;</span>
@@ -44,13 +43,12 @@ hide:
       </a>
       <div class="ab-card__copy">
         <h3 class="ab-card__title">流萤 春日手信<span class="ab-card__price"></span></h3>
-        <div class="ab-fold">
-          <div class="ab-fold__summary">
-            <span class="ab-fold__act">
-              <a class="ab-fold__buy ab-crisp-open" href="#" data-crisp-msg="你好，我想咨询「流萤 春日手信」的实时价格。">购买</a>
-            </span>
-          </div>
-        </div>
+        <p class="ab-card__excerpt">水手领校服配格纹短裙，一手花束一手公文包，小跑而来的春日手信。</p>
+        <p class="ab-card__more ab-card__more--split">
+          <a href="/assets/gallery/gear/gear_14_03.jpg">查看图集</a>
+          <em class="ab-card__or">或</em>
+          <a class="ab-crisp-open" href="#" data-crisp-msg="你好，我要购买「流萤 春日手信」。">购买</a>
+        </p>
 
         <p class="ab-ec-list" data-game="gear-14">
           <span class="ab-ec-loading">正在加载最新价格&hellip;</span>
@@ -65,13 +63,12 @@ hide:
       </a>
       <div class="ab-card__copy">
         <h3 class="ab-card__title">风堇 Hyacine<span class="ab-card__price"></span></h3>
-        <div class="ab-fold">
-          <div class="ab-fold__summary">
-            <span class="ab-fold__act">
-              <a class="ab-fold__buy ab-crisp-open" href="#" data-crisp-msg="你好，我想咨询「风堇 Hyacine」的实时价格。">购买</a>
-            </span>
-          </div>
-        </div>
+        <p class="ab-card__excerpt">粉色双钻卷发配红白荷叶边礼裙，裙摆向两侧展开成翼。</p>
+        <p class="ab-card__more ab-card__more--split">
+          <a href="/assets/gallery/gear/gear_15_05.jpg">查看图集</a>
+          <em class="ab-card__or">或</em>
+          <a class="ab-crisp-open" href="#" data-crisp-msg="你好，我要购买「风堇 Hyacine」。">购买</a>
+        </p>
 
         <p class="ab-ec-list" data-game="gear-15">
           <span class="ab-ec-loading">正在加载最新价格&hellip;</span>
@@ -86,13 +83,12 @@ hide:
       </a>
       <div class="ab-card__copy">
         <h3 class="ab-card__title">游戏机初音未来<span class="ab-card__price"></span></h3>
-        <div class="ab-fold">
-          <div class="ab-fold__summary">
-            <span class="ab-fold__act">
-              <a class="ab-fold__buy ab-crisp-open" href="#" data-crisp-msg="你好，我想咨询「游戏机初音未来」的实时价格。">购买</a>
-            </span>
-          </div>
-        </div>
+        <p class="ab-card__excerpt">盘腿捧着掌机，青色连帽衫配条纹腿套，耳机上挂着自己的名字。</p>
+        <p class="ab-card__more ab-card__more--split">
+          <a href="/assets/gallery/gear/gear_16_01.jpg">查看图集</a>
+          <em class="ab-card__or">或</em>
+          <a class="ab-crisp-open" href="#" data-crisp-msg="你好，我要购买「游戏机初音未来」。">购买</a>
+        </p>
 
         <p class="ab-ec-list" data-game="gear-16">
           <span class="ab-ec-loading">正在加载最新价格&hellip;</span>
@@ -107,13 +103,12 @@ hide:
       </a>
       <div class="ab-card__copy">
         <h3 class="ab-card__title">黄裙明日香<span class="ab-card__price"></span></h3>
-        <div class="ab-fold">
-          <div class="ab-fold__summary">
-            <span class="ab-fold__act">
-              <a class="ab-fold__buy ab-crisp-open" href="#" data-crisp-msg="你好，我想咨询「黄裙明日香」的实时价格。">购买</a>
-            </span>
-          </div>
-        </div>
+        <p class="ab-card__excerpt">淡黄吊带裙的明日香，一手拨发、重心后仰，红凉鞋踩在沙色底座上。</p>
+        <p class="ab-card__more ab-card__more--split">
+          <a href="/assets/gallery/gear/gear_17_04.jpg">查看图集</a>
+          <em class="ab-card__or">或</em>
+          <a class="ab-crisp-open" href="#" data-crisp-msg="你好，我要购买「黄裙明日香」。">购买</a>
+        </p>
 
         <p class="ab-ec-list" data-game="gear-17">
           <span class="ab-ec-loading">正在加载最新价格&hellip;</span>
@@ -128,13 +123,12 @@ hide:
       </a>
       <div class="ab-card__copy">
         <h3 class="ab-card__title">紫伞与黑风衣<span class="ab-card__price"></span></h3>
-        <div class="ab-fold">
-          <div class="ab-fold__summary">
-            <span class="ab-fold__act">
-              <a class="ab-fold__buy ab-crisp-open" href="#" data-crisp-msg="你好，我想咨询「紫伞与黑风衣」的实时价格。">购买</a>
-            </span>
-          </div>
-        </div>
+        <p class="ab-card__excerpt">紫伞撑在肩后，黑风衣下是亮粉内搭、绑带短裤与黑色长靴。</p>
+        <p class="ab-card__more ab-card__more--split">
+          <a href="/assets/gallery/gear/gear_18_03.jpg">查看图集</a>
+          <em class="ab-card__or">或</em>
+          <a class="ab-crisp-open" href="#" data-crisp-msg="你好，我要购买「紫伞与黑风衣」。">购买</a>
+        </p>
 
         <p class="ab-ec-list" data-game="gear-18">
           <span class="ab-ec-loading">正在加载最新价格&hellip;</span>
@@ -152,7 +146,7 @@ hide:
         <div class="ab-fold">
           <div class="ab-fold__summary">
             <span class="ab-fold__act">
-              <a class="ab-fold__buy ab-crisp-open" href="#" data-crisp-msg="你好，我想咨询 PUBG Mobile UC 的实时价格。">购买</a>
+              <a class="ab-fold__buy ab-crisp-open" href="#" data-crisp-msg="你好，我要购买 PUBG Mobile UC。">购买</a>
             </span>
           </div>
         </div>
@@ -174,7 +168,7 @@ hide:
         <div class="ab-fold">
           <div class="ab-fold__summary">
             <span class="ab-fold__act">
-              <a class="ab-fold__buy ab-crisp-open" href="#" data-crisp-msg="你好，我想咨询 PUBG G-COIN 的实时价格。">购买</a>
+              <a class="ab-fold__buy ab-crisp-open" href="#" data-crisp-msg="你好，我要购买 PUBG G-COIN。">购买</a>
             </span>
           </div>
         </div>
@@ -196,7 +190,7 @@ hide:
         <div class="ab-fold">
           <div class="ab-fold__summary">
             <span class="ab-fold__act">
-              <a class="ab-fold__buy ab-crisp-open" href="#" data-crisp-msg="你好，我想咨询 Honor of Kings 点券的实时价格。">购买</a>
+              <a class="ab-fold__buy ab-crisp-open" href="#" data-crisp-msg="你好，我要购买 Honor of Kings 点券。">购买</a>
             </span>
           </div>
         </div>
@@ -218,7 +212,7 @@ hide:
         <div class="ab-fold">
           <div class="ab-fold__summary">
             <span class="ab-fold__act">
-              <a class="ab-fold__buy ab-crisp-open" href="#" data-crisp-msg="你好，我想咨询 Arena Breakout Bonds 的实时价格。">购买</a>
+              <a class="ab-fold__buy ab-crisp-open" href="#" data-crisp-msg="你好，我要购买 Arena Breakout Bonds。">购买</a>
             </span>
           </div>
         </div>
@@ -240,7 +234,7 @@ hide:
         <div class="ab-fold">
           <div class="ab-fold__summary">
             <span class="ab-fold__act">
-              <a class="ab-fold__buy ab-crisp-open" href="#" data-crisp-msg="你好，我想咨询 燕云十六声 长鸣珠的实时价格。">购买</a>
+              <a class="ab-fold__buy ab-crisp-open" href="#" data-crisp-msg="你好，我要购买 燕云十六声 长鸣珠。">购买</a>
             </span>
           </div>
         </div>
@@ -252,39 +246,17 @@ hide:
         <p class="ab-ec-foot">手游 &middot; PC &middot; 数据更新于 <span class="js-prices-updated">2026-09-21</span> &middot; 报价以在线咨询为准</p>
       </div>
     </article>
-    <article class="ab-card ab-card--brand ab-card--shop ab-card--fold ab-card--ec ab-card--plate ab-card--picker ab-card--wordmark" id="douyin-top-up">
-      <div class="ab-card__media">
-        <span class="ab-card__badge">平台代储</span>
-        <img src="/assets/games/brand/douyin-top-up.png" alt="抖音直播 代储价格参考" loading="lazy" decoding="async">
-      </div>
-      <div class="ab-card__copy">
-        <h3 class="ab-card__title">抖音直播<span class="ab-card__price"></span></h3>
-        <div class="ab-fold">
-          <div class="ab-fold__summary">
-            <span class="ab-fold__act">
-              <a class="ab-fold__buy ab-crisp-open" href="#" data-crisp-msg="你好，我想咨询抖音直播的实时价格。">购买</a>
-            </span>
-          </div>
-        </div>
-
-        <p class="ab-ec-list" data-game="douyin-top-up">
-          <span class="ab-ec-loading">正在加载最新价格&hellip;</span>
-        </p>
-
-        <p class="ab-ec-foot">平台代储 &middot; 数据更新于 <span class="js-prices-updated">2026-09-21</span> &middot; 报价以在线咨询为准</p>
-      </div>
-    </article>
-    <article class="ab-card ab-card--brand ab-card--shop ab-card--fold ab-card--ec ab-card--plate ab-card--picker" id="amazon-gift-card-us">
+    <article class="ab-card ab-card--brand ab-card--fold ab-card--ec ab-card--plate ab-card--picker ab-card--wordmark" id="amazon-gift-card-us">
       <div class="ab-card__media">
         <span class="ab-card__badge">电子卡密</span>
-        <img src="/assets/gift-cards/amazon.png" alt="Amazon 礼品卡（美国）价格参考" decoding="async">
+        <img src="/assets/games/brand/amazon-gift-card-us.png" alt="Amazon 礼品卡（美国）价格参考" loading="lazy" decoding="async">
       </div>
       <div class="ab-card__copy">
         <h3 class="ab-card__title">Amazon 礼品卡（美国）<span class="ab-card__price"></span></h3>
         <div class="ab-fold">
           <div class="ab-fold__summary">
             <span class="ab-fold__act">
-              <a class="ab-fold__buy ab-crisp-open" href="#" data-crisp-msg="你好，我想咨询 Amazon 礼品卡（美国）的实时价格。">购买</a>
+              <a class="ab-fold__buy ab-crisp-open" href="#" data-crisp-msg="你好，我要购买 Amazon 礼品卡（美国）。">购买</a>
             </span>
           </div>
         </div>
@@ -296,251 +268,9 @@ hide:
         <p class="ab-ec-foot">电子卡密 &middot; 美区 &middot; 数据更新于 <span class="js-prices-updated">2026-09-21</span> &middot; 报价以在线咨询为准</p>
       </div>
     </article>
-    <article class="ab-card ab-card--brand ab-card--shop ab-card--fold ab-card--ec ab-card--plate ab-card--picker" id="apple-gift-card">
-      <div class="ab-card__media">
-        <span class="ab-card__badge">电子卡密</span>
-        <img src="/assets/gift-cards/apple.png" alt="Apple 礼品卡价格参考" loading="lazy" decoding="async">
-      </div>
-      <div class="ab-card__copy">
-        <h3 class="ab-card__title">Apple 礼品卡<span class="ab-card__price"></span></h3>
-        <div class="ab-fold">
-          <div class="ab-fold__summary">
-            <span class="ab-fold__act">
-              <a class="ab-fold__buy ab-crisp-open" href="#" data-crisp-msg="你好，我想咨询 Apple 礼品卡的实时价格。">购买</a>
-            </span>
-          </div>
-        </div>
-
-        <p class="ab-ec-list" data-game="apple-gift-card">
-          <span class="ab-ec-loading">正在加载最新价格&hellip;</span>
-        </p>
-
-        <p class="ab-ec-foot">电子卡密 &middot; App Store 与 iTunes &middot; 数据更新于 <span class="js-prices-updated">2026-09-21</span> &middot; 报价以在线咨询为准</p>
-      </div>
-    </article>
-    <article class="ab-card ab-card--brand ab-card--shop ab-card--fold ab-card--ec ab-card--plate ab-card--picker" id="google-play-gift-card">
-      <div class="ab-card__media">
-        <span class="ab-card__badge">电子卡密</span>
-        <img src="/assets/gift-cards/google.png" alt="Google Play 礼品卡价格参考" loading="lazy" decoding="async">
-      </div>
-      <div class="ab-card__copy">
-        <h3 class="ab-card__title">Google Play 礼品卡<span class="ab-card__price"></span></h3>
-        <div class="ab-fold">
-          <div class="ab-fold__summary">
-            <span class="ab-fold__act">
-              <a class="ab-fold__buy ab-crisp-open" href="#" data-crisp-msg="你好，我想咨询 Google Play 礼品卡的实时价格。">购买</a>
-            </span>
-          </div>
-        </div>
-
-        <p class="ab-ec-list" data-game="google-play-gift-card">
-          <span class="ab-ec-loading">正在加载最新价格&hellip;</span>
-        </p>
-
-        <p class="ab-ec-foot">电子卡密 &middot; Google Play &middot; 数据更新于 <span class="js-prices-updated">2026-09-21</span> &middot; 报价以在线咨询为准</p>
-      </div>
-    </article>
-    <article class="ab-card ab-card--brand ab-card--shop ab-card--fold ab-card--ec ab-card--plate ab-card--picker" id="netflix-gift-card-us">
-      <div class="ab-card__media">
-        <span class="ab-card__badge ab-card__badge--off">-16%</span>
-        <img src="/assets/gift-cards/netflix.png" alt="Netflix 礼品卡（美国）价格参考" loading="lazy" decoding="async">
-      </div>
-      <div class="ab-card__copy">
-        <h3 class="ab-card__title">Netflix 礼品卡（美国）<span class="ab-card__price"></span></h3>
-        <div class="ab-fold">
-          <div class="ab-fold__summary">
-            <span class="ab-fold__act">
-              <a class="ab-fold__buy ab-crisp-open" href="#" data-crisp-msg="你好，我想咨询 Netflix 礼品卡（美国）的实时价格。">购买</a>
-            </span>
-          </div>
-        </div>
-
-        <p class="ab-ec-list" data-game="netflix-gift-card-us" data-discount="-16%">
-          <span class="ab-ec-loading">正在加载最新价格&hellip;</span>
-        </p>
-
-        <p class="ab-ec-foot">电子卡密 &middot; 美区 &middot; 数据更新于 <span class="js-prices-updated">2026-09-21</span> &middot; 报价以在线咨询为准</p>
-      </div>
-    </article>
-    <article class="ab-card ab-card--brand ab-card--shop ab-card--fold ab-card--ec ab-card--plate ab-card--picker" id="xbox-gift-card">
-      <div class="ab-card__media">
-        <span class="ab-card__badge">电子卡密</span>
-        <img src="/assets/gift-cards/xbox.png" alt="Xbox Live 礼品卡价格参考" loading="lazy" decoding="async">
-      </div>
-      <div class="ab-card__copy">
-        <h3 class="ab-card__title">Xbox Live 礼品卡<span class="ab-card__price"></span></h3>
-        <div class="ab-fold">
-          <div class="ab-fold__summary">
-            <span class="ab-fold__act">
-              <a class="ab-fold__buy ab-crisp-open" href="#" data-crisp-msg="你好，我想咨询 Xbox Live 礼品卡的实时价格。">购买</a>
-            </span>
-          </div>
-        </div>
-
-        <p class="ab-ec-list" data-game="xbox-gift-card">
-          <span class="ab-ec-loading">正在加载最新价格&hellip;</span>
-        </p>
-
-        <p class="ab-ec-foot">电子卡密 &middot; Xbox 与 Microsoft Store &middot; 数据更新于 <span class="js-prices-updated">2026-09-21</span> &middot; 报价以在线咨询为准</p>
-      </div>
-    </article>
-    <article class="ab-card ab-card--brand ab-card--shop ab-card--fold ab-card--ec ab-card--plate ab-card--picker" id="kammelna-gift-card">
-      <div class="ab-card__media">
-        <span class="ab-card__badge ab-card__badge--off">-4%</span>
-        <img src="/assets/gift-cards/kammelna.png" alt="Kammelna 礼品卡价格参考" loading="lazy" decoding="async">
-      </div>
-      <div class="ab-card__copy">
-        <h3 class="ab-card__title">Kammelna 礼品卡<span class="ab-card__price"></span></h3>
-        <div class="ab-fold">
-          <div class="ab-fold__summary">
-            <span class="ab-fold__act">
-              <a class="ab-fold__buy ab-crisp-open" href="#" data-crisp-msg="你好，我想咨询 Kammelna 礼品卡的实时价格。">购买</a>
-            </span>
-          </div>
-        </div>
-
-        <p class="ab-ec-list" data-game="kammelna-gift-card" data-discount="-4%">
-          <span class="ab-ec-loading">正在加载最新价格&hellip;</span>
-        </p>
-
-        <p class="ab-ec-foot">手游 &middot; 中东区 &middot; 数据更新于 <span class="js-prices-updated">2026-09-21</span> &middot; 报价以在线咨询为准</p>
-      </div>
-    </article>
-    <article class="ab-card ab-card--brand ab-card--shop ab-card--fold ab-card--ec ab-card--plate ab-card--picker" id="fortnite-vbucks-card">
-      <div class="ab-card__media">
-        <span class="ab-card__badge">全平台</span>
-        <img src="/assets/gift-cards/fortnite-card.webp" alt="Fortnite 充值卡（V-Bucks）价格参考" decoding="async">
-      </div>
-      <div class="ab-card__copy">
-        <h3 class="ab-card__title">Fortnite 充值卡（V-Bucks）<span class="ab-card__price"></span></h3>
-        <div class="ab-fold">
-          <div class="ab-fold__summary">
-            <span class="ab-fold__act">
-              <a class="ab-fold__buy ab-crisp-open" href="#" data-crisp-msg="你好，我想咨询 Fortnite 充值卡（V-Bucks）的实时价格。">购买</a>
-            </span>
-          </div>
-        </div>
-
-        <p class="ab-ec-list" data-game="fortnite-vbucks-card">
-          <span class="ab-ec-loading">正在加载最新价格&hellip;</span>
-        </p>
-
-        <p class="ab-ec-foot">全平台 &middot; Epic &middot; 数据更新于 <span class="js-prices-updated">2026-09-21</span> &middot; 报价以在线咨询为准</p>
-      </div>
-    </article>
-    <article class="ab-card ab-card--brand ab-card--shop ab-card--fold ab-card--ec ab-card--plate ab-card--picker" id="apex-legends-coins-card">
-      <div class="ab-card__media">
-        <span class="ab-card__badge ab-card__badge--off">-7%</span>
-        <img src="/assets/gift-cards/apex-legends.png" alt="Apex Legends 充值卡（Coins）价格参考" loading="lazy" decoding="async">
-      </div>
-      <div class="ab-card__copy">
-        <h3 class="ab-card__title">Apex Legends 充值卡（Coins）<span class="ab-card__price"></span></h3>
-        <div class="ab-fold">
-          <div class="ab-fold__summary">
-            <span class="ab-fold__act">
-              <a class="ab-fold__buy ab-crisp-open" href="#" data-crisp-msg="你好，我想咨询 Apex Legends 充值卡（Coins）的实时价格。">购买</a>
-            </span>
-          </div>
-        </div>
-
-        <p class="ab-ec-list" data-game="apex-legends-coins-card" data-discount="-7%">
-          <span class="ab-ec-loading">正在加载最新价格&hellip;</span>
-        </p>
-
-        <p class="ab-ec-foot">PC &middot; 主机 &middot; 数据更新于 <span class="js-prices-updated">2026-09-21</span> &middot; 报价以在线咨询为准</p>
-      </div>
-    </article>
-    <article class="ab-card ab-card--brand ab-card--shop ab-card--fold ab-card--ec ab-card--plate ab-card--picker" id="playstation-network-card-us">
-      <div class="ab-card__media">
-        <span class="ab-card__badge ab-card__badge--off">-40%</span>
-        <img src="/assets/gift-cards/playstation.webp" alt="PlayStation Network 充值卡（美国）价格参考" loading="lazy" decoding="async">
-      </div>
-      <div class="ab-card__copy">
-        <h3 class="ab-card__title">PlayStation Network 充值卡（美国）<span class="ab-card__price"></span></h3>
-        <div class="ab-fold">
-          <div class="ab-fold__summary">
-            <span class="ab-fold__act">
-              <a class="ab-fold__buy ab-crisp-open" href="#" data-crisp-msg="你好，我想咨询 PlayStation Network 充值卡（美国）的实时价格。">购买</a>
-            </span>
-          </div>
-        </div>
-
-        <p class="ab-ec-list" data-game="playstation-network-card-us" data-discount="-40%">
-          <span class="ab-ec-loading">正在加载最新价格&hellip;</span>
-        </p>
-
-        <p class="ab-ec-foot">主机 &middot; 美区 &middot; 数据更新于 <span class="js-prices-updated">2026-09-21</span> &middot; 报价以在线咨询为准</p>
-      </div>
-    </article>
-    <article class="ab-card ab-card--brand ab-card--shop ab-card--fold ab-card--ec ab-card--plate ab-card--picker" id="nintendo-switch-online">
-      <div class="ab-card__media">
-        <span class="ab-card__badge ab-card__badge--off">-23%</span>
-        <img src="/assets/gift-cards/ns-membership.png" alt="Nintendo Switch Online 会员资格价格参考" loading="lazy" decoding="async">
-      </div>
-      <div class="ab-card__copy">
-        <h3 class="ab-card__title">Nintendo Switch Online 会员资格<span class="ab-card__price"></span></h3>
-        <div class="ab-fold">
-          <div class="ab-fold__summary">
-            <span class="ab-fold__act">
-              <a class="ab-fold__buy ab-crisp-open" href="#" data-crisp-msg="你好，我想咨询 Nintendo Switch Online 会员资格的实时价格。">购买</a>
-            </span>
-          </div>
-        </div>
-
-        <p class="ab-ec-list" data-game="nintendo-switch-online" data-discount="-23%">
-          <span class="ab-ec-loading">正在加载最新价格&hellip;</span>
-        </p>
-
-        <p class="ab-ec-foot">Switch &middot; 会员订阅 &middot; 数据更新于 <span class="js-prices-updated">2026-09-21</span> &middot; 报价以在线咨询为准</p>
-      </div>
-    </article>
-    <article class="ab-card ab-card--brand ab-card--shop ab-card--fold ab-card--ec ab-card--plate ab-card--picker" id="nintendo-eshop-card-us">
-      <div class="ab-card__media">
-        <span class="ab-card__badge ab-card__badge--off">-4%</span>
-        <img src="/assets/gift-cards/nintendo-eshop.png" alt="Nintendo eShop 充值卡（美国）价格参考" loading="lazy" decoding="async">
-      </div>
-      <div class="ab-card__copy">
-        <h3 class="ab-card__title">Nintendo eShop 充值卡（美国）<span class="ab-card__price"></span></h3>
-        <div class="ab-fold">
-          <div class="ab-fold__summary">
-            <span class="ab-fold__act">
-              <a class="ab-fold__buy ab-crisp-open" href="#" data-crisp-msg="你好，我想咨询 Nintendo eShop 充值卡（美国）的实时价格。">购买</a>
-            </span>
-          </div>
-        </div>
-
-        <p class="ab-ec-list" data-game="nintendo-eshop-card-us" data-discount="-4%">
-          <span class="ab-ec-loading">正在加载最新价格&hellip;</span>
-        </p>
-
-        <p class="ab-ec-foot">Switch &middot; 美区 &middot; 数据更新于 <span class="js-prices-updated">2026-09-21</span> &middot; 报价以在线咨询为准</p>
-      </div>
-    </article>
-    <article class="ab-card ab-card--brand ab-card--shop ab-card--fold ab-card--ec ab-card--plate ab-card--picker" id="steam-wallet-card-us">
-      <div class="ab-card__media">
-        <span class="ab-card__badge ab-card__badge--off">-1%</span>
-        <img src="/assets/gift-cards/steam-wallet.png" alt="Steam 钱包充值码（美国）价格参考" loading="lazy" decoding="async">
-      </div>
-      <div class="ab-card__copy">
-        <h3 class="ab-card__title">Steam 钱包充值码（美国）<span class="ab-card__price"></span></h3>
-        <div class="ab-fold">
-          <div class="ab-fold__summary">
-            <span class="ab-fold__act">
-              <a class="ab-fold__buy ab-crisp-open" href="#" data-crisp-msg="你好，我想咨询 Steam 钱包充值码（美国）的实时价格。">购买</a>
-            </span>
-          </div>
-        </div>
-
-        <p class="ab-ec-list" data-game="steam-wallet-card-us" data-discount="-1%">
-          <span class="ab-ec-loading">正在加载最新价格&hellip;</span>
-        </p>
-
-        <p class="ab-ec-foot">PC &middot; 美区 &middot; 数据更新于 <span class="js-prices-updated">2026-09-21</span> &middot; 报价以在线咨询为准</p>
-      </div>
-    </article>
     </div>
   </section>
 
-  <p class="ab-mag__foot">全部数据更新至 2026-10-09 · 报价以在线咨询为准</p>
+  <p class="ab-mag__foot">全部数据更新至 2026-10-13 · 报价以在线咨询为准</p>
 
 </div>

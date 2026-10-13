@@ -1,7 +1,7 @@
 ---
 title: 手办实拍图集 | FIGURES
 description: AceBase FIGURES —— 八套手办实拍，共 63 张，点开卡片即可在页内看整套。
-updated: 2026-10-09
+updated: 2026-10-13
 hide:
   - title
   - toc
@@ -11,8 +11,10 @@ hide:
 
   <section class="ab-section">
     <div class="ab-list ab-list--expandable ab-list--pricing">
-    <!-- 下面十二张 gear 卡由 _tmp_ocr/tech_prep/prep.py 按这对注释整段重写；图集
-         那块 JSON-LD 同理，见页尾那对 gear-jsonld 注释。 -->
+    <!-- 下面八张 gear 卡从 2026-10-13 起是手写的：写它们的那份生成器
+         (_tmp_ocr/tech_prep/prep.py) 指向 docs/gear/index.md，那个目录已经没了，
+         而且它吐出来的是 2026-10-09 之前的版式，跑一次会把这里的卡片改回去。
+         图集那块 JSON-LD 仍按页尾那对 gear-jsonld 注释整段重写。 -->
     <!-- gear-cards:start -->
     <article class="ab-card ab-card--brand ab-card--plate ab-card--figure ab-card--lightbox" id="gear-13" data-gallery="[&quot;/assets/gallery/gear/gear_13_01.jpg&quot;, &quot;/assets/gallery/gear/gear_13_02.jpg&quot;, &quot;/assets/gallery/gear/gear_13_03.jpg&quot;, &quot;/assets/gallery/gear/gear_13_04.jpg&quot;, &quot;/assets/gallery/gear/gear_13_05.jpg&quot;, &quot;/assets/gallery/gear/gear_13_06.jpg&quot;, &quot;/assets/gallery/gear/gear_13_07.jpg&quot;, &quot;/assets/gallery/gear/gear_13_08.jpg&quot;, &quot;/assets/gallery/gear/gear_13_09.jpg&quot;, &quot;/assets/gallery/gear/gear_13_10.jpg&quot;, &quot;/assets/gallery/gear/gear_13_11.jpg&quot;, &quot;/assets/gallery/gear/gear_13_12.jpg&quot;, &quot;/assets/gallery/gear/gear_13_13.jpg&quot;]" data-caption="初音未来 With You 2021 1/7" data-look="gear-13" data-buy="#">
       <a class="ab-card__media" href="/assets/gallery/gear/gear_13_01.jpg" tabindex="-1" aria-hidden="true">
@@ -21,13 +23,12 @@ hide:
       </a>
       <div class="ab-card__copy">
         <h3 class="ab-card__title">初音未来 With You 2021 1/7<span class="ab-card__price"></span></h3>
-        <div class="ab-fold">
-          <div class="ab-fold__summary">
-            <span class="ab-fold__act">
-              <a class="ab-fold__buy ab-crisp-open" href="#" data-crisp-msg="你好，我想咨询「初音未来 With You 2021 1/7」的实时价格。">购买</a>
-            </span>
-          </div>
-        </div>
+        <p class="ab-card__excerpt">1/7 比例的演唱会造型，和伞、长发与花丛底座一次到位。</p>
+        <p class="ab-card__more ab-card__more--split">
+          <a href="/assets/gallery/gear/gear_13_01.jpg">查看图集</a>
+          <em class="ab-card__or">或</em>
+          <a class="ab-crisp-open" href="#" data-crisp-msg="你好，我要购买「初音未来 With You 2021 1/7」。">购买</a>
+        </p>
 
         <p class="ab-ec-list" data-game="gear-13">
           <span class="ab-ec-loading">正在加载最新价格&hellip;</span>
@@ -42,13 +43,12 @@ hide:
       </a>
       <div class="ab-card__copy">
         <h3 class="ab-card__title">流萤 春日手信<span class="ab-card__price"></span></h3>
-        <div class="ab-fold">
-          <div class="ab-fold__summary">
-            <span class="ab-fold__act">
-              <a class="ab-fold__buy ab-crisp-open" href="#" data-crisp-msg="你好，我想咨询「流萤 春日手信」的实时价格。">购买</a>
-            </span>
-          </div>
-        </div>
+        <p class="ab-card__excerpt">水手领校服配格纹短裙，一手花束一手公文包，小跑而来的春日手信。</p>
+        <p class="ab-card__more ab-card__more--split">
+          <a href="/assets/gallery/gear/gear_14_03.jpg">查看图集</a>
+          <em class="ab-card__or">或</em>
+          <a class="ab-crisp-open" href="#" data-crisp-msg="你好，我要购买「流萤 春日手信」。">购买</a>
+        </p>
 
         <p class="ab-ec-list" data-game="gear-14">
           <span class="ab-ec-loading">正在加载最新价格&hellip;</span>
@@ -63,13 +63,12 @@ hide:
       </a>
       <div class="ab-card__copy">
         <h3 class="ab-card__title">风堇 Hyacine<span class="ab-card__price"></span></h3>
-        <div class="ab-fold">
-          <div class="ab-fold__summary">
-            <span class="ab-fold__act">
-              <a class="ab-fold__buy ab-crisp-open" href="#" data-crisp-msg="你好，我想咨询「风堇 Hyacine」的实时价格。">购买</a>
-            </span>
-          </div>
-        </div>
+        <p class="ab-card__excerpt">粉色双钻卷发配红白荷叶边礼裙，裙摆向两侧展开成翼。</p>
+        <p class="ab-card__more ab-card__more--split">
+          <a href="/assets/gallery/gear/gear_15_05.jpg">查看图集</a>
+          <em class="ab-card__or">或</em>
+          <a class="ab-crisp-open" href="#" data-crisp-msg="你好，我要购买「风堇 Hyacine」。">购买</a>
+        </p>
 
         <p class="ab-ec-list" data-game="gear-15">
           <span class="ab-ec-loading">正在加载最新价格&hellip;</span>
@@ -84,13 +83,12 @@ hide:
       </a>
       <div class="ab-card__copy">
         <h3 class="ab-card__title">游戏机初音未来<span class="ab-card__price"></span></h3>
-        <div class="ab-fold">
-          <div class="ab-fold__summary">
-            <span class="ab-fold__act">
-              <a class="ab-fold__buy ab-crisp-open" href="#" data-crisp-msg="你好，我想咨询「游戏机初音未来」的实时价格。">购买</a>
-            </span>
-          </div>
-        </div>
+        <p class="ab-card__excerpt">盘腿捧着掌机，青色连帽衫配条纹腿套，耳机上挂着自己的名字。</p>
+        <p class="ab-card__more ab-card__more--split">
+          <a href="/assets/gallery/gear/gear_16_01.jpg">查看图集</a>
+          <em class="ab-card__or">或</em>
+          <a class="ab-crisp-open" href="#" data-crisp-msg="你好，我要购买「游戏机初音未来」。">购买</a>
+        </p>
 
         <p class="ab-ec-list" data-game="gear-16">
           <span class="ab-ec-loading">正在加载最新价格&hellip;</span>
@@ -105,13 +103,12 @@ hide:
       </a>
       <div class="ab-card__copy">
         <h3 class="ab-card__title">黄裙明日香<span class="ab-card__price"></span></h3>
-        <div class="ab-fold">
-          <div class="ab-fold__summary">
-            <span class="ab-fold__act">
-              <a class="ab-fold__buy ab-crisp-open" href="#" data-crisp-msg="你好，我想咨询「黄裙明日香」的实时价格。">购买</a>
-            </span>
-          </div>
-        </div>
+        <p class="ab-card__excerpt">淡黄吊带裙的明日香，一手拨发、重心后仰，红凉鞋踩在沙色底座上。</p>
+        <p class="ab-card__more ab-card__more--split">
+          <a href="/assets/gallery/gear/gear_17_04.jpg">查看图集</a>
+          <em class="ab-card__or">或</em>
+          <a class="ab-crisp-open" href="#" data-crisp-msg="你好，我要购买「黄裙明日香」。">购买</a>
+        </p>
 
         <p class="ab-ec-list" data-game="gear-17">
           <span class="ab-ec-loading">正在加载最新价格&hellip;</span>
@@ -126,13 +123,12 @@ hide:
       </a>
       <div class="ab-card__copy">
         <h3 class="ab-card__title">紫伞与黑风衣<span class="ab-card__price"></span></h3>
-        <div class="ab-fold">
-          <div class="ab-fold__summary">
-            <span class="ab-fold__act">
-              <a class="ab-fold__buy ab-crisp-open" href="#" data-crisp-msg="你好，我想咨询「紫伞与黑风衣」的实时价格。">购买</a>
-            </span>
-          </div>
-        </div>
+        <p class="ab-card__excerpt">紫伞撑在肩后，黑风衣下是亮粉内搭、绑带短裤与黑色长靴。</p>
+        <p class="ab-card__more ab-card__more--split">
+          <a href="/assets/gallery/gear/gear_18_03.jpg">查看图集</a>
+          <em class="ab-card__or">或</em>
+          <a class="ab-crisp-open" href="#" data-crisp-msg="你好，我要购买「紫伞与黑风衣」。">购买</a>
+        </p>
 
         <p class="ab-ec-list" data-game="gear-18">
           <span class="ab-ec-loading">正在加载最新价格&hellip;</span>
@@ -147,13 +143,12 @@ hide:
       </a>
       <div class="ab-card__copy">
         <h3 class="ab-card__title">CCSTOYS 山姆·费舍尔<span class="ab-card__price"></span></h3>
-        <div class="ab-fold">
-          <div class="ab-fold__summary">
-            <span class="ab-fold__act">
-              <a class="ab-fold__buy ab-crisp-open" href="#" data-crisp-msg="你好，我想咨询「CCSTOYS 山姆·费舍尔」的实时价格。">购买</a>
-            </span>
-          </div>
-        </div>
+        <p class="ab-card__excerpt">CCSTOYS 的山姆·费舍尔：三目夜视仪、消音步枪与全套战术护具。</p>
+        <p class="ab-card__more ab-card__more--split">
+          <a href="/assets/gallery/gear/gear_19_01.jpg">查看图集</a>
+          <em class="ab-card__or">或</em>
+          <a class="ab-crisp-open" href="#" data-crisp-msg="你好，我要购买「CCSTOYS 山姆·费舍尔」。">购买</a>
+        </p>
 
         <p class="ab-ec-list" data-game="gear-19">
           <span class="ab-ec-loading">正在加载最新价格&hellip;</span>
@@ -168,13 +163,12 @@ hide:
       </a>
       <div class="ab-card__copy">
         <h3 class="ab-card__title">猫猫《药屋少女的呢喃》1/7<span class="ab-card__price"></span></h3>
-        <div class="ab-fold">
-          <div class="ab-fold__summary">
-            <span class="ab-fold__act">
-              <a class="ab-fold__buy ab-crisp-open" href="#" data-crisp-msg="你好，我想咨询「猫猫《药屋少女的呢喃》1/7」的实时价格。">购买</a>
-            </span>
-          </div>
-        </div>
+        <p class="ab-card__excerpt">1/7 比例的猫猫，绿袍紫裙坐在木凳上，身边放着一副药碾。</p>
+        <p class="ab-card__more ab-card__more--split">
+          <a href="/assets/gallery/gear/gear_20_01.jpg">查看图集</a>
+          <em class="ab-card__or">或</em>
+          <a class="ab-crisp-open" href="#" data-crisp-msg="你好，我要购买「猫猫《药屋少女的呢喃》1/7」。">购买</a>
+        </p>
 
         <p class="ab-ec-list" data-game="gear-20">
           <span class="ab-ec-loading">正在加载最新价格&hellip;</span>
@@ -190,7 +184,7 @@ hide:
 
 <div class="admonition note mg-games__note">
   <p class="admonition-title">相关</p>
-  <p><a href="/">首页</a> &middot; <a href="/topup/">代储与礼品卡价格参考</a> &middot; <a href="/gift-cards/">Gift Cards</a> &middot; <a href="/cdkeys/">CDKeys</a> &middot; <a href="/faq/">购买指南</a></p>
+  <p><a href="/">首页</a> &middot; <a href="/topup/">代储与礼品卡价格参考</a> &middot; <a href="/faq/">购买指南</a></p>
 </div>
 
 <script type="application/ld+json">

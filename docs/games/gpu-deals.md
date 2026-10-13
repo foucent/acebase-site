@@ -42,7 +42,7 @@ hide:
       </details>
 
       <p class="ab-hero__more">
-        <a class="ab-crisp-open" href="#" data-crisp-msg="你好，我想咨询 微星 RTX 5060 万图师 的实时价格。">实时价格咨询</a>
+        <a class="ab-crisp-open" href="#" data-crisp-msg="你好，我要购买 微星 RTX 5060 万图师。">购买</a>
       </p>
     </div>
   </article>
@@ -51,7 +51,7 @@ hide:
 
 <div class="admonition note mg-games__note">
   <p class="admonition-title">相关</p>
-  <p><a href="/">首页</a> &middot; <a href="/figures/">FIGURES</a> &middot; <a href="/topup/">代储与礼品卡价格参考</a> &middot; <a href="/gift-cards/">Gift Cards</a> &middot; <a href="/cdkeys/">CDKeys</a> &middot; <a href="/faq/">购买指南</a></p>
+  <p><a href="/">首页</a> &middot; <a href="/figures/">FIGURES</a> &middot; <a href="/topup/">代储与礼品卡价格参考</a> &middot; <a href="/faq/">购买指南</a></p>
 </div>
 
 <script type="application/ld+json">

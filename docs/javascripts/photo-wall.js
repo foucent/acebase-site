@@ -6,8 +6,8 @@
     prev: isZh ? "上一张" : "Previous",
     next: isZh ? "下一张" : "Next",
     crispQuote: isZh
-      ? "你好，我想咨询图库中的商品。"
-      : "Hi, I would like a quote from the photo wall.",
+      ? "你好，我要购买图库中的商品。"
+      : "Hi, I would like to buy from the photo wall.",
     hideToday: isZh ? "今日不再显示" : "Hide for today",
     loadMore: isZh ? "继续滚动加载更多" : "Scroll for more",
     allLoaded: isZh ? "已全部加载" : "All photos loaded",
@@ -246,8 +246,11 @@
         // *document* in the capture phase, so the chat window is already opening
         // by the time this fires — preventDefault here would not stop it, it
         // would only put the box up over the window. /figures/'s cards carry
-        // 「查看图集 · 或 · 查询价格」and the homepage copies six of them whole,
-        // so every one of them is a tile with this link inside it.
+        // 「查看图集 · 或 · 购买」and the homepage copies six of them whole, so
+        // every one of them is a tile with this link inside it. (The row read
+        // 查询价格 until 2026-10-13, when the card came back to this shape off
+        // uncrate's listing card; the second link has been the chat opener
+        // throughout, so only the label moved.)
         if (e.target.closest(".ab-crisp-open")) return;
 
         e.preventDefault();

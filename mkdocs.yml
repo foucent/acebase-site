@@ -73,13 +73,24 @@ plugins:
         games/hok.md: topup/index.md
         games/arena-breakout.md: topup/index.md
         games/where-winds-meet.md: topup/index.md
-        # （`gift-cards/index.md: topup/index.md` 那条 2026-09-21 留在这一行，
-        #   2026-09-24 删掉了 —— 礼品卡从 /topup/ 的第二段搬出来，在同一个 URL
-        #   上重新立成自己的类目，这个地址又有真页面了。）
+        # `gift-cards/index.md: topup/index.md` 与 `cdkeys/index.md:
+        # topup/index.md` 两条 2026-09-21 曾在这一行（当时礼品卡与充值码都是
+        # /topup 的第二、三段），2026-09-24 两页各自立成类目时删掉 —— 地址上了
+        # 真页面，留存根会把页面自己顶走。**2026-10-13 两条又都补回来了**：
+        # 那一天 /gift-cards/（6 张）与 /cdkeys/（7 张）整体并回 /topup/，
+        # 两个目录连页面一起删掉，URL 只剩存根。mkdocs-redirects 的存根会
+        # **带着锚点**跳（`location.href = "../topup/" + (anchor ? "#"+anchor : "")`），
+        # 而这十三张卡的 id 一个都没改，所以 `/cdkeys/#gocash-card`
+        # → `/topup/#gocash-card` 落得到卡片上。
         # 直播代储页 2026-09-21 整页下线 —— 十四个平台按同一张模板重排，成了
         # /topup 的第三段；这一页的生成器、渲染器、样式和数据文件一并退休，
         # 价格改由 prices.json 供。旧 URL 指过去。
         games/live-prices.md: topup/index.md
+        # 2026-10-13：礼品卡与充值码两个类目并回 /topup/，两页的地址只剩存根
+        # （理由与锚点见上面 gift-cards 那一段）。**这两条不能省** —— 页面删了
+        # 而存根不补，/gift-cards/ 与 /cdkeys/ 直接 404。
+        gift-cards/index.md: topup/index.md
+        cdkeys/index.md: topup/index.md
         # 旧 FAQ 页（f8b7ba5 随 shop 目录一起下线）一直没人接手，URL 是 404；
         # /faq/ 是它的继任者，指过去。
         shop/faq-and-updates.md: faq/index.md
@@ -194,12 +205,13 @@ extra:
   family:
     - label: AceBase.cc
       link: https://acebase.cc/
-    # 站内的礼品卡专区 —— 2026-09-21 起是 /topup/ 的第二段，2026-09-24 起
-    # 礼品卡搬出来自己成了一个类目 /gift-cards/，这一格跟着改指那边。
+    # 站内的商品专区 —— 2026-09-21 起是 /topup/ 的第二段，2026-09-24 起礼品卡
+    # 搬出来自己成了一个类目 /gift-cards/，这一格跟着改指那边；**2026-10-13
+    # 礼品卡与充值码两页并回 /topup/，这一格跟着指回 /topup/**。
     # shop.acebase.cc 解析不了，子域开通后把 link 换成
     # https://shop.acebase.cc/ 即可。
     - label: shop.AceBase.cc
-      link: /gift-cards/
+      link: /topup/
   # The site's own channels, read once, by main.html, which declares them as
   # the Organization node's sameAs. header.html used to render them as a menu
   # under the @AceBase handle in the family row; since 2026-09-23 that handle
@@ -245,28 +257,23 @@ nav:
   # 这类锚点仍然有效，正是没动它们换来的。
   - FIGURES: figures/index.md
   - TOP-UP: topup/index.md
-  # 2026-09-24 改名：这一格原来叫 STYLE，装着穿搭写真 9 套与汽车实拍 6 套两个
-  # 图集（2026-09-22 由 WELLNESS 与 CAR 合并而来）。用户把它改名成 Gift Cards、
-  # 清空原卡片，六张明写「礼品卡」的卡从 /topup/ 搬了过来；那十五张图集卡连图
-  # 一起离开站点，旧 /style/ 指回首页。目录随之 git mv 到 docs/gift-cards/ ——
-  # 这个 URL 2026-09-21 空出来过，这次原地复活。
-  # 标签写 Gift Cards（源写法，nav 有 text-transform: uppercase，显示成
-  # GIFT CARDS）—— **带空格的标签要 gen_home.py 认账**，那个正则 2026-09-24
-  # 跟着放宽了，见 scripts/gen_home.py。
-  - Gift Cards: gift-cards/index.md
-  # 2026-09-24 改名：这一格原来叫 GEAR（乒乓球拍与装备实拍，11 组 67 张的灯箱
-  # 图集，2026-09-22 加），整页由仓库外的 _tmp_ocr/gear_prep/prep.py 生成 ——
-  # 那个生成器当天跟着退休，否则下次重跑就把 11 张卡写回来。用户把它改名成
-  # CDKeys、清空原卡片，七张明写「充值卡 / 充值码」的卡从 /topup/ 搬了过来
-  # （就是那页自己称作「7 种充值卡与卡密」的一组）；那 11 组实拍图连图一起离开
-  # 站点。目录随之 git mv 到 docs/cdkeys/。位置不动：放在 Gift Cards 之后、
-  # FAQ 之前。
-  # **注意**：这一轮里旧 /gear/ 曾指回首页（因为那 11 组卡的锚点全没了），但当天
-  # 下午 /gear/ 又被 TECH 那一格拿去用了 —— 现在它是电竞房与桌搭的正式 URL，
-  # redirect_maps 里那条 `gear/index.md: index.md` 已删，别再补回来。
-  - CDKeys: cdkeys/index.md
-  # 2026-09-21 加：全站唯一一份「怎么买」的说明，不挂在任何商品类目下，
-  # 自己是一个入口；放在最后，是这一排里唯一的帮助页。
+  # 2026-09-24 到 2026-10-13 之间，这里还挂着两格：**Gift Cards**（六张礼品卡）
+  # 与 **CDKeys**（七张充值卡与充值码）。两格都是同一个来历 —— 卡片本来在
+  # /topup/ 的第二、三段，2026-09-24 被拆出来、在 /style/（原 STYLE 图集页）
+  # 与 /gear/（原 GEAR 图集页）腾出来的两个 URL 上各自立成类目。
+  #
+  # **2026-10-13 两格一起并回 TOP-UP**（用户：「把两页的商品都移到 /topup/ 后，
+  # 删除这两页」）：十三张卡原样搬回 /topup/，两格从 nav 里删掉，docs/gift-cards/
+  # 与 docs/cdkeys/ 两个目录连页面一起删，URL 在 redirect_maps 里留存根指过来。
+  # 页面回到 09-24 拆分之前的构成（5 代储 + 6 礼品卡 + 7 充值码 = 18 张卡）。
+  # 所以下面 **只剩 FIGURES / TOP-UP / FAQ 三格**。
+  #
+  # 删这两格要连带动的地方，除了 redirect_maps 那两条存根：每个页面页尾的
+  # 「相关」云（原先是 首页 · FIGURES · 代储… · Gift Cards · CDKeys · 购买指南，
+  # 现在只剩 首页 · FIGURES · 购买指南 这种），README.md 的 URL 表，
+  # 以及仓库外 _tmp_ocr/sweep_overflow.py 的 PAGES 清单。**首页不用管**：
+  # scripts/gen_home.py 直接把这份 nav 当类目表，类目没了它自己就不取那两排，
+  # 重跑一次即可 —— 但那也意味着首页从 23 张缩到 12 张（见 README 的说明）。
   - FAQ: faq/index.md
   # SHOP 这一项 2026-09-21 删除：礼品卡搬进 /topup/ 之后，同一个页面挂在
   # TOP-UP 和 SHOP 两个标签下没有意义。2026-09-22 起首页也不再按 SHOP 分组 ——

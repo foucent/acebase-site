@@ -428,7 +428,13 @@
 
    With the height pinned the mask fades its last 22px over empty space and
    paints nothing, which is the same no-op it is on a four-line sentence whose
-   box the fold never dims. */
+   box the fold never dims.
+
+   **2026-10-13：这两条现在没有卡片能触发了。** 最后一批 --shop 卡是
+   /gift-cards/ 与 /cdkeys/ 那十三张，那天并回 /topup/ 时这个类连卡一起摘掉
+   （--picker 早就把它退掉了，见下面那个块），全站再没有 ab-card--shop。
+   规则留着是因为它记的正是 --fold 那条 84px 窗口的来历（下面 --fold 的裁剪
+   还在用同一个数），不是为了让它生效。 */
 .md-typeset .ab-mag .ab-card--shop .ab-ec-list {
   height: 84px;
 }
@@ -1348,8 +1354,12 @@
    fills it. It was shared with /topup/'s nineteen wordmark cards until
    2026-10-05, when those moved onto the 5:2 banner below — their 2400x500
    canvas fitted by width left the mark 30px tall in a mostly-empty frame, so
-   it was worth less than a frame of its own. What is left on the plate is the
-   3:4 art, on /gift-cards/ and /cdkeys/, which fills it edge for edge.
+   it was worth less than a frame of its own. **2026-10-13 finished the split**:
+   /gift-cards/ and /cdkeys/ (the two pages still drawing 3:4 product shots into
+   this plate) were merged back into /topup/ and deleted, and their thirteen
+   cards came over onto the wordmark banner with the five games already there.
+   Every price card on the site is a banner card now, so what is left on the
+   plate is /figures/'s --figure cards.
 
    The frame's 24/5 comes from .ab-card--brand above; this section is after it
    in the file and matches at the same 0-4-1, which is what retires it for
@@ -1358,7 +1368,7 @@
 .md-typeset .ab-mag .ab-card--plate .ab-card__media {
   /* Positioned, because it is the badge's containing block and nothing else
      on the card is: without this the badge's nearest positioned ancestor is
-     .ab-section, and all thirty-two of them pile into its top-left corner. */
+     .ab-section, and every one of them piles into its top-left corner. */
   position: relative;
   width: 240px;
   max-width: 100%;
@@ -1384,6 +1394,86 @@
   border: 0;
 }
 
+/* The figure cards fill the frame rather than sit in it (2026-10-13, the user:
+   every card's picture should have 「和 CCSTOYS 那张一样」的高宽比).
+
+   `contain` draws each file at its own shape, so the eight covers were eight
+   different pictures inside one frame — measured off the live page, the drawn
+   box ran 144.95x320 (gear-16, a 1440x3179 screenshot) to a full 240x320
+   (gear-17/18/19, all 1440x1920), i.e. 0.453 to 0.75 wide, and the five that
+   were not already 3:4 letterboxed against the frame's sides. `cover` draws
+   every one of them as 240x320, which is the 0.75 of the CCSTOYS cover.
+
+   This is scoped to --figure and not to --plate because `cover` is only safe
+   where the file is at least as wide as the frame: it crops, and a centre crop
+   of a 3:4 file crops nothing (which is why it looks like a no-op on the three
+   that already fill). On the five that do not, it takes background rather than
+   subject — 0.75.4 keeps 99% of its file, 0.724 97%, the 0.5625 75% (the empty
+   air above and floor below the figure), and the 0.453 60% (white margin above,
+   foreground below; the seated figure is centred and survives whole). See
+   _tmp_ocr/_fig_cover_sheet.py, which prints the kept fraction per cover and
+   lays the eight crops out side by side — the numbers say a crop happens, only
+   the sheet says the crop is harmless.
+
+   `object-position` is written out as the two percentages rather than left to
+   the initial value so "which part survives" is greppable: it is a centre crop,
+   and moving it is how you would choose a different window. */
+.md-typeset .ab-mag .ab-card--figure .ab-card__media img {
+  object-fit: cover;
+  object-position: 50% 50%;
+}
+
+/* ---------- the figure cards, on /figures/ -------------------------------
+
+   The only cards left on the plate, and the site's only card that is both a
+   price card and a lightbox tile at once. They are uncrate's listing template
+   read straight across — title, a serif sentence, and the 「查看图集 或 购买」
+   action row — which is the shape /figures/ had before 2026-10-09, when
+   4b1ba1e moved it onto the price pages' plate and traded the sentence for a
+   购买 under the fold. The sentence is what came back on 2026-10-13, at the
+   user's request, off the Pumpkin Meister card on uncrate.com.
+
+   Almost nothing needs a rule of its own, which is the point of doing it this
+   way: .ab-card__excerpt is already uncrate's 17/25 serif dek (it was written
+   for this and had no user until now), .ab-card__more--split is the site's
+   two-link row with the 或 between the links, and .ab-card__more carries the
+   `margin: auto 0 0` that pins that row to the foot of the copy column. The
+   price stays in the title, where every other price card on the site puts it,
+   so games-prices.js's fill needs no change at all — it looks for
+   `.ab-card__title .ab-card__price` and still finds it.
+
+   What is left is the block below. `.ab-ec-list` is the script's handle on
+   these cards rather than a price list: --figure sends it down a branch that
+   fills the title's price and then empties the block (these pieces have one
+   price each, so there is no ladder to draw). What remains is an empty <p>
+   still paying .ab-ec-list's own `margin: 14px 0 0`, which would stand between
+   the action row and the card's foot and make every card 14px taller than the
+   thing it is copying — uncrate ends its card under the action row. Hidden
+   while empty, so the card ends where the row does. Before the fetch, and with
+   the script off, the block still shows its 「正在加载最新价格…」 line rather
+   than a gap, which is the honest thing for it to say.
+
+   One thing below is copy, not CSS, and it is worth knowing before editing a
+   sentence: this grid is .ab-list--expandable, so `align-items: start` means
+   the cards are sized to their own content and a dek that wraps to a third
+   line at three columns makes its whole row ragged by one line. All eight are
+   held at two lines at 1440/1200/1024 for that reason; the longest was trimmed
+   on 2026-10-13 (see _tmp_ocr/_dek_fit.py, which is how you check a candidate
+   rather than count characters — CJK punctuation cannot open a line). */
+.md-typeset .ab-mag .ab-card--figure .ab-ec-list:empty {
+  display: none;
+}
+
+/* The 16px the price pages take under their frame, for the same reason and
+   measured the same way: the plate's own margin is above it, and without this
+   the frame lands directly on the title — 0px between them, because the copy
+   column has no top padding of its own. On --picker that was an edit the user
+   asked for; here it is the interval uncrate keeps between its image and the
+   copy under it, which is what the card is being copied from. */
+.md-typeset .ab-mag .ab-card--figure .ab-card__copy {
+  padding-top: 16px;
+}
+
 /* ---------- the wordmark cards' banner, on /topup/ ------------------------
 
    Every card on /topup/ carries a 2400x500 wordmark banner: the mark centred
@@ -1407,9 +1497,12 @@
    radius, the position:relative the badge needs, the 16px top margin.
 
    Its own modifier and not `--brand`, because every price card on the site
-   is --brand; only /topup/'s nineteen draw wordmarks. Rides on the article
-   the way --plate and --picker do, so gen_home.py carries it to the homepage
-   copies — re-run that after editing /topup/. */
+   is --brand; /topup/'s eighteen are the only cards that draw wordmarks, and
+   since 2026-10-13 they are the only price cards at all — /gift-cards/ and
+   /cdkeys/ came back onto this page and were deleted, which is why the
+   thirteen cards' ab-card--shop pinning came off with them. Rides on the
+   article the way --plate and --picker do, so gen_home.py carries it to the
+   homepage copies — re-run that after editing /topup/. */
 .md-typeset .ab-mag .ab-card--plate.ab-card--wordmark .ab-card__media {
   width: calc(100% - 40px);
   aspect-ratio: 5 / 2;
@@ -1558,10 +1651,27 @@
     margin-left: 6px;
     font-size: 14px;
   }
+
+  /* The sentence comes down with them. uncrate sets its dek at 17 against a
+     28px title — the sentence is smaller than the name it sits under. At three
+     columns our title is 17, the same number, so the dek left at 17 would be
+     exactly as large as the thing it is describing and the card would read as
+     two competing headlines. 15/22 keeps uncrate's relationship rather than
+     its absolute size, and 22 is the line the GPU cards' 16px sentence takes
+     one step up. Below this breakpoint the copy column is wider and both the
+     title and the dek stay at their full sizes. */
+  .md-typeset .ab-mag .ab-list--pricing .ab-card__excerpt {
+    font-size: 15px;
+    line-height: 22px;
+  }
 }
 
 
-/* ---------- the spec picker, on all three price pages --------------------
+/* ---------- the spec picker, on the price page ---------------------------
+
+   ("all three price pages" until 2026-10-13, when /gift-cards/ and /cdkeys/
+   merged back into /topup/ and were deleted — every card below that used to be
+   described as being on one of three pages is now one of that page's eighteen.)
 
    On 2026-10-04 the user had /cdkeys/ read like mygear.top's /rubbers/ card:
    a labelled <select> where the price ladder used to be, and, in the same
@@ -1574,16 +1684,20 @@
    touches .ab-card__media at all. The square and its crop were a matched pair:
    a square holding 360x480 art only fills with `cover`, and `cover` in a
    square is precisely what made the picture smaller than the art it held.
-   Both pages now take the plate above — 240x320 at 3/4 with `contain` — and
-   all seven files are 360x480 exactly, so contain draws every one of them at
+   Both pages then took the plate above — 240x320 at 3/4 with `contain` — and
+   all seven files are 360x480 exactly, so contain drew every one of them at
    the frame's full 240x320, nothing letterboxed, which is what /gift-cards/
    was already doing. Measured, both pages, in _tmp_ocr/probe_frame_size.py.
+   **That frame is history too**: on 2026-10-05 these cards moved onto the 5:2
+   wordmark banner — the product shots they had been drawing came out — and on
+   2026-10-13 the two pages merged into /topup/, so no price card draws the
+   plate or the 3:4 art at all any more. See the --wordmark block below.
 
-   ab-card--picker rides on the <article>, the way --plate does, so the six
-   /cdkeys/ cards scripts/gen_home.py copies to the homepage take the picker
-   along with them. Scoping this to the grid div instead would leave those six
-   with the new markup and none of this styling — an unstyled <select> — and
-   re-running gen_home.py is what carries the markup over in the first place.
+   ab-card--picker rides on the <article>, the way --plate does, so the cards
+   scripts/gen_home.py copies to the homepage take the picker along with them.
+   Scoping this to the grid div instead would leave them with the new markup and
+   none of this styling — an unstyled <select> — and re-running gen_home.py is
+   what carries the markup over in the first place.
 
    Two things this block does, and the one it deliberately does not re-open:
 
