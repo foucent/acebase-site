@@ -93,7 +93,7 @@ hide:
 
 <div class="admonition note mg-games__note">
   <p class="admonition-title">相关</p>
-  <p><a href="/">首页</a> &middot; <a href="/figures/">FIGURES</a> &middot; <a href="/topup/">代储与礼品卡价格参考</a></p>
+  <p><a href="/">首页</a> &middot; <a href="/sourcing/">代购与代拍</a> &middot; <a href="/topup/">代储与礼品卡价格参考</a> &middot; <a href="/boosting/">游戏代练与陪玩</a> &middot; <a href="/services/">游戏调试服务</a></p>
 </div>
 
 <script type="application/ld+json">

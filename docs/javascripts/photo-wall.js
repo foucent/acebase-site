@@ -22,7 +22,8 @@
   // went with it); the figure and desk galleries are what wear the class now —
   // /tech/ until 2026-09-24, then /gear/ after that day's rename TECH → GEAR,
   // and /figures/ since 2026-10-06 (the desk sets dropped and the path made to
-  // match its FIGURES label) — plus the homepage, which carries a slice of its
+  // match its FIGURES label) — which became /sourcing/ on 2026-10-20 — plus
+  // the homepage, which carries a slice of its
   // own cards. The earlier /gear/ (GEAR as the eleven ping-pong photo sets)
   // wore it too, until the same day's second rename turned that GEAR into
   // CDKeys and took its sets off the site — which is what freed that URL.
@@ -245,7 +246,7 @@
         // more reason than the fold's: crisp.js binds its handler on the
         // *document* in the capture phase, so the chat window is already opening
         // by the time this fires — preventDefault here would not stop it, it
-        // would only put the box up over the window. /figures/'s cards carry
+        // would only put the box up over the window. /sourcing/'s cards carry
         // 「查看图集 · 或 · 购买」and the homepage copies six of them whole, so
         // every one of them is a tile with this link inside it. (The row read
         // 查询价格 until 2026-10-13, when the card came back to this shape off

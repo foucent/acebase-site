@@ -1,13 +1,36 @@
 ---
-title: 手办实拍图集 | FIGURES
-description: AceBase FIGURES —— 八套手办实拍，共 63 张，点开卡片即可在页内看整套。
-updated: 2026-10-13
+title: 代购与代拍 | 手办、谷子、周边 代购服务
+description: AceBase 代购与代拍：手办、谷子与限定周边的代购代拍，把商品链接发给客服报价，确认后下单代付、到货发出；下面是八套手办实拍样例，具体渠道、费用与时效以在线咨询为准。
+updated: 2026-10-20
 hide:
   - title
   - toc
 ---
 
+<!-- 2026-10-20：类目从 FIGURES 改成 SOURCING，页面从 /figures/ 改名
+     /sourcing/（用户：「将 /figures/ 改为代购」，随后「将链接要改成 SOURCING」）。
+     问过之后是**手办卡全留、只改栏目与文案**：目录先 git mv 到 docs/proxy-buy/
+     （标签 PROXY BUY），同日又 git mv 到 docs/sourcing/，标签定成 SOURCING；
+     标题、description、页头与导语改成代购说明，页尾补一段代购流程。
+
+     **八张卡的 id（gear-13…20）、data-gallery、卡片文案、图片资源
+     /assets/gallery/gear/ 一个都没动** —— 锚点一改名就救不回来（见 mkdocs.yml
+     里 /tech/ 那段的注释），而且 63 张图还在原处。redirect_maps 里
+     `figures/`、`proxy-buy/`、`gear/`、`tech/` 四条存根全部直接指这里，
+     mkdocs-redirects 会带着锚点跳，所以 /figures/#gear-13、/proxy-buy/#gear-13
+     都仍然落得到卡片上；不指旧存根，免得两跳。
+
+     卡片上原有的「正在加载最新价格」占位（ab-ec-list，data-game="gear-NN"）
+     原样保留：games-prices.js 对没有报价的卡不填内容，代购价一律走咨询。 -->
+
 <div class="ab-mag" markdown="0">
+
+  <section class="ab-section">
+    <header class="ab-section__head">
+      <h1 class="ab-section__title">代购与代拍</h1>
+    </header>
+    <p class="ab-section__lead">手办、谷子与限定周边都可以代购代拍：把商品链接发给客服，核对款式与库存后报价，确认再由我们下单代付，到货后发出。下面是八套手办的实拍样例，点开卡片可以看整套图；具体渠道、费用与时效以在线咨询为准。</p>
+  </section>
 
   <section class="ab-section">
     <div class="ab-list ab-list--expandable ab-list--pricing">
@@ -182,9 +205,20 @@ hide:
 
 </div>
 
+## 代购流程 {: #how }
+
+一单代购在一次在线咨询里走完：
+
+1. **发链接** —— 把商品链接、款式和数量发给客服，尺码、版本或特典要求一并说清。
+2. **报价** —— 客服核对卖家与库存后，把商品价、代购与运费合成一个总价报给你。
+3. **下单代付** —— 你确认后我们下单代付；限时、限量或需要抢拍的商品请提前说明。
+4. **到货发出** —— 卖家发货后我们收货，再按你选的方式寄出，单号在同一个聊天窗口给你。
+
+价格与库存以卖家页面为准；代购费、运费与到货时间以客服报价为准。
+
 <div class="admonition note mg-games__note">
   <p class="admonition-title">相关</p>
-  <p><a href="/">首页</a> &middot; <a href="/topup/">代储与礼品卡价格参考</a> &middot; <a href="/faq/">购买指南</a></p>
+  <p><a href="/">首页</a> &middot; <a href="/topup/">代储与礼品卡价格参考</a> &middot; <a href="/boosting/">游戏代练与陪玩</a> &middot; <a href="/services/">游戏调试服务</a> &middot; <a href="/faq/">购买指南</a></p>
 </div>
 
 <script type="application/ld+json">
@@ -193,15 +227,15 @@ hide:
   "@graph": [
     {
       "@type": "WebPage",
-      "name": "手办实拍图集",
-      "description": "AceBase FIGURES —— 八套手办实拍，共 63 张，点开卡片即可在页内看整套。",
-      "url": "https://acebase.cc/figures/"
+      "name": "代购与代拍",
+      "description": "AceBase 代购与代拍：手办、谷子与限定周边的代购代拍，发链接报价、确认后下单代付、到货发出；下面是八套手办实拍样例。",
+      "url": "https://acebase.cc/sourcing/"
     },
     {
       "@type": "BreadcrumbList",
       "itemListElement": [
         { "@type": "ListItem", "position": 1, "name": "首页", "item": "https://acebase.cc/" },
-        { "@type": "ListItem", "position": 2, "name": "手办实拍图集", "item": "https://acebase.cc/figures/" }
+        { "@type": "ListItem", "position": 2, "name": "代购与代拍", "item": "https://acebase.cc/sourcing/" }
       ]
     }
   ]
@@ -217,24 +251,24 @@ hide:
   "@graph": [
     {
       "@type": "ItemList",
-      "name": "手办实拍图集",
+      "name": "代购样例：八套手办实拍",
       "numberOfItems": "63",
       "itemListElement": [
-        { "@type": "ListItem", "position": 1, "item": { "@type": "ImageObject", "name": "初音未来 With You 2021 1/7", "contentUrl": "https://acebase.cc/assets/gallery/gear/gear_13_01.jpg", "url": "https://acebase.cc/figures/#gear-13" } },
-        { "@type": "ListItem", "position": 2, "item": { "@type": "ImageObject", "name": "流萤 春日手信", "contentUrl": "https://acebase.cc/assets/gallery/gear/gear_14_03.jpg", "url": "https://acebase.cc/figures/#gear-14" } },
-        { "@type": "ListItem", "position": 3, "item": { "@type": "ImageObject", "name": "风堇 Hyacine", "contentUrl": "https://acebase.cc/assets/gallery/gear/gear_15_05.jpg", "url": "https://acebase.cc/figures/#gear-15" } },
-        { "@type": "ListItem", "position": 4, "item": { "@type": "ImageObject", "name": "游戏机初音未来", "contentUrl": "https://acebase.cc/assets/gallery/gear/gear_16_01.jpg", "url": "https://acebase.cc/figures/#gear-16" } },
-        { "@type": "ListItem", "position": 5, "item": { "@type": "ImageObject", "name": "黄裙明日香", "contentUrl": "https://acebase.cc/assets/gallery/gear/gear_17_04.jpg", "url": "https://acebase.cc/figures/#gear-17" } },
-        { "@type": "ListItem", "position": 6, "item": { "@type": "ImageObject", "name": "紫伞与黑风衣", "contentUrl": "https://acebase.cc/assets/gallery/gear/gear_18_03.jpg", "url": "https://acebase.cc/figures/#gear-18" } },
-        { "@type": "ListItem", "position": 7, "item": { "@type": "ImageObject", "name": "CCSTOYS 山姆·费舍尔", "contentUrl": "https://acebase.cc/assets/gallery/gear/gear_19_01.jpg", "url": "https://acebase.cc/figures/#gear-19" } },
-        { "@type": "ListItem", "position": 8, "item": { "@type": "ImageObject", "name": "猫猫《药屋少女的呢喃》1/7", "contentUrl": "https://acebase.cc/assets/gallery/gear/gear_20_01.jpg", "url": "https://acebase.cc/figures/#gear-20" } }
+        { "@type": "ListItem", "position": 1, "item": { "@type": "ImageObject", "name": "初音未来 With You 2021 1/7", "contentUrl": "https://acebase.cc/assets/gallery/gear/gear_13_01.jpg", "url": "https://acebase.cc/sourcing/#gear-13" } },
+        { "@type": "ListItem", "position": 2, "item": { "@type": "ImageObject", "name": "流萤 春日手信", "contentUrl": "https://acebase.cc/assets/gallery/gear/gear_14_03.jpg", "url": "https://acebase.cc/sourcing/#gear-14" } },
+        { "@type": "ListItem", "position": 3, "item": { "@type": "ImageObject", "name": "风堇 Hyacine", "contentUrl": "https://acebase.cc/assets/gallery/gear/gear_15_05.jpg", "url": "https://acebase.cc/sourcing/#gear-15" } },
+        { "@type": "ListItem", "position": 4, "item": { "@type": "ImageObject", "name": "游戏机初音未来", "contentUrl": "https://acebase.cc/assets/gallery/gear/gear_16_01.jpg", "url": "https://acebase.cc/sourcing/#gear-16" } },
+        { "@type": "ListItem", "position": 5, "item": { "@type": "ImageObject", "name": "黄裙明日香", "contentUrl": "https://acebase.cc/assets/gallery/gear/gear_17_04.jpg", "url": "https://acebase.cc/sourcing/#gear-17" } },
+        { "@type": "ListItem", "position": 6, "item": { "@type": "ImageObject", "name": "紫伞与黑风衣", "contentUrl": "https://acebase.cc/assets/gallery/gear/gear_18_03.jpg", "url": "https://acebase.cc/sourcing/#gear-18" } },
+        { "@type": "ListItem", "position": 7, "item": { "@type": "ImageObject", "name": "CCSTOYS 山姆·费舍尔", "contentUrl": "https://acebase.cc/assets/gallery/gear/gear_19_01.jpg", "url": "https://acebase.cc/sourcing/#gear-19" } },
+        { "@type": "ListItem", "position": 8, "item": { "@type": "ImageObject", "name": "猫猫《药屋少女的呢喃》1/7", "contentUrl": "https://acebase.cc/assets/gallery/gear/gear_20_01.jpg", "url": "https://acebase.cc/sourcing/#gear-20" } }
       ]
     },
     {
       "@type": "ImageGallery",
-      "name": "手办实拍图集",
-      "description": "AceBase FIGURES —— 八套手办实拍，共 63 张，更新于 2026-10-09。",
-      "url": "https://acebase.cc/figures/"
+      "name": "代购样例：八套手办实拍",
+      "description": "AceBase 代购样例 —— 八套手办实拍，共 63 张，更新于 2026-10-20。",
+      "url": "https://acebase.cc/sourcing/"
     }
   ]
 }

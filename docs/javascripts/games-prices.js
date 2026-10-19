@@ -196,7 +196,7 @@
       return;
     }
 
-    // /figures/ draws neither picker nor ladder: each card is one piece at one
+    // /sourcing/ draws neither picker nor ladder: each card is one piece at one
     // price, and that price is the entry figure already written into the title
     // by the block above. The block is emptied rather than left holding its
     // 「正在加载最新价格…」 placeholder — a card that ships a loading line and

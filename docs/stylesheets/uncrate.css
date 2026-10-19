@@ -1359,7 +1359,7 @@
    this plate) were merged back into /topup/ and deleted, and their thirteen
    cards came over onto the wordmark banner with the five games already there.
    Every price card on the site is a banner card now, so what is left on the
-   plate is /figures/'s --figure cards.
+   plate is /sourcing/'s --figure cards.
 
    The frame's 24/5 comes from .ab-card--brand above; this section is after it
    in the file and matches at the same 0-4-1, which is what retires it for
@@ -1423,12 +1423,12 @@
   object-position: 50% 50%;
 }
 
-/* ---------- the figure cards, on /figures/ -------------------------------
+/* ---------- the figure cards, on /sourcing/ -------------------------------
 
    The only cards left on the plate, and the site's only card that is both a
    price card and a lightbox tile at once. They are uncrate's listing template
    read straight across — title, a serif sentence, and the 「查看图集 或 购买」
-   action row — which is the shape /figures/ had before 2026-10-09, when
+   action row — which is the shape this page had before 2026-10-09, when
    4b1ba1e moved it onto the price pages' plate and traded the sentence for a
    购买 under the fold. The sentence is what came back on 2026-10-13, at the
    user's request, off the Pumpkin Meister card on uncrate.com.
@@ -1472,6 +1472,67 @@
    copy under it, which is what the card is being copied from. */
 .md-typeset .ab-mag .ab-card--figure .ab-card__copy {
   padding-top: 16px;
+}
+
+/* ---------- the service card, on /services/ and /boosting/ ----------------
+
+   /services/ was added on 2026-10-20 with a single card on it — the Delta
+   Force PC-tuning service at $9.9 — and the card is /topup/'s price card with
+   its price ladder left off: a service has one price, drawn inline at the end
+   of the title, and no tiers to pick from. The plate and the inline price and
+   the lift are --plate's; the action row is .ab-card__more's (one 购买, no
+   gallery link — the card has no lightbox). The page grew to six of these
+   cards the same day, one per game, and /boosting/ then took the same card for
+   its four 代练 listings — they are square promotional covers as well, with the
+   same one-price/one-buy shape. What is left here is the one interval the
+   other shapes give their copy.
+
+   --picker and --figure both carry a 16px top padding for the same reason:
+   the frame floats 16px above the copy, and without it the picture lands
+   directly on the title — the 0px /cdkeys/ was pulled up for on 2026-10-04.
+   This card wears neither class. --picker would turn a ladder into a centred
+   block (there is none); --figure would draw the picture with `cover`, and
+   every cover on this page is square, with the promotional art's claims
+   running to both edges, so a centre crop into the 3:4 plate would cut the
+   first and last characters of every claim.
+ */
+.md-typeset .ab-mag .ab-card--service .ab-card__copy {
+  padding-top: 16px;
+}
+
+/* The frame is square, because every file behind this card is. The plate's
+   3:4 held a square shot with `contain`, which is 40px of the card's own white
+   above the art and 40px below it — and the 40 below, read under the copy's
+   16px, is what made the title look padded on top. The first version of the
+   card kept the plate for the price cards' silhouette; the user asked for that
+   air out on 2026-10-20, and a square frame is the honest one for square art:
+   the cover's claims run to all four edges, so nothing needed the letterbox,
+   and the card is 80px shorter. `contain` stays the fitting rule — it is what
+   draws a square file edge to edge in a square frame, and it keeps the crop
+   from ever coming back to the photo.
+
+   The badge goes with the band it sat in. `--plate`'s badge is drawn at 10/10
+   over the frame, which on a wordmark banner is its clear top strip and on the
+   plate was the letterbox above the art; with the frame square there is no
+   clear corner — the promo's yellow header runs the full width — and a label
+   laid over "定制版三角洲画面优化" would be covering the very words the card is
+   selling. The card's title and the page's lead already say what it is, so the
+   span comes out of the markup rather than being hidden here.
+
+   And the title's two-line reservation comes off. The `min-height: 2lh` up the
+   file (and its 3lh sibling) exists so that cards sharing a grid row stay
+   level when one name wraps and its neighbour does not; every name on the two
+   pages fits on one line at 17px (three columns) and at 26px (two), so the
+   reservation held up nothing and only put an empty second line — 19.5px at
+   17px, 30px at 26px — between the name and the sentence under it. The probes
+   keep asserting that every excerpt in a row starts level, which is what that
+   buys back. */
+.md-typeset .ab-mag .ab-card--service .ab-card__media {
+  aspect-ratio: 1 / 1;
+}
+
+.md-typeset .ab-mag .ab-card--service .ab-card__title {
+  min-height: 0;
 }
 
 /* ---------- the wordmark cards' banner, on /topup/ ------------------------

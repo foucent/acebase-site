@@ -12,7 +12,7 @@ hide:
 
   <section class="ab-section" id="latest">
     <header class="ab-section__head">
-      <span class="ab-stamp" aria-hidden="true">更新于 2026-10-13</span>
+      <span class="ab-stamp" aria-hidden="true">更新于 2026-10-20</span>
       <h2 class="ab-section__title">最近更新</h2>
     </header>
     <div class="ab-list ab-list--feed">
@@ -134,6 +134,126 @@ hide:
           <span class="ab-ec-loading">正在加载最新价格&hellip;</span>
         </p>
 
+      </div>
+    </article>
+    <article class="ab-card ab-card--brand ab-card--plate ab-card--service" id="valorant-boosting">
+      <div class="ab-card__media">
+        <img src="/assets/boosting/valorant-boosting/01.jpg" alt="瓦罗兰特（VALORANT）外服代练服务" decoding="async">
+      </div>
+      <div class="ab-card__copy">
+        <h3 class="ab-card__title">瓦罗兰特 代练<span class="ab-card__price">$9.9</span></h3>
+        <p class="ab-card__excerpt">欧服、美服、澳服等外服全覆盖；全段位人工代打，战绩不满意可沟通；首单立减、封号包赔，下单即上号。</p>
+        <p class="ab-card__more">
+          <a class="ab-crisp-open" href="#" data-crisp-msg="你好，我要购买 瓦罗兰特 外服代练（$9.9）。">购买</a>
+        </p>
+      </div>
+    </article>
+    <article class="ab-card ab-card--brand ab-card--plate ab-card--service" id="lol-boosting">
+      <div class="ab-card__media">
+        <img src="/assets/boosting/lol-boosting/01.jpg" alt="英雄联盟 LOL 外服代练服务" loading="lazy" decoding="async">
+      </div>
+      <div class="ab-card__copy">
+        <h3 class="ab-card__title">英雄联盟 代练<span class="ab-card__price">$9.9</span></h3>
+        <p class="ab-card__excerpt">美服、欧服、澳服、日服、台服；青铜到钻石的定位赛与每段代练都能接，钻石四到大师可谈；单双排、Flex、云顶之弈与代肝一并安排，王者团队、包高胜率，输多包补。</p>
+        <p class="ab-card__more">
+          <a class="ab-crisp-open" href="#" data-crisp-msg="你好，我要购买 英雄联盟 外服代练（$9.9）。">购买</a>
+        </p>
+      </div>
+    </article>
+    <article class="ab-card ab-card--brand ab-card--plate ab-card--service" id="lol-coaching">
+      <div class="ab-card__media">
+        <img src="/assets/boosting/lol-coaching/01.jpg" alt="英雄联盟 LOL 外服陪玩服务" loading="lazy" decoding="async">
+      </div>
+      <div class="ab-card__copy">
+        <h3 class="ab-card__title">英雄联盟 陪玩<span class="ab-card__price">$9.9</span></h3>
+        <p class="ab-card__excerpt">美服、欧服、澳服、日服、台服；匹配按小时、青铜到翡翠按局结赢或 ACE；双排上分，王者团队带打，胜率与效率有保障。</p>
+        <p class="ab-card__more">
+          <a class="ab-crisp-open" href="#" data-crisp-msg="你好，我要购买 英雄联盟 外服陪玩（$9.9）。">购买</a>
+        </p>
+      </div>
+    </article>
+    <article class="ab-card ab-card--brand ab-card--plate ab-card--service" id="wot-boosting">
+      <div class="ab-card__media">
+        <img src="/assets/boosting/wot-boosting/01.jpg" alt="坦克世界（World of Tanks）外服代练服务" loading="lazy" decoding="async">
+      </div>
+      <div class="ab-card__copy">
+        <h3 class="ab-card__title">坦克世界 代练<span class="ab-card__price">$9.9</span></h3>
+        <p class="ab-card__excerpt">亚服、美服、欧服；纯手工代练，过程可直播；银币、包线、天梯、领土、三环、黑岩都能做，另有陪玩；线下工作室、大神团队，首单 9 折。</p>
+        <p class="ab-card__more">
+          <a class="ab-crisp-open" href="#" data-crisp-msg="你好，我要购买 坦克世界 外服代练（$9.9）。">购买</a>
+        </p>
+      </div>
+    </article>
+    <article class="ab-card ab-card--brand ab-card--plate ab-card--service" id="delta-force-pc-tuning">
+      <div class="ab-card__media">
+        <img src="/assets/services/delta-force-pc-tuning/01.jpg" alt="三角洲行动 电脑调试与画面优化服务" decoding="async">
+      </div>
+      <div class="ab-card__copy">
+        <h3 class="ab-card__title">三角洲行动 电脑调试<span class="ab-card__price">$9.9</span></h3>
+        <p class="ab-card__excerpt">K 模组让画面清晰不模糊，超级优化提升 fps、去掉杂乱画面，ICC 滤镜降低曝光；V5K 模型调机，不改游戏文件，不封号。</p>
+        <p class="ab-card__more">
+          <a class="ab-crisp-open" href="#" data-crisp-msg="你好，我要购买 三角洲行动 电脑调试与画面优化（$9.9）。">购买</a>
+        </p>
+      </div>
+    </article>
+    <article class="ab-card ab-card--brand ab-card--plate ab-card--service" id="cs2-pc-tuning">
+      <div class="ab-card__media">
+        <img src="/assets/services/cs2-pc-tuning/01.jpg" alt="CS2 / CS:GO 电脑调试与帧数优化服务" loading="lazy" decoding="async">
+      </div>
+      <div class="ab-card__copy">
+        <h3 class="ab-card__title">CS2 电脑调试<span class="ab-card__price">$9.9</span></h3>
+        <p class="ab-card__excerpt">CS2 / CS:GO 的黑屏、打不开、弹窗报错、闪退一并修复；操作手感、画面流畅、帧数提升、4:3 画面设置与稳定性，一对一远程修复，修不好全额退。</p>
+        <p class="ab-card__more">
+          <a class="ab-crisp-open" href="#" data-crisp-msg="你好，我要购买 CS2 / CS:GO 电脑调试（$9.9）。">购买</a>
+        </p>
+      </div>
+    </article>
+    <article class="ab-card ab-card--brand ab-card--plate ab-card--service" id="lol-pc-tuning">
+      <div class="ab-card__media">
+        <img src="/assets/services/lol-pc-tuning/01.jpg" alt="英雄联盟 LOL 电脑调试与帧数优化服务" loading="lazy" decoding="async">
+      </div>
+      <div class="ab-card__copy">
+        <h3 class="ab-card__title">英雄联盟 电脑调试<span class="ab-card__price">$9.9</span></h3>
+        <p class="ab-card__excerpt">国服外服顶级调试：超高稳定帧率、画面丝滑流畅、延迟更低；修复卡顿掉帧，优化延迟走位，不成功不收费。</p>
+        <p class="ab-card__more">
+          <a class="ab-crisp-open" href="#" data-crisp-msg="你好，我要购买 英雄联盟 电脑调试（$9.9）。">购买</a>
+        </p>
+      </div>
+    </article>
+    <article class="ab-card ab-card--brand ab-card--plate ab-card--service" id="pubg-pc-tuning">
+      <div class="ab-card__media">
+        <img src="/assets/services/pubg-pc-tuning/01.jpg" alt="绝地求生 PUBG 电脑调试与帧数优化服务" loading="lazy" decoding="async">
+      </div>
+      <div class="ab-card__copy">
+        <h3 class="ab-card__title">绝地求生 电脑调试<span class="ab-card__price">$9.9</span></h3>
+        <p class="ab-card__excerpt">工程师 1 对 1 远程精调，职业同款：帧数优化、蓝光画质，卡顿、掉帧与声音一并调整。</p>
+        <p class="ab-card__more">
+          <a class="ab-crisp-open" href="#" data-crisp-msg="你好，我要购买 绝地求生 电脑调试（$9.9）。">购买</a>
+        </p>
+      </div>
+    </article>
+    <article class="ab-card ab-card--brand ab-card--plate ab-card--service" id="apex-pc-tuning">
+      <div class="ab-card__media">
+        <img src="/assets/services/apex-pc-tuning/01.jpg" alt="Apex 英雄 电脑调试与帧数优化服务" loading="lazy" decoding="async">
+      </div>
+      <div class="ab-card__copy">
+        <h3 class="ab-card__title">Apex 电脑调试<span class="ab-card__price">$9.9</span></h3>
+        <p class="ab-card__excerpt">优化帧数、提高性能，解决卡顿，精调参数；改善画面撕裂、提高流畅度；CPU、内存条与延迟参数一并精调。</p>
+        <p class="ab-card__more">
+          <a class="ab-crisp-open" href="#" data-crisp-msg="你好，我要购买 Apex 电脑调试（$9.9）。">购买</a>
+        </p>
+      </div>
+    </article>
+    <article class="ab-card ab-card--brand ab-card--plate ab-card--service" id="valorant-pc-tuning">
+      <div class="ab-card__media">
+        <img src="/assets/services/valorant-pc-tuning/01.jpg" alt="无畏契约 VALORANT 电脑调试与帧数优化服务" loading="lazy" decoding="async">
+      </div>
+      <div class="ab-card__copy">
+        <h3 class="ab-card__title">无畏契约 电脑调试<span class="ab-card__price">$9.9</span></h3>
+        <p class="ab-card__excerpt">一对一调试，职业选手同款：帧数更高、画质清晰、拉枪丝滑、脚步清晰，解决卡死、消除噪点；调试无效全额秒退。</p>
+        <p class="ab-card__more">
+          <a class="ab-crisp-open" href="#" data-crisp-msg="你好，我要购买 无畏契约 电脑调试（$9.9）。">购买</a>
+        </p>
       </div>
     </article>
     <article class="ab-card ab-card--brand ab-card--fold ab-card--ec ab-card--plate ab-card--picker ab-card--wordmark" id="pubg-mobile">
@@ -271,6 +391,6 @@ hide:
     </div>
   </section>
 
-  <p class="ab-mag__foot">全部数据更新至 2026-10-13 · 报价以在线咨询为准</p>
+  <p class="ab-mag__foot">全部数据更新至 2026-10-20 · 报价以在线咨询为准</p>
 
 </div>
