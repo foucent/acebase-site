@@ -1535,6 +1535,91 @@
   min-height: 0;
 }
 
+/* ---------- the news card's read-more fold, on /news/ ---------------------
+
+   /news/'s card is the service card with the action row turned into a fold:
+   what sat there as a link to another site is now the summary of a <details>,
+   and the compressed article opens under it in the same card. The <details>
+   is /games/gpu-deals/' fold (ab-fold), so the cue keeps its 13px tan-underlined
+   treatment and the open/close words are the same pair; all this block adds is
+   where it sits and how the article reads.
+
+   The summary takes the action line's place at the foot of the copy:
+   .ab-card__more held that with `margin: auto 0 0`, and the fold wears it now,
+   because the summary is the thing that has to stay level across a row of
+   cards whether the article is open or shut. Everything else is off — the
+   summary's own 44rem measure and 18px margin were sized for a band, not for
+   a 270px column.
+
+   The article is left-aligned. The card is a centred listing, but four
+   paragraphs are read line by line, and centred prose of this length turns
+   into a ragged diamond. Same reason the price rows leave the centring. */
+.md-typeset .ab-mag .ab-card--news .ab-card__read {
+  margin: auto 0 0;
+}
+
+.md-typeset .ab-mag .ab-card--news .ab-fold__summary {
+  margin: 0;
+  max-width: none;
+  font-family: var(--ab-sans);
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.md-typeset .ab-mag .ab-card--news .ab-fold__cue {
+  margin-left: 0;
+}
+
+.md-typeset .ab-mag .ab-card--news .ab-card__article {
+  margin: 14px 0 0;
+  text-align: left;
+  font-family: var(--ab-serif);
+  font-size: 14px;
+  line-height: 24px;
+  color: var(--ab-text-muted);
+}
+
+.md-typeset .ab-mag .ab-card--news .ab-card__article p {
+  margin: 0 0 12px;
+}
+
+.md-typeset .ab-mag .ab-card--news .ab-card__article p:last-child {
+  margin-bottom: 0;
+}
+
+/* The article's photos, two by two. They are their own anchors: without JS a
+   click still opens the picture, the way the gallery tiles do, and with it
+   photo-wall.js opens the card's gallery at that photo (data-start). The
+   frame is 16:9 like every file behind it, so the thumbnail is the whole
+   picture and not a crop. */
+.md-typeset .ab-mag .ab-card--news .ab-card__shots {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 6px;
+  margin: 0 0 12px;
+}
+
+.md-typeset .ab-mag .ab-card--news .ab-card__shots a {
+  display: block;
+  line-height: 0;
+}
+
+.md-typeset .ab-mag .ab-card--news .ab-card__shots img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  border: 1px solid var(--ab-line);
+}
+
+.md-typeset .ab-mag .ab-card--news .ab-card__source {
+  margin: 0;
+  font-family: var(--ab-sans);
+  font-size: 11px;
+  line-height: 18px;
+  color: var(--ab-text-muted);
+}
+
 /* ---------- the wordmark cards' banner, on /topup/ ------------------------
 
    Every card on /topup/ carries a 2400x500 wordmark banner: the mark centred

@@ -16,10 +16,37 @@ hide:
       <h2 class="ab-section__title">最近更新</h2>
     </header>
     <div class="ab-list ab-list--feed">
+    <article class="ab-card ab-card--brand ab-card--plate ab-card--service ab-card--news" id="haruo-news-card">
+      <div class="ab-card__media">
+        <img src="/assets/news/haruo/01.jpg" alt="《宇宙人哈鲁奥》游戏主视觉" decoding="async" fetchpriority="high">
+      </div>
+      <div class="ab-card__copy">
+        <h3 class="ab-card__title">宇宙人哈鲁奥</h3>
+        <p class="ab-card__excerpt">第三人称射击新作：在沉没的科研设施里探索、回收物资，对付战前防卫系统与实验生物；复制体死后再生产，但基因会劣化。支持简繁中文，发售日未定。</p>
+        <details class="ab-fold ab-card__read">
+          <summary class="ab-fold__summary">
+            <span class="ab-fold__cue"><span class="ab-fold__cue-more">阅读原文</span><span class="ab-fold__cue-less">收起</span></span>
+          </summary>
+          <div class="ab-card__article">
+            <p>独立发行商 Waku Waku Games 宣布，由モヤシ技研开发的第三人称射击游戏《宇宙人哈鲁奥》将推出 PC（Steam）版，商店页已经上线，支持日文、英文、繁体中文与简体中文，发售日未定。</p>
+            <div class="ab-card__shots">
+              <a class="ab-news-shot" href="/assets/news/haruo/02.jpg" data-gallery="[&quot;/assets/news/haruo/02.jpg&quot;, &quot;/assets/news/haruo/03.jpg&quot;, &quot;/assets/news/haruo/04.jpg&quot;, &quot;/assets/news/haruo/05.jpg&quot;]" data-start="0" data-buy="" data-caption="宇宙人哈鲁奥 · 主视觉" aria-label="查看大图：主视觉"><img src="/assets/news/haruo/02.jpg" alt="《宇宙人哈鲁奥》主视觉" loading="lazy" decoding="async"></a>
+              <a class="ab-news-shot" href="/assets/news/haruo/03.jpg" data-gallery="[&quot;/assets/news/haruo/02.jpg&quot;, &quot;/assets/news/haruo/03.jpg&quot;, &quot;/assets/news/haruo/04.jpg&quot;, &quot;/assets/news/haruo/05.jpg&quot;]" data-start="1" data-buy="" data-caption="宇宙人哈鲁奥 · 与实验生物交火" aria-label="查看大图：与实验生物交火"><img src="/assets/news/haruo/03.jpg" alt="《宇宙人哈鲁奥》与实验生物交火" loading="lazy" decoding="async"></a>
+              <a class="ab-news-shot" href="/assets/news/haruo/04.jpg" data-gallery="[&quot;/assets/news/haruo/02.jpg&quot;, &quot;/assets/news/haruo/03.jpg&quot;, &quot;/assets/news/haruo/04.jpg&quot;, &quot;/assets/news/haruo/05.jpg&quot;]" data-start="2" data-buy="" data-caption="宇宙人哈鲁奥 · 设施内部" aria-label="查看大图：设施内部"><img src="/assets/news/haruo/04.jpg" alt="《宇宙人哈鲁奥》设施内部" loading="lazy" decoding="async"></a>
+              <a class="ab-news-shot" href="/assets/news/haruo/05.jpg" data-gallery="[&quot;/assets/news/haruo/02.jpg&quot;, &quot;/assets/news/haruo/03.jpg&quot;, &quot;/assets/news/haruo/04.jpg&quot;, &quot;/assets/news/haruo/05.jpg&quot;]" data-start="3" data-buy="" data-caption="宇宙人哈鲁奥 · 过场演出" aria-label="查看大图：过场演出"><img src="/assets/news/haruo/05.jpg" alt="《宇宙人哈鲁奥》过场演出" loading="lazy" decoding="async"></a>
+            </div>
+            <p>世界因战争与气候变化沉入海底。两名主角「鞍月枫」与「黑石梢」潜入被遗弃的水下科研设施，一边回收物资，一边寻找过去某项计划造出的神秘物体。设施里还留着战前的防卫系统与各种实验生物，是把敌人清光，还是避开它们悄悄完成任务，由玩家决定。</p>
+            <p>两人都是复制技术的产物：死后可以重新生产复活，但基因会劣化，被击败的次数越多能力越弱，任务也越难。探索时还要管身体状态——长时间不进食会饿得跑不动，吃太多会呕吐，出发前记得给她们上厕所的时间。</p>
+            <p>发售日目前未定；据开发团队在 X 上的说法，游戏一部分场景会有全语音演出。</p>
+            <p class="ab-card__source">来源：游戏基地 Gamebase，2026-10-20</p>
+          </div>
+        </details>
+      </div>
+    </article>
     <article class="ab-card ab-card--brand ab-card--plate ab-card--figure ab-card--lightbox" id="gear-13" data-gallery="[&quot;/assets/gallery/gear/gear_13_01.jpg&quot;, &quot;/assets/gallery/gear/gear_13_02.jpg&quot;, &quot;/assets/gallery/gear/gear_13_03.jpg&quot;, &quot;/assets/gallery/gear/gear_13_04.jpg&quot;, &quot;/assets/gallery/gear/gear_13_05.jpg&quot;, &quot;/assets/gallery/gear/gear_13_06.jpg&quot;, &quot;/assets/gallery/gear/gear_13_07.jpg&quot;, &quot;/assets/gallery/gear/gear_13_08.jpg&quot;, &quot;/assets/gallery/gear/gear_13_09.jpg&quot;, &quot;/assets/gallery/gear/gear_13_10.jpg&quot;, &quot;/assets/gallery/gear/gear_13_11.jpg&quot;, &quot;/assets/gallery/gear/gear_13_12.jpg&quot;, &quot;/assets/gallery/gear/gear_13_13.jpg&quot;]" data-caption="初音未来 With You 2021 1/7" data-look="gear-13" data-buy="#">
       <a class="ab-card__media" href="/assets/gallery/gear/gear_13_01.jpg" tabindex="-1" aria-hidden="true">
         <span class="ab-card__badge">手办</span>
-        <img src="/assets/gallery/gear/gear_13_01.jpg" alt="" loading="lazy" decoding="async" fetchpriority="high">
+        <img src="/assets/gallery/gear/gear_13_01.jpg" alt="" loading="lazy" decoding="async">
       </a>
       <div class="ab-card__copy">
         <h3 class="ab-card__title">初音未来 With You 2021 1/7<span class="ab-card__price"></span></h3>

@@ -246,7 +246,20 @@ extra:
   generator: false
 
 nav:
-  - HOME: index.md
+  # 2026-10-20：第一格从 **HOME** 换成 **NEWS**（用户：「将 /card-test/ 改名为
+  # news并将它替代home导航」，问过之后选的是「导航第一格改成 NEWS」）。
+  #
+  # 首页 **没有删**，/ 现在还是一次 gen_home.py 跑出来的「最近更新」流；它只是
+  # 不再占 nav 第一格，回头路是页头的字标 ACEBASE（overrides/partials/header.html
+  # 里 href="{{ home_url }}"）。所以这一行挪走之后：
+  #   · mkdocs.yml 的 nav 里不再有 index.md，但 gen_home.py 的 `rel == "index.md"`
+  #     跳过分支仍然有效 —— 以后谁把首页放回来也不会被自己当类目取一遍；
+  #   · news/index.md 成了 nav 类目，gen_home.py 会把这一页的卡按「最新六张」取到
+  #     首页 —— 这就是「替代 home 导航」想要的效果：首页第一排就是资讯；
+  #   · 新页面的 frontmatter 因此必须有 updated:（2026-10-20），否则那一段会被
+  #     gen_home.py 在 stderr 上点名、且不上首页。
+  # /card-test/ 从未进过 nav、也从未推送，所以 redirect_maps 不用给它留存根。
+  - NEWS: news/index.md
   # 2026-10-20 改名（第五次）：FIGURES → **SOURCING**。用户原话「将 /figures/
   # 改为代购」，问过之后选的是**手办八张卡全留、只改栏目与文案**；标签先写成
   # PROXY BUY、路径 /proxy-buy/，同日又依次改成 Proxy shopping、Sourcing，

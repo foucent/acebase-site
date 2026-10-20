@@ -29,6 +29,12 @@
   // CDKeys and took its sets off the site — which is what freed that URL.
   var CARD_SEL = ".ab-card--lightbox";
 
+  // News photos on /news/. They sit inside a card's own fold, several to a
+  // card, and each opens the same gallery at its own place in it (data-start).
+  // Unlike a CARD_SEL tile they are not a card: nothing here makes the whole
+  // card clickable, and the card's article text stays selectable.
+  var NEWS_SHOT_SEL = ".ab-news-shot";
+
   function shuffle(node) {
     if (!node) return;
     var items = Array.prototype.slice.call(node.children);
@@ -205,7 +211,13 @@
       // sets both.
       title = tile.getAttribute("data-caption") || tile.getAttribute("title") || "";
       lookId = lookIdFromTile(tile, gallery);
-      buyUrl = tile.getAttribute("data-buy") || "/topup/";
+      // data-buy="" is an explicit "no CTA" — the news photos want the picture
+      // and nothing to buy, and the CTA would still be armed five seconds in
+      // through the fallback below. An attribute that is simply absent still
+      // falls back to the price page.
+      buyUrl = tile.hasAttribute("data-buy")
+        ? tile.getAttribute("data-buy")
+        : "/topup/";
       buy.href = buyUrl;
       show(typeof start === "number" ? start : 0);
       box.hidden = false;
@@ -237,10 +249,14 @@
         // <summary>'s own toggle and open the box in its place, and there is no
         // other way to the rows. The 查看图集 link in that row is the one click
         // inside it that is still the card's own way in, so it is let through.
+        // A news photo is a second exception, on the other side of the same
+        // rule: it lives *inside* its card's fold and is its own way into the
+        // box, so it is let through with the fold's buy link.
         var fold = e.target && e.target.closest
           ? e.target.closest(".ab-fold")
           : null;
-        if (fold && !e.target.closest(".ab-fold__buy")) return;
+        if (fold && !e.target.closest(".ab-fold__buy")
+            && !e.target.closest(".ab-news-shot")) return;
 
         // The split row's chat opener is the second exception, and it needs one
         // more reason than the fold's: crisp.js binds its handler on the
@@ -255,7 +271,10 @@
         if (e.target.closest(".ab-crisp-open")) return;
 
         e.preventDefault();
-        openGallery(tile, 0);
+        // data-start names the photo's place in its own gallery; every card
+        // tile on the site opens at 0, and parseGallery stays the fallback.
+        var start = parseInt(tile.getAttribute("data-start"), 10);
+        openGallery(tile, isNaN(start) ? 0 : start);
       });
     });
 
@@ -392,13 +411,16 @@
   function run() {
     var walls = document.querySelectorAll(".sc-wall");
     var cards = document.querySelectorAll(CARD_SEL);
-    if (!walls.length && !cards.length) return;
+    var shots = document.querySelectorAll(NEWS_SHOT_SEL);
+    if (!walls.length && !cards.length && !shots.length) return;
     walls.forEach(function (wall) {
       shuffle(wall); // final order first, so pagination reveals shuffled batches
       initLightbox(wall, ".sc-wall__tile");
       initPagination(wall);
     });
-    if (cards.length) initLightbox(document, CARD_SEL);
+    if (cards.length || shots.length) {
+      initLightbox(document, CARD_SEL + ", " + NEWS_SHOT_SEL);
+    }
   }
 
   if (document.readyState === "loading") {
