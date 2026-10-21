@@ -1547,9 +1547,9 @@
 
    So the card here is a row, not a tile. .ab-card--row undoes the tile's
    centred column: a two-column grid with the picture on the left, text left
-   aligned, and the fold sitting where the action line used to. Everything
-   else on it stays .ab-card's, which is why the markup is still the same
-   card as everywhere else on the site.
+   aligned, and the "Read article" line where the old tile's action row sat.
+   Everything else on it stays .ab-card's, which is why the markup is still
+   the same card as everywhere else on the site.
 
    The grid is 1fr : 1.9fr rather than a fixed thumbnail width. The same card
    is served in two places: full width on /blog/, and half of .ab-list--feed
@@ -1621,66 +1621,156 @@
   line-height: 25px;
 }
 
-/* The fold keeps ab-fold's cue as it was on the old news card: tan underline,
-   "Read article" / "Show less". It is no longer pinned to the foot of a tile
-   (`margin: auto 0 0`), because a row is as tall as its own text and there is
-   no row of tiles to keep level. */
-.md-typeset .ab-mag .ab-card--row .ab-card__read {
+/* The row's action is a link now, not a fold. The list went up on 2026-10-22
+   with the story unfolding inside the row; the same day the user asked for
+   「blog每篇文章点击Read article后应该是跳到独立的详情页」, the nine stories
+   moved to docs/blog/<slug>/, and what is left in the row is one "Read
+   article" that points at them. It wears .ab-card__more — the site's read-more
+   line, 13px with a tan underline — so the row-scoped fold and article rules
+   that lived here (__read, __article, __source, the summary's 14px) went with
+   the fold. The margin needs no pinning: a row is as tall as its own text.
+   The same markup is lifted whole onto the front page by gen_home.py, which is
+   why the href is root-absolute. */
+.md-typeset .ab-mag .ab-card--row .ab-card__more {
   margin: 0;
 }
 
-.md-typeset .ab-mag .ab-card--row .ab-fold__summary {
+/* ---------- one story's own page, /blog/<slug>/ --------------------------
+
+   The target of that link. The feed's four type sizes carry over rather than
+   a section head's: a 34px sentence-case headline (the row's is 22 — a page's
+   H1 can afford the size the feed cannot), the date · game kicker under it,
+   then the standfirst in the lead's serif, then the cover at the feed's 16:9
+   and the prose at 18px/30 — larger than the 15px the fold carried, because a
+   page has room and the same text at 15px reads as a caption.
+
+   The rule under the head is the section head's rule, moved down past the
+   kicker: it separates the headline block from the dek the way it does on
+   every listing page, and it keeps the kicker with the headline it dates.
+
+   The measure: Material sets html to 125%, so a rem here is 20px, not 16. The
+   `42rem` the row used for its prose was therefore 840px — about 110
+   characters at the row's 15px — and at a page's 18px it would be worse. The
+   body stops at 34rem (680px, ~75 characters of serif) and the standfirst at
+   36rem; the figure runs the 52rem (1040px) the page's own content column
+   allows, so the picture stays wider than the column of text under it.
+
+   The headline carries no border of its own: Material's typeset h1 draws a
+   2px rule, and .ab-article__head draws the section head's 1px one under the
+   kicker instead — two rules, one under the title and one under the date,
+   read as a mistake. */
+.md-typeset .ab-mag .ab-article {
+  max-width: 52rem;
   margin: 0;
-  max-width: none;
-  font-family: var(--ab-sans);
-  font-size: 14px;
-  line-height: 1.6;
 }
 
-.md-typeset .ab-mag .ab-card--row .ab-fold__cue {
-  margin-left: 0;
+.md-typeset .ab-mag .ab-article__head {
+  margin: 0 0 22px;
+  padding: 0 0 16px;
+  border-bottom: 1px solid var(--ab-text);
 }
 
-/* The article is the same prose as before — serif, muted, left aligned — with
-   its measure capped: the copy column is over 700px on a wide screen, which
-   is 90-odd characters a line. 42rem is a book's measure, and the headline
-   still runs the full column above it. */
-.md-typeset .ab-mag .ab-card--row .ab-card__article {
-  max-width: 42rem;
-  margin: 14px 0 0;
-  font-family: var(--ab-serif);
-  font-size: 15px;
-  line-height: 25px;
+.md-typeset .ab-mag .ab-article__title {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 34px;
+  font-weight: 900;
+  line-height: 1.16;
+  letter-spacing: 0;
+  text-transform: none;
+  color: var(--ab-text);
+}
+
+.md-typeset .ab-mag .ab-article__meta {
+  margin: 10px 0 0;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
   color: var(--ab-text-muted);
 }
 
-.md-typeset .ab-mag .ab-card--row .ab-card__article p {
-  margin: 0 0 12px;
+.md-typeset .ab-mag .ab-article__standfirst {
+  max-width: 36rem;
+  margin: 0 0 26px;
+  font-family: var(--ab-serif);
+  font-size: 19px;
+  line-height: 29px;
+  color: var(--ab-text-muted);
 }
 
-.md-typeset .ab-mag .ab-card--row .ab-card__article p:last-child {
+.md-typeset .ab-mag .ab-article__figure {
+  margin: 0 0 28px;
+}
+
+.md-typeset .ab-mag .ab-article__figure img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  border: 1px solid var(--ab-line);
+}
+
+.md-typeset .ab-mag .ab-article__body {
+  max-width: 34rem;
+  font-family: var(--ab-serif);
+  font-size: 18px;
+  line-height: 30px;
+  color: var(--ab-text);
+}
+
+.md-typeset .ab-mag .ab-article__body p {
+  margin: 0 0 18px;
+}
+
+.md-typeset .ab-mag .ab-article__body p:last-child {
   margin-bottom: 0;
 }
 
-.md-typeset .ab-mag .ab-card--row .ab-card__source {
-  margin: 0;
+.md-typeset .ab-mag .ab-article__source {
+  margin: 22px 0 0;
   font-family: var(--ab-sans);
-  font-size: 11px;
-  line-height: 18px;
+  font-size: 12px;
+  line-height: 19px;
   color: var(--ab-text-muted);
 }
 
+/* "All stories" closes the page where a card's action line closes a card. The
+   base rule pins it to a tile's foot (`margin: auto 0 0`); in the article's
+   flow that auto margin is 0, so the link would sit straight on the Source
+   line above it. */
+.md-typeset .ab-mag .ab-article > .ab-card__more {
+  margin: 28px 0 0;
+}
+
 /* The card stacks on a phone, picture over text, at the same breakpoint where
-   .ab-list drops to one column. The cue goes back to the site's 16px there,
-   the size every tappable action takes on narrow screens. */
+   .ab-list drops to one column. The action goes back to the site's 16px there,
+   the size every tappable action takes on narrow screens, and the story page
+   steps its three sizes down one notch so the headline still takes two lines
+   and the body does not run to 80 characters across. */
 @media screen and (max-width: 767px) {
   .md-typeset .ab-mag .ab-card--row {
     grid-template-columns: minmax(0, 1fr);
     gap: 14px;
   }
 
-  .md-typeset .ab-mag .ab-card--row .ab-fold__summary {
+  .md-typeset .ab-mag .ab-card--row .ab-card__more a {
     font-size: 16px;
+  }
+
+  .md-typeset .ab-mag .ab-article__title {
+    font-size: 26px;
+  }
+
+  .md-typeset .ab-mag .ab-article__standfirst {
+    font-size: 17px;
+    line-height: 27px;
+  }
+
+  .md-typeset .ab-mag .ab-article__body {
+    font-size: 17px;
+    line-height: 28px;
   }
 }
 

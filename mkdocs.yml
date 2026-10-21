@@ -115,7 +115,9 @@ plugins:
         # docs/blog/，地址 /news/ → /blog/，这一条就是 /news/ 的存根。改名那天
         # 页面内容没变、卡片 id 没变，存根带锚点跳（/news/#... → /blog/#...）
         # 落得到卡；2026-10-22 那页换成九行资讯列表之后 `#haruo-news-card` 已经
-        # 不在，旧锚点只剩跳转本身 —— 落在页面顶部，不落在 404 上。
+        # 不在，旧锚点只剩跳转本身 —— 落在页面顶部，不落在 404 上。同一天九条
+        # 正文各自独立成页，行 id 没变（/news/#delta-force-ammo → /blog/#delta-
+        # force-ammo 仍落在那一行），正文本身则要再点 Read article。
         news/index.md: blog/index.md
         # FAQ 2026-10-21 整页撤掉（用户：「删除FAQ」，问过之后选的是导航和页面
         # 一起删）：docs/faq/ 连页面删除，/faq/ 指回首页 —— 跟 /services/、
@@ -386,11 +388,21 @@ nav:
   # （把内容改成符合自己网站的），并去掉 Haruo the Alien …… 卡片」）。原来那
   # 一张 Haruo 卡连同文章内的 2×2 图集一起撤掉，换成来源站第一页改写来的
   # **九行**：缩略图 16:9 在左，标题、日期·游戏、两三行导语、"Read article"
-  # 折子在右，点开在同一行里展开压缩稿。第十条是来源站自家的 2024 年招商稿，
-  # 没收（正文通篇是对方的平台，图上也全是对方品牌）。首页因此要少取：那页
-  # 原先是「最新六张」进首页，九行横卡会把它压满，所以 gen_home.py 加了
+  # 在右。第十条是来源站自家的 2024 年招商稿，没收（正文通篇是对方的平台，
+  # 图上也全是对方品牌）。首页因此要少取：那页原先是「最新六张」进首页，
+  # 九行横卡会把它压满，所以 gen_home.py 加了
   # CATEGORY_LIMIT_BY_LABEL = {"BLOG": 1}，首页仍 19 张（TOP-UP 6 + GAME 6 +
   # GIFT CARDS 6 + BLOG 1；BOOSTING 那一格的页面里没有 ab-card，一直是 0）。
+  #
+  # 同一天第二版（用户：「blog每篇文章点击Read article后应该是跳到独立的详情
+  # 页」）：行内 <details> 撤掉，九条正文各自搬到 docs/blog/<slug>/index.md，
+  # 地址 /blog/<slug>/，slug 就是原来那一行的 id（delta-force-ammo …）。
+  # 行里只剩一个 Read article 链接；首页那一张随之变成外链，所以 gen_home.py
+  # 搬过去的那行必须写根绝对地址。**这九个页面不进 nav** —— 它们靠列表页的
+  # 链接进入，和 /games/gpu-deals/ 一样只靠 sitemap 与内链；build 时那一串
+  # "not included in nav" 的 INFO 是预期的。`/news/#<旧锚点>` 仍能落到对应的
+  # 行上（行 id 没变），只是行里不再有折叠。探针是
+  # _tmp_ocr/blog_feed_probe.py（63 项）。
   #
   # BLOG 这一格（2026-10-21 之前叫 NEWS）：用户说「将News改为blog」，问过之后
   # 选的是**标签与地址都改** —— nav 标签 BLOG、目录 docs/news/ 用 git mv 改到

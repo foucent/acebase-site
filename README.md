@@ -19,7 +19,7 @@ cd c:\1Work\acebase.cc
 | 路径 | 说明 |
 | --- | --- |
 | `/` | 首页（各类目最新 6 条，由 `scripts/gen_home.py` 生成，勿手改；改完任何类目页都要重跑一次） |
-| `/blog/` | Game News（英文；2026-10-21 前叫 `/news/`，那条地址现在指过来；**九行资讯列表**，2026-10-22 起每行 16:9 缩略图在左、标题与导语在右，Read article 折子在同一行展开压缩稿） |
+| `/blog/` | Game News（英文；2026-10-21 前叫 `/news/`，那条地址现在指过来；**九行资讯列表**，2026-10-22 起每行 16:9 缩略图在左、标题与导语在右，Read article 跳到该条自己的页 `/blog/<slug>/`） |
 | `/topup/` | Live Streaming & Entertainment Top-Ups（英文；**30 张卡**：2026-10-22 从 topuplist entertainment 分类精选的直播 / 语音房 / 社交 App 代储；卡片由 `scripts/build_topup_page.py` 生成，档位价来自 `capture_topuplist_entertainment.py` → `merge_ent_prices.py` → `prices.json`） |
 | `/boosting/` | Game Boosting & Coaching（英文；数据驱动的统一代练页：12 款游戏 / 服务 / 段位阶梯来自 `docs/assets/boosting/boosting.json`，配置器只收需求、$9.9 起价、报价在聊天里给；页面到 FAQ 结束，不再列服务卡） |
 | `/gift-cards/` | Gift Card Prices（英文；Amazon、Apple、Google Play、Netflix、Xbox、Kammelna 六种；卡片从 `/topup/` 复制，两页价格同源） |
@@ -152,13 +152,27 @@ https://www.topuplive.com/news/ 页中的排版，并将第一页的内容添到
 两件事：来源站第一页的内容**全部改写进来**、首页 BLOG **仍只取 1 张**。结果是
 **九行**横排卡（第十条是对方自家 2024 年的招商稿，没收：正文通篇是对方的平台，
 图上也印满对方品牌）：缩略图 16:9 在左，标题（句首大写 22px）、`日期 · 游戏`、
-两三行导语、"Read article" 折子在右，点开在同一行里展开压缩稿，不再外链。
+两三行导语、"Read article" 在右。
 每条一张 `docs/assets/news/<slug>/cover.jpg`（1000×563，`_tmp_ocr/news_covers.py`
 从来源站列表缩略图裁出来；ZZZ 3.3 那张原图 2.47:1、标题横贯整幅，改用模糊底
 + 整图居中的画法）。CSS 是 `uncrate.css` 的 `.ab-newsfeed` / `.ab-card--row`；
 Haruo 那张卡、文中 2×2 图集、`.ab-news-shot` 与 `photo-wall.js` 里两处特判、
 `docs/assets/news/haruo/` 一起撤掉。首页仍 **19 张**：`gen_home.py` 新增
 `CATEGORY_LIMIT_BY_LABEL = {"BLOG": 1}`，否则九行横卡会把首页压满。
+
+同一天第二版（用户：「blog每篇文章点击Read article后应该是跳到独立的详情页」）：
+行内折叠撤掉，九条正文各自成为独立页 `docs/blog/<slug>/index.md`（地址
+`/blog/<slug>/`，slug 就是原来那一行的 id），行里只留一个 `Read article` 链接。
+正文、封面、标题、摘要一字未改 —— 由 `_tmp_ocr/blog_split_pages.py` 从列表页
+那一行整段搬过去，此后就是普通源文件。详情页版式是 `uncrate.css` 新的一组
+`.ab-article`（34px 句首大写 H1、`日期 · 游戏` 小字、19px 导语、16:9 封面、
+18px/30 正文、文末 Source 与 "All stories" 回链），文末照惯例一排 Related；
+每页带自己的 `NewsArticle` + `BreadcrumbList` JSON-LD，列表页的 `ItemList`
+改指九个独立地址。首页那张横卡随 `gen_home.py` 整行搬过去，因此链接写的是
+根绝对地址。这九个页面**不进 nav**（与 `/games/gpu-deals/` 同一种，只靠列表页
+内链和 sitemap），build 时那串 `not included in nav` 的 INFO 是预期的。
+探针 `_tmp_ocr/blog_feed_probe.py` 也随之从「折叠开合」改成「点进去是独立页」，
+共 63 项；先拿 HEAD（还带着折叠的旧站）跑一遍，25 项报红，再在新站上全绿。
 
 `/news/` 2026-10-20 接替 nav 第一格的 HOME（用户：「将 /card-test/ 改名为
 news并将它替代home导航」）。它前一版是 `/card-test/` 的排版测试页，那个地址从未
