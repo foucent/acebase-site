@@ -1,0 +1,37 @@
+{
+ "slug": "soulchill",
+ "name": "Soulchill",
+ "currency": "USD",
+ "skus": [
+  {
+   "name": "2160 Crystals",
+   "price": 4.33,
+   "original": 4.98,
+   "stock": 9999
+  },
+  {
+   "name": "4450 Crystals",
+   "price": 8.91,
+   "original": 9.98,
+   "stock": 9999
+  },
+  {
+   "name": "13700 Crystals",
+   "price": 27.26,
+   "original": 29.94,
+   "stock": 9999
+  },
+  {
+   "name": "23500 Crystals",
+   "price": 46.24,
+   "original": 49.93,
+   "stock": 9999
+  },
+  {
+   "name": "48300 Crystals",
+   "price": 94.7,
+   "original": 99.86,
+   "stock": 9999
+  }
+ ]
+}

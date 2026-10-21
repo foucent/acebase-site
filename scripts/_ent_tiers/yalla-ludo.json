@@ -1,0 +1,61 @@
+{
+ "slug": "yalla-ludo",
+ "name": "Yalla Ludo",
+ "currency": "USD",
+ "skus": [
+  {
+   "name": "830 Diamonds",
+   "price": 1.85,
+   "original": 2.81,
+   "stock": 9954
+  },
+  {
+   "name": "2320 Diamonds",
+   "price": 4.71,
+   "original": 5.75,
+   "stock": 9987
+  },
+  {
+   "name": "5150 Diamonds",
+   "price": 9.34,
+   "original": 11.37,
+   "stock": 9968
+  },
+  {
+   "name": "13580 Diamonds",
+   "price": 24.62,
+   "original": 28.82,
+   "stock": 9990
+  },
+  {
+   "name": "27640 Diamonds",
+   "price": 49.17,
+   "original": 57.57,
+   "stock": 9993
+  },
+  {
+   "name": "55800 Diamonds",
+   "price": 98.07,
+   "original": 114.57,
+   "stock": 9996
+  },
+  {
+   "name": "223700 Gold",
+   "price": 4.77,
+   "original": 5.81,
+   "stock": 9998
+  },
+  {
+   "name": "1463320 Gold",
+   "price": 9.64,
+   "original": 14.64,
+   "stock": 9998
+  },
+  {
+   "name": "3666470 Gold",
+   "price": 24.13,
+   "original": 27.73,
+   "stock": 9994
+  }
+ ]
+}

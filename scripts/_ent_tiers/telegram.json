@@ -1,0 +1,103 @@
+{
+ "slug": "telegram",
+ "name": "Telegram",
+ "currency": "USD",
+ "skus": [
+  {
+   "name": "Premium 3 Months",
+   "price": 14.04,
+   "original": 14.99,
+   "stock": 9999
+  },
+  {
+   "name": "Premium 6 Months",
+   "price": 18.69,
+   "original": 19.99,
+   "stock": 9999
+  },
+  {
+   "name": "Premium 12 Months",
+   "price": 33.73,
+   "original": 35.99,
+   "stock": 9999
+  },
+  {
+   "name": "50 Stars",
+   "price": 0.88,
+   "original": 0.99,
+   "stock": 9999
+  },
+  {
+   "name": "75 Stars",
+   "price": 1.34,
+   "original": 1.49,
+   "stock": 9999
+  },
+  {
+   "name": "100 Stars",
+   "price": 1.76,
+   "original": 1.99,
+   "stock": 9999
+  },
+  {
+   "name": "150 Stars",
+   "price": 2.64,
+   "original": 2.99,
+   "stock": 9999
+  },
+  {
+   "name": "250 Stars",
+   "price": 4.4,
+   "original": 4.99,
+   "stock": 9999
+  },
+  {
+   "name": "350 Stars",
+   "price": 6.17,
+   "original": 6.99,
+   "stock": 9999
+  },
+  {
+   "name": "500 Stars",
+   "price": 8.79,
+   "original": 9.99,
+   "stock": 9999
+  },
+  {
+   "name": "750 Stars",
+   "price": 13.2,
+   "original": 14.99,
+   "stock": 9999
+  },
+  {
+   "name": "1000 Stars",
+   "price": 17.59,
+   "original": 19.99,
+   "stock": 9999
+  },
+  {
+   "name": "1500 Stars",
+   "price": 26.39,
+   "original": 29.99,
+   "stock": 9995
+  },
+  {
+   "name": "2500 Stars",
+   "price": 43.96,
+   "original": 49.99,
+   "stock": 9999
+  },
+  {
+   "name": "5000 Stars",
+   "price": 87.96,
+   "original": 99.99,
+   "stock": 9999
+  },
+  {
+   "name": "10000 Stars",
+   "price": 175.93,
+   "original": 199.99,
+   "stock": 9999
+  }
+ ]
+}

@@ -1,0 +1,91 @@
+{
+ "slug": "likee",
+ "name": "Likee",
+ "currency": "USD",
+ "skus": [
+  {
+   "name": "100 Diamonds",
+   "price": 1.84,
+   "original": 2.25,
+   "stock": 99973
+  },
+  {
+   "name": "200 Diamonds",
+   "price": 3.68,
+   "original": 4.59,
+   "stock": 99993
+  },
+  {
+   "name": "500 Diamonds",
+   "price": 9.21,
+   "original": 11.74,
+   "stock": 99991
+  },
+  {
+   "name": "1000 Diamonds",
+   "price": 19.2,
+   "original": 22.98,
+   "stock": 99994
+  },
+  {
+   "name": "1500 Diamonds",
+   "price": 28.8,
+   "original": 34.21,
+   "stock": 99999
+  },
+  {
+   "name": "2000 Diamonds",
+   "price": 38.39,
+   "original": 45.46,
+   "stock": 99997
+  },
+  {
+   "name": "2500 Diamonds",
+   "price": 47.98,
+   "original": 55.66,
+   "stock": 99998
+  },
+  {
+   "name": "3000 Diamonds",
+   "price": 57.49,
+   "original": 66.89,
+   "stock": 99996
+  },
+  {
+   "name": "3500 Diamonds",
+   "price": 67.17,
+   "original": 79.16,
+   "stock": 99999
+  },
+  {
+   "name": "4000 Diamonds",
+   "price": 76.68,
+   "original": 89.37,
+   "stock": 99998
+  },
+  {
+   "name": "4500 Diamonds",
+   "price": 86.28,
+   "original": 102.14,
+   "stock": 99999
+  },
+  {
+   "name": "5000 Diamonds",
+   "price": 95.99,
+   "original": 108.77,
+   "stock": 99997
+  },
+  {
+   "name": "10000 Diamonds",
+   "price": 198.04,
+   "original": 218.06,
+   "stock": 99999
+  },
+  {
+   "name": "20000 Diamonds",
+   "price": 382.16,
+   "original": 408.53,
+   "stock": 99997
+  }
+ ]
+}

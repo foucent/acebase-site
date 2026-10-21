@@ -1,0 +1,370 @@
+/* Unified boosting configurator and the generic sections around it.
+   Scoped to .ab-mag so nothing leaks into the article cards. */
+
+/* ---------------------------------------------------------------- panel */
+
+.md-typeset .ab-mag .ab-boost {
+  padding: 28px;
+  border: 1px solid var(--ab-line);
+  background: var(--ab-bg);
+}
+
+.ab-mag .ab-boost__step + .ab-boost__step {
+  margin-top: 22px;
+  padding-top: 22px;
+  border-top: 1px solid var(--ab-line-soft);
+}
+
+.ab-mag .ab-boost__label {
+  margin: 0 0 10px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--ab-accent-deep);
+}
+
+/* ----------------------------------------------------------------- chips */
+
+.ab-mag .ab-boost__chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.ab-mag .ab-boost__chip {
+  position: relative;
+  display: inline-flex;
+  margin: 0;
+  cursor: pointer;
+}
+
+.ab-mag .ab-boost__chip input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: 0;
+  opacity: 0;
+}
+
+.md-typeset .ab-mag .ab-boost__chip span {
+  display: inline-flex;
+  align-items: center;
+  min-height: 40px;
+  padding: 0 14px;
+  border: 1px solid var(--ab-line);
+  background: var(--ab-bg);
+  color: var(--ab-text);
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+.ab-mag .ab-boost__chip:hover span {
+  border-color: var(--ab-text);
+}
+
+.ab-mag .ab-boost__chip input:checked + span {
+  border-color: var(--ab-text);
+  background: var(--ab-text);
+  color: #fff;
+}
+
+.ab-mag .ab-boost__chip input:focus-visible + span {
+  outline: 2px solid var(--ab-accent-deep);
+  outline-offset: 2px;
+}
+
+/* ---------------------------------------------------------------- fields */
+
+.ab-mag .ab-boost__fields {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.ab-mag .ab-boost__fields + .ab-boost__fields,
+.ab-mag .ab-boost__fields + .ab-boost__options {
+  margin-top: 16px;
+}
+
+.ab-mag .ab-boost__field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin: 0;
+}
+
+.ab-mag .ab-boost__field-label {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--ab-text-muted);
+}
+
+.md-typeset .ab-mag .ab-boost__field select {
+  width: 100%;
+  height: 44px;
+  padding: 0 12px;
+  border: 1px solid var(--ab-line);
+  border-radius: 0;
+  background: var(--ab-bg);
+  color: var(--ab-text);
+  font: inherit;
+  font-size: 15px;
+}
+
+.md-typeset .ab-mag .ab-boost__field select:focus {
+  outline: 2px solid var(--ab-accent-deep);
+  outline-offset: 1px;
+}
+
+/* --------------------------------------------------------------- options */
+
+.ab-mag .ab-boost__options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 20px;
+}
+
+.ab-mag .ab-boost__opt {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin: 0;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.ab-mag .ab-boost__opt input {
+  width: 16px;
+  height: 16px;
+  margin: 0;
+  accent-color: var(--ab-red);
+}
+
+/* ------------------------------------------------------- summary and CTA */
+
+.md-typeset .ab-mag .ab-boost__summary {
+  margin: 22px 0 0;
+  padding: 16px 18px;
+  border: 1px solid var(--ab-line);
+  background: var(--ab-panel-2);
+  font-family: var(--ab-serif);
+  font-size: 17px;
+  line-height: 1.5;
+  color: var(--ab-text);
+}
+
+.md-typeset .ab-mag .ab-boost__hint {
+  min-height: 0;
+  margin: 10px 0 0;
+  font-size: 13px;
+  line-height: 1.5;
+  color: var(--ab-red);
+}
+
+.md-typeset .ab-mag .ab-boost__hint:empty {
+  display: none;
+}
+
+.md-typeset .ab-mag a.ab-boost__go {
+  display: block;
+  margin-top: 14px;
+  padding: 15px 18px;
+  border: 1px solid var(--ab-red);
+  background: var(--ab-red);
+  color: #fff;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.md-typeset .ab-mag a.ab-boost__go:hover,
+.md-typeset .ab-mag a.ab-boost__go:focus {
+  border-color: #9e1c2b;
+  background: #9e1c2b;
+  color: #fff;
+}
+
+.md-typeset .ab-mag a.ab-boost__go[aria-disabled="true"] {
+  border-color: var(--ab-line);
+  background: var(--ab-line);
+  color: #fff;
+  pointer-events: none;
+}
+
+.md-typeset .ab-mag .ab-boost__note {
+  margin: 10px 0 0;
+  font-size: 13px;
+  line-height: 1.5;
+  color: var(--ab-text-muted);
+}
+
+.md-typeset .ab-mag .ab-boost__note:empty {
+  display: none;
+}
+
+.md-typeset .ab-mag .ab-boost noscript p {
+  margin: 0 0 16px;
+  padding: 14px 16px;
+  border: 1px solid var(--ab-line);
+  background: var(--ab-panel-2);
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+/* ----------------------------------------------------------- hero facts */
+
+/* Material's `.md-typeset ul:not([hidden])` sets display: flow-root at a
+   higher specificity than `.ab-mag .ab-boost__facts`, so these three list
+   rules carry the `.md-typeset` prefix to keep their flex / grid display. */
+.md-typeset .ab-mag .ab-boost__facts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 0;
+  margin: 16px 0 0;
+  padding: 0;
+  list-style: none;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--ab-accent-deep);
+}
+
+.ab-mag .ab-boost__facts li {
+  margin: 0;
+}
+
+.ab-mag .ab-boost__facts li + li::before {
+  content: "·";
+  margin: 0 10px;
+  color: var(--ab-accent);
+}
+
+/* ------------------------------------------------------- steps and defs */
+
+.md-typeset .ab-mag .ab-boost__steps,
+.md-typeset .ab-mag .ab-boost__defs {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 22px 30px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  counter-reset: ab-boost-step;
+}
+
+.ab-mag .ab-boost__steps li {
+  position: relative;
+  margin: 0;
+  padding-left: 46px;
+  counter-increment: ab-boost-step;
+}
+
+.ab-mag .ab-boost__steps li::before {
+  content: counter(ab-boost-step);
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  border: 1px solid var(--ab-text);
+  font-size: 14px;
+  font-weight: 800;
+}
+
+.ab-mag .ab-boost__defs > li {
+  margin: 0;
+}
+
+.md-typeset .ab-mag .ab-boost__steps h3,
+.md-typeset .ab-mag .ab-boost__defs h3 {
+  margin: 0 0 4px;
+  font-size: 15px;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--ab-text);
+}
+
+.md-typeset .ab-mag .ab-boost__steps p,
+.md-typeset .ab-mag .ab-boost__defs p {
+  margin: 0;
+  font-family: var(--ab-serif);
+  font-size: 16px;
+  line-height: 1.55;
+  color: var(--ab-text-muted);
+}
+
+/* ------------------------------------------------------------------ faq */
+
+/* The shared fold is tuned as an article lead (serif, 18px). Here the rows
+   are questions, so restate the summary at the page's own specificity. */
+.md-typeset .ab-mag .ab-boost__faq {
+  padding: 14px 0;
+  border-top: 1px solid var(--ab-line);
+}
+
+.md-typeset .ab-mag .ab-boost__faq:last-of-type {
+  border-bottom: 1px solid var(--ab-line);
+}
+
+.md-typeset .ab-mag .ab-boost__faq > .ab-fold__summary {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 18px;
+  max-width: none;
+  margin: 0;
+  font-family: var(--ab-sans);
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 1.5;
+  color: var(--ab-text);
+}
+
+.md-typeset .ab-mag .ab-boost__faq[open] > .ab-fold__summary {
+  margin-bottom: 8px;
+}
+
+.md-typeset .ab-mag .ab-boost__faq > p {
+  max-width: 44rem;
+  margin: 0;
+  font-family: var(--ab-serif);
+  font-size: 16px;
+  line-height: 1.55;
+  color: var(--ab-text-muted);
+}
+
+/* ------------------------------------------------------------ responsive */
+
+@media screen and (max-width: 767px) {
+  .md-typeset .ab-mag .ab-boost {
+    padding: 18px;
+  }
+
+  .ab-mag .ab-boost__fields,
+  .ab-mag .ab-boost__steps,
+  .ab-mag .ab-boost__defs {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .md-typeset .ab-mag .ab-boost__chip span {
+    min-height: 36px;
+    padding: 0 11px;
+    font-size: 12px;
+  }
+
+  .md-typeset .ab-mag .ab-boost__summary {
+    font-size: 16px;
+  }
+}

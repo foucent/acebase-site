@@ -1,0 +1,79 @@
+{
+ "slug": "ludo-club",
+ "name": "Ludo Club",
+ "currency": "USD",
+ "skus": [
+  {
+   "name": "120 Cash",
+   "price": 0.66,
+   "original": 0.78,
+   "stock": 9997
+  },
+  {
+   "name": "250 Cash",
+   "price": 1.24,
+   "original": 1.57,
+   "stock": 9998
+  },
+  {
+   "name": "700 Cash",
+   "price": 3.07,
+   "original": 3.93,
+   "stock": 9999
+  },
+  {
+   "name": "3200 Cash",
+   "price": 12.64,
+   "original": 15.75,
+   "stock": 9999
+  },
+  {
+   "name": "10800 Cash",
+   "price": 39.47,
+   "original": 47.26,
+   "stock": 9999
+  },
+  {
+   "name": "20000 Cash",
+   "price": 63.42,
+   "original": 73.85,
+   "stock": 9999
+  },
+  {
+   "name": "37500 Coins",
+   "price": 0.62,
+   "original": 0.78,
+   "stock": 9999
+  },
+  {
+   "name": "190000 Coins",
+   "price": 1.24,
+   "original": 1.57,
+   "stock": 9999
+  },
+  {
+   "name": "1300000 Coins",
+   "price": 6.14,
+   "original": 7.87,
+   "stock": 9999
+  },
+  {
+   "name": "3300000 Coins",
+   "price": 8.85,
+   "original": 11.81,
+   "stock": 9999
+  },
+  {
+   "name": "13500000 Coins",
+   "price": 19.42,
+   "original": 23.63,
+   "stock": 9999
+  },
+  {
+   "name": "70000000 Coins",
+   "price": 57.9,
+   "original": 70.89,
+   "stock": 9999
+  }
+ ]
+}

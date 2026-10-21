@@ -1,0 +1,61 @@
+{
+ "slug": "nimo-tv",
+ "name": "Nimo TV",
+ "currency": "USD",
+ "skus": [
+  {
+   "name": "699 Diamonds",
+   "price": 6.91,
+   "original": 8.67,
+   "stock": 9998
+  },
+  {
+   "name": "450 Diamonds",
+   "price": 4.4,
+   "original": 5.56,
+   "stock": 9999
+  },
+  {
+   "name": "349 Diamonds",
+   "price": 3.43,
+   "original": 4.33,
+   "stock": 9999
+  },
+  {
+   "name": "45000 Diamonds",
+   "price": 474.14,
+   "original": 555.89,
+   "stock": 9999
+  },
+  {
+   "name": "9000 Diamonds",
+   "price": 92.46,
+   "original": 111.18,
+   "stock": 9998
+  },
+  {
+   "name": "6999 Diamonds",
+   "price": 72.11,
+   "original": 86.72,
+   "stock": 9998
+  },
+  {
+   "name": "4500 Diamonds",
+   "price": 45.88,
+   "original": 55.59,
+   "stock": 9999
+  },
+  {
+   "name": "3499 Diamonds",
+   "price": 35.38,
+   "original": 38.12,
+   "stock": 9999
+  },
+  {
+   "name": "1350 Diamonds",
+   "price": 13.66,
+   "original": 16.68,
+   "stock": 9999
+  }
+ ]
+}

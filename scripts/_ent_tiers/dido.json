@@ -1,0 +1,37 @@
+{
+ "slug": "dido",
+ "name": "DiDO-Voice Chat & Party Game",
+ "currency": "USD",
+ "skus": [
+  {
+   "name": "10000 Coins",
+   "price": 5.51,
+   "original": 6.92,
+   "stock": 9999
+  },
+  {
+   "name": "30000 Coins",
+   "price": 16.52,
+   "original": 20.65,
+   "stock": 9999
+  },
+  {
+   "name": "50000 Coins",
+   "price": 27.54,
+   "original": 34.43,
+   "stock": 9999
+  },
+  {
+   "name": "70000 Coins",
+   "price": 38.56,
+   "original": 48.2,
+   "stock": 9999
+  },
+  {
+   "name": "100000 Coins",
+   "price": 55.08,
+   "original": 68.85,
+   "stock": 9999
+  }
+ ]
+}

@@ -1,0 +1,43 @@
+{
+ "slug": "xena-live-group-voice",
+ "name": "Xena Live: Group Voice",
+ "currency": "USD",
+ "skus": [
+  {
+   "name": "680000 Coins",
+   "price": 87.96,
+   "original": 99.99,
+   "stock": 9909
+  },
+  {
+   "name": "406800 Coins",
+   "price": 52.77,
+   "original": 59.99,
+   "stock": 9939
+  },
+  {
+   "name": "202500 Coins",
+   "price": 26.38,
+   "original": 29.99,
+   "stock": 9758
+  },
+  {
+   "name": "67500 Coins",
+   "price": 8.42,
+   "original": 9.99,
+   "stock": 9809
+  },
+  {
+   "name": "33500 Coins",
+   "price": 4.21,
+   "original": 4.99,
+   "stock": 9882
+  },
+  {
+   "name": "6700 Coins",
+   "price": 0.85,
+   "original": 0.99,
+   "stock": 9833
+  }
+ ]
+}

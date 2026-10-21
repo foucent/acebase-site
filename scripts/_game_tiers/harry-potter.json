@@ -1,0 +1,85 @@
+{
+ "slug": "harry-potter",
+ "name": "Harry Potter: Magic Awakened",
+ "currency": "USD",
+ "skus": [
+  {
+   "name": "300 Jewels",
+   "price": 4.07,
+   "original": 4.99,
+   "stock": 9999
+  },
+  {
+   "name": "680 Jewels",
+   "price": 8.48,
+   "original": 9.99,
+   "stock": 9999
+  },
+  {
+   "name": "980 Jewels",
+   "price": 12.58,
+   "original": 14.99,
+   "stock": 9999
+  },
+  {
+   "name": "1280 Jewels",
+   "price": 17.08,
+   "original": 19.99,
+   "stock": 9999
+  },
+  {
+   "name": "1980 Jewels",
+   "price": 25.53,
+   "original": 29.99,
+   "stock": 9999
+  },
+  {
+   "name": "3280 Jewels",
+   "price": 42.54,
+   "original": 49.99,
+   "stock": 9999
+  },
+  {
+   "name": "6480 Jewels",
+   "price": 85.07,
+   "original": 99.99,
+   "stock": 9999
+  },
+  {
+   "name": "19440 Jewels",
+   "price": 268.5,
+   "original": 299.99,
+   "stock": 999
+  },
+  {
+   "name": "Monthly Card",
+   "price": 4.18,
+   "original": 4.99,
+   "stock": 9999
+  },
+  {
+   "name": "Gold Supply Pack",
+   "price": 4.18,
+   "original": 4.99,
+   "stock": 9999
+  },
+  {
+   "name": "Ruby Key Pack",
+   "price": 8.41,
+   "original": 9.99,
+   "stock": 9999
+  },
+  {
+   "name": "Clockturn Key Pack",
+   "price": 12.83,
+   "original": 14.99,
+   "stock": 9999
+  },
+  {
+   "name": "Golden Key Pack",
+   "price": 17.43,
+   "original": 19.99,
+   "stock": 9999
+  }
+ ]
+}

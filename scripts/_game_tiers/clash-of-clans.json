@@ -1,0 +1,85 @@
+{
+ "slug": "clash-of-clans",
+ "name": "Clash of Clans",
+ "currency": "USD",
+ "skus": [
+  {
+   "name": "Event Pass",
+   "price": 4.23,
+   "original": 4.88,
+   "stock": 9999
+  },
+  {
+   "name": "Gold Pass",
+   "price": 5.94,
+   "original": 6.83,
+   "stock": 9996
+  },
+  {
+   "name": "500 Gems",
+   "price": 4.23,
+   "original": 4.88,
+   "stock": 9999
+  },
+  {
+   "name": "1200 Gems",
+   "price": 8.55,
+   "original": 9.85,
+   "stock": 0
+  },
+  {
+   "name": "2500 Gems",
+   "price": 17.85,
+   "original": 19.72,
+   "stock": 0
+  },
+  {
+   "name": "6500 Gems",
+   "price": 44.73,
+   "original": 49.31,
+   "stock": 9999
+  },
+  {
+   "name": "14000 Gems",
+   "price": 89.26,
+   "original": 98.63,
+   "stock": 9999
+  },
+  {
+   "name": "Any 4.99 Pack",
+   "price": 4.23,
+   "original": 4.88,
+   "stock": 9998
+  },
+  {
+   "name": "Any 6.99 Pack",
+   "price": 5.94,
+   "original": 6.83,
+   "stock": 9999
+  },
+  {
+   "name": "Any 9.99 Pack",
+   "price": 8.55,
+   "original": 9.85,
+   "stock": 9998
+  },
+  {
+   "name": "Any 19.99 Pack",
+   "price": 17.85,
+   "original": 19.72,
+   "stock": 0
+  },
+  {
+   "name": "Any 49.99 Pack",
+   "price": 44.73,
+   "original": 49.31,
+   "stock": 9999
+  },
+  {
+   "name": "Any 99.99 Pack",
+   "price": 89.26,
+   "original": 98.63,
+   "stock": 9999
+  }
+ ]
+}

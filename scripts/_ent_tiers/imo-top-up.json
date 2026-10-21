@@ -1,0 +1,61 @@
+{
+ "slug": "imo-top-up",
+ "name": "IMO Diamonds",
+ "currency": "USD",
+ "skus": [
+  {
+   "name": "100 Diamonds",
+   "price": 1.91,
+   "original": 2.41,
+   "stock": 9858
+  },
+  {
+   "name": "160 Diamonds",
+   "price": 3.06,
+   "original": 3.85,
+   "stock": 9925
+  },
+  {
+   "name": "210 Diamonds",
+   "price": 4.01,
+   "original": 5.06,
+   "stock": 9957
+  },
+  {
+   "name": "420 Diamonds",
+   "price": 8.01,
+   "original": 10.11,
+   "stock": 9959
+  },
+  {
+   "name": "840 Diamonds",
+   "price": 16.75,
+   "original": 20.24,
+   "stock": 9980
+  },
+  {
+   "name": "1680 Diamonds",
+   "price": 33.49,
+   "original": 40.48,
+   "stock": 9987
+  },
+  {
+   "name": "2100 Diamonds",
+   "price": 41.85,
+   "original": 50.59,
+   "stock": 9980
+  },
+  {
+   "name": "4200 Diamonds",
+   "price": 83.7,
+   "original": 101.18,
+   "stock": 9980
+  },
+  {
+   "name": "8400 Diamonds",
+   "price": 172.08,
+   "original": 202.36,
+   "stock": 9993
+  }
+ ]
+}

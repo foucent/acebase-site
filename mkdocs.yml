@@ -44,7 +44,10 @@ plugins:
         gallery/figures.md: gallery/index.md
         gallery/coser.md: gallery/index.md
         gallery/pre-owned.md: gallery/index.md
-        games/honor-of-kings.md: topup/index.md
+        # 2026-10-21：五个游戏详情页与 honor-of-kings 的存根从 /topup/ 改指
+        # /games/ —— 那一格新增 GAME 类目，5 张游戏卡整块搬过去，卡片 id 没改，
+        # 所以存根带着锚点跳过去仍然落在卡上（/games/hok/#hok → /games/#hok）。
+        games/honor-of-kings.md: games/index.md
         games/steam-accounts.md: index.md
         games/valorant-accounts.md: index.md
         currency/index.md: index.md
@@ -65,18 +68,22 @@ plugins:
         games/rtx-3060-ti.md: games/gpu-deals.md
         # 代储价格页 2026-09-21 从 /games/topup-prices/ 提到顶层 /topup/，
         # 和 /gear/（当时叫 /tech/）并列。旧 URL 指过去，免得留下 404。
-        games/topup-prices.md: topup/index.md
+        # **2026-10-21 改指 /games/**：代储卡（含各游戏锚点）搬到了新类目，
+        # 停在 /topup/ 就落不到卡上了。
+        games/topup-prices.md: games/index.md
         # 五个游戏详情页 2026-09-21 下线 —— /topup 的卡片自己就把档位和价格列全了，
         # 详情页只是同一份数据的第二个入口。旧 URL 指回总览页对应那张卡的锚点。
-        games/pubg-mobile.md: topup/index.md
-        games/pubg-gcoin.md: topup/index.md
-        games/hok.md: topup/index.md
-        games/arena-breakout.md: topup/index.md
-        games/where-winds-meet.md: topup/index.md
+        # **2026-10-21 总览页换成 /games/**（同上，卡片 id 没改，锚点仍然有效）。
+        games/pubg-mobile.md: games/index.md
+        games/pubg-gcoin.md: games/index.md
+        games/hok.md: games/index.md
+        games/arena-breakout.md: games/index.md
+        games/where-winds-meet.md: games/index.md
         # `gift-cards/index.md: topup/index.md` 与 `cdkeys/index.md:
         # topup/index.md` 两条 2026-09-21 曾在这一行（当时礼品卡与充值码都是
         # /topup 的第二、三段），2026-09-24 两页各自立成类目时删掉 —— 地址上了
-        # 真页面，留存根会把页面自己顶走。**2026-10-13 两条又都补回来了**：
+        # 真页面，留存根会把页面自己顶走。**2026-10-13 两条又都补回来了**
+        # （/gift-cards/ 那条 2026-10-21 再删掉，见下面）：
         # 那一天 /gift-cards/（6 张）与 /cdkeys/（7 张）整体并回 /topup/，
         # 两个目录连页面一起删掉，URL 只剩存根。mkdocs-redirects 的存根会
         # **带着锚点**跳（`location.href = "../topup/" + (anchor ? "#"+anchor : "")`），
@@ -87,13 +94,37 @@ plugins:
         # 价格改由 prices.json 供。旧 URL 指过去。
         games/live-prices.md: topup/index.md
         # 2026-10-13：礼品卡与充值码两个类目并回 /topup/，两页的地址只剩存根
-        # （理由与锚点见上面 gift-cards 那一段）。**这两条不能省** —— 页面删了
-        # 而存根不补，/gift-cards/ 与 /cdkeys/ 直接 404。
-        gift-cards/index.md: topup/index.md
-        cdkeys/index.md: topup/index.md
+        # （理由与锚点见上面 gift-cards 那一段）。**这条不能省** —— 页面删了
+        # 而存根不补，/cdkeys/ 直接 404。
+        #
+        # /gift-cards/ 2026-10-21 又变回真页面（nav 的 SOURCING 一格换成 GIFT
+        # CARDS），所以它这条**删掉** —— 留着会像 09-24 那次一样把新页顶走。
+        #
+        # 2026-10-22：/topup/ 换成娱乐代储 30 款，七张充值码卡全站撤掉，原来
+        # 指过去的存根（带 `#gocash-card` 这类锚点）会落到一张不存在的卡上。
+        # 码卡与礼品卡同属数字码，所以这条改指 /gift-cards/（六张礼品卡都在
+        # 那一页）。
+        cdkeys/index.md: gift-cards/index.md
+
+        # /sourcing/ 2026-10-21 换成 Gift Cards（用户：「将 /sourcing/ 改为
+        # Gift Cards，包括链接」）：八张手办卡整页删掉，这个 URL 改指新页面；
+        # 六张礼品卡是从 /topup/ 复制过去的，id 没改，所以 /sourcing/#amazon-
+        # gift-card-us 这类新地址的锚点也落得到卡上。
+        sourcing/index.md: gift-cards/index.md
+        # NEWS 2026-10-21 改名 BLOG（用户：「将News改为blog」）：目录 git mv 到
+        # docs/blog/，地址 /news/ → /blog/，这一条就是 /news/ 的存根。改名那天
+        # 页面内容没变、卡片 id 没变，存根带锚点跳（/news/#... → /blog/#...）
+        # 落得到卡；2026-10-22 那页换成九行资讯列表之后 `#haruo-news-card` 已经
+        # 不在，旧锚点只剩跳转本身 —— 落在页面顶部，不落在 404 上。
+        news/index.md: blog/index.md
+        # FAQ 2026-10-21 整页撤掉（用户：「删除FAQ」，问过之后选的是导航和页面
+        # 一起删）：docs/faq/ 连页面删除，/faq/ 指回首页 —— 跟 /services/、
+        # /style/ 同一种处置，谁跟过来都找不到原来的内容，至少不落在 404 上。
+        faq/index.md: index.md
         # 旧 FAQ 页（f8b7ba5 随 shop 目录一起下线）一直没人接手，URL 是 404；
-        # /faq/ 是它的继任者，指过去。
-        shop/faq-and-updates.md: faq/index.md
+        # 它原先指 /faq/。**2026-10-21 /faq/ 也撤了**，改指首页 —— 指存根会多
+        # 一跳（/shop/faq-and-updates/ → /faq/ → /）。
+        shop/faq-and-updates.md: index.md
         # /car/ 2026-09-22 并入当时的 /sim-gear/（后来叫 /style/）—— 汽车实拍
         # 图集不再单独成类目，六张卡进了那一页的同一个网格。这一行当时指回首页
         # 是一处旧账（六张卡在 /style/ 上，指 style/index.md 才能让 /car/#car-01
@@ -126,11 +157,14 @@ plugins:
         # 也跟着 git mv 到 docs/sourcing/。**八张卡的 id 一直没动**，所以这条
         # 存根两次都带着锚点跳（`/figures/#gear-13` → `/sourcing/#gear-13`），
         # 目标页上有同名 id，老锚点照样落在卡片上。目标直接指 /sourcing/，不指
-        # 已经作废的 /proxy-buy/ 存根，否则多一跳。
-        figures/index.md: sourcing/index.md
+        # 已经作废的 /proxy-buy/ 存根，否则多一跳。**2026-10-21 目标改成首页**：
+        # /sourcing/ 换成 Gift Cards，八张手办卡整页删掉，锚点无处可落，和
+        # /style/ 同一种处置。
+        figures/index.md: index.md
         # /proxy-buy/ 同一天又改名为 /sourcing/（用户：「将链接要改成 SOURCING」）。
         # 这一条就是那一次的补偿 —— 页面只存在了几小时，但 URL 可能已经被人拿到。
-        proxy-buy/index.md: sourcing/index.md
+        # 2026-10-21 与 figures/ 同步改指首页。
+        proxy-buy/index.md: index.md
         # /gear/ 2026-10-06 改名 /figures/ —— 栏目名先改成 FIGURES，用户随后要求
         # 「路径也要改的和栏目名一样」，于是目录 git mv 到 docs/figures/。**这条
         # 存根就是那一次的补偿**：/gear/ 从正式地址变回旧地址，不补就是 404。
@@ -139,7 +173,8 @@ plugins:
         # 从 desk-NN 改成 gear-NN，老锚点全废）。
         # **2026-10-20 起目标改成 /sourcing/**，理由同上一条：卡片 id 没动，
         # 锚点仍然有效；不跟着改就会多一跳（/gear/ → /figures/ → /sourcing/）。
-        gear/index.md: sourcing/index.md
+        # 2026-10-21 与 figures/ 同步改指首页。
+        gear/index.md: index.md
         #
         # /tech/ 2026-09-24 下午 改名为 /gear/ —— 这一格从 TECH 改名 GEAR，卡片 id 与
         # 图片名也从 desk-NN / desk_NN_MM.jpg 换成 gear-NN / gear_NN_MM.jpg。
@@ -152,11 +187,18 @@ plugins:
         # 当天先改名 FIGURES（标签），随后路径也改成 /figures/。指错就等于把
         # /tech/ 这样的老 URL 送进一个不存在的页面。**2026-10-20 又跟着改成
         # sourcing/index.md。**
-        tech/index.md: sourcing/index.md
+        # 2026-10-21 与 figures/ 同步改指首页。
+        tech/index.md: index.md
 
         # /wellness/ 2026-09-22 删除 —— 「健康生活」筹备页从没有过卡片，也没上过
         # 首页，没有内容可以搬。
         wellness/index.md: index.md
+
+        # /services/ 2026-10-21 删除 —— 用户要求整页连同导航一起去掉。六张电脑
+        # 调试卡（每项 $9.9）没有搬到别的页，所以指回首页，和 /style/、/car/、
+        # /sim-gear/、/wellness/ 同一种处置。图片没删，仍在
+        # docs/assets/services/ 下；卡片样式 ab-card--service 还在 /boosting/ 用。
+        services/index.md: index.md
 
 markdown_extensions:
   - admonition
@@ -186,6 +228,8 @@ extra_css:
   # Loads last: the magazine homepage owns the widest-reaching selectors, so
   # it should win any specificity tie against the per-page sheets above.
   - stylesheets/uncrate.css
+  # /boosting/ only. Scoped to .ab-boost* inside .ab-mag.
+  - stylesheets/boosting.css
 
 extra_javascript:
   - javascripts/crisp.js
@@ -199,6 +243,8 @@ extra_javascript:
   # .ab-ec-list[data-product] targets are gone and /topup renders every card,
   # these fourteen included, through games-prices.js.
   - javascripts/games-prices.js
+  # /boosting/ configurator; exits unless [data-boost-root] is on the page.
+  - javascripts/boosting.js
 
 watch:
   - overrides
@@ -246,20 +292,55 @@ extra:
   generator: false
 
 nav:
-  # 2026-10-20：第一格从 **HOME** 换成 **NEWS**（用户：「将 /card-test/ 改名为
-  # news并将它替代home导航」，问过之后选的是「导航第一格改成 NEWS」）。
+  # 2026-10-21：导航重排（用户：「将导航按 top-up , game,gift cards,BOOSTING,news
+  # 进行排序，并将News改为blog，删除FAQ」）。现在的顺序是 **TOP-UP / GAME /
+  # GIFT CARDS / BOOSTING / BLOG**。同一天还做了两件事：NEWS 改名 **BLOG**
+  # （目录 git mv 到 docs/blog/，地址 /news/ → /blog/，/news/ 出存根），FAQ
+  # 整页撤掉（docs/faq/ 删除，/faq/ 出存根指首页）。各格的历史注释跟着自己
+  # 那一格走，没有重写。
   #
-  # 首页 **没有删**，/ 现在还是一次 gen_home.py 跑出来的「最近更新」流；它只是
-  # 不再占 nav 第一格，回头路是页头的字标 ACEBASE（overrides/partials/header.html
-  # 里 href="{{ home_url }}"）。所以这一行挪走之后：
-  #   · mkdocs.yml 的 nav 里不再有 index.md，但 gen_home.py 的 `rel == "index.md"`
-  #     跳过分支仍然有效 —— 以后谁把首页放回来也不会被自己当类目取一遍；
-  #   · news/index.md 成了 nav 类目，gen_home.py 会把这一页的卡按「最新六张」取到
-  #     首页 —— 这就是「替代 home 导航」想要的效果：首页第一排就是资讯；
-  #   · 新页面的 frontmatter 因此必须有 updated:（2026-10-20），否则那一段会被
-  #     gen_home.py 在 stderr 上点名、且不上首页。
-  # /card-test/ 从未进过 nav、也从未推送，所以 redirect_maps 不用给它留存根。
-  - NEWS: news/index.md
+  # 重排会影响首页，所以同一天把 gen_home.py 的去重规则也改了：它把这份 nav
+  # 当类目表，而同一张卡只能上首页一次。原先「nav 里靠前的类目留下重复卡」，
+  # TOP-UP 排到 GIFT CARDS 前面后会把六张礼品卡全占掉、GIFT CARDS 一格都上
+  # 不了首页（22 → 16）。新规则是 **重复卡归卡片更少的那个类目**（/gift-cards/
+  # 6 张 < /topup/ 13 张），与顺序无关；计数仍是 TOP-UP 6 + GAME 5 +
+  # GIFT CARDS 6 + BOOSTING 4 + BLOG 1 = 22。
+  #
+  # 2026-10-22：/topup/ 的十三张卡整批换成 topuplist entertainment 分类精选的
+  # 30 款（直播 / 语音房 / 社交 App 代储）。六张礼品卡在 /gift-cards/ 有自己的
+  # 副本、不受影响；七张充值卡（Fortnite / Apex / PlayStation / Switch Online /
+  # eShop / Steam / GoCash）全站撤掉，只在 prices.json 里留档。去重规则没变，
+  # 只是比较的两边变成 /gift-cards/ 6 张 < /topup/ 30 张，结论相同；首页仍是
+  # TOP-UP 6 + GAME 6 + GIFT CARDS 6 + BLOG 1 = **19 张**，只是 TOP-UP 那六张
+  # 换成了 Douyin / Kuaishou / Bigo / MICO / Poppo / Tango。
+  - TOP-UP: topup/index.md
+  # 2026-10-21：新增 GAME 类目（用户：「增加一个Game类目」）。问过之后选的是
+  # 「游戏代储汇总页 /games/」—— /topup/ 开头 5 张游戏代储卡整块搬过来，那边
+  # 只剩 6 张礼品卡 + 7 张充值卡（18 → 13）。卡片 id / data-game 没改，
+  # prices.json 与 games-prices.js 两页同源；五个游戏详情页连同 honor-of-kings、
+  # topup-prices 的存根从 /topup/ 改指 /games/（锚点落在同名 id 的卡上）。
+  # 这是新起的类目，/games/ 以前只作前缀用过（/games/gpu-deals/）、没有页面，
+  # 所以不需要给它补存根。gen_home.py 把这份 nav 当类目表，首页因此多一排
+  # GAME 5 张（17 → 22），TOP-UP 那排继续按卡片 id 去重（六张礼品卡归
+  # GIFT CARDS），顺延到 6 张充值卡。连带改过六个页面的「相关」云、README 的
+  # URL 表，以及仓库外 _tmp_ocr/sweep_overflow.py 的 PAGES。
+  - GAME: games/index.md
+  # 2026-10-21：这一格从 SOURCING 换成 **GIFT CARDS**（用户：「将
+  # http://127.0.0.1:8003/sourcing/ 改为 Gift Cards，包括链接」）。问过之后
+  # 三件事定下来：URL 用回 /gift-cards/（09-24 到 10-13 之间正是它的正式地址，
+  # 并回 /topup/ 后只剩存根 —— 那条存根今天就删掉，否则会把新页顶走）；
+  # 原先的八张手办卡整页删掉，图仍留在 /assets/gallery/gear/；六张礼品卡从
+  # /topup/ **复制**过来（那边原样保留），档位价由 prices.json 两页同填。
+  # redirect_maps 里新增 `sourcing/index.md: gift-cards/index.md`；`figures/`、
+  # `proxy-buy/`、`gear/`、`tech/` 四条旧存根原先指 /sourcing/，内容已删，
+  # 改指首页。gen_home.py 把 nav 当类目表，首页那一排由六张 SOURCING 卡换成
+  # 六张礼品卡（总数 17 不变）；它同时改成按卡片 id 去重，否则同一张卡会在首页
+  # 出现两次（重复 id、第二张的规格选择器填不上价），TOP-UP 那排因此顺延到
+  # Fortnite 充值卡。连带改过六个页面的「相关」云、README 的 URL 表、
+  # _tmp_ocr/sweep_overflow.py 的 PAGES。
+  - GIFT CARDS: gift-cards/index.md
+  # 下面是这一格此前的来历（FIGURES / SOURCING，2026-10-20 及更早）。
+  #
   # 2026-10-20 改名（第五次）：FIGURES → **SOURCING**。用户原话「将 /figures/
   # 改为代购」，问过之后选的是**手办八张卡全留、只改栏目与文案**；标签先写成
   # PROXY BUY、路径 /proxy-buy/，同日又依次改成 Proxy shopping、Sourcing，
@@ -267,7 +348,8 @@ nav:
   # 标签定成 SOURCING。页面标题/导语/描述改成代购说明，页尾补了一段代购流程；
   # 卡片 id、data-gallery、图片资源一律没动，所以 /figures/#gear-13 这类锚点
   # 仍有效。redirect_maps 里 `figures/`、`proxy-buy/`、`gear/`、`tech/` 四条
-  # 存根全部直接指 /sourcing/（指向旧存根会多一跳）。
+  # 存根全部直接指 /sourcing/（指向旧存根会多一跳）。**2026-10-21 起四条改指
+  # 首页** —— 手办卡整页删了，没有可落的目标，见上面 GIFT CARDS 那段。
   #
   # 2026-09-24 改名（当天第三次）：这一格原来叫 TECH，装着九套桌搭 + 三套赛车
   # 模拟器实拍，共 96 张。用户把它改名 GEAR，URL 从 /tech/ 改成 /gear/；卡片 id
@@ -289,25 +371,61 @@ nav:
   # **卡片 id / 图片名 / 资源目录 `docs/assets/gallery/gear/` 三样都没跟着改名**：
   # 改 id 要连带动 58 个文件名、`data-gallery` 里的路径与 JSON-LD 的锚点，而
   # **锚点一改名就救不回来**（见 /tech/ 那段的注释）。现在 `/figures/#gear-13`
-  # 这类锚点仍然有效，正是没动它们换来的。
-  - SOURCING: sourcing/index.md
-  - TOP-UP: topup/index.md
+  # 这类锚点仍然有效，正是没动它们换来的。**2026-10-21 八张卡整页删掉，这些
+  # 锚点随之失效。**
   # 2026-10-20 新增 BOOSTING（标签英文、正文中文，与全站一致）：一页
   # /boosting/，四张卡 —— 瓦罗兰特代练、英雄联盟代练、英雄联盟陪玩、坦克世界
-  # 代练，每项 $9.9。卡片复用 /services/ 的 ab-card--service（见 uncrate.css），
-  # 也是同一批淘宝主图里切出来的。新起的类目，没有旧 URL，redirect_maps 不用加
-  # 存根；连带改过六个页面的「相关」云、README 的 URL 表，以及仓库外
-  # _tmp_ocr/sweep_overflow.py 的 PAGES。gen_home.py 把这份 nav 当类目表，
-  # 所以首页会自动多出 BOOSTING 的卡 —— 改完要重跑一次。
+  # 代练，每项 $9.9。卡片复用 ab-card--service（见 uncrate.css，最早在 /services/
+  # 上定稿，那页 2026-10-21 已撤），也是同一批淘宝主图里切出来的。新起的类目，
+  # 没有旧 URL，redirect_maps 不用加存根；连带改过六个页面的「相关」云、README
+  # 的 URL 表，以及仓库外 _tmp_ocr/sweep_overflow.py 的 PAGES。gen_home.py 把
+  # 这份 nav 当类目表，所以首页会自动多出 BOOSTING 的卡 —— 改完要重跑一次。
   - BOOSTING: boosting/index.md
-  # 2026-10-20 新增 SERVICES（标签英文、正文中文，与全站一致）：一页
-  # /services/，六张卡 —— 三角洲行动、CS2 / CS:GO、英雄联盟、绝地求生、Apex、
-  # 无畏契约的电脑调试 / 画面优化，每项 $9.9。页面照 /topup/ 的价格卡做，卡片
-  # 用 ab-card--service（见 uncrate.css）。新起的类目，没有旧 URL，redirect_maps
-  # 不用加存根；连带改过五个页面的「相关」云、README 的 URL 表，以及仓库外
-  # _tmp_ocr/sweep_overflow.py 的 PAGES。gen_home.py 把这份 nav 当类目表，所以
-  # 首页会自动多出一排 SERVICES —— 改完要重跑一次。
-  - SERVICES: services/index.md
+  # 2026-10-22：/blog/ 整页换成资讯列表（用户：「模仿
+  # https://www.topuplive.com/news/ 页中的排版，并将第一页的内容添到 /blog/
+  # （把内容改成符合自己网站的），并去掉 Haruo the Alien …… 卡片」）。原来那
+  # 一张 Haruo 卡连同文章内的 2×2 图集一起撤掉，换成来源站第一页改写来的
+  # **九行**：缩略图 16:9 在左，标题、日期·游戏、两三行导语、"Read article"
+  # 折子在右，点开在同一行里展开压缩稿。第十条是来源站自家的 2024 年招商稿，
+  # 没收（正文通篇是对方的平台，图上也全是对方品牌）。首页因此要少取：那页
+  # 原先是「最新六张」进首页，九行横卡会把它压满，所以 gen_home.py 加了
+  # CATEGORY_LIMIT_BY_LABEL = {"BLOG": 1}，首页仍 19 张（TOP-UP 6 + GAME 6 +
+  # GIFT CARDS 6 + BLOG 1；BOOSTING 那一格的页面里没有 ab-card，一直是 0）。
+  #
+  # BLOG 这一格（2026-10-21 之前叫 NEWS）：用户说「将News改为blog」，问过之后
+  # 选的是**标签与地址都改** —— nav 标签 BLOG、目录 docs/news/ 用 git mv 改到
+  # docs/blog/、地址 /news/ → /blog/、/news/ 由 redirect_maps 出存根指过来
+  # （带锚点）。页面标题与正文一个字没动，只把 JSON-LD 里写死的绝对地址同步
+  # 成 /blog/；图片仍在 docs/assets/news/ 下，资源路径不跟改名。同一天导航
+  # 重排，这一格从第一格挪到最后一格。
+  #
+  # 2026-10-20：第一格从 **HOME** 换成 **NEWS**（用户：「将 /card-test/ 改名为
+  # news并将它替代home导航」，问过之后选的是「导航第一格改成 NEWS」）。
+  #
+  # 首页 **没有删**，/ 现在还是一次 gen_home.py 跑出来的「最近更新」流；它只是
+  # 不再占 nav 第一格，回头路是页头的字标 ACEBASE（overrides/partials/header.html
+  # 里 href="{{ home_url }}"）。所以这一行挪走之后：
+  #   · mkdocs.yml 的 nav 里不再有 index.md，但 gen_home.py 的 `rel == "index.md"`
+  #     跳过分支仍然有效 —— 以后谁把首页放回来也不会被自己当类目取一遍；
+  #   · news/index.md 成了 nav 类目，gen_home.py 会把这一页的卡按「最新六张」取到
+  #     首页 —— 这就是「替代 home 导航」想要的效果：首页第一排就是资讯；
+  #   · 新页面的 frontmatter 因此必须有 updated:（2026-10-20），否则那一段会被
+  #     gen_home.py 在 stderr 上点名、且不上首页。
+  # /card-test/ 从未进过 nav、也从未推送，所以 redirect_maps 不用给它留存根。
+  - BLOG: blog/index.md
+  # FAQ 2026-10-21 撤掉（用户：「删除FAQ」），问过之后选的是**导航和页面一起
+  # 删**：docs/faq/ 整页下线，/faq/ 由 redirect_maps 出存根指回首页（与
+  # /services/、/style/ 同一种处置）；每个页面页尾「相关」云里的「购买指南」
+  # 一并去掉。旧存根 shop/faq-and-updates.md 原先指 /faq/，改指首页（指存根
+  # 会多一跳）。gen_home.py 把这份 nav 当类目表，重跑一次即从首页消失。
+  # 连带改过 README 的 URL 表、仓库外 _tmp_ocr/sweep_overflow.py 的 PAGES。
+  #
+  # SERVICES 2026-10-21 撤掉（用户：「将 https://acebase.cc/services/ 页去掉，包括
+  # 导航」）：六张电脑调试卡随页面一起下线，/services/ 由 redirect_maps 的存根
+  # 指回首页（与 /style/、/wellness/ 同一种处置）；图片没删，仍在
+  # docs/assets/services/ 下。gen_home.py 把这份 nav 当类目表，所以首页那一排
+  # SERVICES 随下一次重跑消失（23 → 17 张）。连带改过六个页面的「相关」云、
+  # README 的 URL 表，以及仓库外 _tmp_ocr/sweep_overflow.py 的 PAGES。
   # 2026-09-24 到 2026-10-13 之间，这里还挂着两格：**Gift Cards**（六张礼品卡）
   # 与 **CDKeys**（七张充值卡与充值码）。两格都是同一个来历 —— 卡片本来在
   # /topup/ 的第二、三段，2026-09-24 被拆出来、在 /style/（原 STYLE 图集页）
@@ -318,8 +436,8 @@ nav:
   # 与 docs/cdkeys/ 两个目录连页面一起删，URL 在 redirect_maps 里留存根指过来。
   # 页面回到 09-24 拆分之前的构成（5 代储 + 6 礼品卡 + 7 充值码 = 18 张卡）。
   # 所以下面 **只剩 FIGURES / TOP-UP / FAQ 三格**（FIGURES 2026-10-20 改成了
-  # SOURCING）—— BOOSTING 与 SERVICES 是 2026-10-20 另加的，见上面 TOP-UP 与
-  # SERVICES 之间的那两段。
+  # SOURCING）—— BOOSTING 是 2026-10-20 另加的，SERVICES 同日加、2026-10-21
+  # 撤，见上面那两段。
   #
   # 删这两格要连带动的地方，除了 redirect_maps 那两条存根：每个页面页尾的
   # 「相关」云（原先是 首页 · FIGURES · 代储… · Gift Cards · CDKeys · 购买指南，
@@ -327,7 +445,6 @@ nav:
   # 以及仓库外 _tmp_ocr/sweep_overflow.py 的 PAGES 清单。**首页不用管**：
   # scripts/gen_home.py 直接把这份 nav 当类目表，类目没了它自己就不取那两排，
   # 重跑一次即可 —— 但那也意味着首页从 23 张缩到 12 张（见 README 的说明）。
-  - FAQ: faq/index.md
   # SHOP 这一项 2026-09-21 删除：礼品卡搬进 /topup/ 之后，同一个页面挂在
   # TOP-UP 和 SHOP 两个标签下没有意义。2026-09-22 起首页也不再按 SHOP 分组 ——
   # scripts/gen_home.py 直接把这份 nav 当成类目表，每个类目取它页面上最新的

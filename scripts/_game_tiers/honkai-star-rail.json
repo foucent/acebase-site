@@ -1,0 +1,49 @@
+{
+ "slug": "honkai-star-rail",
+ "name": "Honkai: Star Rail",
+ "currency": "USD",
+ "skus": [
+  {
+   "name": "6480+1600 Oneiric Shard",
+   "price": 92.66,
+   "original": null,
+   "stock": 9986
+  },
+  {
+   "name": "3280+600 Oneiric Shard",
+   "price": 46.38,
+   "original": null,
+   "stock": 9997
+  },
+  {
+   "name": "1980+260 Oneiric Shard",
+   "price": 28.31,
+   "original": null,
+   "stock": 9997
+  },
+  {
+   "name": "980+110 Oneiric Shard",
+   "price": 14.65,
+   "original": null,
+   "stock": 9998
+  },
+  {
+   "name": "300+30 Oneiric Shard",
+   "price": 4.48,
+   "original": null,
+   "stock": 9998
+  },
+  {
+   "name": "60 Oneiric Shard",
+   "price": 0.9,
+   "original": null,
+   "stock": 9998
+  },
+  {
+   "name": "Express Supply Pass",
+   "price": 4.46,
+   "original": null,
+   "stock": 9961
+  }
+ ]
+}

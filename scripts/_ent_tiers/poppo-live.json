@@ -1,0 +1,79 @@
+{
+ "slug": "poppo-live",
+ "name": "Poppo Live",
+ "currency": "USD",
+ "skus": [
+  {
+   "name": "2730000 Coins",
+   "price": 295.18,
+   "original": 350,
+   "stock": 99943
+  },
+  {
+   "name": "1780000 Coins",
+   "price": 195.35,
+   "original": 228.88,
+   "stock": 99954
+  },
+  {
+   "name": "920000 Coins",
+   "price": 96.55,
+   "original": 118,
+   "stock": 99929
+  },
+  {
+   "name": "870000 Coins",
+   "price": 92.52,
+   "original": 111.87,
+   "stock": 99981
+  },
+  {
+   "name": "700000 Coins",
+   "price": 73.34,
+   "original": 81.99,
+   "stock": 9959
+  },
+  {
+   "name": "450000 Coins",
+   "price": 47.87,
+   "original": 57.86,
+   "stock": 99930
+  },
+  {
+   "name": "350000 Coins",
+   "price": 36.67,
+   "original": 42.99,
+   "stock": 9933
+  },
+  {
+   "name": "270000 Coins",
+   "price": 28.73,
+   "original": 34.72,
+   "stock": 99905
+  },
+  {
+   "name": "178000 Coins",
+   "price": 18.65,
+   "original": 23,
+   "stock": 99827
+  },
+  {
+   "name": "88000 Coins",
+   "price": 8.83,
+   "original": 11.6,
+   "stock": 99664
+  },
+  {
+   "name": "83000 Coins",
+   "price": 8.46,
+   "original": 10.67,
+   "stock": 99889
+  },
+  {
+   "name": "43500 Coins",
+   "price": 4.44,
+   "original": 5.59,
+   "stock": 99697
+  }
+ ]
+}

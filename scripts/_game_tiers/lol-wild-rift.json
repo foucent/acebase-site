@@ -1,0 +1,187 @@
+{
+ "slug": "lol-wild-rift",
+ "name": "League of Legends: Wild Rift",
+ "currency": "USD",
+ "skus": [
+  {
+   "name": "425 Cores",
+   "price": 3.13,
+   "original": 5.85,
+   "stock": 9998
+  },
+  {
+   "name": "425 Cores",
+   "price": 4.29,
+   "original": 5.7,
+   "stock": 9999
+  },
+  {
+   "name": "425 Cores",
+   "price": 4.36,
+   "original": 5.93,
+   "stock": 9999
+  },
+  {
+   "name": "425 Cores",
+   "price": 3.1,
+   "original": 5.87,
+   "stock": 9999
+  },
+  {
+   "name": "1000 Cores",
+   "price": 6.94,
+   "original": 11.7,
+   "stock": 9995
+  },
+  {
+   "name": "1000 Cores",
+   "price": 9.78,
+   "original": 11.45,
+   "stock": 9999
+  },
+  {
+   "name": "1000 Cores",
+   "price": 9.59,
+   "original": 11.8,
+   "stock": 9999
+  },
+  {
+   "name": "1000 Cores",
+   "price": 6.95,
+   "original": 11.74,
+   "stock": 9998
+  },
+  {
+   "name": "1850 Cores",
+   "price": 12.9,
+   "original": 19.51,
+   "stock": 9996
+  },
+  {
+   "name": "1850 Cores",
+   "price": 17.87,
+   "original": 19.06,
+   "stock": 9999
+  },
+  {
+   "name": "1850 Cores",
+   "price": 18.27,
+   "original": 19.84,
+   "stock": 9999
+  },
+  {
+   "name": "1850 Cores",
+   "price": 13.11,
+   "original": 19.62,
+   "stock": 9999
+  },
+  {
+   "name": "3275 Cores",
+   "price": 22.66,
+   "original": 34.14,
+   "stock": 9999
+  },
+  {
+   "name": "3275 Cores",
+   "price": 31.29,
+   "original": 33.37,
+   "stock": 9999
+  },
+  {
+   "name": "3275 Cores",
+   "price": 32.05,
+   "original": 34.59,
+   "stock": 9999
+  },
+  {
+   "name": "3275 Cores",
+   "price": 22.97,
+   "original": 34.3,
+   "stock": 9999
+  },
+  {
+   "name": "4800 Cores",
+   "price": 32.46,
+   "original": 48.78,
+   "stock": 9999
+  },
+  {
+   "name": "4800 Cores",
+   "price": 44.69,
+   "original": 47.66,
+   "stock": 9999
+  },
+  {
+   "name": "4800 Cores",
+   "price": 45.73,
+   "original": 49.67,
+   "stock": 9999
+  },
+  {
+   "name": "4800 Cores",
+   "price": 33.13,
+   "original": 49.31,
+   "stock": 9999
+  },
+  {
+   "name": "10000 Cores",
+   "price": 64.82,
+   "original": 97.57,
+   "stock": 9998
+  },
+  {
+   "name": "10000 Cores",
+   "price": 89.39,
+   "original": 95.34,
+   "stock": 9999
+  },
+  {
+   "name": "10000 Cores",
+   "price": 91.45,
+   "original": 99.35,
+   "stock": 9999
+  },
+  {
+   "name": "10000 Cores",
+   "price": 66.1,
+   "original": 98.62,
+   "stock": 9999
+  },
+  {
+   "name": "425 Cores",
+   "price": 5.02,
+   "original": 5.78,
+   "stock": 9999
+  },
+  {
+   "name": "1000 Cores",
+   "price": 11.02,
+   "original": 14.46,
+   "stock": 9998
+  },
+  {
+   "name": "1850 Cores",
+   "price": 20.4,
+   "original": 24.1,
+   "stock": 9999
+  },
+  {
+   "name": "3275 Cores",
+   "price": 35.57,
+   "original": 48.2,
+   "stock": 9999
+  },
+  {
+   "name": "4800 Cores",
+   "price": 51.51,
+   "original": 57.85,
+   "stock": 9999
+  },
+  {
+   "name": "10000 Cores",
+   "price": 105.26,
+   "original": 116.57,
+   "stock": 9997
+  }
+ ]
+}

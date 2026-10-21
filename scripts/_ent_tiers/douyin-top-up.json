@@ -1,0 +1,79 @@
+{
+ "slug": "douyin-top-up",
+ "name": "Douyin（抖音）",
+ "currency": "USD",
+ "skus": [
+  {
+   "name": "60 Diamonds",
+   "price": 1.17,
+   "original": 1.45,
+   "stock": 9866
+  },
+  {
+   "name": "100  Diamonds",
+   "price": 1.99,
+   "original": 2.42,
+   "stock": 9899
+  },
+  {
+   "name": "200 Diamonds",
+   "price": 3.11,
+   "original": 4.23,
+   "stock": 9835
+  },
+  {
+   "name": "300 Diamonds",
+   "price": 4.5,
+   "original": 6.35,
+   "stock": 9886
+  },
+  {
+   "name": "500 Diamonds",
+   "price": 7.49,
+   "original": 10.58,
+   "stock": 9926
+  },
+  {
+   "name": "1000 Diamonds",
+   "price": 15.71,
+   "original": 21.17,
+   "stock": 9850
+  },
+  {
+   "name": "2000 Diamonds",
+   "price": 31.41,
+   "original": 42.33,
+   "stock": 9913
+  },
+  {
+   "name": "3000 Diamonds",
+   "price": 47.12,
+   "original": 72.57,
+   "stock": 9871
+  },
+  {
+   "name": "8000 Diamonds",
+   "price": 127.65,
+   "original": 169.34,
+   "stock": 9970
+  },
+  {
+   "name": "5000 Diamonds",
+   "price": 78.52,
+   "original": 105.83,
+   "stock": 9850
+  },
+  {
+   "name": "10000 Diamonds",
+   "price": 161.07,
+   "original": 211.67,
+   "stock": 9904
+  },
+  {
+   "name": "20000 Diamonds",
+   "price": 324.12,
+   "original": 423.34,
+   "stock": 9940
+  }
+ ]
+}

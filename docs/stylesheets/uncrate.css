@@ -1474,7 +1474,7 @@
   padding-top: 16px;
 }
 
-/* ---------- the service card, on /services/ and /boosting/ ----------------
+/* ---------- the service card, on /boosting/ (was /services/) -------------
 
    /services/ was added on 2026-10-20 with a single card on it — the Delta
    Force PC-tuning service at $9.9 — and the card is /topup/'s price card with
@@ -1484,15 +1484,16 @@
    gallery link — the card has no lightbox). The page grew to six of these
    cards the same day, one per game, and /boosting/ then took the same card for
    its four 代练 listings — they are square promotional covers as well, with the
-   same one-price/one-buy shape. What is left here is the one interval the
-   other shapes give their copy.
+   same one-price/one-buy shape. /services/ was removed on 2026-10-21; /boosting/
+   is now the only page that wears the class. What is left here is the one
+   interval the other shapes give their copy.
 
    --picker and --figure both carry a 16px top padding for the same reason:
    the frame floats 16px above the copy, and without it the picture lands
    directly on the title — the 0px /cdkeys/ was pulled up for on 2026-10-04.
    This card wears neither class. --picker would turn a ladder into a centred
    block (there is none); --figure would draw the picture with `cover`, and
-   every cover on this page is square, with the promotional art's claims
+   every cover on /boosting/ is square, with the promotional art's claims
    running to both edges, so a centre crop into the 3:4 plate would cut the
    first and last characters of every claim.
  */
@@ -1535,89 +1536,152 @@
   min-height: 0;
 }
 
-/* ---------- the news card's read-more fold, on /news/ ---------------------
+/* ---------- the news list, on /blog/ -------------------------------------
 
-   /news/'s card is the service card with the action row turned into a fold:
-   what sat there as a link to another site is now the summary of a <details>,
-   and the compressed article opens under it in the same card. The <details>
-   is /games/gpu-deals/' fold (ab-fold), so the cue keeps its 13px tan-underlined
-   treatment and the open/close words are the same pair; all this block adds is
-   where it sits and how the article reads.
+   /blog/ has been a list of stories since 2026-10-22; it was /news/ until the
+   day before, and before that a single card — the service card with its action
+   row turned into a read-more fold. The user asked for the layout of a news
+   index — 「模仿 https://www.topuplive.com/news/ 页中的排版」 — and that index is
+   a column of rows: a 16:9 thumbnail on the left, and to its right the
+   headline, a date-and-category line, a two-line standfirst and "Read more".
 
-   The summary takes the action line's place at the foot of the copy:
-   .ab-card__more held that with `margin: auto 0 0`, and the fold wears it now,
-   because the summary is the thing that has to stay level across a row of
-   cards whether the article is open or shut. Everything else is off — the
-   summary's own 44rem measure and 18px margin were sized for a band, not for
-   a 270px column.
+   So the card here is a row, not a tile. .ab-card--row undoes the tile's
+   centred column: a two-column grid with the picture on the left, text left
+   aligned, and the fold sitting where the action line used to. Everything
+   else on it stays .ab-card's, which is why the markup is still the same
+   card as everywhere else on the site.
 
-   The article is left-aligned. The card is a centred listing, but four
-   paragraphs are read line by line, and centred prose of this length turns
-   into a ragged diamond. Same reason the price rows leave the centring. */
-.md-typeset .ab-mag .ab-card--news .ab-card__read {
-  margin: auto 0 0;
-}
+   The grid is 1fr : 1.9fr rather than a fixed thumbnail width. The same card
+   is served in two places: full width on /blog/, and half of .ab-list--feed
+   on the front page (gen_home.py lifts the newest story, one per category —
+   see CATEGORY_LIMIT_BY_LABEL there). A fixed 300px thumb would be half that
+   column and a postage stamp in a 1180px row; the ratio gives each of them
+   something that still reads as a thumbnail.
 
-.md-typeset .ab-mag .ab-card--news .ab-fold__summary {
-  margin: 0;
-  max-width: none;
-  font-family: var(--ab-sans);
-  font-size: 13px;
-  line-height: 1.6;
-}
+   The picture is 16:9 `cover`: every cover file is exported at 1000x563 by
+   _tmp_ocr/news_covers.py, so there is nothing to crop. It takes its own 1px
+   frame instead of the tile's border-bottom, because it no longer runs the
+   card's full width and an edge-to-edge rule under a floating picture reads
+   as a divider.
 
-.md-typeset .ab-mag .ab-card--news .ab-fold__cue {
-  margin-left: 0;
-}
-
-.md-typeset .ab-mag .ab-card--news .ab-card__article {
-  margin: 14px 0 0;
-  text-align: left;
-  font-family: var(--ab-serif);
-  font-size: 14px;
-  line-height: 24px;
-  color: var(--ab-text-muted);
-}
-
-.md-typeset .ab-mag .ab-card--news .ab-card__article p {
-  margin: 0 0 12px;
-}
-
-.md-typeset .ab-mag .ab-card--news .ab-card__article p:last-child {
-  margin-bottom: 0;
-}
-
-/* The article's photos, two by two. They are their own anchors: without JS a
-   click still opens the picture, the way the gallery tiles do, and with it
-   photo-wall.js opens the card's gallery at that photo (data-start). The
-   frame is 16:9 like every file behind it, so the thumbnail is the whole
-   picture and not a crop. */
-.md-typeset .ab-mag .ab-card--news .ab-card__shots {
+   The title drops the uppercase. .ab-card__title is 26px/900 uppercase, and
+   that is right for "Haruo the Alien" or for a brand wordmark, but these are
+   nine- to fourteen-word headlines: "ZZZ 3.3 CITY FUND: GROWTH VS PREMIUM,
+   AND WHAT THE CERTIFICATE BUYS" is a wall. Sentence case at 22px reads as a
+   headline and matches the reference index. This is the only card on the site
+   that does it, and deliberately so: a long headline is its own reason. */
+.md-typeset .ab-mag .ab-newsfeed {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 6px;
-  margin: 0 0 12px;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 16px;
 }
 
-.md-typeset .ab-mag .ab-card--news .ab-card__shots a {
-  display: block;
-  line-height: 0;
+.md-typeset .ab-mag .ab-card--row {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.9fr);
+  align-items: start;
+  gap: 24px;
+  padding: 16px;
+  text-align: left;
 }
 
-.md-typeset .ab-mag .ab-card--news .ab-card__shots img {
-  display: block;
-  width: 100%;
+.md-typeset .ab-mag .ab-card--row .ab-card__media img {
   aspect-ratio: 16 / 9;
   object-fit: cover;
   border: 1px solid var(--ab-line);
 }
 
-.md-typeset .ab-mag .ab-card--news .ab-card__source {
+.md-typeset .ab-mag .ab-card--row .ab-card__copy {
+  padding: 0;
+}
+
+.md-typeset .ab-mag .ab-card--row .ab-card__title {
+  margin: 0 0 8px;
+  min-height: 0;
+  font-size: 22px;
+  line-height: 1.28;
+  letter-spacing: 0.2px;
+  text-transform: none;
+}
+
+/* The date and the game as a kicker under the headline: a stamp, not copy, so
+   it stays well under the headline's weight. */
+.md-typeset .ab-mag .ab-card--row .ab-card__meta {
+  margin: 0 0 12px;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.md-typeset .ab-mag .ab-card--row .ab-card__excerpt {
+  max-width: 42rem;
+  margin: 0 0 12px;
+  font-size: 16px;
+  line-height: 25px;
+}
+
+/* The fold keeps ab-fold's cue as it was on the old news card: tan underline,
+   "Read article" / "Show less". It is no longer pinned to the foot of a tile
+   (`margin: auto 0 0`), because a row is as tall as its own text and there is
+   no row of tiles to keep level. */
+.md-typeset .ab-mag .ab-card--row .ab-card__read {
+  margin: 0;
+}
+
+.md-typeset .ab-mag .ab-card--row .ab-fold__summary {
+  margin: 0;
+  max-width: none;
+  font-family: var(--ab-sans);
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.md-typeset .ab-mag .ab-card--row .ab-fold__cue {
+  margin-left: 0;
+}
+
+/* The article is the same prose as before — serif, muted, left aligned — with
+   its measure capped: the copy column is over 700px on a wide screen, which
+   is 90-odd characters a line. 42rem is a book's measure, and the headline
+   still runs the full column above it. */
+.md-typeset .ab-mag .ab-card--row .ab-card__article {
+  max-width: 42rem;
+  margin: 14px 0 0;
+  font-family: var(--ab-serif);
+  font-size: 15px;
+  line-height: 25px;
+  color: var(--ab-text-muted);
+}
+
+.md-typeset .ab-mag .ab-card--row .ab-card__article p {
+  margin: 0 0 12px;
+}
+
+.md-typeset .ab-mag .ab-card--row .ab-card__article p:last-child {
+  margin-bottom: 0;
+}
+
+.md-typeset .ab-mag .ab-card--row .ab-card__source {
   margin: 0;
   font-family: var(--ab-sans);
   font-size: 11px;
   line-height: 18px;
   color: var(--ab-text-muted);
+}
+
+/* The card stacks on a phone, picture over text, at the same breakpoint where
+   .ab-list drops to one column. The cue goes back to the site's 16px there,
+   the size every tappable action takes on narrow screens. */
+@media screen and (max-width: 767px) {
+  .md-typeset .ab-mag .ab-card--row {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 14px;
+  }
+
+  .md-typeset .ab-mag .ab-card--row .ab-fold__summary {
+    font-size: 16px;
+  }
 }
 
 /* ---------- the wordmark cards' banner, on /topup/ ------------------------

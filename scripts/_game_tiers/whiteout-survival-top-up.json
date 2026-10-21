@@ -1,0 +1,55 @@
+{
+ "slug": "whiteout-survival-top-up",
+ "name": "Whiteout Survival",
+ "currency": "USD",
+ "skus": [
+  {
+   "name": "9999 Frost Star",
+   "price": 112.1,
+   "original": null,
+   "stock": 9999
+  },
+  {
+   "name": "7499 Frost Star",
+   "price": 83.01,
+   "original": null,
+   "stock": 9998
+  },
+  {
+   "name": "4999 Frost Star",
+   "price": 54.42,
+   "original": null,
+   "stock": 9997
+  },
+  {
+   "name": "1999 Frost Star",
+   "price": 22.07,
+   "original": null,
+   "stock": 9992
+  },
+  {
+   "name": "999 Frost Star",
+   "price": 10.81,
+   "original": null,
+   "stock": 9997
+  },
+  {
+   "name": "499 Frost Star",
+   "price": 5.31,
+   "original": null,
+   "stock": 9997
+  },
+  {
+   "name": "299 Frost Star",
+   "price": 3.55,
+   "original": null,
+   "stock": 9997
+  },
+  {
+   "name": "99 Frost Star",
+   "price": 1.19,
+   "original": 1.99,
+   "stock": 9994
+  }
+ ]
+}

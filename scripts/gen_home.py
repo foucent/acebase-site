@@ -6,11 +6,11 @@ The homepage has no content of its own. The rule is one line: **every card on
 the front page is the newest six cards of a category, copied out of that
 category's page.**
 
-`Category` means the top-level nav in mkdocs.yml — GEAR, TOP-UP, Gift Cards,
-CDKeys, FAQ —
+`Category` means the top-level nav in mkdocs.yml — TOP-UP, GAME, GIFT CARDS,
+BOOSTING, BLOG —
 read from that file rather than listed here, so a category added to the nav
 reaches the front page with no edit to this script. A category whose page holds
-no cards (FAQ) contributes nothing; "如果有的话" is the whole of that rule, and
+no cards contributes nothing; "如果有的话" is the whole of that rule, and
 the run summary prints a 0 so a category cannot quietly stop contributing.
 
 The cards are copied, not re-drawn. This script used to rebuild each one from a
@@ -22,6 +22,17 @@ shows; the lightbox, the fold and the price ladder keep working because the
 markup that drives them came along. Two things are touched on the way: the
 indentation is normalised to the front page's depth, and the source page's own
 first-image priority is taken off (the front page promotes its own first card).
+
+Two pages may carry the same card now — since 2026-10-21 /gift-cards/ holds a
+copy of /topup/'s six gift cards. The front page is one document: a repeated id
+would give it two elements with that id and leave the second card's price
+picker empty, because games-prices.js fills the first `[data-game]` it finds.
+So cards are deduped by article id, and a repeated card belongs to the category
+that holds fewer cards — the more dedicated page — with nav order breaking a
+tie; the other page moves on to its next card, and the run prints what it
+skipped. Nav order alone decided this until 2026-10-21, when TOP-UP was moved
+ahead of GIFT CARDS: TOP-UP's thirteen cards would have claimed all six gift
+cards and GIFT CARDS would have put nothing on the front page.
 
 `Newest` is a section head's own 更新于 date, not the page's. A page can hold
 more than one section and they do not have to be in date order, so the section a
@@ -59,6 +70,13 @@ MKDOCS = ROOT / "mkdocs.yml"
 
 # How many cards one category may put on the front page.
 CATEGORY_LIMIT = 6
+
+# ...except where a category says otherwise. BLOG has held one card since
+# 2026-10-22: /blog/ became a list of nine news rows that day, and a row is a
+# wide, tall block — six of them would bury the front page under one category,
+# while one is the "latest story" slot the old single card filled. The page
+# itself caps nothing; only this front-page slice does.
+CATEGORY_LIMIT_BY_LABEL = {"BLOG": 1}
 
 
 # ---------------------------------------------------------------- sources
@@ -107,7 +125,7 @@ def nav_categories() -> list[tuple[str, str]]:
 # No page has a head stamp today — every page that carries cards lost its head
 # on 2026-09-22 — so the whole front page is dated by frontmatter. This stays
 # for the page that grows a head back.
-STAMP = re.compile(r"更新于\s*(?:<span[^>]*>)?\s*(\d{4}-\d{2}-\d{2})")
+STAMP = re.compile(r"(?:数据)?更新于\s*(?:<span[^>]*>)?\s*(\d{4}-\d{2}-\d{2})|Data updated\s*(?:<span[^>]*>)?\s*(\d{4}-\d{2}-\d{2})")
 # …and it has to be found inside a head. Every card also carries a
 # `数据更新于 2026-09-21` footer of its own, so an unscoped search over the
 # section would take the first card's footer for the section's date: /topup/ has
@@ -122,6 +140,12 @@ HEAD = re.compile(r'<header class="ab-section__head">(.*?)</header>', re.S)
 SECTION = re.compile(r'(?=<section class="ab-section")')
 ARTICLE = re.compile(r"<article\b[^>]*>.*?</article>", re.S)
 CLASS = re.compile(r'<article\b[^>]*\bclass="([^"]*)"')
+# The same card can sit on two pages — /gift-cards/ since 2026-10-21 carries a
+# copy of /topup/'s six, by design. The front page is one document, so an id may
+# appear only once: a second copy would repeat the id and, worse, leave its
+# price picker empty (games-prices.js fills the first `[data-game]` it finds).
+# Dedupe by article id; the category with fewer cards keeps it (see build()).
+CARD_ID = re.compile(r'<article\b[^>]*\bid="([^"]*)"')
 
 
 def page_updated(rel: str) -> str | None:
@@ -163,7 +187,7 @@ def cards_of(rel: str) -> list[tuple[str, str, str]]:
         chunk = text[start:end]
         head = HEAD.search(chunk)
         date = STAMP.search(head.group(1)) if head else None
-        date = date.group(1) if date else stamp
+        date = (date.group(1) or date.group(2)) if date else stamp
         for art in ARTICLE.finditer(chunk):
             cls = CLASS.match(art.group(0))
             if not cls or "ab-card" not in cls.group(1).split():
@@ -235,7 +259,7 @@ def section(sec_id, title, stamp, cards) -> str:
     return f'''
   <section class="ab-section" id="{sec_id}">
     <header class="ab-section__head">
-      <span class="ab-stamp" aria-hidden="true">更新于 {stamp}</span>
+      <span class="ab-stamp" aria-hidden="true">Updated {stamp}</span>
       <h2 class="ab-section__title">{esc(title)}</h2>
     </header>
     <div class="ab-list ab-list--feed">
@@ -244,17 +268,56 @@ def section(sec_id, title, stamp, cards) -> str:
   </section>'''
 
 
+def card_key(html: str) -> str:
+    """The card's article id, or the whole block when it has none."""
+    m = CARD_ID.search(html)
+    return m.group(1) if m else html
+
+
 def build() -> str:
     items: list[tuple[str, int, int, str]] = []
     counts: list[tuple[str, int]] = []
+    dupes: list[tuple[str, str, str]] = []      # (giver, key, keeper)
 
+    cats = []
     for order, (label, rel) in enumerate(nav_categories()):
         if rel == "index.md":
             continue            # the front page is not one of its own sources
-        pool = cards_of(rel)[:CATEGORY_LIMIT]
+        cats.append((order, label, cards_of(rel)))
+
+    # Which category shows a repeated card: the one holding the fewest cards —
+    # the page the card belongs to — with nav order breaking a tie. Plain nav
+    # order was the rule until 2026-10-21; reordering TOP-UP ahead of GIFT
+    # CARDS would then have handed it /gift-cards/'s own six copies.
+    owner: dict[str, tuple[int, int, str]] = {}
+    for order, label, cards in cats:
+        for _date, _lead, html in cards:
+            key = card_key(html)
+            held = owner.get(key)
+            if held is None or len(cards) < held[0]:
+                owner[key] = (len(cards), order, label)
+
+    for order, label, cards in cats:
+        limit = CATEGORY_LIMIT_BY_LABEL.get(label, CATEGORY_LIMIT)
+        pool = []
+        for date, lead, html in cards:
+            key = card_key(html)
+            if owner[key][1] != order:
+                dupes.append((label, key, owner[key][2]))
+                continue
+            pool.append((date, lead, html))
+            if len(pool) == limit:
+                break
         counts.append((label, len(pool)))
         for position, (date, lead, html) in enumerate(pool):
             items.append((date, order, position, verbatim(html, lead)))
+    if dupes:
+        gave: dict[tuple[str, str], list[str]] = {}
+        for giver, key, keeper in dupes:
+            gave.setdefault((giver, keeper), []).append(key)
+        print("  · 重复卡归卡片更少的类目：" + "；".join(
+            f"{giver} 让出 {len(keys)} 张给 {keeper}（{'、'.join(keys)}）"
+            for (giver, keeper), keys in gave.items()))
 
     # Two stable passes rather than one compound key: a key that mixes a
     # descending date with ascending tie-breakers is a key nobody can read, and
@@ -271,8 +334,8 @@ def build() -> str:
           + "、".join(f"{label} {n}" for label, n in counts))
 
     return f'''---
-title: AceBase — 游戏代储、礼品卡与显卡价格参考
-description: AceBase 汇集游戏代储、直播平台充值、电子礼品卡与 RTX 显卡价格参考，逐档对比并在同一页呈现最新行情。
+title: AceBase — Game Top-Up, Gift Cards & GPU Prices
+description: AceBase tracks game top-ups, live-stream credit, digital gift cards and RTX GPU prices, comparing every tier on one page.
 icon: material/home
 hide:
   - navigation
@@ -281,9 +344,9 @@ hide:
 ---
 
 <div class="ab-mag" markdown="0">
-{section("latest", "最近更新", stamp, cards)}
+{section("latest", "Latest updates", stamp, cards)}
 
-  <p class="ab-mag__foot">全部数据更新至 {stamp} · 报价以在线咨询为准</p>
+  <p class="ab-mag__foot">All data updated {stamp} · Final quote confirmed in chat</p>
 
 </div>
 '''

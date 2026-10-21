@@ -1,0 +1,49 @@
+{
+ "slug": "zzz",
+ "name": "Zenless Zone Zero",
+ "currency": "USD",
+ "skus": [
+  {
+   "name": "60 Monochromes",
+   "price": 1.11,
+   "original": null,
+   "stock": 9986
+  },
+  {
+   "name": "300+30 Monochromes",
+   "price": 4.62,
+   "original": null,
+   "stock": 998
+  },
+  {
+   "name": "980+110 Monochromes",
+   "price": 15.17,
+   "original": null,
+   "stock": 999
+  },
+  {
+   "name": "1980+260 Monochromes",
+   "price": 29.34,
+   "original": 29.08,
+   "stock": 9999
+  },
+  {
+   "name": "3280+600 Monochromes",
+   "price": 48.85,
+   "original": 48.41,
+   "stock": 9997
+  },
+  {
+   "name": "6480+1600 Monochromes",
+   "price": 92.82,
+   "original": 93.64,
+   "stock": 992
+  },
+  {
+   "name": "Inter-Knot Membership",
+   "price": 4.63,
+   "original": 4.73,
+   "stock": 993
+  }
+ ]
+}

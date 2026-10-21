@@ -1,111 +1,206 @@
 ---
-title: 游戏代练与陪玩 | 瓦罗兰特、英雄联盟、坦克世界 外服代练 $9.9
-description: AceBase 游戏代练与陪玩：瓦罗兰特、英雄联盟、坦克世界的欧服/美服/澳服等外服人工代打、段位代练与陪玩，纯手工、可直播；每项 $9.9（美元计价），段位与报价在线咨询。
-updated: 2026-10-20
+title: "Game Boosting & Coaching from $9.9 | Any Game, Any Server"
+description: "Hand-played boosting, placements and coaching for VALORANT, League of Legends, CS2, Dota 2, Apex Legends and more &mdash; any server, from $9.9, quoted in chat."
+updated: 2026-10-21
 hide:
   - title
   - toc
 ---
 
-<!-- 2026-10-20：新增 BOOSTING 类目（nav 标签英文，正文中文，和全站一致）。
-     素材来自 C:\Users\fouce\Downloads\代练_外服_淘宝搜索 里的五张淘宝主图，
-     切成四张卡：瓦罗兰特代练、英雄联盟代练、英雄联盟陪玩、坦克世界代练。
+<!-- 2026-10-21：/boosting/ 从「四张写死的服务卡」改成「数据驱动、对任何游戏都成立」
+     的统一代练页。结构照 Eldorado 的 boosting 页：选游戏 → 选服务 → 段位/服务器/选项
+     → 聊天报价，下面是流程、保障、定义、FAQ。
 
-     为什么是四张而不是五张：五张图里三张是 LOL —— 002 是封面图，004 是按
-     局/定位赛的价目表（左列陪玩、右列代练），005 是按段位/定位赛的另一份价目
-     表（追风）。用户选了「按类型切 4 张」，所以 LOL 拆成代练与陪玩两卡：
-     代练卡用 002 的封面，段位价目（005）并进摘要；陪玩卡用 004 的价目表。
-     005 因此没有卡片引用，原图仍留在 Downloads 里，没有复制进仓库。
+     数据源：docs/assets/boosting/boosting.json（12 款游戏、各自的段位阶梯、服务、
+     字段和选项）。加游戏只改这个 JSON；改了它要同时把 docs/javascripts/boosting.js
+     顶部的 ?v=20261021 改掉，否则浏览器会用缓存。
+     样式在 docs/stylesheets/boosting.css，只作用于 .ab-boost*。
 
-     卡片直接复用 /services/ 的 ab-card--service（见 uncrate.css）：
-     1:1 方框 + contain、不要角标、标题不要两行预留，因为这里四张也是方图，
-     封面上的字同样压到四边——用 --plate 的 3:4 竖板会把上下切掉，用 cover
-     会把左右切掉。同样没有图集、没有灯箱：图片是不可点的
-     <div class="ab-card__media">，动作行只有「购买」。
+     价格口径没变：起价 $9.9，配置器只收集需求，最终报价在 Crisp 聊天里给，
+     不算价、不列段位价目表。
 
-     价格照服务卡：一项一个价，每张卡标题末尾 $9.9。图里的人民币价目
-     （20 元一局到 1200 元一段）没有写进摘要——卡片上已经是美元一口价，
-     两套价格并排会自相矛盾；具体段位与报价以在线咨询为准，导语也这么写。
-
-     图片：瓦罗兰特 430²（未放大）、英雄联盟 1172²、陪玩价目 1600²、
-     坦克世界 800²。首图带 fetchpriority="high"（首页第一张），其余
-     loading="lazy"，照 /topup/ 的封面约定。
-
-     首页由 gen_home.py 按 nav 自动生成 BOOSTING 的卡，改完重跑它。新增类目
-     连带改的地方：mkdocs.yml 的 nav、六个页面的「相关」云、README.md 的
-     URL 表、仓库外 _tmp_ocr/sweep_overflow.py 的 PAGES。这个 URL 是新起的，
-     没有旧地址，所以 redirect_maps 不用加存根。 -->
+     2026-10-21 用户要求「Featured services 以下的内容去掉」，所以页尾那节
+     （标题 + 原来四张服务卡 + Related 云）整段删了，页面到 FAQ 结束。这四张卡
+     原本是首页 BOOSTING 的卡片来源：现在 /boosting/ 不再供卡，首页 BOOSTING
+     从 4 张变 0 张（22→18），跑 gen_home.py 会照此重写 docs/index.md。
+     全页现在没有任何 article 标签；配置器、流程、FAQ 全用 div/section/details，
+     注释里也不要写出那个标签的字面写法，以免落进 gen_home 的计数。
+     JSON-LD 里仍保留那四个 Product（服务本身还在，只是不在这页列卡）。 -->
 
 <div class="ab-mag" markdown="0">
 
   <section class="ab-section">
     <header class="ab-section__head">
-      <h1 class="ab-section__title">游戏代练与陪玩</h1>
+      <span class="ab-stamp" aria-hidden="true">Updated 2026-10-21</span>
+      <h1 class="ab-section__title">Game Boosting &amp; Coaching</h1>
     </header>
-    <p class="ab-section__lead">三款热门外服游戏的代练与陪玩：瓦罗兰特、英雄联盟、坦克世界，一项一个价，每项 $9.9。人工代打、纯手工不挂机，覆盖欧服、美服、澳服、日服、台服等外服；具体段位、区服与报价以在线咨询为准。卡片里是各款代练的封面与价目图。</p>
+    <p class="ab-section__lead">Pick your game, rank and options below, send us your account and server in chat, and we start the order &mdash; the final price is confirmed there.</p>
+    <ul class="ab-boost__facts">
+      <li>Hand-played only</li>
+      <li>Any server</li>
+      <li>From $9.9</li>
+      <li>Quote in chat</li>
+    </ul>
   </section>
 
-  <section class="ab-section">
-    <div class="ab-list ab-list--expandable ab-list--pricing">
-    <article class="ab-card ab-card--brand ab-card--plate ab-card--service" id="valorant-boosting">
-      <div class="ab-card__media">
-        <img src="/assets/boosting/valorant-boosting/01.jpg" alt="瓦罗兰特（VALORANT）外服代练服务" fetchpriority="high" decoding="async">
-      </div>
-      <div class="ab-card__copy">
-        <h3 class="ab-card__title">瓦罗兰特 代练<span class="ab-card__price">$9.9</span></h3>
-        <p class="ab-card__excerpt">欧服、美服、澳服等外服全覆盖；全段位人工代打，战绩不满意可沟通；首单立减、封号包赔，下单即上号。</p>
-        <p class="ab-card__more">
-          <a class="ab-crisp-open" href="#" data-crisp-msg="你好，我要购买 瓦罗兰特 外服代练（$9.9）。">购买</a>
-        </p>
-      </div>
-    </article>
+  <section class="ab-section" id="configure">
+    <header class="ab-section__head">
+      <h2 class="ab-section__title">Build your order</h2>
+    </header>
 
-    <article class="ab-card ab-card--brand ab-card--plate ab-card--service" id="lol-boosting">
-      <div class="ab-card__media">
-        <img src="/assets/boosting/lol-boosting/01.jpg" alt="英雄联盟 LOL 外服代练服务" loading="lazy" decoding="async">
-      </div>
-      <div class="ab-card__copy">
-        <h3 class="ab-card__title">英雄联盟 代练<span class="ab-card__price">$9.9</span></h3>
-        <p class="ab-card__excerpt">美服、欧服、澳服、日服、台服；青铜到钻石的定位赛与每段代练都能接，钻石四到大师可谈；单双排、Flex、云顶之弈与代肝一并安排，王者团队、包高胜率，输多包补。</p>
-        <p class="ab-card__more">
-          <a class="ab-crisp-open" href="#" data-crisp-msg="你好，我要购买 英雄联盟 外服代练（$9.9）。">购买</a>
-        </p>
-      </div>
-    </article>
+    <div class="ab-boost" data-boost-root>
+      <noscript>
+        <p class="ab-boost__note">The builder needs JavaScript. Tell us your game, rank and server in chat and we will quote you &mdash; VALORANT, League of Legends, CS2, Dota 2, Apex Legends, Fortnite, Overwatch 2, Rainbow Six Siege, Rocket League, Call of Duty, Marvel Rivals or World of Tanks.</p>
+      </noscript>
 
-    <article class="ab-card ab-card--brand ab-card--plate ab-card--service" id="lol-coaching">
-      <div class="ab-card__media">
-        <img src="/assets/boosting/lol-coaching/01.jpg" alt="英雄联盟 LOL 外服陪玩服务" loading="lazy" decoding="async">
+      <div class="ab-boost__step">
+        <p class="ab-boost__label">1. Game</p>
+        <div class="ab-boost__chips" data-boost-games></div>
       </div>
-      <div class="ab-card__copy">
-        <h3 class="ab-card__title">英雄联盟 陪玩<span class="ab-card__price">$9.9</span></h3>
-        <p class="ab-card__excerpt">美服、欧服、澳服、日服、台服；匹配按小时、青铜到翡翠按局结赢或 ACE；双排上分，王者团队带打，胜率与效率有保障。</p>
-        <p class="ab-card__more">
-          <a class="ab-crisp-open" href="#" data-crisp-msg="你好，我要购买 英雄联盟 外服陪玩（$9.9）。">购买</a>
-        </p>
-      </div>
-    </article>
 
-    <article class="ab-card ab-card--brand ab-card--plate ab-card--service" id="wot-boosting">
-      <div class="ab-card__media">
-        <img src="/assets/boosting/wot-boosting/01.jpg" alt="坦克世界（World of Tanks）外服代练服务" loading="lazy" decoding="async">
+      <div class="ab-boost__step">
+        <p class="ab-boost__label">2. Service</p>
+        <div class="ab-boost__chips" data-boost-services></div>
       </div>
-      <div class="ab-card__copy">
-        <h3 class="ab-card__title">坦克世界 代练<span class="ab-card__price">$9.9</span></h3>
-        <p class="ab-card__excerpt">亚服、美服、欧服；纯手工代练，过程可直播；银币、包线、天梯、领土、三环、黑岩都能做，另有陪玩；线下工作室、大神团队，首单 9 折。</p>
-        <p class="ab-card__more">
-          <a class="ab-crisp-open" href="#" data-crisp-msg="你好，我要购买 坦克世界 外服代练（$9.9）。">购买</a>
-        </p>
+
+      <div class="ab-boost__step">
+        <p class="ab-boost__label">3. Rank and server</p>
+        <div class="ab-boost__fields" data-boost-fields></div>
+        <div class="ab-boost__fields" data-boost-server></div>
+        <div class="ab-boost__options" data-boost-options></div>
       </div>
-    </article>
+
+      <p class="ab-boost__summary" data-boost-summary aria-live="polite">Choose a game, a service and your ranks.</p>
+      <p class="ab-boost__hint" data-boost-hint aria-live="polite"></p>
+      <a class="ab-boost__go ab-crisp-open" href="#" data-boost-cta data-crisp-msg="Hi, I'd like a quote for game boosting. From $9.9.">Get a quote in chat</a>
+      <p class="ab-boost__note" data-boost-note></p>
     </div>
   </section>
 
-</div>
+  <section class="ab-section">
+    <header class="ab-section__head">
+      <h2 class="ab-section__title">What we boost</h2>
+    </header>
+    <ul class="ab-boost__defs">
+      <li>
+        <h3>Rank Boost</h3>
+        <p>From your current rank to the rank you want, on any of the twelve ladders above, split into stages so you can pause between them.</p>
+      </li>
+      <li>
+        <h3>Placements</h3>
+        <p>Unranked or new-season placement matches, played to the win count you order, on your region and server.</p>
+      </li>
+      <li>
+        <h3>Net Wins</h3>
+        <p>A fixed number of wins at your current rank, for players who want progress without a full climb.</p>
+      </li>
+      <li>
+        <h3>Coaching</h3>
+        <p>Sessions by the hour with a high-rank player: live voice, screen share and written notes afterwards.</p>
+      </li>
+      <li>
+        <h3>Custom requests</h3>
+        <p>Credits, marks, camos, levels, achievements &mdash; if it can be played, describe it in chat and we will quote it.</p>
+      </li>
+    </ul>
+  </section>
 
-<div class="admonition note mg-games__note">
-  <p class="admonition-title">相关</p>
-  <p><a href="/">首页</a> &middot; <a href="/sourcing/">代购与代拍</a> &middot; <a href="/topup/">代储与礼品卡价格参考</a> &middot; <a href="/services/">游戏调试服务</a> &middot; <a href="/faq/">购买指南</a></p>
+  <section class="ab-section">
+    <header class="ab-section__head">
+      <h2 class="ab-section__title">How it works</h2>
+    </header>
+    <ol class="ab-boost__steps">
+      <li>
+        <h3>Tell us the game</h3>
+        <p>Pick the game, service, ranks and server in the builder above, or send the same details in chat.</p>
+      </li>
+      <li>
+        <h3>Price and ETA in chat</h3>
+        <p>We confirm the price, the start time and how long the climb should take &mdash; before anything is paid.</p>
+      </li>
+      <li>
+        <h3>A hand-played start</h3>
+        <p>A vetted player on your server takes the order; offline mode and streaming are your choice.</p>
+      </li>
+      <li>
+        <h3>Updates and delivery</h3>
+        <p>Progress is reported at every stage; you check the account between stages and pay stage by stage.</p>
+      </li>
+    </ol>
+  </section>
+
+  <section class="ab-section">
+    <header class="ab-section__head">
+      <h2 class="ab-section__title">Safe and hand-played</h2>
+    </header>
+    <ul class="ab-boost__defs">
+      <li>
+        <h3>Hand-played only</h3>
+        <p>No scripts, no bots, no idling. One player, one order at a time, on your region and server.</p>
+      </li>
+      <li>
+        <h3>Offline or streamed</h3>
+        <p>Appear offline while the order runs, or watch every match live &mdash; choose either when you build the order.</p>
+      </li>
+      <li>
+        <h3>Progress you can check</h3>
+        <p>Every order is split into stages, and you inspect the account between stages before the next one starts.</p>
+      </li>
+      <li>
+        <h3>Price agreed first</h3>
+        <p>The price and ETA are fixed in chat before the first match. Nothing is added later.</p>
+      </li>
+    </ul>
+  </section>
+
+  <section class="ab-section" id="faq">
+    <header class="ab-section__head">
+      <h2 class="ab-section__title">FAQ</h2>
+    </header>
+    <details class="ab-fold ab-boost__faq">
+      <summary class="ab-fold__summary">
+        <span class="ab-fold__lead">Will my account get banned for boosting?</span>
+        <span class="ab-fold__cue"><span class="ab-fold__cue-more">More</span><span class="ab-fold__cue-less">Less</span></span>
+      </summary>
+      <p>Boosting is a service most publishers prohibit, and no one can promise zero risk. Every order is hand-played, one at a time, on your region and server; offline mode and streaming are available. If an account is actioned for our play, the order is compensated as agreed in chat before it starts.</p>
+    </details>
+    <details class="ab-fold ab-boost__faq">
+      <summary class="ab-fold__summary">
+        <span class="ab-fold__lead">How soon does an order start?</span>
+        <span class="ab-fold__cue"><span class="ab-fold__cue-more">More</span><span class="ab-fold__cue-less">Less</span></span>
+      </summary>
+      <p>Most orders start within a few hours of payment. The exact start time, queue and ETA are confirmed in chat before you pay.</p>
+    </details>
+    <details class="ab-fold ab-boost__faq">
+      <summary class="ab-fold__summary">
+        <span class="ab-fold__lead">Can I watch the matches or stream them?</span>
+        <span class="ab-fold__cue"><span class="ab-fold__cue-more">More</span><span class="ab-fold__cue-less">Less</span></span>
+      </summary>
+      <p>Yes &mdash; choose Stream when you build the order and every match can be watched live. Offline mode is the opposite: the player appears offline and you can log in whenever the session is paused.</p>
+    </details>
+    <details class="ab-fold ab-boost__faq">
+      <summary class="ab-fold__summary">
+        <span class="ab-fold__lead">How large a rank jump can I order?</span>
+        <span class="ab-fold__cue"><span class="ab-fold__cue-more">More</span><span class="ab-fold__cue-less">Less</span></span>
+      </summary>
+      <p>Any span is possible, but long climbs are split into stages so you can check progress and stop between them. Above the top two tiers of a ladder &mdash; Radiant, Challenger, Predator, Champion and similar &mdash; orders are quoted case by case.</p>
+    </details>
+    <details class="ab-fold ab-boost__faq">
+      <summary class="ab-fold__summary">
+        <span class="ab-fold__lead">How do payment and refunds work?</span>
+        <span class="ab-fold__cue"><span class="ab-fold__cue-more">More</span><span class="ab-fold__cue-less">Less</span></span>
+      </summary>
+      <p>The price and ETA are fixed in chat before the first match. You pay a stage at a time; if a stage cannot be completed, the unfinished part is refunded or carried over. Payment and hand-over are arranged in chat &mdash; this site never asks for a password.</p>
+    </details>
+    <details class="ab-fold ab-boost__faq">
+      <summary class="ab-fold__summary">
+        <span class="ab-fold__lead">My game is not on the list &mdash; can you still help?</span>
+        <span class="ab-fold__cue"><span class="ab-fold__cue-more">More</span><span class="ab-fold__cue-less">Less</span></span>
+      </summary>
+      <p>Yes. The twelve games above are the ones we quote most often. Tell us the game, server and rank in chat and we will confirm whether we can take it and at what price.</p>
+    </details>
+  </section>
+
 </div>
 
 <script type="application/ld+json">
@@ -114,15 +209,17 @@ hide:
   "@graph": [
     {
       "@type": "WebPage",
-      "name": "游戏代练与陪玩",
-      "description": "AceBase 游戏代练与陪玩，按项计价，每项 $9.9。瓦罗兰特、英雄联盟、坦克世界的欧服/美服/澳服等外服代练与陪玩。",
-      "url": "https://acebase.cc/boosting/"
+      "name": "Game Boosting & Coaching",
+      "description": "Hand-played boosting, placements, net wins and coaching for VALORANT, League of Legends, CS2, Dota 2, Apex Legends and more, on any server, from $9.9.",
+      "url": "https://acebase.cc/boosting/",
+      "inLanguage": "en",
+      "dateModified": "2026-10-21"
     },
     {
       "@type": "Product",
-      "name": "瓦罗兰特 外服代练",
-      "description": "瓦罗兰特外服代练：欧服、美服、澳服等外服全段位人工代打，首单立减、封号包赔、下单即上号。",
-      "category": "游戏代练服务",
+      "name": "VALORANT Boosting",
+      "description": "VALORANT boosting on EU, NA, OCE and other servers: hand-played at every rank, first-order discount, ban compensation, account started as soon as ordered.",
+      "category": "Boosting service",
       "url": "https://acebase.cc/boosting/",
       "offers": {
         "@type": "Offer",
@@ -133,9 +230,9 @@ hide:
     },
     {
       "@type": "Product",
-      "name": "英雄联盟 外服代练",
-      "description": "英雄联盟外服代练：美服、欧服、澳服、日服、台服的定位赛与段位代练，单双排、Flex、云顶之弈与代肝，王者团队包高胜率。",
-      "category": "游戏代练服务",
+      "name": "League of Legends Boosting",
+      "description": "League of Legends boosting on NA, EU, OCE, JP and TW: placement matches and rank boosting, Solo/Duo, Flex, Teamfight Tactics and leveling, with a Master-tier team and a high win rate.",
+      "category": "Boosting service",
       "url": "https://acebase.cc/boosting/",
       "offers": {
         "@type": "Offer",
@@ -146,9 +243,9 @@ hide:
     },
     {
       "@type": "Product",
-      "name": "英雄联盟 外服陪玩",
-      "description": "英雄联盟外服陪玩：美服、欧服、澳服、日服、台服；匹配按小时，青铜到翡翠按局结赢或 ACE，王者团队带打。",
-      "category": "游戏代练服务",
+      "name": "League of Legends Coaching",
+      "description": "League of Legends coaching on NA, EU, OCE, JP and TW: hourly sessions, Bronze to Emerald paid per win or per ACE, played with a Master-tier team.",
+      "category": "Boosting service",
       "url": "https://acebase.cc/boosting/",
       "offers": {
         "@type": "Offer",
@@ -159,9 +256,9 @@ hide:
     },
     {
       "@type": "Product",
-      "name": "坦克世界 外服代练",
-      "description": "坦克世界外服代练：亚服、美服、欧服纯手工代练，过程可直播；银币、包线、天梯、领土、三环、黑岩与陪玩。",
-      "category": "游戏代练服务",
+      "name": "World of Tanks Boosting",
+      "description": "World of Tanks boosting on ASIA, NA and EU: hand-played with streaming available; credits, marks, ranked, territory, three-mark, Black Rock and coaching.",
+      "category": "Boosting service",
       "url": "https://acebase.cc/boosting/",
       "offers": {
         "@type": "Offer",
@@ -169,12 +266,65 @@ hide:
         "price": "9.9",
         "seller": { "@type": "Organization", "name": "AceBase" }
       }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Will my account get banned for boosting?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Boosting is a service most publishers prohibit, and no one can promise zero risk. Every order is hand-played, one at a time, on your region and server; offline mode and streaming are available. If an account is actioned for our play, the order is compensated as agreed in chat before it starts."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How soon does an order start?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Most orders start within a few hours of payment. The exact start time, queue and ETA are confirmed in chat before you pay."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I watch the matches or stream them?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes — choose Stream when you build the order and every match can be watched live. Offline mode is the opposite: the player appears offline and you can log in whenever the session is paused."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How large a rank jump can I order?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Any span is possible, but long climbs are split into stages so you can check progress and stop between them. Above the top two tiers of a ladder — Radiant, Challenger, Predator, Champion and similar — orders are quoted case by case."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do payment and refunds work?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The price and ETA are fixed in chat before the first match. You pay a stage at a time; if a stage cannot be completed, the unfinished part is refunded or carried over. Payment and hand-over are arranged in chat — this site never asks for a password."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "My game is not on the list — can you still help?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. The twelve games above are the ones we quote most often. Tell us the game, server and rank in chat and we will confirm whether we can take it and at what price."
+          }
+        }
+      ]
     },
     {
       "@type": "BreadcrumbList",
       "itemListElement": [
-        { "@type": "ListItem", "position": 1, "name": "首页", "item": "https://acebase.cc/" },
-        { "@type": "ListItem", "position": 2, "name": "游戏代练与陪玩", "item": "https://acebase.cc/boosting/" }
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://acebase.cc/" },
+        { "@type": "ListItem", "position": 2, "name": "Game Boosting & Coaching", "item": "https://acebase.cc/boosting/" }
       ]
     }
   ]

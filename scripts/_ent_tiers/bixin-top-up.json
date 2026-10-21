@@ -1,0 +1,43 @@
+{
+ "slug": "bixin-top-up",
+ "name": "Bi Xin（比心）",
+ "currency": "USD",
+ "skus": [
+  {
+   "name": "10 比心币",
+   "price": 1.53,
+   "original": 1.94,
+   "stock": 9999
+  },
+  {
+   "name": "100 比心币",
+   "price": 15.96,
+   "original": 19.53,
+   "stock": 9998
+  },
+  {
+   "name": "500 比心币",
+   "price": 79.76,
+   "original": 96.7,
+   "stock": 9998
+  },
+  {
+   "name": "1000 比心币",
+   "price": 164.21,
+   "original": 195.37,
+   "stock": 9999
+  },
+  {
+   "name": "10000 比心钻石",
+   "price": 15.95,
+   "original": 19.52,
+   "stock": 9998
+  },
+  {
+   "name": "50000 比心钻石",
+   "price": 79.71,
+   "original": 96.64,
+   "stock": 9999
+  }
+ ]
+}

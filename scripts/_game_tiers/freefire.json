@@ -1,0 +1,211 @@
+{
+ "slug": "freefire",
+ "name": "Free Fire",
+ "currency": "USD",
+ "skus": [
+  {
+   "name": "7290 Diamonds",
+   "price": 54.84,
+   "original": 64.54,
+   "stock": 9994
+  },
+  {
+   "name": "3640 Diamonds",
+   "price": 27.42,
+   "original": 31.77,
+   "stock": 9994
+  },
+  {
+   "name": "2200 Diamonds",
+   "price": 15.07,
+   "original": 18.06,
+   "stock": 9998
+  },
+  {
+   "name": "1450 Diamonds",
+   "price": 10.67,
+   "original": 12.9,
+   "stock": 99996
+  },
+  {
+   "name": "1000 Diamonds",
+   "price": 7.33,
+   "original": 8.84,
+   "stock": 9991
+  },
+  {
+   "name": "860 Diamonds",
+   "price": 5.46,
+   "original": 7.21,
+   "stock": 9988
+  },
+  {
+   "name": "720 Diamonds",
+   "price": 5.23,
+   "original": 6.26,
+   "stock": 995
+  },
+  {
+   "name": "500 Diamonds",
+   "price": 3.52,
+   "original": 4.96,
+   "stock": 987
+  },
+  {
+   "name": "355 Diamonds",
+   "price": 2.64,
+   "original": 3.96,
+   "stock": 9988
+  },
+  {
+   "name": "210 Diamonds",
+   "price": 1.53,
+   "original": 1.98,
+   "stock": 9989
+  },
+  {
+   "name": "100  Diamonds",
+   "price": 0.8,
+   "original": 1.28,
+   "stock": 9966
+  },
+  {
+   "name": "2200 Diamonds",
+   "price": 21.24,
+   "original": 23.82,
+   "stock": 9364
+  },
+  {
+   "name": "1080 Diamonds",
+   "price": 10.3,
+   "original": 11.91,
+   "stock": 9681
+  },
+  {
+   "name": "530 Diamonds",
+   "price": 5.06,
+   "original": 5.95,
+   "stock": 9694
+  },
+  {
+   "name": "210 Diamonds",
+   "price": 2.04,
+   "original": 2.37,
+   "stock": 9637
+  },
+  {
+   "name": "100 Diamonds",
+   "price": 1.02,
+   "original": 1.2,
+   "stock": 9302
+  },
+  {
+   "name": "Monthly Membership",
+   "price": 8.07,
+   "original": 15.05,
+   "stock": 9550
+  },
+  {
+   "name": "Weekly Membership",
+   "price": 1.72,
+   "original": 2.83,
+   "stock": 9672
+  },
+  {
+   "name": "11500 Diamonds",
+   "price": 96.31,
+   "original": 156.41,
+   "stock": 9977
+  },
+  {
+   "name": "5600 Diamonds",
+   "price": 52.75,
+   "original": 62.28,
+   "stock": 99981
+  },
+  {
+   "name": "2180 Diamonds",
+   "price": 21.1,
+   "original": 23.95,
+   "stock": 9994
+  },
+  {
+   "name": "1060 Diamonds",
+   "price": 10.22,
+   "original": 11.78,
+   "stock": 9996
+  },
+  {
+   "name": "520 Diamonds",
+   "price": 5.05,
+   "original": 5.74,
+   "stock": 9887
+  },
+  {
+   "name": "310 Diamonds",
+   "price": 3.04,
+   "original": 3.82,
+   "stock": 9984
+  },
+  {
+   "name": "100 Diamonds",
+   "price": 1.01,
+   "original": null,
+   "stock": 9973
+  },
+  {
+   "name": "Monthly Membership",
+   "price": 8.07,
+   "original": 15.05,
+   "stock": 9989
+  },
+  {
+   "name": "Weekly Membership",
+   "price": 1.72,
+   "original": 2.83,
+   "stock": 9984
+  },
+  {
+   "name": "2200 Diamonds",
+   "price": 21.24,
+   "original": 24.82,
+   "stock": 9983
+  },
+  {
+   "name": "1080 Diamonds",
+   "price": 10.3,
+   "original": 11.91,
+   "stock": 9991
+  },
+  {
+   "name": "530 Diamonds",
+   "price": 5.06,
+   "original": 5.95,
+   "stock": 9990
+  },
+  {
+   "name": "210 Diamonds",
+   "price": 2.04,
+   "original": 2.47,
+   "stock": 9993
+  },
+  {
+   "name": "100 Diamonds",
+   "price": 1.02,
+   "original": 1.2,
+   "stock": 99965
+  },
+  {
+   "name": "Monthly Membership",
+   "price": 8.07,
+   "original": 15.05,
+   "stock": 9964
+  },
+  {
+   "name": "Weekly Membership",
+   "price": 1.72,
+   "original": 2.83,
+   "stock": 9974
+  }
+ ]
+}

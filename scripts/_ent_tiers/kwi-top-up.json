@@ -1,0 +1,85 @@
+{
+ "slug": "kwi-top-up",
+ "name": "Kuaishou（快手）",
+ "currency": "USD",
+ "skus": [
+  {
+   "name": "5000 Coins",
+   "price": 80.29,
+   "original": 89.9,
+   "stock": 9983
+  },
+  {
+   "name": "3980 Coins",
+   "price": 63.91,
+   "original": 71.65,
+   "stock": 9995
+  },
+  {
+   "name": "2000 Coins",
+   "price": 32.17,
+   "original": 35.97,
+   "stock": 9994
+  },
+  {
+   "name": "1980 Coins",
+   "price": 31.8,
+   "original": 35.67,
+   "stock": 9992
+  },
+  {
+   "name": "980 Coins",
+   "price": 15.74,
+   "original": 17.63,
+   "stock": 9987
+  },
+  {
+   "name": "500 Coins",
+   "price": 7.68,
+   "original": 8.88,
+   "stock": 9992
+  },
+  {
+   "name": "300 Coins",
+   "price": 4.61,
+   "original": 5.44,
+   "stock": 9990
+  },
+  {
+   "name": "6660 Coins",
+   "price": 107.76,
+   "original": 119.92,
+   "stock": 9995
+  },
+  {
+   "name": "10000 Coins",
+   "price": 166.79,
+   "original": 179.39,
+   "stock": 9994
+  },
+  {
+   "name": "18880 Coins",
+   "price": 312.83,
+   "original": 339.97,
+   "stock": 9999
+  },
+  {
+   "name": "30000 Coins",
+   "price": 497.44,
+   "original": 540.18,
+   "stock": 9999
+  },
+  {
+   "name": "50000 Coins",
+   "price": 839.07,
+   "original": 898,
+   "stock": 9999
+  },
+  {
+   "name": "100000 Coins",
+   "price": 1674.88,
+   "original": 1829.71,
+   "stock": 9998
+  }
+ ]
+}

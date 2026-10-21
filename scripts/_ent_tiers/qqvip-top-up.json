@@ -1,0 +1,37 @@
+{
+ "slug": "qqvip-top-up",
+ "name": "Tencent QQ VIP/SVIP",
+ "currency": "USD",
+ "skus": [
+  {
+   "name": "QQ Membership Monthly Card （QQ VIP 1 Month ）",
+   "price": 0.76,
+   "original": 0.97,
+   "stock": 0
+  },
+  {
+   "name": "QQ Membership Season Card （QQ VIP 3 Month ）",
+   "price": 2.36,
+   "original": 3.9,
+   "stock": 0
+  },
+  {
+   "name": "QQ Membership Year Card （QQ VIP 1 Year ）",
+   "price": 6.94,
+   "original": 9.76,
+   "stock": 0
+  },
+  {
+   "name": "QQ Super Membership Monthly Card （QQ SVIP 1 Month ）",
+   "price": 1.2,
+   "original": 1.94,
+   "stock": 0
+  },
+  {
+   "name": "QQ Super Membership Year Card （QQ SVIP 1 Year ）",
+   "price": 12.54,
+   "original": 14.64,
+   "stock": 0
+  }
+ ]
+}

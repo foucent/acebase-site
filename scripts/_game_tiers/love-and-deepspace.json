@@ -1,0 +1,61 @@
+{
+ "slug": "love-and-deepspace",
+ "name": "Love and Deepspace",
+ "currency": "USD",
+ "skus": [
+  {
+   "name": "6480+1600 Crystals",
+   "price": 94.28,
+   "original": 129.99,
+   "stock": 999
+  },
+  {
+   "name": "3280+720 Crystals",
+   "price": 46.06,
+   "original": 69.99,
+   "stock": 999
+  },
+  {
+   "name": "1980+360 Crystals",
+   "price": 29.14,
+   "original": 39.99,
+   "stock": 999
+  },
+  {
+   "name": "980+150 Crystals",
+   "price": 27.74,
+   "original": 29.99,
+   "stock": 999
+  },
+  {
+   "name": "450+90 Crystals",
+   "price": 6.33,
+   "original": 9.99,
+   "stock": 999
+  },
+  {
+   "name": "300+30 Crystals",
+   "price": 4.41,
+   "original": 6.99,
+   "stock": 999
+  },
+  {
+   "name": "60Crystals",
+   "price": 0.89,
+   "original": 1.99,
+   "stock": 993
+  },
+  {
+   "name": "1Companionship Pack",
+   "price": 18.21,
+   "original": 24.99,
+   "stock": 998
+  },
+  {
+   "name": "1Aurum Pass (30 Days)",
+   "price": 4.41,
+   "original": 6.99,
+   "stock": 999
+  }
+ ]
+}

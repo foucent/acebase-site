@@ -1,0 +1,61 @@
+{
+ "slug": "once-human",
+ "name": "Once Human",
+ "currency": "USD",
+ "skus": [
+  {
+   "name": "8075 Crystgin",
+   "price": 93.84,
+   "original": 99.99,
+   "stock": 9989
+  },
+  {
+   "name": "3979 Crystgin",
+   "price": 46.53,
+   "original": 49.99,
+   "stock": 9986
+  },
+  {
+   "name": "2340 Crystgin",
+   "price": 28.04,
+   "original": 29.99,
+   "stock": 9991
+  },
+  {
+   "name": "1120 Crystgin",
+   "price": 13.91,
+   "original": 14.99,
+   "stock": 9989
+  },
+  {
+   "name": "339 Crystgin",
+   "price": 4.47,
+   "original": 4.99,
+   "stock": 994
+  },
+  {
+   "name": "62 Crystgin",
+   "price": 0.9,
+   "original": 1.09,
+   "stock": 991
+  },
+  {
+   "name": "Meta Pass (30Days)",
+   "price": 4.48,
+   "original": 5,
+   "stock": 9996
+  },
+  {
+   "name": "1 Battle Pass (Advanced)",
+   "price": 8.95,
+   "original": 10,
+   "stock": 9990
+  },
+  {
+   "name": "Shining New Star Selection Gift Pack",
+   "price": 0.89,
+   "original": 0.98,
+   "stock": 9995
+  }
+ ]
+}

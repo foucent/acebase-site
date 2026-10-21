@@ -1,0 +1,31 @@
+{
+ "slug": "diablo-iv",
+ "name": "Diablo IV",
+ "currency": "USD",
+ "skus": [
+  {
+   "name": "1000 Platinum",
+   "price": 8.87,
+   "original": 9.96,
+   "stock": 99999
+  },
+  {
+   "name": "2800 Platinum",
+   "price": 22.75,
+   "original": 25.08,
+   "stock": 99999
+  },
+  {
+   "name": "5700 Platinum",
+   "price": 43.57,
+   "original": 50.05,
+   "stock": 99999
+  },
+  {
+   "name": "11500 Platinum",
+   "price": 85.14,
+   "original": 100.56,
+   "stock": 99999
+  }
+ ]
+}

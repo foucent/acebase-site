@@ -1,0 +1,43 @@
+{
+ "slug": "wuthering-waves",
+ "name": "Wuthering Waves",
+ "currency": "USD",
+ "skus": [
+  {
+   "name": "60 Lunites",
+   "price": 0.83,
+   "original": 0.97,
+   "stock": 9985
+  },
+  {
+   "name": "300+30 Lunites",
+   "price": 4.19,
+   "original": 4.9,
+   "stock": 9998
+  },
+  {
+   "name": "980+110 Lunites",
+   "price": 12.83,
+   "original": 14.54,
+   "stock": 9990
+  },
+  {
+   "name": "1980+260 Lunites",
+   "price": 25.91,
+   "original": 29.08,
+   "stock": 9988
+  },
+  {
+   "name": "3280+600 Lunites",
+   "price": 43.18,
+   "original": 48.84,
+   "stock": 9996
+  },
+  {
+   "name": "6480+1600 Lunites",
+   "price": 86.35,
+   "original": 97.69,
+   "stock": 9970
+  }
+ ]
+}

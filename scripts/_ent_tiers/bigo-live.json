@@ -1,0 +1,103 @@
+{
+ "slug": "bigo-live",
+ "name": "Bigo Live",
+ "currency": "USD",
+ "skus": [
+  {
+   "name": "100 Diamonds",
+   "price": 1.8,
+   "original": 2.6,
+   "stock": 99802
+  },
+  {
+   "name": "200 Diamonds",
+   "price": 3.58,
+   "original": 5.2,
+   "stock": 99884
+  },
+  {
+   "name": "300 Diamonds",
+   "price": 5.37,
+   "original": 7.61,
+   "stock": 99778
+  },
+  {
+   "name": "500 Diamonds",
+   "price": 8.86,
+   "original": 12.07,
+   "stock": 99762
+  },
+  {
+   "name": "800 Diamonds",
+   "price": 14.69,
+   "original": 18.57,
+   "stock": 99912
+  },
+  {
+   "name": "1000 Diamonds",
+   "price": 18.49,
+   "original": 25.25,
+   "stock": 99794
+  },
+  {
+   "name": "1400 Diamonds",
+   "price": 25.87,
+   "original": 34.35,
+   "stock": 99943
+  },
+  {
+   "name": "1600 Diamonds",
+   "price": 29.57,
+   "original": 38.99,
+   "stock": 99942
+  },
+  {
+   "name": "2000 Diamonds",
+   "price": 36.9,
+   "original": 48.74,
+   "stock": 99875
+  },
+  {
+   "name": "3000 Diamonds",
+   "price": 55.36,
+   "original": 75.19,
+   "stock": 99910
+  },
+  {
+   "name": "4000 Diamonds",
+   "price": 73.82,
+   "original": 97.47,
+   "stock": 99951
+  },
+  {
+   "name": "5000 Diamonds",
+   "price": 90.99,
+   "original": 128.11,
+   "stock": 99884
+  },
+  {
+   "name": "6000 Diamonds",
+   "price": 111.87,
+   "original": 149.46,
+   "stock": 99962
+  },
+  {
+   "name": "8000 Diamonds",
+   "price": 150.94,
+   "original": 199.17,
+   "stock": 99989
+  },
+  {
+   "name": "10000 Diamonds",
+   "price": 190.43,
+   "original": 249.53,
+   "stock": 99958
+  },
+  {
+   "name": "14400 Diamonds",
+   "price": 273.76,
+   "original": 359.92,
+   "stock": 99960
+  }
+ ]
+}

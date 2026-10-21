@@ -1,0 +1,49 @@
+{
+ "slug": "sugo-top-up",
+ "name": "SUGO: Voice Live Chat Party",
+ "currency": "USD",
+ "skus": [
+  {
+   "name": "130000 Coins",
+   "price": 91.97,
+   "original": 98.47,
+   "stock": 9977
+  },
+  {
+   "name": "65000 Coins",
+   "price": 45.98,
+   "original": 49.23,
+   "stock": 9956
+  },
+  {
+   "name": "37500 Coins",
+   "price": 26.62,
+   "original": 29.53,
+   "stock": 9970
+  },
+  {
+   "name": "12500 Coins",
+   "price": 8.87,
+   "original": 9.84,
+   "stock": 9955
+  },
+  {
+   "name": "6250 Coins",
+   "price": 4.43,
+   "original": 4.91,
+   "stock": 9965
+  },
+  {
+   "name": "2400 Coins",
+   "price": 1.72,
+   "original": 1.96,
+   "stock": 9967
+  },
+  {
+   "name": "1200 Coins",
+   "price": 0.86,
+   "original": 0.98,
+   "stock": 9916
+  }
+ ]
+}

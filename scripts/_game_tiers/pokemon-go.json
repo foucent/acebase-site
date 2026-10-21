@@ -1,0 +1,55 @@
+{
+ "slug": "pokemon-go",
+ "name": "Pokémon GO",
+ "currency": "USD",
+ "skus": [
+  {
+   "name": "550 PokéCoins",
+   "price": 3.84,
+   "original": 4.99,
+   "stock": 99999
+  },
+  {
+   "name": "1200 PokéCoins",
+   "price": 7.68,
+   "original": 12.99,
+   "stock": 99999
+  },
+  {
+   "name": "2500 PokéCoins",
+   "price": 13.81,
+   "original": 22.85,
+   "stock": 99999
+  },
+  {
+   "name": "5200 PokéCoins",
+   "price": 24.29,
+   "original": 52.62,
+   "stock": 99999
+  },
+  {
+   "name": "14500 PokéCoins",
+   "price": 38.43,
+   "original": 97.21,
+   "stock": 99999
+  },
+  {
+   "name": "14500 PokéCoins*2",
+   "price": 76.47,
+   "original": 194.43,
+   "stock": 99999
+  },
+  {
+   "name": "14500 PokéCoins*3",
+   "price": 116.07,
+   "original": 291.66,
+   "stock": 99999
+  },
+  {
+   "name": "14500 PokéCoins*5",
+   "price": 197.03,
+   "original": 486.1,
+   "stock": 99999
+  }
+ ]
+}

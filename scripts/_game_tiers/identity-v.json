@@ -1,0 +1,55 @@
+{
+ "slug": "identity-v",
+ "name": "Identity V",
+ "currency": "USD",
+ "skus": [
+  {
+   "name": "60 Echoes",
+   "price": 0.85,
+   "original": 0.99,
+   "stock": 9988
+  },
+  {
+   "name": "185 Echoes",
+   "price": 2.59,
+   "original": 2.99,
+   "stock": 9999
+  },
+  {
+   "name": "308 Echoes",
+   "price": 4.3,
+   "original": 4.99,
+   "stock": 9998
+  },
+  {
+   "name": "725 Echoes",
+   "price": 10.07,
+   "original": 11.99,
+   "stock": 9999
+  },
+  {
+   "name": "1050 Echoes",
+   "price": 14.91,
+   "original": 16.99,
+   "stock": 9996
+  },
+  {
+   "name": "2220 Echoes",
+   "price": 29.93,
+   "original": 34.99,
+   "stock": 9998
+  },
+  {
+   "name": "3330 Echoes",
+   "price": 44.7,
+   "original": 49.99,
+   "stock": 9998
+  },
+  {
+   "name": "6660 Echoes",
+   "price": 89.94,
+   "original": 99.99,
+   "stock": 9997
+  }
+ ]
+}

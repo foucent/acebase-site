@@ -1,0 +1,73 @@
+{
+ "slug": "clash-royale",
+ "name": "Clash Royale",
+ "currency": "USD",
+ "skus": [
+  {
+   "name": "Diamond Pass",
+   "price": 10.37,
+   "original": 11.83,
+   "stock": 9998
+  },
+  {
+   "name": "500 Gems",
+   "price": 4.27,
+   "original": 4.92,
+   "stock": 6999
+  },
+  {
+   "name": "1200 Gems",
+   "price": 8.55,
+   "original": 9.85,
+   "stock": 9999
+  },
+  {
+   "name": "2500 Gems",
+   "price": 17.85,
+   "original": 19.72,
+   "stock": 9999
+  },
+  {
+   "name": "6500 Gems",
+   "price": 44.73,
+   "original": 49.31,
+   "stock": 9999
+  },
+  {
+   "name": "14000 Gems",
+   "price": 89.26,
+   "original": 98.63,
+   "stock": 9999
+  },
+  {
+   "name": "Any 2.99 Pack",
+   "price": 2.56,
+   "original": 2.95,
+   "stock": 9999
+  },
+  {
+   "name": "Any 4.99 Pack",
+   "price": 4.27,
+   "original": 4.92,
+   "stock": 9999
+  },
+  {
+   "name": "Any 9.99 Pack",
+   "price": 8.55,
+   "original": 9.85,
+   "stock": 9996
+  },
+  {
+   "name": "Any 19.99 Pack",
+   "price": 17.85,
+   "original": 19.72,
+   "stock": 9999
+  },
+  {
+   "name": "Any 49.99 Pack",
+   "price": 44.73,
+   "original": 49.31,
+   "stock": 9999
+  }
+ ]
+}

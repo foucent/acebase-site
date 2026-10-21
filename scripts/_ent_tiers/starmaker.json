@@ -1,0 +1,97 @@
+{
+ "slug": "starmaker",
+ "name": "StarMaker",
+ "currency": "USD",
+ "skus": [
+  {
+   "name": "3633 Coins",
+   "price": 41.83,
+   "original": 51.99,
+   "stock": 9997
+  },
+  {
+   "name": "3134 Coins",
+   "price": 36.09,
+   "original": 44.79,
+   "stock": 9994
+  },
+  {
+   "name": "2400 Coins",
+   "price": 27.72,
+   "original": 34.29,
+   "stock": 9998
+  },
+  {
+   "name": "1600 Coins",
+   "price": 18.49,
+   "original": 22.89,
+   "stock": 9997
+  },
+  {
+   "name": "1442 Coins",
+   "price": 16.66,
+   "original": 20.69,
+   "stock": 9999
+  },
+  {
+   "name": "800 Coins",
+   "price": 8.85,
+   "original": 11.49,
+   "stock": 9999
+  },
+  {
+   "name": "777 Coins",
+   "price": 8.6,
+   "original": 10.99,
+   "stock": 9999
+  },
+  {
+   "name": "715 Coins",
+   "price": 7.91,
+   "original": 10.29,
+   "stock": 9999
+  },
+  {
+   "name": "616 Coins",
+   "price": 6.82,
+   "original": 8.89,
+   "stock": 9995
+  },
+  {
+   "name": "497 Coins",
+   "price": 5.5,
+   "original": 7.19,
+   "stock": 9997
+  },
+  {
+   "name": "460 Coins",
+   "price": 5.09,
+   "original": 6.59,
+   "stock": 9996
+  },
+  {
+   "name": "398 Coins",
+   "price": 4.41,
+   "original": 5.69,
+   "stock": 9997
+  },
+  {
+   "name": "306 Coins",
+   "price": 3.39,
+   "original": 4.39,
+   "stock": 9996
+  },
+  {
+   "name": "240 Coins",
+   "price": 2.66,
+   "original": 3.49,
+   "stock": 9993
+  },
+  {
+   "name": "70 Coins",
+   "price": 0.78,
+   "original": 0.99,
+   "stock": 9976
+  }
+ ]
+}

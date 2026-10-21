@@ -1,0 +1,43 @@
+{
+ "slug": "yy-live",
+ "name": "YY LIVE",
+ "currency": "USD",
+ "skus": [
+  {
+   "name": "10 元",
+   "price": 1.56,
+   "original": 1.79,
+   "stock": 9999
+  },
+  {
+   "name": "20 元",
+   "price": 3.14,
+   "original": 3.58,
+   "stock": 9999
+  },
+  {
+   "name": "30 元",
+   "price": 4.95,
+   "original": 5.85,
+   "stock": 9999
+  },
+  {
+   "name": "50 元",
+   "price": 7.63,
+   "original": 9.76,
+   "stock": 9999
+  },
+  {
+   "name": "66 元",
+   "price": 10.22,
+   "original": 11.78,
+   "stock": 9999
+  },
+  {
+   "name": "100 元",
+   "price": 16.37,
+   "original": 17.86,
+   "stock": 9999
+  }
+ ]
+}

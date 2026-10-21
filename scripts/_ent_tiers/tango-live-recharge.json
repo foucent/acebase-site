@@ -1,0 +1,85 @@
+{
+ "slug": "tango-live-recharge",
+ "name": "Tango Live",
+ "currency": "USD",
+ "skus": [
+  {
+   "name": "15000 Coins",
+   "price": 85.94,
+   "original": 98.53,
+   "stock": 9974
+  },
+  {
+   "name": "7500 Coins",
+   "price": 42.97,
+   "original": 49.26,
+   "stock": 9976
+  },
+  {
+   "name": "3750 Coins",
+   "price": 21.48,
+   "original": 24.62,
+   "stock": 9985
+  },
+  {
+   "name": "2250 Coins",
+   "price": 12.7,
+   "original": 14.77,
+   "stock": 9986
+  },
+  {
+   "name": "1500 Coins",
+   "price": 8.22,
+   "original": 9.84,
+   "stock": 9977
+  },
+  {
+   "name": "750 Coins",
+   "price": 4.11,
+   "original": 4.92,
+   "stock": 9978
+  },
+  {
+   "name": "300 Coins",
+   "price": 1.64,
+   "original": 1.96,
+   "stock": 9963
+  },
+  {
+   "name": "150 Coins",
+   "price": 0.81,
+   "original": 0.98,
+   "stock": 9965
+  },
+  {
+   "name": "30000 Coins",
+   "price": 176.86,
+   "original": 197.06,
+   "stock": 9998
+  },
+  {
+   "name": "37500 Coins",
+   "price": 221.72,
+   "original": 246.33,
+   "stock": 9997
+  },
+  {
+   "name": "75000 Coins",
+   "price": 443.45,
+   "original": 492.67,
+   "stock": 9999
+  },
+  {
+   "name": "120000 Coins",
+   "price": 716.46,
+   "original": 788.28,
+   "stock": 9999
+  },
+  {
+   "name": "150000 Coins",
+   "price": 899.33,
+   "original": 985.36,
+   "stock": 9999
+  }
+ ]
+}

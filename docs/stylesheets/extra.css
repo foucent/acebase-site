@@ -803,3 +803,28 @@ body {
 .md-sidebar--primary .md-nav--primary > .md-nav__list > .md-nav__item--active > .md-nav--secondary {
   display: none;
 }
+
+/*
+ * 2026-10-21: no left navigation, site-wide.
+ * The primary sidebar is the desktop nav column only above Material's 76.25em
+ * breakpoint; below it the same element is the off-canvas drawer, so this rule
+ * has to stay inside the query — otherwise phones lose their menu.
+ * Without the 242px column the flex row is centred and the content keeps a
+ * 1000px box. This is in px on purpose: Material's root font-size is 125%
+ * (20px), so the obvious 62.5rem would be 1250px and the cap would never
+ * bite. 1000px minus the 24px/16px inner margins leaves 960px, the .ab-mag
+ * design width, so the section grid does not change on any page.
+ */
+@media screen and (min-width: 76.25em) {
+  .md-sidebar--primary {
+    display: none;
+  }
+
+  .md-main__inner {
+    justify-content: center;
+  }
+
+  .md-content {
+    flex: 0 1 1000px;
+  }
+}

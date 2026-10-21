@@ -14,24 +14,21 @@
     return Array.prototype.slice.call((root || document).querySelectorAll(sel));
   }
 
-  var LANG = (document.documentElement.lang || "en").toLowerCase();
-  var isZh = LANG.indexOf("zh") === 0;
+  // Every page that mounts this script (/topup/, /gift-cards/, /games/) was
+  // rewritten in English on 2026-10-21, so the strings no longer follow
+  // document.lang — the site itself is still <html lang="zh">.
   var T = {
-    amount: isZh ? "档位" : "Amount",
-    lowest: isZh ? "最低" : "Lowest",
-    highest: isZh ? "最高" : "Highest",
-    average: isZh ? "平均" : "Average",
-    official: isZh ? "官方" : "Official",
+    amount: "Amount",
+    lowest: "Lowest",
+    highest: "Highest",
+    average: "Average",
+    official: "Official",
     acebase: "AceBase",
-    discount: isZh ? "折扣" : "Discount",
-    topup: isZh ? "充值" : "Top-Up",
-    spec: isZh ? "规格" : "Spec",
-    emptySoon: isZh
-      ? "价格即将上线 — 请咨询在线客服获取最新报价。"
-      : "Prices coming soon — ask our chat for the latest quote.",
-    emptyErr: isZh
-      ? "价格暂时不可用 — 请咨询在线客服获取最新报价。"
-      : "Prices temporarily unavailable — ask our chat for the latest quote.",
+    discount: "Discount",
+    topup: "Top-Up",
+    spec: "Spec",
+    emptySoon: "Prices coming soon — ask our chat for the latest quote.",
+    emptyErr: "Prices temporarily unavailable — ask our chat for the latest quote.",
   };
 
   function money(n) {
@@ -99,7 +96,7 @@
       if (buy && base) {
         buy.setAttribute(
           "data-crisp-msg",
-          base.replace(/[。.]\s*$/, "") + "，规格 " + r.title + "。"
+          base.replace(/[.。]\s*$/, "") + ", spec " + r.title + "."
         );
       }
     }
@@ -361,7 +358,7 @@
     // copy is served silently, so a bump missed here shows a returning reader
     // the *old* file, which for a newly added key means 价格即将上线 until their
     // cache happens to turn over.
-    fetch("/assets/games/prices.json?v=" + (window.AceBasePricesVer || "20261009"))
+    fetch("/assets/games/prices.json?v=" + (window.AceBasePricesVer || "20261022"))
       .then(function (r) {
         if (!r.ok) throw new Error("http " + r.status);
         return r.json();

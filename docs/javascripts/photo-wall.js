@@ -29,11 +29,11 @@
   // CDKeys and took its sets off the site — which is what freed that URL.
   var CARD_SEL = ".ab-card--lightbox";
 
-  // News photos on /news/. They sit inside a card's own fold, several to a
-  // card, and each opens the same gallery at its own place in it (data-start).
-  // Unlike a CARD_SEL tile they are not a card: nothing here makes the whole
-  // card clickable, and the card's article text stays selectable.
-  var NEWS_SHOT_SEL = ".ab-news-shot";
+  // `.ab-news-shot` lived here: /blog/'s in-article photo grid, two by two
+  // inside the card's fold, each picture its own way into the lightbox at its
+  // own place in the gallery (data-start). /blog/ became a list of rows on
+  // 2026-10-22 and the grid went with the old card, so the class, the selector
+  // and the two places below that special-cased it came out with it.
 
   function shuffle(node) {
     if (!node) return;
@@ -249,14 +249,10 @@
         // <summary>'s own toggle and open the box in its place, and there is no
         // other way to the rows. The 查看图集 link in that row is the one click
         // inside it that is still the card's own way in, so it is let through.
-        // A news photo is a second exception, on the other side of the same
-        // rule: it lives *inside* its card's fold and is its own way into the
-        // box, so it is let through with the fold's buy link.
         var fold = e.target && e.target.closest
           ? e.target.closest(".ab-fold")
           : null;
-        if (fold && !e.target.closest(".ab-fold__buy")
-            && !e.target.closest(".ab-news-shot")) return;
+        if (fold && !e.target.closest(".ab-fold__buy")) return;
 
         // The split row's chat opener is the second exception, and it needs one
         // more reason than the fold's: crisp.js binds its handler on the
@@ -411,15 +407,14 @@
   function run() {
     var walls = document.querySelectorAll(".sc-wall");
     var cards = document.querySelectorAll(CARD_SEL);
-    var shots = document.querySelectorAll(NEWS_SHOT_SEL);
-    if (!walls.length && !cards.length && !shots.length) return;
+    if (!walls.length && !cards.length) return;
     walls.forEach(function (wall) {
       shuffle(wall); // final order first, so pagination reveals shuffled batches
       initLightbox(wall, ".sc-wall__tile");
       initPagination(wall);
     });
-    if (cards.length || shots.length) {
-      initLightbox(document, CARD_SEL + ", " + NEWS_SHOT_SEL);
+    if (cards.length) {
+      initLightbox(document, CARD_SEL);
     }
   }
 

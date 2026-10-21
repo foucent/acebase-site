@@ -1,0 +1,115 @@
+{
+ "slug": "nikke",
+ "name": "GODDESS OF VICTORY: NIKKE",
+ "currency": "USD",
+ "skus": [
+  {
+   "name": "6200+1500 Gems",
+   "price": 59.69,
+   "original": 80.07,
+   "stock": 9999
+  },
+  {
+   "name": "4200+1000 Gems",
+   "price": 41.88,
+   "original": 55.05,
+   "stock": 9999
+  },
+  {
+   "name": "2370+420 Gems",
+   "price": 23.16,
+   "original": 31.02,
+   "stock": 9999
+  },
+  {
+   "name": "2300+400 Gems",
+   "price": 22.31,
+   "original": 30.02,
+   "stock": 9998
+  },
+  {
+   "name": "1500+260 Gems",
+   "price": 14.92,
+   "original": 20.01,
+   "stock": 9997
+  },
+  {
+   "name": "720+120 Gems",
+   "price": 7.12,
+   "original": 10,
+   "stock": 9999
+  },
+  {
+   "name": "320+10 Gems",
+   "price": 3.56,
+   "original": 5,
+   "stock": 9999
+  },
+  {
+   "name": "120+3 Gems",
+   "price": 1.41,
+   "original": 1.99,
+   "stock": 999
+  },
+  {
+   "name": "60+1 Gems",
+   "price": 0.7,
+   "original": 0.99,
+   "stock": 9995
+  },
+  {
+   "name": "Enhanced Module Set",
+   "price": 43.76,
+   "original": 70.06,
+   "stock": 999
+  },
+  {
+   "name": "Technical Support S I",
+   "price": 43.76,
+   "original": 55.05,
+   "stock": 9999
+  },
+  {
+   "name": "Technical Support S II",
+   "price": 80.91,
+   "original": 100.09,
+   "stock": 9999
+  },
+  {
+   "name": "Technical Master",
+   "price": 7.91,
+   "original": 10,
+   "stock": 9999
+  },
+  {
+   "name": "Grow Selection Set",
+   "price": 16.57,
+   "original": 20.01,
+   "stock": 9999
+  },
+  {
+   "name": "Manufacturer Backup",
+   "price": 43.86,
+   "original": 55.05,
+   "stock": 9999
+  },
+  {
+   "name": "Class Research Set",
+   "price": 16.64,
+   "original": 20.01,
+   "stock": 9999
+  },
+  {
+   "name": "Manufacturer Research Set",
+   "price": 24.85,
+   "original": 30.02,
+   "stock": 9999
+  },
+  {
+   "name": "Monthly pass",
+   "price": 3.57,
+   "original": 5,
+   "stock": 9996
+  }
+ ]
+}

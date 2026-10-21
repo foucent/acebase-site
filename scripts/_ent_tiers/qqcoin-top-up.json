@@ -1,0 +1,37 @@
+{
+ "slug": "qqcoin-top-up",
+ "name": "QQ Coin",
+ "currency": "USD",
+ "skus": [
+  {
+   "name": "50Q Coins",
+   "price": 8.39,
+   "original": null,
+   "stock": 0
+  },
+  {
+   "name": "100Q Coins",
+   "price": 16.78,
+   "original": null,
+   "stock": 0
+  },
+  {
+   "name": "200Q Coins",
+   "price": 33.56,
+   "original": null,
+   "stock": 0
+  },
+  {
+   "name": "500Q Coins",
+   "price": 83.9,
+   "original": null,
+   "stock": 0
+  },
+  {
+   "name": "648Q Coins",
+   "price": 108.74,
+   "original": null,
+   "stock": 0
+  }
+ ]
+}

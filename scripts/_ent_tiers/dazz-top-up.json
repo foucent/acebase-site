@@ -1,0 +1,49 @@
+{
+ "slug": "dazz-top-up",
+ "name": "Dazz Live",
+ "currency": "USD",
+ "skus": [
+  {
+   "name": "50000 Coins",
+   "price": 6.53,
+   "original": 8.26,
+   "stock": 9999
+  },
+  {
+   "name": "100000 Coins",
+   "price": 13.14,
+   "original": 15.03,
+   "stock": 9999
+  },
+  {
+   "name": "150000 Coins",
+   "price": 19.96,
+   "original": 23.12,
+   "stock": 9999
+  },
+  {
+   "name": "200000 Coins",
+   "price": 26.61,
+   "original": 34.7,
+   "stock": 9999
+  },
+  {
+   "name": "300000 Coins",
+   "price": 40.11,
+   "original": 46.31,
+   "stock": 9999
+  },
+  {
+   "name": "500000 Coins",
+   "price": 66.65,
+   "original": 80.97,
+   "stock": 9999
+  },
+  {
+   "name": "2500000 Coins",
+   "price": 343.9,
+   "original": 462.87,
+   "stock": 9999
+  }
+ ]
+}

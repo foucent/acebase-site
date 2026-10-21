@@ -1,0 +1,49 @@
+{
+ "slug": "brawl-stars",
+ "name": "Brawl Stars",
+ "currency": "USD",
+ "skus": [
+  {
+   "name": "Pro Pass Plus",
+   "price": 22.72,
+   "original": 25.68,
+   "stock": 9999
+  },
+  {
+   "name": "30 GEMS",
+   "price": 1.74,
+   "original": 2.05,
+   "stock": 9999
+  },
+  {
+   "name": "80 GEMS",
+   "price": 4.34,
+   "original": 5.12,
+   "stock": 9999
+  },
+  {
+   "name": "170 GEMS",
+   "price": 8.72,
+   "original": 10.27,
+   "stock": 9995
+  },
+  {
+   "name": "360 GEMS",
+   "price": 18.23,
+   "original": 20.55,
+   "stock": 6999
+  },
+  {
+   "name": "950 GEMS",
+   "price": 45.63,
+   "original": 51.38,
+   "stock": 9999
+  },
+  {
+   "name": "2000 GEMS",
+   "price": 91.23,
+   "original": 102.77,
+   "stock": 9999
+  }
+ ]
+}

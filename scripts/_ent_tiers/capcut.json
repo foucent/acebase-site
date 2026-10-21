@@ -1,0 +1,43 @@
+{
+ "slug": "capcut",
+ "name": "CapCut",
+ "currency": "USD",
+ "skus": [
+  {
+   "name": "1 Month Standard",
+   "price": 8.77,
+   "original": 9.99,
+   "stock": 9996
+  },
+  {
+   "name": "1 Month Standard",
+   "price": 9.39,
+   "original": 9.99,
+   "stock": 9999
+  },
+  {
+   "name": "1 Month Standard",
+   "price": 7.52,
+   "original": 9.99,
+   "stock": 9999
+  },
+  {
+   "name": "1 Month Pro",
+   "price": 16.92,
+   "original": 19.99,
+   "stock": 9999
+  },
+  {
+   "name": "1 Month Pro",
+   "price": 18.51,
+   "original": 19.99,
+   "stock": 9999
+  },
+  {
+   "name": "1 Month Pro",
+   "price": 14.1,
+   "original": 19.99,
+   "stock": 9999
+  }
+ ]
+}

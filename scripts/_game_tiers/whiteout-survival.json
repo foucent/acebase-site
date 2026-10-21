@@ -1,0 +1,85 @@
+{
+ "slug": "whiteout-survival",
+ "name": "Whiteout Survival (Login Top-up)",
+ "currency": "USD",
+ "skus": [
+  {
+   "name": "Standard Packs All-In-One",
+   "price": 166.88,
+   "original": 184.99,
+   "stock": 9995
+  },
+  {
+   "name": "Monthly Card + Daily Deals",
+   "price": 13.28,
+   "original": 14.99,
+   "stock": 9996
+  },
+  {
+   "name": "4.99 Standard Packs",
+   "price": 4.29,
+   "original": 4.99,
+   "stock": 9996
+  },
+  {
+   "name": "9.99 Standard Packs",
+   "price": 8.57,
+   "original": 9.99,
+   "stock": 9989
+  },
+  {
+   "name": "14.99 Standard Packs",
+   "price": 13.28,
+   "original": 14.99,
+   "stock": 9998
+  },
+  {
+   "name": "19.99 Standard Packs",
+   "price": 17.91,
+   "original": 19.99,
+   "stock": 9992
+  },
+  {
+   "name": "24.99 Standard Packs",
+   "price": 22.39,
+   "original": 24.99,
+   "stock": 9999
+  },
+  {
+   "name": "49.99 Standard Packs",
+   "price": 44.77,
+   "original": 49.99,
+   "stock": 9994
+  },
+  {
+   "name": "99.99 Standard Packs",
+   "price": 89.52,
+   "original": 98.97,
+   "stock": 9997
+  },
+  {
+   "name": "5,000 Gems",
+   "price": 8.57,
+   "original": 9.99,
+   "stock": 9999
+  },
+  {
+   "name": "10,000 Gems",
+   "price": 17.91,
+   "original": 19.99,
+   "stock": 9999
+  },
+  {
+   "name": "25,000 Gems",
+   "price": 44.77,
+   "original": 49.99,
+   "stock": 9999
+  },
+  {
+   "name": "50,000 Gems",
+   "price": 89.52,
+   "original": 98.99,
+   "stock": 9999
+  }
+ ]
+}

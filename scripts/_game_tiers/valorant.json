@@ -1,0 +1,187 @@
+{
+ "slug": "valorant",
+ "name": "VALORANT",
+ "currency": "USD",
+ "skus": [
+  {
+   "name": "11000 VP",
+   "price": 92.93,
+   "original": 99.99,
+   "stock": 9996
+  },
+  {
+   "name": "5350 VP",
+   "price": 46.33,
+   "original": 49.99,
+   "stock": 9998
+  },
+  {
+   "name": "3650 VP",
+   "price": 32.48,
+   "original": 34.99,
+   "stock": 9998
+  },
+  {
+   "name": "2050 VP",
+   "price": 18.66,
+   "original": 19.99,
+   "stock": 9998
+  },
+  {
+   "name": "1000 VP",
+   "price": 9.0,
+   "original": 9.99,
+   "stock": 9997
+  },
+  {
+   "name": "475 VP",
+   "price": 4.5,
+   "original": 4.99,
+   "stock": 9995
+  },
+  {
+   "name": "11000 VP",
+   "price": 65.0,
+   "original": 101.19,
+   "stock": 9981
+  },
+  {
+   "name": "5350 VP",
+   "price": 32.94,
+   "original": 50.56,
+   "stock": 9995
+  },
+  {
+   "name": "3650 VP",
+   "price": 23.11,
+   "original": 35.51,
+   "stock": 9996
+  },
+  {
+   "name": "2050 VP",
+   "price": 13.01,
+   "original": 20.18,
+   "stock": 9994
+  },
+  {
+   "name": "1000 VP",
+   "price": 6.3,
+   "original": 10.08,
+   "stock": 9998
+  },
+  {
+   "name": "475 VP",
+   "price": 3.26,
+   "original": 5.12,
+   "stock": 9995
+  },
+  {
+   "name": "11000 VP",
+   "price": 65.23,
+   "original": 95.94,
+   "stock": 9998
+  },
+  {
+   "name": "5350 VP",
+   "price": 32.76,
+   "original": 47.98,
+   "stock": 9999
+  },
+  {
+   "name": "3650 VP",
+   "price": 22.95,
+   "original": 33.66,
+   "stock": 9999
+  },
+  {
+   "name": "2050 VP",
+   "price": 13.06,
+   "original": 19.35,
+   "stock": 9998
+  },
+  {
+   "name": "1000 VP",
+   "price": 6.28,
+   "original": 9.61,
+   "stock": 9999
+  },
+  {
+   "name": "475 VP",
+   "price": 3.15,
+   "original": 4.81,
+   "stock": 9999
+  },
+  {
+   "name": "11000 VP",
+   "price": 83.04,
+   "original": 100.07,
+   "stock": 9999
+  },
+  {
+   "name": "5350 VP",
+   "price": 42.45,
+   "original": 50.66,
+   "stock": 9999
+  },
+  {
+   "name": "3650 VP",
+   "price": 29.86,
+   "original": 35.62,
+   "stock": 9999
+  },
+  {
+   "name": "2050 VP",
+   "price": 17.16,
+   "original": 20.31,
+   "stock": 9999
+  },
+  {
+   "name": "1000 VP",
+   "price": 8.22,
+   "original": 10.15,
+   "stock": 9999
+  },
+  {
+   "name": "475 VP",
+   "price": 4.02,
+   "original": 5.06,
+   "stock": 9999
+  },
+  {
+   "name": "11000 VP",
+   "price": 107.17,
+   "original": 135.24,
+   "stock": 9999
+  },
+  {
+   "name": "5350 VP",
+   "price": 53.27,
+   "original": 67.36,
+   "stock": 9999
+  },
+  {
+   "name": "3650 VP",
+   "price": 37.37,
+   "original": 47.27,
+   "stock": 9999
+  },
+  {
+   "name": "2050 VP",
+   "price": 21.46,
+   "original": 27.18,
+   "stock": 9998
+  },
+  {
+   "name": "1000 VP",
+   "price": 10.83,
+   "original": 14.99,
+   "stock": 9999
+  },
+  {
+   "name": "475 VP",
+   "price": 5.39,
+   "original": 7.02,
+   "stock": 9999
+  }
+ ]
+}

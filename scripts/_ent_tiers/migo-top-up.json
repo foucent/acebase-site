@@ -1,0 +1,91 @@
+{
+ "slug": "migo-top-up",
+ "name": "MIGO LIVE",
+ "currency": "USD",
+ "skus": [
+  {
+   "name": "14000 Coins",
+   "price": 1.69,
+   "original": 1.95,
+   "stock": 9978
+  },
+  {
+   "name": "28000 Coins",
+   "price": 3.36,
+   "original": 3.91,
+   "stock": 9996
+  },
+  {
+   "name": "56000 Coins",
+   "price": 6.72,
+   "original": 7.83,
+   "stock": 9997
+  },
+  {
+   "name": "65000 Coins",
+   "price": 7.8,
+   "original": 9.8,
+   "stock": 9994
+  },
+  {
+   "name": "93500 Coins",
+   "price": 11.46,
+   "original": 14.7,
+   "stock": 9998
+  },
+  {
+   "name": "112000 Coins",
+   "price": 13.93,
+   "original": 15.33,
+   "stock": 9996
+  },
+  {
+   "name": "130000 Coins",
+   "price": 16.3,
+   "original": 16.88,
+   "stock": 9999
+  },
+  {
+   "name": "211000 Gold",
+   "price": 27.3,
+   "original": 32.66,
+   "stock": 9998
+  },
+  {
+   "name": "220000 Gold",
+   "price": 27.57,
+   "original": 39.21,
+   "stock": 9993
+  },
+  {
+   "name": "325000 Coins",
+   "price": 40.73,
+   "original": 49,
+   "stock": 9997
+  },
+  {
+   "name": "336000 Coins",
+   "price": 42.94,
+   "original": 54.31,
+   "stock": 9999
+  },
+  {
+   "name": "650000 Coins",
+   "price": 81.44,
+   "original": 108.83,
+   "stock": 9998
+  },
+  {
+   "name": "672000 Coins",
+   "price": 84.2,
+   "original": 113.74,
+   "stock": 9999
+  },
+  {
+   "name": "1344000 Coins",
+   "price": 173.13,
+   "original": 235.33,
+   "stock": 9997
+  }
+ ]
+}

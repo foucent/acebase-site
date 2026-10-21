@@ -1,0 +1,49 @@
+{
+ "slug": "heesay-top-up",
+ "name": "HeeSay",
+ "currency": "USD",
+ "skus": [
+  {
+   "name": "420 Beans",
+   "price": 0.7,
+   "original": 0.97,
+   "stock": 9991
+  },
+  {
+   "name": "1250 Beans",
+   "price": 2.11,
+   "original": 2.55,
+   "stock": 9991
+  },
+  {
+   "name": "5500 Beans",
+   "price": 8.73,
+   "original": 10.38,
+   "stock": 9997
+  },
+  {
+   "name": "16950 Beans",
+   "price": 28.57,
+   "original": 32.35,
+   "stock": 9998
+  },
+  {
+   "name": "25400 Beans",
+   "price": 39.64,
+   "original": 45.1,
+   "stock": 9998
+  },
+  {
+   "name": "55100 Beans",
+   "price": 91.15,
+   "original": 102.95,
+   "stock": 9999
+  },
+  {
+   "name": "80600 Beans",
+   "price": 131.27,
+   "original": 147.08,
+   "stock": 9999
+  }
+ ]
+}

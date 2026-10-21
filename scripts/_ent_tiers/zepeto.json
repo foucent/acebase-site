@@ -1,0 +1,85 @@
+{
+ "slug": "zepeto",
+ "name": "ZEPETO",
+ "currency": "USD",
+ "skus": [
+  {
+   "name": "7 ZEMs",
+   "price": 0.59,
+   "original": 0.97,
+   "stock": 9998
+  },
+  {
+   "name": "14 ZEMs",
+   "price": 1.21,
+   "original": 1.96,
+   "stock": 9999
+  },
+  {
+   "name": "28 ZEMs",
+   "price": 1.56,
+   "original": 1.96,
+   "stock": 9999
+  },
+  {
+   "name": "58 ZEMs",
+   "price": 3.13,
+   "original": 3.93,
+   "stock": 9999
+  },
+  {
+   "name": "128 ZEMs",
+   "price": 6.93,
+   "original": 8.36,
+   "stock": 9997
+  },
+  {
+   "name": "323 ZEMs",
+   "price": 17.55,
+   "original": 21.16,
+   "stock": 9999
+  },
+  {
+   "name": "1000 ZEMs",
+   "price": 52.31,
+   "original": 64.99,
+   "stock": 9999
+  },
+  {
+   "name": "4680 Coins",
+   "price": 0.86,
+   "original": 0.97,
+   "stock": 9999
+  },
+  {
+   "name": "9700 Coins",
+   "price": 1.58,
+   "original": 1.96,
+   "stock": 9999
+  },
+  {
+   "name": "25200 Coins",
+   "price": 3.89,
+   "original": 4.91,
+   "stock": 9999
+  },
+  {
+   "name": "40700 Coins",
+   "price": 6.2,
+   "original": 7.87,
+   "stock": 9999
+  },
+  {
+   "name": "110000 Coins",
+   "price": 17.29,
+   "original": 20.67,
+   "stock": 9999
+  },
+  {
+   "name": "300000 Coin",
+   "price": 45.76,
+   "original": 54.15,
+   "stock": 9999
+  }
+ ]
+}

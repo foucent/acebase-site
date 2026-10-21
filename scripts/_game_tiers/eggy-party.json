@@ -1,0 +1,55 @@
+{
+ "slug": "eggy-party",
+ "name": "Eggy Party",
+ "currency": "USD",
+ "skus": [
+  {
+   "name": "60 Eggy Coins",
+   "price": 0.8,
+   "original": 0.97,
+   "stock": 9997
+  },
+  {
+   "name": "120 Eggy Coins",
+   "price": 1.48,
+   "original": 1.94,
+   "stock": 9999
+  },
+  {
+   "name": "300 Eggy Coins",
+   "price": 3.69,
+   "original": 4.86,
+   "stock": 997
+  },
+  {
+   "name": "700 Eggy Coins",
+   "price": 8.08,
+   "original": 9.73,
+   "stock": 9999
+  },
+  {
+   "name": "1380 Eggy Coins",
+   "price": 16.14,
+   "original": 19.48,
+   "stock": 9999
+  },
+  {
+   "name": "2080 Eggy Coins",
+   "price": 25.08,
+   "original": 29.99,
+   "stock": 9999
+  },
+  {
+   "name": "3450 Eggy Coins",
+   "price": 42.71,
+   "original": 48.71,
+   "stock": 9999
+  },
+  {
+   "name": "6880 Eggy Coins",
+   "price": 81.23,
+   "original": 97.43,
+   "stock": 999
+  }
+ ]
+}

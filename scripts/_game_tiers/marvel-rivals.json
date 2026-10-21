@@ -1,0 +1,43 @@
+{
+ "slug": "marvel-rivals",
+ "name": "Marvel Rivals",
+ "currency": "USD",
+ "skus": [
+  {
+   "name": "11680 Lattices",
+   "price": 92.11,
+   "original": 99.99,
+   "stock": 99984
+  },
+  {
+   "name": "5680 Lattices",
+   "price": 46.05,
+   "original": 49.99,
+   "stock": 99985
+  },
+  {
+   "name": "2180 Lattices",
+   "price": 18.42,
+   "original": 19.99,
+   "stock": 99942
+  },
+  {
+   "name": "1000 Lattices",
+   "price": 8.82,
+   "original": 9.99,
+   "stock": 99887
+  },
+  {
+   "name": "500 Lattices",
+   "price": 4.41,
+   "original": 4.99,
+   "stock": 99935
+  },
+  {
+   "name": "100 Lattices",
+   "price": 0.89,
+   "original": 0.99,
+   "stock": 99934
+  }
+ ]
+}

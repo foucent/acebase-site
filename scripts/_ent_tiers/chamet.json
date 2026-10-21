@@ -1,0 +1,43 @@
+{
+ "slug": "chamet",
+ "name": "Chamet",
+ "currency": "USD",
+ "skus": [
+  {
+   "name": "18750 Diamonds",
+   "price": 3.31,
+   "original": 4.68,
+   "stock": 9785
+  },
+  {
+   "name": "62500 Diamonds",
+   "price": 11.65,
+   "original": 15.65,
+   "stock": 99886
+  },
+  {
+   "name": "187500 Diamonds",
+   "price": 34.44,
+   "original": 46.76,
+   "stock": 99960
+  },
+  {
+   "name": "625000 Diamonds",
+   "price": 115.34,
+   "original": 156.56,
+   "stock": 99983
+  },
+  {
+   "name": "1875000 Diamonds",
+   "price": 340.9,
+   "original": 459.73,
+   "stock": 99999
+  },
+  {
+   "name": "3750000 Diamonds",
+   "price": 689.48,
+   "original": 935.44,
+   "stock": 99998
+  }
+ ]
+}

@@ -1,0 +1,91 @@
+{
+ "slug": "arknights-endfield",
+ "name": "Arknights: Endfield",
+ "currency": "USD",
+ "skus": [
+  {
+   "name": "4+2 Origeometry",
+   "price": 1.71,
+   "original": 2.14,
+   "stock": 998
+  },
+  {
+   "name": "21+5 Origeometry",
+   "price": 7.66,
+   "original": 9.65,
+   "stock": 999
+  },
+  {
+   "name": "34+6 Origeometry",
+   "price": 11.3,
+   "original": 13.94,
+   "stock": 999
+  },
+  {
+   "name": "57+11 Origeometry",
+   "price": 18.66,
+   "original": 22.53,
+   "stock": 999
+  },
+  {
+   "name": "92+20 Origeometry",
+   "price": 30.23,
+   "original": 36.48,
+   "stock": 999
+  },
+  {
+   "name": "194+48 Origeometry",
+   "price": 62.21,
+   "original": 75.11,
+   "stock": 999
+  },
+  {
+   "name": "Origeometry All-In-One Bundle",
+   "price": 132.98,
+   "original": 157.7,
+   "stock": 999
+  },
+  {
+   "name": "Monthly Pass",
+   "price": 4.32,
+   "original": 5.36,
+   "stock": 999
+  },
+  {
+   "name": "Weekly Materials Bundle",
+   "price": 4.32,
+   "original": 5.36,
+   "stock": 999
+  },
+  {
+   "name": "Protocol Customized",
+   "price": 8.51,
+   "original": 10.72,
+   "stock": 998
+  },
+  {
+   "name": "Monthly Materials Bundle",
+   "price": 13.19,
+   "original": 16.09,
+   "stock": 999
+  },
+  {
+   "name": "HR Support Bundle",
+   "price": 13.19,
+   "original": 16.09,
+   "stock": 999
+  },
+  {
+   "name": "All Rounder Bundle",
+   "price": 17.78,
+   "original": 21.45,
+   "stock": 999
+  },
+  {
+   "name": "Protocol Flow Bundle",
+   "price": 26.66,
+   "original": 32.18,
+   "stock": 999
+  }
+ ]
+}

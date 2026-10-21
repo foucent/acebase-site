@@ -1,0 +1,43 @@
+{
+ "slug": "party-star",
+ "name": "Party Star",
+ "currency": "USD",
+ "skus": [
+  {
+   "name": "3350 Diamonds",
+   "price": 3.9,
+   "original": 4.88,
+   "stock": 9999
+  },
+  {
+   "name": "6750 Diamonds",
+   "price": 7.84,
+   "original": 9.99,
+   "stock": 9999
+  },
+  {
+   "name": "20250 Diamonds",
+   "price": 23.52,
+   "original": 29.99,
+   "stock": 9999
+  },
+  {
+   "name": "40680 Diamonds",
+   "price": 47.25,
+   "original": 59.99,
+   "stock": 9999
+  },
+  {
+   "name": "68000 Diamonds",
+   "price": 78.41,
+   "original": 99.96,
+   "stock": 9999
+  },
+  {
+   "name": "100000 Diamonds",
+   "price": 115.31,
+   "original": 145.96,
+   "stock": 9999
+  }
+ ]
+}
