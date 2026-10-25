@@ -12,14 +12,146 @@ hide:
 
   <section class="ab-section" id="latest">
     <header class="ab-section__head">
-      <span class="ab-stamp" aria-hidden="true">Updated 2026-10-22</span>
+      <span class="ab-stamp" aria-hidden="true">Updated 2026-10-25</span>
       <h2 class="ab-section__title">Latest updates</h2>
     </header>
     <div class="ab-list ab-list--feed">
+    <article class="ab-card ab-card--brand ab-card--fold ab-card--ec ab-card--plate ab-card--picker ab-card--wordmark" id="steam-account">
+      <div class="ab-card__media">
+        <span class="ab-card__badge">Account</span>
+        <img src="/assets/games/brand/steam-wallet-card-us.png" alt="Steam account price reference" decoding="async" fetchpriority="high">
+      </div>
+      <div class="ab-card__copy">
+        <h3 class="ab-card__title">Steam Account<span class="ab-card__price"></span></h3>
+        <div class="ab-fold">
+          <div class="ab-fold__summary">
+            <span class="ab-fold__act">
+              <a class="ab-fold__buy ab-crisp-open" href="#" data-crisp-msg="Hi, I'd like to buy a Steam account.">Buy</a>
+            </span>
+          </div>
+        </div>
+
+        <p class="ab-ec-list" data-game="steam-account">
+          <span class="ab-ec-loading">Loading the latest prices&hellip;</span>
+        </p>
+
+        <p class="ab-ec-foot">Fresh account &middot; Email &amp; password changeable &middot; Instant handover &middot; Data updated <span class="js-prices-updated">2026-10-25</span> &middot; Final quote confirmed in chat</p>
+      </div>
+    </article>
+    <article class="ab-card ab-card--brand ab-card--fold ab-card--ec ab-card--plate ab-card--picker ab-card--wordmark" id="spotify-account">
+      <div class="ab-card__media">
+        <span class="ab-card__badge">Account</span>
+        <img src="/assets/games/brand/spotify.png" alt="Spotify account price reference" loading="lazy" decoding="async">
+      </div>
+      <div class="ab-card__copy">
+        <h3 class="ab-card__title">Spotify Account<span class="ab-card__price"></span></h3>
+        <div class="ab-fold">
+          <div class="ab-fold__summary">
+            <span class="ab-fold__act">
+              <a class="ab-fold__buy ab-crisp-open" href="#" data-crisp-msg="Hi, I'd like to buy a Spotify account.">Buy</a>
+            </span>
+          </div>
+        </div>
+
+        <p class="ab-ec-list" data-game="spotify-account">
+          <span class="ab-ec-loading">Loading the latest prices&hellip;</span>
+        </p>
+
+        <p class="ab-ec-foot">Premium already opened &middot; Do not change the region or plan &middot; Instant handover &middot; Data updated <span class="js-prices-updated">2026-10-25</span></p>
+      </div>
+    </article>
+    <article class="ab-card ab-card--brand ab-card--fold ab-card--ec ab-card--plate ab-card--picker ab-card--wordmark" id="youtube-account">
+      <div class="ab-card__media">
+        <span class="ab-card__badge">Account</span>
+        <img src="/assets/games/brand/youtube.png" alt="YouTube account price reference" loading="lazy" decoding="async">
+      </div>
+      <div class="ab-card__copy">
+        <h3 class="ab-card__title">YouTube Account<span class="ab-card__price"></span></h3>
+        <div class="ab-fold">
+          <div class="ab-fold__summary">
+            <span class="ab-fold__act">
+              <a class="ab-fold__buy ab-crisp-open" href="#" data-crisp-msg="Hi, I'd like to buy a YouTube account.">Buy</a>
+            </span>
+          </div>
+        </div>
+
+        <p class="ab-ec-list" data-game="youtube-account">
+          <span class="ab-ec-loading">Loading the latest prices&hellip;</span>
+        </p>
+
+        <p class="ab-ec-foot">Ships with a recovery email &middot; Change the password and email after handover &middot; Instant handover &middot; Data updated <span class="js-prices-updated">2026-10-25</span></p>
+      </div>
+    </article>
+    <article class="ab-card ab-card--brand ab-card--fold ab-card--ec ab-card--plate ab-card--picker ab-card--wordmark" id="netflix-account">
+      <div class="ab-card__media">
+        <span class="ab-card__badge">Account</span>
+        <img src="/assets/games/brand/netflix-gift-card-us.png" alt="Netflix account price reference" loading="lazy" decoding="async">
+      </div>
+      <div class="ab-card__copy">
+        <h3 class="ab-card__title">Netflix Account<span class="ab-card__price"></span></h3>
+        <div class="ab-fold">
+          <div class="ab-fold__summary">
+            <span class="ab-fold__act">
+              <a class="ab-fold__buy ab-crisp-open" href="#" data-crisp-msg="Hi, I'd like to buy a Netflix account.">Buy</a>
+            </span>
+          </div>
+        </div>
+
+        <p class="ab-ec-list" data-game="netflix-account">
+          <span class="ab-ec-loading">Loading the latest prices&hellip;</span>
+        </p>
+
+        <p class="ab-ec-foot">30 days of Premium &middot; A shared seat must not have its password changed &middot; Instant handover &middot; Data updated <span class="js-prices-updated">2026-10-25</span></p>
+      </div>
+    </article>
+    <article class="ab-card ab-card--brand ab-card--fold ab-card--ec ab-card--plate ab-card--picker ab-card--wordmark" id="gemini-account">
+      <div class="ab-card__media">
+        <span class="ab-card__badge">Account</span>
+        <img src="/assets/games/brand/gemini.png" alt="Gemini account price reference" loading="lazy" decoding="async">
+      </div>
+      <div class="ab-card__copy">
+        <h3 class="ab-card__title">Gemini Account<span class="ab-card__price"></span></h3>
+        <div class="ab-fold">
+          <div class="ab-fold__summary">
+            <span class="ab-fold__act">
+              <a class="ab-fold__buy ab-crisp-open" href="#" data-crisp-msg="Hi, I'd like to buy a Gemini account.">Buy</a>
+            </span>
+          </div>
+        </div>
+
+        <p class="ab-ec-list" data-game="gemini-account">
+          <span class="ab-ec-loading">Loading the latest prices&hellip;</span>
+        </p>
+
+        <p class="ab-ec-foot">Plan already opened &middot; Email &amp; password changeable &middot; Instant handover &middot; Data updated <span class="js-prices-updated">2026-10-25</span></p>
+      </div>
+    </article>
+    <article class="ab-card ab-card--brand ab-card--fold ab-card--ec ab-card--plate ab-card--picker ab-card--wordmark" id="chatai-account">
+      <div class="ab-card__media">
+        <span class="ab-card__badge">Account</span>
+        <img src="/assets/games/brand/chatgpt.png" alt="ChatGPT account price reference" loading="lazy" decoding="async">
+      </div>
+      <div class="ab-card__copy">
+        <h3 class="ab-card__title">ChatGPT Account<span class="ab-card__price"></span></h3>
+        <div class="ab-fold">
+          <div class="ab-fold__summary">
+            <span class="ab-fold__act">
+              <a class="ab-fold__buy ab-crisp-open" href="#" data-crisp-msg="Hi, I'd like to buy a ChatGPT account.">Buy</a>
+            </span>
+          </div>
+        </div>
+
+        <p class="ab-ec-list" data-game="chatai-account">
+          <span class="ab-ec-loading">Loading the latest prices&hellip;</span>
+        </p>
+
+        <p class="ab-ec-foot">Plan already opened &middot; Email &amp; password changeable &middot; Instant handover &middot; Data updated <span class="js-prices-updated">2026-10-25</span></p>
+      </div>
+    </article>
         <article class="ab-card ab-card--brand ab-card--fold ab-card--ec ab-card--plate ab-card--picker ab-card--wordmark" id="douyin-top-up">
           <div class="ab-card__media">
             <span class="ab-card__badge">Live</span>
-            <img src="/assets/games/brand/douyin-top-up.png" alt="Douyin Live top-up price reference" decoding="async" fetchpriority="high">
+            <img src="/assets/games/brand/douyin-top-up.png" alt="Douyin Live top-up price reference" decoding="async">
           </div>
           <div class="ab-card__copy">
             <h3 class="ab-card__title">Douyin Live<span class="ab-card__price"></span></h3>
@@ -426,6 +558,6 @@ hide:
     </div>
   </section>
 
-  <p class="ab-mag__foot">All data updated 2026-10-22 · Final quote confirmed in chat</p>
+  <p class="ab-mag__foot">All data updated 2026-10-25 · Final quote confirmed in chat</p>
 
 </div>

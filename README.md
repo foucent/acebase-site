@@ -23,10 +23,74 @@ cd c:\1Work\acebase.cc
 | `/topup/` | Live Streaming & Entertainment Top-Ups（英文；**30 张卡**：2026-10-22 从 topuplist entertainment 分类精选的直播 / 语音房 / 社交 App 代储；卡片由 `scripts/build_topup_page.py` 生成，档位价来自 `capture_topuplist_entertainment.py` → `merge_ent_prices.py` → `prices.json`） |
 | `/boosting/` | Game Boosting & Coaching（英文；数据驱动的统一代练页：12 款游戏 / 服务 / 段位阶梯来自 `docs/assets/boosting/boosting.json`，配置器只收需求、$9.9 起价、报价在聊天里给；页面到 FAQ 结束，不再列服务卡） |
 | `/gift-cards/` | Gift Card Prices（英文；Amazon、Apple、Google Play、Netflix、Xbox、Kammelna 六种；卡片从 `/topup/` 复制，两页价格同源） |
+| `/accounts/` | Accounts（英文；2026-10-25 新增类目。**一个网格、不分小类，共六张 `--picker` 卡**：Steam（美 / 台 / 日 / 乌四区 $0.50）、Spotify、YouTube、Netflix、Gemini、ChatGPT —— 后五张来自 accountboy.com，人民币原价折美元写进 `prices.json`；最终价都在聊天确认） |
 | `/games/` | Game Top-Up Prices（英文；**30 张卡**：原有 5 张 + 2026-10-21 从 topuplist 游戏分类复刻的 25 款；卡片由 `scripts/build_games_page.py` 生成，档位价来自 `capture_topuplist_game.py` → `merge_game_prices.py` → `prices.json`） |
 | `/gallery/` | 相册（手办 / 模型照片墙） |
 | `/pc-components/` | 电脑组件 |
 | `/games/gpu-deals/` | 显卡好价参考 |
+
+**2026-10-25 新增 ACCOUNTS 类目**（用户：「参考 https://acebase.cc/gift-cards/ 的
+卡片和页面样式，增加 Accounts 导航和类目，将 https://www.eldorado.gg/steam-accounts/
+oa/80abf73f-… 商品加到进去，它有几个选项，有美区，台湾地区，日本地区，乌克兰地区」）。
+nav 放在 BOOSTING 之后、BLOG 之前，新页 `/accounts/` 整页照 `/gift-cards/`：一个
+section 头 + 一张 `ab-card--picker` 卡 `#steam-account`，下拉里是四个区（美 / 台 /
+日 / 乌），四行 $0.50 写进 `prices.json` 的 `steam-account` 键（来源是 Eldorado 上
+Ada_Store 的四个独立 offer，2026-10-25 取自站内 `/api/flexibleOffers/<id>`，四区同价；
+卖家自述即时发货、邮箱与密码可改、无挂机无外挂、全新号）。字标复用原 Steam 钱包卡的
+`assets/games/brand/steam-wallet-card-us.png`（2026-10-22 撤卡后已无人引用）。
+`prices.json` 的 `updated` 与 `games-prices.js` 的缓存字面量升到 `20261025`。
+
+同一天用户又给了第二个商品（「还有这个商品 https://www.eldorado.gg/valorant-accounts/
+oa/35f91c40-…」），曾做成同排第二张卡 `#valorant-account`（Eldorado 的 IRON⭐0SKINS，
+$3.99，NA 区 / Iron 1-2-3 / 20 级以上 / 0 皮肤）；**当天晚些时候用户让去掉**
+（「去掉Valorant Account$3.99 这个商品」），卡片与 `prices.json` 的 `valorant-account`
+键一并删除。品牌图 `assets/games/brand/valorant.png` 是 `/games/` 那张卡在用的，
+**不能删**。
+
+同一天用户又给了五个 accountboy.com 的商品（Spotify / ytb / gemini / Netflix /
+chatai），并明确「**代充、额度充值、续费等选项不要加入进来**」。这几页的价格是 SSR 里
+`window.__INIT_STATIC_PROPS__` 的 `goodsDetail.hasSkuTree.skuMap`，只取「账号」那一组：
+
+| 卡 | 留下的档位（¥ → $） | 丢掉的组 |
+|---|---|---|
+| `spotify-account` | 3 个月 108→16.15、12 个月 299→44.70 | 会员续费 |
+| `youtube-account` | 新号 28.8→4.31、老号 36→5.38、精品号 99.8→14.92、精品号+安卓 APP 108.8→16.27、Premium Lite 1 个月 99→14.80、Premium 1 个月 159→23.77、可定制地区 288→43.05 | APP 安装包、月付专区（代开） |
+| `gemini-account` | Gemini账号 38→5.68、AI Pro 30 天账号 199→29.75 | 代充、会员邀请链接、下载号 |
+| `netflix-account` | 共享 30 天 39.8→5.95、共享 30 天+安卓 APP 48.8→7.30、独享 30 天 158→23.62 | 安卓 APP 包 |
+| `chatai-account` | ChatAI账号 48.8→7.30、ChatGPT Plus 独享 30 天 228→34.08 | 代充、codex额度充值、Codex 邀请 |
+
+汇率取 open.er-api.com 当天值（1 CNY = 0.149495 USD，2026-10-25）。h1 从
+「Game Accounts」改成「Accounts」以对得上 nav。用户随后说「该页面内的商品不用分类」，
+所以 Game / Streaming / AI 三个 section 头全去掉，六张卡在同一个 `.ab-list--pricing`
+网格里（三列两行）。字标：Spotify / YouTube / Gemini / ChatGPT 四张是
+Wikimedia Commons 的官方 SVG，用 `_tmp_ocr/accountboy/render_svg.py` 渲成 2400px 宽的
+透明 PNG 后走 `_tmp_ocr/brand_img/prep_brands.py --safe`（ChatGPT 只有单色结，没有
+字标，照 Apple 那张的先例只上图标）；Netflix 直接复用 `/topup/` 礼品卡那张字标。
+卖家条款写进页尾说明：账号类商品售后期 3 天、共享 Netflix 车位不能改密、YouTube
+发货后换绑邮箱。
+
+`gen_home.py` 把 nav 当类目表，首页因此 **19 → 25 张**（多一排 ACCOUNTS；这一排
+正好 6 张，`CATEGORY_LIMIT = 6` 全上）；连带改过五页 + 九篇 blog 文章的「相关」云、
+`_tmp_ocr/sweep_overflow.py` 的 PAGES，以及 `site_nav_hidden_probe` /
+`gift_cards_probe` / `english_pages_probe` 里写死的 nav 与页面清单。
+`_tmp_ocr/accounts_page_probe.py` 覆盖六张卡（下拉行、标题价、角标、字标加载、Buy
+话术尾巴）、Steam 四区切换、YouTube 七档切换、单网格无 h2 小类、JSON-LD 六项、
+首页 25 张、四档宽度。
+另在 `uncrate.css` 的 `.ab-section__lead` 后加了一条 `.ab-section__lead + .ab-section__lead`
+的上边距：`/accounts/` 是唯一在一个 section 里并排多段导语的页（网格下面两段说明），
+原来的 `margin: 0` 会让它们粘成一段。
+
+**同日首页卡片统一成 470×322**（用户：「页面中的卡片大小都要和 Delta Force ammo
+chart guide cover 一样」）。首页两列 feed 里唯一一张博客卡是 `ab-card--row`，470×322；
+其余 24 张价格卡原本 470×418，凡是有博客卡的那一排就参差。统一方向问过用户：**价格卡
+降下来**，不是博客卡长上去。96px 从两处出：字标带 5:2 → 5:1（171px → 86px），以及
+copy 底部预留 46px → 36px（那一行是 28px，放得下）。字标带改用 `object-fit: contain`
+—— 5:1 比 2400×500 的画布更宽，继续用 `cover` 会把画布上下切掉；`contain` 整张画布
+都露出来，每个字标落在同样的 ~205px 宽、居中、不切字。规则全部挂在 `.ab-list--feed`
+下（只有首页用它），**类目页（/games/、/topup/、/gift-cards/、/accounts/）仍是原来的
+5:2 版式，一张没动**。`check_home_feed.py` 加了
+「25 张全是 470×322」的断言，并带一条把旧版式临时塞回去、确认高度会分叉的 red-first
+对照；顺手把它两处失效的「正在加载」判定换成 `Loading the latest prices`。
 
 `/topup/` 2026-10-22 整体换掉（用户：「同样的方式，将
 https://topuplist.com/category/entertainment 页中的商品添加到 /topup/，并将原来
@@ -69,8 +133,17 @@ alt / aria-label / data-caption、`data-crisp-msg` 聊天话术、JSON-LD、页�
 kammelna 的天数/金卡、Switch Online 的月数改成英文（`games-prices.js` 去掉
 `document.lang` 判断、只发英文，缓存版本升到 20261021）；`gen_home.py` 的首页
 title/description/「Latest updates」/页脚；`/games/gpu-deals/`、`/pc-components/`
-「相关」云里的链接文字。**站级外壳仍是中文**（页头搜索框、抽屉、页脚、
-「在线咨询」浮层，以及 `<html lang="zh">`），因为其余页面还是中文。
+「相关」云里的链接文字。当时站级外壳仍留中文（页头搜索框、抽屉、页脚、
+「在线咨询」浮层，以及 `<html lang="zh">`）；**2026-10-25 这些也改完了**：用户
+「需要将网站顶部的@AceBase 链接到 https://www.youtube.com/@AceBase_cc」「页面上的
+搜索框也要改为英文版本」——`mkdocs.yml` 的 `theme.language` 由 `zh` 改成 `en`
+（搜索占位符 Search、搜索弹层的「N matching documents」、目录标题、aria-label 全
+跟着变，`<html lang>` 也成了 `en`），页头 family 行最后一个 `@AceBase` 不再开聊天
+窗，改成 `rel="noopener"` 外链到 YouTube 频道（`overrides/partials/header.html`，
+title / aria-label 为 "AceBase on YouTube"）。**别把 language 改回 zh**，站上没有
+i18n 插件，这一行是界面语言唯一的开关；`_tmp_ocr/site_nav_hidden_probe.py` 里加了
+「页面文本与属性里没有中文」「搜索框是 Search」「@AceBase 指向那个频道」三条断言
+（各带一条 red-first 对照）。
 
 `/boosting/` 2026-10-21 改成**能兼容所有游戏的统一代练页**（用户：参考
 Eldorado 的 Valorant boosting 页，「修改为一个能兼容所有游戏的统一的boosting页」）：

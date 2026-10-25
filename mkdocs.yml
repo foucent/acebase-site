@@ -5,7 +5,13 @@ copyright: © 2026 AceBase.cc. All rights reserved.
 theme:
   name: material
   custom_dir: overrides
-  language: zh
+  # 2026-10-25 从 zh 改成 en（用户：「页面上的搜索框也要改为英文版本」）。这一项
+  # 决定 Material 自己的界面文案：搜索框占位符、搜索弹层（搜索 / 查找 / 清空当前
+  # 内容 / 正在初始化搜索引擎）、右侧目录标题「目录」、以及 aria-label「导航栏 /
+  # 标签」——全是中文，而站内正文 2026-09-22 起已全英文，页头 nav 也是英文。
+  # 顺带把 <html lang> 从 zh 改回 en，搜索引擎才按英文页收录。**不要改回去**：
+  # 站上没有 i18n 插件，这一行是界面语言唯一的开关。
+  language: en
   # Material otherwise emits a <link> to Google Fonts for Roboto / Roboto Mono
   # on every page. The theme is built on system stacks instead, and the site is
   # read mainly from mainland China, where that request just stalls.
@@ -275,10 +281,12 @@ extra:
       link: /topup/
   # The site's own channels, read once, by main.html, which declares them as
   # the Organization node's sameAs. header.html used to render them as a menu
-  # under the @AceBase handle in the family row; since 2026-09-23 that handle
-  # opens the chat window instead, so nothing on the page lists them any more —
-  # a crawler still learns them, a visitor no longer sees them. `name` is the
-  # label.
+  # under the @AceBase handle in the family row; from 2026-09-23 that handle
+  # opened the chat window instead, and **from 2026-10-25 it is a plain link to
+  # the second channel below** (用户：「需要将网站顶部的@AceBase 链接到
+  # https://www.youtube.com/@AceBase_cc」) — the href is written into
+  # header.html directly, this list is only read by main.html now. `name` is
+  # the label.
   #
   # Deliberately NOT named `social`: Material prints extra.social as a row of
   # icons in the footer, and the footer carries the copyright line alone.
@@ -383,6 +391,43 @@ nav:
   # 的 URL 表，以及仓库外 _tmp_ocr/sweep_overflow.py 的 PAGES。gen_home.py 把
   # 这份 nav 当类目表，所以首页会自动多出 BOOSTING 的卡 —— 改完要重跑一次。
   - BOOSTING: boosting/index.md
+  # 2026-10-25：新增 ACCOUNTS（用户：「参考 https://acebase.cc/gift-cards/ 的卡片和
+  # 页面样式，增加 Accounts 导航和类目，将 https://www.eldorado.gg/steam-accounts/
+  # oa/80abf73f-a17e-4c7b-a755-e67ea923eef6 商品加到进去，它有几个选项，有美区，
+  # 台湾地区，日本地区，乌克兰地区」）。问过之后三件事定下来：加在 **acebase.cc**
+  # （不是 mygear.top）、nav 放在 **BOOSTING 之后 BLOG 之前**、价格照 Eldorado 显示
+  # **$0.50 参考价**，最终价在聊天里确认。
+  #
+  # 来源：Eldorado 上 Ada_Store 的四个**独立 offer**（同一款 fresh Steam 账号，按区
+  # 拆开卖），2026-10-25 用站内 API `/api/flexibleOffers/<id>` 取得，四个区同价
+  # $0.50：美区 80abf73f-a17e-4c7b-a755-e67ea923eef6、台湾 1e17da60-f2ef-4e80-
+  # 16bd-08df2057b36e、日本 f2d97530-a4c4-4d9a-9f84-ba5cf2212de2、乌克兰
+  # 78fd18c3-3f1b-4ea5-7bca-08df08e8a521。卖家自述：即时发货、邮箱与密码可改、
+  # 无挂机无外挂、无余额无游戏（全新号）。
+  #
+  # 在站上合成**一张卡** `#steam-account`，用 ab-card--picker 的下拉选地区，四个
+  # 区各一行写进 prices.json 的 `steam-account` 键（lowest = highest = average =
+  # 0.5），标题价与 Buy 话术由 games-prices.js 的 renderPicker() 填。
+  #
+  # 同日用户又给了第二件商品（「还有这个商品 https://www.eldorado.gg/valorant-accounts/
+  # oa/35f91c40-b7be-4e6d-a882-08decd3104a7」），曾做成同排第二张卡
+  # `#valorant-account`（IRON⭐0SKINS，$3.99，NA 区）—— **当天晚些时候用户让
+  # 去掉**（「去掉Valorant Account$3.99 这个商品」），卡与 prices.json 的键一起删了。
+  #
+  # 再之后是五个 accountboy.com 的商品（「还有 https://www.accountboy.com/zh-cn-cny/
+  # buy-Spotify …/buy-ytb …/buy-gemini …/buy-Netflix …/buy-chatai，请注意代充，额度充值，
+  # 续费等选项不要加入进来」），各按上面那张 Steam 卡的形状做成 `--picker`，键
+  # `spotify-account` / `youtube-account` / `netflix-account` / `gemini-account` /
+  # `chatai-account`，只取各家 skuMap 里「账号」那一组，代充 / 额度充值 / 续费 /
+  # 邀请链接 / 纯 APP 包一律没进来。原价是人民币，按 open.er-api.com 当天汇率折美元。
+  # 用户还说这页「商品不用分类」，所以早先 Game / Streaming / AI 三个 section 头
+  # 全去掉了，六张卡现在同一个网格里。
+  #
+  # 新起的 URL `/accounts/`，以前没有过，redirect_maps 不用加存根。gen_home.py 把
+  # 这份 nav 当类目表，首页因此多一排 ACCOUNTS（19 → 25 张，正好六张全上）；
+  # 连带改过五个页面与九篇 blog 文章的「相关」云、README 的 URL 表，以及仓库外
+  # _tmp_ocr/sweep_overflow.py 的 PAGES 与几个探针的 NAV。
+  - ACCOUNTS: accounts/index.md
   # 2026-10-22：/blog/ 整页换成资讯列表（用户：「模仿
   # https://www.topuplive.com/news/ 页中的排版，并将第一页的内容添到 /blog/
   # （把内容改成符合自己网站的），并去掉 Haruo the Alien …… 卡片」）。原来那

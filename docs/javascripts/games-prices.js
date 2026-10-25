@@ -358,7 +358,7 @@
     // copy is served silently, so a bump missed here shows a returning reader
     // the *old* file, which for a newly added key means 价格即将上线 until their
     // cache happens to turn over.
-    fetch("/assets/games/prices.json?v=" + (window.AceBasePricesVer || "20261022"))
+    fetch("/assets/games/prices.json?v=" + (window.AceBasePricesVer || "20261025"))
       .then(function (r) {
         if (!r.ok) throw new Error("http " + r.status);
         return r.json();

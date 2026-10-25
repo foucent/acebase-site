@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-22",
+  "updated": "2026-10-25",
   "games": {
     "valorant": [
       {
@@ -867,6 +867,138 @@
         "lowest": 43.19,
         "highest": 43.19,
         "average": 43.19
+      }
+    ],
+    "steam-account": [
+      {
+        "title": "USA Region",
+        "lowest": 0.5,
+        "highest": 0.5,
+        "average": 0.5
+      },
+      {
+        "title": "Taiwan Region",
+        "lowest": 0.5,
+        "highest": 0.5,
+        "average": 0.5
+      },
+      {
+        "title": "Japan Region",
+        "lowest": 0.5,
+        "highest": 0.5,
+        "average": 0.5
+      },
+      {
+        "title": "Ukraine Region",
+        "lowest": 0.5,
+        "highest": 0.5,
+        "average": 0.5
+      }
+    ],
+    "spotify-account": [
+      {
+        "title": "3 months",
+        "lowest": 16.15,
+        "highest": 16.15,
+        "average": 16.15
+      },
+      {
+        "title": "12 months",
+        "lowest": 44.7,
+        "highest": 44.7,
+        "average": 44.7
+      }
+    ],
+    "youtube-account": [
+      {
+        "title": "New account",
+        "lowest": 4.31,
+        "highest": 4.31,
+        "average": 4.31
+      },
+      {
+        "title": "Aged account",
+        "lowest": 5.38,
+        "highest": 5.38,
+        "average": 5.38
+      },
+      {
+        "title": "Top-tier account",
+        "lowest": 14.92,
+        "highest": 14.92,
+        "average": 14.92
+      },
+      {
+        "title": "Top-tier account + Android app",
+        "lowest": 16.27,
+        "highest": 16.27,
+        "average": 16.27
+      },
+      {
+        "title": "Premium Lite · 1 month",
+        "lowest": 14.8,
+        "highest": 14.8,
+        "average": 14.8
+      },
+      {
+        "title": "Premium · 1 month",
+        "lowest": 23.77,
+        "highest": 23.77,
+        "average": 23.77
+      },
+      {
+        "title": "Custom region",
+        "lowest": 43.05,
+        "highest": 43.05,
+        "average": 43.05
+      }
+    ],
+    "gemini-account": [
+      {
+        "title": "Standard account",
+        "lowest": 5.68,
+        "highest": 5.68,
+        "average": 5.68
+      },
+      {
+        "title": "AI Pro · 30 days",
+        "lowest": 29.75,
+        "highest": 29.75,
+        "average": 29.75
+      }
+    ],
+    "netflix-account": [
+      {
+        "title": "Shared · 30 days",
+        "lowest": 5.95,
+        "highest": 5.95,
+        "average": 5.95
+      },
+      {
+        "title": "Shared · 30 days + Android app",
+        "lowest": 7.3,
+        "highest": 7.3,
+        "average": 7.3
+      },
+      {
+        "title": "Private · 30 days",
+        "lowest": 23.62,
+        "highest": 23.62,
+        "average": 23.62
+      }
+    ],
+    "chatai-account": [
+      {
+        "title": "Standard account",
+        "lowest": 7.3,
+        "highest": 7.3,
+        "average": 7.3
+      },
+      {
+        "title": "Plus · 30 days",
+        "lowest": 34.08,
+        "highest": 34.08,
+        "average": 34.08
       }
     ],
     "steam-wallet-card-us": [

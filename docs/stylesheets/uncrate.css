@@ -975,6 +975,14 @@
   color: var(--ab-text-muted);
 }
 
+/* Two deks stacked in one section — only /accounts/ does this, where the first
+   explains the Steam regions and the second the streaming/AI supplier. The
+   rule above zeroes the bottom margin, so without this the two read as one
+   paragraph with a line break rather than as two notes. */
+.md-typeset .ab-mag .ab-section__lead + .ab-section__lead {
+  margin-top: 16px;
+}
+
 /* ---------- card grid ---------- */
 .ab-list {
   display: grid;
@@ -1824,6 +1832,34 @@
   left: 8px;
   padding: 2px 6px;
   font-size: 10px;
+}
+
+/* 2026-10-25: the homepage feed is two 470px columns and the one blog entry in
+   it (ab-card--row) measures 322px against the twenty-four price cards' 418,
+   so every row that holds a blog card ended ragged. User: 「页面中的卡片大小
+   都要和 Delta Force ammo chart guide cover 一样」—— the row card is the
+   reference, so the price cards come down to its height instead of the row
+   growing to theirs.
+
+   The 96px comes out of two places: the wordmark band, 5:2 -> 5:1 (171px ->
+   86px at 470px wide), and the copy's bottom padding, 46px -> 36px (the row
+   pinned into it is 28px tall, so it still clears).
+
+   `contain`, not `cover`. A 5:1 frame is wider than the 2400x500 canvas, so
+   the plate's cover would scale the banner to the frame width and slice its
+   top and bottom; contain shows the whole canvas, which lands every mark at
+   the same ~205px wide, centred, none cut. Scoped to .ab-list--feed, which
+   only the homepage uses — the category pages keep the 5:2 cover frame. */
+.md-typeset .ab-mag .ab-list--feed .ab-card--wordmark .ab-card__media {
+  aspect-ratio: 5 / 1;
+}
+
+.md-typeset .ab-mag .ab-list--feed .ab-card--wordmark .ab-card__media img {
+  object-fit: contain;
+}
+
+.md-typeset .ab-mag .ab-list--feed .ab-card--fold .ab-card__copy {
+  padding-bottom: 36px;
 }
 
 /* The card's own corners and lift. extra.css already rounds and lifts every

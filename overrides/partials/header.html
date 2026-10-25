@@ -31,17 +31,16 @@
     {#- uncrate's family row, above the wordmark: the sibling sites and the
         brand on one centred line, uppercase, with a hairline under them.
 
-        The brand item used to be the @AceBase handle, opening a menu of the
-        site's own youtube channels on hover or focus. Since 2026-09-23 it
-        opens the chat window instead — same label, no menu. The channels are
-        still declared to crawlers by main.html, which reads the same
-        extra.channels list for the Organization node's sameAs; they are simply
-        not rendered anywhere on the page now, so that list is read once.
+        The brand item has changed owner twice. It started as a menu of the
+        site's own youtube channels (hover or focus), then from 2026-09-23 it
+        opened the chat window instead. Since 2026-10-25 it is a plain outbound
+        link to the site's own channel, https://www.youtube.com/@AceBase_cc —
+        the label stays "@ AceBase", and since that no longer says what the
+        link does, the title and the accessible name do ("AceBase on YouTube").
 
-        The opener is a plain <a class="ab-crisp-open" href="#">, the same
-        markup the site's other CTAs use: crisp.js intercepts a click on any
-        .ab-crisp-open element, wherever it is. The label says "@ AceBase" and
-        not what it does, so the accessible name and the tooltip say it. -#}
+        The other channels are still declared to crawlers by main.html, which
+        reads the extra.channels list for the Organization node's sameAs; that
+        list is read once, and nothing else on the page renders it. -#}
     {% set family = config.extra.family | d([], true) %}
     {% if family %}
       <div class="ab-family">
@@ -52,7 +51,7 @@
             </li>
           {% endfor %}
           <li class="ab-family__item">
-            <a class="ab-family__link ab-crisp-open" href="#" title="在线咨询" aria-label="在线咨询" data-crisp-msg="你好，我想咨询一下。">
+            <a class="ab-family__link" href="https://www.youtube.com/@AceBase_cc" rel="noopener" title="AceBase on YouTube" aria-label="AceBase on YouTube">
               <span class="ab-family__at" aria-hidden="true">@</span>{{ config.site_name }}
             </a>
           </li>

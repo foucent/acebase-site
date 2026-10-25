@@ -179,7 +179,7 @@ hide:
 
 <div class="admonition note mg-games__note">
   <p class="admonition-title">Related</p>
-  <p><a href="/">Home</a> &middot; <a href="/games/">Game Top-Up</a> &middot; <a href="/topup/">Gift Cards &amp; Top-Up Codes</a> &middot; <a href="/boosting/">Boosting</a></p>
+  <p><a href="/">Home</a> &middot; <a href="/games/">Game Top-Up</a> &middot; <a href="/topup/">Gift Cards &amp; Top-Up Codes</a> &middot; <a href="/boosting/">Boosting</a> &middot; <a href="/accounts/">Accounts</a></p>
 </div>
 
 <script type="application/ld+json">
