@@ -301,7 +301,7 @@ hide:
         <div class="ab-fold">
           <div class="ab-fold__summary">
             <span class="ab-fold__act">
-              <a class="ab-fold__buy ab-crisp-open" href="#" data-crisp-msg="Hi, I'd like to buy PUBG Mobile UC.">Buy</a>
+              <a class="ab-fold__buy ab-checkout-trigger" href="#" data-checkout="pubg-mobile" data-checkout-name="PUBG Mobile UC" data-crisp-msg="Hi, I'd like to buy PUBG Mobile UC.">Buy</a>
             </span>
           </div>
         </div>
@@ -323,7 +323,7 @@ hide:
         <div class="ab-fold">
           <div class="ab-fold__summary">
             <span class="ab-fold__act">
-              <a class="ab-fold__buy ab-crisp-open" href="#" data-crisp-msg="Hi, I'd like to buy PUBG G-COIN.">Buy</a>
+              <a class="ab-fold__buy ab-checkout-trigger" href="#" data-checkout="pubg-gcoin" data-checkout-name="PUBG G-COIN" data-crisp-msg="Hi, I'd like to buy PUBG G-COIN.">Buy</a>
             </span>
           </div>
         </div>
@@ -345,7 +345,7 @@ hide:
         <div class="ab-fold">
           <div class="ab-fold__summary">
             <span class="ab-fold__act">
-              <a class="ab-fold__buy ab-crisp-open" href="#" data-crisp-msg="Hi, I'd like to buy Honor of Kings Tokens.">Buy</a>
+              <a class="ab-fold__buy ab-checkout-trigger" href="#" data-checkout="hok" data-checkout-name="Honor of Kings" data-crisp-msg="Hi, I'd like to buy Honor of Kings Tokens.">Buy</a>
             </span>
           </div>
         </div>
@@ -367,7 +367,7 @@ hide:
         <div class="ab-fold">
           <div class="ab-fold__summary">
             <span class="ab-fold__act">
-              <a class="ab-fold__buy ab-crisp-open" href="#" data-crisp-msg="Hi, I'd like to buy Arena Breakout Bonds.">Buy</a>
+              <a class="ab-fold__buy ab-checkout-trigger" href="#" data-checkout="arena-breakout" data-checkout-name="Arena Breakout" data-crisp-msg="Hi, I'd like to buy Arena Breakout Bonds.">Buy</a>
             </span>
           </div>
         </div>
@@ -389,7 +389,7 @@ hide:
         <div class="ab-fold">
           <div class="ab-fold__summary">
             <span class="ab-fold__act">
-              <a class="ab-fold__buy ab-crisp-open" href="#" data-crisp-msg="Hi, I'd like to buy a Where Winds Meet top-up.">Buy</a>
+              <a class="ab-fold__buy ab-checkout-trigger" href="#" data-checkout="where-winds-meet" data-checkout-name="Where Winds Meet" data-crisp-msg="Hi, I'd like to buy a Where Winds Meet top-up.">Buy</a>
             </span>
           </div>
         </div>
@@ -411,7 +411,7 @@ hide:
             <div class="ab-fold">
               <div class="ab-fold__summary">
                 <span class="ab-fold__act">
-                  <a class="ab-fold__buy ab-crisp-open" href="#" data-crisp-msg="Hi, I'd like to buy Free Fire.">Buy</a>
+                  <a class="ab-fold__buy ab-checkout-trigger" href="#" data-checkout="freefire" data-checkout-name="Free Fire" data-crisp-msg="Hi, I'd like to buy Free Fire.">Buy</a>
                 </span>
               </div>
             </div>

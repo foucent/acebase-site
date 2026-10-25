@@ -61,7 +61,67 @@ hide:
 
      首页：GAME 那排按每类最多 6 张取，5 → 6 张（第六张是 Free Fire）。
      prices.json 的 updated 提到 2026-10-21，games-prices.js 的缓存版本
-     升到 20261021b。 -->
+     升到 20261021b。
+
+     ## 2026-10-26：PUBG Mobile UC 的 Buy 先填 UID 再进聊天
+     用户：「这个页面中的 PUBG Mobile UC 在点击购买后，需要用户输入uid进行
+     充值，需要你参考 https://topuplist.com/product/pubgm 页面，做一个弹窗
+     购买结算页面」。topuplist 那边只有两件事要买方给：UID 和档位，然后
+     Buy Now。我们的站没有收银台，价格一律「聊天里确认」，所以弹窗收 UID +
+     确认档位，再把整单（游戏、档位、Player ID）拼成一条消息交给 Crisp，付款
+     仍在聊天里完成。
+
+     ## 同日晚：改成两步（订单 → 人工转账）
+     用户又贴来一整套「人工核对 + Wise / 银行电汇」的行业做法，要求照着优化。
+     海外代充这类高客单价的通行流程是：选套餐 → 结算页选 Wise / 手动转账 →
+     系统生成临时订单号和汇款指引（收款邮箱 / IBAN + 唯一备注号）→ 买方转账、
+     传凭证 → 人工核对到账 → 履约。于是弹窗分两步：
+       01 ORDER     Player ID + 档位（档位和卡上的下拉同一份数据）
+       02 PAYMENT   支付方式（Wise 转账 / PayPal）+ 订单号
+                    AB-YYMMDD-XXXXXX + 金额、Player ID、档位 + 收款信息
+                    + 三步说明（转账时填订单号 → 传凭证 → 人工核对后到账）
+     两张方式卡的定位：Wise = 大额订单（人工核对的电汇），PayPal = 小额订单。
+     **界面上不写金额门槛**（哪个数以下算小额是内部规则，不是对用户的承诺）。
+     代码里仍按 `PAYPAL_UNDER` 预选：参考价低于它预选 PayPal，高于它预选 Wise；
+     买方自己点过单选钮之后就按他选的来，直到重开弹窗。PayPal 这条路没有收款
+     账号可给 —— 用户把订单交进聊天后，由人工在聊天里发一条**在线付款链接**，
+     第 2 步的说明和「Where to pay」那行都这么写，**不要在前端编一个链接出来**。
+     第 2 步的「SEND ORDER IN CHAT」把整单交给 Crisp（订单号、UID、档位、参考
+     价、支付方式都在消息里），人工核对在聊天那头做 —— 本站没有后端，也不
+     假装扣款，弹窗上明写 "Nothing is charged on this page."
+
+     收款账号**绝不写进 docs/ 下的任何文件**：mkdocs.yml 的 extra.payment.wise
+     （email / name / iban）由 overrides/main.html 注入成 window.AB_PAYMENT，
+     checkout.js 读它。三项都空着就是「账号在聊天里给」，第 2 步显示
+     "Account details come in chat — wait for them before transferring."，
+     不会自己编一个账号；填了才显示收款邮箱 / IBAN，各带复制按钮。
+
+     ## 2026-10-26 收尾：整页 30 张卡都用这套弹窗
+     用户：「以这个卡片为模板，将 /games/ 页中所有商品都同样优化成这样」。于是
+     本页每一张卡的 Buy 都从 `ab-crisp-open` 换成 `ab-checkout-trigger`，各挂
+     `data-checkout="<卡 id / prices.json 的键>"` 与 `data-checkout-name="<卡上
+     的 h3 标题>"`。这一步是一次性脚本 _tmp_ocr/games_checkout_enable.py 改的
+     （幂等：已经带 data-checkout 的卡跳过），加新卡就手写这两个属性，或重跑
+     脚本。**礼品卡 / 充值码 / 账号页面仍然直连聊天** —— 那些不是充进游戏 ID，
+     不该问 Player ID。
+
+     30 款游戏的账号 ID 不止一种形状：纯数字（PUBG、Genshin、Free Fire…）、
+     name#tag（VALORANT、Diablo IV）、数字带括号里的服务器（Mobile Legends
+     的 12345678(1234)）。所以输入框改成通用的「Player ID / account」，只拦
+     明显的垃圾输入（字符集与长度，见 checkout.js 的 ID_RE），不再要求纯数字；
+     提示语让用户连 #tag / (服务器) 一起贴进去。**校验不是风控，聊天里还要人工
+     核一遍**。
+
+     实现：docs/javascripts/checkout.js（ES5，全站加载，页面上没有
+     [data-checkout] 就直接退出）+ docs/stylesheets/checkout.css。档位不是另
+     取一份：games-prices.js 现在把取到的行挂到 window.AceBaseGameRows，弹窗
+     读同一份，和卡上的下拉不可能对不上。弹窗用原生 <dialog>（Esc、焦点陷阱、
+     背景 inert 都由浏览器给）。crisp.js 的 capture 监听靠 `ab-crisp-open`
+     类名认领点击，所以这些卡的类名必须换掉，否则会同时开聊天和弹窗；
+     checkout.js 里另有一道兜底，见到 [data-checkout] 就主动摘掉那个类。
+
+     验收：_tmp_ocr/pubg_checkout_probe.py（先在旧构建上跑红，再验绿）。
+     探针把 window.$crisp 换成记录器，好断言交给聊天的整条消息。 -->
 
 <div class="ab-mag" markdown="0">
 
@@ -85,7 +145,7 @@ hide:
         <div class="ab-fold">
           <div class="ab-fold__summary">
             <span class="ab-fold__act">
-              <a class="ab-fold__buy ab-crisp-open" href="#" data-crisp-msg="Hi, I'd like to buy PUBG Mobile UC.">Buy</a>
+              <a class="ab-fold__buy ab-checkout-trigger" href="#" data-checkout="pubg-mobile" data-checkout-name="PUBG Mobile UC" data-crisp-msg="Hi, I'd like to buy PUBG Mobile UC.">Buy</a>
             </span>
           </div>
         </div>
@@ -107,7 +167,7 @@ hide:
         <div class="ab-fold">
           <div class="ab-fold__summary">
             <span class="ab-fold__act">
-              <a class="ab-fold__buy ab-crisp-open" href="#" data-crisp-msg="Hi, I'd like to buy PUBG G-COIN.">Buy</a>
+              <a class="ab-fold__buy ab-checkout-trigger" href="#" data-checkout="pubg-gcoin" data-checkout-name="PUBG G-COIN" data-crisp-msg="Hi, I'd like to buy PUBG G-COIN.">Buy</a>
             </span>
           </div>
         </div>
@@ -129,7 +189,7 @@ hide:
         <div class="ab-fold">
           <div class="ab-fold__summary">
             <span class="ab-fold__act">
-              <a class="ab-fold__buy ab-crisp-open" href="#" data-crisp-msg="Hi, I'd like to buy Honor of Kings Tokens.">Buy</a>
+              <a class="ab-fold__buy ab-checkout-trigger" href="#" data-checkout="hok" data-checkout-name="Honor of Kings" data-crisp-msg="Hi, I'd like to buy Honor of Kings Tokens.">Buy</a>
             </span>
           </div>
         </div>
@@ -151,7 +211,7 @@ hide:
         <div class="ab-fold">
           <div class="ab-fold__summary">
             <span class="ab-fold__act">
-              <a class="ab-fold__buy ab-crisp-open" href="#" data-crisp-msg="Hi, I'd like to buy Arena Breakout Bonds.">Buy</a>
+              <a class="ab-fold__buy ab-checkout-trigger" href="#" data-checkout="arena-breakout" data-checkout-name="Arena Breakout" data-crisp-msg="Hi, I'd like to buy Arena Breakout Bonds.">Buy</a>
             </span>
           </div>
         </div>
@@ -173,7 +233,7 @@ hide:
         <div class="ab-fold">
           <div class="ab-fold__summary">
             <span class="ab-fold__act">
-              <a class="ab-fold__buy ab-crisp-open" href="#" data-crisp-msg="Hi, I'd like to buy a Where Winds Meet top-up.">Buy</a>
+              <a class="ab-fold__buy ab-checkout-trigger" href="#" data-checkout="where-winds-meet" data-checkout-name="Where Winds Meet" data-crisp-msg="Hi, I'd like to buy a Where Winds Meet top-up.">Buy</a>
             </span>
           </div>
         </div>
@@ -195,7 +255,7 @@ hide:
         <div class="ab-fold">
           <div class="ab-fold__summary">
             <span class="ab-fold__act">
-              <a class="ab-fold__buy ab-crisp-open" href="#" data-crisp-msg="Hi, I'd like to buy Free Fire.">Buy</a>
+              <a class="ab-fold__buy ab-checkout-trigger" href="#" data-checkout="freefire" data-checkout-name="Free Fire" data-crisp-msg="Hi, I'd like to buy Free Fire.">Buy</a>
             </span>
           </div>
         </div>
@@ -217,7 +277,7 @@ hide:
         <div class="ab-fold">
           <div class="ab-fold__summary">
             <span class="ab-fold__act">
-              <a class="ab-fold__buy ab-crisp-open" href="#" data-crisp-msg="Hi, I'd like to buy Blood Strike.">Buy</a>
+              <a class="ab-fold__buy ab-checkout-trigger" href="#" data-checkout="blood-strike" data-checkout-name="Blood Strike" data-crisp-msg="Hi, I'd like to buy Blood Strike.">Buy</a>
             </span>
           </div>
         </div>
@@ -239,7 +299,7 @@ hide:
         <div class="ab-fold">
           <div class="ab-fold__summary">
             <span class="ab-fold__act">
-              <a class="ab-fold__buy ab-crisp-open" href="#" data-crisp-msg="Hi, I'd like to buy Pokémon GO.">Buy</a>
+              <a class="ab-fold__buy ab-checkout-trigger" href="#" data-checkout="pokemon-go" data-checkout-name="Pokémon GO" data-crisp-msg="Hi, I'd like to buy Pokémon GO.">Buy</a>
             </span>
           </div>
         </div>
@@ -261,7 +321,7 @@ hide:
         <div class="ab-fold">
           <div class="ab-fold__summary">
             <span class="ab-fold__act">
-              <a class="ab-fold__buy ab-crisp-open" href="#" data-crisp-msg="Hi, I'd like to buy Mobile Legends: Bang Bang.">Buy</a>
+              <a class="ab-fold__buy ab-checkout-trigger" href="#" data-checkout="mobile-legends" data-checkout-name="Mobile Legends: Bang Bang" data-crisp-msg="Hi, I'd like to buy Mobile Legends: Bang Bang.">Buy</a>
             </span>
           </div>
         </div>
@@ -283,7 +343,7 @@ hide:
         <div class="ab-fold">
           <div class="ab-fold__summary">
             <span class="ab-fold__act">
-              <a class="ab-fold__buy ab-crisp-open" href="#" data-crisp-msg="Hi, I'd like to buy Honkai: Star Rail.">Buy</a>
+              <a class="ab-fold__buy ab-checkout-trigger" href="#" data-checkout="honkai-star-rail" data-checkout-name="Honkai: Star Rail" data-crisp-msg="Hi, I'd like to buy Honkai: Star Rail.">Buy</a>
             </span>
           </div>
         </div>
@@ -305,7 +365,7 @@ hide:
         <div class="ab-fold">
           <div class="ab-fold__summary">
             <span class="ab-fold__act">
-              <a class="ab-fold__buy ab-crisp-open" href="#" data-crisp-msg="Hi, I'd like to buy Genshin Impact.">Buy</a>
+              <a class="ab-fold__buy ab-checkout-trigger" href="#" data-checkout="genshin" data-checkout-name="Genshin Impact" data-crisp-msg="Hi, I'd like to buy Genshin Impact.">Buy</a>
             </span>
           </div>
         </div>
@@ -327,7 +387,7 @@ hide:
         <div class="ab-fold">
           <div class="ab-fold__summary">
             <span class="ab-fold__act">
-              <a class="ab-fold__buy ab-crisp-open" href="#" data-crisp-msg="Hi, I'd like to buy Wuthering Waves.">Buy</a>
+              <a class="ab-fold__buy ab-checkout-trigger" href="#" data-checkout="wuthering-waves" data-checkout-name="Wuthering Waves" data-crisp-msg="Hi, I'd like to buy Wuthering Waves.">Buy</a>
             </span>
           </div>
         </div>
@@ -349,7 +409,7 @@ hide:
         <div class="ab-fold">
           <div class="ab-fold__summary">
             <span class="ab-fold__act">
-              <a class="ab-fold__buy ab-crisp-open" href="#" data-crisp-msg="Hi, I'd like to buy Zenless Zone Zero.">Buy</a>
+              <a class="ab-fold__buy ab-checkout-trigger" href="#" data-checkout="zzz" data-checkout-name="Zenless Zone Zero" data-crisp-msg="Hi, I'd like to buy Zenless Zone Zero.">Buy</a>
             </span>
           </div>
         </div>
@@ -371,7 +431,7 @@ hide:
         <div class="ab-fold">
           <div class="ab-fold__summary">
             <span class="ab-fold__act">
-              <a class="ab-fold__buy ab-crisp-open" href="#" data-crisp-msg="Hi, I'd like to buy GODDESS OF VICTORY: NIKKE.">Buy</a>
+              <a class="ab-fold__buy ab-checkout-trigger" href="#" data-checkout="nikke" data-checkout-name="GODDESS OF VICTORY: NIKKE" data-crisp-msg="Hi, I'd like to buy GODDESS OF VICTORY: NIKKE.">Buy</a>
             </span>
           </div>
         </div>
@@ -393,7 +453,7 @@ hide:
         <div class="ab-fold">
           <div class="ab-fold__summary">
             <span class="ab-fold__act">
-              <a class="ab-fold__buy ab-crisp-open" href="#" data-crisp-msg="Hi, I'd like to buy Identity V.">Buy</a>
+              <a class="ab-fold__buy ab-checkout-trigger" href="#" data-checkout="identity-v" data-checkout-name="Identity V" data-crisp-msg="Hi, I'd like to buy Identity V.">Buy</a>
             </span>
           </div>
         </div>
@@ -415,7 +475,7 @@ hide:
         <div class="ab-fold">
           <div class="ab-fold__summary">
             <span class="ab-fold__act">
-              <a class="ab-fold__buy ab-crisp-open" href="#" data-crisp-msg="Hi, I'd like to buy Clash of Clans.">Buy</a>
+              <a class="ab-fold__buy ab-checkout-trigger" href="#" data-checkout="clash-of-clans" data-checkout-name="Clash of Clans" data-crisp-msg="Hi, I'd like to buy Clash of Clans.">Buy</a>
             </span>
           </div>
         </div>
@@ -437,7 +497,7 @@ hide:
         <div class="ab-fold">
           <div class="ab-fold__summary">
             <span class="ab-fold__act">
-              <a class="ab-fold__buy ab-crisp-open" href="#" data-crisp-msg="Hi, I'd like to buy Clash Royale.">Buy</a>
+              <a class="ab-fold__buy ab-checkout-trigger" href="#" data-checkout="clash-royale" data-checkout-name="Clash Royale" data-crisp-msg="Hi, I'd like to buy Clash Royale.">Buy</a>
             </span>
           </div>
         </div>
@@ -459,7 +519,7 @@ hide:
         <div class="ab-fold">
           <div class="ab-fold__summary">
             <span class="ab-fold__act">
-              <a class="ab-fold__buy ab-crisp-open" href="#" data-crisp-msg="Hi, I'd like to buy Brawl Stars.">Buy</a>
+              <a class="ab-fold__buy ab-checkout-trigger" href="#" data-checkout="brawl-stars" data-checkout-name="Brawl Stars" data-crisp-msg="Hi, I'd like to buy Brawl Stars.">Buy</a>
             </span>
           </div>
         </div>
@@ -481,7 +541,7 @@ hide:
         <div class="ab-fold">
           <div class="ab-fold__summary">
             <span class="ab-fold__act">
-              <a class="ab-fold__buy ab-crisp-open" href="#" data-crisp-msg="Hi, I'd like to buy Love and Deepspace.">Buy</a>
+              <a class="ab-fold__buy ab-checkout-trigger" href="#" data-checkout="love-and-deepspace" data-checkout-name="Love and Deepspace" data-crisp-msg="Hi, I'd like to buy Love and Deepspace.">Buy</a>
             </span>
           </div>
         </div>
@@ -503,7 +563,7 @@ hide:
         <div class="ab-fold">
           <div class="ab-fold__summary">
             <span class="ab-fold__act">
-              <a class="ab-fold__buy ab-crisp-open" href="#" data-crisp-msg="Hi, I'd like to buy Eggy Party.">Buy</a>
+              <a class="ab-fold__buy ab-checkout-trigger" href="#" data-checkout="eggy-party" data-checkout-name="Eggy Party" data-crisp-msg="Hi, I'd like to buy Eggy Party.">Buy</a>
             </span>
           </div>
         </div>
@@ -525,7 +585,7 @@ hide:
         <div class="ab-fold">
           <div class="ab-fold__summary">
             <span class="ab-fold__act">
-              <a class="ab-fold__buy ab-crisp-open" href="#" data-crisp-msg="Hi, I'd like to buy Harry Potter: Magic Awakened.">Buy</a>
+              <a class="ab-fold__buy ab-checkout-trigger" href="#" data-checkout="harry-potter" data-checkout-name="Harry Potter: Magic Awakened" data-crisp-msg="Hi, I'd like to buy Harry Potter: Magic Awakened.">Buy</a>
             </span>
           </div>
         </div>
@@ -547,7 +607,7 @@ hide:
         <div class="ab-fold">
           <div class="ab-fold__summary">
             <span class="ab-fold__act">
-              <a class="ab-fold__buy ab-crisp-open" href="#" data-crisp-msg="Hi, I'd like to buy Arena of Valor.">Buy</a>
+              <a class="ab-fold__buy ab-checkout-trigger" href="#" data-checkout="arena-of-valor" data-checkout-name="Arena of Valor" data-crisp-msg="Hi, I'd like to buy Arena of Valor.">Buy</a>
             </span>
           </div>
         </div>
@@ -569,7 +629,7 @@ hide:
         <div class="ab-fold">
           <div class="ab-fold__summary">
             <span class="ab-fold__act">
-              <a class="ab-fold__buy ab-crisp-open" href="#" data-crisp-msg="Hi, I'd like to buy Once Human.">Buy</a>
+              <a class="ab-fold__buy ab-checkout-trigger" href="#" data-checkout="once-human" data-checkout-name="Once Human" data-crisp-msg="Hi, I'd like to buy Once Human.">Buy</a>
             </span>
           </div>
         </div>
@@ -591,7 +651,7 @@ hide:
         <div class="ab-fold">
           <div class="ab-fold__summary">
             <span class="ab-fold__act">
-              <a class="ab-fold__buy ab-crisp-open" href="#" data-crisp-msg="Hi, I'd like to buy Delta Force.">Buy</a>
+              <a class="ab-fold__buy ab-checkout-trigger" href="#" data-checkout="delta-force" data-checkout-name="Delta Force" data-crisp-msg="Hi, I'd like to buy Delta Force.">Buy</a>
             </span>
           </div>
         </div>
@@ -613,7 +673,7 @@ hide:
         <div class="ab-fold">
           <div class="ab-fold__summary">
             <span class="ab-fold__act">
-              <a class="ab-fold__buy ab-crisp-open" href="#" data-crisp-msg="Hi, I'd like to buy VALORANT.">Buy</a>
+              <a class="ab-fold__buy ab-checkout-trigger" href="#" data-checkout="valorant" data-checkout-name="VALORANT" data-crisp-msg="Hi, I'd like to buy VALORANT.">Buy</a>
             </span>
           </div>
         </div>
@@ -635,7 +695,7 @@ hide:
         <div class="ab-fold">
           <div class="ab-fold__summary">
             <span class="ab-fold__act">
-              <a class="ab-fold__buy ab-crisp-open" href="#" data-crisp-msg="Hi, I'd like to buy Marvel Rivals.">Buy</a>
+              <a class="ab-fold__buy ab-checkout-trigger" href="#" data-checkout="marvel-rivals" data-checkout-name="Marvel Rivals" data-crisp-msg="Hi, I'd like to buy Marvel Rivals.">Buy</a>
             </span>
           </div>
         </div>
@@ -657,7 +717,7 @@ hide:
         <div class="ab-fold">
           <div class="ab-fold__summary">
             <span class="ab-fold__act">
-              <a class="ab-fold__buy ab-crisp-open" href="#" data-crisp-msg="Hi, I'd like to buy Arknights: Endfield.">Buy</a>
+              <a class="ab-fold__buy ab-checkout-trigger" href="#" data-checkout="arknights-endfield" data-checkout-name="Arknights: Endfield" data-crisp-msg="Hi, I'd like to buy Arknights: Endfield.">Buy</a>
             </span>
           </div>
         </div>
@@ -679,7 +739,7 @@ hide:
         <div class="ab-fold">
           <div class="ab-fold__summary">
             <span class="ab-fold__act">
-              <a class="ab-fold__buy ab-crisp-open" href="#" data-crisp-msg="Hi, I'd like to buy Diablo IV.">Buy</a>
+              <a class="ab-fold__buy ab-checkout-trigger" href="#" data-checkout="diablo-iv" data-checkout-name="Diablo IV" data-crisp-msg="Hi, I'd like to buy Diablo IV.">Buy</a>
             </span>
           </div>
         </div>
@@ -701,7 +761,7 @@ hide:
         <div class="ab-fold">
           <div class="ab-fold__summary">
             <span class="ab-fold__act">
-              <a class="ab-fold__buy ab-crisp-open" href="#" data-crisp-msg="Hi, I'd like to buy League of Legends: Wild Rift.">Buy</a>
+              <a class="ab-fold__buy ab-checkout-trigger" href="#" data-checkout="lol-wild-rift" data-checkout-name="League of Legends: Wild Rift" data-crisp-msg="Hi, I'd like to buy League of Legends: Wild Rift.">Buy</a>
             </span>
           </div>
         </div>
@@ -723,7 +783,7 @@ hide:
         <div class="ab-fold">
           <div class="ab-fold__summary">
             <span class="ab-fold__act">
-              <a class="ab-fold__buy ab-crisp-open" href="#" data-crisp-msg="Hi, I'd like to buy Whiteout Survival.">Buy</a>
+              <a class="ab-fold__buy ab-checkout-trigger" href="#" data-checkout="whiteout-survival" data-checkout-name="Whiteout Survival" data-crisp-msg="Hi, I'd like to buy Whiteout Survival.">Buy</a>
             </span>
           </div>
         </div>

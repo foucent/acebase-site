@@ -366,6 +366,16 @@
       .then(function (data) {
         games = (data && data.games) || {};
         updated = (data && data.updated) || "";
+        // Published for checkout.js: the UID sheet (2026-10-26, PUBG Mobile
+        // UC) lists the same tiers this script just built the card's picker
+        // from, and reading them from here rather than fetching prices.json a
+        // second time is what keeps the two lists from ever disagreeing.
+        window.AceBaseGameRows = games;
+        // Announce it: a checkout sheet opened before this point is still
+        // waiting for its package list.
+        document.dispatchEvent(
+          new CustomEvent("acebase:prices", { detail: { games: games } })
+        );
         renderAll();
       })
       .catch(function (err) {

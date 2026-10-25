@@ -238,6 +238,10 @@ extra_css:
   - stylesheets/uncrate.css
   # /boosting/ only. Scoped to .ab-boost* inside .ab-mag.
   - stylesheets/boosting.css
+  # The UID checkout sheet (2026-10-26). Scoped to .ab-checkout*, which is a
+  # <dialog> appended to <body> — outside .md-typeset, so this file has to
+  # stand on its own.
+  - stylesheets/checkout.css
 
 extra_javascript:
   - javascripts/crisp.js
@@ -251,6 +255,10 @@ extra_javascript:
   # .ab-ec-list[data-product] targets are gone and /topup renders every card,
   # these fourteen included, through games-prices.js.
   - javascripts/games-prices.js
+  # The UID checkout sheet; exits unless a [data-checkout] trigger is on the
+  # page. After games-prices.js on purpose: it reads the tier rows that script
+  # publishes as window.AceBaseGameRows.
+  - javascripts/checkout.js
   # /boosting/ configurator; exits unless [data-boost-root] is on the page.
   - javascripts/boosting.js
 
@@ -300,6 +308,16 @@ extra:
   # Material's footer prints "Made with Material for MkDocs" after the copyright
   # unless this is false.
   generator: false
+
+  # 人工转账收款信息，给 /games/ PUBG Mobile UC 的 UID 结算弹窗用（2026-10-26）。
+  # overrides/main.html 把它注入成 window.AB_PAYMENT，docs/javascripts/checkout.js
+  # 读它。**空着就是「账号在聊天里给」** —— 弹窗不会自己编一个账号出来，所以这里
+  # 不预置任何默认值。填了才会在弹窗第 2 步直接显示收款邮箱 / IBAN（各带复制按钮）。
+  payment:
+    wise:
+      email: ""     # Wise 收款邮箱
+      name: ""      # 收款人 / 公司名
+      iban: ""      # IBAN 或本地账号
 
 nav:
   # 2026-10-21：导航重排（用户：「将导航按 top-up , game,gift cards,BOOSTING,news

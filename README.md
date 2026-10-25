@@ -92,6 +92,68 @@ copy 底部预留 46px → 36px（那一行是 28px，放得下）。字标带�
 「25 张全是 470×322」的断言，并带一条把旧版式临时塞回去、确认高度会分叉的 red-first
 对照；顺手把它两处失效的「正在加载」判定换成 `Loading the latest prices`。
 
+**2026-10-26 UID 结算弹窗（/games/ 全部 30 张卡，两步：订单 → 收款）**（用户：
+「这个页面中的 PUBG Mobile UC 在点击购买后，需要用户输入 uid 进行充值，需要你参考
+https://topuplist.com/product/pubgm 页面，做一个弹窗购买结算页面」；同日又贴来一整套
+「人工核对 + Wise / 银行电汇」的行业做法，要求照着优化；接着把第二种方式从「聊天里另
+议」改成 **PayPal**；最后要求「以这个卡片为模板，把 /games/ 页中所有商品都同样优化」，
+于是整页 30 张卡全部接上）。第一步收 Player ID 和档位 —— topuplist 那边买方给的就
+这两样；第二步是支付：选 Wise 转账或 PayPal，显示本次订单号、金额、Player ID、档位、
+收款信息，再给三步说明。
+
+本站没有收银台、也没有后端，所以**第二步仍以交给 Crisp 收尾**：弹窗把整单（游戏、
+档位、Player ID、订单号、参考价、支付方式）拼成一条消息交给聊天，人工核对 / 发收款
+链接都发生在聊天那头，弹窗上明写 `Nothing is charged on this page.` —— **不要把它
+做成假支付页**。示例消息：`Hi, I'd like to buy PUBG Mobile UC, spec 60 UC. Player ID /
+account: 51234567890. Order AB-261026-GRFZXZ, paying by Wise transfer. Reference price
+$0.80.`
+
+- **两种方式的定位写在卡片上，不写门槛**：Wise 那张是「大额订单」的路线，PayPal 是
+  「小额订单」的路线，**界面上不出现 $10 这个数**（`$10` 只是代码里
+  `PAYPAL_UNDER` 的预选阈值：低于它预选 PayPal，高于它预选 Wise；买方手点过单选钮就
+  以他的选择为准，直到重开弹窗。在第 2 步改档位跨过阈值时，预设会跟着翻）。
+- **PayPal 没有链接可给**：这一步是「交单 → 人工在聊天里发一条在线付款链接」，所以
+  第 2 步那行写 `We send the online payment link in chat — pay only through it.`，
+  **不要在前端编一个 PayPal 链接出来**。Wise 那条才有配置好的收款账号可显示。
+- 订单号 `AB-YYMMDD-XXXXXX`，6 位取自去掉 I / L / O / U 的字母表，进第 2 步时生成，
+  旁边带复制按钮（复制到剪贴板，不是开票）。
+- 收款账号**绝不写进 `docs/` 下任何文件**：`mkdocs.yml` 的 `extra.payment.wise`
+  （`email` / `name` / `iban`）经 `overrides/main.html` 注入成 `window.AB_PAYMENT`，
+  `checkout.js` 读它。三项都空着时第 2 步写 `Account details come in chat — wait for
+  them before transferring.`，**不会自己编一个账号**；填了才显示收款邮箱 / IBAN，
+  各带复制按钮。
+- **整页 30 张卡都开**：每张卡的 Buy 是 `ab-checkout-trigger` +
+  `data-checkout="<卡 id = prices.json 的键>"` + `data-checkout-name="<卡上的 h3
+  标题>"`，不再带 `ab-crisp-open`。这一步由一次性脚本
+  `_tmp_ocr/games_checkout_enable.py` 批量改写（幂等，已带 `data-checkout` 的卡跳过）；
+  加新卡就手写这两个属性或重跑脚本。**礼品卡 / 充值码 / 账号页面仍直连聊天** ——
+  那些不是充进游戏 ID，问 Player ID 是错的。
+- **ID 不止一种形状**：纯数字（PUBG、Genshin、Free Fire…）、`name#tag`（VALORANT、
+  Diablo IV）、带括号服务器的数字（Mobile Legends 的 `12345678(1234)`）。所以输入框
+  是通用的 `Player ID / account`，只拦明显垃圾（`ID_RE`：字符集 + 长度，且至少 4 位
+  字母数字），提示语让人连 `#tag` / `(服务器)` 一起贴。**这不是风控，聊天里还要人工
+  核一遍**。
+- `docs/javascripts/checkout.js`（ES5，全站加载，页面上没有 `[data-checkout]` 就
+  退出）+ `docs/stylesheets/checkout.css`（`<dialog>` 挂在 `<body>` 上，在
+  `.md-typeset` 之外，所以这个文件自成一套）。用原生 `<dialog>`：Esc、焦点陷阱、
+  背景 inert 都由浏览器负责。
+- 档位不另取一份：`games-prices.js` 现在把取到的行挂到 `window.AceBaseGameRows`，
+  弹窗读同一份。prices.json 没拿到时弹窗照样开，只是收起档位行 —— UID 才是不能等
+  的那一半。
+- **类名不能两全**：crisp.js 的 capture 监听靠 `ab-crisp-open` 认领点击，同一张卡
+  留着它就会同时开聊天和弹窗；`checkout.js` 另有一道兜底，见到 `[data-checkout]`
+  主动摘掉那个类。
+- 首页那 6 张 GAME 卡是 `gen_home.py` 原样复制的，属性一起带过去，所以首页点 Buy
+  也是这个弹窗。
+- 验收：`_tmp_ocr/pubg_checkout_probe.py`（先在旧构建上跑红再验绿）。它把
+  `window.$crisp` 换成记录器，断言交给聊天的整条消息；覆盖：30 张卡全部带 trigger 且
+  标题对得上、没有卡残留 `ab-crisp-open`、十档下拉、默认档、坏 ID 拦住不进聊天、
+  进第 2 步后有订单号且格式对、金额 / ID / 档位回显、两个支付方式与各自的三步说明、
+  未配置收款账号时指聊天、复制按钮、提交消息含订单号、返回保留 ID、改档价格同步与
+  跨 $10 的预设翻转、`name#tag` 的账号（VALORANT）、Esc / 背景点击关闭、
+  /gift-cards/ 仍直连聊天、390px 不溢出、无 prices.json 与迟到的 prices.json、
+  首页副本同样能开。截图在 `_tmp_ocr/shots_checkout/`。
+
 `/topup/` 2026-10-22 整体换掉（用户：「同样的方式，将
 https://topuplist.com/category/entertainment 页中的商品添加到 /topup/，并将原来
 的 /topup/ 页中的商品删除」；问过之后选「精选约 30 款」「品牌字标」「全部用新抓

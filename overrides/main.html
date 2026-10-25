@@ -34,4 +34,10 @@
 {% block scripts %}
   {{ super() }}
   <script>window.AB_SNIPCART_KEY = {{ config.extra.snipcart_public_key | default("") | tojson }};</script>
+  {#- Manual-transfer details for the UID checkout sheet. Read by
+      javascripts/checkout.js, which prints them on step 2 of the sheet and
+      says the account comes from chat when they are empty. They live in
+      mkdocs.yml (extra.payment.wise) rather than in the script so that an
+      account number is never hard-coded in a file under docs/. -#}
+  <script>window.AB_PAYMENT = {{ config.extra.payment | default({}, true) | tojson }};</script>
 {% endblock %}
