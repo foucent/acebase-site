@@ -1,7 +1,7 @@
 ---
-title: "Game Top-Up Prices | 30 Games, Tier by Tier"
-description: "Tier-by-tier USD reference prices for 30 game top-ups: PUBG Mobile, Honor of Kings, Genshin Impact, VALORANT, Mobile Legends and more. Pick a tier, confirm the quote in chat."
-updated: 2026-10-21
+title: "Game Top-Up Prices | 31 Games, Tier by Tier"
+description: "Tier-by-tier USD reference prices for 31 game top-ups: PUBG Mobile, Honor of Kings, Genshin Impact, VALORANT, Mobile Legends and more. Pick a tier, confirm the quote in chat."
+updated: 2026-10-29
 hide:
   - title
   - toc
@@ -121,7 +121,42 @@ hide:
      checkout.js 里另有一道兜底，见到 [data-checkout] 就主动摘掉那个类。
 
      验收：_tmp_ocr/pubg_checkout_probe.py（先在旧构建上跑红，再验绿）。
-     探针把 window.$crisp 换成记录器，好断言交给聊天的整条消息。 -->
+     探针把 window.$crisp 换成记录器，好断言交给聊天的整条消息。
+
+     ## 2026-10-29：第 31 张卡 CS2（报价制，没有价目表）
+     用户：「从 https://www.8591.com.tw/v3/mall/detail/2370886087 获取商品信息，
+     添加到 /games/ 页面中」。那是 8591 上「松鼠遊戲」的 CS2 代购服务
+     （卖家 No.900759，8,637 条评价、99.44% 正评，5 万保证金，1 小时交货，
+     库存 434，服务时间 09:00–24:00）：Steam 枪械代购、BUFF／悠悠皮肤代购
+     （免实名、免等七天）、SkinClub、5E／5E 币、FACEIT、B5、UU 加速器、
+     BUFF 代储、刀升级、赛季重制卡、改名卡等。
+
+     **它没有价目表。** 页面上唯一的数字是平台的「單件價格 NT$10」——挂牌单位价，
+     不是任何一档商品的售价；两张附图也只有 CS2 主视觉和卖家的营业登记，没有
+     报价表。问过用户，选的是「报价制，不放数字」：卡片不挂档位、不编美元价
+     （汇率换出来的 $0.31 会被读成一把枪的价钱），卖点写成一句服务清单，Buy
+     直接进聊天报价。第一版脚注照抄了源页的挂牌价「From NT$10 · Quoted in
+     chat」，用户当日又要整行去掉（「PC · Steam · From NT$10 · Quoted in chat
+     去掉」），所以这张卡现在**一个数字都没有**，价目只在聊天里给。
+
+     实现：merge_game_prices.QUOTE 是这张卡唯一的出处（key / 名称 / 角标 /
+     服务清单 / Crisp 消息；没有 foot 的卡就不出 .ab-ec-foot），
+     build_games_page 每次都按它重出这张卡（其余卡仍是「页面上已有就原样搬」），
+     并跳过 priced 卡才有的 prices.json 行检查——品牌图仍要 2400x500。
+     TOTAL 30 → 31。
+
+     Buy 用 ab-crisp-open 而不是 data-checkout：报价制没有档位可确认、也没有
+     金额可付款，两步结算弹窗只会问一个用不上的档位。CSS 新增 --quote（在
+     --fold / --picker 之后，同 0-4-0，靠源序盖掉 84px 裁切）——清单要读全。
+     品牌横幅由 _tmp_ocr/cs2_banner.py
+     从 Steam 商店的 logo_2x（appid 730）生成，白色的「2」先刷成字标自己的
+     深蓝再按 1200px 宽封顶居中，5:2 画框裁掉两边后仍然完整。
+
+     **顺带修的坑**：上面那段「脚本按 "@type": "ItemList" 后面那
+     itemListElement 的形状就地重写」的注释本身就是那个形状，生成器这段
+     无锚搜索会先命中注释——这次跑出了问题：注释被 Product 数组替换掉两行，
+     真正的 ItemList 少掉最后一项。现在从 `<script type="application/ld+json">`
+     之后开始找。 -->
 
 <div class="ab-mag" markdown="0">
 
@@ -795,6 +830,24 @@ hide:
         <p class="ab-ec-foot">Mobile &middot; PC &middot; Data updated <span class="js-prices-updated">2026-10-21</span> &middot; Final quote confirmed in chat</p>
       </div>
 </article>
+    <article class="ab-card ab-card--brand ab-card--fold ab-card--ec ab-card--plate ab-card--quote ab-card--wordmark" id="cs2">
+      <div class="ab-card__media">
+        <span class="ab-card__badge">PC</span>
+        <img src="/assets/games/brand/cs2.png" alt="Counter-Strike 2" loading="lazy" decoding="async">
+      </div>
+      <div class="ab-card__copy">
+        <h3 class="ab-card__title">CS2 Skins &amp; Credits<span class="ab-card__price"></span></h3>
+        <div class="ab-fold">
+          <div class="ab-fold__summary">
+            <span class="ab-fold__act">
+              <a class="ab-fold__buy ab-crisp-open" href="#" data-crisp-msg="Hi, I'd like a quote for CS2 skins or credits.">Buy</a>
+            </span>
+          </div>
+        </div>
+
+        <p class="ab-ec-list">Skins through BUFF or YouPin &mdash; no real-name account, no seven-day wait &mdash; plus SkinClub, 5E, FACEIT, BUFF credit, knife upgrades and name-change cards.</p>
+      </div>
+</article>
     <!-- GAMES:CARDS:END -->
     </div>
   </section>
@@ -815,16 +868,15 @@ hide:
       "@id": "https://acebase.cc/games/",
       "url": "https://acebase.cc/games/",
       "name": "Game Top-Up Prices",
-      "description": "AceBase Game: tier-by-tier reference prices (USD) for 30 game top-ups, including PUBG Mobile UC, PUBG G-COIN, Honor of Kings, Genshin Impact and VALORANT.",
+      "description": "AceBase Game: tier-by-tier reference prices (USD) for 31 game top-ups, including PUBG Mobile UC, PUBG G-COIN, Honor of Kings, Genshin Impact and VALORANT.",
       "inLanguage": "en",
       "isPartOf": {"@type": "WebSite", "name": "AceBase", "url": "https://acebase.cc/"}
     },
     {
       "@type": "ItemList",
       "name": "Game Top-Up Prices",
-      "numberOfItems": "30",
+      "numberOfItems": "31",
       "itemListElement": [
-
         { "@type": "Product", "position": 1, "name": "PUBG Mobile UC", "url": "https://acebase.cc/games/#pubg-mobile" },
         { "@type": "Product", "position": 2, "name": "PUBG G-COIN", "url": "https://acebase.cc/games/#pubg-gcoin" },
         { "@type": "Product", "position": 3, "name": "Honor of Kings", "url": "https://acebase.cc/games/#hok" },
@@ -854,8 +906,8 @@ hide:
         { "@type": "Product", "position": 27, "name": "Arknights: Endfield", "url": "https://acebase.cc/games/#arknights-endfield" },
         { "@type": "Product", "position": 28, "name": "Diablo IV", "url": "https://acebase.cc/games/#diablo-iv" },
         { "@type": "Product", "position": 29, "name": "League of Legends: Wild Rift", "url": "https://acebase.cc/games/#lol-wild-rift" },
-        { "@type": "Product", "position": 30, "name": "Whiteout Survival", "url": "https://acebase.cc/games/#whiteout-survival" }
-      
+        { "@type": "Product", "position": 30, "name": "Whiteout Survival", "url": "https://acebase.cc/games/#whiteout-survival" },
+        { "@type": "Product", "position": 31, "name": "CS2 Skins & Credits", "url": "https://acebase.cc/games/#cs2" }
       ]
     },
     {

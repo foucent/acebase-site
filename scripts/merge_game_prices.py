@@ -87,6 +87,29 @@ GAMES = [
 # The five keys already on the page: ranges from several sources, left alone.
 KEEP = ["pubg-mobile", "pubg-gcoin", "hok", "arena-breakout", "where-winds-meet"]
 
+# Quote-only cards, 2026-10-29. These are services, not tier lists: the source
+# quotes per order, so there is nothing for main() to merge and no prices.json
+# row behind them — build_games_page skips its row check for these keys but
+# still wants the 2400x500 brand image. The card lists what is sold and sends
+# the reader to chat for the price (`line`); `msg` is the sentence Buy opens
+# the chat with. No `foot`: the user asked for the platform line to go
+# (2026-10-29), so this card carries no footnote at all.
+#
+# CS2 comes from an 8591 listing (seller 松鼠遊戲, id 2370886087) whose only
+# figure is the platform's NT$10 unit price — a nominal listing price, not a
+# tier. Nothing is converted to USD and nothing is printed: the site quotes in
+# USD only, $0.31 would read as the price of a skin, and NT$10 belongs to the
+# listing rather than to an order. The card therefore shows no figure anywhere;
+# the number is given in the chat.
+QUOTE = [
+    {"key": "cs2", "name": "CS2 Skins &amp; Credits", "badge": "PC",
+     "alt": "Counter-Strike 2",
+     "line": "Skins through BUFF or YouPin &mdash; no real-name account, no "
+             "seven-day wait &mdash; plus SkinClub, 5E, FACEIT, BUFF credit, "
+             "knife upgrades and name-change cards.",
+     "msg": "Hi, I'd like a quote for CS2 skins or credits."},
+]
+
 MAX_TIERS = 24          # per currency group: longer than this stops scanning
 REGION = re.compile(r"\s*[(（]([^()（）]{1,14})[)）]\s*$")
 

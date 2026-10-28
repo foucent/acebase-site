@@ -2144,3 +2144,44 @@
   outline-offset: 1px;
   border-color: var(--ab-accent-deep);
 }
+
+/* ---------- the quote card, on /games/ ---------------------------------
+   The one card on the page with no numbers in it: CS2 is sold per order, so
+   there is no tier list for prices.json to fill and the reader is sent to the
+   chat for the figure (2026-10-29). It wears --quote instead of --picker and
+   keeps everything else, so it sits in the same three-column grid.
+
+   What it borrows from --picker, and why: --fold still clips .ab-ec-list to
+   84px under a fade. Here the block is a sentence rather than a ladder and
+   has to be read whole, so the window is switched off. --fold also hides
+   .ab-ec-foot, but this card has no footnote at all (the platform line was
+   removed on 2026-10-29), so there is nothing for that rule to hide — the
+   card shows no figure anywhere and the number is given in the chat.
+
+   Written after both the --fold and the --ec rules and at the same 0-4-0, so
+   it retires the clip (--fold) and the label/price two-column grid (--ec) on
+   source order alone. text-align goes back to centre: --ec left-aligns its
+   cells, and there are no cells here. */
+.md-typeset .ab-mag .ab-card--quote .ab-card__copy {
+  padding-top: 16px;
+}
+
+.md-typeset .ab-mag .ab-card--quote .ab-ec-list {
+  display: block;
+  height: auto;
+  max-height: none;
+  overflow: visible;
+  -webkit-mask-image: none;
+  mask-image: none;
+  text-align: center;
+  font-family: var(--ab-sans);
+  font-size: 13px;
+  line-height: 1.65;
+  color: var(--ab-text-muted);
+}
+
+/* A <div>, not a <summary>: there is nothing to toggle, and the row's only
+   in-flow child is gone, so the pointer should not promise an opening. */
+.md-typeset .ab-mag .ab-card--quote .ab-fold__summary {
+  cursor: default;
+}
