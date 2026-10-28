@@ -12,14 +12,25 @@ hide:
 
   <section class="ab-section" id="latest">
     <header class="ab-section__head">
-      <span class="ab-stamp" aria-hidden="true">Updated 2026-10-25</span>
+      <span class="ab-stamp" aria-hidden="true">Updated 2026-10-29</span>
       <h2 class="ab-section__title">Latest updates</h2>
     </header>
     <div class="ab-list ab-list--feed">
+    <article class="ab-card ab-card--row" id="pubg-ive-love-dive">
+      <div class="ab-card__media">
+        <img src="/assets/news/pubg-ive-love-dive/cover.jpg" alt="The six members of IVE in school uniforms among ruined statues, under pink chrome LOVE DIVE lettering" loading="lazy" decoding="async" fetchpriority="high">
+      </div>
+      <div class="ab-card__copy">
+        <h3 class="ab-card__title">PUBG × IVE Love Dive: Three Rondo Zones, Six Idols, a November Launch</h3>
+        <p class="ab-card__meta"><time datetime="2026-10-28">28 Oct 2026</time> &middot; PUBG</p>
+        <p class="ab-card__excerpt">KRAFTON&rsquo;s crossover with IVE puts three LOVE DIVE areas on Rondo and all six members in game as outfits, with themed clothing, armour, weapon skins and emotes. PC on 4 November, consoles on 12 November.</p>
+        <p class="ab-card__more"><a href="/blog/pubg-ive-love-dive/">Read article</a></p>
+      </div>
+    </article>
     <article class="ab-card ab-card--brand ab-card--fold ab-card--ec ab-card--plate ab-card--picker ab-card--wordmark" id="steam-account">
       <div class="ab-card__media">
         <span class="ab-card__badge">Account</span>
-        <img src="/assets/games/brand/steam-wallet-card-us.png" alt="Steam account price reference" decoding="async" fetchpriority="high">
+        <img src="/assets/games/brand/steam-wallet-card-us.png" alt="Steam account price reference" decoding="async">
       </div>
       <div class="ab-card__copy">
         <h3 class="ab-card__title">Steam Account<span class="ab-card__price"></span></h3>
@@ -279,17 +290,6 @@ hide:
 
             <p class="ab-ec-foot">Account or ID &middot; Data updated <span class="js-prices-updated">2026-10-22</span> &middot; Final quote confirmed in chat</p>
           </div>
-    </article>
-    <article class="ab-card ab-card--row" id="delta-force-ammo">
-      <div class="ab-card__media">
-        <img src="/assets/news/delta-force-ammo-chart-guide/cover.jpg" alt="Delta Force ammo chart guide cover" loading="lazy" decoding="async">
-      </div>
-      <div class="ab-card__copy">
-        <h3 class="ab-card__title">Delta Force Ammo Chart: Which Rounds Beat Which Armour</h3>
-        <p class="ab-card__meta"><time datetime="2026-10-21">21 Oct 2026</time> &middot; Delta Force</p>
-        <p class="ab-card__excerpt">Ammo one level above the target&rsquo;s armour does full damage; one level below cuts it to a coin flip. The penetration table, what each tier costs per round, and what to carry.</p>
-        <p class="ab-card__more"><a href="/blog/delta-force-ammo/">Read article</a></p>
-      </div>
     </article>
     <article class="ab-card ab-card--brand ab-card--fold ab-card--ec ab-card--plate ab-card--picker ab-card--wordmark" id="pubg-mobile">
       <div class="ab-card__media">
@@ -558,6 +558,6 @@ hide:
     </div>
   </section>
 
-  <p class="ab-mag__foot">All data updated 2026-10-25 · Final quote confirmed in chat</p>
+  <p class="ab-mag__foot">All data updated 2026-10-29 · Final quote confirmed in chat</p>
 
 </div>

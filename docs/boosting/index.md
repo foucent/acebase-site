@@ -34,7 +34,7 @@ hide:
       <span class="ab-stamp" aria-hidden="true">Updated 2026-10-21</span>
       <h1 class="ab-section__title">Game Boosting &amp; Coaching</h1>
     </header>
-    <p class="ab-section__lead">Pick your game, rank and options below, send us your account and server in chat, and we start the order &mdash; the final price is confirmed there.</p>
+    <p class="ab-section__lead">Pick your game, rank and options below, send us your account and server in chat, and we start the order.</p>
     <ul class="ab-boost__facts">
       <li>Hand-played only</li>
       <li>Any server</li>

@@ -35,7 +35,7 @@ hide:
     <header class="ab-section__head">
       <h1 class="ab-section__title">Gift Card Prices</h1>
     </header>
-    <p class="ab-section__lead">Pick your card and tier, send us the region in chat, and we send the code there &mdash; the final price is confirmed there.</p>
+    <p class="ab-section__lead">Pick your card and tier, send us the region in chat, and we send the code there.</p>
   </section>
 
   <section class="ab-section">

@@ -49,7 +49,7 @@ hide:
     <header class="ab-section__head">
       <h1 class="ab-section__title">Accounts</h1>
     </header>
-    <p class="ab-section__lead">Pick the listing that fits you, send us a message in chat, and we hand over a ready-to-play account with the login details changed to yours &mdash; the final price is confirmed there.</p>
+    <p class="ab-section__lead">Pick the listing that fits you, send us a message in chat, and we hand over a ready-to-play account with the login details changed to yours.</p>
   </section>
 
   <section class="ab-section">

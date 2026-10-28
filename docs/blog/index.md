@@ -1,11 +1,15 @@
 ---
 title: "Game News | Patch Notes, Guides & Launch Dates"
-description: "Game news and guides: Delta Force ammo charts, AFK Journey and ZZZ patch notes, K/DA skins, VALORANT bundles and EA FC 26."
-updated: 2026-10-22
+description: "Game news and guides: PUBG × IVE Love Dive, Delta Force ammo charts, AFK Journey and ZZZ patch notes, K/DA skins and VALORANT bundles."
+updated: 2026-10-29
 hide:
   - title
   - toc
 ---
+
+<!-- 2026-10-29：第十条（PUBG × IVE Love Dive）加在最前，ItemList 一并从 9 改成
+     10、后续序号顺延；导语与 description 里点了这一条。封面由官方主视觉缩到
+     1000x563，见 _tmp_ocr/pubg_ive_cover.py。 -->
 
 <!-- 2026-10-22 第二版（用户：「blog每篇文章点击Read article后应该是跳到独立的
      详情页」）：行内折叠撤掉。九条正文各自搬到 docs/blog/<slug>/index.md
@@ -82,6 +86,18 @@ hide:
 
   <section class="ab-section">
     <div class="ab-newsfeed">
+
+      <article class="ab-card ab-card--row" id="pubg-ive-love-dive">
+        <div class="ab-card__media">
+          <img src="/assets/news/pubg-ive-love-dive/cover.jpg" alt="The six members of IVE in school uniforms among ruined statues, under pink chrome LOVE DIVE lettering" loading="lazy" decoding="async">
+        </div>
+        <div class="ab-card__copy">
+          <h3 class="ab-card__title">PUBG × IVE Love Dive: Three Rondo Zones, Six Idols, a November Launch</h3>
+          <p class="ab-card__meta"><time datetime="2026-10-28">28 Oct 2026</time> &middot; PUBG</p>
+          <p class="ab-card__excerpt">KRAFTON&rsquo;s crossover with IVE puts three LOVE DIVE areas on Rondo and all six members in game as outfits, with themed clothing, armour, weapon skins and emotes. PC on 4 November, consoles on 12 November.</p>
+          <p class="ab-card__more"><a href="/blog/pubg-ive-love-dive/">Read article</a></p>
+        </div>
+      </article>
 
       <article class="ab-card ab-card--row" id="delta-force-ammo">
         <div class="ab-card__media">
@@ -205,7 +221,7 @@ hide:
       "@id": "https://acebase.cc/blog/",
       "url": "https://acebase.cc/blog/",
       "name": "Game News | Patch Notes, Guides & Launch Dates",
-      "description": "Game news and guides: Delta Force ammo charts, AFK Journey and ZZZ patch notes, K/DA skins, VALORANT bundles and EA FC 26.",
+      "description": "Game news and guides: PUBG × IVE Love Dive, Delta Force ammo charts, AFK Journey and ZZZ patch notes, K/DA skins and VALORANT bundles.",
       "inLanguage": "en",
       "isPartOf": {"@type": "WebSite", "name": "AceBase", "url": "https://acebase.cc/"}
     },
@@ -218,17 +234,18 @@ hide:
     },
     {
       "@type": "ItemList",
-      "numberOfItems": 9,
+      "numberOfItems": 10,
       "itemListElement": [
-        {"@type": "ListItem", "position": 1, "item": {"@type": "NewsArticle", "name": "Delta Force Ammo Chart: Which Rounds Beat Which Armour", "url": "https://acebase.cc/blog/delta-force-ammo/", "datePublished": "2026-10-21"}},
-        {"@type": "ListItem", "position": 2, "item": {"@type": "NewsArticle", "name": "AFK Journey 1.8.2: Marene, Baden and Thane Join the Veil of Memories Season", "url": "https://acebase.cc/blog/afk-journey-182/", "datePublished": "2026-10-21"}},
-        {"@type": "ListItem", "position": 3, "item": {"@type": "NewsArticle", "name": "ZZZ 3.3 City Fund: Growth vs Premium, and What the Certificate Buys", "url": "https://acebase.cc/blog/zzz-city-fund/", "datePublished": "2026-10-21"}},
-        {"@type": "ListItem", "position": 4, "item": {"@type": "NewsArticle", "name": "ZZZ Spooky Funhouse Tales: Scare the Guests, Keep the Outfit", "url": "https://acebase.cc/blog/zzz-spooky-funhouse/", "datePublished": "2026-10-21"}},
-        {"@type": "ListItem", "position": 5, "item": {"@type": "NewsArticle", "name": "K/DA FIRESTARTER: Four Skins, Patch 26.22 and What They Cost in RP", "url": "https://acebase.cc/blog/lol-kda-firestarter/", "datePublished": "2026-10-21"}},
-        {"@type": "ListItem", "position": 6, "item": {"@type": "NewsArticle", "name": "Free Bigo Live Diamonds: What Actually Works", "url": "https://acebase.cc/blog/bigo-free-diamonds/", "datePublished": "2026-05-18"}},
-        {"@type": "ListItem", "position": 7, "item": {"@type": "NewsArticle", "name": "Kuronami 2.0 and Holo Meridian: The Two Bundles That Shipped in April", "url": "https://acebase.cc/blog/valorant-bundles/", "datePublished": "2026-04-15"}},
-        {"@type": "ListItem", "position": 8, "item": {"@type": "NewsArticle", "name": "Arknights: Endfield Currency: What It Buys and How a Top-Up Delivers", "url": "https://acebase.cc/blog/arknights-endfield-currency/", "datePublished": "2026-02-05"}},
-        {"@type": "ListItem", "position": 9, "item": {"@type": "NewsArticle", "name": "EA FC 26: The September Launch, Two Editions and the FUT Rework", "url": "https://acebase.cc/blog/ea-fc-26-launch/", "datePublished": "2025-06-23"}}
+        {"@type": "ListItem", "position": 1, "item": {"@type": "NewsArticle", "name": "PUBG × IVE Love Dive: Three Rondo Zones, Six Idols, a November Launch", "url": "https://acebase.cc/blog/pubg-ive-love-dive/", "datePublished": "2026-10-28"}},
+        {"@type": "ListItem", "position": 2, "item": {"@type": "NewsArticle", "name": "Delta Force Ammo Chart: Which Rounds Beat Which Armour", "url": "https://acebase.cc/blog/delta-force-ammo/", "datePublished": "2026-10-21"}},
+        {"@type": "ListItem", "position": 3, "item": {"@type": "NewsArticle", "name": "AFK Journey 1.8.2: Marene, Baden and Thane Join the Veil of Memories Season", "url": "https://acebase.cc/blog/afk-journey-182/", "datePublished": "2026-10-21"}},
+        {"@type": "ListItem", "position": 4, "item": {"@type": "NewsArticle", "name": "ZZZ 3.3 City Fund: Growth vs Premium, and What the Certificate Buys", "url": "https://acebase.cc/blog/zzz-city-fund/", "datePublished": "2026-10-21"}},
+        {"@type": "ListItem", "position": 5, "item": {"@type": "NewsArticle", "name": "ZZZ Spooky Funhouse Tales: Scare the Guests, Keep the Outfit", "url": "https://acebase.cc/blog/zzz-spooky-funhouse/", "datePublished": "2026-10-21"}},
+        {"@type": "ListItem", "position": 6, "item": {"@type": "NewsArticle", "name": "K/DA FIRESTARTER: Four Skins, Patch 26.22 and What They Cost in RP", "url": "https://acebase.cc/blog/lol-kda-firestarter/", "datePublished": "2026-10-21"}},
+        {"@type": "ListItem", "position": 7, "item": {"@type": "NewsArticle", "name": "Free Bigo Live Diamonds: What Actually Works", "url": "https://acebase.cc/blog/bigo-free-diamonds/", "datePublished": "2026-05-18"}},
+        {"@type": "ListItem", "position": 8, "item": {"@type": "NewsArticle", "name": "Kuronami 2.0 and Holo Meridian: The Two Bundles That Shipped in April", "url": "https://acebase.cc/blog/valorant-bundles/", "datePublished": "2026-04-15"}},
+        {"@type": "ListItem", "position": 9, "item": {"@type": "NewsArticle", "name": "Arknights: Endfield Currency: What It Buys and How a Top-Up Delivers", "url": "https://acebase.cc/blog/arknights-endfield-currency/", "datePublished": "2026-02-05"}},
+        {"@type": "ListItem", "position": 10, "item": {"@type": "NewsArticle", "name": "EA FC 26: The September Launch, Two Editions and the FUT Rework", "url": "https://acebase.cc/blog/ea-fc-26-launch/", "datePublished": "2025-06-23"}}
       ]
     }
   ]

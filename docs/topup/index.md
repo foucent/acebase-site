@@ -105,7 +105,7 @@ hide:
     <header class="ab-section__head">
       <h1 class="ab-section__title">Live Streaming &amp; Entertainment Top-Ups</h1>
     </header>
-    <p class="ab-section__lead">Pick your platform and tier, send us your account or ID in chat, and we top it up &mdash; the final price is confirmed there.</p>
+    <p class="ab-section__lead">Pick your platform and tier, send us your account or ID in chat, and we top it up.</p>
   </section>
 
   <section class="ab-section">

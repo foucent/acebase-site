@@ -129,7 +129,7 @@ hide:
     <header class="ab-section__head">
       <h1 class="ab-section__title">Game Top-Up Prices</h1>
     </header>
-    <p class="ab-section__lead">Pick your game and tier, send us your account and region in chat, and we deliver the top-up &mdash; the final price is confirmed there.</p>
+    <p class="ab-section__lead">Pick your game and tier, send us your account and region in chat, and we deliver the top-up.</p>
   </section>
 
   <section class="ab-section">
