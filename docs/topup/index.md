@@ -1,6 +1,6 @@
 ---
-title: "Live Streaming & Entertainment Top-Ups | 30 Platforms, Tier by Tier"
-description: "Tier-by-tier USD prices for 30 live-streaming and entertainment top-ups: Douyin, Bigo Live, Poppo, Tango, Telegram Stars, CapCut. Pick a tier, quote in chat."
+title: "Live Streaming & Entertainment Top-Ups | 6 Platforms, Tier by Tier"
+description: "Tier-by-tier USD prices for 6 live-streaming and entertainment top-ups: Douyin, Bigo Live, Yalla Ludo, Telegram Stars. Pick a tier, quote in chat."
 updated: 2026-10-22
 hide:
   - title
@@ -97,7 +97,41 @@ hide:
      · 30 张品牌图全部用 `prep_brands.py --safe` 重出（2400×500、墨迹 ≤ 画布
        一半），否则 5:2 的 wordmark 只画中间 52% 会把字尾切掉（poppo 原来 63.6%）。
      · 首页仍是 19 张（TOP-UP 6 / GAME 6 / GIFT CARDS 6 / BLOG 1）—— 类目数没变，
-       gen_home.py 照旧每类取最新六张；title / description 是站点级的，没动。 -->
+       gen_home.py 照旧每类取最新六张；title / description 是站点级的，没动。
+
+     2026-10-31：用户「将 Kuaishou Live / Bi Xin / CapCut / QQ Coin 这几款商品删除」。
+     四个键从 merge_ent_prices.py 的 ENTERTAINMENT 里删掉（30 → 26）—— 那张表仍是
+     卡片区的单一事实源；build_topup_page.py 的 TOTAL 同步改 26，重跑后卡片区与
+     Product 列表（编号 1..26）一并重写，JSON-LD numberOfItems 变成 26。
+     frontmatter 的 title / description 与 WebPage description 里的 30 改成 26，
+     示例平台列表去掉 CapCut。prices.json 里这四个键的档位数据留着不删（照
+     2026-10-13 / 10-21 删卡时的旧例），/assets/games/brand/ 下四张品牌图同样
+     保留，只是没有卡片再引用。首页跟着重生成：TOP-UP 那六张从 Douyin /
+     Kuaishou / Bigo / MICO / Poppo / Tango 变成 Douyin / Bigo / MICO / Poppo /
+     Tango / Mango。
+
+     2026-10-31（同日第二次）：用户贴来两段按梯队分的平台清单（第三梯队：Chamet /
+     IMO / MICO / Poppo Live / Tango Live / Ludo Club；第四梯队：ZEPETO /
+     HeeSay / Soulchill / SUGO / YY Live / Mango Live / MIGO Live / SuperLive /
+     Dazz Live / Xena Live / Party Star / DiDO / Nimo TV），要求「这些商品从
+     /topup/ 页中删除」。十九个键从 merge_ent_prices.py 的 ENTERTAINMENT 里删掉
+     （26 → 7）；清单里的 Bi Xin 当天早些时候已经删过。留下 Douyin Live /
+     Bigo Live / Yalla Ludo / StarMaker / Likee / Telegram / QQ VIP 七款，顺序
+     沿用原表。卡片区与 Product 列表（编号 1..7）由 build_topup_page.py 重写，
+     TOTAL 26 → 7，JSON-LD numberOfItems 变成 7；frontmatter 的 title /
+     description 与 WebPage description 里的 26 改成 7，示例平台去掉已删的
+     Poppo / Tango。prices.json 里这十九个键的档位数据、以及 /assets/games/
+     brand/ 下十九张品牌图照旧保留（同上两次删卡的旧例）。
+     首页跟着重生成：TOP-UP 那六张变成 Douyin / Bigo / Yalla Ludo / StarMaker /
+     Likee / Telegram。
+
+     2026-10-31（同日第三次）：用户「QQ VIP$0.76 也删除」。qqvip-top-up 从
+     ENTERTAINMENT 里删掉（7 → 6），build_topup_page.py 的 TOTAL 同步改 6，
+     卡片区与 Product 列表（编号 1..6）重写，JSON-LD numberOfItems 变成 6；
+     frontmatter 的 title / description 与 WebPage description 里的 7 改成 6。
+     prices.json 里 qqvip-top-up 的档位数据与 /assets/games/brand/ 下那张品牌图
+     照旧保留。首页不受影响：TOP-UP 只取前六张，QQ VIP 本来就排在第七，没上过
+     首页。 -->
 
 <div class="ab-mag" markdown="0">
 
@@ -130,29 +164,7 @@ hide:
           <span class="ab-ec-loading">Loading the latest prices&hellip;</span>
         </p>
 
-        <p class="ab-ec-foot">Account or ID &middot; Data updated <span class="js-prices-updated">2026-10-22</span> &middot; Final quote confirmed in chat</p>
-      </div>
-</article>
-    <article class="ab-card ab-card--brand ab-card--fold ab-card--ec ab-card--plate ab-card--picker ab-card--wordmark" id="kwi-top-up">
-      <div class="ab-card__media">
-        <span class="ab-card__badge">Live</span>
-        <img src="/assets/games/brand/kwi-top-up.png" alt="Kuaishou Live top-up price reference" loading="lazy" decoding="async">
-      </div>
-      <div class="ab-card__copy">
-        <h3 class="ab-card__title">Kuaishou Live<span class="ab-card__price"></span></h3>
-        <div class="ab-fold">
-          <div class="ab-fold__summary">
-            <span class="ab-fold__act">
-              <a class="ab-fold__buy ab-crisp-open" href="#" data-crisp-msg="Hi, I'd like to buy Kuaishou Live.">Buy</a>
-            </span>
-          </div>
-        </div>
-
-        <p class="ab-ec-list" data-game="kwi-top-up">
-          <span class="ab-ec-loading">Loading the latest prices&hellip;</span>
-        </p>
-
-        <p class="ab-ec-foot">Account or ID &middot; Data updated <span class="js-prices-updated">2026-10-22</span> &middot; Final quote confirmed in chat</p>
+        <p class="ab-ec-foot">Account or ID &middot; Data updated <span class="js-prices-updated">2026-10-25</span> &middot; Final quote confirmed in chat</p>
       </div>
 </article>
     <article class="ab-card ab-card--brand ab-card--fold ab-card--ec ab-card--plate ab-card--picker ab-card--wordmark" id="bigo-live">
@@ -174,227 +186,7 @@ hide:
           <span class="ab-ec-loading">Loading the latest prices&hellip;</span>
         </p>
 
-        <p class="ab-ec-foot">Account or ID &middot; Data updated <span class="js-prices-updated">2026-10-22</span> &middot; Final quote confirmed in chat</p>
-      </div>
-</article>
-    <article class="ab-card ab-card--brand ab-card--fold ab-card--ec ab-card--plate ab-card--picker ab-card--wordmark" id="mico-top-up">
-      <div class="ab-card__media">
-        <span class="ab-card__badge">Live</span>
-        <img src="/assets/games/brand/mico-top-up.png" alt="MICO top-up price reference" loading="lazy" decoding="async">
-      </div>
-      <div class="ab-card__copy">
-        <h3 class="ab-card__title">MICO<span class="ab-card__price"></span></h3>
-        <div class="ab-fold">
-          <div class="ab-fold__summary">
-            <span class="ab-fold__act">
-              <a class="ab-fold__buy ab-crisp-open" href="#" data-crisp-msg="Hi, I'd like to buy MICO.">Buy</a>
-            </span>
-          </div>
-        </div>
-
-        <p class="ab-ec-list" data-game="mico-top-up">
-          <span class="ab-ec-loading">Loading the latest prices&hellip;</span>
-        </p>
-
-        <p class="ab-ec-foot">Account or ID &middot; Data updated <span class="js-prices-updated">2026-10-22</span> &middot; Final quote confirmed in chat</p>
-      </div>
-</article>
-    <article class="ab-card ab-card--brand ab-card--fold ab-card--ec ab-card--plate ab-card--picker ab-card--wordmark" id="poppo-live">
-      <div class="ab-card__media">
-        <span class="ab-card__badge">Live</span>
-        <img src="/assets/games/brand/poppo-live.png" alt="Poppo Live top-up price reference" loading="lazy" decoding="async">
-      </div>
-      <div class="ab-card__copy">
-        <h3 class="ab-card__title">Poppo Live<span class="ab-card__price"></span></h3>
-        <div class="ab-fold">
-          <div class="ab-fold__summary">
-            <span class="ab-fold__act">
-              <a class="ab-fold__buy ab-crisp-open" href="#" data-crisp-msg="Hi, I'd like to buy Poppo Live.">Buy</a>
-            </span>
-          </div>
-        </div>
-
-        <p class="ab-ec-list" data-game="poppo-live">
-          <span class="ab-ec-loading">Loading the latest prices&hellip;</span>
-        </p>
-
-        <p class="ab-ec-foot">Account or ID &middot; Data updated <span class="js-prices-updated">2026-10-22</span> &middot; Final quote confirmed in chat</p>
-      </div>
-</article>
-    <article class="ab-card ab-card--brand ab-card--fold ab-card--ec ab-card--plate ab-card--picker ab-card--wordmark" id="tango-live-recharge">
-      <div class="ab-card__media">
-        <span class="ab-card__badge">Live</span>
-        <img src="/assets/games/brand/tango-live-recharge.png" alt="Tango Live top-up price reference" loading="lazy" decoding="async">
-      </div>
-      <div class="ab-card__copy">
-        <h3 class="ab-card__title">Tango Live<span class="ab-card__price"></span></h3>
-        <div class="ab-fold">
-          <div class="ab-fold__summary">
-            <span class="ab-fold__act">
-              <a class="ab-fold__buy ab-crisp-open" href="#" data-crisp-msg="Hi, I'd like to buy Tango Live.">Buy</a>
-            </span>
-          </div>
-        </div>
-
-        <p class="ab-ec-list" data-game="tango-live-recharge">
-          <span class="ab-ec-loading">Loading the latest prices&hellip;</span>
-        </p>
-
-        <p class="ab-ec-foot">Account or ID &middot; Data updated <span class="js-prices-updated">2026-10-22</span> &middot; Final quote confirmed in chat</p>
-      </div>
-</article>
-    <article class="ab-card ab-card--brand ab-card--fold ab-card--ec ab-card--plate ab-card--picker ab-card--wordmark" id="mango">
-      <div class="ab-card__media">
-        <span class="ab-card__badge">Live</span>
-        <img src="/assets/games/brand/mango.png" alt="Mango Live top-up price reference" loading="lazy" decoding="async">
-      </div>
-      <div class="ab-card__copy">
-        <h3 class="ab-card__title">Mango Live<span class="ab-card__price"></span></h3>
-        <div class="ab-fold">
-          <div class="ab-fold__summary">
-            <span class="ab-fold__act">
-              <a class="ab-fold__buy ab-crisp-open" href="#" data-crisp-msg="Hi, I'd like to buy Mango Live.">Buy</a>
-            </span>
-          </div>
-        </div>
-
-        <p class="ab-ec-list" data-game="mango">
-          <span class="ab-ec-loading">Loading the latest prices&hellip;</span>
-        </p>
-
-        <p class="ab-ec-foot">Account or ID &middot; Data updated <span class="js-prices-updated">2026-10-22</span> &middot; Final quote confirmed in chat</p>
-      </div>
-</article>
-    <article class="ab-card ab-card--brand ab-card--fold ab-card--ec ab-card--plate ab-card--picker ab-card--wordmark" id="migo-top-up">
-      <div class="ab-card__media">
-        <span class="ab-card__badge">Live</span>
-        <img src="/assets/games/brand/migo-top-up.png" alt="MIGO Live top-up price reference" loading="lazy" decoding="async">
-      </div>
-      <div class="ab-card__copy">
-        <h3 class="ab-card__title">MIGO Live<span class="ab-card__price"></span></h3>
-        <div class="ab-fold">
-          <div class="ab-fold__summary">
-            <span class="ab-fold__act">
-              <a class="ab-fold__buy ab-crisp-open" href="#" data-crisp-msg="Hi, I'd like to buy MIGO Live.">Buy</a>
-            </span>
-          </div>
-        </div>
-
-        <p class="ab-ec-list" data-game="migo-top-up">
-          <span class="ab-ec-loading">Loading the latest prices&hellip;</span>
-        </p>
-
-        <p class="ab-ec-foot">Account or ID &middot; Data updated <span class="js-prices-updated">2026-10-22</span> &middot; Final quote confirmed in chat</p>
-      </div>
-</article>
-    <article class="ab-card ab-card--brand ab-card--fold ab-card--ec ab-card--plate ab-card--picker ab-card--wordmark" id="superlive">
-      <div class="ab-card__media">
-        <span class="ab-card__badge">Live</span>
-        <img src="/assets/games/brand/superlive.png" alt="SuperLive top-up price reference" loading="lazy" decoding="async">
-      </div>
-      <div class="ab-card__copy">
-        <h3 class="ab-card__title">SuperLive<span class="ab-card__price"></span></h3>
-        <div class="ab-fold">
-          <div class="ab-fold__summary">
-            <span class="ab-fold__act">
-              <a class="ab-fold__buy ab-crisp-open" href="#" data-crisp-msg="Hi, I'd like to buy SuperLive.">Buy</a>
-            </span>
-          </div>
-        </div>
-
-        <p class="ab-ec-list" data-game="superlive">
-          <span class="ab-ec-loading">Loading the latest prices&hellip;</span>
-        </p>
-
-        <p class="ab-ec-foot">Account or ID &middot; Data updated <span class="js-prices-updated">2026-10-22</span> &middot; Final quote confirmed in chat</p>
-      </div>
-</article>
-    <article class="ab-card ab-card--brand ab-card--fold ab-card--ec ab-card--plate ab-card--picker ab-card--wordmark" id="dazz-top-up">
-      <div class="ab-card__media">
-        <span class="ab-card__badge">Live</span>
-        <img src="/assets/games/brand/dazz-top-up.png" alt="Dazz Live top-up price reference" loading="lazy" decoding="async">
-      </div>
-      <div class="ab-card__copy">
-        <h3 class="ab-card__title">Dazz Live<span class="ab-card__price"></span></h3>
-        <div class="ab-fold">
-          <div class="ab-fold__summary">
-            <span class="ab-fold__act">
-              <a class="ab-fold__buy ab-crisp-open" href="#" data-crisp-msg="Hi, I'd like to buy Dazz Live.">Buy</a>
-            </span>
-          </div>
-        </div>
-
-        <p class="ab-ec-list" data-game="dazz-top-up">
-          <span class="ab-ec-loading">Loading the latest prices&hellip;</span>
-        </p>
-
-        <p class="ab-ec-foot">Account or ID &middot; Data updated <span class="js-prices-updated">2026-10-22</span> &middot; Final quote confirmed in chat</p>
-      </div>
-</article>
-    <article class="ab-card ab-card--brand ab-card--fold ab-card--ec ab-card--plate ab-card--picker ab-card--wordmark" id="xena-live-group-voice">
-      <div class="ab-card__media">
-        <span class="ab-card__badge">Live</span>
-        <img src="/assets/games/brand/xena-live-group-voice.png" alt="Xena Live top-up price reference" loading="lazy" decoding="async">
-      </div>
-      <div class="ab-card__copy">
-        <h3 class="ab-card__title">Xena Live<span class="ab-card__price"></span></h3>
-        <div class="ab-fold">
-          <div class="ab-fold__summary">
-            <span class="ab-fold__act">
-              <a class="ab-fold__buy ab-crisp-open" href="#" data-crisp-msg="Hi, I'd like to buy Xena Live.">Buy</a>
-            </span>
-          </div>
-        </div>
-
-        <p class="ab-ec-list" data-game="xena-live-group-voice">
-          <span class="ab-ec-loading">Loading the latest prices&hellip;</span>
-        </p>
-
-        <p class="ab-ec-foot">Account or ID &middot; Data updated <span class="js-prices-updated">2026-10-22</span> &middot; Final quote confirmed in chat</p>
-      </div>
-</article>
-    <article class="ab-card ab-card--brand ab-card--fold ab-card--ec ab-card--plate ab-card--picker ab-card--wordmark" id="bixin-top-up">
-      <div class="ab-card__media">
-        <span class="ab-card__badge">Live</span>
-        <img src="/assets/games/brand/bixin-top-up.png" alt="Bi Xin top-up price reference" loading="lazy" decoding="async">
-      </div>
-      <div class="ab-card__copy">
-        <h3 class="ab-card__title">Bi Xin<span class="ab-card__price"></span></h3>
-        <div class="ab-fold">
-          <div class="ab-fold__summary">
-            <span class="ab-fold__act">
-              <a class="ab-fold__buy ab-crisp-open" href="#" data-crisp-msg="Hi, I'd like to buy Bi Xin.">Buy</a>
-            </span>
-          </div>
-        </div>
-
-        <p class="ab-ec-list" data-game="bixin-top-up">
-          <span class="ab-ec-loading">Loading the latest prices&hellip;</span>
-        </p>
-
-        <p class="ab-ec-foot">Account or ID &middot; Data updated <span class="js-prices-updated">2026-10-22</span> &middot; Final quote confirmed in chat</p>
-      </div>
-</article>
-    <article class="ab-card ab-card--brand ab-card--fold ab-card--ec ab-card--plate ab-card--picker ab-card--wordmark" id="ludo-club">
-      <div class="ab-card__media">
-        <span class="ab-card__badge">Live</span>
-        <img src="/assets/games/brand/ludo-club.png" alt="Ludo Club top-up price reference" loading="lazy" decoding="async">
-      </div>
-      <div class="ab-card__copy">
-        <h3 class="ab-card__title">Ludo Club<span class="ab-card__price"></span></h3>
-        <div class="ab-fold">
-          <div class="ab-fold__summary">
-            <span class="ab-fold__act">
-              <a class="ab-fold__buy ab-crisp-open" href="#" data-crisp-msg="Hi, I'd like to buy Ludo Club.">Buy</a>
-            </span>
-          </div>
-        </div>
-
-        <p class="ab-ec-list" data-game="ludo-club">
-          <span class="ab-ec-loading">Loading the latest prices&hellip;</span>
-        </p>
-
-        <p class="ab-ec-foot">Account or ID &middot; Data updated <span class="js-prices-updated">2026-10-22</span> &middot; Final quote confirmed in chat</p>
+        <p class="ab-ec-foot">Account or ID &middot; Data updated <span class="js-prices-updated">2026-10-25</span> &middot; Final quote confirmed in chat</p>
       </div>
 </article>
     <article class="ab-card ab-card--brand ab-card--fold ab-card--ec ab-card--plate ab-card--picker ab-card--wordmark" id="yalla-ludo">
@@ -416,7 +208,7 @@ hide:
           <span class="ab-ec-loading">Loading the latest prices&hellip;</span>
         </p>
 
-        <p class="ab-ec-foot">Account or ID &middot; Data updated <span class="js-prices-updated">2026-10-22</span> &middot; Final quote confirmed in chat</p>
+        <p class="ab-ec-foot">Account or ID &middot; Data updated <span class="js-prices-updated">2026-10-25</span> &middot; Final quote confirmed in chat</p>
       </div>
 </article>
     <article class="ab-card ab-card--brand ab-card--fold ab-card--ec ab-card--plate ab-card--picker ab-card--wordmark" id="starmaker">
@@ -438,73 +230,7 @@ hide:
           <span class="ab-ec-loading">Loading the latest prices&hellip;</span>
         </p>
 
-        <p class="ab-ec-foot">Account or ID &middot; Data updated <span class="js-prices-updated">2026-10-22</span> &middot; Final quote confirmed in chat</p>
-      </div>
-</article>
-    <article class="ab-card ab-card--brand ab-card--fold ab-card--ec ab-card--plate ab-card--picker ab-card--wordmark" id="sugo-top-up">
-      <div class="ab-card__media">
-        <span class="ab-card__badge">Live</span>
-        <img src="/assets/games/brand/sugo-top-up.png" alt="SUGO top-up price reference" loading="lazy" decoding="async">
-      </div>
-      <div class="ab-card__copy">
-        <h3 class="ab-card__title">SUGO<span class="ab-card__price"></span></h3>
-        <div class="ab-fold">
-          <div class="ab-fold__summary">
-            <span class="ab-fold__act">
-              <a class="ab-fold__buy ab-crisp-open" href="#" data-crisp-msg="Hi, I'd like to buy SUGO.">Buy</a>
-            </span>
-          </div>
-        </div>
-
-        <p class="ab-ec-list" data-game="sugo-top-up">
-          <span class="ab-ec-loading">Loading the latest prices&hellip;</span>
-        </p>
-
-        <p class="ab-ec-foot">Account or ID &middot; Data updated <span class="js-prices-updated">2026-10-22</span> &middot; Final quote confirmed in chat</p>
-      </div>
-</article>
-    <article class="ab-card ab-card--brand ab-card--fold ab-card--ec ab-card--plate ab-card--picker ab-card--wordmark" id="imo-top-up">
-      <div class="ab-card__media">
-        <span class="ab-card__badge">Live</span>
-        <img src="/assets/games/brand/imo-top-up.png" alt="IMO top-up price reference" loading="lazy" decoding="async">
-      </div>
-      <div class="ab-card__copy">
-        <h3 class="ab-card__title">IMO<span class="ab-card__price"></span></h3>
-        <div class="ab-fold">
-          <div class="ab-fold__summary">
-            <span class="ab-fold__act">
-              <a class="ab-fold__buy ab-crisp-open" href="#" data-crisp-msg="Hi, I'd like to buy IMO.">Buy</a>
-            </span>
-          </div>
-        </div>
-
-        <p class="ab-ec-list" data-game="imo-top-up">
-          <span class="ab-ec-loading">Loading the latest prices&hellip;</span>
-        </p>
-
-        <p class="ab-ec-foot">Account or ID &middot; Data updated <span class="js-prices-updated">2026-10-22</span> &middot; Final quote confirmed in chat</p>
-      </div>
-</article>
-    <article class="ab-card ab-card--brand ab-card--fold ab-card--ec ab-card--plate ab-card--picker ab-card--wordmark" id="chamet">
-      <div class="ab-card__media">
-        <span class="ab-card__badge">Live</span>
-        <img src="/assets/games/brand/chamet.png" alt="Chamet top-up price reference" loading="lazy" decoding="async">
-      </div>
-      <div class="ab-card__copy">
-        <h3 class="ab-card__title">Chamet<span class="ab-card__price"></span></h3>
-        <div class="ab-fold">
-          <div class="ab-fold__summary">
-            <span class="ab-fold__act">
-              <a class="ab-fold__buy ab-crisp-open" href="#" data-crisp-msg="Hi, I'd like to buy Chamet.">Buy</a>
-            </span>
-          </div>
-        </div>
-
-        <p class="ab-ec-list" data-game="chamet">
-          <span class="ab-ec-loading">Loading the latest prices&hellip;</span>
-        </p>
-
-        <p class="ab-ec-foot">Account or ID &middot; Data updated <span class="js-prices-updated">2026-10-22</span> &middot; Final quote confirmed in chat</p>
+        <p class="ab-ec-foot">Account or ID &middot; Data updated <span class="js-prices-updated">2026-10-25</span> &middot; Final quote confirmed in chat</p>
       </div>
 </article>
     <article class="ab-card ab-card--brand ab-card--fold ab-card--ec ab-card--plate ab-card--picker ab-card--wordmark" id="likee">
@@ -526,7 +252,7 @@ hide:
           <span class="ab-ec-loading">Loading the latest prices&hellip;</span>
         </p>
 
-        <p class="ab-ec-foot">Account or ID &middot; Data updated <span class="js-prices-updated">2026-10-22</span> &middot; Final quote confirmed in chat</p>
+        <p class="ab-ec-foot">Account or ID &middot; Data updated <span class="js-prices-updated">2026-10-25</span> &middot; Final quote confirmed in chat</p>
       </div>
 </article>
     <article class="ab-card ab-card--brand ab-card--fold ab-card--ec ab-card--plate ab-card--picker ab-card--wordmark" id="telegram">
@@ -548,227 +274,7 @@ hide:
           <span class="ab-ec-loading">Loading the latest prices&hellip;</span>
         </p>
 
-        <p class="ab-ec-foot">Account or ID &middot; Data updated <span class="js-prices-updated">2026-10-22</span> &middot; Final quote confirmed in chat</p>
-      </div>
-</article>
-    <article class="ab-card ab-card--brand ab-card--fold ab-card--ec ab-card--plate ab-card--picker ab-card--wordmark" id="party-star">
-      <div class="ab-card__media">
-        <span class="ab-card__badge">Live</span>
-        <img src="/assets/games/brand/party-star.png" alt="Party Star top-up price reference" loading="lazy" decoding="async">
-      </div>
-      <div class="ab-card__copy">
-        <h3 class="ab-card__title">Party Star<span class="ab-card__price"></span></h3>
-        <div class="ab-fold">
-          <div class="ab-fold__summary">
-            <span class="ab-fold__act">
-              <a class="ab-fold__buy ab-crisp-open" href="#" data-crisp-msg="Hi, I'd like to buy Party Star.">Buy</a>
-            </span>
-          </div>
-        </div>
-
-        <p class="ab-ec-list" data-game="party-star">
-          <span class="ab-ec-loading">Loading the latest prices&hellip;</span>
-        </p>
-
-        <p class="ab-ec-foot">Account or ID &middot; Data updated <span class="js-prices-updated">2026-10-22</span> &middot; Final quote confirmed in chat</p>
-      </div>
-</article>
-    <article class="ab-card ab-card--brand ab-card--fold ab-card--ec ab-card--plate ab-card--picker ab-card--wordmark" id="capcut">
-      <div class="ab-card__media">
-        <span class="ab-card__badge">Live</span>
-        <img src="/assets/games/brand/capcut.png" alt="CapCut top-up price reference" loading="lazy" decoding="async">
-      </div>
-      <div class="ab-card__copy">
-        <h3 class="ab-card__title">CapCut<span class="ab-card__price"></span></h3>
-        <div class="ab-fold">
-          <div class="ab-fold__summary">
-            <span class="ab-fold__act">
-              <a class="ab-fold__buy ab-crisp-open" href="#" data-crisp-msg="Hi, I'd like to buy CapCut.">Buy</a>
-            </span>
-          </div>
-        </div>
-
-        <p class="ab-ec-list" data-game="capcut">
-          <span class="ab-ec-loading">Loading the latest prices&hellip;</span>
-        </p>
-
-        <p class="ab-ec-foot">Account or ID &middot; Data updated <span class="js-prices-updated">2026-10-22</span> &middot; Final quote confirmed in chat</p>
-      </div>
-</article>
-    <article class="ab-card ab-card--brand ab-card--fold ab-card--ec ab-card--plate ab-card--picker ab-card--wordmark" id="zepeto">
-      <div class="ab-card__media">
-        <span class="ab-card__badge">Live</span>
-        <img src="/assets/games/brand/zepeto.png" alt="ZEPETO top-up price reference" loading="lazy" decoding="async">
-      </div>
-      <div class="ab-card__copy">
-        <h3 class="ab-card__title">ZEPETO<span class="ab-card__price"></span></h3>
-        <div class="ab-fold">
-          <div class="ab-fold__summary">
-            <span class="ab-fold__act">
-              <a class="ab-fold__buy ab-crisp-open" href="#" data-crisp-msg="Hi, I'd like to buy ZEPETO.">Buy</a>
-            </span>
-          </div>
-        </div>
-
-        <p class="ab-ec-list" data-game="zepeto">
-          <span class="ab-ec-loading">Loading the latest prices&hellip;</span>
-        </p>
-
-        <p class="ab-ec-foot">Account or ID &middot; Data updated <span class="js-prices-updated">2026-10-22</span> &middot; Final quote confirmed in chat</p>
-      </div>
-</article>
-    <article class="ab-card ab-card--brand ab-card--fold ab-card--ec ab-card--plate ab-card--picker ab-card--wordmark" id="heesay-top-up">
-      <div class="ab-card__media">
-        <span class="ab-card__badge">Live</span>
-        <img src="/assets/games/brand/heesay-top-up.png" alt="HeeSay top-up price reference" loading="lazy" decoding="async">
-      </div>
-      <div class="ab-card__copy">
-        <h3 class="ab-card__title">HeeSay<span class="ab-card__price"></span></h3>
-        <div class="ab-fold">
-          <div class="ab-fold__summary">
-            <span class="ab-fold__act">
-              <a class="ab-fold__buy ab-crisp-open" href="#" data-crisp-msg="Hi, I'd like to buy HeeSay.">Buy</a>
-            </span>
-          </div>
-        </div>
-
-        <p class="ab-ec-list" data-game="heesay-top-up">
-          <span class="ab-ec-loading">Loading the latest prices&hellip;</span>
-        </p>
-
-        <p class="ab-ec-foot">Account or ID &middot; Data updated <span class="js-prices-updated">2026-10-22</span> &middot; Final quote confirmed in chat</p>
-      </div>
-</article>
-    <article class="ab-card ab-card--brand ab-card--fold ab-card--ec ab-card--plate ab-card--picker ab-card--wordmark" id="soulchill">
-      <div class="ab-card__media">
-        <span class="ab-card__badge">Live</span>
-        <img src="/assets/games/brand/soulchill.png" alt="Soulchill top-up price reference" loading="lazy" decoding="async">
-      </div>
-      <div class="ab-card__copy">
-        <h3 class="ab-card__title">Soulchill<span class="ab-card__price"></span></h3>
-        <div class="ab-fold">
-          <div class="ab-fold__summary">
-            <span class="ab-fold__act">
-              <a class="ab-fold__buy ab-crisp-open" href="#" data-crisp-msg="Hi, I'd like to buy Soulchill.">Buy</a>
-            </span>
-          </div>
-        </div>
-
-        <p class="ab-ec-list" data-game="soulchill">
-          <span class="ab-ec-loading">Loading the latest prices&hellip;</span>
-        </p>
-
-        <p class="ab-ec-foot">Account or ID &middot; Data updated <span class="js-prices-updated">2026-10-22</span> &middot; Final quote confirmed in chat</p>
-      </div>
-</article>
-    <article class="ab-card ab-card--brand ab-card--fold ab-card--ec ab-card--plate ab-card--picker ab-card--wordmark" id="dido">
-      <div class="ab-card__media">
-        <span class="ab-card__badge">Live</span>
-        <img src="/assets/games/brand/dido.png" alt="DiDO top-up price reference" loading="lazy" decoding="async">
-      </div>
-      <div class="ab-card__copy">
-        <h3 class="ab-card__title">DiDO<span class="ab-card__price"></span></h3>
-        <div class="ab-fold">
-          <div class="ab-fold__summary">
-            <span class="ab-fold__act">
-              <a class="ab-fold__buy ab-crisp-open" href="#" data-crisp-msg="Hi, I'd like to buy DiDO.">Buy</a>
-            </span>
-          </div>
-        </div>
-
-        <p class="ab-ec-list" data-game="dido">
-          <span class="ab-ec-loading">Loading the latest prices&hellip;</span>
-        </p>
-
-        <p class="ab-ec-foot">Account or ID &middot; Data updated <span class="js-prices-updated">2026-10-22</span> &middot; Final quote confirmed in chat</p>
-      </div>
-</article>
-    <article class="ab-card ab-card--brand ab-card--fold ab-card--ec ab-card--plate ab-card--picker ab-card--wordmark" id="qqcoin-top-up">
-      <div class="ab-card__media">
-        <span class="ab-card__badge">Live</span>
-        <img src="/assets/games/brand/qqcoin-top-up.png" alt="QQ Coin top-up price reference" loading="lazy" decoding="async">
-      </div>
-      <div class="ab-card__copy">
-        <h3 class="ab-card__title">QQ Coin<span class="ab-card__price"></span></h3>
-        <div class="ab-fold">
-          <div class="ab-fold__summary">
-            <span class="ab-fold__act">
-              <a class="ab-fold__buy ab-crisp-open" href="#" data-crisp-msg="Hi, I'd like to buy QQ Coin.">Buy</a>
-            </span>
-          </div>
-        </div>
-
-        <p class="ab-ec-list" data-game="qqcoin-top-up">
-          <span class="ab-ec-loading">Loading the latest prices&hellip;</span>
-        </p>
-
-        <p class="ab-ec-foot">Account or ID &middot; Data updated <span class="js-prices-updated">2026-10-22</span> &middot; Final quote confirmed in chat</p>
-      </div>
-</article>
-    <article class="ab-card ab-card--brand ab-card--fold ab-card--ec ab-card--plate ab-card--picker ab-card--wordmark" id="qqvip-top-up">
-      <div class="ab-card__media">
-        <span class="ab-card__badge">Live</span>
-        <img src="/assets/games/brand/qqvip-top-up.png" alt="QQ VIP top-up price reference" loading="lazy" decoding="async">
-      </div>
-      <div class="ab-card__copy">
-        <h3 class="ab-card__title">QQ VIP<span class="ab-card__price"></span></h3>
-        <div class="ab-fold">
-          <div class="ab-fold__summary">
-            <span class="ab-fold__act">
-              <a class="ab-fold__buy ab-crisp-open" href="#" data-crisp-msg="Hi, I'd like to buy QQ VIP.">Buy</a>
-            </span>
-          </div>
-        </div>
-
-        <p class="ab-ec-list" data-game="qqvip-top-up">
-          <span class="ab-ec-loading">Loading the latest prices&hellip;</span>
-        </p>
-
-        <p class="ab-ec-foot">Account or ID &middot; Data updated <span class="js-prices-updated">2026-10-22</span> &middot; Final quote confirmed in chat</p>
-      </div>
-</article>
-    <article class="ab-card ab-card--brand ab-card--fold ab-card--ec ab-card--plate ab-card--picker ab-card--wordmark" id="yy-live">
-      <div class="ab-card__media">
-        <span class="ab-card__badge">Live</span>
-        <img src="/assets/games/brand/yy-live.png" alt="YY Live top-up price reference" loading="lazy" decoding="async">
-      </div>
-      <div class="ab-card__copy">
-        <h3 class="ab-card__title">YY Live<span class="ab-card__price"></span></h3>
-        <div class="ab-fold">
-          <div class="ab-fold__summary">
-            <span class="ab-fold__act">
-              <a class="ab-fold__buy ab-crisp-open" href="#" data-crisp-msg="Hi, I'd like to buy YY Live.">Buy</a>
-            </span>
-          </div>
-        </div>
-
-        <p class="ab-ec-list" data-game="yy-live">
-          <span class="ab-ec-loading">Loading the latest prices&hellip;</span>
-        </p>
-
-        <p class="ab-ec-foot">Account or ID &middot; Data updated <span class="js-prices-updated">2026-10-22</span> &middot; Final quote confirmed in chat</p>
-      </div>
-</article>
-    <article class="ab-card ab-card--brand ab-card--fold ab-card--ec ab-card--plate ab-card--picker ab-card--wordmark" id="nimo-tv">
-      <div class="ab-card__media">
-        <span class="ab-card__badge">Live</span>
-        <img src="/assets/games/brand/nimo-tv.png" alt="Nimo TV top-up price reference" loading="lazy" decoding="async">
-      </div>
-      <div class="ab-card__copy">
-        <h3 class="ab-card__title">Nimo TV<span class="ab-card__price"></span></h3>
-        <div class="ab-fold">
-          <div class="ab-fold__summary">
-            <span class="ab-fold__act">
-              <a class="ab-fold__buy ab-crisp-open" href="#" data-crisp-msg="Hi, I'd like to buy Nimo TV.">Buy</a>
-            </span>
-          </div>
-        </div>
-
-        <p class="ab-ec-list" data-game="nimo-tv">
-          <span class="ab-ec-loading">Loading the latest prices&hellip;</span>
-        </p>
-
-        <p class="ab-ec-foot">Account or ID &middot; Data updated <span class="js-prices-updated">2026-10-22</span> &middot; Final quote confirmed in chat</p>
+        <p class="ab-ec-foot">Account or ID &middot; Data updated <span class="js-prices-updated">2026-10-25</span> &middot; Final quote confirmed in chat</p>
       </div>
 </article>
     <!-- TOPUP:CARDS:END -->
@@ -789,44 +295,20 @@ hide:
     {
       "@type": "WebPage",
       "name": "Live Streaming & Entertainment Top-Ups",
-      "description": "Tier-by-tier USD prices for 30 live-streaming and entertainment top-ups: Douyin, Bigo Live, Poppo, Tango, Telegram Stars, CapCut. Pick a tier, quote in chat.",
+      "description": "Tier-by-tier USD prices for 6 live-streaming and entertainment top-ups: Douyin, Bigo Live, Yalla Ludo, Telegram Stars. Pick a tier, quote in chat.",
       "url": "https://acebase.cc/topup/"
     },
     {
       "@type": "ItemList",
       "name": "Live Streaming & Entertainment Top-Ups",
-      "numberOfItems": "30",
+      "numberOfItems": "6",
       "itemListElement": [
         { "@type": "Product", "position": 1, "name": "Douyin Live", "url": "https://acebase.cc/topup/#douyin-top-up" },
-        { "@type": "Product", "position": 2, "name": "Kuaishou Live", "url": "https://acebase.cc/topup/#kwi-top-up" },
-        { "@type": "Product", "position": 3, "name": "Bigo Live", "url": "https://acebase.cc/topup/#bigo-live" },
-        { "@type": "Product", "position": 4, "name": "MICO", "url": "https://acebase.cc/topup/#mico-top-up" },
-        { "@type": "Product", "position": 5, "name": "Poppo Live", "url": "https://acebase.cc/topup/#poppo-live" },
-        { "@type": "Product", "position": 6, "name": "Tango Live", "url": "https://acebase.cc/topup/#tango-live-recharge" },
-        { "@type": "Product", "position": 7, "name": "Mango Live", "url": "https://acebase.cc/topup/#mango" },
-        { "@type": "Product", "position": 8, "name": "MIGO Live", "url": "https://acebase.cc/topup/#migo-top-up" },
-        { "@type": "Product", "position": 9, "name": "SuperLive", "url": "https://acebase.cc/topup/#superlive" },
-        { "@type": "Product", "position": 10, "name": "Dazz Live", "url": "https://acebase.cc/topup/#dazz-top-up" },
-        { "@type": "Product", "position": 11, "name": "Xena Live", "url": "https://acebase.cc/topup/#xena-live-group-voice" },
-        { "@type": "Product", "position": 12, "name": "Bi Xin", "url": "https://acebase.cc/topup/#bixin-top-up" },
-        { "@type": "Product", "position": 13, "name": "Ludo Club", "url": "https://acebase.cc/topup/#ludo-club" },
-        { "@type": "Product", "position": 14, "name": "Yalla Ludo", "url": "https://acebase.cc/topup/#yalla-ludo" },
-        { "@type": "Product", "position": 15, "name": "StarMaker", "url": "https://acebase.cc/topup/#starmaker" },
-        { "@type": "Product", "position": 16, "name": "SUGO", "url": "https://acebase.cc/topup/#sugo-top-up" },
-        { "@type": "Product", "position": 17, "name": "IMO", "url": "https://acebase.cc/topup/#imo-top-up" },
-        { "@type": "Product", "position": 18, "name": "Chamet", "url": "https://acebase.cc/topup/#chamet" },
-        { "@type": "Product", "position": 19, "name": "Likee", "url": "https://acebase.cc/topup/#likee" },
-        { "@type": "Product", "position": 20, "name": "Telegram", "url": "https://acebase.cc/topup/#telegram" },
-        { "@type": "Product", "position": 21, "name": "Party Star", "url": "https://acebase.cc/topup/#party-star" },
-        { "@type": "Product", "position": 22, "name": "CapCut", "url": "https://acebase.cc/topup/#capcut" },
-        { "@type": "Product", "position": 23, "name": "ZEPETO", "url": "https://acebase.cc/topup/#zepeto" },
-        { "@type": "Product", "position": 24, "name": "HeeSay", "url": "https://acebase.cc/topup/#heesay-top-up" },
-        { "@type": "Product", "position": 25, "name": "Soulchill", "url": "https://acebase.cc/topup/#soulchill" },
-        { "@type": "Product", "position": 26, "name": "DiDO", "url": "https://acebase.cc/topup/#dido" },
-        { "@type": "Product", "position": 27, "name": "QQ Coin", "url": "https://acebase.cc/topup/#qqcoin-top-up" },
-        { "@type": "Product", "position": 28, "name": "QQ VIP", "url": "https://acebase.cc/topup/#qqvip-top-up" },
-        { "@type": "Product", "position": 29, "name": "YY Live", "url": "https://acebase.cc/topup/#yy-live" },
-        { "@type": "Product", "position": 30, "name": "Nimo TV", "url": "https://acebase.cc/topup/#nimo-tv" }
+        { "@type": "Product", "position": 2, "name": "Bigo Live", "url": "https://acebase.cc/topup/#bigo-live" },
+        { "@type": "Product", "position": 3, "name": "Yalla Ludo", "url": "https://acebase.cc/topup/#yalla-ludo" },
+        { "@type": "Product", "position": 4, "name": "StarMaker", "url": "https://acebase.cc/topup/#starmaker" },
+        { "@type": "Product", "position": 5, "name": "Likee", "url": "https://acebase.cc/topup/#likee" },
+        { "@type": "Product", "position": 6, "name": "Telegram", "url": "https://acebase.cc/topup/#telegram" }
       ]
     },
     {

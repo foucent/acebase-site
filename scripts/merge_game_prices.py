@@ -13,8 +13,9 @@ Two clean-ups the source needs:
     cheapest of the same name.
   * "60Coins" and "60  Diamonds" are tidied so the list reads evenly.
 
-The five existing /games/ keys (pubg-mobile, pubg-gcoin, hok, arena-breakout,
-where-winds-meet) keep their multi-source ranges and are never touched.
+The four existing /games/ keys (pubg-mobile, pubg-gcoin, hok, arena-breakout)
+keep their multi-source ranges and are never touched. where-winds-meet was the
+fifth until 2026-10-31, when its card came off the page (see KEEP).
 """
 import json
 import os
@@ -34,8 +35,6 @@ DOCS = os.path.join(HERE, "..", "docs")
 GAMES = [
     {"key": "freefire", "slug": "freefire", "name": "Free Fire",
      "badge": "Mobile", "channels": "Mobile"},
-    {"key": "blood-strike", "slug": "blood-strike", "name": "Blood Strike",
-     "badge": "Mobile", "channels": "Mobile"},
     {"key": "pokemon-go", "slug": "pokemon-go", "name": "Pokémon GO",
      "badge": "Mobile", "channels": "Mobile"},
     {"key": "mobile-legends", "slug": "mobile-legends",
@@ -50,32 +49,20 @@ GAMES = [
      "badge": "Mobile", "channels": "Mobile &middot; PC"},
     {"key": "nikke", "slug": "nikke", "name": "GODDESS OF VICTORY: NIKKE",
      "badge": "Mobile", "channels": "Mobile &middot; PC"},
-    {"key": "identity-v", "slug": "identity-v", "name": "Identity V",
-     "badge": "Mobile", "channels": "Mobile"},
     {"key": "clash-of-clans", "slug": "clash-of-clans", "name": "Clash of Clans",
      "badge": "Mobile", "channels": "Mobile"},
     {"key": "clash-royale", "slug": "clash-royale", "name": "Clash Royale",
      "badge": "Mobile", "channels": "Mobile"},
     {"key": "brawl-stars", "slug": "brawl-stars", "name": "Brawl Stars",
      "badge": "Mobile", "channels": "Mobile"},
-    {"key": "love-and-deepspace", "slug": "love-and-deepspace",
-     "name": "Love and Deepspace", "badge": "Mobile", "channels": "Mobile"},
-    {"key": "eggy-party", "slug": "eggy-party", "name": "Eggy Party",
-     "badge": "Mobile", "channels": "Mobile"},
-    {"key": "harry-potter", "slug": "harry-potter",
-     "name": "Harry Potter: Magic Awakened", "badge": "Mobile", "channels": "Mobile"},
     {"key": "arena-of-valor", "slug": "arena-of-valor", "name": "Arena of Valor",
      "badge": "Mobile", "channels": "Mobile"},
-    {"key": "once-human", "slug": "once-human", "name": "Once Human",
-     "badge": "PC", "channels": "PC &middot; Mobile"},
     {"key": "delta-force", "slug": "delta-force", "name": "Delta Force",
      "badge": "PC", "channels": "PC &middot; Mobile"},
     {"key": "valorant", "slug": "valorant", "name": "VALORANT",
      "badge": "PC", "channels": "PC"},
     {"key": "marvel-rivals", "slug": "marvel-rivals", "name": "Marvel Rivals",
      "badge": "PC", "channels": "PC"},
-    {"key": "arknights-endfield", "slug": "arknights-endfield",
-     "name": "Arknights: Endfield", "badge": "PC", "channels": "PC &middot; Mobile"},
     {"key": "diablo-iv", "slug": "diablo-iv", "name": "Diablo IV",
      "badge": "PC", "channels": "PC"},
     {"key": "lol-wild-rift", "slug": "lol-wild-rift",
@@ -84,8 +71,11 @@ GAMES = [
      "name": "Whiteout Survival", "badge": "Mobile", "channels": "Mobile &middot; PC"},
 ]
 
-# The five keys already on the page: ranges from several sources, left alone.
-KEEP = ["pubg-mobile", "pubg-gcoin", "hok", "arena-breakout", "where-winds-meet"]
+# The four keys already on the page: ranges from several sources, left alone.
+# where-winds-meet was the fifth until 2026-10-31, when the user asked for it
+# plus seven other 第四梯队 games to come off /games/; its prices.json rows and
+# brand image stay, only the card is gone.
+KEEP = ["pubg-mobile", "pubg-gcoin", "hok", "arena-breakout"]
 
 # Quote-only cards, 2026-10-29. These are services, not tier lists: the source
 # quotes per order, so there is nothing for main() to merge and no prices.json

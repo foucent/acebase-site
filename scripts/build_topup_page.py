@@ -1,10 +1,12 @@
 # -*- coding: utf-8 -*-
 """Regenerate the card grid and Product list on docs/topup/index.md.
 
-Thirty cards is too much markup to keep in hand-written Markdown, so the page
-carries a marked region for the grid and this script rewrites both the grid and
-the JSON-LD Product list from merge_ent_prices.ENTERTAINMENT (the single list of
-keys and names):
+The card grid is generated rather than hand-kept, so the page carries a marked
+region for the grid and this script rewrites both the grid and the JSON-LD
+Product list from merge_ent_prices.ENTERTAINMENT (the single list of keys and
+names). The table was 26 cards until 2026-10-31, when the page was pruned to 7
+and then to 6 — the marked region is worth keeping either way, because the
+Product list and the grid must be rewritten together:
 
     <!-- TOPUP:CARDS:START --> … <!-- TOPUP:CARDS:END -->
 
@@ -38,7 +40,7 @@ CARDS_END = "<!-- TOPUP:CARDS:END -->"
 ITEMS_START = "<!-- TOPUP:ITEMS:START -->"
 ITEMS_END = "<!-- TOPUP:ITEMS:END -->"
 
-TOTAL = 30
+TOTAL = 6
 CARD_CLASS = ("ab-card ab-card--brand ab-card--fold ab-card--ec ab-card--plate "
               "ab-card--picker ab-card--wordmark")
 

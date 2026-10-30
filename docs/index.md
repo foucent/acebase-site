@@ -104,28 +104,6 @@ hide:
         <p class="ab-ec-foot">Mobile &middot; Data updated <span class="js-prices-updated">2026-09-21</span> &middot; Final quote confirmed in chat</p>
       </div>
     </article>
-    <article class="ab-card ab-card--brand ab-card--fold ab-card--ec ab-card--plate ab-card--picker ab-card--wordmark" id="where-winds-meet">
-      <div class="ab-card__media">
-        <span class="ab-card__badge">Mobile</span>
-        <img src="/assets/games/brand/where-winds-meet.png" alt="Where Winds Meet top-up price reference" loading="lazy" decoding="async">
-      </div>
-      <div class="ab-card__copy">
-        <h3 class="ab-card__title">Where Winds Meet<span class="ab-card__price"></span></h3>
-        <div class="ab-fold">
-          <div class="ab-fold__summary">
-            <span class="ab-fold__act">
-              <a class="ab-fold__buy ab-checkout-trigger" href="#" data-checkout="where-winds-meet" data-checkout-name="Where Winds Meet" data-crisp-msg="Hi, I'd like to buy a Where Winds Meet top-up.">Buy</a>
-            </span>
-          </div>
-        </div>
-
-        <p class="ab-ec-list" data-game="where-winds-meet">
-          <span class="ab-ec-loading">Loading the latest prices&hellip;</span>
-        </p>
-
-        <p class="ab-ec-foot">Mobile &middot; PC &middot; Data updated <span class="js-prices-updated">2026-09-21</span> &middot; Final quote confirmed in chat</p>
-      </div>
-    </article>
         <article class="ab-card ab-card--brand ab-card--fold ab-card--ec ab-card--plate ab-card--picker ab-card--wordmark" id="freefire">
           <div class="ab-card__media">
             <span class="ab-card__badge">Mobile</span>
@@ -142,6 +120,28 @@ hide:
             </div>
 
             <p class="ab-ec-list" data-game="freefire">
+              <span class="ab-ec-loading">Loading the latest prices&hellip;</span>
+            </p>
+
+            <p class="ab-ec-foot">Mobile &middot; Data updated <span class="js-prices-updated">2026-10-21</span> &middot; Final quote confirmed in chat</p>
+          </div>
+    </article>
+        <article class="ab-card ab-card--brand ab-card--fold ab-card--ec ab-card--plate ab-card--picker ab-card--wordmark" id="pokemon-go">
+          <div class="ab-card__media">
+            <span class="ab-card__badge">Mobile</span>
+            <img src="/assets/games/brand/pokemon-go.png" alt="Pokémon GO top-up price reference" loading="lazy" decoding="async">
+          </div>
+          <div class="ab-card__copy">
+            <h3 class="ab-card__title">Pokémon GO<span class="ab-card__price"></span></h3>
+            <div class="ab-fold">
+              <div class="ab-fold__summary">
+                <span class="ab-fold__act">
+                  <a class="ab-fold__buy ab-checkout-trigger" href="#" data-checkout="pokemon-go" data-checkout-name="Pokémon GO" data-crisp-msg="Hi, I'd like to buy Pokémon GO.">Buy</a>
+                </span>
+              </div>
+            </div>
+
+            <p class="ab-ec-list" data-game="pokemon-go">
               <span class="ab-ec-loading">Loading the latest prices&hellip;</span>
             </p>
 
@@ -310,29 +310,7 @@ hide:
               <span class="ab-ec-loading">Loading the latest prices&hellip;</span>
             </p>
 
-            <p class="ab-ec-foot">Account or ID &middot; Data updated <span class="js-prices-updated">2026-10-22</span> &middot; Final quote confirmed in chat</p>
-          </div>
-    </article>
-        <article class="ab-card ab-card--brand ab-card--fold ab-card--ec ab-card--plate ab-card--picker ab-card--wordmark" id="kwi-top-up">
-          <div class="ab-card__media">
-            <span class="ab-card__badge">Live</span>
-            <img src="/assets/games/brand/kwi-top-up.png" alt="Kuaishou Live top-up price reference" loading="lazy" decoding="async">
-          </div>
-          <div class="ab-card__copy">
-            <h3 class="ab-card__title">Kuaishou Live<span class="ab-card__price"></span></h3>
-            <div class="ab-fold">
-              <div class="ab-fold__summary">
-                <span class="ab-fold__act">
-                  <a class="ab-fold__buy ab-crisp-open" href="#" data-crisp-msg="Hi, I'd like to buy Kuaishou Live.">Buy</a>
-                </span>
-              </div>
-            </div>
-
-            <p class="ab-ec-list" data-game="kwi-top-up">
-              <span class="ab-ec-loading">Loading the latest prices&hellip;</span>
-            </p>
-
-            <p class="ab-ec-foot">Account or ID &middot; Data updated <span class="js-prices-updated">2026-10-22</span> &middot; Final quote confirmed in chat</p>
+            <p class="ab-ec-foot">Account or ID &middot; Data updated <span class="js-prices-updated">2026-10-25</span> &middot; Final quote confirmed in chat</p>
           </div>
     </article>
         <article class="ab-card ab-card--brand ab-card--fold ab-card--ec ab-card--plate ab-card--picker ab-card--wordmark" id="bigo-live">
@@ -354,73 +332,95 @@ hide:
               <span class="ab-ec-loading">Loading the latest prices&hellip;</span>
             </p>
 
-            <p class="ab-ec-foot">Account or ID &middot; Data updated <span class="js-prices-updated">2026-10-22</span> &middot; Final quote confirmed in chat</p>
+            <p class="ab-ec-foot">Account or ID &middot; Data updated <span class="js-prices-updated">2026-10-25</span> &middot; Final quote confirmed in chat</p>
           </div>
     </article>
-        <article class="ab-card ab-card--brand ab-card--fold ab-card--ec ab-card--plate ab-card--picker ab-card--wordmark" id="mico-top-up">
+        <article class="ab-card ab-card--brand ab-card--fold ab-card--ec ab-card--plate ab-card--picker ab-card--wordmark" id="yalla-ludo">
           <div class="ab-card__media">
             <span class="ab-card__badge">Live</span>
-            <img src="/assets/games/brand/mico-top-up.png" alt="MICO top-up price reference" loading="lazy" decoding="async">
+            <img src="/assets/games/brand/yalla-ludo.png" alt="Yalla Ludo top-up price reference" loading="lazy" decoding="async">
           </div>
           <div class="ab-card__copy">
-            <h3 class="ab-card__title">MICO<span class="ab-card__price"></span></h3>
+            <h3 class="ab-card__title">Yalla Ludo<span class="ab-card__price"></span></h3>
             <div class="ab-fold">
               <div class="ab-fold__summary">
                 <span class="ab-fold__act">
-                  <a class="ab-fold__buy ab-crisp-open" href="#" data-crisp-msg="Hi, I'd like to buy MICO.">Buy</a>
+                  <a class="ab-fold__buy ab-crisp-open" href="#" data-crisp-msg="Hi, I'd like to buy Yalla Ludo.">Buy</a>
                 </span>
               </div>
             </div>
 
-            <p class="ab-ec-list" data-game="mico-top-up">
+            <p class="ab-ec-list" data-game="yalla-ludo">
               <span class="ab-ec-loading">Loading the latest prices&hellip;</span>
             </p>
 
-            <p class="ab-ec-foot">Account or ID &middot; Data updated <span class="js-prices-updated">2026-10-22</span> &middot; Final quote confirmed in chat</p>
+            <p class="ab-ec-foot">Account or ID &middot; Data updated <span class="js-prices-updated">2026-10-25</span> &middot; Final quote confirmed in chat</p>
           </div>
     </article>
-        <article class="ab-card ab-card--brand ab-card--fold ab-card--ec ab-card--plate ab-card--picker ab-card--wordmark" id="poppo-live">
+        <article class="ab-card ab-card--brand ab-card--fold ab-card--ec ab-card--plate ab-card--picker ab-card--wordmark" id="starmaker">
           <div class="ab-card__media">
             <span class="ab-card__badge">Live</span>
-            <img src="/assets/games/brand/poppo-live.png" alt="Poppo Live top-up price reference" loading="lazy" decoding="async">
+            <img src="/assets/games/brand/starmaker.png" alt="StarMaker top-up price reference" loading="lazy" decoding="async">
           </div>
           <div class="ab-card__copy">
-            <h3 class="ab-card__title">Poppo Live<span class="ab-card__price"></span></h3>
+            <h3 class="ab-card__title">StarMaker<span class="ab-card__price"></span></h3>
             <div class="ab-fold">
               <div class="ab-fold__summary">
                 <span class="ab-fold__act">
-                  <a class="ab-fold__buy ab-crisp-open" href="#" data-crisp-msg="Hi, I'd like to buy Poppo Live.">Buy</a>
+                  <a class="ab-fold__buy ab-crisp-open" href="#" data-crisp-msg="Hi, I'd like to buy StarMaker.">Buy</a>
                 </span>
               </div>
             </div>
 
-            <p class="ab-ec-list" data-game="poppo-live">
+            <p class="ab-ec-list" data-game="starmaker">
               <span class="ab-ec-loading">Loading the latest prices&hellip;</span>
             </p>
 
-            <p class="ab-ec-foot">Account or ID &middot; Data updated <span class="js-prices-updated">2026-10-22</span> &middot; Final quote confirmed in chat</p>
+            <p class="ab-ec-foot">Account or ID &middot; Data updated <span class="js-prices-updated">2026-10-25</span> &middot; Final quote confirmed in chat</p>
           </div>
     </article>
-        <article class="ab-card ab-card--brand ab-card--fold ab-card--ec ab-card--plate ab-card--picker ab-card--wordmark" id="tango-live-recharge">
+        <article class="ab-card ab-card--brand ab-card--fold ab-card--ec ab-card--plate ab-card--picker ab-card--wordmark" id="likee">
           <div class="ab-card__media">
             <span class="ab-card__badge">Live</span>
-            <img src="/assets/games/brand/tango-live-recharge.png" alt="Tango Live top-up price reference" loading="lazy" decoding="async">
+            <img src="/assets/games/brand/likee.png" alt="Likee top-up price reference" loading="lazy" decoding="async">
           </div>
           <div class="ab-card__copy">
-            <h3 class="ab-card__title">Tango Live<span class="ab-card__price"></span></h3>
+            <h3 class="ab-card__title">Likee<span class="ab-card__price"></span></h3>
             <div class="ab-fold">
               <div class="ab-fold__summary">
                 <span class="ab-fold__act">
-                  <a class="ab-fold__buy ab-crisp-open" href="#" data-crisp-msg="Hi, I'd like to buy Tango Live.">Buy</a>
+                  <a class="ab-fold__buy ab-crisp-open" href="#" data-crisp-msg="Hi, I'd like to buy Likee.">Buy</a>
                 </span>
               </div>
             </div>
 
-            <p class="ab-ec-list" data-game="tango-live-recharge">
+            <p class="ab-ec-list" data-game="likee">
               <span class="ab-ec-loading">Loading the latest prices&hellip;</span>
             </p>
 
-            <p class="ab-ec-foot">Account or ID &middot; Data updated <span class="js-prices-updated">2026-10-22</span> &middot; Final quote confirmed in chat</p>
+            <p class="ab-ec-foot">Account or ID &middot; Data updated <span class="js-prices-updated">2026-10-25</span> &middot; Final quote confirmed in chat</p>
+          </div>
+    </article>
+        <article class="ab-card ab-card--brand ab-card--fold ab-card--ec ab-card--plate ab-card--picker ab-card--wordmark" id="telegram">
+          <div class="ab-card__media">
+            <span class="ab-card__badge">Live</span>
+            <img src="/assets/games/brand/telegram.png" alt="Telegram top-up price reference" loading="lazy" decoding="async">
+          </div>
+          <div class="ab-card__copy">
+            <h3 class="ab-card__title">Telegram<span class="ab-card__price"></span></h3>
+            <div class="ab-fold">
+              <div class="ab-fold__summary">
+                <span class="ab-fold__act">
+                  <a class="ab-fold__buy ab-crisp-open" href="#" data-crisp-msg="Hi, I'd like to buy Telegram.">Buy</a>
+                </span>
+              </div>
+            </div>
+
+            <p class="ab-ec-list" data-game="telegram">
+              <span class="ab-ec-loading">Loading the latest prices&hellip;</span>
+            </p>
+
+            <p class="ab-ec-foot">Account or ID &middot; Data updated <span class="js-prices-updated">2026-10-25</span> &middot; Final quote confirmed in chat</p>
           </div>
     </article>
     <article class="ab-card ab-card--brand ab-card--fold ab-card--ec ab-card--plate ab-card--picker ab-card--wordmark" id="amazon-gift-card-us">

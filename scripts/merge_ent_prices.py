@@ -7,12 +7,12 @@ figure the source displays, and a single-source product has one price per tier,
 so lowest == highest == average — the row shape the picker cards read.
 
 What this file owns:
-  * ENTERTAINMENT — the 30 platforms /topup/ shows, in card order. This table is
+  * ENTERTAINMENT — the 6 platforms /topup/ shows, in card order. This table is
     the single source of truth: build_topup_page.py imports it, and the capture
     script only fetches the slugs listed here.
   * the tier clean-ups the source needs (a few Chinese units survive lang=en,
     the same tier repeats once per region, spacing is uneven).
-  * the price rows for exactly those 30 keys. Every other key in prices.json —
+  * the price rows for exactly those 6 keys. Every other key in prices.json —
     the six gift cards /gift-cards/ still shows, the /games/ keys — is left
     untouched.
 
@@ -31,37 +31,21 @@ PRICES = os.path.join(HERE, "..", "docs", "assets", "games", "prices.json")
 # key = prices.json key = card id = data-game = brand image file name.
 # slug = capture file in _ent_tiers/. Order here is the order on the page:
 # the fourteen platforms that were already there, then the sixteen added.
+# 2026-10-31 removed Kuaishou Live, Bi Xin, CapCut and QQ Coin (30 -> 26).
+# 2026-10-31 (same day, second prune) removed the whole 第三 / 第四 tier lists
+# the user marked on the page — MICO, Poppo Live, Tango Live, Mango Live, MIGO
+# Live, SuperLive, Dazz Live, Xena Live, Ludo Club, SUGO, IMO, Chamet, Party
+# Star, ZEPETO, HeeSay, Soulchill, DiDO, YY Live and Nimo TV (26 -> 7), then
+# QQ VIP as well (7 -> 6, user: 「QQ VIP$0.76 也删除」). The surviving six keep
+# the table's order; the removed keys' rows stay in prices.json and their brand
+# images stay in /assets/games/brand/.
 ENTERTAINMENT = [
     {"key": "douyin-top-up", "slug": "douyin-top-up", "name": "Douyin Live"},
-    {"key": "kwi-top-up", "slug": "kwi-top-up", "name": "Kuaishou Live"},
     {"key": "bigo-live", "slug": "bigo-live", "name": "Bigo Live"},
-    {"key": "mico-top-up", "slug": "mico-top-up", "name": "MICO"},
-    {"key": "poppo-live", "slug": "poppo-live", "name": "Poppo Live"},
-    {"key": "tango-live-recharge", "slug": "tango-live-recharge", "name": "Tango Live"},
-    {"key": "mango", "slug": "mango", "name": "Mango Live"},
-    {"key": "migo-top-up", "slug": "migo-top-up", "name": "MIGO Live"},
-    {"key": "superlive", "slug": "superlive", "name": "SuperLive"},
-    {"key": "dazz-top-up", "slug": "dazz-top-up", "name": "Dazz Live"},
-    {"key": "xena-live-group-voice", "slug": "xena-live-group-voice", "name": "Xena Live"},
-    {"key": "bixin-top-up", "slug": "bixin-top-up", "name": "Bi Xin"},
-    {"key": "ludo-club", "slug": "ludo-club", "name": "Ludo Club"},
     {"key": "yalla-ludo", "slug": "yalla-ludo", "name": "Yalla Ludo"},
     {"key": "starmaker", "slug": "starmaker", "name": "StarMaker"},
-    {"key": "sugo-top-up", "slug": "sugo-top-up", "name": "SUGO"},
-    {"key": "imo-top-up", "slug": "imo-top-up", "name": "IMO"},
-    {"key": "chamet", "slug": "chamet", "name": "Chamet"},
     {"key": "likee", "slug": "likee", "name": "Likee"},
     {"key": "telegram", "slug": "telegram", "name": "Telegram"},
-    {"key": "party-star", "slug": "party-star", "name": "Party Star"},
-    {"key": "capcut", "slug": "capcut", "name": "CapCut"},
-    {"key": "zepeto", "slug": "zepeto", "name": "ZEPETO"},
-    {"key": "heesay-top-up", "slug": "heesay-top-up", "name": "HeeSay"},
-    {"key": "soulchill", "slug": "soulchill", "name": "Soulchill"},
-    {"key": "dido", "slug": "dido", "name": "DiDO"},
-    {"key": "qqcoin-top-up", "slug": "qqcoin-top-up", "name": "QQ Coin"},
-    {"key": "qqvip-top-up", "slug": "qqvip-top-up", "name": "QQ VIP"},
-    {"key": "yy-live", "slug": "yy-live", "name": "YY Live"},
-    {"key": "nimo-tv", "slug": "nimo-tv", "name": "Nimo TV"},
 ]
 
 MAX_TIERS = 24          # per currency group: longer than this stops scanning

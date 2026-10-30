@@ -1,6 +1,6 @@
 ---
-title: "Game Top-Up Prices | 31 Games, Tier by Tier"
-description: "Tier-by-tier USD reference prices for 31 game top-ups: PUBG Mobile, Honor of Kings, Genshin Impact, VALORANT, Mobile Legends and more. Pick a tier, confirm the quote in chat."
+title: "Game Top-Up Prices | 23 Games, Tier by Tier"
+description: "Tier-by-tier USD reference prices for 23 game top-ups: PUBG Mobile, Honor of Kings, Genshin Impact, VALORANT, Mobile Legends and more. Pick a tier, confirm the quote in chat."
 updated: 2026-10-29
 hide:
   - title
@@ -156,7 +156,32 @@ hide:
      itemListElement 的形状就地重写」的注释本身就是那个形状，生成器这段
      无锚搜索会先命中注释——这次跑出了问题：注释被 Product 数组替换掉两行，
      真正的 ItemList 少掉最后一项。现在从 `<script type="application/ld+json">`
-     之后开始找。 -->
+     之后开始找。
+
+     ## 2026-10-31：八款游戏下架（31 → 23）
+     用户贴来「第四梯队：小众高粘性 / 区域热门 / 新晋潜力游戏」一段，要求
+     「这些商品从 /games/ 页中删除」：Blood Strike / Love and Deepspace /
+     Once Human / Identity V / Eggy Party / Harry Potter: Magic Awakened /
+     Where Winds Meet / Arknights: Endfield。
+
+     七款在 merge_game_prices.GAMES 里，从表里删掉即可；Where Winds Meet 在
+     KEEP（最早的五张、多来源价格的那一组）—— 一并从 KEEP 摘掉，否则
+     build_games_page.py 会报「in KEEP but has no card on the page」。页面上的
+     八张卡先直接从 GAMES:CARDS 标记区删掉（生成器把 GAMES 里已有的卡原样搬
+     回去，留在页上就成了 stray），再重跑生成器；TOTAL 31 → 23，卡片区与
+     Product 列表（编号 1..23）一并重写，JSON-LD numberOfItems 变成 23。
+     frontmatter 的 title / description 与 WebPage description 里的 31 改成 23。
+     prices.json 里这八款的档位行、/assets/games/brand/ 下八张品牌图照旧保留
+     （与 2026-10-13 / 10-21 删卡的旧例一致），只是没有卡片再引用。
+
+     **/blog/arknights-endfield-currency/ 正文里指向 /games/#arknights-endfield
+     的「Endfield page」链接从此没有落点**（会落在 /games/ 顶部，不报错）——
+     文章本身没动，要不要改由用户决定。mkdocs.yml 里 games/where-winds-meet.md
+     的存根仍指 /games/（不带锚点），不受影响。
+
+     首页跟着重生成：GAME 那六张从 PUBG Mobile UC / PUBG G-COIN / Honor of
+     Kings / Arena Breakout / Where Winds Meet / Free Fire 变成前四张 + Free
+     Fire + Pokémon GO。 -->
 
 <div class="ab-mag" markdown="0">
 
@@ -258,28 +283,6 @@ hide:
         <p class="ab-ec-foot">Mobile &middot; Data updated <span class="js-prices-updated">2026-09-21</span> &middot; Final quote confirmed in chat</p>
       </div>
     </article>
-    <article class="ab-card ab-card--brand ab-card--fold ab-card--ec ab-card--plate ab-card--picker ab-card--wordmark" id="where-winds-meet">
-      <div class="ab-card__media">
-        <span class="ab-card__badge">Mobile</span>
-        <img src="/assets/games/brand/where-winds-meet.png" alt="Where Winds Meet top-up price reference" loading="lazy" decoding="async">
-      </div>
-      <div class="ab-card__copy">
-        <h3 class="ab-card__title">Where Winds Meet<span class="ab-card__price"></span></h3>
-        <div class="ab-fold">
-          <div class="ab-fold__summary">
-            <span class="ab-fold__act">
-              <a class="ab-fold__buy ab-checkout-trigger" href="#" data-checkout="where-winds-meet" data-checkout-name="Where Winds Meet" data-crisp-msg="Hi, I'd like to buy a Where Winds Meet top-up.">Buy</a>
-            </span>
-          </div>
-        </div>
-
-        <p class="ab-ec-list" data-game="where-winds-meet">
-          <span class="ab-ec-loading">Loading the latest prices&hellip;</span>
-        </p>
-
-        <p class="ab-ec-foot">Mobile &middot; PC &middot; Data updated <span class="js-prices-updated">2026-09-21</span> &middot; Final quote confirmed in chat</p>
-      </div>
-    </article>
     <article class="ab-card ab-card--brand ab-card--fold ab-card--ec ab-card--plate ab-card--picker ab-card--wordmark" id="freefire">
       <div class="ab-card__media">
         <span class="ab-card__badge">Mobile</span>
@@ -296,28 +299,6 @@ hide:
         </div>
 
         <p class="ab-ec-list" data-game="freefire">
-          <span class="ab-ec-loading">Loading the latest prices&hellip;</span>
-        </p>
-
-        <p class="ab-ec-foot">Mobile &middot; Data updated <span class="js-prices-updated">2026-10-21</span> &middot; Final quote confirmed in chat</p>
-      </div>
-</article>
-    <article class="ab-card ab-card--brand ab-card--fold ab-card--ec ab-card--plate ab-card--picker ab-card--wordmark" id="blood-strike">
-      <div class="ab-card__media">
-        <span class="ab-card__badge">Mobile</span>
-        <img src="/assets/games/brand/blood-strike.png" alt="Blood Strike top-up price reference" loading="lazy" decoding="async">
-      </div>
-      <div class="ab-card__copy">
-        <h3 class="ab-card__title">Blood Strike<span class="ab-card__price"></span></h3>
-        <div class="ab-fold">
-          <div class="ab-fold__summary">
-            <span class="ab-fold__act">
-              <a class="ab-fold__buy ab-checkout-trigger" href="#" data-checkout="blood-strike" data-checkout-name="Blood Strike" data-crisp-msg="Hi, I'd like to buy Blood Strike.">Buy</a>
-            </span>
-          </div>
-        </div>
-
-        <p class="ab-ec-list" data-game="blood-strike">
           <span class="ab-ec-loading">Loading the latest prices&hellip;</span>
         </p>
 
@@ -478,28 +459,6 @@ hide:
         <p class="ab-ec-foot">Mobile &middot; PC &middot; Data updated <span class="js-prices-updated">2026-10-21</span> &middot; Final quote confirmed in chat</p>
       </div>
 </article>
-    <article class="ab-card ab-card--brand ab-card--fold ab-card--ec ab-card--plate ab-card--picker ab-card--wordmark" id="identity-v">
-      <div class="ab-card__media">
-        <span class="ab-card__badge">Mobile</span>
-        <img src="/assets/games/brand/identity-v.png" alt="Identity V top-up price reference" loading="lazy" decoding="async">
-      </div>
-      <div class="ab-card__copy">
-        <h3 class="ab-card__title">Identity V<span class="ab-card__price"></span></h3>
-        <div class="ab-fold">
-          <div class="ab-fold__summary">
-            <span class="ab-fold__act">
-              <a class="ab-fold__buy ab-checkout-trigger" href="#" data-checkout="identity-v" data-checkout-name="Identity V" data-crisp-msg="Hi, I'd like to buy Identity V.">Buy</a>
-            </span>
-          </div>
-        </div>
-
-        <p class="ab-ec-list" data-game="identity-v">
-          <span class="ab-ec-loading">Loading the latest prices&hellip;</span>
-        </p>
-
-        <p class="ab-ec-foot">Mobile &middot; Data updated <span class="js-prices-updated">2026-10-21</span> &middot; Final quote confirmed in chat</p>
-      </div>
-</article>
     <article class="ab-card ab-card--brand ab-card--fold ab-card--ec ab-card--plate ab-card--picker ab-card--wordmark" id="clash-of-clans">
       <div class="ab-card__media">
         <span class="ab-card__badge">Mobile</span>
@@ -566,72 +525,6 @@ hide:
         <p class="ab-ec-foot">Mobile &middot; Data updated <span class="js-prices-updated">2026-10-21</span> &middot; Final quote confirmed in chat</p>
       </div>
 </article>
-    <article class="ab-card ab-card--brand ab-card--fold ab-card--ec ab-card--plate ab-card--picker ab-card--wordmark" id="love-and-deepspace">
-      <div class="ab-card__media">
-        <span class="ab-card__badge">Mobile</span>
-        <img src="/assets/games/brand/love-and-deepspace.png" alt="Love and Deepspace top-up price reference" loading="lazy" decoding="async">
-      </div>
-      <div class="ab-card__copy">
-        <h3 class="ab-card__title">Love and Deepspace<span class="ab-card__price"></span></h3>
-        <div class="ab-fold">
-          <div class="ab-fold__summary">
-            <span class="ab-fold__act">
-              <a class="ab-fold__buy ab-checkout-trigger" href="#" data-checkout="love-and-deepspace" data-checkout-name="Love and Deepspace" data-crisp-msg="Hi, I'd like to buy Love and Deepspace.">Buy</a>
-            </span>
-          </div>
-        </div>
-
-        <p class="ab-ec-list" data-game="love-and-deepspace">
-          <span class="ab-ec-loading">Loading the latest prices&hellip;</span>
-        </p>
-
-        <p class="ab-ec-foot">Mobile &middot; Data updated <span class="js-prices-updated">2026-10-21</span> &middot; Final quote confirmed in chat</p>
-      </div>
-</article>
-    <article class="ab-card ab-card--brand ab-card--fold ab-card--ec ab-card--plate ab-card--picker ab-card--wordmark" id="eggy-party">
-      <div class="ab-card__media">
-        <span class="ab-card__badge">Mobile</span>
-        <img src="/assets/games/brand/eggy-party.png" alt="Eggy Party top-up price reference" loading="lazy" decoding="async">
-      </div>
-      <div class="ab-card__copy">
-        <h3 class="ab-card__title">Eggy Party<span class="ab-card__price"></span></h3>
-        <div class="ab-fold">
-          <div class="ab-fold__summary">
-            <span class="ab-fold__act">
-              <a class="ab-fold__buy ab-checkout-trigger" href="#" data-checkout="eggy-party" data-checkout-name="Eggy Party" data-crisp-msg="Hi, I'd like to buy Eggy Party.">Buy</a>
-            </span>
-          </div>
-        </div>
-
-        <p class="ab-ec-list" data-game="eggy-party">
-          <span class="ab-ec-loading">Loading the latest prices&hellip;</span>
-        </p>
-
-        <p class="ab-ec-foot">Mobile &middot; Data updated <span class="js-prices-updated">2026-10-21</span> &middot; Final quote confirmed in chat</p>
-      </div>
-</article>
-    <article class="ab-card ab-card--brand ab-card--fold ab-card--ec ab-card--plate ab-card--picker ab-card--wordmark" id="harry-potter">
-      <div class="ab-card__media">
-        <span class="ab-card__badge">Mobile</span>
-        <img src="/assets/games/brand/harry-potter.png" alt="Harry Potter: Magic Awakened top-up price reference" loading="lazy" decoding="async">
-      </div>
-      <div class="ab-card__copy">
-        <h3 class="ab-card__title">Harry Potter: Magic Awakened<span class="ab-card__price"></span></h3>
-        <div class="ab-fold">
-          <div class="ab-fold__summary">
-            <span class="ab-fold__act">
-              <a class="ab-fold__buy ab-checkout-trigger" href="#" data-checkout="harry-potter" data-checkout-name="Harry Potter: Magic Awakened" data-crisp-msg="Hi, I'd like to buy Harry Potter: Magic Awakened.">Buy</a>
-            </span>
-          </div>
-        </div>
-
-        <p class="ab-ec-list" data-game="harry-potter">
-          <span class="ab-ec-loading">Loading the latest prices&hellip;</span>
-        </p>
-
-        <p class="ab-ec-foot">Mobile &middot; Data updated <span class="js-prices-updated">2026-10-21</span> &middot; Final quote confirmed in chat</p>
-      </div>
-</article>
     <article class="ab-card ab-card--brand ab-card--fold ab-card--ec ab-card--plate ab-card--picker ab-card--wordmark" id="arena-of-valor">
       <div class="ab-card__media">
         <span class="ab-card__badge">Mobile</span>
@@ -652,28 +545,6 @@ hide:
         </p>
 
         <p class="ab-ec-foot">Mobile &middot; Data updated <span class="js-prices-updated">2026-10-21</span> &middot; Final quote confirmed in chat</p>
-      </div>
-</article>
-    <article class="ab-card ab-card--brand ab-card--fold ab-card--ec ab-card--plate ab-card--picker ab-card--wordmark" id="once-human">
-      <div class="ab-card__media">
-        <span class="ab-card__badge">PC</span>
-        <img src="/assets/games/brand/once-human.png" alt="Once Human top-up price reference" loading="lazy" decoding="async">
-      </div>
-      <div class="ab-card__copy">
-        <h3 class="ab-card__title">Once Human<span class="ab-card__price"></span></h3>
-        <div class="ab-fold">
-          <div class="ab-fold__summary">
-            <span class="ab-fold__act">
-              <a class="ab-fold__buy ab-checkout-trigger" href="#" data-checkout="once-human" data-checkout-name="Once Human" data-crisp-msg="Hi, I'd like to buy Once Human.">Buy</a>
-            </span>
-          </div>
-        </div>
-
-        <p class="ab-ec-list" data-game="once-human">
-          <span class="ab-ec-loading">Loading the latest prices&hellip;</span>
-        </p>
-
-        <p class="ab-ec-foot">PC &middot; Mobile &middot; Data updated <span class="js-prices-updated">2026-10-21</span> &middot; Final quote confirmed in chat</p>
       </div>
 </article>
     <article class="ab-card ab-card--brand ab-card--fold ab-card--ec ab-card--plate ab-card--picker ab-card--wordmark" id="delta-force">
@@ -740,28 +611,6 @@ hide:
         </p>
 
         <p class="ab-ec-foot">PC &middot; Data updated <span class="js-prices-updated">2026-10-21</span> &middot; Final quote confirmed in chat</p>
-      </div>
-</article>
-    <article class="ab-card ab-card--brand ab-card--fold ab-card--ec ab-card--plate ab-card--picker ab-card--wordmark" id="arknights-endfield">
-      <div class="ab-card__media">
-        <span class="ab-card__badge">PC</span>
-        <img src="/assets/games/brand/arknights-endfield.png" alt="Arknights: Endfield top-up price reference" loading="lazy" decoding="async">
-      </div>
-      <div class="ab-card__copy">
-        <h3 class="ab-card__title">Arknights: Endfield<span class="ab-card__price"></span></h3>
-        <div class="ab-fold">
-          <div class="ab-fold__summary">
-            <span class="ab-fold__act">
-              <a class="ab-fold__buy ab-checkout-trigger" href="#" data-checkout="arknights-endfield" data-checkout-name="Arknights: Endfield" data-crisp-msg="Hi, I'd like to buy Arknights: Endfield.">Buy</a>
-            </span>
-          </div>
-        </div>
-
-        <p class="ab-ec-list" data-game="arknights-endfield">
-          <span class="ab-ec-loading">Loading the latest prices&hellip;</span>
-        </p>
-
-        <p class="ab-ec-foot">PC &middot; Mobile &middot; Data updated <span class="js-prices-updated">2026-10-21</span> &middot; Final quote confirmed in chat</p>
       </div>
 </article>
     <article class="ab-card ab-card--brand ab-card--fold ab-card--ec ab-card--plate ab-card--picker ab-card--wordmark" id="diablo-iv">
@@ -868,46 +717,38 @@ hide:
       "@id": "https://acebase.cc/games/",
       "url": "https://acebase.cc/games/",
       "name": "Game Top-Up Prices",
-      "description": "AceBase Game: tier-by-tier reference prices (USD) for 31 game top-ups, including PUBG Mobile UC, PUBG G-COIN, Honor of Kings, Genshin Impact and VALORANT.",
+      "description": "AceBase Game: tier-by-tier reference prices (USD) for 23 game top-ups, including PUBG Mobile UC, PUBG G-COIN, Honor of Kings, Genshin Impact and VALORANT.",
       "inLanguage": "en",
       "isPartOf": {"@type": "WebSite", "name": "AceBase", "url": "https://acebase.cc/"}
     },
     {
       "@type": "ItemList",
       "name": "Game Top-Up Prices",
-      "numberOfItems": "31",
+      "numberOfItems": "23",
       "itemListElement": [
         { "@type": "Product", "position": 1, "name": "PUBG Mobile UC", "url": "https://acebase.cc/games/#pubg-mobile" },
         { "@type": "Product", "position": 2, "name": "PUBG G-COIN", "url": "https://acebase.cc/games/#pubg-gcoin" },
         { "@type": "Product", "position": 3, "name": "Honor of Kings", "url": "https://acebase.cc/games/#hok" },
         { "@type": "Product", "position": 4, "name": "Arena Breakout", "url": "https://acebase.cc/games/#arena-breakout" },
-        { "@type": "Product", "position": 5, "name": "Where Winds Meet", "url": "https://acebase.cc/games/#where-winds-meet" },
-        { "@type": "Product", "position": 6, "name": "Free Fire", "url": "https://acebase.cc/games/#freefire" },
-        { "@type": "Product", "position": 7, "name": "Blood Strike", "url": "https://acebase.cc/games/#blood-strike" },
-        { "@type": "Product", "position": 8, "name": "Pokémon GO", "url": "https://acebase.cc/games/#pokemon-go" },
-        { "@type": "Product", "position": 9, "name": "Mobile Legends: Bang Bang", "url": "https://acebase.cc/games/#mobile-legends" },
-        { "@type": "Product", "position": 10, "name": "Honkai: Star Rail", "url": "https://acebase.cc/games/#honkai-star-rail" },
-        { "@type": "Product", "position": 11, "name": "Genshin Impact", "url": "https://acebase.cc/games/#genshin" },
-        { "@type": "Product", "position": 12, "name": "Wuthering Waves", "url": "https://acebase.cc/games/#wuthering-waves" },
-        { "@type": "Product", "position": 13, "name": "Zenless Zone Zero", "url": "https://acebase.cc/games/#zzz" },
-        { "@type": "Product", "position": 14, "name": "GODDESS OF VICTORY: NIKKE", "url": "https://acebase.cc/games/#nikke" },
-        { "@type": "Product", "position": 15, "name": "Identity V", "url": "https://acebase.cc/games/#identity-v" },
-        { "@type": "Product", "position": 16, "name": "Clash of Clans", "url": "https://acebase.cc/games/#clash-of-clans" },
-        { "@type": "Product", "position": 17, "name": "Clash Royale", "url": "https://acebase.cc/games/#clash-royale" },
-        { "@type": "Product", "position": 18, "name": "Brawl Stars", "url": "https://acebase.cc/games/#brawl-stars" },
-        { "@type": "Product", "position": 19, "name": "Love and Deepspace", "url": "https://acebase.cc/games/#love-and-deepspace" },
-        { "@type": "Product", "position": 20, "name": "Eggy Party", "url": "https://acebase.cc/games/#eggy-party" },
-        { "@type": "Product", "position": 21, "name": "Harry Potter: Magic Awakened", "url": "https://acebase.cc/games/#harry-potter" },
-        { "@type": "Product", "position": 22, "name": "Arena of Valor", "url": "https://acebase.cc/games/#arena-of-valor" },
-        { "@type": "Product", "position": 23, "name": "Once Human", "url": "https://acebase.cc/games/#once-human" },
-        { "@type": "Product", "position": 24, "name": "Delta Force", "url": "https://acebase.cc/games/#delta-force" },
-        { "@type": "Product", "position": 25, "name": "VALORANT", "url": "https://acebase.cc/games/#valorant" },
-        { "@type": "Product", "position": 26, "name": "Marvel Rivals", "url": "https://acebase.cc/games/#marvel-rivals" },
-        { "@type": "Product", "position": 27, "name": "Arknights: Endfield", "url": "https://acebase.cc/games/#arknights-endfield" },
-        { "@type": "Product", "position": 28, "name": "Diablo IV", "url": "https://acebase.cc/games/#diablo-iv" },
-        { "@type": "Product", "position": 29, "name": "League of Legends: Wild Rift", "url": "https://acebase.cc/games/#lol-wild-rift" },
-        { "@type": "Product", "position": 30, "name": "Whiteout Survival", "url": "https://acebase.cc/games/#whiteout-survival" },
-        { "@type": "Product", "position": 31, "name": "CS2 Skins & Credits", "url": "https://acebase.cc/games/#cs2" }
+        { "@type": "Product", "position": 5, "name": "Free Fire", "url": "https://acebase.cc/games/#freefire" },
+        { "@type": "Product", "position": 6, "name": "Pokémon GO", "url": "https://acebase.cc/games/#pokemon-go" },
+        { "@type": "Product", "position": 7, "name": "Mobile Legends: Bang Bang", "url": "https://acebase.cc/games/#mobile-legends" },
+        { "@type": "Product", "position": 8, "name": "Honkai: Star Rail", "url": "https://acebase.cc/games/#honkai-star-rail" },
+        { "@type": "Product", "position": 9, "name": "Genshin Impact", "url": "https://acebase.cc/games/#genshin" },
+        { "@type": "Product", "position": 10, "name": "Wuthering Waves", "url": "https://acebase.cc/games/#wuthering-waves" },
+        { "@type": "Product", "position": 11, "name": "Zenless Zone Zero", "url": "https://acebase.cc/games/#zzz" },
+        { "@type": "Product", "position": 12, "name": "GODDESS OF VICTORY: NIKKE", "url": "https://acebase.cc/games/#nikke" },
+        { "@type": "Product", "position": 13, "name": "Clash of Clans", "url": "https://acebase.cc/games/#clash-of-clans" },
+        { "@type": "Product", "position": 14, "name": "Clash Royale", "url": "https://acebase.cc/games/#clash-royale" },
+        { "@type": "Product", "position": 15, "name": "Brawl Stars", "url": "https://acebase.cc/games/#brawl-stars" },
+        { "@type": "Product", "position": 16, "name": "Arena of Valor", "url": "https://acebase.cc/games/#arena-of-valor" },
+        { "@type": "Product", "position": 17, "name": "Delta Force", "url": "https://acebase.cc/games/#delta-force" },
+        { "@type": "Product", "position": 18, "name": "VALORANT", "url": "https://acebase.cc/games/#valorant" },
+        { "@type": "Product", "position": 19, "name": "Marvel Rivals", "url": "https://acebase.cc/games/#marvel-rivals" },
+        { "@type": "Product", "position": 20, "name": "Diablo IV", "url": "https://acebase.cc/games/#diablo-iv" },
+        { "@type": "Product", "position": 21, "name": "League of Legends: Wild Rift", "url": "https://acebase.cc/games/#lol-wild-rift" },
+        { "@type": "Product", "position": 22, "name": "Whiteout Survival", "url": "https://acebase.cc/games/#whiteout-survival" },
+        { "@type": "Product", "position": 23, "name": "CS2 Skins & Credits", "url": "https://acebase.cc/games/#cs2" }
       ]
     },
     {

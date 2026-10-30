@@ -1,10 +1,11 @@
 # -*- coding: utf-8 -*-
 """Regenerate the card grid and Product list on docs/games/index.md.
 
-Thirty-one cards is too much markup to keep in hand-written Markdown, so the
-page carries a marked region for the grid and this script rewrites both the grid
-and the JSON-LD Product list from merge_game_prices.GAMES and .QUOTE (the single
-lists of keys, names and platforms):
+The card grid is generated rather than hand-kept, so the page carries a marked
+region for the grid and this script rewrites both the grid and the JSON-LD
+Product list from merge_game_prices.GAMES and .QUOTE (the single lists of keys,
+names and platforms). The grid held 31 cards until 2026-10-31, when eight came
+off and left 23:
 
     <!-- GAMES:CARDS:START --> … <!-- GAMES:CARDS:END -->
 
@@ -12,7 +13,7 @@ The Product list gets no markers: it sits inside
 <script type="application/ld+json">, where an HTML comment is not legal JSON
 and invalidated the whole graph. It is found by its own shape instead.
 
-The five cards that predate the topuplist import are copied out of the page
+The four cards that predate the topuplist import are copied out of the page
 byte for byte and put back unchanged — they carry attributes (the first card's
 fetchpriority, pubg-gcoin's data-discount) that a template would have to know
 about. Only ids missing from the page are generated, then the whole grid is
@@ -44,7 +45,7 @@ CARDS_END = "<!-- GAMES:CARDS:END -->"
 ITEMS_START = "<!-- GAMES:ITEMS:START -->"
 ITEMS_END = "<!-- GAMES:ITEMS:END -->"
 
-TOTAL = 31
+TOTAL = 23
 CARD_CLASS = ("ab-card ab-card--brand ab-card--fold ab-card--ec ab-card--plate "
               "ab-card--picker ab-card--wordmark")
 QUOTE_CLASS = ("ab-card ab-card--brand ab-card--fold ab-card--ec ab-card--plate "
@@ -144,7 +145,7 @@ def main():
                          text, re.S):
         by_id[m.group(1)] = m.group(0)
 
-    # The five originals lead (PUBG Mobile first, it owns fetchpriority), then
+    # The four originals lead (PUBG Mobile first, it owns fetchpriority), then
     # the topuplist order, then the quote-only cards. KEEP is the same list
     # merge_game_prices leaves alone.
     quotes = {q["key"]: q for q in mg.QUOTE}
