@@ -1,5 +1,5 @@
 /* ============================================================
-   AceBase homepage — uncrate.com's magazine layout.
+   AceBase magazine layout — uncrate.com's homepage styling.
 
    Measured off uncrate at a 1440 viewport and reproduced here:
 
@@ -975,6 +975,25 @@
   color: var(--ab-text-muted);
 }
 
+/* The page's opening block (2026-10-31): the title and its one-line dek sit on
+   the column's centre line like a masthead, while every section below keeps the
+   left-aligned head. Only the intro carries the modifier, so the rule never
+   reaches the catalogue heads. The dek is a 52rem box, hence the auto side
+   margins — its text would still start at the left edge otherwise. */
+.md-typeset .ab-mag .ab-section--intro > .ab-section__head {
+  justify-content: center;
+}
+
+.md-typeset .ab-mag .ab-section--intro > .ab-section__head > .ab-section__title {
+  text-align: center;
+}
+
+.md-typeset .ab-mag .ab-section--intro > .ab-section__lead {
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+}
+
 /* Two deks stacked in one section — only /accounts/ does this, where the first
    explains the Steam regions and the second the streaming/AI supplier. The
    rule above zeroes the bottom margin, so without this the two read as one
@@ -1599,6 +1618,43 @@
   border: 1px solid var(--ab-line);
 }
 
+/* One row in the feed is a video, and a cover alone does not say so: the mark
+   sits in the corner of the picture the way the gallery's photo count does on
+   the catalogue pages — same pill, same dark fill, turned horizontal to fit a
+   word. It rides inside the cover's link, so whichever part of the picture the
+   reader hits, the click goes to the clip; pointer-events stays off the badge
+   itself so it never swallows a click of its own. */
+.md-typeset .ab-mag .ab-card--row .ab-card__media a {
+  position: relative;
+  display: block;
+}
+
+.md-typeset .ab-mag .ab-card__video {
+  position: absolute;
+  top: 0.5rem;
+  left: 0.5rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.28em;
+  padding: 0.14rem 0.52rem 0.14rem 0.42rem;
+  border-radius: 999px;
+  background: rgba(0, 0, 0, 0.78);
+  color: #fff;
+  font-family: var(--ab-sans);
+  font-size: 0.58rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  line-height: 1.5;
+  text-transform: uppercase;
+  pointer-events: none;
+}
+
+.md-typeset .ab-mag .ab-card__video svg {
+  width: 0.58rem;
+  height: 0.58rem;
+  fill: currentColor;
+}
+
 .md-typeset .ab-mag .ab-card--row .ab-card__copy {
   padding: 0;
 }
@@ -1641,6 +1697,47 @@
    why the href is root-absolute. */
 .md-typeset .ab-mag .ab-card--row .ab-card__more {
   margin: 0;
+}
+
+/* ---------- the directory cards, /stack/ ---------------------------------
+
+   /stack/ grew a second list on 2026-11-02: ten sites the user picked, each
+   one a row card with a button out to it. The row's other action is a
+   read-more line; here the link is the whole point of the entry, so it gets a
+   box instead of an underline — 1px of text colour on white, inverting to
+   black on hover. The type is the site's small caps, one notch down from the
+   read-more's 13px because a box at that size reads as a label.
+
+   Scoped to .ab-card--tool so the news rows above keep their tan underline. */
+
+.md-typeset .ab-mag .ab-card--tool .ab-card__more a {
+  display: inline-block;
+  padding: 7px 15px;
+  border: 1px solid var(--ab-text);
+  font-size: 12px;
+  letter-spacing: 0.8px;
+  color: var(--ab-text) !important;
+  text-decoration: none !important;
+  transition: background-color 0.15s ease, color 0.15s ease;
+}
+
+.md-typeset .ab-mag .ab-card--tool .ab-card__more a:hover,
+.md-typeset .ab-mag .ab-card--tool .ab-card__more a:focus {
+  border-color: var(--ab-text);
+  background: var(--ab-text);
+  color: #fff !important;
+}
+
+/* On a phone the copy column is ~324px wide and the longest label,
+   "Visit awesome-selfhosted.net", lands exactly on that edge and wraps to two
+   lines. A size down and less padding keeps every button on one line without
+   shortening any of them. */
+@media (max-width: 600px) {
+  .md-typeset .ab-mag .ab-card--tool .ab-card__more a {
+    padding: 6px 12px;
+    font-size: 11px;
+    letter-spacing: 0.5px;
+  }
 }
 
 /* ---------- one story's own page, /blog/<slug>/ --------------------------
@@ -1958,6 +2055,182 @@
    nothing while the ladder is in flight, and forever with the script off. */
 .md-typeset .ab-mag .ab-card--plate .ab-card__price:empty {
   display: none;
+}
+
+/* ---------- the product cards ----------------------------------------------
+
+   The silhouette was first measured 1:1 against the sister site's /gear/ page
+   (2026-10-31): uppercase, black, centred, 16px above and 12px below inside a
+   copy block padded 20px, and a price riding at the end of the name — inline,
+   8px gap, 900, nowrap, red — on a 1.0 leading rather than a zero box. That
+   page's 26px name is kept off nothing; what changed is the size.
+
+   On request (2026-10-31) the name came down site-wide: 26px made the type
+   louder than the picture above it on every catalogue page, so every plate
+   card now sets it at 20px — the step the magazine already drops to under
+   768px, and then one under that. Measured to hold every name on /desire/,
+   /gear/, /style/, /workshop/ and /stack/ without a fourth line.
+
+   The 16px headroom is /gear/'s `.mg-card__copy > :first-child` rule, which is
+   what keeps a title that is the copy's first child off the media band. The
+   tracking comes off (0.75px here) so a name sets the same width it does there. */
+.md-typeset .ab-mag .ab-card--plate .ab-card__copy > :first-child {
+  margin-top: 16px;
+}
+
+.md-typeset .ab-mag .ab-card--plate .ab-card__title {
+  font-size: 20px;
+  letter-spacing: 0;
+}
+
+/* The price comes down with the name. At 19px it sat one pixel under a 20px
+   title and the two read as one line — the step between them is what keeps
+   the price looking like a price and not like part of the name. */
+.md-typeset .ab-mag .ab-card--plate .ab-card__price {
+  font-size: 17px;
+  line-height: 1;
+}
+
+/* ---------- the picture band, 1:1 with /gear/ -----------------------------
+
+   The same request covers the picture: /gear/ runs its cover edge to edge
+   across the card's top instead of floating a plate inside it. Measured off
+   the live page (2026-10-31, _tmp_ocr/gear_media_style.py): the card is 470px
+   with a 1px #c7c7c7 border, an 11px radius and `overflow: hidden`; the
+   picture inside it is 468x312 — full width, a 3:2 band, `cover`, centred,
+   with the card's hairline under it. Nothing above it: the copy's own 16px
+   headroom is the only gap between band and name.
+
+   So the band is its own hook rather than a change to --plate: /gear/ cards
+   and price plates are two different silhouettes, and the 240x320 plate stays
+   what it was for any card that keeps it. The file behind the band has to be
+   3:2 too, or `cover` takes the crop out of the subject — the cover asset is
+   re-cut to 1400x933 for that reason. */
+.md-typeset .ab-mag .ab-card--band {
+  overflow: hidden;
+  border-radius: 11px;
+}
+
+.md-typeset .ab-mag .ab-card--band .ab-card__media {
+  width: 100%;
+  max-width: none;
+  aspect-ratio: 3 / 2;
+  margin: 0;
+  border-radius: 0;
+}
+
+.md-typeset .ab-mag .ab-card--band .ab-card__media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 50%;
+  border-bottom: 1px solid var(--ab-line);
+}
+
+/* The video card on /desire/ makes its cover the link out. The anchor has to
+   be the band's block box: left inline, it would be the 100% the image's own
+   width and height resolve against, and both would collapse on a line box. */
+.md-typeset .ab-mag .ab-card--band .ab-card__media a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+/* ---------- the write-up under the name, 1:1 with /gear/ ------------------
+
+   The card carries more than a name: a line of components under the title, a
+   paragraph about the piece, and the pair of actions at its foot. Measured off
+   the live /gear/ card (_tmp_ocr/gear_copy_dump.py, 2026-10-31, 1440px):
+
+     .mg-card__sub    13px/600 sans, 1.3 leading, .02em, black, centred,
+                      -4px up into the title's own 12px and 12px below it
+     .mg-card__desc   Georgia 15px/1.5, left, #666, 12px below
+     .mg-card__more   a centred baseline row, 8px gaps, 15px Georgia links in
+                      #6f6250 over a 1px #ae9e85 rule, "or" in #666 between
+
+   Two things there are not copied as numbers but as behaviour. The desc is
+   clamped to two lines once its column is 444px or wider and three below it —
+   /gear/ asks a container query because a card's width there is not its
+   viewport's, and the same holds here: the grid is two-up until 767 and one-up
+   under it, so the card is 470 on a desktop and 358 on a phone. And the action
+   row is pinned to the foot with `margin-top: auto`, which is what lines the
+   links up across a row of stretched cards.
+
+   The paragraph is the only left-aligned thing on the card: the copy column
+   centres its children, which reads right for a name and wrong for prose. */
+.md-typeset .ab-mag .ab-card--band {
+  container-type: inline-size;
+}
+
+.md-typeset .ab-mag .ab-card--band .ab-card__sub {
+  margin: -4px 0 12px;
+  font-family: var(--ab-sans);
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 1.3;
+  letter-spacing: 0.02em;
+  color: var(--ab-text);
+  text-align: center;
+}
+
+.md-typeset .ab-mag .ab-card--band .ab-card__desc {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+  margin: 0 0 12px;
+  font-family: var(--ab-serif);
+  font-size: 15px;
+  line-height: 1.5;
+  text-align: left;
+  color: var(--ab-text-muted);
+}
+
+@container (min-width: 444px) {
+  .md-typeset .ab-mag .ab-card--band .ab-card__desc {
+    -webkit-line-clamp: 2;
+  }
+}
+
+.md-typeset .ab-mag .ab-card--band .ab-card__more {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: center;
+  gap: 0 8px;
+  margin: auto 0 0;
+}
+
+.md-typeset .ab-mag .ab-card--band .ab-card__more a {
+  display: inline-block;
+  margin: 0;
+  padding: 0 0 2px;
+  border-bottom: 1px solid var(--ab-accent);
+  border-radius: 0;
+  background: none;
+  box-shadow: none;
+  font-family: var(--ab-serif);
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.4;
+  letter-spacing: 0;
+  text-transform: none;
+  color: var(--ab-accent-deep);
+  text-decoration: none;
+}
+
+.md-typeset .ab-mag .ab-card--band .ab-card__more a:hover,
+.md-typeset .ab-mag .ab-card--band .ab-card__more a:focus {
+  color: var(--ab-text);
+  border-bottom-color: var(--ab-text);
+  text-decoration: none;
+}
+
+.md-typeset .ab-mag .ab-card--band .ab-card__or {
+  font-family: var(--ab-serif);
+  font-size: 15px;
+  font-style: normal;
+  color: var(--ab-text-muted);
 }
 
 /* Three to a row, and only from 1024px up. The ladder is a two-column grid of

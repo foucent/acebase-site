@@ -109,7 +109,7 @@ body {
   background: var(--bt-panel);
 }
 
-/* Sidebar top: Home replaces AceBase site_name; match section-header look (e.g. 关于与政策) */
+/* Sidebar top: Home replaces the AceBase site_name; match section-header look (e.g. 关于与政策) */
 .md-nav--primary > .md-nav__title.md-nav__title--home {
   display: block;
   box-sizing: border-box;

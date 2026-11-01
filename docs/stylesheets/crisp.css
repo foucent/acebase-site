@@ -1,0 +1,28 @@
+/* The live chat's own close button, copied from acebase.cc's extra.css
+   (2026-11-01). Crisp draws its chat in an iframe with no close control of its
+   own on this layout, so crisp.js appends one and shows it only while the chat
+   is open. Tokens are this site's; nothing here is new. */
+
+.ab-crisp-close {
+  position: fixed;
+  top: 14px;
+  right: 14px;
+  z-index: 10000050;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  margin: 0;
+  padding: 0;
+  border: 1px solid var(--ab-line);
+  border-radius: 999px;
+  background: var(--ab-panel-2);
+  color: var(--ab-text);
+  cursor: pointer;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+}
+
+.ab-crisp-close.is-visible {
+  display: flex;
+}

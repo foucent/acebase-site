@@ -1,7 +1,14 @@
 /**
- * Crisp live chat bootstrap for AceBase
- * + custom close button (top-right) when chat is open
- * + .ab-crisp-open click helper for site-wide CTAs
+ * Crisp live chat bootstrap — copied from acebase.cc (2026-11-01, 用户：
+ * 「将购物车的结账方式以及咨询也从 8003 复制过来」).
+ *
+ * Same website ID as acebase, so both sites land in one inbox. Only the
+ * close button's accessible name is English here, because this site's
+ * interface is; the button itself draws an × and never shows text.
+ *
+ * Exposes window.abOpenCrisp(prefill) for the rest of the site (cart.js uses
+ * it to hand a whole cart over), and turns any <a|button class="ab-crisp-open"
+ * data-crisp-msg="..."> into a chat opener.
  */
 (function () {
   window.$crisp = window.$crisp || [];
@@ -39,8 +46,8 @@
     btn.id = "ab-crisp-close";
     btn.type = "button";
     btn.className = "ab-crisp-close";
-    btn.setAttribute("aria-label", "关闭客服");
-    btn.setAttribute("title", "关闭客服");
+    btn.setAttribute("aria-label", "Close chat");
+    btn.setAttribute("title", "Close chat");
     btn.innerHTML =
       '<svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false">' +
       '<path fill="currentColor" d="M18.3 5.7a1 1 0 0 0-1.4 0L12 10.6 7.1 5.7a1 1 0 0 0-1.4 1.4L10.6 12l-4.9 4.9a1 1 0 1 0 1.4 1.4L12 13.4l4.9 4.9a1 1 0 0 0 1.4-1.4L13.4 12l4.9-4.9a1 1 0 0 0 0-1.4z"/>' +

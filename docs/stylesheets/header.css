@@ -183,14 +183,17 @@
   flex-wrap: nowrap;
   align-items: baseline;
   justify-content: center;
-  gap: 18px;
+  gap: 10px;
   margin: 0;
   padding: 0.75rem 0 0;
   list-style: none;
-  /* Seven CJK labels at 28px span ~727px of the 920px column (measured
-     2026-09-22, the day CAR became the seventh), so up here nothing overflows;
-     scrolling is insurance against a wider font stack, not a load-bearing
-     behaviour. */
+  /* Seven labels at 28px measure 779px across (measured 2026-11-01, the day
+     DIGITAL became SERVICES), plus six 10px gaps = 839 in a column that is
+     920px of content: 81px spare. The 10px gap dates from when this row
+     carried eight labels and came to 913 of 920 — at 18px it totalled 945,
+     and an overflowing centred flex row clips at *both* ends: the nav lost the
+     D of DESIRE and the L of DIGITAL instead of scrolling. The slack is back,
+     but `overflow-x` stays as the insurance the comment always said it was. */
   overflow-x: auto;
   scrollbar-width: none;
 }
