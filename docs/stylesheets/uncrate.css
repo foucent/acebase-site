@@ -1699,6 +1699,18 @@
   margin: 0;
 }
 
+/* One section on the front-page feed is a catalogue, not a photo set: /game/
+   cards are wordmark plates, and the row's 16:9 `cover` would slice one to a
+   stripe. Letterboxed over white instead, the plate keeps its own shape inside
+   the picture's frame. gen_home_recent.py crops the transparent margin off the
+   1200x250 original first (<id>-feed.png) — cropped, the mark fills the frame
+   instead of sitting in it like a postage stamp. */
+.md-typeset .ab-mag .ab-card--row.ab-card--wordmark .ab-card__media img {
+  object-fit: contain;
+  background: #fff;
+  padding: 10px;
+}
+
 /* ---------- the directory cards, /stack/ ---------------------------------
 
    /stack/ grew a second list on 2026-11-02: ten sites the user picked, each

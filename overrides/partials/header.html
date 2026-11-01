@@ -31,10 +31,11 @@
     {#- uncrate's family row, above the wordmark: the sibling sites and the
         brand on one centred line, uppercase, with a hairline under them.
 
-        Copied 1:1 from acebase.cc on 2026-11-01 at the user's request, both the
-        items (extra.family in mkdocs.yml) and the @AceBase handle written in
-        here. On acebase the handle is a plain outbound link to that site's own
-        YouTube channel; it is the same link here, not a second one. -#}
+        Copied 1:1 from acebase.cc on 2026-11-01 at the user's request, items
+        from extra.family in mkdocs.yml. A third entry, the @AceBase handle
+        pointing at that site's YouTube channel, was written in here at the
+        same time; it came out on 2026-11-02 (user: 「将 acebase.cc 的顶部
+        @AceBase 去掉」). The row is now exactly extra.family. -#}
     {% set family = config.extra.family | d([], true) %}
     {% if family %}
       <div class="ab-family">
@@ -44,11 +45,6 @@
               <a class="ab-family__link" href="{{ item.link | url }}">{{ item.label }}</a>
             </li>
           {% endfor %}
-          <li class="ab-family__item">
-            <a class="ab-family__link" href="https://www.youtube.com/@AceBase_cc" rel="noopener" title="AceBase on YouTube" aria-label="AceBase on YouTube">
-              <span class="ab-family__at" aria-hidden="true">@</span>AceBase
-            </a>
-          </li>
         </ul>
       </div>
     {% endif %}
