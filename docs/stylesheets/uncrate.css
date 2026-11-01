@@ -1699,18 +1699,6 @@
   margin: 0;
 }
 
-/* One section on the front-page feed is a catalogue, not a photo set: /game/
-   cards are wordmark plates, and the row's 16:9 `cover` would slice one to a
-   stripe. Letterboxed over white instead, the plate keeps its own shape inside
-   the picture's frame. gen_home_recent.py crops the transparent margin off the
-   1200x250 original first (<id>-feed.png) — cropped, the mark fills the frame
-   instead of sitting in it like a postage stamp. */
-.md-typeset .ab-mag .ab-card--row.ab-card--wordmark .ab-card__media img {
-  object-fit: contain;
-  background: #fff;
-  padding: 10px;
-}
-
 /* ---------- the directory cards, /stack/ ---------------------------------
 
    /stack/ grew a second list on 2026-11-02: ten sites the user picked, each
@@ -1927,6 +1915,29 @@
 
 .md-typeset .ab-mag .ab-card--plate.ab-card--wordmark .ab-card__media img {
   object-fit: cover;
+}
+
+/* Two tiles on the front page come from /game/, where the artwork is a wordmark
+   plate rather than a photograph: the band's 3:2 `cover` would slice one to a
+   stripe. Letterboxed over white instead, the plate keeps its own shape inside
+   the band. Here the tile is a --band card like every other on the homepage, so
+   the media goes back to the band's own 3:2 frame above the plate's 5:2 banner
+   — both blocks match at 0-5-0 and 0-5-1, which is why this one has to stay
+   below them. gen_home_recent.py crops the transparent margin off the 1200x250
+   original first (<id>-feed.png) — cropped, the mark fills the band instead of
+   sitting in it like a postage stamp. */
+.md-typeset .ab-mag .ab-card--band.ab-card--wordmark .ab-card__media {
+  width: 100%;
+  max-width: none;
+  aspect-ratio: 3 / 2;
+  margin: 0;
+  border-radius: 0;
+}
+
+.md-typeset .ab-mag .ab-card--band.ab-card--wordmark .ab-card__media img {
+  object-fit: contain;
+  background: #fff;
+  padding: 12px;
 }
 
 /* The plate's badge sits on the picture with room to spare; the banner's does
