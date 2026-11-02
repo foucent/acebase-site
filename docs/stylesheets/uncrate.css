@@ -2269,10 +2269,16 @@
 /* A band card whose copy carries no paragraph at all. The grid stretches every
    card to the tallest in its row, and .ab-card__copy pins its children to the
    top, so a card with only a name and a sub line paints them at the top of a
-   slab of white. Centre the two lines instead. It was written for the 1957
-   card, which was removed on 2026-11-02 and left no such card on /style/; a
-   card with an action line keeps it on the floor via that line's
-   `margin: auto 0 0`, so this does not touch the homepage tiles. */
+   slab of white. Centre the lines instead. It was written for the 1957 card,
+   which was removed on 2026-11-02; since 2026-11-03 it covers every /style/
+   card, because the user had the description line dropped from all of them
+   (「将所有卡片的描述词都删除，只保留标题」). There the `:not(:has(.ab-card__sub))`
+   rule below also zeroes .ab-card__more's floor-pinning margin, so the name
+   and its button move down together as one centred block. The homepage tiles
+   were regenerated without paragraphs the same day, so they take this rule as
+   well. A game tile still has its "Game · N tiers" sub line, so the
+   `:not(:has(.ab-card__sub))` rule below does not reach it and its link keeps
+   the floor-pinning margin. */
 .md-typeset .ab-mag .ab-card--band .ab-card__copy:not(:has(.ab-card__desc)) {
   justify-content: center;
   padding-bottom: 18px;

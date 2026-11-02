@@ -16,7 +16,9 @@ hide:
            Request Sourcing button. The sub line ("Racket · Astrox 88D Pro ·
            Navy · Cyan") is gone from all fifteen cards and there is no price
            anywhere on the page. Every picture is still lightbox-only — nothing
-           on a card links out.
+           on a card links out. 2026-11-03, user: 「一并删」 — the description
+           line went from every card here too, so each card is the name and
+           its one button.
 
            Four badminton posts added 2026-11-02, in the order the links were
            sent. Same lightbox-only card as the blades below: 01 is a 3:2 cover
@@ -31,7 +33,6 @@ hide:
         </div>
         <div class="ab-card__copy">
           <h3 class="ab-card__title">The Astrox 88D Pro in Navy and Cyan</h3>
-          <p class="ab-card__desc">A navy Astrox 88D Pro strung in cyan with a white grip shot as a run of close studies on grey.</p>
           <p class="ab-card__more"><button type="button" class="ab-request" aria-label="Request sourcing for The Astrox 88D Pro in Navy and Cyan" data-name="The Astrox 88D Pro in Navy and Cyan">Request Sourcing</button></p>
         </div>
       </article>
@@ -42,7 +43,6 @@ hide:
         </div>
         <div class="ab-card__copy">
           <h3 class="ab-card__title">The Astrox 100ZZ in Navy Up Close</h3>
-          <p class="ab-card__desc">A navy Astrox 100ZZ shot as a run of close studies from the frame edge down to the cone code.</p>
           <p class="ab-card__more"><button type="button" class="ab-request" aria-label="Request sourcing for The Astrox 100ZZ in Navy Up Close" data-name="The Astrox 100ZZ in Navy Up Close">Request Sourcing</button></p>
         </div>
       </article>
@@ -53,7 +53,6 @@ hide:
         </div>
         <div class="ab-card__copy">
           <h3 class="ab-card__title">A Red Astrox on a Black Table</h3>
-          <p class="ab-card__desc">A red Yonex Astrox racket laid on a round black table beside a tea set and a wooden tray.</p>
           <p class="ab-card__more"><button type="button" class="ab-request" aria-label="Request sourcing for A Red Astrox on a Black Table" data-name="A Red Astrox on a Black Table">Request Sourcing</button></p>
         </div>
       </article>
@@ -64,7 +63,6 @@ hide:
         </div>
         <div class="ab-card__copy">
           <h3 class="ab-card__title">Yonex Rackets Out of the Bag</h3>
-          <p class="ab-card__desc">A red racket a yellow-accented one and a white one still resting on the Yonex bag with its new grip.</p>
           <p class="ab-card__more"><button type="button" class="ab-request" aria-label="Request sourcing for Yonex Rackets Out of the Bag" data-name="Yonex Rackets Out of the Bag">Request Sourcing</button></p>
         </div>
       </article>
@@ -87,7 +85,6 @@ hide:
         </div>
         <div class="ab-card__copy">
           <h3 class="ab-card__title">The Harimoto Tomokazu Blades, ALC to Super ZLC</h3>
-          <p class="ab-card__desc">Harimoto Tomokazu's Super ALC, ALC and Super ZLC blades, on their blue boxes beside a magazine spread.</p>
           <p class="ab-card__more"><button type="button" class="ab-request" aria-label="Request sourcing for The Harimoto Tomokazu Blades, ALC to Super ZLC" data-name="The Harimoto Tomokazu Blades, ALC to Super ZLC">Request Sourcing</button></p>
         </div>
       </article>
@@ -106,7 +103,6 @@ hide:
         </div>
         <div class="ab-card__copy">
           <h3 class="ab-card__title">The Fan Zhendong ALC Blade Out of Its Box</h3>
-          <p class="ab-card__desc">Butterfly's Fan Zhendong ALC in a straight handle, bare out of its box and then glued up with black rubber.</p>
           <p class="ab-card__more"><button type="button" class="ab-request" aria-label="Request sourcing for The Fan Zhendong ALC Blade Out of Its Box" data-name="The Fan Zhendong ALC Blade Out of Its Box">Request Sourcing</button></p>
         </div>
       </article>
@@ -127,7 +123,6 @@ hide:
         </div>
         <div class="ab-card__copy">
           <h3 class="ab-card__title">A Blade Built With Long Pips and a Dragon Grip</h3>
-          <p class="ab-card__desc">One side black Yinhe Neptune long pips, the other a red Stiga DNA Dragon Grip, laid open in a black case.</p>
           <p class="ab-card__more"><button type="button" class="ab-request" aria-label="Request sourcing for A Blade Built With Long Pips and a Dragon Grip" data-name="A Blade Built With Long Pips and a Dragon Grip">Request Sourcing</button></p>
         </div>
       </article>
@@ -151,7 +146,6 @@ hide:
         </div>
         <div class="ab-card__copy">
           <h3 class="ab-card__title">A Big White Desk With a Walnut Riser</h3>
-          <p class="ab-card__desc">A white desk under a wall lamp with the monitor lifted on a black walnut riser and a white keyboard.</p>
           <p class="ab-card__more"><button type="button" class="ab-request" aria-label="Request sourcing for A Big White Desk With a Walnut Riser" data-name="A Big White Desk With a Walnut Riser">Request Sourcing</button></p>
         </div>
       </article>
@@ -162,7 +156,6 @@ hide:
         </div>
         <div class="ab-card__copy">
           <h3 class="ab-card__title">A White Desk in Two Square Metres</h3>
-          <p class="ab-card__desc">A white desk by the window with a mint keyboard on a mint mat and a cartoon car on the screen.</p>
           <p class="ab-card__more"><button type="button" class="ab-request" aria-label="Request sourcing for A White Desk in Two Square Metres" data-name="A White Desk in Two Square Metres">Request Sourcing</button></p>
         </div>
       </article>
@@ -173,7 +166,6 @@ hide:
         </div>
         <div class="ab-card__copy">
           <h3 class="ab-card__title">The Comfort of a Desk at Night</h3>
-          <p class="ab-card__desc">A white desk in an orange-lit room at night with one screen a white keyboard and a glass case lit inside.</p>
           <p class="ab-card__more"><button type="button" class="ab-request" aria-label="Request sourcing for The Comfort of a Desk at Night" data-name="The Comfort of a Desk at Night">Request Sourcing</button></p>
         </div>
       </article>
@@ -184,7 +176,6 @@ hide:
         </div>
         <div class="ab-card__copy">
           <h3 class="ab-card__title">An INTJ Desk After Dark</h3>
-          <p class="ab-card__desc">A wooden desk at night with a retro lamp a Mario figure and a cooking video left running on the screen.</p>
           <p class="ab-card__more"><button type="button" class="ab-request" aria-label="Request sourcing for An INTJ Desk After Dark" data-name="An INTJ Desk After Dark">Request Sourcing</button></p>
         </div>
       </article>
@@ -195,7 +186,6 @@ hide:
         </div>
         <div class="ab-card__copy">
           <h3 class="ab-card__title">The Desk Stripped Back to the Ocean Wallpaper</h3>
-          <p class="ab-card__desc">One screen one keyboard one mouse and a dark room where the only colour is the ocean wallpaper.</p>
           <p class="ab-card__more"><button type="button" class="ab-request" aria-label="Request sourcing for The Desk Stripped Back to the Ocean Wallpaper" data-name="The Desk Stripped Back to the Ocean Wallpaper">Request Sourcing</button></p>
         </div>
       </article>
@@ -206,7 +196,6 @@ hide:
         </div>
         <div class="ab-card__copy">
           <h3 class="ab-card__title">The Desk That Finally Kept Up</h3>
-          <p class="ab-card__desc">A game library on the monitor an iPad on a stand and a shelf of lava lamp dice clock and controllers.</p>
           <p class="ab-card__more"><button type="button" class="ab-request" aria-label="Request sourcing for The Desk That Finally Kept Up" data-name="The Desk That Finally Kept Up">Request Sourcing</button></p>
         </div>
       </article>
@@ -217,7 +206,6 @@ hide:
         </div>
         <div class="ab-card__copy">
           <h3 class="ab-card__title">Four Square Metres and Everything in It</h3>
-          <p class="ab-card__desc">A 4 m² corner under posters with two screens a red glow a glass PC case and figurines on the shelf.</p>
           <p class="ab-card__more"><button type="button" class="ab-request" aria-label="Request sourcing for Four Square Metres and Everything in It" data-name="Four Square Metres and Everything in It">Request Sourcing</button></p>
         </div>
       </article>
@@ -233,7 +221,6 @@ hide:
         </div>
         <div class="ab-card__copy">
           <h3 class="ab-card__title">The White Desk Set-Up, Riser and Headphone Stand</h3>
-          <p class="ab-card__desc">A white desk under warm light, the monitor on a walnut riser and headphones on a blue-lit stand.</p>
           <p class="ab-card__more"><button type="button" class="ab-request" aria-label="Request sourcing for The White Desk Set-Up, Riser and Headphone Stand" data-name="The White Desk Set-Up, Riser and Headphone Stand">Request Sourcing</button></p>
         </div>
       </article>

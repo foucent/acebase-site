@@ -13,7 +13,9 @@ hide:
      the first two cards of each of those pages, in page order (the pages put
      newer cards on top), and writes them here as the same band tiles the
      catalogue pages use, each one linking back to the card it came from.
-     Nothing on a tile leaves the site. -->
+     A tile is the picture, the name and that link (a game tile also says
+     "Game · N tiers"): no description line since 2026-11-03. Nothing on a
+     tile leaves the site. -->
 
 <div class="ab-mag" markdown="0">
 
@@ -28,7 +30,6 @@ hide:
         </div>
         <div class="ab-card__copy">
           <h3 class="ab-card__title">18D Oil Shiny Pantyhose + Strappy Stiletto Sandals</h3>
-          <p class="ab-card__desc">Black 18-denier oil-shine pantyhose worn with black strappy stiletto sandals on a pale rug.</p>
           <p class="ab-card__more"><a href="/style/#oil-shine-18d-pantyhose">See it in Style</a></p>
         </div>
       </article>
@@ -40,7 +41,6 @@ hide:
         </div>
         <div class="ab-card__copy">
           <h3 class="ab-card__title">1D White Moonlight Seamless Pantyhose</h3>
-          <p class="ab-card__desc">Milk white — 80.4% nylon, 19.6% spandex.</p>
           <p class="ab-card__more"><a href="/style/#white-sheer-15d-pantyhose">See it in Style</a></p>
         </div>
       </article>
@@ -52,7 +52,6 @@ hide:
         </div>
         <div class="ab-card__copy">
           <h3 class="ab-card__title">The Astrox 88D Pro in Navy and Cyan</h3>
-          <p class="ab-card__desc">A navy Astrox 88D Pro strung in cyan with a white grip shot as a run of close studies on grey.</p>
           <p class="ab-card__more"><a href="/gear/#astrox-88d-pro">See it in Gear</a></p>
         </div>
       </article>
@@ -64,7 +63,6 @@ hide:
         </div>
         <div class="ab-card__copy">
           <h3 class="ab-card__title">The Astrox 100ZZ in Navy Up Close</h3>
-          <p class="ab-card__desc">A navy Astrox 100ZZ shot as a run of close studies from the frame edge down to the cone code.</p>
           <p class="ab-card__more"><a href="/gear/#astrox-100zz-navy">See it in Gear</a></p>
         </div>
       </article>
@@ -77,7 +75,6 @@ hide:
         <div class="ab-card__copy">
           <h3 class="ab-card__title">PUBG Mobile UC</h3>
           <p class="ab-card__sub">Game&nbsp;·&nbsp;10 tiers</p>
-          <p class="ab-card__desc">Tiers from $0.80.</p>
           <p class="ab-card__more"><a href="/game/#pubg-mobile">See it in Game</a></p>
         </div>
       </article>
@@ -90,7 +87,6 @@ hide:
         <div class="ab-card__copy">
           <h3 class="ab-card__title">PUBG G-COIN</h3>
           <p class="ab-card__sub">Game&nbsp;·&nbsp;6 tiers</p>
-          <p class="ab-card__desc">Tiers from $0.86.</p>
           <p class="ab-card__more"><a href="/game/#pubg-gcoin">See it in Game</a></p>
         </div>
       </article>

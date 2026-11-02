@@ -23,6 +23,9 @@ hide:
            page uses one layout (user: 「将页面中所有的卡片都按 … 样式排版」): a
            picture, a title, one description line and one Request Sourcing
            button — no price anywhere on the page (「将页面中所有的价格都删除」).
+           2026-11-03, user: 「将所有卡片的描述词都删除，只保留标题」 — the
+           description line went from every card, so what sits under the
+           picture now is the name and the one button.
            A card that has a video keeps the video
            in data-gallery-video rather than linking out: clicking the picture
            opens the lightbox, and its last frame carries the "Watch Details on
@@ -40,7 +43,6 @@ hide:
         </div>
         <div class="ab-card__copy">
           <h3 class="ab-card__title">18D Oil Shiny Pantyhose + Strappy Stiletto Sandals</h3>
-          <p class="ab-card__desc">Black 18-denier oil-shine pantyhose worn with black strappy stiletto sandals on a pale rug.</p>
           <p class="ab-card__more"><button type="button" class="ab-request" aria-label="Request sourcing for 18D Oil Shiny Pantyhose + Strappy Stiletto Sandals" data-name="18D Oil Shiny Pantyhose + Strappy Stiletto Sandals">Request Sourcing</button></p>
         </div>
       </article>
@@ -56,7 +58,6 @@ hide:
         </div>
         <div class="ab-card__copy">
           <h3 class="ab-card__title">1D White Moonlight Seamless Pantyhose</h3>
-          <p class="ab-card__desc">Milk white — 80.4% nylon, 19.6% spandex.</p>
           <p class="ab-card__more"><button type="button" class="ab-request" aria-label="Request sourcing for 1D White Moonlight Seamless Pantyhose" data-name="1D White Moonlight Seamless Pantyhose">Request Sourcing</button></p>
         </div>
       </article>
@@ -70,7 +71,6 @@ hide:
         </div>
         <div class="ab-card__copy">
           <h3 class="ab-card__title">Layered White Ruffled Dress + Slingback Pumps</h3>
-          <p class="ab-card__desc">A white ruffled dress layered over black, with black sheer tights and patent slingback pumps.</p>
           <p class="ab-card__more"><button type="button" class="ab-request" aria-label="Request sourcing for Layered White Ruffled Dress + Slingback Pumps" data-name="Layered White Ruffled Dress + Slingback Pumps">Request Sourcing</button></p>
         </div>
       </article>
@@ -88,7 +88,6 @@ hide:
         </div>
         <div class="ab-card__copy">
           <h3 class="ab-card__title">Over-the-Knee White Stockings + Black Coat</h3>
-          <p class="ab-card__desc">White thigh-high stockings under a black coat with black patent Mary Janes on a clear chair.</p>
           <p class="ab-card__more"><button type="button" class="ab-request" aria-label="Request sourcing for Over-the-Knee White Stockings + Black Coat" data-name="Over-the-Knee White Stockings + Black Coat">Request Sourcing</button></p>
         </div>
       </article>
@@ -105,7 +104,6 @@ hide:
         </div>
         <div class="ab-card__copy">
           <h3 class="ab-card__title">The Autumn Skirt, Worn With a Lace-Trimmed Top</h3>
-          <p class="ab-card__desc">A taupe knee-length skirt with a front vent, worn with a cream off-the-shoulder top edged in lace.</p>
           <p class="ab-card__more"><button type="button" class="ab-request" aria-label="Request sourcing for The Autumn Skirt, Worn With a Lace-Trimmed Top" data-name="The Autumn Skirt, Worn With a Lace-Trimmed Top">Request Sourcing</button></p>
         </div>
       </article>
@@ -120,7 +118,6 @@ hide:
         </div>
         <div class="ab-card__copy">
           <h3 class="ab-card__title">LimerenceM 8D Jelly Seamless Pantyhose</h3>
-          <p class="ab-card__desc">Seamless — foot 55.3% spandex, 44.7% nylon.</p>
           <p class="ab-card__more"><button type="button" class="ab-request" aria-label="Request sourcing for LimerenceM 8D Jelly Seamless Pantyhose" data-name="LimerenceM 8D Jelly Seamless Pantyhose">Request Sourcing</button></p>
         </div>
       </article>
@@ -142,7 +139,6 @@ hide:
         </div>
         <div class="ab-card__copy">
           <h3 class="ab-card__title">Japanese-Style Candy Gingham Nurse Dress</h3>
-          <p class="ab-card__desc">A white nurse-style dress with a lace-trimmed collar, a pink laced corset panel and a gingham hem.</p>
           <p class="ab-card__more"><button type="button" class="ab-request" aria-label="Request sourcing for Japanese-Style Candy Gingham Nurse Dress" data-name="Japanese-Style Candy Gingham Nurse Dress">Request Sourcing</button></p>
         </div>
       </article>
@@ -161,7 +157,6 @@ hide:
         </div>
         <div class="ab-card__copy">
           <h3 class="ab-card__title">Tatara, the Masamune and the Nodachi</h3>
-          <p class="ab-card__desc">Two black razors against a bare grey wall — one upright on its dome stand, one lying flat.</p>
           <p class="ab-card__more"><button type="button" class="ab-request" aria-label="Request sourcing for Tatara, the Masamune and the Nodachi" data-name="Tatara, the Masamune and the Nodachi">Request Sourcing</button></p>
         </div>
       </article>
@@ -172,7 +167,6 @@ hide:
         </div>
         <div class="ab-card__copy">
           <h3 class="ab-card__title">Leaf Razor, Opened from Its Black Box</h3>
-          <p class="ab-card__desc">Unboxed on a cutting mat: the razor in its tray, a manual, a pack of blades — and the razor alone.</p>
           <p class="ab-card__more"><button type="button" class="ab-request" aria-label="Request sourcing for Leaf Razor, Opened from Its Black Box" data-name="Leaf Razor, Opened from Its Black Box">Request Sourcing</button></p>
         </div>
       </article>
@@ -183,7 +177,6 @@ hide:
         </div>
         <div class="ab-card__copy">
           <h3 class="ab-card__title">Merkur 39C, the Slant on a Wire Stand</h3>
-          <p class="ab-card__desc">The 39C sits in its wire stand, stands up, and comes apart to show the two-piece head.</p>
           <p class="ab-card__more"><button type="button" class="ab-request" aria-label="Request sourcing for Merkur 39C, the Slant on a Wire Stand" data-name="Merkur 39C, the Slant on a Wire Stand">Request Sourcing</button></p>
         </div>
       </article>
@@ -194,7 +187,6 @@ hide:
         </div>
         <div class="ab-card__copy">
           <h3 class="ab-card__title">A MÜHLE Razor on Its Grey Box</h3>
-          <p class="ab-card__desc">A razor that arrives like a gift: grey box, leather case, soap, blades, and a shave at the end.</p>
           <p class="ab-card__more"><button type="button" class="ab-request" aria-label="Request sourcing for A MÜHLE Razor on Its Grey Box" data-name="A MÜHLE Razor on Its Grey Box">Request Sourcing</button></p>
         </div>
       </article>
@@ -213,7 +205,6 @@ hide:
         </div>
         <div class="ab-card__copy">
           <h3 class="ab-card__title">Dior Sauvage, the Eau de Parfum and the Elixir</h3>
-          <p class="ab-card__desc">Sauvage first on wet rock — later the Elixir and the Eau de Parfum come out of their boxes.</p>
           <p class="ab-card__more"><button type="button" class="ab-request" aria-label="Request sourcing for Dior Sauvage, the Eau de Parfum and the Elixir" data-name="Dior Sauvage, the Eau de Parfum and the Elixir">Request Sourcing</button></p>
         </div>
       </article>
@@ -224,7 +215,6 @@ hide:
         </div>
         <div class="ab-card__copy">
           <h3 class="ab-card__title">Bleu de Chanel, Opened from the White Box</h3>
-          <p class="ab-card__desc">Out of the white pouch and the Chanel box, then down on a white table in the light.</p>
           <p class="ab-card__more"><button type="button" class="ab-request" aria-label="Request sourcing for Bleu de Chanel, Opened from the White Box" data-name="Bleu de Chanel, Opened from the White Box">Request Sourcing</button></p>
         </div>
       </article>
@@ -235,7 +225,6 @@ hide:
         </div>
         <div class="ab-card__copy">
           <h3 class="ab-card__title">Acqua di Giò, Held in the Afternoon Light</h3>
-          <p class="ab-card__desc">Afternoon light, a glass carafe, and a branch of yellow ginkgo: the bottle in all three.</p>
           <p class="ab-card__more"><button type="button" class="ab-request" aria-label="Request sourcing for Acqua di Giò, Held in the Afternoon Light" data-name="Acqua di Giò, Held in the Afternoon Light">Request Sourcing</button></p>
         </div>
       </article>
@@ -270,7 +259,6 @@ hide:
         </div>
         <div class="ab-card__copy">
           <h3 class="ab-card__title">The Balmacaan Trench, Worn Over a Suit</h3>
-          <p class="ab-card__desc">A light Balmacaan over a suit for the spring commute — no bulk, and enough cover for the last cold spell.</p>
           <p class="ab-card__more"><button type="button" class="ab-request" aria-label="Request sourcing for The Balmacaan Trench, Worn Over a Suit" data-name="The Balmacaan Trench, Worn Over a Suit">Request Sourcing</button></p>
         </div>
       </article>
@@ -291,7 +279,6 @@ hide:
         </div>
         <div class="ab-card__copy">
           <h3 class="ab-card__title">The Lover White Three-Piece, Rebuilt in Cotton Linen</h3>
-          <p class="ab-card__desc">A white cotton-linen jacket, waistcoat and trousers in the 1930s cut Tony Leung Ka-fai wears in The Lover.</p>
           <p class="ab-card__more"><button type="button" class="ab-request" aria-label="Request sourcing for The Lover White Three-Piece, Rebuilt in Cotton Linen" data-name="The Lover White Three-Piece, Rebuilt in Cotton Linen">Request Sourcing</button></p>
         </div>
       </article>
@@ -302,7 +289,6 @@ hide:
         </div>
         <div class="ab-card__copy">
           <h3 class="ab-card__title">AETHER Rope Keychain</h3>
-          <p class="ab-card__desc">A rope loop on a black webbing keeper, closing on a steel split ring.</p>
           <p class="ab-card__more"><button type="button" class="ab-request" aria-label="Request sourcing for AETHER Rope Keychain" data-name="AETHER Rope Keychain">Request Sourcing</button></p>
         </div>
       </article>
@@ -313,7 +299,6 @@ hide:
         </div>
         <div class="ab-card__copy">
           <h3 class="ab-card__title">Topo Designs Mt. West Ranch Jacket</h3>
-          <p class="ab-card__desc">An olive canvas ranch jacket with a dark corduroy collar and ribbed cuffs.</p>
           <p class="ab-card__more"><button type="button" class="ab-request" aria-label="Request sourcing for Topo Designs Mt. West Ranch Jacket" data-name="Topo Designs Mt. West Ranch Jacket">Request Sourcing</button></p>
         </div>
       </article>
@@ -324,7 +309,6 @@ hide:
         </div>
         <div class="ab-card__copy">
           <h3 class="ab-card__title">Imperfects Stretch Corduroy Easy Rider Pant</h3>
-          <p class="ab-card__desc">Green stretch corduroy, cut in the Easy Rider shape and shown flat.</p>
           <p class="ab-card__more"><button type="button" class="ab-request" aria-label="Request sourcing for Imperfects Stretch Corduroy Easy Rider Pant" data-name="Imperfects Stretch Corduroy Easy Rider Pant">Request Sourcing</button></p>
         </div>
       </article>
@@ -335,7 +319,6 @@ hide:
         </div>
         <div class="ab-card__copy">
           <h3 class="ab-card__title">Craighill Summit Playing Card Case</h3>
-          <p class="ab-card__desc">A slim case that holds a deck, shown with its cards fanned up out of the lid.</p>
           <p class="ab-card__more"><button type="button" class="ab-request" aria-label="Request sourcing for Craighill Summit Playing Card Case" data-name="Craighill Summit Playing Card Case">Request Sourcing</button></p>
         </div>
       </article>
@@ -346,7 +329,6 @@ hide:
         </div>
         <div class="ab-card__copy">
           <h3 class="ab-card__title">Private White V.C. Submariner Cashmere Sweater</h3>
-          <p class="ab-card__desc">Cream cashmere with a rolled neck and ribbed cuffs and hem.</p>
           <p class="ab-card__more"><button type="button" class="ab-request" aria-label="Request sourcing for Private White V.C. Submariner Cashmere Sweater" data-name="Private White V.C. Submariner Cashmere Sweater">Request Sourcing</button></p>
         </div>
       </article>
@@ -357,7 +339,6 @@ hide:
         </div>
         <div class="ab-card__copy">
           <h3 class="ab-card__title">Seiko Prospex JAWS 50th Anniversary Dive Watch</h3>
-          <p class="ab-card__desc">A blue-dial Prospex diver on a blue rubber strap, issued for the film's 50th anniversary.</p>
           <p class="ab-card__more"><button type="button" class="ab-request" aria-label="Request sourcing for Seiko Prospex JAWS 50th Anniversary Dive Watch" data-name="Seiko Prospex JAWS 50th Anniversary Dive Watch">Request Sourcing</button></p>
         </div>
       </article>
@@ -368,7 +349,6 @@ hide:
         </div>
         <div class="ab-card__copy">
           <h3 class="ab-card__title">Lüm-Tec Combat B72 Field Watch</h3>
-          <p class="ab-card__desc">A black case and strap around a cream dial, with 24-hour markings around the track.</p>
           <p class="ab-card__more"><button type="button" class="ab-request" aria-label="Request sourcing for Lüm-Tec Combat B72 Field Watch" data-name="Lüm-Tec Combat B72 Field Watch">Request Sourcing</button></p>
         </div>
       </article>
@@ -379,7 +359,6 @@ hide:
         </div>
         <div class="ab-card__copy">
           <h3 class="ab-card__title">Line of Trade Waxed Zip Trucker Jacket</h3>
-          <p class="ab-card__desc">Brown waxed cotton with a zip front, a shirt collar and two chest pockets.</p>
           <p class="ab-card__more"><button type="button" class="ab-request" aria-label="Request sourcing for Line of Trade Waxed Zip Trucker Jacket" data-name="Line of Trade Waxed Zip Trucker Jacket">Request Sourcing</button></p>
         </div>
       </article>
@@ -390,7 +369,6 @@ hide:
         </div>
         <div class="ab-card__copy">
           <h3 class="ab-card__title">Barbour Donegal Wool Crew-Neck Jumper</h3>
-          <p class="ab-card__desc">Navy Donegal wool, with the flecked texture that yarn is known for.</p>
           <p class="ab-card__more"><button type="button" class="ab-request" aria-label="Request sourcing for Barbour Donegal Wool Crew-Neck Jumper" data-name="Barbour Donegal Wool Crew-Neck Jumper">Request Sourcing</button></p>
         </div>
       </article>
@@ -401,8 +379,29 @@ hide:
         </div>
         <div class="ab-card__copy">
           <h3 class="ab-card__title">Timex Marlin Neo Classic Chronograph</h3>
-          <p class="ab-card__desc">A close crop of the dial: cream ground, blue hands, and a red-lacquered second hand.</p>
           <p class="ab-card__more"><button type="button" class="ab-request" aria-label="Request sourcing for Timex Marlin Neo Classic Chronograph" data-name="Timex Marlin Neo Classic Chronograph">Request Sourcing</button></p>
+        </div>
+      </article>
+
+      <!-- A Douyin clip (2026-11-02), the newest card and so the last one: the
+           page keeps the cards in the order they arrived, oldest at the top.
+           Nothing on the card links out to Douyin.
+           2026-11-03, user: 「你不能直接就将视频放上去吗」 — the clip itself went
+           on the card: clip.mp4 (720p, 3.3 MB, re-encoded from the download)
+           sits in data-gallery-video, and gallery.js plays a file this site
+           hosts in the lightbox instead of opening a tab. Once the clip was
+           there the frames cut from it said nothing new, so the same day the
+           user had them deleted (「将之前那几帧图片删除」): 01.jpg — the 3:2
+           cover from the opening frame with the tongue label reading — is the
+           card's whole set, and its play button says "Watch the video" (no
+           YouTube mark) because nothing leaves the page. -->
+      <article class="ab-card ab-card--plate ab-card--band ab-card--video" id="aj1-low-dare-to-fly">
+        <div class="ab-card__media">
+          <img src="/assets/style/aj1-low-dare-to-fly/01.jpg" alt="A white Air Jordan 1 Low with a grey swoosh edged in pale blue and a Dare to Fly tongue label on a patterned rug" loading="lazy" decoding="async" data-gallery-video="/assets/style/aj1-low-dare-to-fly/clip.mp4" data-gallery="/assets/style/aj1-low-dare-to-fly/01.jpg|A white Air Jordan 1 Low with a grey swoosh edged in pale blue and a Dare to Fly tongue label on a patterned rug">
+        </div>
+        <div class="ab-card__copy">
+          <h3 class="ab-card__title">Air Jordan 1 Low, White with a Pale Blue Swoosh</h3>
+          <p class="ab-card__more"><button type="button" class="ab-request" aria-label="Request sourcing for Air Jordan 1 Low, White with a Pale Blue Swoosh" data-name="Air Jordan 1 Low, White with a Pale Blue Swoosh">Request Sourcing</button></p>
         </div>
       </article>
 
