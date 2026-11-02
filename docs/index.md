@@ -48,28 +48,28 @@ hide:
       </article>
       <article class="ab-card ab-card--plate ab-card--band" data-section="groom">
         <div class="ab-card__media">
-          <a href="/groom/#balmacaan-trench" aria-label="Open The Balmacaan Trench, Worn Over a Suit in Groom">
-            <img src="/assets/groom/balmacaan-trench/01.jpg" alt="A navy Balmacaan trench worn open over a pinstriped suit jacket, striped tie and white shirt, hands in the pockets" loading="lazy" decoding="async">
+          <a href="/groom/#dior-sauvage" aria-label="Open Dior Sauvage, the Eau de Parfum and the Elixir in Groom">
+            <img src="/assets/groom/dior-sauvage/01.jpg" alt="A Dior Sauvage bottle standing on wet grey rock" loading="lazy" decoding="async">
           </a>
         </div>
         <div class="ab-card__copy">
-          <h3 class="ab-card__title">The Balmacaan Trench, Worn Over a Suit</h3>
-          <p class="ab-card__sub">Look · Navy · Balmacaan · Spring</p>
-          <p class="ab-card__desc">A light Balmacaan over a suit for the spring commute — no bulk, and enough cover for the last cold spell.</p>
-          <p class="ab-card__more"><a href="/groom/#balmacaan-trench">See it in Groom</a></p>
+          <h3 class="ab-card__title">Dior Sauvage, the Eau de Parfum and the Elixir</h3>
+          <p class="ab-card__sub">Fragrance · Sauvage · Eau de Parfum · Elixir</p>
+          <p class="ab-card__desc">A Sauvage bottle on wet rock, then the Elixir and the Eau de Parfum side by side in their boxes.</p>
+          <p class="ab-card__more"><a href="/groom/#dior-sauvage">See it in Groom</a></p>
         </div>
       </article>
       <article class="ab-card ab-card--plate ab-card--band" data-section="groom">
         <div class="ab-card__media">
-          <a href="/groom/#the-lover-white-three-piece" aria-label="Open The Lover White Three-Piece, Rebuilt in Cotton Linen in Groom">
-            <img src="/assets/groom/the-lover-white-three-piece/01.jpg" alt="Tony Leung Ka-fai walking in the white three-piece from The Lover beside the same suit rebuilt in white cotton linen" loading="lazy" decoding="async">
+          <a href="/groom/#bleu-de-chanel" aria-label="Open Bleu de Chanel, Opened from the White Box in Groom">
+            <img src="/assets/groom/bleu-de-chanel/01.jpg" alt="The Bleu de Chanel bottle with its black cap on a white table beside a Chanel bag" loading="lazy" decoding="async">
           </a>
         </div>
         <div class="ab-card__copy">
-          <h3 class="ab-card__title">The Lover White Three-Piece, Rebuilt in Cotton Linen</h3>
-          <p class="ab-card__sub">Look · White · 1930s · Three-Piece</p>
-          <p class="ab-card__desc">A white cotton-linen jacket, waistcoat and trousers in the 1930s cut Tony Leung Ka-fai wears in The Lover.</p>
-          <p class="ab-card__more"><a href="/groom/#the-lover-white-three-piece">See it in Groom</a></p>
+          <h3 class="ab-card__title">Bleu de Chanel, Opened from the White Box</h3>
+          <p class="ab-card__sub">Fragrance · Bleu de Chanel · Eau de Parfum · Gift Box</p>
+          <p class="ab-card__desc">The Bleu de Chanel bottle in its pouch inside the opened box, then the bottle on a white table.</p>
+          <p class="ab-card__more"><a href="/groom/#bleu-de-chanel">See it in Groom</a></p>
         </div>
       </article>
       <article class="ab-card ab-card--plate ab-card--band" data-section="gear">

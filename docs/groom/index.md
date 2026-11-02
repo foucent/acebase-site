@@ -11,6 +11,46 @@ hide:
   <section class="ab-section">
     <div class="ab-list" aria-label="Groom catalogue">
 
+      <!-- Three Douyin photo posts (2026-11-02), all lightbox-only like the two
+           cards below: every frame is downloaded, nothing on the card links out
+           and there is no action line. The Dior post shipped four pictures and
+           the user asked to leave the third one out (「第三张图不要」) — it is
+           the Chinese-annotated note graphic — so this card carries three of
+           them (01.jpg is the 3:2 cover cut from the first). The other two
+           posts keep every picture they came with. -->
+      <article class="ab-card ab-card--plate ab-card--band" id="dior-sauvage">
+        <div class="ab-card__media">
+          <img src="/assets/groom/dior-sauvage/01.jpg" alt="A Dior Sauvage bottle standing on wet grey rock" loading="lazy" decoding="async" data-gallery="/assets/groom/dior-sauvage/01.jpg|A Dior Sauvage bottle standing on wet grey rock,/assets/groom/dior-sauvage/02.jpg|The full frame of the Sauvage bottle on the rock with the blurred stone face behind,/assets/groom/dior-sauvage/03.jpg|The Eau de Parfum bottle on a marble ledge with its cap and sample vials beside it,/assets/groom/dior-sauvage/04.jpg|The Elixir and the Eau de Parfum in front of their boxes and a white Dior bag">
+        </div>
+        <div class="ab-card__copy">
+          <h3 class="ab-card__title">Dior Sauvage, the Eau de Parfum and the Elixir</h3>
+          <p class="ab-card__sub">Fragrance&nbsp;· Sauvage&nbsp;· Eau de Parfum&nbsp;· Elixir</p>
+          <p class="ab-card__desc">A Sauvage bottle on wet rock, then the Elixir and the Eau de Parfum side by side in their boxes.</p>
+        </div>
+      </article>
+
+      <article class="ab-card ab-card--plate ab-card--band" id="bleu-de-chanel">
+        <div class="ab-card__media">
+          <img src="/assets/groom/bleu-de-chanel/01.jpg" alt="The Bleu de Chanel bottle with its black cap on a white table beside a Chanel bag" loading="lazy" decoding="async" data-gallery="/assets/groom/bleu-de-chanel/01.jpg|The Bleu de Chanel bottle with its black cap on a white table beside a Chanel bag,/assets/groom/bleu-de-chanel/02.jpg|The bottle in its white pouch among packing paper inside the opened Chanel box,/assets/groom/bleu-de-chanel/03.jpg|The opened Chanel boxes and a black rope handle with the white pouch inside,/assets/groom/bleu-de-chanel/04.jpg|The Eau de Parfum bottle in front of a white Chanel Paris bag and its box">
+        </div>
+        <div class="ab-card__copy">
+          <h3 class="ab-card__title">Bleu de Chanel, Opened from the White Box</h3>
+          <p class="ab-card__sub">Fragrance&nbsp;· Bleu de Chanel&nbsp;· Eau de Parfum&nbsp;· Gift Box</p>
+          <p class="ab-card__desc">The Bleu de Chanel bottle in its pouch inside the opened box, then the bottle on a white table.</p>
+        </div>
+      </article>
+
+      <article class="ab-card ab-card--plate ab-card--band" id="acqua-di-gio">
+        <div class="ab-card__media">
+          <img src="/assets/groom/acqua-di-gio/01.jpg" alt="The frosted Acqua di Giò bottle on a table beside a glass carafe in low afternoon sun" loading="lazy" decoding="async" data-gallery="/assets/groom/acqua-di-gio/01.jpg|The frosted Acqua di Giò bottle on a table beside a glass carafe in low afternoon sun,/assets/groom/acqua-di-gio/02.jpg|The bottle on the table with a glass carafe and a framed print behind it,/assets/groom/acqua-di-gio/03.jpg|The bottle held in one hand in front of a branch of yellow ginkgo leaves">
+        </div>
+        <div class="ab-card__copy">
+          <h3 class="ab-card__title">Acqua di Giò, Held in the Afternoon Light</h3>
+          <p class="ab-card__sub">Fragrance&nbsp;· Acqua di Giò&nbsp;· Aquatic&nbsp;· Men&#x27;s</p>
+          <p class="ab-card__desc">Acqua di Giò in low afternoon sun, first beside a glass carafe, then held up by a window.</p>
+        </div>
+      </article>
+
       <!-- 2026-11-02: the page moved from /style/ to /groom/ (user: 「将
            http://127.0.0.1:8000/style/ 换成 GROOM」) — directory docs/style/ →
            docs/groom/, address /style/ → /groom/, nav label, page title,
