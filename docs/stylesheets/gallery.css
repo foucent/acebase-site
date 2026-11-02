@@ -78,6 +78,24 @@ body.ab-lightbox-open {
   background: var(--ab-text);
 }
 
+/* A video this site hosts (2026-11-03) takes the picture's place: same box,
+   same shadow, but with the player's own controls. */
+.ab-lightbox__video {
+  display: block;
+  max-width: min(90vw, 1100px);
+  max-height: 78vh;
+  width: auto;
+  height: auto;
+  border-radius: 0.35rem;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.45);
+  background: #000;
+  cursor: default;
+}
+
+.ab-lightbox__video[hidden] {
+  display: none !important;
+}
+
 .ab-lightbox__meta {
   margin-top: 0.65rem;
   text-align: center;

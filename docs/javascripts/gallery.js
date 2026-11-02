@@ -20,9 +20,13 @@
    the last photo in the set carry a play button that opens that link in a new
    tab, so the video the card sells is reachable from inside the lightbox
    instead of only from the action line under it. The button exists on the last
-   frame alone — every other frame keeps the "more photos" hint. It wears the
-   same words and the same YouTube mark as the card's own video link, so the
-   two read as one offer. */
+   frame alone — every other frame keeps the "more photos" hint.
+
+   A hosted file on this site (an .mp4/.webm, 2026-11-03) is played in the
+   lightbox instead of opening a tab: the button says "Watch the video" without
+   the YouTube mark, and pressing it swaps the photo for a <video controls>
+   playing the file. Moving to another frame, or closing, puts the photo back
+   and stops the video. A YouTube link keeps the old behaviour — new tab. */
 (function () {
   var items = [];
   var index = 0;
@@ -45,6 +49,7 @@
       '<button type="button" class="ab-lightbox__nav ab-lightbox__next" aria-label="Next">›</button>' +
       '<div class="ab-lightbox__stage">' +
       '  <img class="ab-lightbox__img" alt="">' +
+      '  <video class="ab-lightbox__video" controls playsinline preload="metadata" hidden></video>' +
       '  <a class="ab-lightbox__play" href="#" target="_blank" rel="noopener" aria-label="Watch Details on YouTube" hidden>' +
       '    <svg class="ab-yt-mark" viewBox="0 0 28 20" aria-hidden="true" focusable="false">' +
       '      <rect width="28" height="20" rx="5" fill="#f00"/>' +
@@ -68,6 +73,24 @@
     var hint = root.querySelector(".ab-lightbox__hint");
     var dots = root.querySelector(".ab-lightbox__dots");
     var play = root.querySelector(".ab-lightbox__play");
+    var playLabel = root.querySelector(".ab-lightbox__play-label");
+    var ytMark = root.querySelector(".ab-yt-mark");
+    var stageVideo = root.querySelector(".ab-lightbox__video");
+
+    // A file this site hosts plays here; anything else (a YouTube page) is a
+    // link to open in a new tab.
+    function isLocalVideo(url) {
+      return /\.(mp4|webm|ogv|ogg|mov)([?#]|$)/i.test(url);
+    }
+
+    function stopVideo() {
+      if (stageVideo.hidden) return;
+      stageVideo.pause();
+      stageVideo.removeAttribute("src");
+      stageVideo.load();
+      stageVideo.hidden = true;
+      img.style.display = "";
+    }
 
     function renderDots() {
       if (items.length <= 1) {
@@ -103,12 +126,19 @@
       nextBtn.hidden = !multi;
       counter.hidden = !multi;
       hint.hidden = !multi;
+      stopVideo();
       // The play button belongs to the last photo of a set that names a video;
       // the hint is the only thing telling a reader what it will do.
       var playable = Boolean(video) && index === items.length - 1;
+      var local = playable && isLocalVideo(video);
       play.hidden = !playable;
       if (playable) play.href = video;
       else play.removeAttribute("href");
+      // A hosted file plays in place, so the button says so and drops the
+      // YouTube mark rather than promising a tab that never opens.
+      playLabel.textContent = local ? "Watch the video" : "Watch Details on YouTube";
+      play.setAttribute("aria-label", local ? "Watch the video" : "Watch Details on YouTube");
+      ytMark.style.display = local ? "none" : "";
       hint.textContent = playable
         ? "Last photo — press play to watch the video"
         : "More photos — swipe or use arrows";
@@ -117,6 +147,7 @@
 
     function close() {
       root.hidden = true;
+      stopVideo();
       img.removeAttribute("src");
       items = [];
       video = "";
@@ -151,6 +182,19 @@
       if (!dot) return;
       e.stopPropagation();
       show(parseInt(dot.getAttribute("data-index"), 10) || 0);
+    });
+
+    // A hosted file is played right here; a YouTube link keeps its new tab.
+    play.addEventListener("click", function (e) {
+      if (!isLocalVideo(video)) return;
+      e.preventDefault();
+      e.stopPropagation();
+      stageVideo.src = video;
+      stageVideo.hidden = false;
+      img.style.display = "none";
+      play.hidden = true;
+      var started = stageVideo.play();
+      if (started && started.catch) started.catch(function () {});
     });
 
     var touchX = 0;
