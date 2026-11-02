@@ -2091,8 +2091,8 @@
    On request (2026-10-31) the name came down site-wide: 26px made the type
    louder than the picture above it on every catalogue page, so every plate
    card now sets it at 20px — the step the magazine already drops to under
-   768px, and then one under that. Measured to hold every name on /desire/,
-   /gear/, /style/, /workshop/ and /stack/ without a fourth line.
+   768px, and then one under that. Measured to hold every name on /style/,
+   /gear/ and /stack/ without a fourth line.
 
    The 16px headroom is /gear/'s `.mg-card__copy > :first-child` rule, which is
    what keeps a title that is the copy's first child off the media band. The
@@ -2150,7 +2150,7 @@
   border-bottom: 1px solid var(--ab-line);
 }
 
-/* The video card on /desire/ makes its cover the link out. The anchor has to
+/* The video card on /style/ makes its cover the link out. The anchor has to
    be the band's block box: left inline, it would be the 100% the image's own
    width and height resolve against, and both would collapse on a line box. */
 .md-typeset .ab-mag .ab-card--band .ab-card__media a {
@@ -2254,6 +2254,32 @@
   font-size: 15px;
   font-style: normal;
   color: var(--ab-text-muted);
+}
+
+/* A band card whose copy carries no paragraph at all. The grid stretches every
+   card to the tallest in its row, and .ab-card__copy pins its children to the
+   top, so a card with only a name and a sub line paints them at the top of a
+   slab of white. Centre the two lines instead. It was written for the 1957
+   card, which was removed on 2026-11-02 and left no such card on /style/; a
+   card with an action line keeps it on the floor via that line's
+   `margin: auto 0 0`, so this does not touch the homepage tiles. */
+.md-typeset .ab-mag .ab-card--band .ab-card__copy:not(:has(.ab-card__desc)) {
+  justify-content: center;
+  padding-bottom: 18px;
+}
+
+/* Same problem the other way round: a band card with no sub line (the two
+   2026-11-02 Desire cards) keeps its action line on the floor, which leaves a
+   void between it and the paragraph once the row stretches the card. Centre
+   the name, the paragraph and the action as one block, and let the action sit
+   the paragraph's own 12px margin below it instead of the auto margin that
+   would push it back down to the floor. */
+.md-typeset .ab-mag .ab-card--band .ab-card__copy:not(:has(.ab-card__sub)) {
+  justify-content: center;
+}
+
+.md-typeset .ab-mag .ab-card--band .ab-card__copy:not(:has(.ab-card__sub)) .ab-card__more {
+  margin: 0;
 }
 
 /* Three to a row, and only from 1024px up. The ladder is a two-column grid of

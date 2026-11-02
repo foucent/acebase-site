@@ -89,10 +89,8 @@ extra:
       link: https://acebase.cc/topup/
 
 nav:
-  - DESIRE: desire/index.md
-  - GROOM: groom/index.md
+  - STYLE: style/index.md
   - GEAR: gear/index.md
-  - WORKSHOP: workshop/index.md
+  - SERVICES: services/index.md
   - GAME: game/index.md
   - STACK: stack/index.md
-  - SERVICES: services/index.md

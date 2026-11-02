@@ -219,7 +219,7 @@
 
   function init() {
     // Every page, not just the ones selling something: the cart lives in
-    // localStorage, so a reader who added a piece on /desire/ can open it again
+    // localStorage, so a reader who added a piece on /style/ can open it again
     // from a guide two pages away.
     ensureUi();
 

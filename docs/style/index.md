@@ -1,15 +1,193 @@
 ---
-title: Groom
-description: AceBase Groom — the Groom selection, piece by piece.
+title: Style
+description: AceBase Style — the Style collection, piece by piece.
 hide:
   - title
   - toc
 ---
 
+<!-- DESIRE and GROOM became one STYLE page (2026-11-02, user: 「将 DESIRE GROOM
+     合并成Style」). The Desire cards come first, then the Groom cards, each
+     block in the order it had on its own page. Nothing inside a card changed:
+     ids, data-gallery paths and the pictures themselves still live under
+     /assets/desire/ and /assets/groom/, because an asset folder is a file name,
+     not a category. -->
+
 <div class="ab-mag" markdown="0">
 
   <section class="ab-section">
-    <div class="ab-list" aria-label="Groom catalogue">
+    <div class="ab-list" aria-label="Style catalogue">
+
+
+      <!-- Four YouTube-only cards (2026-11-01), added to the same pattern as
+           lolita-lavender-video below: the picture, the title and the action
+           line all open the video, and the card sells nothing. Covers are the
+           videos' own maxresdefault thumbnails cut to the band's 3:2 (960x640)
+           by _tmp_ocr/yt_thumb_prep.py — no frame is grabbed, so the picture is
+           the one the channel published. -->
+      <article class="ab-card ab-card--plate ab-card--band ab-card--video" id="oil-shine-18d-pantyhose">
+        <div class="ab-card__media">
+          <a href="https://www.youtube.com/watch?v=EHL1VbxZRHI" target="_blank" rel="noopener">
+            <img src="/assets/desire/oil-shine-18d-pantyhose/01.jpg" alt="Black sheer pantyhose on two feet in black strappy stiletto sandals over a pale grey rug" loading="lazy" decoding="async">
+          </a>
+        </div>
+        <div class="ab-card__copy">
+          <h3 class="ab-card__title"><a href="https://www.youtube.com/watch?v=EHL1VbxZRHI" target="_blank" rel="noopener">18D Oil Shiny Pantyhose + Strappy Stiletto Sandals</a></h3>
+          <p class="ab-card__desc">Black 18-denier oil-shine pantyhose worn with black strappy stiletto sandals on a pale rug.</p>
+          <p class="ab-card__more">
+            <a href="https://www.youtube.com/watch?v=EHL1VbxZRHI" target="_blank" rel="noopener">Watch on YouTube</a>
+          </p>
+        </div>
+      </article>
+
+      <article class="ab-card ab-card--plate ab-card--band ab-card--video" id="white-sheer-15d-pantyhose">
+        <div class="ab-card__media">
+          <!-- Five product screenshots (2026-11-02) replace the video's own
+               thumbnail; the picture now opens them in the lightbox, so the
+               video link stays on the title and the action line. -->
+          <img src="/assets/desire/white-sheer-15d-pantyhose/01.jpg" alt="White tights on two legs stretched out along a grey rug with white Mary Jane flats at the far end" loading="lazy" decoding="async" data-gallery="/assets/desire/white-sheer-15d-pantyhose/01.jpg|White tights on two legs stretched out along a grey rug with white Mary Jane flats at the far end,/assets/desire/white-sheer-15d-pantyhose/02.jpg|The box held up in one hand showing the size chart and the M 1D label with its specs,/assets/desire/white-sheer-15d-pantyhose/03.jpg|A hand inside the tights pressing the sheer knit up against the palm,/assets/desire/white-sheer-15d-pantyhose/04.jpg|Two feet in white tights on a pale rug with the toes showing through the knit,/assets/desire/white-sheer-15d-pantyhose/05.jpg|Both hands spreading the white knit wide between them over a grey floor">
+        </div>
+        <div class="ab-card__copy">
+          <h3 class="ab-card__title"><a href="https://youtu.be/Gbz23DwtnnQ" target="_blank" rel="noopener">1D White Moonlight Seamless Pantyhose</a><span class="ab-card__price">$5</span></h3>
+          <p class="ab-card__desc">Milk white — 80.4% nylon, 19.6% spandex.</p>
+          <p class="ab-card__more">
+            <a href="https://youtu.be/Gbz23DwtnnQ" target="_blank" rel="noopener">Watch on YouTube</a>
+            <em class="ab-card__or">or</em>
+            <button type="button" class="ab-cart-add" aria-label="Add 1D White Moonlight Seamless Pantyhose to cart" data-name="1D White Moonlight Seamless Pantyhose" data-price="5"><span class="ab-cart-add__plus">+</span>Add to cart</button>
+          </p>
+        </div>
+      </article>
+
+      <article class="ab-card ab-card--plate ab-card--band ab-card--video" id="layered-dress-slingback-video">
+        <div class="ab-card__media">
+          <a href="https://www.youtube.com/watch?v=cqeaealGTkU" target="_blank" rel="noopener">
+            <img src="/assets/desire/layered-dress-slingback-video/01.jpg" alt="Black sheer tights and black patent slingback pumps under a white ruffled dress worn over black" loading="lazy" decoding="async">
+          </a>
+        </div>
+        <div class="ab-card__copy">
+          <h3 class="ab-card__title"><a href="https://www.youtube.com/watch?v=cqeaealGTkU" target="_blank" rel="noopener">Layered White Ruffled Dress + Slingback Pumps</a></h3>
+          <p class="ab-card__desc">A white ruffled dress layered over black, with black sheer tights and patent slingback pumps.</p>
+          <p class="ab-card__more">
+            <a href="https://www.youtube.com/watch?v=cqeaealGTkU" target="_blank" rel="noopener">Watch on YouTube</a>
+          </p>
+        </div>
+      </article>
+
+      <article class="ab-card ab-card--plate ab-card--band ab-card--video" id="white-stockings-black-coat-video">
+        <div class="ab-card__media">
+          <a href="https://www.youtube.com/watch?v=-2_7i9SY-Ts" target="_blank" rel="noopener">
+            <img src="/assets/desire/white-stockings-black-coat-video/01.jpg" alt="White thigh-high stockings under a black coat with black patent Mary Janes on a clear chair" loading="lazy" decoding="async">
+          </a>
+        </div>
+        <div class="ab-card__copy">
+          <h3 class="ab-card__title"><a href="https://www.youtube.com/watch?v=-2_7i9SY-Ts" target="_blank" rel="noopener">Over-the-Knee White Stockings + Black Coat</a></h3>
+          <p class="ab-card__desc">White thigh-high stockings under a black coat with black patent Mary Janes on a clear chair.</p>
+          <p class="ab-card__more">
+            <a href="https://www.youtube.com/watch?v=-2_7i9SY-Ts" target="_blank" rel="noopener">Watch on YouTube</a>
+          </p>
+        </div>
+      </article>
+
+      <!-- Moved here from /style/ (2026-11-01, user: 「将 The Autumn Skirt… 移至
+           /desire/」). Same lightbox-only card as it was there — all six frames in
+           data-gallery, nothing on the card leaves the page — and its pictures
+           moved with it to assets/desire/. 01.jpg is the 3:2 cover, cut from the
+           post's second picture at the waist so the lace hem and the skirt read;
+           02–06 are the post's five originals at long side 1200. -->
+      <article class="ab-card ab-card--plate ab-card--band" id="autumn-skirt-lace-top">
+        <div class="ab-card__media">
+          <img src="/assets/desire/autumn-skirt-lace-top/01.jpg" alt="A cream off-the-shoulder top with a lace hem tucked into a taupe front-vent skirt beside a black leather tote" loading="lazy" decoding="async" data-gallery="/assets/desire/autumn-skirt-lace-top/01.jpg|A cream off-the-shoulder top with a lace hem tucked into a taupe front-vent skirt beside a black leather tote,/assets/desire/autumn-skirt-lace-top/02.jpg|The whole mirror shot with the lace-trimmed top and taupe skirt above black pointed shoes,/assets/desire/autumn-skirt-lace-top/03.jpg|The skirt seen from the front with its front vent open and the black tote hanging from the shoulder,/assets/desire/autumn-skirt-lace-top/04.jpg|The same outfit standing with one leg forward in black pointed shoes,/assets/desire/autumn-skirt-lace-top/05.jpg|The outfit with a burgundy leather shoulder bag instead of the black tote,/assets/desire/autumn-skirt-lace-top/06.jpg|Looking down over the taupe skirt's hem at a pair of black square-toe flats">
+        </div>
+        <div class="ab-card__copy">
+          <h3 class="ab-card__title">The Autumn Skirt, Worn With a Lace-Trimmed Top</h3>
+          <p class="ab-card__desc">A taupe knee-length skirt with a front vent, worn with a cream off-the-shoulder top edged in lace.</p>
+        </div>
+      </article>
+
+      <article class="ab-card ab-card--plate ab-card--band ab-card--video" id="moonlight-sheer-1d-tights">
+        <div class="ab-card__media">
+          <img src="/assets/desire/moonlight-sheer-1d-tights/01.jpg" alt="Sand tights on two feet turned soles-up with the stitched toe seam showing and nude sandals set behind" loading="lazy" decoding="async" data-gallery="/assets/desire/moonlight-sheer-1d-tights/01.jpg|Sand tights on two feet turned soles-up with the stitched toe seam showing and nude sandals set behind,/assets/desire/moonlight-sheer-1d-tights/02.jpg|A black gift box with a red ribbon cross held up in white gloves over a leather desk,/assets/desire/moonlight-sheer-1d-tights/03.jpg|The box turned to show its printed label with the size chart barcode and 8D 1 pair,/assets/desire/moonlight-sheer-1d-tights/04.jpg|The tights worn under nude knot-front sandals with a block heel on a grey rug,/assets/desire/moonlight-sheer-1d-tights/05.jpg|A hand seen through the stretched sheer knit against a leather desk,/assets/desire/moonlight-sheer-1d-tights/06.jpg|White gloves holding the folded pair flat with the small red m mark at its waist">
+        </div>
+        <div class="ab-card__copy">
+          <h3 class="ab-card__title"><a href="https://youtu.be/K-6fGn7Eqys" target="_blank" rel="noopener">LimerenceM 8D Jelly Seamless Pantyhose</a><span class="ab-card__price">$9</span></h3>
+          <p class="ab-card__desc">Seamless — foot 55.3% spandex, 44.7% nylon.</p>
+          <p class="ab-card__more">
+            <a href="https://youtu.be/K-6fGn7Eqys" target="_blank" rel="noopener">Watch on YouTube</a>
+            <em class="ab-card__or">or</em>
+            <button type="button" class="ab-cart-add" aria-label="Add LimerenceM 8D Jelly Seamless Pantyhose to cart" data-name="LimerenceM 8D Jelly Seamless Pantyhose" data-price="9"><span class="ab-cart-add__plus">+</span>Add to cart</button>
+          </p>
+        </div>
+      </article>
+
+      <article class="ab-card ab-card--plate ab-card--band ab-card--video" id="lolita-lavender-video">
+        <div class="ab-card__media">
+          <!-- Two product photos (2026-11-02) replace the video's own
+               thumbnail; the picture opens them in the lightbox, so the video
+               link stays on the title and the action line. 01.jpg is the 3:2
+               cover cut from the plain white-sweep shot of the dress. -->
+          <img src="/assets/desire/lolita-lavender-dress/01.jpg" alt="The white nurse dress seen from the shoulders down on a white sweep with the gingham hem below a red-trimmed ruffle" loading="lazy" decoding="async" data-gallery="/assets/desire/lolita-lavender-dress/01.jpg|The white nurse dress seen from the shoulders down on a white sweep with the gingham hem below a red-trimmed ruffle,/assets/desire/lolita-lavender-dress/02.jpg|The nurse dress worn with lavender over-the-knee socks and black block-heeled Mary Janes on a white sweep">
+        </div>
+        <div class="ab-card__copy">
+          <h3 class="ab-card__title"><a href="https://www.youtube.com/watch?v=4OBpMGktb10" target="_blank" rel="noopener">Japanese-Style Candy Gingham Nurse Dress</a><span class="ab-card__price">$118</span></h3>
+          <p class="ab-card__desc">A white nurse-style dress with a lace-trimmed collar, a pink laced corset panel and a gingham hem.</p>
+          <p class="ab-card__more">
+            <a href="https://www.youtube.com/watch?v=4OBpMGktb10" target="_blank" rel="noopener">Watch on YouTube</a>
+            <em class="ab-card__or">or</em>
+            <button type="button" class="ab-cart-add" aria-label="Add Japanese-Style Candy Gingham Nurse Dress to cart" data-name="Japanese-Style Candy Gingham Nurse Dress" data-price="118"><span class="ab-cart-add__plus">+</span>Add to cart</button>
+          </p>
+        </div>
+      </article>
+
+
+      <!-- Four more Douyin photo posts (2026-11-02): three razors sent in one
+           message and a fourth sent straight after, kept in the order they
+           arrived (oldest at the top, same as the cards below).  Lightbox-only,
+           no link and no action line on the card.  Pictures kept per post:
+           Tatara 3, Leaf 6, Merkur 4, the MÜHLE 9; 01.jpg is the 3:2 cover cut
+           from one of them and is repeated as a frame only through its source. -->
+      <article class="ab-card ab-card--plate ab-card--band" id="tatara-masamune">
+        <div class="ab-card__media">
+          <img src="/assets/groom/tatara-masamune/01.jpg" alt="Two black Tatara razors held head-on against a textured grey wall" loading="lazy" decoding="async" data-gallery="/assets/groom/tatara-masamune/01.jpg|Two black Tatara razors held head-on against a textured grey wall,/assets/groom/tatara-masamune/02.jpg|The Masamune and Nodachi T1 base plates with two handles on a grey wall,/assets/groom/tatara-masamune/03.jpg|The two razors side by side above a textured grey wall,/assets/groom/tatara-masamune/04.jpg|One razor upright on a dome stand with the other lying flat beside it">
+        </div>
+        <div class="ab-card__copy">
+          <h3 class="ab-card__title">Tatara, the Masamune and the Nodachi</h3>
+          <p class="ab-card__sub">Shaving&nbsp;· Tatara&nbsp;· Masamune&nbsp;· Nodachi</p>
+          <p class="ab-card__desc">Two black razors against a bare grey wall — one upright on its dome stand, one lying flat.</p>
+        </div>
+      </article>
+
+      <article class="ab-card ab-card--plate ab-card--band" id="leaf-razor">
+        <div class="ab-card__media">
+          <img src="/assets/groom/leaf-razor/01.jpg" alt="The Leaf razor lying in its opened black box beside the manual and a pack of blades" loading="lazy" decoding="async" data-gallery="/assets/groom/leaf-razor/01.jpg|The Leaf razor lying in its opened black box beside the manual and a pack of blades,/assets/groom/leaf-razor/02.jpg|The sealed black Leaf Razor box on a dark cutting mat,/assets/groom/leaf-razor/03.jpg|The open box again with the razor in its tray and the manual at the left,/assets/groom/leaf-razor/04.jpg|The razor standing on the box lid in front of a keyboard,/assets/groom/leaf-razor/05.jpg|The razor seen from above on the dark cutting mat,/assets/groom/leaf-razor/06.jpg|The razor standing upright on its handle with the black holder beside it,/assets/groom/leaf-razor/07.jpg|A close view of the razor head with a black grip on the handle">
+        </div>
+        <div class="ab-card__copy">
+          <h3 class="ab-card__title">Leaf Razor, Opened from Its Black Box</h3>
+          <p class="ab-card__sub">Shaving&nbsp;· Leaf Razor&nbsp;· Safety Razor&nbsp;· Three Blades</p>
+          <p class="ab-card__desc">Unboxed on a cutting mat: the razor in its tray, a manual, a pack of blades — and the razor alone.</p>
+        </div>
+      </article>
+
+      <article class="ab-card ab-card--plate ab-card--band" id="merkur-39c">
+        <div class="ab-card__media">
+          <img src="/assets/groom/merkur-39c/01.jpg" alt="A Merkur 39C resting on a chrome wire stand against a dark background" loading="lazy" decoding="async" data-gallery="/assets/groom/merkur-39c/01.jpg|A Merkur 39C resting on a chrome wire stand against a dark background,/assets/groom/merkur-39c/02.jpg|The razor and its stand seen whole in the square frame,/assets/groom/merkur-39c/03.jpg|The razor standing upright in front of a dark backdrop,/assets/groom/merkur-39c/04.jpg|The head unscrewed into two pieces with the handle to the right,/assets/groom/merkur-39c/05.jpg|A blade on the base plate with the top cap leaning beside it">
+        </div>
+        <div class="ab-card__copy">
+          <h3 class="ab-card__title">Merkur 39C, the Slant on a Wire Stand</h3>
+          <p class="ab-card__sub">Shaving&nbsp;· Merkur&nbsp;· 39C&nbsp;· Slant Bar</p>
+          <p class="ab-card__desc">The 39C sits in its wire stand, stands up, and comes apart to show the two-piece head.</p>
+        </div>
+      </article>
+
+      <article class="ab-card ab-card--plate ab-card--band" id="muhle-razor">
+        <div class="ab-card__media">
+          <img src="/assets/groom/muhle-razor/01.jpg" alt="A chrome MÜHLE razor resting on its grey box with a manual blurred behind" loading="lazy" decoding="async" data-gallery="/assets/groom/muhle-razor/01.jpg|A chrome MÜHLE razor resting on its grey box with a manual blurred behind,/assets/groom/muhle-razor/02.jpg|A man shaving his jaw with the razor in front of a window,/assets/groom/muhle-razor/03.jpg|The razor on a white desk between a watch and a laptop,/assets/groom/muhle-razor/04.jpg|The razor lying on its manual with a dark leather case behind it,/assets/groom/muhle-razor/05.jpg|The razor on a white desk with the grey box behind and the leather case at the right,/assets/groom/muhle-razor/06.jpg|The razor resting on the grey box with the white manuals blurred behind,/assets/groom/muhle-razor/07.jpg|A close view of the razor head with the knurled handle running off the right,/assets/groom/muhle-razor/08.jpg|The razor head resting on the green page of the manual with a soap box behind,/assets/groom/muhle-razor/09.jpg|A hand holding the razor upright over a white desk with a watch behind,/assets/groom/muhle-razor/10.jpg|The whole kit laid out flat around the razor on a white desk">
+        </div>
+        <div class="ab-card__copy">
+          <h3 class="ab-card__title">A MÜHLE Razor on Its Grey Box</h3>
+          <p class="ab-card__sub">Shaving&nbsp;· MÜHLE&nbsp;· Safety Razor&nbsp;· Leather Case</p>
+          <p class="ab-card__desc">A razor that arrives like a gift: grey box, leather case, soap, blades, and a shave at the end.</p>
+        </div>
+      </article>
 
       <!-- Three Douyin photo posts (2026-11-02), all lightbox-only like the two
            cards below: every frame is downloaded, nothing on the card links out
@@ -25,7 +203,7 @@ hide:
         <div class="ab-card__copy">
           <h3 class="ab-card__title">Dior Sauvage, the Eau de Parfum and the Elixir</h3>
           <p class="ab-card__sub">Fragrance&nbsp;· Sauvage&nbsp;· Eau de Parfum&nbsp;· Elixir</p>
-          <p class="ab-card__desc">A Sauvage bottle on wet rock, then the Elixir and the Eau de Parfum side by side in their boxes.</p>
+          <p class="ab-card__desc">Sauvage first on wet rock — later the Elixir and the Eau de Parfum come out of their boxes.</p>
         </div>
       </article>
 
@@ -36,7 +214,7 @@ hide:
         <div class="ab-card__copy">
           <h3 class="ab-card__title">Bleu de Chanel, Opened from the White Box</h3>
           <p class="ab-card__sub">Fragrance&nbsp;· Bleu de Chanel&nbsp;· Eau de Parfum&nbsp;· Gift Box</p>
-          <p class="ab-card__desc">The Bleu de Chanel bottle in its pouch inside the opened box, then the bottle on a white table.</p>
+          <p class="ab-card__desc">Out of the white pouch and the Chanel box, then down on a white table in the light.</p>
         </div>
       </article>
 
@@ -47,7 +225,7 @@ hide:
         <div class="ab-card__copy">
           <h3 class="ab-card__title">Acqua di Giò, Held in the Afternoon Light</h3>
           <p class="ab-card__sub">Fragrance&nbsp;· Acqua di Giò&nbsp;· Aquatic&nbsp;· Men&#x27;s</p>
-          <p class="ab-card__desc">Acqua di Giò in low afternoon sun, first beside a glass carafe, then held up by a window.</p>
+          <p class="ab-card__desc">Afternoon light, a glass carafe, and a branch of yellow ginkgo: the bottle in all three.</p>
         </div>
       </article>
 
@@ -261,6 +439,7 @@ hide:
           </p>
         </div>
       </article>
+
 
     </div>
   </section>
