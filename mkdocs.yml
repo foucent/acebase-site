@@ -52,20 +52,20 @@ markdown_extensions:
 extra_css:
   # uncrate loads after the first two: the magazine layout owns the
   # widest-reaching selectors, so it should win any specificity tie against
-  # them. cart.css comes after those and gallery.css after it — the card button
-  # has to beat the action line it sits in, and the count pill has to win the
-  # corner of the frame against the band's own media rules.
+  # them. sourcing.css comes after those and gallery.css after it — the card
+  # button has to beat the action line it sits in, and the count pill has to win
+  # the corner of the frame against the band's own media rules.
   - stylesheets/extra.css
   - stylesheets/header.css
   - stylesheets/uncrate.css
-  - stylesheets/cart.css
+  - stylesheets/sourcing.css
   - stylesheets/gallery.css
   - stylesheets/crisp.css
 
 extra_javascript:
-  # crisp.js first: cart.js hands a cart to window.abOpenCrisp.
+  # crisp.js first: sourcing.js hands its request to window.abOpenCrisp.
   - javascripts/crisp.js
-  - javascripts/cart.js
+  - javascripts/sourcing.js
   - javascripts/gallery.js
   - javascripts/digital.js
 

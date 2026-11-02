@@ -15,9 +15,10 @@ hide:
      卡片版式取自 acebase.cc 的 /gift-cards/（2026-11-01 用户：「按 /gift-cards/
      页的样式进行排版」）：--plate --wordmark 的 5:2 画框（品牌条 cover 裁进
      去）、左上角档数角标、价格跟在标题末尾、Spec 下拉。栅格是 --pricing 的
-     三列（1024 起）。**动作行没有跟着换**：仍是本站的 .ab-cart-add（cart.js），
-     不是 /gift-cards/ 的 Buy，所以档位名进 data-name、同款不同档在购物车里
-     是两行；下拉换档时由 docs/javascripts/digital.js 同步价格与 data-*。
+     三列（1024 起）。动作行是本站的 .ab-request（sourcing.js；2026-11-02 由
+     + Add to cart 改写，同日按钮文案再改为 ORDER NOW，购物车已取消）：点一下
+     把档位名与价格送进在线客服，不是 /gift-cards/ 的 Buy；下拉换档时由
+     docs/javascripts/digital.js 同步价格、data-* 与无障碍名。
      品牌条图在 docs/assets/digital/<id>.png（1200x250，保留原画布留白）。 -->
 
 <div class="ab-mag" markdown="0">
@@ -49,7 +50,7 @@ hide:
             <option data-name="Douyin Live — 20000 Diamonds" data-price="324.12">20000 Diamonds &mdash; $324.12</option>
             </select>
           </label>
-          <p class="ab-card__more"><button type="button" class="ab-cart-add" aria-label="Add Douyin Live — 60 Diamonds to cart" data-name="Douyin Live — 60 Diamonds" data-price="1.17"><span class="ab-cart-add__plus">+</span>Add to cart</button></p>
+          <p class="ab-card__more"><button type="button" class="ab-request" aria-label="ORDER NOW — Douyin Live — 60 Diamonds" data-name="Douyin Live — 60 Diamonds" data-price="1.17">ORDER NOW</button></p>
         </div>
       </article>
 
@@ -81,7 +82,7 @@ hide:
             <option data-name="Telegram — Premium 12 Months" data-price="33.73">Premium 12 Months &mdash; $33.73</option>
             </select>
           </label>
-          <p class="ab-card__more"><button type="button" class="ab-cart-add" aria-label="Add Telegram — 50 Stars to cart" data-name="Telegram — 50 Stars" data-price="0.88"><span class="ab-cart-add__plus">+</span>Add to cart</button></p>
+          <p class="ab-card__more"><button type="button" class="ab-request" aria-label="ORDER NOW — Telegram — 50 Stars" data-name="Telegram — 50 Stars" data-price="0.88">ORDER NOW</button></p>
         </div>
       </article>
 
@@ -103,7 +104,7 @@ hide:
             <option data-name="Amazon Gift Card (US) — 100 USD" data-price="99.00">100 USD &mdash; $99</option>
             </select>
           </label>
-          <p class="ab-card__more"><button type="button" class="ab-cart-add" aria-label="Add Amazon Gift Card (US) — 5 USD to cart" data-name="Amazon Gift Card (US) — 5 USD" data-price="4.95"><span class="ab-cart-add__plus">+</span>Add to cart</button></p>
+          <p class="ab-card__more"><button type="button" class="ab-request" aria-label="ORDER NOW — Amazon Gift Card (US) — 5 USD" data-name="Amazon Gift Card (US) — 5 USD" data-price="4.95">ORDER NOW</button></p>
         </div>
       </article>
 
@@ -126,7 +127,7 @@ hide:
             <option data-name="Apple Gift Card — 500 USD" data-price="454.50">500 USD &mdash; $454.50</option>
             </select>
           </label>
-          <p class="ab-card__more"><button type="button" class="ab-cart-add" aria-label="Add Apple Gift Card — 5 USD to cart" data-name="Apple Gift Card — 5 USD" data-price="4.50"><span class="ab-cart-add__plus">+</span>Add to cart</button></p>
+          <p class="ab-card__more"><button type="button" class="ab-request" aria-label="ORDER NOW — Apple Gift Card — 5 USD" data-name="Apple Gift Card — 5 USD" data-price="4.50">ORDER NOW</button></p>
         </div>
       </article>
 
@@ -148,7 +149,7 @@ hide:
             <option data-name="Google Play Gift Card — 100 USD" data-price="99.00">100 USD &mdash; $99</option>
             </select>
           </label>
-          <p class="ab-card__more"><button type="button" class="ab-cart-add" aria-label="Add Google Play Gift Card — 5 USD to cart" data-name="Google Play Gift Card — 5 USD" data-price="4.95"><span class="ab-cart-add__plus">+</span>Add to cart</button></p>
+          <p class="ab-card__more"><button type="button" class="ab-request" aria-label="ORDER NOW — Google Play Gift Card — 5 USD" data-name="Google Play Gift Card — 5 USD" data-price="4.95">ORDER NOW</button></p>
         </div>
       </article>
 
@@ -170,7 +171,7 @@ hide:
             <option data-name="Netflix Gift Card (US) — 100 USD" data-price="94.50">100 USD &mdash; $94.50</option>
             </select>
           </label>
-          <p class="ab-card__more"><button type="button" class="ab-cart-add" aria-label="Add Netflix Gift Card (US) — 20 USD to cart" data-name="Netflix Gift Card (US) — 20 USD" data-price="20.25"><span class="ab-cart-add__plus">+</span>Add to cart</button></p>
+          <p class="ab-card__more"><button type="button" class="ab-request" aria-label="ORDER NOW — Netflix Gift Card (US) — 20 USD" data-name="Netflix Gift Card (US) — 20 USD" data-price="20.25">ORDER NOW</button></p>
         </div>
       </article>
 
@@ -193,7 +194,7 @@ hide:
             <option data-name="Xbox Live Gift Card — 100 USD" data-price="88.19">100 USD &mdash; $88.19</option>
             </select>
           </label>
-          <p class="ab-card__more"><button type="button" class="ab-cart-add" aria-label="Add Xbox Live Gift Card — 5 USD to cart" data-name="Xbox Live Gift Card — 5 USD" data-price="4.59"><span class="ab-cart-add__plus">+</span>Add to cart</button></p>
+          <p class="ab-card__more"><button type="button" class="ab-request" aria-label="ORDER NOW — Xbox Live Gift Card — 5 USD" data-name="Xbox Live Gift Card — 5 USD" data-price="4.59">ORDER NOW</button></p>
         </div>
       </article>
 
@@ -218,7 +219,7 @@ hide:
             <option data-name="Kammelna Gift Card — 250,000 Gold" data-price="485.91">250,000 Gold &mdash; $485.91</option>
             </select>
           </label>
-          <p class="ab-card__more"><button type="button" class="ab-cart-add" aria-label="Add Kammelna Gift Card — 30 Days to cart" data-name="Kammelna Gift Card — 30 Days" data-price="8.09"><span class="ab-cart-add__plus">+</span>Add to cart</button></p>
+          <p class="ab-card__more"><button type="button" class="ab-request" aria-label="ORDER NOW — Kammelna Gift Card — 30 Days" data-name="Kammelna Gift Card — 30 Days" data-price="8.09">ORDER NOW</button></p>
         </div>
       </article>
 

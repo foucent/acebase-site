@@ -1,0 +1,67 @@
+/* The Request Sourcing button — all that is left of cart.css.
+
+   2026-11-02: the cart went away at the user's request (「全站都没有购物车」)
+   and its "+ Add to cart" became "Request Sourcing". The stylesheet keeps only
+   the button recipe; the floating button, the drawer, the toast and their
+   tokens left with cart.js.
+
+   The control is a <button>, not a link, so it inherits none of the action
+   line's link typography and has to be handed it by hand — mygear's green disc
+   would sit in the middle of a line of serif. Two recipes, the same two
+   uncrate.css gives `.ab-card__more a`: the plain line (13px/700/uppercase) and
+   the band cards the catalogue pages actually use (serif 15px/400, no
+   transform). The band rule wins on specificity and on source order —
+   sourcing.css is the last sheet before gallery.css. */
+.md-typeset .ab-mag .ab-card__more .ab-request {
+  display: inline-block;
+  margin: 0;
+  padding: 0 0 2px;
+  border: 0;
+  border-bottom: 1px solid var(--ab-accent);
+  border-radius: 0;
+  background: none;
+  box-shadow: none;
+  font-family: inherit;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: inherit;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  color: var(--ab-accent-deep);
+  cursor: pointer;
+}
+
+.md-typeset .ab-mag .ab-card--band .ab-card__more .ab-request {
+  display: inline-block;
+  margin: 0;
+  padding: 0 0 2px;
+  border: 0;
+  border-bottom: 1px solid var(--ab-accent);
+  border-radius: 0;
+  background: none;
+  box-shadow: none;
+  font-family: var(--ab-serif);
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.4;
+  letter-spacing: 0;
+  text-transform: none;
+  color: var(--ab-accent-deep);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.md-typeset .ab-mag .ab-card__more .ab-request:hover,
+.md-typeset .ab-mag .ab-card__more .ab-request:focus {
+  color: var(--ab-text);
+  border-bottom-color: var(--ab-text);
+}
+
+/* The flash after a click, in the action line's own idiom rather than a disc
+   turning. The band selector is repeated for the same reason the link rules
+   are: it out-weighs the plain one. */
+.md-typeset .ab-mag .ab-card__more .ab-request--sent,
+.md-typeset .ab-mag .ab-card--band .ab-card__more .ab-request--sent {
+  color: var(--ab-green);
+  border-bottom-color: var(--ab-green);
+}

@@ -19,72 +19,77 @@ hide:
     <div class="ab-list" aria-label="Style catalogue">
 
 
-      <!-- Four YouTube-only cards (2026-11-01), added to the same pattern as
-           lolita-lavender-video below: the picture, the title and the action
-           line all open the video, and the card sells nothing. Covers are the
-           videos' own maxresdefault thumbnails cut to the band's 3:2 (960x640)
-           by _tmp_ocr/yt_thumb_prep.py — no frame is grabbed, so the picture is
+      <!-- Four YouTube cards (2026-11-01). Since 2026-11-02 every card on this
+           page uses one layout (user: 「将页面中所有的卡片都按 … 样式排版」): a
+           picture, a title, one description line and one Request Sourcing
+           button — no price anywhere on the page (「将页面中所有的价格都删除」).
+           A card that has a video keeps the video
+           in data-gallery-video rather than linking out: clicking the picture
+           opens the lightbox, and its last frame carries the "Watch Details on
+           YouTube" play button. Covers are the videos' own maxresdefault
+           thumbnails cut to the band's 3:2 (960x640) by
+           _tmp_ocr/yt_thumb_prep.py — no frame is grabbed, so the picture is
            the one the channel published. -->
       <article class="ab-card ab-card--plate ab-card--band ab-card--video" id="oil-shine-18d-pantyhose">
         <div class="ab-card__media">
-          <a href="https://www.youtube.com/watch?v=EHL1VbxZRHI" target="_blank" rel="noopener">
-            <img src="/assets/desire/oil-shine-18d-pantyhose/01.jpg" alt="Black sheer pantyhose on two feet in black strappy stiletto sandals over a pale grey rug" loading="lazy" decoding="async">
-          </a>
+          <!-- One frame (2026-11-02, user: 「如果卡片有youtube链接，也要同样
+              实现 … 卡片的效果」): the picture that used to open the video in a
+              new tab is now the card's one-frame lightbox, and that frame
+              carries the play button. Same cover file, same URL. -->
+          <img src="/assets/desire/oil-shine-18d-pantyhose/01.jpg" alt="Black sheer pantyhose on two feet in black strappy stiletto sandals over a pale grey rug" loading="lazy" decoding="async" data-gallery-video="https://www.youtube.com/watch?v=EHL1VbxZRHI" data-gallery="/assets/desire/oil-shine-18d-pantyhose/01.jpg|Black sheer pantyhose on two feet in black strappy stiletto sandals over a pale grey rug">
         </div>
         <div class="ab-card__copy">
-          <h3 class="ab-card__title"><a href="https://www.youtube.com/watch?v=EHL1VbxZRHI" target="_blank" rel="noopener">18D Oil Shiny Pantyhose + Strappy Stiletto Sandals</a></h3>
+          <h3 class="ab-card__title">18D Oil Shiny Pantyhose + Strappy Stiletto Sandals</h3>
           <p class="ab-card__desc">Black 18-denier oil-shine pantyhose worn with black strappy stiletto sandals on a pale rug.</p>
-          <p class="ab-card__more">
-            <a href="https://www.youtube.com/watch?v=EHL1VbxZRHI" target="_blank" rel="noopener">Watch on YouTube</a>
-          </p>
+          <p class="ab-card__more"><button type="button" class="ab-request" aria-label="Request sourcing for 18D Oil Shiny Pantyhose + Strappy Stiletto Sandals" data-name="18D Oil Shiny Pantyhose + Strappy Stiletto Sandals">Request Sourcing</button></p>
         </div>
       </article>
 
       <article class="ab-card ab-card--plate ab-card--band ab-card--video" id="white-sheer-15d-pantyhose">
         <div class="ab-card__media">
-          <!-- Five product screenshots (2026-11-02) replace the video's own
-               thumbnail; the picture now opens them in the lightbox, so the
-               video link stays on the title and the action line. -->
-          <img src="/assets/desire/white-sheer-15d-pantyhose/01.jpg" alt="White tights on two legs stretched out along a grey rug with white Mary Jane flats at the far end" loading="lazy" decoding="async" data-gallery="/assets/desire/white-sheer-15d-pantyhose/01.jpg|White tights on two legs stretched out along a grey rug with white Mary Jane flats at the far end,/assets/desire/white-sheer-15d-pantyhose/02.jpg|The box held up in one hand showing the size chart and the M 1D label with its specs,/assets/desire/white-sheer-15d-pantyhose/03.jpg|A hand inside the tights pressing the sheer knit up against the palm,/assets/desire/white-sheer-15d-pantyhose/04.jpg|Two feet in white tights on a pale rug with the toes showing through the knit,/assets/desire/white-sheer-15d-pantyhose/05.jpg|Both hands spreading the white knit wide between them over a grey floor">
+          <!-- Six frames (2026-11-02): the video's own cover at both ends —
+               it is the card's cover and, as the last frame, the one the play
+               button sits on — with the four product shots in between. The
+               cover is one file referenced twice, so a reader who walks the
+               set never downloads it a second time. -->
+          <img src="/assets/desire/white-sheer-15d-pantyhose/01.jpg" alt="Two feet in white tights with the toes showing through the knit on a pale rug below a window" loading="lazy" decoding="async" data-gallery-video="https://youtu.be/Gbz23DwtnnQ" data-gallery="/assets/desire/white-sheer-15d-pantyhose/01.jpg|Two feet in white tights with the toes showing through the knit on a pale rug below a window,/assets/desire/white-sheer-15d-pantyhose/02.jpg|The box held up in one hand showing the size chart and the M 1D label with its specs,/assets/desire/white-sheer-15d-pantyhose/03.jpg|A hand inside the tights pressing the sheer knit up against the palm,/assets/desire/white-sheer-15d-pantyhose/04.jpg|Two feet in white tights on a pale rug with the toes showing through the knit,/assets/desire/white-sheer-15d-pantyhose/05.jpg|Both hands spreading the white knit wide between them over a grey floor,/assets/desire/white-sheer-15d-pantyhose/01.jpg|Two feet in white tights with the toes showing through the knit on a pale rug below a window">
         </div>
         <div class="ab-card__copy">
-          <h3 class="ab-card__title"><a href="https://youtu.be/Gbz23DwtnnQ" target="_blank" rel="noopener">1D White Moonlight Seamless Pantyhose</a><span class="ab-card__price">$5</span></h3>
+          <h3 class="ab-card__title">1D White Moonlight Seamless Pantyhose</h3>
           <p class="ab-card__desc">Milk white — 80.4% nylon, 19.6% spandex.</p>
-          <p class="ab-card__more">
-            <a href="https://youtu.be/Gbz23DwtnnQ" target="_blank" rel="noopener">Watch on YouTube</a>
-            <em class="ab-card__or">or</em>
-            <button type="button" class="ab-cart-add" aria-label="Add 1D White Moonlight Seamless Pantyhose to cart" data-name="1D White Moonlight Seamless Pantyhose" data-price="5"><span class="ab-cart-add__plus">+</span>Add to cart</button>
-          </p>
+          <p class="ab-card__more"><button type="button" class="ab-request" aria-label="Request sourcing for 1D White Moonlight Seamless Pantyhose" data-name="1D White Moonlight Seamless Pantyhose">Request Sourcing</button></p>
         </div>
       </article>
 
       <article class="ab-card ab-card--plate ab-card--band ab-card--video" id="layered-dress-slingback-video">
         <div class="ab-card__media">
-          <a href="https://www.youtube.com/watch?v=cqeaealGTkU" target="_blank" rel="noopener">
-            <img src="/assets/desire/layered-dress-slingback-video/01.jpg" alt="Black sheer tights and black patent slingback pumps under a white ruffled dress worn over black" loading="lazy" decoding="async">
-          </a>
+          <!-- One frame (2026-11-02), same treatment as the oil-shine card: the
+              link out to YouTube became a one-frame lightbox whose play button
+              opens it. Same cover file, same URL. -->
+          <img src="/assets/desire/layered-dress-slingback-video/01.jpg" alt="Black sheer tights and black patent slingback pumps under a white ruffled dress worn over black" loading="lazy" decoding="async" data-gallery-video="https://www.youtube.com/watch?v=cqeaealGTkU" data-gallery="/assets/desire/layered-dress-slingback-video/01.jpg|Black sheer tights and black patent slingback pumps under a white ruffled dress worn over black">
         </div>
         <div class="ab-card__copy">
-          <h3 class="ab-card__title"><a href="https://www.youtube.com/watch?v=cqeaealGTkU" target="_blank" rel="noopener">Layered White Ruffled Dress + Slingback Pumps</a></h3>
+          <h3 class="ab-card__title">Layered White Ruffled Dress + Slingback Pumps</h3>
           <p class="ab-card__desc">A white ruffled dress layered over black, with black sheer tights and patent slingback pumps.</p>
-          <p class="ab-card__more">
-            <a href="https://www.youtube.com/watch?v=cqeaealGTkU" target="_blank" rel="noopener">Watch on YouTube</a>
-          </p>
+          <p class="ab-card__more"><button type="button" class="ab-request" aria-label="Request sourcing for Layered White Ruffled Dress + Slingback Pumps" data-name="Layered White Ruffled Dress + Slingback Pumps">Request Sourcing</button></p>
         </div>
       </article>
 
       <article class="ab-card ab-card--plate ab-card--band ab-card--video" id="white-stockings-black-coat-video">
         <div class="ab-card__media">
-          <a href="https://www.youtube.com/watch?v=-2_7i9SY-Ts" target="_blank" rel="noopener">
-            <img src="/assets/desire/white-stockings-black-coat-video/01.jpg" alt="White thigh-high stockings under a black coat with black patent Mary Janes on a clear chair" loading="lazy" decoding="async">
-          </a>
+          <!-- One frame (2026-11-02, user: 「默认首图为youtube链接的封面图，点击
+               图片后，也同样显示 Watch Details on YouTube 按钮」): the video's own
+               cover, cut to the card's 3:2 band. The picture is the whole set, so
+               the lightbox opens on it and the last — only — frame carries the
+               play button. No title link and no action link since later that day
+               (「卡面上面的Watch Details on YouTube 按钮都去掉，且卡片标题都不可
+               点击」), so the lightbox is this card's only way to the video. -->
+          <img src="/assets/desire/white-stockings-black-coat-video/01.jpg" alt="White thigh-high stockings under a black coat with black patent Mary Janes on a clear chair" loading="lazy" decoding="async" data-gallery-video="https://www.youtube.com/watch?v=-2_7i9SY-Ts" data-gallery="/assets/desire/white-stockings-black-coat-video/01.jpg|White thigh-high stockings under a black coat with black patent Mary Janes on a clear chair">
         </div>
         <div class="ab-card__copy">
-          <h3 class="ab-card__title"><a href="https://www.youtube.com/watch?v=-2_7i9SY-Ts" target="_blank" rel="noopener">Over-the-Knee White Stockings + Black Coat</a></h3>
+          <h3 class="ab-card__title">Over-the-Knee White Stockings + Black Coat</h3>
           <p class="ab-card__desc">White thigh-high stockings under a black coat with black patent Mary Janes on a clear chair.</p>
-          <p class="ab-card__more">
-            <a href="https://www.youtube.com/watch?v=-2_7i9SY-Ts" target="_blank" rel="noopener">Watch on YouTube</a>
-          </p>
+          <p class="ab-card__more"><button type="button" class="ab-request" aria-label="Request sourcing for Over-the-Knee White Stockings + Black Coat" data-name="Over-the-Knee White Stockings + Black Coat">Request Sourcing</button></p>
         </div>
       </article>
 
@@ -101,40 +106,44 @@ hide:
         <div class="ab-card__copy">
           <h3 class="ab-card__title">The Autumn Skirt, Worn With a Lace-Trimmed Top</h3>
           <p class="ab-card__desc">A taupe knee-length skirt with a front vent, worn with a cream off-the-shoulder top edged in lace.</p>
+          <p class="ab-card__more"><button type="button" class="ab-request" aria-label="Request sourcing for The Autumn Skirt, Worn With a Lace-Trimmed Top" data-name="The Autumn Skirt, Worn With a Lace-Trimmed Top">Request Sourcing</button></p>
         </div>
       </article>
 
       <article class="ab-card ab-card--plate ab-card--band ab-card--video" id="moonlight-sheer-1d-tights">
         <div class="ab-card__media">
-          <img src="/assets/desire/moonlight-sheer-1d-tights/01.jpg" alt="Sand tights on two feet turned soles-up with the stitched toe seam showing and nude sandals set behind" loading="lazy" decoding="async" data-gallery="/assets/desire/moonlight-sheer-1d-tights/01.jpg|Sand tights on two feet turned soles-up with the stitched toe seam showing and nude sandals set behind,/assets/desire/moonlight-sheer-1d-tights/02.jpg|A black gift box with a red ribbon cross held up in white gloves over a leather desk,/assets/desire/moonlight-sheer-1d-tights/03.jpg|The box turned to show its printed label with the size chart barcode and 8D 1 pair,/assets/desire/moonlight-sheer-1d-tights/04.jpg|The tights worn under nude knot-front sandals with a block heel on a grey rug,/assets/desire/moonlight-sheer-1d-tights/05.jpg|A hand seen through the stretched sheer knit against a leather desk,/assets/desire/moonlight-sheer-1d-tights/06.jpg|White gloves holding the folded pair flat with the small red m mark at its waist">
+          <!-- 2026-11-02, user: 「…的链接是 https://youtu.be/K-6fGn7Eqys」 — the video joins the
+               lightbox the way the nurse-dress card carries its own: data-gallery-video
+               on the same picture, and the cover repeated as the last frame so the
+               "Watch Details on YouTube" button sits on the cover. -->
+          <img src="/assets/desire/moonlight-sheer-1d-tights/01.jpg" alt="Sand tights on two feet turned soles-up with the stitched toe seam showing and nude sandals set behind" loading="lazy" decoding="async" data-gallery-video="https://youtu.be/K-6fGn7Eqys" data-gallery="/assets/desire/moonlight-sheer-1d-tights/01.jpg|Sand tights on two feet turned soles-up with the stitched toe seam showing and nude sandals set behind,/assets/desire/moonlight-sheer-1d-tights/02.jpg|A black gift box with a red ribbon cross held up in white gloves over a leather desk,/assets/desire/moonlight-sheer-1d-tights/03.jpg|The box turned to show its printed label with the size chart barcode and 8D 1 pair,/assets/desire/moonlight-sheer-1d-tights/04.jpg|The tights worn under nude knot-front sandals with a block heel on a grey rug,/assets/desire/moonlight-sheer-1d-tights/05.jpg|A hand seen through the stretched sheer knit against a leather desk,/assets/desire/moonlight-sheer-1d-tights/06.jpg|White gloves holding the folded pair flat with the small red m mark at its waist,/assets/desire/moonlight-sheer-1d-tights/01.jpg|Sand tights on two feet turned soles-up with the stitched toe seam showing and nude sandals set behind">
         </div>
         <div class="ab-card__copy">
-          <h3 class="ab-card__title"><a href="https://youtu.be/K-6fGn7Eqys" target="_blank" rel="noopener">LimerenceM 8D Jelly Seamless Pantyhose</a><span class="ab-card__price">$9</span></h3>
+          <h3 class="ab-card__title">LimerenceM 8D Jelly Seamless Pantyhose</h3>
           <p class="ab-card__desc">Seamless — foot 55.3% spandex, 44.7% nylon.</p>
-          <p class="ab-card__more">
-            <a href="https://youtu.be/K-6fGn7Eqys" target="_blank" rel="noopener">Watch on YouTube</a>
-            <em class="ab-card__or">or</em>
-            <button type="button" class="ab-cart-add" aria-label="Add LimerenceM 8D Jelly Seamless Pantyhose to cart" data-name="LimerenceM 8D Jelly Seamless Pantyhose" data-price="9"><span class="ab-cart-add__plus">+</span>Add to cart</button>
-          </p>
+          <p class="ab-card__more"><button type="button" class="ab-request" aria-label="Request sourcing for LimerenceM 8D Jelly Seamless Pantyhose" data-name="LimerenceM 8D Jelly Seamless Pantyhose">Request Sourcing</button></p>
         </div>
       </article>
 
       <article class="ab-card ab-card--plate ab-card--band ab-card--video" id="lolita-lavender-video">
         <div class="ab-card__media">
           <!-- Two product photos (2026-11-02) replace the video's own
-               thumbnail; the picture opens them in the lightbox, so the video
-               link stays on the title and the action line. 01.jpg is the 3:2
-               cover cut from the plain white-sweep shot of the dress. -->
-          <img src="/assets/desire/lolita-lavender-dress/01.jpg" alt="The white nurse dress seen from the shoulders down on a white sweep with the gingham hem below a red-trimmed ruffle" loading="lazy" decoding="async" data-gallery="/assets/desire/lolita-lavender-dress/01.jpg|The white nurse dress seen from the shoulders down on a white sweep with the gingham hem below a red-trimmed ruffle,/assets/desire/lolita-lavender-dress/02.jpg|The nurse dress worn with lavender over-the-knee socks and black block-heeled Mary Janes on a white sweep">
+               thumbnail; the picture opens them in the lightbox. The title and
+               action links went later the same day (「卡片标题都不可点击」 /
+               「Watch Details on YouTube 按钮都去掉」), so the only action left is
+               Request Sourcing. 01.jpg is the 3:2 cover cut from the plain
+               white-sweep shot of the dress.
+               2026-11-02, user: 「…的链接是https://youtu.be/4OBpMGktb10」 — the
+               video is back on the card the way the stockings card carries it:
+               in data-gallery-video, opened from the lightbox. Its last frame is
+               the cover again (same file referenced twice, as on the 1D card),
+               so the "Watch Details on YouTube" button sits on the cover. -->
+          <img src="/assets/desire/lolita-lavender-dress/01.jpg" alt="The white nurse dress seen from the shoulders down on a white sweep with the gingham hem below a red-trimmed ruffle" loading="lazy" decoding="async" data-gallery-video="https://youtu.be/4OBpMGktb10" data-gallery="/assets/desire/lolita-lavender-dress/01.jpg|The white nurse dress seen from the shoulders down on a white sweep with the gingham hem below a red-trimmed ruffle,/assets/desire/lolita-lavender-dress/02.jpg|The nurse dress worn with lavender over-the-knee socks and black block-heeled Mary Janes on a white sweep,/assets/desire/lolita-lavender-dress/01.jpg|The white nurse dress seen from the shoulders down on a white sweep with the gingham hem below a red-trimmed ruffle">
         </div>
         <div class="ab-card__copy">
-          <h3 class="ab-card__title"><a href="https://www.youtube.com/watch?v=4OBpMGktb10" target="_blank" rel="noopener">Japanese-Style Candy Gingham Nurse Dress</a><span class="ab-card__price">$118</span></h3>
+          <h3 class="ab-card__title">Japanese-Style Candy Gingham Nurse Dress</h3>
           <p class="ab-card__desc">A white nurse-style dress with a lace-trimmed collar, a pink laced corset panel and a gingham hem.</p>
-          <p class="ab-card__more">
-            <a href="https://www.youtube.com/watch?v=4OBpMGktb10" target="_blank" rel="noopener">Watch on YouTube</a>
-            <em class="ab-card__or">or</em>
-            <button type="button" class="ab-cart-add" aria-label="Add Japanese-Style Candy Gingham Nurse Dress to cart" data-name="Japanese-Style Candy Gingham Nurse Dress" data-price="118"><span class="ab-cart-add__plus">+</span>Add to cart</button>
-          </p>
+          <p class="ab-card__more"><button type="button" class="ab-request" aria-label="Request sourcing for Japanese-Style Candy Gingham Nurse Dress" data-name="Japanese-Style Candy Gingham Nurse Dress">Request Sourcing</button></p>
         </div>
       </article>
 
@@ -142,7 +151,8 @@ hide:
       <!-- Four more Douyin photo posts (2026-11-02): three razors sent in one
            message and a fourth sent straight after, kept in the order they
            arrived (oldest at the top, same as the cards below).  Lightbox-only,
-           no link and no action line on the card.  Pictures kept per post:
+           no link out; the Request Sourcing button is the only action.  Pictures
+           kept per post:
            Tatara 3, Leaf 6, Merkur 4, the MÜHLE 9; 01.jpg is the 3:2 cover cut
            from one of them and is repeated as a frame only through its source. -->
       <article class="ab-card ab-card--plate ab-card--band" id="tatara-masamune">
@@ -151,8 +161,8 @@ hide:
         </div>
         <div class="ab-card__copy">
           <h3 class="ab-card__title">Tatara, the Masamune and the Nodachi</h3>
-          <p class="ab-card__sub">Shaving&nbsp;· Tatara&nbsp;· Masamune&nbsp;· Nodachi</p>
           <p class="ab-card__desc">Two black razors against a bare grey wall — one upright on its dome stand, one lying flat.</p>
+          <p class="ab-card__more"><button type="button" class="ab-request" aria-label="Request sourcing for Tatara, the Masamune and the Nodachi" data-name="Tatara, the Masamune and the Nodachi">Request Sourcing</button></p>
         </div>
       </article>
 
@@ -162,8 +172,8 @@ hide:
         </div>
         <div class="ab-card__copy">
           <h3 class="ab-card__title">Leaf Razor, Opened from Its Black Box</h3>
-          <p class="ab-card__sub">Shaving&nbsp;· Leaf Razor&nbsp;· Safety Razor&nbsp;· Three Blades</p>
           <p class="ab-card__desc">Unboxed on a cutting mat: the razor in its tray, a manual, a pack of blades — and the razor alone.</p>
+          <p class="ab-card__more"><button type="button" class="ab-request" aria-label="Request sourcing for Leaf Razor, Opened from Its Black Box" data-name="Leaf Razor, Opened from Its Black Box">Request Sourcing</button></p>
         </div>
       </article>
 
@@ -173,8 +183,8 @@ hide:
         </div>
         <div class="ab-card__copy">
           <h3 class="ab-card__title">Merkur 39C, the Slant on a Wire Stand</h3>
-          <p class="ab-card__sub">Shaving&nbsp;· Merkur&nbsp;· 39C&nbsp;· Slant Bar</p>
           <p class="ab-card__desc">The 39C sits in its wire stand, stands up, and comes apart to show the two-piece head.</p>
+          <p class="ab-card__more"><button type="button" class="ab-request" aria-label="Request sourcing for Merkur 39C, the Slant on a Wire Stand" data-name="Merkur 39C, the Slant on a Wire Stand">Request Sourcing</button></p>
         </div>
       </article>
 
@@ -184,15 +194,16 @@ hide:
         </div>
         <div class="ab-card__copy">
           <h3 class="ab-card__title">A MÜHLE Razor on Its Grey Box</h3>
-          <p class="ab-card__sub">Shaving&nbsp;· MÜHLE&nbsp;· Safety Razor&nbsp;· Leather Case</p>
           <p class="ab-card__desc">A razor that arrives like a gift: grey box, leather case, soap, blades, and a shave at the end.</p>
+          <p class="ab-card__more"><button type="button" class="ab-request" aria-label="Request sourcing for A MÜHLE Razor on Its Grey Box" data-name="A MÜHLE Razor on Its Grey Box">Request Sourcing</button></p>
         </div>
       </article>
 
       <!-- Three Douyin photo posts (2026-11-02), all lightbox-only like the two
-           cards below: every frame is downloaded, nothing on the card links out
-           and there is no action line. The Dior post shipped four pictures and
-           the user asked to leave the third one out (「第三张图不要」) — it is
+           cards below: every frame is downloaded and nothing on the card links
+           out; Request Sourcing is the only action. The Dior post shipped four
+           pictures and the user asked to leave the third one out (「第三张图
+           不要」) — it is
            the Chinese-annotated note graphic — so this card carries three of
            them (01.jpg is the 3:2 cover cut from the first). The other two
            posts keep every picture they came with. -->
@@ -202,8 +213,8 @@ hide:
         </div>
         <div class="ab-card__copy">
           <h3 class="ab-card__title">Dior Sauvage, the Eau de Parfum and the Elixir</h3>
-          <p class="ab-card__sub">Fragrance&nbsp;· Sauvage&nbsp;· Eau de Parfum&nbsp;· Elixir</p>
           <p class="ab-card__desc">Sauvage first on wet rock — later the Elixir and the Eau de Parfum come out of their boxes.</p>
+          <p class="ab-card__more"><button type="button" class="ab-request" aria-label="Request sourcing for Dior Sauvage, the Eau de Parfum and the Elixir" data-name="Dior Sauvage, the Eau de Parfum and the Elixir">Request Sourcing</button></p>
         </div>
       </article>
 
@@ -213,8 +224,8 @@ hide:
         </div>
         <div class="ab-card__copy">
           <h3 class="ab-card__title">Bleu de Chanel, Opened from the White Box</h3>
-          <p class="ab-card__sub">Fragrance&nbsp;· Bleu de Chanel&nbsp;· Eau de Parfum&nbsp;· Gift Box</p>
           <p class="ab-card__desc">Out of the white pouch and the Chanel box, then down on a white table in the light.</p>
+          <p class="ab-card__more"><button type="button" class="ab-request" aria-label="Request sourcing for Bleu de Chanel, Opened from the White Box" data-name="Bleu de Chanel, Opened from the White Box">Request Sourcing</button></p>
         </div>
       </article>
 
@@ -224,8 +235,8 @@ hide:
         </div>
         <div class="ab-card__copy">
           <h3 class="ab-card__title">Acqua di Giò, Held in the Afternoon Light</h3>
-          <p class="ab-card__sub">Fragrance&nbsp;· Acqua di Giò&nbsp;· Aquatic&nbsp;· Men&#x27;s</p>
           <p class="ab-card__desc">Afternoon light, a glass carafe, and a branch of yellow ginkgo: the bottle in all three.</p>
+          <p class="ab-card__more"><button type="button" class="ab-request" aria-label="Request sourcing for Acqua di Giò, Held in the Afternoon Light" data-name="Acqua di Giò, Held in the Afternoon Light">Request Sourcing</button></p>
         </div>
       </article>
 
@@ -237,16 +248,21 @@ hide:
            left with no redirect, same as /curated/ and /picks/. -->
 
       <!-- No prices on this page (2026-11-01, user: 「将 /style/ 页面中的所有卡片
-           的价格都删除」). The stock cards keep title, sub, description and the
-           two action links; the price span is gone from all of them. The
-           autumn-skirt card moved to /desire/ the same day. -->
+           的价格都删除」; since 2026-11-02 no price is left at all — the last
+           three title spans went with the request 「将页面中所有的价格都删除」,
+           and their buttons stopped sending data-price too). The sub line
+           ("Shaving · Tatara · Masamune · Nodachi") is also gone from every
+           card, and each card ends in one Request Sourcing button (「即类似于
+           Shaving · Tatara · Masamune · Nodachi 的要删除，每个卡片都要有
+           Request Sourcing」). The autumn-skirt card moved to /desire/ the first
+           of those days. -->
 
       <!-- Second Douyin card (2026-11-01), and the one that stays on this site:
            the user asked for its pictures to be downloaded and shown in the
            lightbox, with no link out to Douyin anywhere on the card. So the
            picture carries a data-gallery of all five frames (javascripts/
-           gallery.js) and there is no action line at all — nothing on this card
-           leaves the page. 01.jpg is the card's 3:2 cover, cut from the post's
+           gallery.js) and no link leaves the page; the Request Sourcing button
+           is its only action. 01.jpg is the card's 3:2 cover, cut from the post's
            full-figure shot; 02–05 are the four originals at long side 1200. -->
       <article class="ab-card ab-card--plate ab-card--band" id="balmacaan-trench">
         <div class="ab-card__media">
@@ -254,8 +270,8 @@ hide:
         </div>
         <div class="ab-card__copy">
           <h3 class="ab-card__title">The Balmacaan Trench, Worn Over a Suit</h3>
-          <p class="ab-card__sub">Look&nbsp;· Navy&nbsp;· Balmacaan&nbsp;· Spring</p>
           <p class="ab-card__desc">A light Balmacaan over a suit for the spring commute — no bulk, and enough cover for the last cold spell.</p>
+          <p class="ab-card__more"><button type="button" class="ab-request" aria-label="Request sourcing for The Balmacaan Trench, Worn Over a Suit" data-name="The Balmacaan Trench, Worn Over a Suit">Request Sourcing</button></p>
         </div>
       </article>
 
@@ -266,16 +282,17 @@ hide:
            链接到抖音」), so it is now lightbox-only too: 01.jpg is the 3:2 cover
            (the film still beside the rebuild, cut from the top of the post's
            first image), 02–05 are its four originals at long side 1200, and
-           nothing on the card leaves the page. "Look" rather than "Video" in
-           the sub line because the post is a photo set, not a clip. -->
+           nothing on the card leaves the page. The sub line it used to carry
+           said "Look" rather than "Video" because the post is a photo set, not
+           a clip; the line is gone since 2026-11-02. -->
       <article class="ab-card ab-card--plate ab-card--band" id="the-lover-white-three-piece">
         <div class="ab-card__media">
           <img src="/assets/groom/the-lover-white-three-piece/01.jpg" alt="Tony Leung Ka-fai walking in the white three-piece from The Lover beside the same suit rebuilt in white cotton linen" loading="lazy" decoding="async" data-gallery="/assets/groom/the-lover-white-three-piece/01.jpg|Tony Leung Ka-fai in the film walking in the white three-piece beside the same suit rebuilt in white cotton linen,/assets/groom/the-lover-white-three-piece/02.jpg|The whole first image with the film still of Tony Leung Ka-fai beside the rebuild,/assets/groom/the-lover-white-three-piece/03.jpg|The rebuild out of doors in sunlight with the jacket open over the waistcoat,/assets/groom/the-lover-white-three-piece/04.jpg|A close view of the waistcoat's wooden buttons and the gold tie,/assets/groom/the-lover-white-three-piece/05.jpg|The rebuilt suit seated on a bench showing the turn-ups and black brogues">
         </div>
         <div class="ab-card__copy">
           <h3 class="ab-card__title">The Lover White Three-Piece, Rebuilt in Cotton Linen</h3>
-          <p class="ab-card__sub">Look&nbsp;· White&nbsp;· 1930s&nbsp;· Three-Piece</p>
           <p class="ab-card__desc">A white cotton-linen jacket, waistcoat and trousers in the 1930s cut Tony Leung Ka-fai wears in The Lover.</p>
+          <p class="ab-card__more"><button type="button" class="ab-request" aria-label="Request sourcing for The Lover White Three-Piece, Rebuilt in Cotton Linen" data-name="The Lover White Three-Piece, Rebuilt in Cotton Linen">Request Sourcing</button></p>
         </div>
       </article>
 
@@ -285,14 +302,8 @@ hide:
         </div>
         <div class="ab-card__copy">
           <h3 class="ab-card__title">AETHER Rope Keychain</h3>
-          <p class="ab-card__sub">AETHER&nbsp;· Accessories&nbsp;· Onyx</p>
           <p class="ab-card__desc">A rope loop on a black webbing keeper, closing on a steel split ring.</p>
-          <p class="ab-card__more">
-            <a href="/assets/groom/aether-rope-keychain/01.jpg" target="_blank" rel="noopener">View the photos</a>
-            <em class="ab-card__or">or</em>
-            <!-- No contact channel on this site yet: point the ask link at one when there is. -->
-            <a class="ab-card__ask ab-crisp-open" href="#" data-crisp-msg="Hi, I&#x27;d like to ask about AETHER Rope Keychain.">Ask about this piece</a>
-          </p>
+          <p class="ab-card__more"><button type="button" class="ab-request" aria-label="Request sourcing for AETHER Rope Keychain" data-name="AETHER Rope Keychain">Request Sourcing</button></p>
         </div>
       </article>
 
@@ -302,13 +313,8 @@ hide:
         </div>
         <div class="ab-card__copy">
           <h3 class="ab-card__title">Topo Designs Mt. West Ranch Jacket</h3>
-          <p class="ab-card__sub">Topo&nbsp;Designs&nbsp;· Outerwear&nbsp;· Olive</p>
           <p class="ab-card__desc">An olive canvas ranch jacket with a dark corduroy collar and ribbed cuffs.</p>
-          <p class="ab-card__more">
-            <a href="/assets/groom/topo-mt-west-ranch-jacket/01.jpg" target="_blank" rel="noopener">View the photos</a>
-            <em class="ab-card__or">or</em>
-            <a class="ab-card__ask ab-crisp-open" href="#" data-crisp-msg="Hi, I&#x27;d like to ask about Topo Designs Mt. West Ranch Jacket.">Ask about this piece</a>
-          </p>
+          <p class="ab-card__more"><button type="button" class="ab-request" aria-label="Request sourcing for Topo Designs Mt. West Ranch Jacket" data-name="Topo Designs Mt. West Ranch Jacket">Request Sourcing</button></p>
         </div>
       </article>
 
@@ -318,13 +324,8 @@ hide:
         </div>
         <div class="ab-card__copy">
           <h3 class="ab-card__title">Imperfects Stretch Corduroy Easy Rider Pant</h3>
-          <p class="ab-card__sub">Imperfects&nbsp;· Jeans&nbsp;· Green</p>
           <p class="ab-card__desc">Green stretch corduroy, cut in the Easy Rider shape and shown flat.</p>
-          <p class="ab-card__more">
-            <a href="/assets/groom/imperfects-easy-rider-pant/01.jpg" target="_blank" rel="noopener">View the photos</a>
-            <em class="ab-card__or">or</em>
-            <a class="ab-card__ask ab-crisp-open" href="#" data-crisp-msg="Hi, I&#x27;d like to ask about Imperfects Stretch Corduroy Easy Rider Pant.">Ask about this piece</a>
-          </p>
+          <p class="ab-card__more"><button type="button" class="ab-request" aria-label="Request sourcing for Imperfects Stretch Corduroy Easy Rider Pant" data-name="Imperfects Stretch Corduroy Easy Rider Pant">Request Sourcing</button></p>
         </div>
       </article>
 
@@ -334,13 +335,8 @@ hide:
         </div>
         <div class="ab-card__copy">
           <h3 class="ab-card__title">Craighill Summit Playing Card Case</h3>
-          <p class="ab-card__sub">Craighill&nbsp;· Accessories&nbsp;· Aluminium</p>
           <p class="ab-card__desc">A slim case that holds a deck, shown with its cards fanned up out of the lid.</p>
-          <p class="ab-card__more">
-            <a href="/assets/groom/craighill-summit-card-case/01.jpg" target="_blank" rel="noopener">View the photos</a>
-            <em class="ab-card__or">or</em>
-            <a class="ab-card__ask ab-crisp-open" href="#" data-crisp-msg="Hi, I&#x27;d like to ask about Craighill Summit Playing Card Case.">Ask about this piece</a>
-          </p>
+          <p class="ab-card__more"><button type="button" class="ab-request" aria-label="Request sourcing for Craighill Summit Playing Card Case" data-name="Craighill Summit Playing Card Case">Request Sourcing</button></p>
         </div>
       </article>
 
@@ -350,13 +346,8 @@ hide:
         </div>
         <div class="ab-card__copy">
           <h3 class="ab-card__title">Private White V.C. Submariner Cashmere Sweater</h3>
-          <p class="ab-card__sub">Private&nbsp;White&nbsp;V.C.&nbsp;· Outerwear&nbsp;· Cream</p>
           <p class="ab-card__desc">Cream cashmere with a rolled neck and ribbed cuffs and hem.</p>
-          <p class="ab-card__more">
-            <a href="/assets/groom/private-white-submariner-sweater/01.jpg" target="_blank" rel="noopener">View the photos</a>
-            <em class="ab-card__or">or</em>
-            <a class="ab-card__ask ab-crisp-open" href="#" data-crisp-msg="Hi, I&#x27;d like to ask about Private White V.C. Submariner Cashmere Sweater.">Ask about this piece</a>
-          </p>
+          <p class="ab-card__more"><button type="button" class="ab-request" aria-label="Request sourcing for Private White V.C. Submariner Cashmere Sweater" data-name="Private White V.C. Submariner Cashmere Sweater">Request Sourcing</button></p>
         </div>
       </article>
 
@@ -366,13 +357,8 @@ hide:
         </div>
         <div class="ab-card__copy">
           <h3 class="ab-card__title">Seiko Prospex JAWS 50th Anniversary Dive Watch</h3>
-          <p class="ab-card__sub">Seiko&nbsp;· Watches&nbsp;· Blue</p>
           <p class="ab-card__desc">A blue-dial Prospex diver on a blue rubber strap, issued for the film's 50th anniversary.</p>
-          <p class="ab-card__more">
-            <a href="/assets/groom/seiko-prospex-jaws/01.jpg" target="_blank" rel="noopener">View the photos</a>
-            <em class="ab-card__or">or</em>
-            <a class="ab-card__ask ab-crisp-open" href="#" data-crisp-msg="Hi, I&#x27;d like to ask about Seiko Prospex JAWS 50th Anniversary Dive Watch.">Ask about this piece</a>
-          </p>
+          <p class="ab-card__more"><button type="button" class="ab-request" aria-label="Request sourcing for Seiko Prospex JAWS 50th Anniversary Dive Watch" data-name="Seiko Prospex JAWS 50th Anniversary Dive Watch">Request Sourcing</button></p>
         </div>
       </article>
 
@@ -382,13 +368,8 @@ hide:
         </div>
         <div class="ab-card__copy">
           <h3 class="ab-card__title">Lüm-Tec Combat B72 Field Watch</h3>
-          <p class="ab-card__sub">Lüm-Tec&nbsp;· Watches&nbsp;· Black</p>
           <p class="ab-card__desc">A black case and strap around a cream dial, with 24-hour markings around the track.</p>
-          <p class="ab-card__more">
-            <a href="/assets/groom/lum-tec-combat-b72/01.jpg" target="_blank" rel="noopener">View the photos</a>
-            <em class="ab-card__or">or</em>
-            <a class="ab-card__ask ab-crisp-open" href="#" data-crisp-msg="Hi, I&#x27;d like to ask about Lüm-Tec Combat B72 Field Watch.">Ask about this piece</a>
-          </p>
+          <p class="ab-card__more"><button type="button" class="ab-request" aria-label="Request sourcing for Lüm-Tec Combat B72 Field Watch" data-name="Lüm-Tec Combat B72 Field Watch">Request Sourcing</button></p>
         </div>
       </article>
 
@@ -398,13 +379,8 @@ hide:
         </div>
         <div class="ab-card__copy">
           <h3 class="ab-card__title">Line of Trade Waxed Zip Trucker Jacket</h3>
-          <p class="ab-card__sub">Line&nbsp;of&nbsp;Trade&nbsp;· Outerwear&nbsp;· Brown</p>
           <p class="ab-card__desc">Brown waxed cotton with a zip front, a shirt collar and two chest pockets.</p>
-          <p class="ab-card__more">
-            <a href="/assets/groom/line-of-trade-waxed-trucker/01.jpg" target="_blank" rel="noopener">View the photos</a>
-            <em class="ab-card__or">or</em>
-            <a class="ab-card__ask ab-crisp-open" href="#" data-crisp-msg="Hi, I&#x27;d like to ask about Line of Trade Waxed Zip Trucker Jacket.">Ask about this piece</a>
-          </p>
+          <p class="ab-card__more"><button type="button" class="ab-request" aria-label="Request sourcing for Line of Trade Waxed Zip Trucker Jacket" data-name="Line of Trade Waxed Zip Trucker Jacket">Request Sourcing</button></p>
         </div>
       </article>
 
@@ -414,13 +390,8 @@ hide:
         </div>
         <div class="ab-card__copy">
           <h3 class="ab-card__title">Barbour Donegal Wool Crew-Neck Jumper</h3>
-          <p class="ab-card__sub">Barbour&nbsp;· Outerwear&nbsp;· Navy</p>
           <p class="ab-card__desc">Navy Donegal wool, with the flecked texture that yarn is known for.</p>
-          <p class="ab-card__more">
-            <a href="/assets/groom/barbour-donegal-jumper/01.jpg" target="_blank" rel="noopener">View the photos</a>
-            <em class="ab-card__or">or</em>
-            <a class="ab-card__ask ab-crisp-open" href="#" data-crisp-msg="Hi, I&#x27;d like to ask about Barbour Donegal Wool Crew-Neck Jumper.">Ask about this piece</a>
-          </p>
+          <p class="ab-card__more"><button type="button" class="ab-request" aria-label="Request sourcing for Barbour Donegal Wool Crew-Neck Jumper" data-name="Barbour Donegal Wool Crew-Neck Jumper">Request Sourcing</button></p>
         </div>
       </article>
 
@@ -430,13 +401,8 @@ hide:
         </div>
         <div class="ab-card__copy">
           <h3 class="ab-card__title">Timex Marlin Neo Classic Chronograph</h3>
-          <p class="ab-card__sub">Timex&nbsp;· Watches&nbsp;· Cream</p>
           <p class="ab-card__desc">A close crop of the dial: cream ground, blue hands, and a red-lacquered second hand.</p>
-          <p class="ab-card__more">
-            <a href="/assets/groom/timex-marlin-neo-classic/01.jpg" target="_blank" rel="noopener">View the photos</a>
-            <em class="ab-card__or">or</em>
-            <a class="ab-card__ask ab-crisp-open" href="#" data-crisp-msg="Hi, I&#x27;d like to ask about Timex Marlin Neo Classic Chronograph.">Ask about this piece</a>
-          </p>
+          <p class="ab-card__more"><button type="button" class="ab-request" aria-label="Request sourcing for Timex Marlin Neo Classic Chronograph" data-name="Timex Marlin Neo Classic Chronograph">Request Sourcing</button></p>
         </div>
       </article>
 

@@ -12,9 +12,10 @@ hide:
      卡片版式取自 acebase.cc 的 /gift-cards/（2026-11-01 用户：「按 /gift-cards/
      页的样式进行排版」）：--plate --wordmark 的 5:2 画框（品牌条 cover 裁进
      去）、左上角档数角标、价格跟在标题末尾、Spec 下拉。栅格是 --pricing 的
-     三列（1024 起）。**动作行没有跟着换**：仍是本站的 .ab-cart-add（cart.js），
-     不是 /gift-cards/ 的 Buy，所以档位名进 data-name、同款不同档在购物车里
-     是两行；下拉换档时由 docs/javascripts/digital.js 同步价格与 data-*。
+     三列（1024 起）。动作行是本站的 .ab-request（sourcing.js；2026-11-02 由
+     + Add to cart 改写，同日按钮文案再改为 ORDER NOW，购物车已取消）：点一下
+     把档位名与价格送进在线客服，不是 /gift-cards/ 的 Buy；下拉换档时由
+     docs/javascripts/digital.js 同步价格、data-* 与无障碍名。
      品牌条图在 docs/assets/digital/<id>.png（1200x250，保留原画布留白）。 -->
 
 <div class="ab-mag" markdown="0">
@@ -47,7 +48,7 @@ hide:
             <option data-name="PUBG Mobile UC — 30000 + 10500 UC" data-price="402.01">30000 + 10500 UC &mdash; $402.01</option>
             </select>
           </label>
-          <p class="ab-card__more"><button type="button" class="ab-cart-add" aria-label="Add PUBG Mobile UC — 60 UC to cart" data-name="PUBG Mobile UC — 60 UC" data-price="0.80"><span class="ab-cart-add__plus">+</span>Add to cart</button></p>
+          <p class="ab-card__more"><button type="button" class="ab-request" aria-label="ORDER NOW — PUBG Mobile UC — 60 UC" data-name="PUBG Mobile UC — 60 UC" data-price="0.80">ORDER NOW</button></p>
         </div>
       </article>
 
@@ -69,7 +70,7 @@ hide:
             <option data-name="PUBG G-COIN — 11200 G-COIN" data-price="77.67">11200 G-COIN &mdash; $77.67</option>
             </select>
           </label>
-          <p class="ab-card__more"><button type="button" class="ab-cart-add" aria-label="Add PUBG G-COIN — 100 G-COIN to cart" data-name="PUBG G-COIN — 100 G-COIN" data-price="0.86"><span class="ab-cart-add__plus">+</span>Add to cart</button></p>
+          <p class="ab-card__more"><button type="button" class="ab-request" aria-label="ORDER NOW — PUBG G-COIN — 100 G-COIN" data-name="PUBG G-COIN — 100 G-COIN" data-price="0.86">ORDER NOW</button></p>
         </div>
       </article>
 
@@ -94,7 +95,7 @@ hide:
             <option data-name="Honor of Kings — 8000 + 360 Tokens" data-price="76.75">8000 + 360 Tokens &mdash; $76.75</option>
             </select>
           </label>
-          <p class="ab-card__more"><button type="button" class="ab-cart-add" aria-label="Add Honor of Kings — 80 Tokens to cart" data-name="Honor of Kings — 80 Tokens" data-price="0.75"><span class="ab-cart-add__plus">+</span>Add to cart</button></p>
+          <p class="ab-card__more"><button type="button" class="ab-request" aria-label="ORDER NOW — Honor of Kings — 80 Tokens" data-name="Honor of Kings — 80 Tokens" data-price="0.75">ORDER NOW</button></p>
         </div>
       </article>
 
@@ -117,7 +118,7 @@ hide:
             <option data-name="Arena Breakout — 13000 + 640 Bonds" data-price="144.77">13000 + 640 Bonds &mdash; $144.77</option>
             </select>
           </label>
-          <p class="ab-card__more"><button type="button" class="ab-cart-add" aria-label="Add Arena Breakout — 60 + 6 Bonds to cart" data-name="Arena Breakout — 60 + 6 Bonds" data-price="0.75"><span class="ab-cart-add__plus">+</span>Add to cart</button></p>
+          <p class="ab-card__more"><button type="button" class="ab-request" aria-label="ORDER NOW — Arena Breakout — 60 + 6 Bonds" data-name="Arena Breakout — 60 + 6 Bonds" data-price="0.75">ORDER NOW</button></p>
         </div>
       </article>
 
@@ -154,7 +155,7 @@ hide:
             <option data-name="Free Fire — Monthly Membership" data-price="8.07">Monthly Membership &mdash; $8.07</option>
             </select>
           </label>
-          <p class="ab-card__more"><button type="button" class="ab-cart-add" aria-label="Add Free Fire — 100 Diamonds to cart" data-name="Free Fire — 100 Diamonds" data-price="0.80"><span class="ab-cart-add__plus">+</span>Add to cart</button></p>
+          <p class="ab-card__more"><button type="button" class="ab-request" aria-label="ORDER NOW — Free Fire — 100 Diamonds" data-name="Free Fire — 100 Diamonds" data-price="0.80">ORDER NOW</button></p>
         </div>
       </article>
 
@@ -178,7 +179,7 @@ hide:
             <option data-name="Pokémon GO — 14500 PokéCoins*5" data-price="197.03">14500 PokéCoins*5 &mdash; $197.03</option>
             </select>
           </label>
-          <p class="ab-card__more"><button type="button" class="ab-cart-add" aria-label="Add Pokémon GO — 550 PokéCoins to cart" data-name="Pokémon GO — 550 PokéCoins" data-price="3.84"><span class="ab-cart-add__plus">+</span>Add to cart</button></p>
+          <p class="ab-card__more"><button type="button" class="ab-request" aria-label="ORDER NOW — Pokémon GO — 550 PokéCoins" data-name="Pokémon GO — 550 PokéCoins" data-price="3.84">ORDER NOW</button></p>
         </div>
       </article>
 
@@ -209,7 +210,7 @@ hide:
             <option data-name="Mobile Legends: Bang Bang — Weekly Diamond" data-price="1.60">Weekly Diamond &mdash; $1.60</option>
             </select>
           </label>
-          <p class="ab-card__more"><button type="button" class="ab-cart-add" aria-label="Add Mobile Legends: Bang Bang — 86 Diamonds to cart" data-name="Mobile Legends: Bang Bang — 86 Diamonds" data-price="1.27"><span class="ab-cart-add__plus">+</span>Add to cart</button></p>
+          <p class="ab-card__more"><button type="button" class="ab-request" aria-label="ORDER NOW — Mobile Legends: Bang Bang — 86 Diamonds" data-name="Mobile Legends: Bang Bang — 86 Diamonds" data-price="1.27">ORDER NOW</button></p>
         </div>
       </article>
 
@@ -232,7 +233,7 @@ hide:
             <option data-name="Honkai: Star Rail — Express Supply Pass" data-price="4.46">Express Supply Pass &mdash; $4.46</option>
             </select>
           </label>
-          <p class="ab-card__more"><button type="button" class="ab-cart-add" aria-label="Add Honkai: Star Rail — 60 Oneiric Shard to cart" data-name="Honkai: Star Rail — 60 Oneiric Shard" data-price="0.90"><span class="ab-cart-add__plus">+</span>Add to cart</button></p>
+          <p class="ab-card__more"><button type="button" class="ab-request" aria-label="ORDER NOW — Honkai: Star Rail — 60 Oneiric Shard" data-name="Honkai: Star Rail — 60 Oneiric Shard" data-price="0.90">ORDER NOW</button></p>
         </div>
       </article>
 
@@ -255,7 +256,7 @@ hide:
             <option data-name="Genshin Impact — Blessing of the Welkin Moon" data-price="5.00">Blessing of the Welkin Moon &mdash; $5</option>
             </select>
           </label>
-          <p class="ab-card__more"><button type="button" class="ab-cart-add" aria-label="Add Genshin Impact — 60 Genesis Crystals to cart" data-name="Genshin Impact — 60 Genesis Crystals" data-price="1.01"><span class="ab-cart-add__plus">+</span>Add to cart</button></p>
+          <p class="ab-card__more"><button type="button" class="ab-request" aria-label="ORDER NOW — Genshin Impact — 60 Genesis Crystals" data-name="Genshin Impact — 60 Genesis Crystals" data-price="1.01">ORDER NOW</button></p>
         </div>
       </article>
 
@@ -277,7 +278,7 @@ hide:
             <option data-name="Wuthering Waves — 6480 + 1600 Lunites" data-price="86.35">6480 + 1600 Lunites &mdash; $86.35</option>
             </select>
           </label>
-          <p class="ab-card__more"><button type="button" class="ab-cart-add" aria-label="Add Wuthering Waves — 60 Lunites to cart" data-name="Wuthering Waves — 60 Lunites" data-price="0.83"><span class="ab-cart-add__plus">+</span>Add to cart</button></p>
+          <p class="ab-card__more"><button type="button" class="ab-request" aria-label="ORDER NOW — Wuthering Waves — 60 Lunites" data-name="Wuthering Waves — 60 Lunites" data-price="0.83">ORDER NOW</button></p>
         </div>
       </article>
 
@@ -300,7 +301,7 @@ hide:
             <option data-name="Zenless Zone Zero — Inter-Knot Membership" data-price="4.63">Inter-Knot Membership &mdash; $4.63</option>
             </select>
           </label>
-          <p class="ab-card__more"><button type="button" class="ab-cart-add" aria-label="Add Zenless Zone Zero — 60 Monochromes to cart" data-name="Zenless Zone Zero — 60 Monochromes" data-price="1.11"><span class="ab-cart-add__plus">+</span>Add to cart</button></p>
+          <p class="ab-card__more"><button type="button" class="ab-request" aria-label="ORDER NOW — Zenless Zone Zero — 60 Monochromes" data-name="Zenless Zone Zero — 60 Monochromes" data-price="1.11">ORDER NOW</button></p>
         </div>
       </article>
 
@@ -334,7 +335,7 @@ hide:
             <option data-name="GODDESS OF VICTORY: NIKKE — Enhanced Module Set" data-price="43.76">Enhanced Module Set &mdash; $43.76</option>
             </select>
           </label>
-          <p class="ab-card__more"><button type="button" class="ab-cart-add" aria-label="Add GODDESS OF VICTORY: NIKKE — 60 + 1 Gems to cart" data-name="GODDESS OF VICTORY: NIKKE — 60 + 1 Gems" data-price="0.70"><span class="ab-cart-add__plus">+</span>Add to cart</button></p>
+          <p class="ab-card__more"><button type="button" class="ab-request" aria-label="ORDER NOW — GODDESS OF VICTORY: NIKKE — 60 + 1 Gems" data-name="GODDESS OF VICTORY: NIKKE — 60 + 1 Gems" data-price="0.70">ORDER NOW</button></p>
         </div>
       </article>
 
@@ -363,7 +364,7 @@ hide:
             <option data-name="Clash of Clans — Gold Pass" data-price="5.94">Gold Pass &mdash; $5.94</option>
             </select>
           </label>
-          <p class="ab-card__more"><button type="button" class="ab-cart-add" aria-label="Add Clash of Clans — 500 Gems to cart" data-name="Clash of Clans — 500 Gems" data-price="4.23"><span class="ab-cart-add__plus">+</span>Add to cart</button></p>
+          <p class="ab-card__more"><button type="button" class="ab-request" aria-label="ORDER NOW — Clash of Clans — 500 Gems" data-name="Clash of Clans — 500 Gems" data-price="4.23">ORDER NOW</button></p>
         </div>
       </article>
 
@@ -390,7 +391,7 @@ hide:
             <option data-name="Clash Royale — Diamond Pass" data-price="10.37">Diamond Pass &mdash; $10.37</option>
             </select>
           </label>
-          <p class="ab-card__more"><button type="button" class="ab-cart-add" aria-label="Add Clash Royale — 500 Gems to cart" data-name="Clash Royale — 500 Gems" data-price="4.27"><span class="ab-cart-add__plus">+</span>Add to cart</button></p>
+          <p class="ab-card__more"><button type="button" class="ab-request" aria-label="ORDER NOW — Clash Royale — 500 Gems" data-name="Clash Royale — 500 Gems" data-price="4.27">ORDER NOW</button></p>
         </div>
       </article>
 
@@ -413,7 +414,7 @@ hide:
             <option data-name="Brawl Stars — Pro Pass Plus" data-price="22.72">Pro Pass Plus &mdash; $22.72</option>
             </select>
           </label>
-          <p class="ab-card__more"><button type="button" class="ab-cart-add" aria-label="Add Brawl Stars — 30 GEMS to cart" data-name="Brawl Stars — 30 GEMS" data-price="1.74"><span class="ab-cart-add__plus">+</span>Add to cart</button></p>
+          <p class="ab-card__more"><button type="button" class="ab-request" aria-label="ORDER NOW — Brawl Stars — 30 GEMS" data-name="Brawl Stars — 30 GEMS" data-price="1.74">ORDER NOW</button></p>
         </div>
       </article>
 
@@ -456,7 +457,7 @@ hide:
             <option data-name="Arena of Valor — Top-Up 370 Coupons" data-price="8.67">Top-Up 370 Coupons &mdash; $8.67</option>
             </select>
           </label>
-          <p class="ab-card__more"><button type="button" class="ab-cart-add" aria-label="Add Arena of Valor — 11 Coupons to cart" data-name="Arena of Valor — 11 Coupons" data-price="0.46"><span class="ab-cart-add__plus">+</span>Add to cart</button></p>
+          <p class="ab-card__more"><button type="button" class="ab-request" aria-label="ORDER NOW — Arena of Valor — 11 Coupons" data-name="Arena of Valor — 11 Coupons" data-price="0.46">ORDER NOW</button></p>
         </div>
       </article>
 
@@ -481,7 +482,7 @@ hide:
             <option data-name="Delta Force — 6480 + 1620 Coins" data-price="76.91">6480 + 1620 Coins &mdash; $76.91</option>
             </select>
           </label>
-          <p class="ab-card__more"><button type="button" class="ab-cart-add" aria-label="Add Delta Force — 30 Coins to cart" data-name="Delta Force — 30 Coins" data-price="0.40"><span class="ab-cart-add__plus">+</span>Add to cart</button></p>
+          <p class="ab-card__more"><button type="button" class="ab-request" aria-label="ORDER NOW — Delta Force — 30 Coins" data-name="Delta Force — 30 Coins" data-price="0.40">ORDER NOW</button></p>
         </div>
       </article>
 
@@ -503,7 +504,7 @@ hide:
             <option data-name="VALORANT — 11000 VP" data-price="65.00">11000 VP &mdash; $65</option>
             </select>
           </label>
-          <p class="ab-card__more"><button type="button" class="ab-cart-add" aria-label="Add VALORANT — 475 VP to cart" data-name="VALORANT — 475 VP" data-price="3.15"><span class="ab-cart-add__plus">+</span>Add to cart</button></p>
+          <p class="ab-card__more"><button type="button" class="ab-request" aria-label="ORDER NOW — VALORANT — 475 VP" data-name="VALORANT — 475 VP" data-price="3.15">ORDER NOW</button></p>
         </div>
       </article>
 
@@ -525,7 +526,7 @@ hide:
             <option data-name="Marvel Rivals — 11680 Lattices" data-price="92.11">11680 Lattices &mdash; $92.11</option>
             </select>
           </label>
-          <p class="ab-card__more"><button type="button" class="ab-cart-add" aria-label="Add Marvel Rivals — 100 Lattices to cart" data-name="Marvel Rivals — 100 Lattices" data-price="0.89"><span class="ab-cart-add__plus">+</span>Add to cart</button></p>
+          <p class="ab-card__more"><button type="button" class="ab-request" aria-label="ORDER NOW — Marvel Rivals — 100 Lattices" data-name="Marvel Rivals — 100 Lattices" data-price="0.89">ORDER NOW</button></p>
         </div>
       </article>
 
@@ -545,7 +546,7 @@ hide:
             <option data-name="Diablo IV — 11500 Platinum" data-price="85.14">11500 Platinum &mdash; $85.14</option>
             </select>
           </label>
-          <p class="ab-card__more"><button type="button" class="ab-cart-add" aria-label="Add Diablo IV — 1000 Platinum to cart" data-name="Diablo IV — 1000 Platinum" data-price="8.87"><span class="ab-cart-add__plus">+</span>Add to cart</button></p>
+          <p class="ab-card__more"><button type="button" class="ab-request" aria-label="ORDER NOW — Diablo IV — 1000 Platinum" data-name="Diablo IV — 1000 Platinum" data-price="8.87">ORDER NOW</button></p>
         </div>
       </article>
 
@@ -567,7 +568,7 @@ hide:
             <option data-name="League of Legends: Wild Rift — 10000 Cores" data-price="64.82">10000 Cores &mdash; $64.82</option>
             </select>
           </label>
-          <p class="ab-card__more"><button type="button" class="ab-cart-add" aria-label="Add League of Legends: Wild Rift — 425 Cores to cart" data-name="League of Legends: Wild Rift — 425 Cores" data-price="3.10"><span class="ab-cart-add__plus">+</span>Add to cart</button></p>
+          <p class="ab-card__more"><button type="button" class="ab-request" aria-label="ORDER NOW — League of Legends: Wild Rift — 425 Cores" data-name="League of Legends: Wild Rift — 425 Cores" data-price="3.10">ORDER NOW</button></p>
         </div>
       </article>
 
@@ -591,7 +592,7 @@ hide:
             <option data-name="Whiteout Survival — 9999 Frost Star" data-price="112.10">9999 Frost Star &mdash; $112.10</option>
             </select>
           </label>
-          <p class="ab-card__more"><button type="button" class="ab-cart-add" aria-label="Add Whiteout Survival — 99 Frost Star to cart" data-name="Whiteout Survival — 99 Frost Star" data-price="1.19"><span class="ab-cart-add__plus">+</span>Add to cart</button></p>
+          <p class="ab-card__more"><button type="button" class="ab-request" aria-label="ORDER NOW — Whiteout Survival — 99 Frost Star" data-name="Whiteout Survival — 99 Frost Star" data-price="1.19">ORDER NOW</button></p>
         </div>
       </article>
 
@@ -611,7 +612,7 @@ hide:
             <option data-name="CS2 Skins &amp; Credits — Steam Wallet $20" data-price="18.79">Steam Wallet $20 &mdash; $18.79</option>
             </select>
           </label>
-          <p class="ab-card__more"><button type="button" class="ab-cart-add" aria-label="Add CS2 Skins &amp; Credits — CS2 Case Key to cart" data-name="CS2 Skins &amp; Credits — CS2 Case Key" data-price="2.29"><span class="ab-cart-add__plus">+</span>Add to cart</button></p>
+          <p class="ab-card__more"><button type="button" class="ab-request" aria-label="ORDER NOW — CS2 Skins &amp; Credits — CS2 Case Key" data-name="CS2 Skins &amp; Credits — CS2 Case Key" data-price="2.29">ORDER NOW</button></p>
         </div>
       </article>
 

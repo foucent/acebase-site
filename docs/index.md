@@ -35,7 +35,7 @@ hide:
       <article class="ab-card ab-card--plate ab-card--band" data-section="style">
         <div class="ab-card__media">
           <a href="/style/#white-sheer-15d-pantyhose" aria-label="Open 1D White Moonlight Seamless Pantyhose in Style">
-            <img src="/assets/desire/white-sheer-15d-pantyhose/01.jpg" alt="White tights on two legs stretched out along a grey rug with white Mary Jane flats at the far end" loading="lazy" decoding="async">
+            <img src="/assets/desire/white-sheer-15d-pantyhose/01.jpg" alt="Two feet in white tights with the toes showing through the knit on a pale rug below a window" loading="lazy" decoding="async">
           </a>
         </div>
         <div class="ab-card__copy">
@@ -52,7 +52,6 @@ hide:
         </div>
         <div class="ab-card__copy">
           <h3 class="ab-card__title">The Astrox 88D Pro in Navy and Cyan</h3>
-          <p class="ab-card__sub">Racket · Astrox 88D Pro · Navy · Cyan</p>
           <p class="ab-card__desc">A navy Astrox 88D Pro strung in cyan with a white grip shot as a run of close studies on grey.</p>
           <p class="ab-card__more"><a href="/gear/#astrox-88d-pro">See it in Gear</a></p>
         </div>
@@ -65,7 +64,6 @@ hide:
         </div>
         <div class="ab-card__copy">
           <h3 class="ab-card__title">The Astrox 100ZZ in Navy Up Close</h3>
-          <p class="ab-card__sub">Racket · Astrox 100ZZ · Navy · Detail</p>
           <p class="ab-card__desc">A navy Astrox 100ZZ shot as a run of close studies from the frame edge down to the cone code.</p>
           <p class="ab-card__more"><a href="/gear/#astrox-100zz-navy">See it in Gear</a></p>
         </div>

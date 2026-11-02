@@ -6,9 +6,9 @@
  * close button's accessible name is English here, because this site's
  * interface is; the button itself draws an × and never shows text.
  *
- * Exposes window.abOpenCrisp(prefill) for the rest of the site (cart.js uses
- * it to hand a whole cart over), and turns any <a|button class="ab-crisp-open"
- * data-crisp-msg="..."> into a chat opener.
+ * Exposes window.abOpenCrisp(prefill) for the rest of the site (sourcing.js
+ * uses it to hand a Request Sourcing click over), and turns any
+ * <a|button class="ab-crisp-open" data-crisp-msg="..."> into a chat opener.
  */
 (function () {
   window.$crisp = window.$crisp || [];

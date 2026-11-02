@@ -103,6 +103,56 @@ body.ab-lightbox-open {
   font-weight: 500;
 }
 
+/* The play button on the last photo of a video's set. It sits on the picture
+   itself, because that is where the reader is looking, and wears the words the
+   video link had on the card so it cannot be mistaken for "next photo". */
+.ab-lightbox__play {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 2;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  padding: 0.5rem 1.1rem 0.5rem 0.85rem;
+  border-radius: 999px;
+  background: rgba(0, 0, 0, 0.76);
+  color: #fff;
+  font-family: var(--ab-sans);
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 6px 26px rgba(0, 0, 0, 0.45);
+  cursor: pointer;
+}
+
+.ab-lightbox__play:hover,
+.ab-lightbox__play:focus-visible {
+  background: rgba(0, 0, 0, 0.9);
+}
+
+/* The YouTube mark — a red rounded slab with the white play triangle, drawn
+   inline (28x20 viewBox) wherever the video link is written: in the card's
+   action line and on the lightbox's play button. Inline rather than an image
+   so it inherits nothing, costs no request and stays crisp at any size. */
+.ab-yt-mark {
+  display: inline-block;
+  flex: none;
+  width: 1.1rem;
+  height: auto;
+}
+
+.ab-lightbox__play .ab-yt-mark {
+  width: 1.3rem;
+  border-radius: 2px;
+}
+
+.ab-lightbox__play[hidden] {
+  display: none !important;
+}
+
 .ab-lightbox__dots {
   display: flex;
   justify-content: center;

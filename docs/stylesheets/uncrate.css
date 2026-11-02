@@ -2249,6 +2249,16 @@
   text-decoration: none;
 }
 
+/* The YouTube mark inside that link (the SVG is inline in the page, styled
+   once in gallery.css). It rides the baseline of the 15px serif line, so it
+   gets a nudge down and a little air before the words. */
+.md-typeset .ab-mag .ab-card--band .ab-card__more a .ab-yt-mark {
+  width: 17px;
+  margin-right: 6px;
+  vertical-align: -2px;
+  border-radius: 1px;
+}
+
 .md-typeset .ab-mag .ab-card--band .ab-card__or {
   font-family: var(--ab-serif);
   font-size: 15px;

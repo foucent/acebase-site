@@ -14,10 +14,19 @@
 
    A data-gallery entry is a photo, optionally with its alt text after a "|":
    "/assets/foo/02.jpg|What that photo shows". Without one the entry takes the
-   card image's own alt. */
+   card image's own alt.
+
+   A set can also belong to a video: img[data-gallery-video="https://…"] makes
+   the last photo in the set carry a play button that opens that link in a new
+   tab, so the video the card sells is reachable from inside the lightbox
+   instead of only from the action line under it. The button exists on the last
+   frame alone — every other frame keeps the "more photos" hint. It wears the
+   same words and the same YouTube mark as the card's own video link, so the
+   two read as one offer. */
 (function () {
   var items = [];
   var index = 0;
+  var video = "";
 
   function ensureLightbox() {
     var root = document.getElementById("ab-lightbox");
@@ -36,6 +45,13 @@
       '<button type="button" class="ab-lightbox__nav ab-lightbox__next" aria-label="Next">›</button>' +
       '<div class="ab-lightbox__stage">' +
       '  <img class="ab-lightbox__img" alt="">' +
+      '  <a class="ab-lightbox__play" href="#" target="_blank" rel="noopener" aria-label="Watch Details on YouTube" hidden>' +
+      '    <svg class="ab-yt-mark" viewBox="0 0 28 20" aria-hidden="true" focusable="false">' +
+      '      <rect width="28" height="20" rx="5" fill="#f00"/>' +
+      '      <path d="M10.2 5.6v8.8L17.8 10z" fill="#fff"/>' +
+      "    </svg>" +
+      '    <span class="ab-lightbox__play-label">Watch Details on YouTube</span>' +
+      "  </a>" +
       '  <div class="ab-lightbox__meta">' +
       '    <div class="ab-lightbox__counter" aria-live="polite"></div>' +
       '    <div class="ab-lightbox__hint">More photos — swipe or use arrows</div>' +
@@ -51,6 +67,7 @@
     var counter = root.querySelector(".ab-lightbox__counter");
     var hint = root.querySelector(".ab-lightbox__hint");
     var dots = root.querySelector(".ab-lightbox__dots");
+    var play = root.querySelector(".ab-lightbox__play");
 
     function renderDots() {
       if (items.length <= 1) {
@@ -86,6 +103,15 @@
       nextBtn.hidden = !multi;
       counter.hidden = !multi;
       hint.hidden = !multi;
+      // The play button belongs to the last photo of a set that names a video;
+      // the hint is the only thing telling a reader what it will do.
+      var playable = Boolean(video) && index === items.length - 1;
+      play.hidden = !playable;
+      if (playable) play.href = video;
+      else play.removeAttribute("href");
+      hint.textContent = playable
+        ? "Last photo — press play to watch the video"
+        : "More photos — swipe or use arrows";
       renderDots();
     }
 
@@ -93,11 +119,13 @@
       root.hidden = true;
       img.removeAttribute("src");
       items = [];
+      video = "";
       document.body.classList.remove("ab-lightbox-open");
     }
 
-    function open(list, start) {
+    function open(list, start, videoUrl) {
       items = list;
+      video = videoUrl || "";
       root.hidden = false;
       document.body.classList.add("ab-lightbox-open");
       show(start);
@@ -228,10 +256,12 @@
         media.appendChild(pill);
       }
 
+      var videoUrl = img.getAttribute("data-gallery-video") || "";
+
       img.addEventListener("click", function (e) {
         e.preventDefault();
         e.stopPropagation();
-        root._open(list, 0);
+        root._open(list, 0, videoUrl);
       });
     });
   }
