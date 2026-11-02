@@ -1,13 +1,16 @@
 ---
 title: Game
-description: AceBase Game — game top-ups, 23 titles, tiers from $0.40.
+description: AceBase Game — game top-ups, 17 titles, tiers from $0.40.
 hide:
   - title
   - toc
 ---
 
 <!-- 游戏充值目录。款式与全部档位定价取自 acebase.cc 的 /games/ 页与
-     docs/assets/games/prices.json。
+     docs/assets/games/prices.json。2026-11-03 用户要求删掉六款：
+     Zenless Zone Zero、Wuthering Waves、Marvel Rivals、
+     GODDESS OF VICTORY: NIKKE、Free Fire、Whiteout Survival ——
+     生成器的 DROP 列表记着这六个 id，重跑不会再出现。
      生成脚本：C:\1Work\_tmp_ocr\gen_digital_sumei.py（重跑覆盖本页）。
      卡片版式取自 acebase.cc 的 /gift-cards/（2026-11-01 用户：「按 /gift-cards/
      页的样式进行排版」）：--plate --wordmark 的 5:2 画框（品牌条 cover 裁进
@@ -122,43 +125,6 @@ hide:
         </div>
       </article>
 
-      <article class="ab-card ab-card--brand ab-card--plate ab-card--wordmark ab-card--picker" id="freefire" data-digital-card>
-        <div class="ab-card__media">
-          <span class="ab-card__badge">21 tiers</span>
-          <img src="/assets/digital/freefire.png" alt="Free Fire wordmark" loading="lazy" decoding="async">
-        </div>
-        <div class="ab-card__copy">
-          <h3 class="ab-card__title">Free Fire<span class="ab-card__price" data-digital-price>$0.80</span></h3>
-          <label class="ab-ec-pick">
-            <span class="ab-ec-pick__label">Spec</span>
-            <select class="ab-ec-pick__select" data-digital-pick aria-label="Choose an amount for Free Fire">
-            <option data-name="Free Fire — 100 Diamonds" data-price="0.80">100 Diamonds &mdash; $0.80</option>
-            <option data-name="Free Fire — 210 Diamonds" data-price="1.53">210 Diamonds &mdash; $1.53</option>
-            <option data-name="Free Fire — 355 Diamonds" data-price="2.64">355 Diamonds &mdash; $2.64</option>
-            <option data-name="Free Fire — 310 Diamonds" data-price="3.04">310 Diamonds &mdash; $3.04</option>
-            <option data-name="Free Fire — 500 Diamonds" data-price="3.52">500 Diamonds &mdash; $3.52</option>
-            <option data-name="Free Fire — 520 Diamonds" data-price="5.05">520 Diamonds &mdash; $5.05</option>
-            <option data-name="Free Fire — 530 Diamonds" data-price="5.06">530 Diamonds &mdash; $5.06</option>
-            <option data-name="Free Fire — 720 Diamonds" data-price="5.23">720 Diamonds &mdash; $5.23</option>
-            <option data-name="Free Fire — 860 Diamonds" data-price="5.46">860 Diamonds &mdash; $5.46</option>
-            <option data-name="Free Fire — 1000 Diamonds" data-price="7.33">1000 Diamonds &mdash; $7.33</option>
-            <option data-name="Free Fire — 1060 Diamonds" data-price="10.22">1060 Diamonds &mdash; $10.22</option>
-            <option data-name="Free Fire — 1080 Diamonds" data-price="10.30">1080 Diamonds &mdash; $10.30</option>
-            <option data-name="Free Fire — 1450 Diamonds" data-price="10.67">1450 Diamonds &mdash; $10.67</option>
-            <option data-name="Free Fire — 2200 Diamonds" data-price="15.07">2200 Diamonds &mdash; $15.07</option>
-            <option data-name="Free Fire — 2180 Diamonds" data-price="21.10">2180 Diamonds &mdash; $21.10</option>
-            <option data-name="Free Fire — 3640 Diamonds" data-price="27.42">3640 Diamonds &mdash; $27.42</option>
-            <option data-name="Free Fire — 5600 Diamonds" data-price="52.75">5600 Diamonds &mdash; $52.75</option>
-            <option data-name="Free Fire — 7290 Diamonds" data-price="54.84">7290 Diamonds &mdash; $54.84</option>
-            <option data-name="Free Fire — 11500 Diamonds" data-price="96.31">11500 Diamonds &mdash; $96.31</option>
-            <option data-name="Free Fire — Weekly Membership" data-price="1.72">Weekly Membership &mdash; $1.72</option>
-            <option data-name="Free Fire — Monthly Membership" data-price="8.07">Monthly Membership &mdash; $8.07</option>
-            </select>
-          </label>
-          <p class="ab-card__more"><button type="button" class="ab-request" aria-label="ORDER NOW — Free Fire — 100 Diamonds" data-name="Free Fire — 100 Diamonds" data-price="0.80">ORDER NOW</button></p>
-        </div>
-      </article>
-
       <article class="ab-card ab-card--brand ab-card--plate ab-card--wordmark ab-card--picker" id="pokemon-go" data-digital-card>
         <div class="ab-card__media">
           <span class="ab-card__badge">8 tiers</span>
@@ -257,85 +223,6 @@ hide:
             </select>
           </label>
           <p class="ab-card__more"><button type="button" class="ab-request" aria-label="ORDER NOW — Genshin Impact — 60 Genesis Crystals" data-name="Genshin Impact — 60 Genesis Crystals" data-price="1.01">ORDER NOW</button></p>
-        </div>
-      </article>
-
-      <article class="ab-card ab-card--brand ab-card--plate ab-card--wordmark ab-card--picker" id="wuthering-waves" data-digital-card>
-        <div class="ab-card__media">
-          <span class="ab-card__badge">6 tiers</span>
-          <img src="/assets/digital/wuthering-waves.png" alt="Wuthering Waves wordmark" loading="lazy" decoding="async">
-        </div>
-        <div class="ab-card__copy">
-          <h3 class="ab-card__title">Wuthering Waves<span class="ab-card__price" data-digital-price>$0.83</span></h3>
-          <label class="ab-ec-pick">
-            <span class="ab-ec-pick__label">Spec</span>
-            <select class="ab-ec-pick__select" data-digital-pick aria-label="Choose an amount for Wuthering Waves">
-            <option data-name="Wuthering Waves — 60 Lunites" data-price="0.83">60 Lunites &mdash; $0.83</option>
-            <option data-name="Wuthering Waves — 300 + 30 Lunites" data-price="4.19">300 + 30 Lunites &mdash; $4.19</option>
-            <option data-name="Wuthering Waves — 980 + 110 Lunites" data-price="12.83">980 + 110 Lunites &mdash; $12.83</option>
-            <option data-name="Wuthering Waves — 1980 + 260 Lunites" data-price="25.91">1980 + 260 Lunites &mdash; $25.91</option>
-            <option data-name="Wuthering Waves — 3280 + 600 Lunites" data-price="43.18">3280 + 600 Lunites &mdash; $43.18</option>
-            <option data-name="Wuthering Waves — 6480 + 1600 Lunites" data-price="86.35">6480 + 1600 Lunites &mdash; $86.35</option>
-            </select>
-          </label>
-          <p class="ab-card__more"><button type="button" class="ab-request" aria-label="ORDER NOW — Wuthering Waves — 60 Lunites" data-name="Wuthering Waves — 60 Lunites" data-price="0.83">ORDER NOW</button></p>
-        </div>
-      </article>
-
-      <article class="ab-card ab-card--brand ab-card--plate ab-card--wordmark ab-card--picker" id="zzz" data-digital-card>
-        <div class="ab-card__media">
-          <span class="ab-card__badge">7 tiers</span>
-          <img src="/assets/digital/zzz.png" alt="Zenless Zone Zero wordmark" loading="lazy" decoding="async">
-        </div>
-        <div class="ab-card__copy">
-          <h3 class="ab-card__title">Zenless Zone Zero<span class="ab-card__price" data-digital-price>$1.11</span></h3>
-          <label class="ab-ec-pick">
-            <span class="ab-ec-pick__label">Spec</span>
-            <select class="ab-ec-pick__select" data-digital-pick aria-label="Choose an amount for Zenless Zone Zero">
-            <option data-name="Zenless Zone Zero — 60 Monochromes" data-price="1.11">60 Monochromes &mdash; $1.11</option>
-            <option data-name="Zenless Zone Zero — 300 + 30 Monochromes" data-price="4.62">300 + 30 Monochromes &mdash; $4.62</option>
-            <option data-name="Zenless Zone Zero — 980 + 110 Monochromes" data-price="15.17">980 + 110 Monochromes &mdash; $15.17</option>
-            <option data-name="Zenless Zone Zero — 1980 + 260 Monochromes" data-price="29.34">1980 + 260 Monochromes &mdash; $29.34</option>
-            <option data-name="Zenless Zone Zero — 3280 + 600 Monochromes" data-price="48.85">3280 + 600 Monochromes &mdash; $48.85</option>
-            <option data-name="Zenless Zone Zero — 6480 + 1600 Monochromes" data-price="92.82">6480 + 1600 Monochromes &mdash; $92.82</option>
-            <option data-name="Zenless Zone Zero — Inter-Knot Membership" data-price="4.63">Inter-Knot Membership &mdash; $4.63</option>
-            </select>
-          </label>
-          <p class="ab-card__more"><button type="button" class="ab-request" aria-label="ORDER NOW — Zenless Zone Zero — 60 Monochromes" data-name="Zenless Zone Zero — 60 Monochromes" data-price="1.11">ORDER NOW</button></p>
-        </div>
-      </article>
-
-      <article class="ab-card ab-card--brand ab-card--plate ab-card--wordmark ab-card--picker" id="nikke" data-digital-card>
-        <div class="ab-card__media">
-          <span class="ab-card__badge">18 tiers</span>
-          <img src="/assets/digital/nikke.png" alt="GODDESS OF VICTORY: NIKKE wordmark" loading="lazy" decoding="async">
-        </div>
-        <div class="ab-card__copy">
-          <h3 class="ab-card__title">GODDESS OF VICTORY: NIKKE<span class="ab-card__price" data-digital-price>$0.70</span></h3>
-          <label class="ab-ec-pick">
-            <span class="ab-ec-pick__label">Spec</span>
-            <select class="ab-ec-pick__select" data-digital-pick aria-label="Choose an amount for GODDESS OF VICTORY: NIKKE">
-            <option data-name="GODDESS OF VICTORY: NIKKE — 60 + 1 Gems" data-price="0.70">60 + 1 Gems &mdash; $0.70</option>
-            <option data-name="GODDESS OF VICTORY: NIKKE — 120 + 3 Gems" data-price="1.41">120 + 3 Gems &mdash; $1.41</option>
-            <option data-name="GODDESS OF VICTORY: NIKKE — 320 + 10 Gems" data-price="3.56">320 + 10 Gems &mdash; $3.56</option>
-            <option data-name="GODDESS OF VICTORY: NIKKE — 720 + 120 Gems" data-price="7.12">720 + 120 Gems &mdash; $7.12</option>
-            <option data-name="GODDESS OF VICTORY: NIKKE — 1500 + 260 Gems" data-price="14.92">1500 + 260 Gems &mdash; $14.92</option>
-            <option data-name="GODDESS OF VICTORY: NIKKE — 2300 + 400 Gems" data-price="22.31">2300 + 400 Gems &mdash; $22.31</option>
-            <option data-name="GODDESS OF VICTORY: NIKKE — 2370 + 420 Gems" data-price="23.16">2370 + 420 Gems &mdash; $23.16</option>
-            <option data-name="GODDESS OF VICTORY: NIKKE — 4200 + 1000 Gems" data-price="41.88">4200 + 1000 Gems &mdash; $41.88</option>
-            <option data-name="GODDESS OF VICTORY: NIKKE — 6200 + 1500 Gems" data-price="59.69">6200 + 1500 Gems &mdash; $59.69</option>
-            <option data-name="GODDESS OF VICTORY: NIKKE — Manufacturer Backup" data-price="43.86">Manufacturer Backup &mdash; $43.86</option>
-            <option data-name="GODDESS OF VICTORY: NIKKE — Technical Support S I" data-price="43.76">Technical Support S I &mdash; $43.76</option>
-            <option data-name="GODDESS OF VICTORY: NIKKE — Technical Support S II" data-price="80.91">Technical Support S II &mdash; $80.91</option>
-            <option data-name="GODDESS OF VICTORY: NIKKE — Technical Master" data-price="7.91">Technical Master &mdash; $7.91</option>
-            <option data-name="GODDESS OF VICTORY: NIKKE — Monthly Pass" data-price="3.57">Monthly Pass &mdash; $3.57</option>
-            <option data-name="GODDESS OF VICTORY: NIKKE — Grow Selection Set" data-price="16.57">Grow Selection Set &mdash; $16.57</option>
-            <option data-name="GODDESS OF VICTORY: NIKKE — Class Research Set" data-price="16.64">Class Research Set &mdash; $16.64</option>
-            <option data-name="GODDESS OF VICTORY: NIKKE — Manufacturer Research Set" data-price="24.85">Manufacturer Research Set &mdash; $24.85</option>
-            <option data-name="GODDESS OF VICTORY: NIKKE — Enhanced Module Set" data-price="43.76">Enhanced Module Set &mdash; $43.76</option>
-            </select>
-          </label>
-          <p class="ab-card__more"><button type="button" class="ab-request" aria-label="ORDER NOW — GODDESS OF VICTORY: NIKKE — 60 + 1 Gems" data-name="GODDESS OF VICTORY: NIKKE — 60 + 1 Gems" data-price="0.70">ORDER NOW</button></p>
         </div>
       </article>
 
@@ -508,28 +395,6 @@ hide:
         </div>
       </article>
 
-      <article class="ab-card ab-card--brand ab-card--plate ab-card--wordmark ab-card--picker" id="marvel-rivals" data-digital-card>
-        <div class="ab-card__media">
-          <span class="ab-card__badge">6 tiers</span>
-          <img src="/assets/digital/marvel-rivals.png" alt="Marvel Rivals wordmark" loading="lazy" decoding="async">
-        </div>
-        <div class="ab-card__copy">
-          <h3 class="ab-card__title">Marvel Rivals<span class="ab-card__price" data-digital-price>$0.89</span></h3>
-          <label class="ab-ec-pick">
-            <span class="ab-ec-pick__label">Spec</span>
-            <select class="ab-ec-pick__select" data-digital-pick aria-label="Choose an amount for Marvel Rivals">
-            <option data-name="Marvel Rivals — 100 Lattices" data-price="0.89">100 Lattices &mdash; $0.89</option>
-            <option data-name="Marvel Rivals — 500 Lattices" data-price="4.41">500 Lattices &mdash; $4.41</option>
-            <option data-name="Marvel Rivals — 1000 Lattices" data-price="8.82">1000 Lattices &mdash; $8.82</option>
-            <option data-name="Marvel Rivals — 2180 Lattices" data-price="18.42">2180 Lattices &mdash; $18.42</option>
-            <option data-name="Marvel Rivals — 5680 Lattices" data-price="46.05">5680 Lattices &mdash; $46.05</option>
-            <option data-name="Marvel Rivals — 11680 Lattices" data-price="92.11">11680 Lattices &mdash; $92.11</option>
-            </select>
-          </label>
-          <p class="ab-card__more"><button type="button" class="ab-request" aria-label="ORDER NOW — Marvel Rivals — 100 Lattices" data-name="Marvel Rivals — 100 Lattices" data-price="0.89">ORDER NOW</button></p>
-        </div>
-      </article>
-
       <article class="ab-card ab-card--brand ab-card--plate ab-card--wordmark ab-card--picker" id="diablo-iv" data-digital-card>
         <div class="ab-card__media">
           <span class="ab-card__badge">4 tiers</span>
@@ -569,30 +434,6 @@ hide:
             </select>
           </label>
           <p class="ab-card__more"><button type="button" class="ab-request" aria-label="ORDER NOW — League of Legends: Wild Rift — 425 Cores" data-name="League of Legends: Wild Rift — 425 Cores" data-price="3.10">ORDER NOW</button></p>
-        </div>
-      </article>
-
-      <article class="ab-card ab-card--brand ab-card--plate ab-card--wordmark ab-card--picker" id="whiteout-survival" data-digital-card>
-        <div class="ab-card__media">
-          <span class="ab-card__badge">8 tiers</span>
-          <img src="/assets/digital/whiteout-survival.png" alt="Whiteout Survival wordmark" loading="lazy" decoding="async">
-        </div>
-        <div class="ab-card__copy">
-          <h3 class="ab-card__title">Whiteout Survival<span class="ab-card__price" data-digital-price>$1.19</span></h3>
-          <label class="ab-ec-pick">
-            <span class="ab-ec-pick__label">Spec</span>
-            <select class="ab-ec-pick__select" data-digital-pick aria-label="Choose an amount for Whiteout Survival">
-            <option data-name="Whiteout Survival — 99 Frost Star" data-price="1.19">99 Frost Star &mdash; $1.19</option>
-            <option data-name="Whiteout Survival — 299 Frost Star" data-price="3.55">299 Frost Star &mdash; $3.55</option>
-            <option data-name="Whiteout Survival — 499 Frost Star" data-price="5.31">499 Frost Star &mdash; $5.31</option>
-            <option data-name="Whiteout Survival — 999 Frost Star" data-price="10.81">999 Frost Star &mdash; $10.81</option>
-            <option data-name="Whiteout Survival — 1999 Frost Star" data-price="22.07">1999 Frost Star &mdash; $22.07</option>
-            <option data-name="Whiteout Survival — 4999 Frost Star" data-price="54.42">4999 Frost Star &mdash; $54.42</option>
-            <option data-name="Whiteout Survival — 7499 Frost Star" data-price="83.01">7499 Frost Star &mdash; $83.01</option>
-            <option data-name="Whiteout Survival — 9999 Frost Star" data-price="112.10">9999 Frost Star &mdash; $112.10</option>
-            </select>
-          </label>
-          <p class="ab-card__more"><button type="button" class="ab-request" aria-label="ORDER NOW — Whiteout Survival — 99 Frost Star" data-name="Whiteout Survival — 99 Frost Star" data-price="1.19">ORDER NOW</button></p>
         </div>
       </article>
 
