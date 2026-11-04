@@ -89,8 +89,8 @@ extra:
       link: https://acebase.cc/topup/
 
 nav:
-  - STYLE: style/index.md
   - GEAR: gear/index.md
+  - APPS: apps/index.md
   - SERVICES: services/index.md
   - GAME: game/index.md
   - STACK: stack/index.md
