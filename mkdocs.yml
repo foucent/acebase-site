@@ -90,7 +90,7 @@ extra:
 
 nav:
   - GEAR: gear/index.md
-  - APPS: apps/index.md
+  - CDKEYS: cdkeys/index.md
   - SERVICES: services/index.md
   - GAME: game/index.md
   - STACK: stack/index.md
