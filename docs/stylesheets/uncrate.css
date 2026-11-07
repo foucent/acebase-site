@@ -1917,10 +1917,12 @@
   object-fit: cover;
 }
 
-/* Two tiles on the front page come from /game/, where the artwork is a wordmark
-   plate rather than a photograph: the band's 3:2 `cover` would slice one to a
-   stripe. Letterboxed over white instead, the plate keeps its own shape inside
-   the band. Here the tile is a --band card like every other on the homepage, so
+/* Two tiles on the /latest/ feed come from /top-up/ (the page was /services/
+   until it was renamed on 2026-11-08, and /game/ until the two pages merged on
+   2026-11-06), where the artwork is a wordmark plate rather
+   than a photograph: the band's 3:2 `cover` would slice one to a stripe.
+   Letterboxed over white instead, the plate keeps its own shape inside the
+   band. Here the tile is a --band card like every other on the homepage, so
    the media goes back to the band's own 3:2 frame above the plate's 5:2 banner
    — both blocks match at 0-5-0 and 0-5-1, which is why this one has to stay
    below them. gen_home_recent.py crops the transparent margin off the 1200x250
@@ -2481,6 +2483,42 @@
   outline: 2px solid rgba(111, 98, 80, 0.35);
   outline-offset: 1px;
   border-color: var(--ab-accent-deep);
+}
+
+/* ---------- the picker card that also has a detail page ----------------
+
+   2026-11-07: /services/'s PUBG Mobile UC card (the card and its page are on
+   /game/ since 2026-11-08) closes with
+   「Read more  或  ORDER NOW」 — the link first, the request last, which is the
+   order uncrate's own "Read More or Buy" row uses. The row is the split line
+   (.ab-card__more--split + .ab-card__or), so the flex layout, the centring,
+   the wrap and the 14px around the 或 are all its — nothing here restates
+   them.
+
+   What does have to be restated is the two halves' type. The split row's
+   recipe (.ab-card__more--split a, above) is the band and fold cards' serif
+   15px/400, because that is what the links on those cards are; this card's
+   ORDER NOW is the price page's own 13px/700/uppercase button
+   (sourcing.css). Left alone, a serif "Read more" would sit at the head of the
+   line and read as a link that wandered onto the card. Both halves and the
+   或 take the button's type, and only its type: colour and the underline stay
+   where uncrate.css already puts them, the tan rule under an accent-deep
+   word — the same pairing the button itself wears.
+
+   Listed as a class longer than the split rule (0-4-0 against 0-3-1) so the
+   override lands on specificity rather than on where it is written. */
+.md-typeset .ab-mag .ab-card--picker .ab-card__more--split a {
+  font-family: inherit;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: inherit;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+.md-typeset .ab-mag .ab-card--picker .ab-card__more--split .ab-card__or {
+  font-size: 13px;
+  line-height: inherit;
 }
 
 /* ---------- the quote card, on /games/ ---------------------------------

@@ -61,6 +61,10 @@ extra_css:
   - stylesheets/sourcing.css
   - stylesheets/gallery.css
   - stylesheets/crisp.css
+  # gear.css is scoped to .ab-sb (the home page's own wrapper — this was /gear/
+  # until 2026-11-08) and last for the same reason as the rest: it lifts the
+  # theme's 1000px content column.
+  - stylesheets/gear.css
 
 extra_javascript:
   # crisp.js first: sourcing.js hands its request to window.abOpenCrisp.
@@ -68,6 +72,8 @@ extra_javascript:
   - javascripts/sourcing.js
   - javascripts/gallery.js
   - javascripts/digital.js
+  # gear.js only runs on the page that has .ab-sb (the home page).
+  - javascripts/gear.js
 
 watch:
   - overrides
@@ -89,8 +95,11 @@ extra:
       link: https://acebase.cc/topup/
 
 nav:
-  - GEAR: gear/index.md
+  # The gear page became the front door on 2026-11-08 (user: 「将 /gear/ 改成 /」).
+  # The old address is not kept as a redirect — this workspace retires addresses.
+  - HOME: index.md
+  - TOP-UP: top-up/index.md
   - CDKEYS: cdkeys/index.md
-  - SERVICES: services/index.md
+  - GIFT CARDS: gift-cards/index.md
   - GAME: game/index.md
   - STACK: stack/index.md

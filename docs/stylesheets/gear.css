@@ -1,0 +1,1061 @@
+/* Gear page — the Superbuy homepage's layout, everything scoped to .ab-sb
+   (2026-11-08, user: 「将 http://127.0.0.1:8003/gear/ 页面模仿
+   https://www.superbuy.com/cn/page/homepage/，不需要「大家都在聊什么？
+   来自 Superbuy 社区的真实好物、晒单与心得。」的内容」).
+
+   Numbers come from that page measured at a 1440 viewport (the measuring
+   scripts are _tmp_ocr/superbuy_metrics.py and superbuy_cards.py):
+     inner column     1200px, centred
+     hero             600px tall, linear-gradient(105deg,#f5faff,#e0f2ff 45%,
+                      #74a1e0), h1 36/800, meta 14/500 #6f6f78
+     search           760x64 white, radius 32, 1px rgba(218,227,242,.95);
+                      48px input, 112x48 #0559ff submit radius 24
+     chips            36px tall, radius 24, white, 14/500 #18181b
+     journey          white 1200x132 card radius 24, lifted 54px over the
+                      hero, three 360x48 steps, 1160x52 chevron track with
+                      three #0559ff dots
+     feature row      four 304x136 banners
+     discovery        #f5f5f5 band, 48px padding, h2 24/700, segmented
+                      control 360x40 #eaeaeb radius 24 with 32px radius-16
+                      pills (active #0559ff, rest #efefef/#6f6f78, gap 8)
+     grid             5 columns, gap 16 -> 227x318 cards, padding 16/16/6,
+                      1px #dedee0, radius 16, 193x193 picture radius 14 on
+                      #f6f9fc, 14px single-line title, 32px bottom row with a
+                      32x32 radius-16 #0559ff button
+
+   Two departures from that page, both because our page is not a marketplace:
+   no community block (asked for), and the card's price/quantity row is the
+   site's own Request Sourcing button (no prices on this page). The brand
+   "pills" filter the grid instead of switching product feeds.
+
+   Full width: the theme locks .md-content to 1000px at >=76.25em, so this
+   page lifts that lock with :has() rather than 100vw — 100vw includes the
+   scrollbar on Windows and would put 15px of horizontal overflow on the
+   page. Keep the scrollbar out of the picture. */
+
+/* ---------- the page takes the whole viewport column ---------- */
+
+.md-main__inner:has(.ab-sb) {
+  max-width: none;
+  margin-top: 0;
+}
+
+.md-content:has(.ab-sb) {
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
+/* Material keeps a 1.2rem left margin on the content column while the
+   primary sidebar exists in the DOM, written as
+   [dir="ltr"] .md-sidebar--primary:not([hidden]) ~ .md-content > .md-content__inner
+   — five selectors of class weight (the [hidden] inside :not counts), so the
+   un-inset version carries a :not([hidden]) of its own to draw level and win
+   on source order. */
+.md-main__inner:has(.ab-sb) .md-content > .md-content__inner:not([hidden]) {
+  margin: 0;
+  padding: 0;
+}
+
+.md-typeset .ab-sb {
+  --sb-blue: #0559ff;
+  --sb-blue-dark: #0346cc;
+  --sb-ink: #18181b;
+  --sb-muted: #6f6f78;
+  --sb-line: #dedee0;
+  --sb-soft: #f5f5f5;
+  --sb-chip: #efeff0;
+  --sb-font: "Inter", "PingFang SC", "Microsoft YaHei", -apple-system,
+    "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+
+  font-family: var(--sb-font);
+  color: var(--sb-ink);
+  background: #fff;
+}
+
+.md-typeset .ab-sb *,
+.md-typeset .ab-sb *::before,
+.md-typeset .ab-sb *::after {
+  box-sizing: border-box;
+}
+
+.md-typeset .ab-sb-inner {
+  width: min(1200px, 100% - 48px);
+  margin-inline: auto;
+}
+
+/* ---------- hero ---------- */
+
+.md-typeset .ab-sb-hero {
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(105deg, #f5faff 0%, #e0f2ff 42%, #8fb8ea 100%);
+}
+
+.md-typeset .ab-sb-hero__inner {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  min-height: 600px;
+}
+
+.md-typeset .ab-sb-hero__copy {
+  width: min(680px, 100%);
+  padding: 56px 0 108px;
+}
+
+.md-typeset .ab-sb-hero__art {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  width: 54%;
+  pointer-events: none;
+}
+
+.md-typeset .ab-sb-hero__art img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  border-radius: 0;
+  object-fit: cover;
+  object-position: 58% 50%;
+  -webkit-mask-image: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, #000 38%);
+  mask-image: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, #000 38%);
+}
+
+/* the site's uncrate.css gives every h1 a 2px black rule and a 0.35rem pad;
+   the hero's headline is set in Superbuy's style, so both go */
+.md-typeset .ab-sb-hero__title {
+  margin: 0;
+  padding-bottom: 0;
+  border-bottom: 0;
+  color: var(--sb-ink);
+  font-family: var(--sb-font);
+  font-size: clamp(30px, 2.6vw, 36px);
+  font-weight: 800;
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+}
+
+.md-typeset .ab-sb-hero__meta {
+  margin: 14px 0 0;
+  color: var(--sb-muted);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+/* ---------- hero search ---------- */
+
+.md-typeset .ab-sb-search {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: min(760px, 100%);
+  min-height: 64px;
+  margin: 26px 0 0;
+  padding: 8px 8px 8px 6px;
+  border: 1px solid rgba(218, 227, 242, 0.95);
+  border-radius: 32px;
+  background: #fff;
+}
+
+.md-typeset .ab-sb-search__field {
+  display: flex;
+  flex: 1 1 auto;
+  align-items: center;
+  gap: 10px;
+  min-width: 0;
+  margin: 0;
+  padding: 0 6px 0 14px;
+}
+
+.md-typeset .ab-sb-search__icon {
+  flex: none;
+  color: #9aa0ab;
+}
+
+/* type="text", not "search": the box takes a pasted link, and search inputs
+   bring a native clear button and the wrong keyboard hint on mobile */
+.md-typeset .ab-sb-search input {
+  width: 100%;
+  height: 48px;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  box-shadow: none;
+  color: var(--sb-ink);
+  font-family: var(--sb-font);
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.4;
+  outline: none;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.md-typeset .ab-sb-search input::placeholder {
+  color: #9aa0ab;
+}
+
+.md-typeset .ab-sb-search__submit {
+  flex: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 48px;
+  margin: 0;
+  padding: 0 30px;
+  border: 0;
+  border-radius: 24px;
+  background: var(--sb-blue);
+  color: #fcfcfc;
+  font-family: var(--sb-font);
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 1;
+  cursor: pointer;
+  transition: background-color 0.15s ease;
+}
+
+.md-typeset .ab-sb-search__submit:hover {
+  background: var(--sb-blue-dark);
+}
+
+/* the reply line under the box: only there once a link has been handed to the
+   live chat, and cleared again the moment the input changes */
+.md-typeset .ab-sb-search__note {
+  margin: 12px 0 0;
+  color: #15803d;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+.md-typeset .ab-sb-search__note[hidden] {
+  display: none;
+}
+
+/* ---------- the email gate ---------- */
+
+/* A dialog, not a page block: fixed over everything, and the panel scrolls on
+   its own if a phone is shorter than the copy. `[hidden]` has to be spelled out
+   because the rule above it sets display:flex. */
+.md-typeset .ab-sb-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 90;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  background: rgba(12, 18, 32, 0.55);
+  -webkit-backdrop-filter: blur(2px);
+  backdrop-filter: blur(2px);
+}
+
+.md-typeset .ab-sb-modal[hidden] {
+  display: none;
+}
+
+.md-typeset .ab-sb-modal__panel {
+  position: relative;
+  width: min(440px, 100%);
+  max-height: 100%;
+  overflow-y: auto;
+  padding: 28px 28px 24px;
+  border-radius: 20px;
+  background: #fff;
+  box-shadow: 0 24px 60px -20px rgba(12, 18, 32, 0.45);
+}
+
+.md-typeset .ab-sb-modal__close {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  border-radius: 50%;
+  background: var(--sb-chip);
+  color: var(--sb-muted);
+  cursor: pointer;
+}
+
+.md-typeset .ab-sb-modal__close:hover {
+  background: #e3e3e6;
+  color: var(--sb-ink);
+}
+
+.md-typeset .ab-sb-modal__title {
+  margin: 0 40px 0 0;
+  padding: 0;
+  border: 0;
+  color: var(--sb-ink);
+  font-family: var(--sb-font);
+  font-size: 22px;
+  font-weight: 800;
+  line-height: 1.25;
+  letter-spacing: -0.01em;
+}
+
+.md-typeset .ab-sb-modal__lead {
+  margin: 10px 0 0;
+  color: var(--sb-muted);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.55;
+}
+
+/* the pasted link, echoed back so the reader sees what is being priced */
+.md-typeset .ab-sb-modal__link {
+  margin: 12px 0 0;
+  padding: 10px 12px;
+  border-radius: 10px;
+  background: #f5f7fb;
+  color: var(--sb-ink);
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 1.45;
+  word-break: break-all;
+}
+
+.md-typeset .ab-sb-modal__link:empty {
+  display: none;
+}
+
+.md-typeset .ab-sb-modal__form {
+  margin: 18px 0 0;
+}
+
+.md-typeset .ab-sb-modal__label {
+  display: block;
+  margin-bottom: 6px;
+  color: var(--sb-ink);
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.md-typeset .ab-sb-modal__input {
+  display: block;
+  width: 100%;
+  height: 48px;
+  margin: 0;
+  padding: 0 14px;
+  border: 1px solid var(--sb-line);
+  border-radius: 12px;
+  background: #fff;
+  color: var(--sb-ink);
+  font-family: var(--sb-font);
+  font-size: 15px;
+  line-height: 1.4;
+  box-shadow: none;
+}
+
+.md-typeset .ab-sb-modal__input:focus {
+  border-color: var(--sb-blue);
+  outline: 2px solid rgba(5, 89, 255, 0.18);
+  outline-offset: 0;
+}
+
+/* the error tone is the page's own red, not Material's, which is a link colour
+   here and would read as clickable */
+.md-typeset .ab-sb-modal__input[aria-invalid="true"] {
+  border-color: #c2410c;
+}
+
+.md-typeset .ab-sb-modal__error {
+  margin: 8px 0 0;
+  color: #c2410c;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+.md-typeset .ab-sb-modal__error[hidden] {
+  display: none;
+}
+
+.md-typeset .ab-sb-modal__submit {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 48px;
+  margin: 16px 0 0;
+  padding: 0 20px;
+  border: 0;
+  border-radius: 24px;
+  background: var(--sb-blue);
+  color: #fcfcfc;
+  font-family: var(--sb-font);
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 1;
+  cursor: pointer;
+  transition: background-color 0.15s ease;
+}
+
+.md-typeset .ab-sb-modal__submit:hover {
+  background: var(--sb-blue-dark);
+  color: #fcfcfc;
+}
+
+.md-typeset .ab-sb-modal__foot {
+  margin: 14px 0 0;
+  color: var(--sb-muted);
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+/* ---------- hero chips ---------- */
+
+.md-typeset .ab-sb-hero__tools {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 22px;
+}
+
+.md-typeset .ab-sb-chip {
+  display: inline-flex;
+  align-items: center;
+  min-height: 36px;
+  margin: 0;
+  padding: 0 18px;
+  border: 0;
+  border-radius: 24px;
+  background: #fff;
+  color: var(--sb-ink);
+  font-family: var(--sb-font);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.15s ease;
+}
+
+.md-typeset .ab-sb-chip:hover {
+  background: #eef4ff;
+  color: var(--sb-ink);
+}
+
+/* ---------- the three-step journey ---------- */
+
+.md-typeset .ab-sb-journey {
+  position: relative;
+  z-index: 3;
+}
+
+.md-typeset .ab-sb-journey__card {
+  margin-top: -54px;
+  padding: 20px 28px 22px;
+  border-radius: 24px;
+  background: #fff;
+  box-shadow: 0 2px 6px -2px rgba(11, 95, 255, 0.04),
+    0 12px 28px -14px rgba(11, 95, 255, 0.18);
+}
+
+/* :not([hidden]) is not decoration: Material's `.md-typeset ol:not([hidden])`
+   forces display:flow-root and `[dir="ltr"] .md-typeset ol` keeps a 0.625em
+   left margin, and both outrank a plain two-class selector. */
+.md-typeset .ab-sb-journey__steps:not([hidden]) {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.md-typeset .ab-sb-step {
+  margin: 0;
+  text-align: left;
+}
+
+.md-typeset .ab-sb-step:nth-child(2) {
+  text-align: center;
+}
+
+.md-typeset .ab-sb-step:nth-child(3) {
+  text-align: right;
+}
+
+.md-typeset .ab-sb-step__title {
+  margin: 0;
+  color: var(--sb-ink);
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 1.35;
+}
+
+.md-typeset .ab-sb-step__num {
+  margin-right: 4px;
+  color: var(--sb-blue);
+  font-weight: 800;
+}
+
+.md-typeset .ab-sb-step__text {
+  margin: 4px 0 0;
+  color: var(--sb-muted);
+  font-size: 13px;
+  line-height: 1.45;
+}
+
+.md-typeset .ab-sb-journey__track {
+  position: relative;
+  height: 52px;
+  margin-top: 16px;
+  border-radius: 10px;
+  background-color: #e8f1ff;
+  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='36' height='52' viewBox='0 0 36 52'%3E%3Cpath d='M7 13 21 26 7 39' fill='none' stroke='%23ffffff' stroke-width='6' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+  background-repeat: repeat-x;
+  background-position: 10px 0;
+  background-size: 36px 52px;
+}
+
+.md-typeset .ab-sb-journey__dot {
+  position: absolute;
+  top: 50%;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: var(--sb-blue);
+  box-shadow: 0 0 0 6px #d9e6ff;
+  transform: translateY(-50%);
+}
+
+.md-typeset .ab-sb-journey__dot:nth-child(1) {
+  left: 12px;
+}
+
+.md-typeset .ab-sb-journey__dot:nth-child(2) {
+  left: 50%;
+  margin-left: -9px;
+}
+
+.md-typeset .ab-sb-journey__dot:nth-child(3) {
+  right: 12px;
+}
+
+/* ---------- four catalogue banners ---------- */
+
+.md-typeset .ab-sb-features {
+  padding-top: 28px;
+}
+
+.md-typeset .ab-sb-features__grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.md-typeset .ab-sb-feature {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-height: 136px;
+  padding: 20px 18px 20px 22px;
+  border-radius: 16px;
+  color: var(--sb-ink);
+  text-decoration: none;
+  overflow: hidden;
+  transition: transform 0.18s ease, box-shadow 0.18s ease;
+}
+
+.md-typeset .ab-sb-feature:hover {
+  color: var(--sb-ink);
+  box-shadow: 0 14px 28px -18px rgba(17, 24, 39, 0.4);
+  transform: translateY(-2px);
+}
+
+.md-typeset .ab-sb-feature--game {
+  background: linear-gradient(120deg, #eef4ff, #d7e7ff);
+}
+
+.md-typeset .ab-sb-feature--gift {
+  background: linear-gradient(120deg, #fff4ea, #ffe1c4);
+}
+
+.md-typeset .ab-sb-feature--cdkeys {
+  background: linear-gradient(120deg, #eafaf1, #d1f1e0);
+}
+
+.md-typeset .ab-sb-feature--top-up {
+  background: linear-gradient(120deg, #f4eeff, #e4d8ff);
+}
+
+.md-typeset .ab-sb-feature__text {
+  display: block;
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
+.md-typeset .ab-sb-feature__eyebrow {
+  display: block;
+  color: rgba(24, 24, 27, 0.5);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  line-height: 1.4;
+  text-transform: uppercase;
+}
+
+.md-typeset .ab-sb-feature__title {
+  display: block;
+  margin-top: 2px;
+  font-size: 22px;
+  font-weight: 800;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+}
+
+.md-typeset .ab-sb-feature__art {
+  display: block;
+  flex: 0 0 auto;
+  width: 42%;
+  max-width: 132px;
+}
+
+.md-typeset .ab-sb-feature__art img {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0;
+  border-radius: 0;
+  object-fit: contain;
+}
+
+/* ---------- discovery band ---------- */
+
+.md-typeset .ab-sb-discovery {
+  margin-top: 36px;
+  padding: 48px 0 60px;
+  background: var(--sb-soft);
+}
+
+.md-typeset .ab-sb-discovery__head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.md-typeset .ab-sb-discovery__title {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  color: var(--sb-ink);
+  font-family: var(--sb-font);
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+/* the line under the heading: the band is a feed of past quotes now */
+.md-typeset .ab-sb-discovery__lead {
+  margin: 8px 0 0;
+  color: var(--sb-muted);
+  font-family: var(--sb-font);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.md-typeset .ab-sb-chat {
+  flex: none;
+  display: inline-flex;
+  align-items: center;
+  height: 36px;
+  margin: 0;
+  padding: 0 18px;
+  border: 0;
+  border-radius: 24px;
+  background: var(--sb-blue);
+  color: #fcfcfc;
+  font-family: var(--sb-font);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1;
+  cursor: pointer;
+  transition: background-color 0.15s ease;
+}
+
+.md-typeset .ab-sb-chat:hover {
+  background: var(--sb-blue-dark);
+}
+
+/* brand pills */
+
+.md-typeset .ab-sb-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 20px;
+}
+
+.md-typeset .ab-sb-pill {
+  display: inline-flex;
+  align-items: center;
+  height: 32px;
+  margin: 0;
+  padding: 0 14px;
+  border: 0;
+  border-radius: 16px;
+  background: var(--sb-chip);
+  color: var(--sb-muted);
+  font-family: var(--sb-font);
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1;
+  cursor: pointer;
+  transition: background-color 0.15s ease, color 0.15s ease;
+}
+
+.md-typeset .ab-sb-pill:hover {
+  background: #e4e4e6;
+}
+
+.md-typeset .ab-sb-pill.is-active {
+  background: var(--sb-blue);
+  color: #fcfcfc;
+}
+
+.md-typeset .ab-sb-pill.is-active:hover {
+  background: var(--sb-blue-dark);
+}
+
+/* card grid */
+
+.md-typeset .ab-sb-grid {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 16px;
+  margin-top: 24px;
+}
+
+.md-typeset .ab-sb-card {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 16px 16px 10px;
+  border: 1px solid var(--sb-line);
+  border-radius: 16px;
+  background: #fff;
+  transition: box-shadow 0.18s ease;
+}
+
+.md-typeset .ab-sb-card:hover {
+  box-shadow: 0 14px 26px -20px rgba(17, 24, 39, 0.45);
+}
+
+.md-typeset .ab-sb-card[hidden] {
+  display: none;
+}
+
+.md-typeset .ab-sb-card__media {
+  position: relative;
+  overflow: hidden;
+  aspect-ratio: 1 / 1;
+  border-radius: 14px;
+  background: #f6f9fc;
+}
+
+.md-typeset .ab-sb-card__media img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  border-radius: 0;
+  object-fit: cover;
+  cursor: zoom-in;
+}
+
+/* the lightbox pill: gallery.css only knows .ab-mag, this page is not one */
+.md-typeset .ab-sb .ab-card__count {
+  position: absolute;
+  right: 8px;
+  bottom: 8px;
+  z-index: 2;
+  min-width: 18px;
+  padding: 1px 5px;
+  border-radius: 999px;
+  background: rgba(0, 0, 0, 0.78);
+  color: #fff;
+  font-size: 10px;
+  font-weight: 800;
+  line-height: 16px;
+  text-align: center;
+}
+
+.md-typeset .ab-sb-card__title {
+  display: -webkit-box;
+  overflow: hidden;
+  margin: 12px 0 0;
+  color: var(--sb-ink);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.45;
+  min-height: 2.9em;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+
+/* the quote line: the price the look-up came back with, and nothing else —
+   the date that first sat next to it was dropped (2026-11-08, user:
+   「类似Lowest · Nov 7的日期不需要」). The numbers are placeholders; see the
+   note in docs/index.md. */
+.md-typeset .ab-sb-card__quote {
+  margin: 6px 0 0;
+  padding: 0;
+}
+
+.md-typeset .ab-sb-card__price {
+  color: var(--sb-ink);
+  font-family: var(--sb-font);
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.25;
+}
+
+.md-typeset .ab-sb-card__bottom {
+  margin-top: auto;
+  padding-top: 8px;
+}
+
+.md-typeset .ab-sb-card .ab-request {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  width: 100%;
+  min-height: 32px;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: none;
+  box-shadow: none;
+  color: var(--sb-blue);
+  font-family: var(--sb-font);
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 1.2;
+  text-align: left;
+  text-transform: none;
+  letter-spacing: 0;
+  cursor: pointer;
+}
+
+.md-typeset .ab-sb-card .ab-request:hover {
+  color: var(--sb-blue-dark);
+}
+
+.md-typeset .ab-sb-card__go {
+  flex: none;
+  display: inline-grid;
+  place-items: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: var(--sb-blue);
+  color: #fff;
+  transition: background-color 0.15s ease;
+}
+
+.md-typeset .ab-sb-card .ab-request:hover .ab-sb-card__go {
+  background: var(--sb-blue-dark);
+}
+
+/* sourcing.js flashes .ab-request--sent for 650ms after the hand-off; the
+   site's own flash lives under .ab-mag, so this page carries its own */
+.md-typeset .ab-sb-card .ab-request--sent,
+.md-typeset .ab-sb-card .ab-request--sent:hover {
+  color: #15803d;
+}
+
+.md-typeset .ab-sb-card .ab-request--sent .ab-sb-card__go,
+.md-typeset .ab-sb-card .ab-request--sent:hover .ab-sb-card__go {
+  background: #15803d;
+}
+
+.md-typeset .ab-sb-empty {
+  margin: 32px 0 0;
+  color: var(--sb-muted);
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.md-typeset .ab-sb-empty[hidden] {
+  display: none;
+}
+
+/* anchor jumps land below nothing now that the header is not sticky, but a
+   little air under the discovery heading reads better on a hash landing */
+.md-typeset .ab-sb [id] {
+  scroll-margin-top: 16px;
+}
+
+/* ---------- breakpoints ---------- */
+
+/* Under 1200 the inner column shrinks with the viewport and the hero photo
+   would sit directly under the search box, so it goes; the copy sets the
+   hero's height instead of the fixed 600px. */
+@media screen and (max-width: 1199px) {
+  .md-typeset .ab-sb-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .md-typeset .ab-sb-hero__art {
+    display: none;
+  }
+
+  .md-typeset .ab-sb-hero__inner {
+    min-height: 0;
+  }
+
+  .md-typeset .ab-sb-hero__copy {
+    padding: 56px 0 96px;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .md-typeset .ab-sb-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .md-typeset .ab-sb-features__grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .md-typeset .ab-sb-feature__art {
+    width: 38%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .md-typeset .ab-sb-inner {
+    width: min(1200px, 100% - 32px);
+  }
+
+  .md-typeset .ab-sb-hero__inner {
+    min-height: 0;
+  }
+
+  .md-typeset .ab-sb-hero__copy {
+    padding: 36px 0 68px;
+  }
+
+  .md-typeset .ab-sb-search {
+    min-height: 56px;
+    padding: 6px;
+    border-radius: 28px;
+  }
+
+  .md-typeset .ab-sb-search__submit {
+    height: 44px;
+    padding: 0 18px;
+  }
+
+  .md-typeset .ab-sb-modal {
+    padding: 16px;
+  }
+
+  .md-typeset .ab-sb-modal__panel {
+    padding: 24px 20px 20px;
+    border-radius: 16px;
+  }
+
+  .md-typeset .ab-sb-modal__title {
+    font-size: 20px;
+  }
+
+  .md-typeset .ab-sb-journey__card {
+    margin-top: -40px;
+    padding: 20px;
+    border-radius: 20px;
+  }
+
+  .md-typeset .ab-sb-journey__steps:not([hidden]) {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  /* the base rule aligns steps 2 and 3 by :nth-child, so this carries the
+     same weight to undo it on a one-column stack */
+  .md-typeset .ab-sb-step:nth-child(n) {
+    text-align: left;
+  }
+
+  .md-typeset .ab-sb-journey__track {
+    display: none;
+  }
+
+  .md-typeset .ab-sb-features {
+    padding-top: 20px;
+  }
+
+  .md-typeset .ab-sb-feature {
+    min-height: 108px;
+    padding: 14px 14px 14px 16px;
+  }
+
+  .md-typeset .ab-sb-feature__title {
+    font-size: 18px;
+  }
+
+  .md-typeset .ab-sb-discovery {
+    margin-top: 24px;
+    padding: 32px 0 40px;
+  }
+
+  .md-typeset .ab-sb-discovery__head {
+    flex-wrap: wrap;
+  }
+
+  .md-typeset .ab-sb-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+  }
+
+  .md-typeset .ab-sb-card {
+    padding: 12px 12px 8px;
+    border-radius: 14px;
+  }
+
+  .md-typeset .ab-sb-card__media {
+    border-radius: 12px;
+  }
+
+  /* a 173px card has room for "Get this price" on one line only at 12px,
+     and the disc comes down with it */
+  .md-typeset .ab-sb-card .ab-request {
+    font-size: 12px;
+    gap: 6px;
+  }
+
+  .md-typeset .ab-sb-card__go {
+    width: 28px;
+    height: 28px;
+  }
+
+  .md-typeset .ab-sb-card__go svg {
+    width: 14px;
+    height: 14px;
+  }
+}
+
+@media screen and (max-width: 389px) {
+  .md-typeset .ab-sb-grid {
+    grid-template-columns: 1fr;
+  }
+}

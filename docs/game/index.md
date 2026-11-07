@@ -11,23 +11,29 @@ hide:
      Zenless Zone Zero、Wuthering Waves、Marvel Rivals、
      GODDESS OF VICTORY: NIKKE、Free Fire、Whiteout Survival ——
      生成器的 DROP 列表记着这六个 id，重跑不会再出现。
+
+     2026-11-06 这一页并进 /services/；2026-11-08 用户「新增一个
+     Game 类目，将 /services/ 中的游戏移过去」，十七款回到这里，
+     目录页只留外充与询价卡（礼品卡同日也搬去 /gift-cards/；那页
+     同日改名 /top-up/，用户「将 services 类目改为 Top-Up」）。
+     卡片 markup 与并页前
+     逐字相同（生成器同一个 card()），PUBG Mobile UC 的详情页跟着
+     卡搬到了 /game/pubg-mobile/（生成器的 DETAIL_PAGES）。
      生成脚本：C:\1Work\_tmp_ocr\gen_digital_sumei.py（重跑覆盖本页）。
-     卡片版式取自 acebase.cc 的 /gift-cards/（2026-11-01 用户：「按 /gift-cards/
-     页的样式进行排版」）：--plate --wordmark 的 5:2 画框（品牌条 cover 裁进
+     卡片版式取自 acebase.cc 早先的 /gift-cards/ 页（2026-11-01 用户：「按
+     /gift-cards/ 页的样式进行排版」；本站同名页 2026-11-08 才建，用的就是
+     这套卡）：--plate --wordmark 的 5:2 画框（品牌条 cover 裁进
      去）、左上角档数角标、价格跟在标题末尾、Spec 下拉。栅格是 --pricing 的
      三列（1024 起）。动作行是本站的 .ab-request（sourcing.js；2026-11-02 由
      + Add to cart 改写，同日按钮文案再改为 ORDER NOW，购物车已取消）：点一下
-     把档位名与价格送进在线客服，不是 /gift-cards/ 的 Buy；下拉换档时由
+     把档位名与价格送进在线客服，不是那页的 Buy；下拉换档时由
      docs/javascripts/digital.js 同步价格、data-* 与无障碍名。
      品牌条图在 docs/assets/digital/<id>.png（1200x250，保留原画布留白）。 -->
 
 <div class="ab-mag" markdown="0">
 
   <section class="ab-section">
-    <header class="ab-section__head">
-      <h2 class="ab-section__title">Games</h2>
-    </header>
-    <div class="ab-list ab-list--pricing" aria-label="Games catalogue">
+    <div class="ab-list ab-list--pricing" aria-label="Game catalogue">
 
       <article class="ab-card ab-card--brand ab-card--plate ab-card--wordmark ab-card--picker" id="pubg-mobile" data-digital-card>
         <div class="ab-card__media">
@@ -35,7 +41,7 @@ hide:
           <img src="/assets/digital/pubg-mobile.png" alt="PUBG Mobile UC wordmark" loading="lazy" decoding="async">
         </div>
         <div class="ab-card__copy">
-          <h3 class="ab-card__title">PUBG Mobile UC<span class="ab-card__price" data-digital-price>$0.80</span></h3>
+          <h3 class="ab-card__title"><a href="/game/pubg-mobile/">PUBG Mobile UC</a><span class="ab-card__price" data-digital-price>$0.80</span></h3>
           <label class="ab-ec-pick">
             <span class="ab-ec-pick__label">Spec</span>
             <select class="ab-ec-pick__select" data-digital-pick aria-label="Choose an amount for PUBG Mobile UC">
@@ -51,7 +57,7 @@ hide:
             <option data-name="PUBG Mobile UC — 30000 + 10500 UC" data-price="402.01">30000 + 10500 UC &mdash; $402.01</option>
             </select>
           </label>
-          <p class="ab-card__more"><button type="button" class="ab-request" aria-label="ORDER NOW — PUBG Mobile UC — 60 UC" data-name="PUBG Mobile UC — 60 UC" data-price="0.80">ORDER NOW</button></p>
+          <p class="ab-card__more ab-card__more--split"><a href="/game/pubg-mobile/">Read more</a><span class="ab-card__or">or</span><button type="button" class="ab-request" aria-label="ORDER NOW — PUBG Mobile UC — 60 UC" data-name="PUBG Mobile UC — 60 UC" data-price="0.80">ORDER NOW</button></p>
         </div>
       </article>
 
