@@ -85,21 +85,34 @@ extra:
   # The row above the wordmark, copied 1:1 from acebase.cc (2026-11-01, 用户:
   # 「将 8000 的顶部样式，导航栏目以上的部分，1:1 从 8003 复制过来」). Same three
   # entries, same labels — text-transform: uppercase does the casing. The second
-  # entry points at acebase.cc's /topup/ rather than a bare /topup/, because
-  # this site has no such page and the row must not carry a dead link. The third
-  # entry (@AceBase) is written into header.html next to the logo, as on acebase.
+  # entry used to point at acebase.cc's /topup/, a page that no longer exists;
+  # 2026-11-08 the user asked for it to lead home instead (「页面顶部的
+  # shop.AceBase.cc 的链接要指向首页」), so it is "/" now — the front page of
+  # whichever host serves the row. The third entry (@AceBase) was written into
+  # header.html next to the logo, as on acebase, and came out on 2026-11-02.
   family:
     - label: AceBase.cc
       link: https://acebase.cc/
     - label: shop.AceBase.cc
-      link: https://acebase.cc/topup/
+      link: /
 
 nav:
   # The gear page became the front door on 2026-11-08 (user: 「将 /gear/ 改成 /」).
   # The old address is not kept as a redirect — this workspace retires addresses.
+  # STACK became GUIDES on 2026-11-08 (user: 「将导航和目录 stack改为guides」),
+  # old address 404 as usual. Later the same day (「/game/ 改名为 Top-ups，
+  # gift cards 改名为 gift-cards，/top-up/ 改名为 news」): TOP-UP → NEWS (now
+  # the last catalogue entry), GIFT CARDS → GIFT-CARDS, GAME → TOP-UPS (now
+  # second). /top-up/ and /game/ are 404 too — no redirects.
+  # Still later (「将 news的商品移到 …/top-ups/，并将 top-ups/改名为 Top ups」):
+  # the two live top-ups left /news/ for /top-ups/, whose label lost its hyphen
+  # — TOP UPS. NEWS keeps its fifth slot.
+  # 2026-11-08, last word on the label (user: 「TOP UPS 改成 TOP-UPS」): the
+  # hyphen is back — TOP-UPS — and with it the page title and aria-label read
+  # Top-ups. The address was always /top-ups/ and does not change.
   - HOME: index.md
-  - TOP-UP: top-up/index.md
+  - TOP-UPS: top-ups/index.md
   - CDKEYS: cdkeys/index.md
-  - GIFT CARDS: gift-cards/index.md
-  - GAME: game/index.md
-  - STACK: stack/index.md
+  - GIFT-CARDS: gift-cards/index.md
+  - NEWS: news/index.md
+  - GUIDES: guides/index.md

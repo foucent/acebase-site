@@ -1,6 +1,6 @@
 ---
-title: Gift Cards
-description: AceBase Gift Cards — store gift cards, 6 cards, tiers from $4.50.
+title: Gift-cards
+description: AceBase Gift-cards — store gift cards, 6 cards, tiers from $4.50.
 hide:
   - title
   - toc
@@ -17,6 +17,13 @@ hide:
      的十一张询价卡留在目录页 —— 询价卡是卡密/钱包码，不是礼品卡；那页
      同日改名 /top-up/（用户「将 services 类目改为 Top-Up」）。
      生成脚本：C:\1Work\_tmp_ocr\gen_digital_sumei.py（重跑覆盖本页）。
+     2026-11-08 用户「/game/ 改名为 Top-ups，gift cards 改名为 gift-cards，
+     /top-up/ 改名为 news」：外充那页成了 /news/（内容不动），游戏那页成了
+     /top-ups/，礼品卡页只把标签改成 Gift-cards；旧地址 /top-up/ 与 /game/
+     都 404，nav 顺序改成 HOME / TOP-UPS / CDKEYS / GIFT-CARDS / NEWS / GUIDES。
+     同日晚些时候用户「将 news的商品移到 …/top-ups/，并将 top-ups/改名为
+     Top ups」：外充 2 款并进 /top-ups/（排在 SECTIONS 的 Games 之前），
+     这页改叫「Top ups」（nav 标签 TOP UPS，地址仍是 /top-ups/）。
      卡片版式取自 acebase.cc 早先的 /gift-cards/ 页（2026-11-01 用户：「按
      /gift-cards/ 页的样式进行排版」；本站同名页 2026-11-08 才建，用的就是
      这套卡）：--plate --wordmark 的 5:2 画框（品牌条 cover 裁进
@@ -30,7 +37,7 @@ hide:
 <div class="ab-mag" markdown="0">
 
   <section class="ab-section">
-    <div class="ab-list ab-list--pricing" aria-label="Gift Cards catalogue">
+    <div class="ab-list ab-list--pricing" aria-label="Gift-cards catalogue">
 
       <article class="ab-card ab-card--brand ab-card--plate ab-card--wordmark ab-card--picker" id="amazon-gift-card-us" data-digital-card>
         <div class="ab-card__media">

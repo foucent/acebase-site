@@ -27,6 +27,13 @@ hide:
      分类页没有的三张（Windows 11 Pro、Costco、Microsoft 365）仍是
      band 卡 + Request Sourcing，价钱在在线客服里确认。
      生成脚本：C:\1Work\_tmp_ocr\gen_digital_sumei.py（重跑覆盖本页）。
+     2026-11-08 用户「/game/ 改名为 Top-ups，gift cards 改名为 gift-cards，
+     /top-up/ 改名为 news」：外充那页成了 /news/（内容不动），游戏那页成了
+     /top-ups/，礼品卡页只把标签改成 Gift-cards；旧地址 /top-up/ 与 /game/
+     都 404，nav 顺序改成 HOME / TOP-UPS / CDKEYS / GIFT-CARDS / NEWS / GUIDES。
+     同日晚些时候用户「将 news的商品移到 …/top-ups/，并将 top-ups/改名为
+     Top ups」：外充 2 款并进 /top-ups/（排在 SECTIONS 的 Games 之前），
+     这页改叫「Top ups」（nav 标签 TOP UPS，地址仍是 /top-ups/）。
      卡片版式取自 acebase.cc 早先的 /gift-cards/ 页（2026-11-01 用户：「按
      /gift-cards/ 页的样式进行排版」；本站同名页 2026-11-08 才建，用的就是
      这套卡）：--plate --wordmark 的 5:2 画框（品牌条 cover 裁进

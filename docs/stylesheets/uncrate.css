@@ -963,6 +963,18 @@
   color: var(--ab-text);
 }
 
+/* The one line a page carries while it has nothing to list yet — /news/ since
+   2026-11-08, when its two cards moved to /top-ups/ and the page stayed on as a
+   placeholder. Not the retired .ab-section__lead: that one is a dek under a
+   section head and every page-level dek was removed on 2026-11-02. */
+.md-typeset .ab-mag .ab-section__empty {
+  margin: 0;
+  font-family: var(--ab-serif);
+  font-size: 17px;
+  line-height: 1.6;
+  color: var(--ab-text-muted);
+}
+
 /* The dek under a section head. `ab-hero__excerpt` cannot be reused here: it
    is centred with an auto margin, which fights the left-aligned head it would
    sit beneath. */
@@ -1699,9 +1711,9 @@
   margin: 0;
 }
 
-/* ---------- the directory cards, /stack/ ---------------------------------
+/* ---------- the directory cards, /guides/ --------------------------------
 
-   /stack/ grew a second list on 2026-11-02: ten sites the user picked, each
+   /guides/ grew a second list on 2026-11-02: ten sites the user picked, each
    one a row card with a button out to it. The row's other action is a
    read-more line; here the link is the whole point of the entry, so it gets a
    box instead of an underline — 1px of text colour on white, inverting to
@@ -1917,9 +1929,9 @@
   object-fit: cover;
 }
 
-/* Two tiles on the /latest/ feed come from /top-up/ (the page was /services/
-   until it was renamed on 2026-11-08, and /game/ until the two pages merged on
-   2026-11-06), where the artwork is a wordmark plate rather
+/* Two tiles on the /latest/ feed come from /news/ (the page was /services/,
+   then /top-up/ until it was renamed on 2026-11-08, and /game/ until the two
+   pages merged on 2026-11-06), where the artwork is a wordmark plate rather
    than a photograph: the band's 3:2 `cover` would slice one to a stripe.
    Letterboxed over white instead, the plate keeps its own shape inside the
    band. Here the tile is a --band card like every other on the homepage, so
@@ -2094,7 +2106,7 @@
    louder than the picture above it on every catalogue page, so every plate
    card now sets it at 20px — the step the magazine already drops to under
    768px, and then one under that. Measured to hold every name on /style/,
-   /gear/ and /stack/ without a fourth line.
+   /gear/ and /guides/ without a fourth line.
 
    The 16px headroom is /gear/'s `.mg-card__copy > :first-child` rule, which is
    what keeps a title that is the copy's first child off the media band. The
@@ -2488,7 +2500,8 @@
 /* ---------- the picker card that also has a detail page ----------------
 
    2026-11-07: /services/'s PUBG Mobile UC card (the card and its page are on
-   /game/ since 2026-11-08) closes with
+   /top-ups/ since 2026-11-08, which was /game/ until the rename that day)
+   closes with
    「Read more  或  ORDER NOW」 — the link first, the request last, which is the
    order uncrate's own "Read More or Buy" row uses. The row is the split line
    (.ab-card__more--split + .ab-card__or), so the flex layout, the centring,

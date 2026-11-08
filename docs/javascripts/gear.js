@@ -1,4 +1,4 @@
-/* The Gear page's link-to-price box and its brand pills (2026-11-08, user:
+/* The front page's link-to-price box and its category pills (2026-11-08, user:
    「将 http://127.0.0.1:8003/gear/ 页面模仿 https://www.superbuy.com/cn/page/
    homepage/…」, then 「这部分的意思应该是 用户输入商品链接，我为他通过异步的
    方式获取最低采购价」, then 「用户点 get price之后，需要弹出一个邮箱输入框，
@@ -12,15 +12,17 @@
    where the answer will go. The input keeps its value, so a typo can be fixed
    and sent again.
 
-   Anything that is not a link is treated as a search of the five cards: the
-   pills narrow by brand, the box narrows by text, and the two stack. With a
-   shelf this short the search is a convenience, not the point of the box — the
-   copy never calls it a search.
+   Anything that is not a link is treated as a search of the shelf: the pills
+   narrow by category, the box narrows by text, and the two stack. A shelf this
+   long has six kinds of thing to narrow by and two dozen brands, so the pills
+   say Mice / Keyboards / Mousepads / Monitors / Headsets / Chairs (2026-11-08,
+   when page one of five more review categories landed); before that they were
+   brand pills. The copy never calls the box a search.
 
-   The cards carry data-brand and data-search (a lower-case string of the model
-   plus its brand words) in gear/index.md, so a card without data-search
-   simply never matches. Only this page's markup is touched: everything below
-   lives inside .ab-sb. */
+   The cards carry data-category and data-search (a lower-case string of the
+   model plus its category) in index.md, so a card without data-search simply
+   never matches. Only this page's markup is touched: everything below lives
+   inside .ab-sb. */
 (function () {
   "use strict";
 
@@ -37,7 +39,7 @@
   if (!grid || !pills) return;
 
   var cards = Array.prototype.slice.call(grid.querySelectorAll(".ab-sb-card"));
-  var brand = "all";
+  var category = "all";
   var query = "";
 
   function words(s) {
@@ -68,12 +70,13 @@
     var shown = 0;
 
     cards.forEach(function (card) {
-      var okBrand = brand === "all" || card.getAttribute("data-brand") === brand;
+      var okCategory = category === "all" ||
+        card.getAttribute("data-category") === category;
       var hay = card.getAttribute("data-search") || "";
       var okText = terms.every(function (t) {
         return hay.indexOf(t) !== -1;
       });
-      var show = okBrand && okText;
+      var show = okCategory && okText;
       card.hidden = !show;
       if (show) shown += 1;
     });
@@ -193,7 +196,7 @@
   pills.addEventListener("click", function (ev) {
     var pill = ev.target.closest(".ab-sb-pill");
     if (!pill) return;
-    brand = pill.getAttribute("data-brand") || "all";
+    category = pill.getAttribute("data-category") || "all";
     Array.prototype.forEach.call(pills.querySelectorAll(".ab-sb-pill"), function (p) {
       var on = p === pill;
       p.classList.toggle("is-active", on);
