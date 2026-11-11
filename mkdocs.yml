@@ -65,6 +65,9 @@ extra_css:
   # until 2026-11-08) and last for the same reason as the rest: it lifts the
   # theme's 1000px content column.
   - stylesheets/gear.css
+  # first-order.css is scoped to .ab-fo (/first-order/) and last for the same
+  # reason: it lifts the theme's 1000px content column.
+  - stylesheets/first-order.css
 
 extra_javascript:
   # crisp.js first: sourcing.js hands its request to window.abOpenCrisp.
@@ -110,9 +113,21 @@ nav:
   # 2026-11-08, last word on the label (user: 「TOP UPS 改成 TOP-UPS」): the
   # hyphen is back — TOP-UPS — and with it the page title and aria-label read
   # Top-ups. The address was always /top-ups/ and does not change.
+  # 2026-11-11 (user: 「将 /top-ups/ 的商品移至 /，商品只显示最低那一档的
+  # 价格」): the nineteen products moved onto the home shelf and the page was
+  # deleted, so TOP-UPS leaves the nav — five entries now. /top-ups/ is 404,
+  # no redirect, like every address this workspace has retired. Its one detail
+  # page stays at /top-ups/pubg-mobile/, linked from the PUBG card's title.
+  # Same day, same treatment for the other two catalogues (user: 「将 /cdkeys/
+  # 和 /gift-cards/ 也同样处理」): their seventeen products moved onto the home
+  # shelf, both pages were deleted and both nav entries went with them — three
+  # entries now, HOME / NEWS / GUIDES. /cdkeys/ and /gift-cards/ are 404, no
+  # redirect.
+  # 2026-11-11 (user: 「https://www.panli.com/helps/daigou 模仿这个页面 新增
+  # 一个页面，并在导航中展示」): FIRST ORDER joins the nav right after HOME —
+  # the page is /first-order/, the first-order walkthrough. The reference site
+  # is not named on the page.
   - HOME: index.md
-  - TOP-UPS: top-ups/index.md
-  - CDKEYS: cdkeys/index.md
-  - GIFT-CARDS: gift-cards/index.md
+  - FIRST ORDER: first-order/index.md
   - NEWS: news/index.md
   - GUIDES: guides/index.md

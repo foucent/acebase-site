@@ -1,6 +1,6 @@
 ---
-title: Premium gaming gear, priced and sourced
-description: AceBase — premium gaming gear, priced and sourced for you. Paste a product link, get the lowest sourcing price by email, and have us buy and ship it.
+title: Premium gaming gear — we buy it in China and deliver it to your door
+description: AceBase — premium gaming gear. Paste a product link from any shop and we buy it for you — from the brand supplier first, otherwise from Pinduoduo, JD or Taobao — then inspect it, assemble it where needed and deliver it to your door.
 icon: material/home
 hide:
   - title
@@ -78,9 +78,16 @@ hide:
      belonged to a card that moved to /top-ups/. 2026-11-08 evening /news/ filled
      up with the free-game cards, so the eyebrow reads Free games now; the banner
      still carries no art because the strip is built for cut-out PNGs and the
-     news pictures are photographs of game art). This page is HAND-MAINTAINED —
-     like /news/ and unlike /cdkeys/, /gift-cards/
-     and /top-ups/, nothing regenerates it. Card ids, data-gallery sets, alt text (no commas:
+     news pictures are photographs of game art). 2026-11-11: the catalogue
+     banners went one by one as their pages were emptied onto the shelf below —
+     Top-ups first, then CDKeys and Gift-cards — so the strip was the News
+     banner alone, full width, and it took the first news cover for its art
+     rather than standing there as an empty purple bar. 2026-11-11 evening the
+     user had that last one removed too (『将 首页的 Free games / News / The
+     giveaways… 的内容去掉』), so there is no banner band at all now: the grey
+     Popular gear band follows the journey card directly. The .ab-sb-features
+     styles stay in gear.css, unused, in case a band comes back.
+     This page is HAND-MAINTAINED — nothing regenerates it. Card ids, data-gallery sets, alt text (no commas:
      data-gallery splits on them) and data-name values are unchanged, so the
      homepage tiles, the lightbox and the live-chat hand-off all keep working.
      Layout and behaviour: docs/stylesheets/gear.css and docs/javascripts/
@@ -138,6 +145,57 @@ hide:
      accepts a link from anywhere — that is how a request arrives — so it says
      "Paste any product link" instead. -->
 
+<!-- THE OFFER CHANGED (2026-11-11, user: 「首页要表达的是获取硬件价格和购买
+     链接，为用户提供验货及运转服务，而不提供产品采购」). The page used to sell
+     a purchase: "bought and shipped for you", "confirm and we source it", a
+     dialog that ended "reply in the live chat and we buy the gear for you".
+     It now sells two things and says what it does not do:
+
+       1. the lowest price we can find, and a link to buy it at — the headline,
+          the meta row, the search button, the dialog and its footnote, the
+          second step, the shelf lead and both chat openers all say "price and
+          purchase link" instead of a price alone;
+       2. inspection and forwarding — step 3 is where a visitor sees that they
+          order at the link, the parcel comes to us first, and we check it and
+          forward it;
+       3. no procurement. The dialog footnote says it outright ("we don't buy
+          products for you"), because the old wording promised the opposite
+          and a footer is where a reader looks for the small print.
+
+     "Source" is gone from the page's visible copy; the word still lives in
+     sourcing.js, which the digital-goods catalogues share, so the shelf's
+     cards get their purchase-link wording from a branch in that file scoped to
+     .ab-sb rather than from a new button type. gear.js's message changed with
+     the hero box. The prices themselves did not move.
+
+     The 59 card actions changed with the rest: "Get this price" could not stay
+     under a lead that promises a link as well. The first label was "Get price
+     & link"; the user then asked for 获取购买链接或渠道, so the label reads "Get
+     link or channel" and the aria-label "Get the purchase link or channel for
+     <model>". "Channel" is the buying route when there is no single link —
+     the reply may name one instead. At 390 the label steps down to 11px
+     (gear.css, was 12) so the longer wording still sits on one line. Nothing
+     else on the cards moved — ids, prices and data-price are as they were. -->
+
+<!-- THE OFFER CHANGED BACK, AND FOR GOOD (2026-11-11 second pass, user: 「是的，
+     首要也要改成 我们替你从品牌供应商或三大平台采购」的口径？」). The page is a
+     buying service again, the same offer /first-order/ states: any shop's link
+     in, the brand supplier first and Pinduoduo / JD / Taobao otherwise, we buy
+     the item at the quoted price, inspect it, assemble it where needed and
+     deliver it. Nothing on the page quotes a commission and nothing says
+     "we don't buy products for you" any more; the dialog footnote now promises
+     the opposite.
+
+     What was rewritten: the title and description, the headline, the meta row,
+     the paste box's aria-label and button (now Get a quote), both chat
+     openers, the dialog's title / lead / submit / footnote, journey steps 2
+     and 3, the shelf lead, and the 59 gear card actions — aria-label "Ask for
+     a quote on <model> — we buy it for you", label "Get a quote". The 19
+     top-up cards keep "Get channel coupons": a top-up is bought on its own
+     channel and the user asked for that wording by name. sourcing.js's .ab-sb
+     branch and gear.js's message and note moved with them; ids, pictures,
+     prices and data-price did not. -->
+
 <div class="ab-sb" markdown="0">
 
   <section class="ab-sb-hero">
@@ -146,23 +204,36 @@ hide:
     </div>
     <div class="ab-sb-hero__inner ab-sb-inner">
       <div class="ab-sb-hero__copy">
-        <h1 class="ab-sb-hero__title">Premium gaming gear, priced and sourced for you</h1>
-        <p class="ab-sb-hero__meta">Genuine retail channels &middot; Lowest sourcing price &middot; Bought and shipped for you</p>
+        <h1 class="ab-sb-hero__title">Premium gaming gear &mdash; we buy it in China and deliver it to your door</h1>
+        <p class="ab-sb-hero__meta">Bought for you &middot; Inspected &amp; assembled &middot; Delivered to your door</p>
         <form class="ab-sb-search" id="gear-search-form" role="search">
           <label class="ab-sb-search__field">
             <svg class="ab-sb-search__icon" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false">
               <circle cx="11" cy="11" r="6.5" fill="none" stroke="currentColor" stroke-width="2"/>
               <path d="m16 16 5 5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
             </svg>
-            <input type="text" id="gear-search" name="q" autocomplete="off" placeholder="Paste a product link" aria-label="Paste a product link and we will look up its lowest sourcing price">
+            <input type="text" id="gear-search" name="q" autocomplete="off" placeholder="Paste a product link" aria-label="Paste a product link from any shop and we will buy it for you — from the brand supplier first, otherwise from Pinduoduo, JD or Taobao — then inspect it and deliver it to your door">
           </label>
-          <button class="ab-sb-search__submit" type="submit">Get price</button>
+          <button class="ab-sb-search__submit" type="submit">Get a quote</button>
         </form>
+        <!-- The three shops the price is checked on (2026-11-11, user: 「然后
+             paste a product link 这里要放几个图标，京东，拼多多，淘宝」, then
+             「Paste a link from 要改成从 这三个Logo的平台查询价格」). The marks
+             are each shop's own front-door icon, cut to 66x66 by
+             _tmp_ocr/platform_marks_prep.py; they are labels, not links — the
+             row says where the price is looked up, it does not send the reader
+             away from the page. -->
+        <p class="ab-sb-search__from">
+          <span class="ab-sb-search__from-label">Check prices on</span>
+          <img class="ab-sb-search__shop" loading="eager" src="/assets/gear/platforms/jd.png" alt="JD.com" width="22" height="22" decoding="async">
+          <img class="ab-sb-search__shop" loading="eager" src="/assets/gear/platforms/taobao.png" alt="Taobao" width="22" height="22" decoding="async">
+          <img class="ab-sb-search__shop" loading="eager" src="/assets/gear/platforms/pinduoduo.png" alt="Pinduoduo" width="22" height="22" decoding="async">
+        </p>
         <p class="ab-sb-search__note" id="gear-note" aria-live="polite" hidden></p>
         <div class="ab-sb-hero__tools">
           <a class="ab-sb-chip" href="#gear">Popular gear</a>
-          <a class="ab-sb-chip" href="#how">How sourcing works</a>
-          <button class="ab-sb-chip ab-crisp-open" type="button" data-crisp-msg="Hello, I'd like a sourcing price on some gaming gear.">Live chat</button>
+          <a class="ab-sb-chip" href="#how">How it works</a>
+          <button class="ab-sb-chip ab-crisp-open" type="button" data-crisp-msg="Hello, I'd like a quote to buy some gaming gear for me.">Live chat</button>
         </div>
       </div>
     </div>
@@ -174,8 +245,9 @@ hide:
        and needs somewhere to land. The address and the link both ride in the
        chat message — this site has no form backend, so the chat inbox is where a
        human picks the request up — and the note under the box repeats the
-       address, so the reader can see what was sent. Nothing here promises a
-       price, only where the lowest one we find will be sent. -->
+       address, so the reader can see what was sent. The dialog asks where to
+       send the quote: approving it is what starts the purchase, so nothing is
+       charged when the address is left. -->
   <div class="ab-sb-modal" id="price-modal" role="dialog" aria-modal="true"
        aria-labelledby="price-modal-title" hidden>
     <div class="ab-sb-modal__panel">
@@ -184,8 +256,8 @@ hide:
           <path fill="currentColor" d="M18.3 5.7a1 1 0 0 0-1.4 0L12 10.6 7.1 5.7a1 1 0 0 0-1.4 1.4L10.6 12l-4.9 4.9a1 1 0 1 0 1.4 1.4L12 13.4l4.9 4.9a1 1 0 0 0 1.4-1.4L13.4 12l4.9-4.9a1 1 0 0 0 0-1.4z"/>
         </svg>
       </button>
-      <h2 class="ab-sb-modal__title" id="price-modal-title">Where should we send the price?</h2>
-      <p class="ab-sb-modal__lead">We will look up the lowest sourcing price for the link you pasted and email it to you.</p>
+      <h2 class="ab-sb-modal__title" id="price-modal-title">Where should we send your quote?</h2>
+      <p class="ab-sb-modal__lead">We check the brand supplier first, then Pinduoduo, JD and Taobao, and email you one price for the link you pasted. Approve it and we buy the item, inspect it and deliver it to your door.</p>
       <p class="ab-sb-modal__link" id="price-modal-link"></p>
       <form class="ab-sb-modal__form" id="price-form" novalidate>
         <label class="ab-sb-modal__label" for="price-email">Email address</label>
@@ -193,9 +265,9 @@ hide:
                autocomplete="email" inputmode="email" spellcheck="false"
                placeholder="you@example.com" required>
         <p class="ab-sb-modal__error" id="price-error" role="alert" hidden></p>
-        <button class="ab-sb-modal__submit" type="submit">Email me the price</button>
+        <button class="ab-sb-modal__submit" type="submit">Email me the quote</button>
       </form>
-      <p class="ab-sb-modal__foot">The lowest price we find goes to that address; reply in the live chat and we buy the gear for you.</p>
+      <p class="ab-sb-modal__foot">The quote is free. Once you approve it we buy the item, inspect it when it reaches our warehouse, assemble it where needed and deliver it to your door.</p>
     </div>
   </div>
 
@@ -208,12 +280,12 @@ hide:
             <p class="ab-sb-step__text">Paste any product link, or pick one from the shelf below.</p>
           </li>
           <li class="ab-sb-step">
-            <p class="ab-sb-step__title"><span class="ab-sb-step__num">2</span> Leave an email</p>
-            <p class="ab-sb-step__text">We look up the lowest sourcing price and send it there.</p>
+            <p class="ab-sb-step__title"><span class="ab-sb-step__num">2</span> Leave an email, get a quote</p>
+            <p class="ab-sb-step__text">We check the brand supplier first, then Pinduoduo, JD and Taobao, and email you one price.</p>
           </li>
           <li class="ab-sb-step">
-            <p class="ab-sb-step__title"><span class="ab-sb-step__num">3</span> Confirm and we source it</p>
-            <p class="ab-sb-step__text">Reply in the live chat; we buy and ship the gear.</p>
+            <p class="ab-sb-step__title"><span class="ab-sb-step__num">3</span> We buy, inspect and deliver</p>
+            <p class="ab-sb-step__text">Approve the quote and we order the item, inspect it on arrival, assemble it where needed and deliver it to your door.</p>
           </li>
         </ol>
         <div class="ab-sb-journey__track" aria-hidden="true">
@@ -225,48 +297,14 @@ hide:
     </div>
   </section>
 
-  <section class="ab-sb-features">
-    <div class="ab-sb-inner">
-      <div class="ab-sb-features__grid">
-        <a class="ab-sb-feature ab-sb-feature--top-ups" href="/top-ups/">
-          <span class="ab-sb-feature__text">
-            <span class="ab-sb-feature__eyebrow">Catalogue</span>
-            <span class="ab-sb-feature__title">Top-ups</span>
-          </span>
-          <span class="ab-sb-feature__art"><img src="/assets/digital/pubg-mobile-feed.png" alt="" loading="lazy" decoding="async"></span>
-        </a>
-        <a class="ab-sb-feature ab-sb-feature--gift" href="/gift-cards/">
-          <span class="ab-sb-feature__text">
-            <span class="ab-sb-feature__eyebrow">Catalogue</span>
-            <span class="ab-sb-feature__title">Gift-cards</span>
-          </span>
-          <span class="ab-sb-feature__art"><img src="/assets/digital/amazon-gift-card-us-feed.png" alt="" loading="lazy" decoding="async"></span>
-        </a>
-        <a class="ab-sb-feature ab-sb-feature--cdkeys" href="/cdkeys/">
-          <span class="ab-sb-feature__text">
-            <span class="ab-sb-feature__eyebrow">Catalogue</span>
-            <span class="ab-sb-feature__title">CDKeys</span>
-          </span>
-          <span class="ab-sb-feature__art"><img src="/assets/digital/fortnite-card-feed.png" alt="" loading="lazy" decoding="async"></span>
-        </a>
-        <a class="ab-sb-feature ab-sb-feature--news" href="/news/">
-          <span class="ab-sb-feature__text">
-            <span class="ab-sb-feature__eyebrow">Free games</span>
-            <span class="ab-sb-feature__title">News</span>
-          </span>
-        </a>
-      </div>
-    </div>
-  </section>
-
   <section class="ab-sb-discovery" id="gear">
     <div class="ab-sb-inner">
       <header class="ab-sb-discovery__head">
         <h2 class="ab-sb-discovery__title">Popular gear</h2>
-        <button class="ab-sb-chat ab-crisp-open" type="button" data-crisp-msg="Hello, I'd like a sourcing price on some gaming gear.">Open live chat</button>
+        <button class="ab-sb-chat ab-crisp-open" type="button" data-crisp-msg="Hello, I'd like a quote to buy some gaming gear for me.">Open live chat</button>
       </header>
 
-      <p class="ab-sb-discovery__lead">The gear players ask about most, each with the price we can source it at.</p>
+      <p class="ab-sb-discovery__lead">The gear players ask about most, plus top-ups, gift cards and game codes — ask on any card for a quote and we will buy it for you.</p>
 
       <div class="ab-sb-pills" id="gear-pills">
         <button class="ab-sb-pill is-active" type="button" data-category="all" aria-pressed="true">All</button>
@@ -276,6 +314,9 @@ hide:
         <button class="ab-sb-pill" type="button" data-category="monitor" aria-pressed="false">Monitors</button>
         <button class="ab-sb-pill" type="button" data-category="headset" aria-pressed="false">Headsets</button>
         <button class="ab-sb-pill" type="button" data-category="chair" aria-pressed="false">Chairs</button>
+        <button class="ab-sb-pill" type="button" data-category="topup" aria-pressed="false">Top-ups</button>
+        <button class="ab-sb-pill" type="button" data-category="cdkeys" aria-pressed="false">CDKeys</button>
+        <button class="ab-sb-pill" type="button" data-category="giftcards" aria-pressed="false">Gift-cards</button>
       </div>
 
       <div class="ab-sb-grid" id="gear-grid" aria-label="Popular gear">
@@ -313,8 +354,10 @@ hide:
              the printed price and the chat number agree.
 
              The pills filter by category now, not by brand: twenty-odd brands
-             made a row nobody could read, while six categories stay on one line
-             at 1440. gear.js reads data-category, on the card and on the pill. -->
+             made a row nobody could read, while the categories stay on one line
+             at 1440 — seven since the top-up cards joined at the bottom of the
+             grid (2026-11-11). gear.js reads data-category, on the card and on
+             the pill. -->
 
         <article class="ab-sb-card" id="finalmouse-starlight-x" data-category="mouse" data-search="finalmouse starlight x mouse">
           <div class="ab-sb-card__media ab-card__media">
@@ -325,8 +368,8 @@ hide:
             <span class="ab-sb-card__price">$125</span>
           </p>
           <div class="ab-sb-card__bottom">
-            <button type="button" class="ab-request" aria-label="Get this price for Finalmouse Starlight X" data-name="Finalmouse Starlight X" data-price="125">
-              <span class="ab-sb-card__label">Get this price</span>
+            <button type="button" class="ab-request" aria-label="Ask for a quote on Finalmouse Starlight X — we buy it for you" data-name="Finalmouse Starlight X" data-price="125">
+              <span class="ab-sb-card__label">Get a quote</span>
               <span class="ab-sb-card__go" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" focusable="false"><path d="M5 12h13M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
             </button>
           </div>
@@ -341,8 +384,8 @@ hide:
             <span class="ab-sb-card__price">$139</span>
           </p>
           <div class="ab-sb-card__bottom">
-            <button type="button" class="ab-request" aria-label="Get this price for Corsair HS80 v2 MAX Wireless" data-name="Corsair HS80 v2 MAX Wireless" data-price="139">
-              <span class="ab-sb-card__label">Get this price</span>
+            <button type="button" class="ab-request" aria-label="Ask for a quote on Corsair HS80 v2 MAX Wireless — we buy it for you" data-name="Corsair HS80 v2 MAX Wireless" data-price="139">
+              <span class="ab-sb-card__label">Get a quote</span>
               <span class="ab-sb-card__go" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" focusable="false"><path d="M5 12h13M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
             </button>
           </div>
@@ -357,8 +400,8 @@ hide:
             <span class="ab-sb-card__price">$160</span>
           </p>
           <div class="ab-sb-card__bottom">
-            <button type="button" class="ab-request" aria-label="Get this price for Logitech G Pro X2 RAPID" data-name="Logitech G Pro X2 RAPID" data-price="160">
-              <span class="ab-sb-card__label">Get this price</span>
+            <button type="button" class="ab-request" aria-label="Ask for a quote on Logitech G Pro X2 RAPID — we buy it for you" data-name="Logitech G Pro X2 RAPID" data-price="160">
+              <span class="ab-sb-card__label">Get a quote</span>
               <span class="ab-sb-card__go" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" focusable="false"><path d="M5 12h13M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
             </button>
           </div>
@@ -373,8 +416,8 @@ hide:
             <span class="ab-sb-card__price">$126</span>
           </p>
           <div class="ab-sb-card__bottom">
-            <button type="button" class="ab-request" aria-label="Get this price for Corsair Sabre V3 Pro" data-name="Corsair Sabre V3 Pro" data-price="126">
-              <span class="ab-sb-card__label">Get this price</span>
+            <button type="button" class="ab-request" aria-label="Ask for a quote on Corsair Sabre V3 Pro — we buy it for you" data-name="Corsair Sabre V3 Pro" data-price="126">
+              <span class="ab-sb-card__label">Get a quote</span>
               <span class="ab-sb-card__go" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" focusable="false"><path d="M5 12h13M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
             </button>
           </div>
@@ -389,8 +432,8 @@ hide:
             <span class="ab-sb-card__price">$174</span>
           </p>
           <div class="ab-sb-card__bottom">
-            <button type="button" class="ab-request" aria-label="Get this price for Logitech G Pro X3 LIGHTSPEED Headset" data-name="Logitech G Pro X3 LIGHTSPEED Headset" data-price="174">
-              <span class="ab-sb-card__label">Get this price</span>
+            <button type="button" class="ab-request" aria-label="Ask for a quote on Logitech G Pro X3 LIGHTSPEED Headset — we buy it for you" data-name="Logitech G Pro X3 LIGHTSPEED Headset" data-price="174">
+              <span class="ab-sb-card__label">Get a quote</span>
               <span class="ab-sb-card__go" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" focusable="false"><path d="M5 12h13M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
             </button>
           </div>
@@ -405,8 +448,8 @@ hide:
             <span class="ab-sb-card__price">$629</span>
           </p>
           <div class="ab-sb-card__bottom">
-            <button type="button" class="ab-request" aria-label="Get this price for LiberNovo Omni SE" data-name="LiberNovo Omni SE" data-price="629">
-              <span class="ab-sb-card__label">Get this price</span>
+            <button type="button" class="ab-request" aria-label="Ask for a quote on LiberNovo Omni SE — we buy it for you" data-name="LiberNovo Omni SE" data-price="629">
+              <span class="ab-sb-card__label">Get a quote</span>
               <span class="ab-sb-card__go" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" focusable="false"><path d="M5 12h13M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
             </button>
           </div>
@@ -421,8 +464,8 @@ hide:
             <span class="ab-sb-card__price">$70</span>
           </p>
           <div class="ab-sb-card__bottom">
-            <button type="button" class="ab-request" aria-label="Get this price for Corsair MM Glass" data-name="Corsair MM Glass" data-price="70">
-              <span class="ab-sb-card__label">Get this price</span>
+            <button type="button" class="ab-request" aria-label="Ask for a quote on Corsair MM Glass — we buy it for you" data-name="Corsair MM Glass" data-price="70">
+              <span class="ab-sb-card__label">Get a quote</span>
               <span class="ab-sb-card__go" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" focusable="false"><path d="M5 12h13M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
             </button>
           </div>
@@ -437,8 +480,8 @@ hide:
             <span class="ab-sb-card__price">$140</span>
           </p>
           <div class="ab-sb-card__bottom">
-            <button type="button" class="ab-request" aria-label="Get this price for Logitech G Pro X3 SUPERSTRIKE" data-name="Logitech G Pro X3 SUPERSTRIKE" data-price="140">
-              <span class="ab-sb-card__label">Get this price</span>
+            <button type="button" class="ab-request" aria-label="Ask for a quote on Logitech G Pro X3 SUPERSTRIKE — we buy it for you" data-name="Logitech G Pro X3 SUPERSTRIKE" data-price="140">
+              <span class="ab-sb-card__label">Get a quote</span>
               <span class="ab-sb-card__go" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" focusable="false"><path d="M5 12h13M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
             </button>
           </div>
@@ -453,8 +496,8 @@ hide:
             <span class="ab-sb-card__price">$14</span>
           </p>
           <div class="ab-sb-card__bottom">
-            <button type="button" class="ab-request" aria-label="Get this price for Corsair MM Anti-fray" data-name="Corsair MM Anti-fray" data-price="14">
-              <span class="ab-sb-card__label">Get this price</span>
+            <button type="button" class="ab-request" aria-label="Ask for a quote on Corsair MM Anti-fray — we buy it for you" data-name="Corsair MM Anti-fray" data-price="14">
+              <span class="ab-sb-card__label">Get a quote</span>
               <span class="ab-sb-card__go" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" focusable="false"><path d="M5 12h13M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
             </button>
           </div>
@@ -469,8 +512,8 @@ hide:
             <span class="ab-sb-card__price">$105</span>
           </p>
           <div class="ab-sb-card__bottom">
-            <button type="button" class="ab-request" aria-label="Get this price for VAXEE NP-01 Ergo" data-name="VAXEE NP-01 Ergo" data-price="105">
-              <span class="ab-sb-card__label">Get this price</span>
+            <button type="button" class="ab-request" aria-label="Ask for a quote on VAXEE NP-01 Ergo — we buy it for you" data-name="VAXEE NP-01 Ergo" data-price="105">
+              <span class="ab-sb-card__label">Get a quote</span>
               <span class="ab-sb-card__go" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" focusable="false"><path d="M5 12h13M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
             </button>
           </div>
@@ -485,8 +528,8 @@ hide:
             <span class="ab-sb-card__price">$160</span>
           </p>
           <div class="ab-sb-card__bottom">
-            <button type="button" class="ab-request" aria-label="Get this price for Razer Huntsman V3 Pro Low-Profile TKL 8KHz" data-name="Razer Huntsman V3 Pro Low-Profile TKL 8KHz" data-price="160">
-              <span class="ab-sb-card__label">Get this price</span>
+            <button type="button" class="ab-request" aria-label="Ask for a quote on Razer Huntsman V3 Pro Low-Profile TKL 8KHz — we buy it for you" data-name="Razer Huntsman V3 Pro Low-Profile TKL 8KHz" data-price="160">
+              <span class="ab-sb-card__label">Get a quote</span>
               <span class="ab-sb-card__go" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" focusable="false"><path d="M5 12h13M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
             </button>
           </div>
@@ -501,8 +544,8 @@ hide:
             <span class="ab-sb-card__price">$349</span>
           </p>
           <div class="ab-sb-card__bottom">
-            <button type="button" class="ab-request" aria-label="Get this price for Secretlab Atlas" data-name="Secretlab Atlas" data-price="349">
-              <span class="ab-sb-card__label">Get this price</span>
+            <button type="button" class="ab-request" aria-label="Ask for a quote on Secretlab Atlas — we buy it for you" data-name="Secretlab Atlas" data-price="349">
+              <span class="ab-sb-card__label">Get a quote</span>
               <span class="ab-sb-card__go" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" focusable="false"><path d="M5 12h13M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
             </button>
           </div>
@@ -517,8 +560,8 @@ hide:
             <span class="ab-sb-card__price">$91</span>
           </p>
           <div class="ab-sb-card__bottom">
-            <button type="button" class="ab-request" aria-label="Get this price for Corsair Nightsword V2 Wireless" data-name="Corsair Nightsword V2 Wireless" data-price="91">
-              <span class="ab-sb-card__label">Get this price</span>
+            <button type="button" class="ab-request" aria-label="Ask for a quote on Corsair Nightsword V2 Wireless — we buy it for you" data-name="Corsair Nightsword V2 Wireless" data-price="91">
+              <span class="ab-sb-card__label">Get a quote</span>
               <span class="ab-sb-card__go" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" focusable="false"><path d="M5 12h13M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
             </button>
           </div>
@@ -533,8 +576,8 @@ hide:
             <span class="ab-sb-card__price">$74</span>
           </p>
           <div class="ab-sb-card__bottom">
-            <button type="button" class="ab-request" aria-label="Get this price for X-Raypad NOD" data-name="X-Raypad NOD" data-price="74">
-              <span class="ab-sb-card__label">Get this price</span>
+            <button type="button" class="ab-request" aria-label="Ask for a quote on X-Raypad NOD — we buy it for you" data-name="X-Raypad NOD" data-price="74">
+              <span class="ab-sb-card__label">Get a quote</span>
               <span class="ab-sb-card__go" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" focusable="false"><path d="M5 12h13M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
             </button>
           </div>
@@ -549,8 +592,8 @@ hide:
             <span class="ab-sb-card__price">$97</span>
           </p>
           <div class="ab-sb-card__bottom">
-            <button type="button" class="ab-request" aria-label="Get this price for Razer Huntsman V3 HE Magnetic 8KHz" data-name="Razer Huntsman V3 HE Magnetic 8KHz" data-price="97">
-              <span class="ab-sb-card__label">Get this price</span>
+            <button type="button" class="ab-request" aria-label="Ask for a quote on Razer Huntsman V3 HE Magnetic 8KHz — we buy it for you" data-name="Razer Huntsman V3 HE Magnetic 8KHz" data-price="97">
+              <span class="ab-sb-card__label">Get a quote</span>
               <span class="ab-sb-card__go" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" focusable="false"><path d="M5 12h13M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
             </button>
           </div>
@@ -565,8 +608,8 @@ hide:
             <span class="ab-sb-card__price">$90</span>
           </p>
           <div class="ab-sb-card__bottom">
-            <button type="button" class="ab-request" aria-label="Get this price for EPOMAKER HE75 V2 TMR" data-name="EPOMAKER HE75 V2 TMR" data-price="90">
-              <span class="ab-sb-card__label">Get this price</span>
+            <button type="button" class="ab-request" aria-label="Ask for a quote on EPOMAKER HE75 V2 TMR — we buy it for you" data-name="EPOMAKER HE75 V2 TMR" data-price="90">
+              <span class="ab-sb-card__label">Get a quote</span>
               <span class="ab-sb-card__go" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" focusable="false"><path d="M5 12h13M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
             </button>
           </div>
@@ -581,8 +624,8 @@ hide:
             <span class="ab-sb-card__price">$630</span>
           </p>
           <div class="ab-sb-card__bottom">
-            <button type="button" class="ab-request" aria-label="Get this price for ZOWIE XQ2566X" data-name="ZOWIE XQ2566X" data-price="630">
-              <span class="ab-sb-card__label">Get this price</span>
+            <button type="button" class="ab-request" aria-label="Ask for a quote on ZOWIE XQ2566X — we buy it for you" data-name="ZOWIE XQ2566X" data-price="630">
+              <span class="ab-sb-card__label">Get a quote</span>
               <span class="ab-sb-card__go" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" focusable="false"><path d="M5 12h13M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
             </button>
           </div>
@@ -597,8 +640,8 @@ hide:
             <span class="ab-sb-card__price">$384</span>
           </p>
           <div class="ab-sb-card__bottom">
-            <button type="button" class="ab-request" aria-label="Get this price for AndaSeat Kaiser 4 6D" data-name="AndaSeat Kaiser 4 6D" data-price="384">
-              <span class="ab-sb-card__label">Get this price</span>
+            <button type="button" class="ab-request" aria-label="Ask for a quote on AndaSeat Kaiser 4 6D — we buy it for you" data-name="AndaSeat Kaiser 4 6D" data-price="384">
+              <span class="ab-sb-card__label">Get a quote</span>
               <span class="ab-sb-card__go" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" focusable="false"><path d="M5 12h13M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
             </button>
           </div>
@@ -613,8 +656,8 @@ hide:
             <span class="ab-sb-card__price">$55</span>
           </p>
           <div class="ab-sb-card__bottom">
-            <button type="button" class="ab-request" aria-label="Get this price for Corsair HS35 v3 Wireless" data-name="Corsair HS35 v3 Wireless" data-price="55">
-              <span class="ab-sb-card__label">Get this price</span>
+            <button type="button" class="ab-request" aria-label="Ask for a quote on Corsair HS35 v3 Wireless — we buy it for you" data-name="Corsair HS35 v3 Wireless" data-price="55">
+              <span class="ab-sb-card__label">Get a quote</span>
               <span class="ab-sb-card__go" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" focusable="false"><path d="M5 12h13M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
             </button>
           </div>
@@ -629,8 +672,8 @@ hide:
             <span class="ab-sb-card__price">$69</span>
           </p>
           <div class="ab-sb-card__bottom">
-            <button type="button" class="ab-request" aria-label="Get this price for Corsair Clipper Pro Mini 60" data-name="Corsair Clipper Pro Mini 60" data-price="69">
-              <span class="ab-sb-card__label">Get this price</span>
+            <button type="button" class="ab-request" aria-label="Ask for a quote on Corsair Clipper Pro Mini 60 — we buy it for you" data-name="Corsair Clipper Pro Mini 60" data-price="69">
+              <span class="ab-sb-card__label">Get a quote</span>
               <span class="ab-sb-card__go" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" focusable="false"><path d="M5 12h13M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
             </button>
           </div>
@@ -645,8 +688,8 @@ hide:
             <span class="ab-sb-card__price">$28</span>
           </p>
           <div class="ab-sb-card__bottom">
-            <button type="button" class="ab-request" aria-label="Get this price for Pulsar eS Jupiter Pro" data-name="Pulsar eS Jupiter Pro" data-price="28">
-              <span class="ab-sb-card__label">Get this price</span>
+            <button type="button" class="ab-request" aria-label="Ask for a quote on Pulsar eS Jupiter Pro — we buy it for you" data-name="Pulsar eS Jupiter Pro" data-price="28">
+              <span class="ab-sb-card__label">Get a quote</span>
               <span class="ab-sb-card__go" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" focusable="false"><path d="M5 12h13M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
             </button>
           </div>
@@ -661,8 +704,8 @@ hide:
             <span class="ab-sb-card__price">$91</span>
           </p>
           <div class="ab-sb-card__bottom">
-            <button type="button" class="ab-request" aria-label="Get this price for Razer Atlas Pro" data-name="Razer Atlas Pro" data-price="91">
-              <span class="ab-sb-card__label">Get this price</span>
+            <button type="button" class="ab-request" aria-label="Ask for a quote on Razer Atlas Pro — we buy it for you" data-name="Razer Atlas Pro" data-price="91">
+              <span class="ab-sb-card__label">Get a quote</span>
               <span class="ab-sb-card__go" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" focusable="false"><path d="M5 12h13M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
             </button>
           </div>
@@ -677,8 +720,8 @@ hide:
             <span class="ab-sb-card__price">$153</span>
           </p>
           <div class="ab-sb-card__bottom">
-            <button type="button" class="ab-request" aria-label="Get this price for MelGeek Made68 Ultra V2" data-name="MelGeek Made68 Ultra V2" data-price="153">
-              <span class="ab-sb-card__label">Get this price</span>
+            <button type="button" class="ab-request" aria-label="Ask for a quote on MelGeek Made68 Ultra V2 — we buy it for you" data-name="MelGeek Made68 Ultra V2" data-price="153">
+              <span class="ab-sb-card__label">Get a quote</span>
               <span class="ab-sb-card__go" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" focusable="false"><path d="M5 12h13M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
             </button>
           </div>
@@ -693,8 +736,8 @@ hide:
             <span class="ab-sb-card__price">$279</span>
           </p>
           <div class="ab-sb-card__bottom">
-            <button type="button" class="ab-request" aria-label="Get this price for SteelSeries Arctis Nova Pro Omni" data-name="SteelSeries Arctis Nova Pro Omni" data-price="279">
-              <span class="ab-sb-card__label">Get this price</span>
+            <button type="button" class="ab-request" aria-label="Ask for a quote on SteelSeries Arctis Nova Pro Omni — we buy it for you" data-name="SteelSeries Arctis Nova Pro Omni" data-price="279">
+              <span class="ab-sb-card__label">Get a quote</span>
               <span class="ab-sb-card__go" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" focusable="false"><path d="M5 12h13M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
             </button>
           </div>
@@ -709,8 +752,8 @@ hide:
             <span class="ab-sb-card__price">$105</span>
           </p>
           <div class="ab-sb-card__bottom">
-            <button type="button" class="ab-request" aria-label="Get this price for VAXEE NP-01S V3" data-name="VAXEE NP-01S V3" data-price="105">
-              <span class="ab-sb-card__label">Get this price</span>
+            <button type="button" class="ab-request" aria-label="Ask for a quote on VAXEE NP-01S V3 — we buy it for you" data-name="VAXEE NP-01S V3" data-price="105">
+              <span class="ab-sb-card__label">Get a quote</span>
               <span class="ab-sb-card__go" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" focusable="false"><path d="M5 12h13M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
             </button>
           </div>
@@ -725,8 +768,8 @@ hide:
             <span class="ab-sb-card__price">$35</span>
           </p>
           <div class="ab-sb-card__bottom">
-            <button type="button" class="ab-request" aria-label="Get this price for Razer Gigantus V2 Pro" data-name="Razer Gigantus V2 Pro" data-price="35">
-              <span class="ab-sb-card__label">Get this price</span>
+            <button type="button" class="ab-request" aria-label="Ask for a quote on Razer Gigantus V2 Pro — we buy it for you" data-name="Razer Gigantus V2 Pro" data-price="35">
+              <span class="ab-sb-card__label">Get a quote</span>
               <span class="ab-sb-card__go" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" focusable="false"><path d="M5 12h13M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
             </button>
           </div>
@@ -741,8 +784,8 @@ hide:
             <span class="ab-sb-card__price">$35</span>
           </p>
           <div class="ab-sb-card__bottom">
-            <button type="button" class="ab-request" aria-label="Get this price for Pulsar eS PD170" data-name="Pulsar eS PD170" data-price="35">
-              <span class="ab-sb-card__label">Get this price</span>
+            <button type="button" class="ab-request" aria-label="Ask for a quote on Pulsar eS PD170 — we buy it for you" data-name="Pulsar eS PD170" data-price="35">
+              <span class="ab-sb-card__label">Get a quote</span>
               <span class="ab-sb-card__go" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" focusable="false"><path d="M5 12h13M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
             </button>
           </div>
@@ -757,8 +800,8 @@ hide:
             <span class="ab-sb-card__price">$181</span>
           </p>
           <div class="ab-sb-card__bottom">
-            <button type="button" class="ab-request" aria-label="Get this price for SteelSeries Apex Pro Gen 3" data-name="SteelSeries Apex Pro Gen 3" data-price="181">
-              <span class="ab-sb-card__label">Get this price</span>
+            <button type="button" class="ab-request" aria-label="Ask for a quote on SteelSeries Apex Pro Gen 3 — we buy it for you" data-name="SteelSeries Apex Pro Gen 3" data-price="181">
+              <span class="ab-sb-card__label">Get a quote</span>
               <span class="ab-sb-card__go" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" focusable="false"><path d="M5 12h13M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
             </button>
           </div>
@@ -773,8 +816,8 @@ hide:
             <span class="ab-sb-card__price">$112</span>
           </p>
           <div class="ab-sb-card__bottom">
-            <button type="button" class="ab-request" aria-label="Get this price for Razer Viper V4 Pro" data-name="Razer Viper V4 Pro" data-price="112">
-              <span class="ab-sb-card__label">Get this price</span>
+            <button type="button" class="ab-request" aria-label="Ask for a quote on Razer Viper V4 Pro — we buy it for you" data-name="Razer Viper V4 Pro" data-price="112">
+              <span class="ab-sb-card__label">Get a quote</span>
               <span class="ab-sb-card__go" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" focusable="false"><path d="M5 12h13M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
             </button>
           </div>
@@ -789,8 +832,8 @@ hide:
             <span class="ab-sb-card__price">$91</span>
           </p>
           <div class="ab-sb-card__bottom">
-            <button type="button" class="ab-request" aria-label="Get this price for Pulsar X2N Crazylight" data-name="Pulsar X2N Crazylight" data-price="91">
-              <span class="ab-sb-card__label">Get this price</span>
+            <button type="button" class="ab-request" aria-label="Ask for a quote on Pulsar X2N Crazylight — we buy it for you" data-name="Pulsar X2N Crazylight" data-price="91">
+              <span class="ab-sb-card__label">Get a quote</span>
               <span class="ab-sb-card__go" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" focusable="false"><path d="M5 12h13M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
             </button>
           </div>
@@ -805,8 +848,8 @@ hide:
             <span class="ab-sb-card__price">$454</span>
           </p>
           <div class="ab-sb-card__bottom">
-            <button type="button" class="ab-request" aria-label="Get this price for Razer Iskur V2 NewGen" data-name="Razer Iskur V2 NewGen" data-price="454">
-              <span class="ab-sb-card__label">Get this price</span>
+            <button type="button" class="ab-request" aria-label="Ask for a quote on Razer Iskur V2 NewGen — we buy it for you" data-name="Razer Iskur V2 NewGen" data-price="454">
+              <span class="ab-sb-card__label">Get a quote</span>
               <span class="ab-sb-card__go" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" focusable="false"><path d="M5 12h13M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
             </button>
           </div>
@@ -821,8 +864,8 @@ hide:
             <span class="ab-sb-card__price">$126</span>
           </p>
           <div class="ab-sb-card__bottom">
-            <button type="button" class="ab-request" aria-label="Get this price for Pulsar eS FS-1" data-name="Pulsar eS FS-1" data-price="126">
-              <span class="ab-sb-card__label">Get this price</span>
+            <button type="button" class="ab-request" aria-label="Ask for a quote on Pulsar eS FS-1 — we buy it for you" data-name="Pulsar eS FS-1" data-price="126">
+              <span class="ab-sb-card__label">Get a quote</span>
               <span class="ab-sb-card__go" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" focusable="false"><path d="M5 12h13M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
             </button>
           </div>
@@ -837,8 +880,8 @@ hide:
             <span class="ab-sb-card__price">$244</span>
           </p>
           <div class="ab-sb-card__bottom">
-            <button type="button" class="ab-request" aria-label="Get this price for Corsair Galleon 100 SD" data-name="Corsair Galleon 100 SD" data-price="244">
-              <span class="ab-sb-card__label">Get this price</span>
+            <button type="button" class="ab-request" aria-label="Ask for a quote on Corsair Galleon 100 SD — we buy it for you" data-name="Corsair Galleon 100 SD" data-price="244">
+              <span class="ab-sb-card__label">Get a quote</span>
               <span class="ab-sb-card__go" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" focusable="false"><path d="M5 12h13M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
             </button>
           </div>
@@ -853,8 +896,8 @@ hide:
             <span class="ab-sb-card__price">$126</span>
           </p>
           <div class="ab-sb-card__bottom">
-            <button type="button" class="ab-request" aria-label="Get this price for Logitech G Pro X2 SUPERSTRIKE" data-name="Logitech G Pro X2 SUPERSTRIKE" data-price="126">
-              <span class="ab-sb-card__label">Get this price</span>
+            <button type="button" class="ab-request" aria-label="Ask for a quote on Logitech G Pro X2 SUPERSTRIKE — we buy it for you" data-name="Logitech G Pro X2 SUPERSTRIKE" data-price="126">
+              <span class="ab-sb-card__label">Get a quote</span>
               <span class="ab-sb-card__go" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" focusable="false"><path d="M5 12h13M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
             </button>
           </div>
@@ -869,8 +912,8 @@ hide:
             <span class="ab-sb-card__price">$42</span>
           </p>
           <div class="ab-sb-card__bottom">
-            <button type="button" class="ab-request" aria-label="Get this price for Corsair MM Pro Control" data-name="Corsair MM Pro Control" data-price="42">
-              <span class="ab-sb-card__label">Get this price</span>
+            <button type="button" class="ab-request" aria-label="Ask for a quote on Corsair MM Pro Control — we buy it for you" data-name="Corsair MM Pro Control" data-price="42">
+              <span class="ab-sb-card__label">Get a quote</span>
               <span class="ab-sb-card__go" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" focusable="false"><path d="M5 12h13M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
             </button>
           </div>
@@ -885,8 +928,8 @@ hide:
             <span class="ab-sb-card__price">$31</span>
           </p>
           <div class="ab-sb-card__bottom">
-            <button type="button" class="ab-request" aria-label="Get this price for Banks Collection Heavy Claw by ESPTIGER" data-name="Banks Collection Heavy Claw by ESPTIGER" data-price="31">
-              <span class="ab-sb-card__label">Get this price</span>
+            <button type="button" class="ab-request" aria-label="Ask for a quote on Banks Collection Heavy Claw by ESPTIGER — we buy it for you" data-name="Banks Collection Heavy Claw by ESPTIGER" data-price="31">
+              <span class="ab-sb-card__label">Get a quote</span>
               <span class="ab-sb-card__go" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" focusable="false"><path d="M5 12h13M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
             </button>
           </div>
@@ -901,8 +944,8 @@ hide:
             <span class="ab-sb-card__price">$118</span>
           </p>
           <div class="ab-sb-card__bottom">
-            <button type="button" class="ab-request" aria-label="Get this price for IQUNIX EV63" data-name="IQUNIX EV63" data-price="118">
-              <span class="ab-sb-card__label">Get this price</span>
+            <button type="button" class="ab-request" aria-label="Ask for a quote on IQUNIX EV63 — we buy it for you" data-name="IQUNIX EV63" data-price="118">
+              <span class="ab-sb-card__label">Get a quote</span>
               <span class="ab-sb-card__go" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" focusable="false"><path d="M5 12h13M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
             </button>
           </div>
@@ -917,8 +960,8 @@ hide:
             <span class="ab-sb-card__price">$35</span>
           </p>
           <div class="ab-sb-card__bottom">
-            <button type="button" class="ab-request" aria-label="Get this price for VAXEE PD140" data-name="VAXEE PD140" data-price="35">
-              <span class="ab-sb-card__label">Get this price</span>
+            <button type="button" class="ab-request" aria-label="Ask for a quote on VAXEE PD140 — we buy it for you" data-name="VAXEE PD140" data-price="35">
+              <span class="ab-sb-card__label">Get a quote</span>
               <span class="ab-sb-card__go" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" focusable="false"><path d="M5 12h13M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
             </button>
           </div>
@@ -933,8 +976,8 @@ hide:
             <span class="ab-sb-card__price">$125</span>
           </p>
           <div class="ab-sb-card__bottom">
-            <button type="button" class="ab-request" aria-label="Get this price for Wooting 60HE v2" data-name="Wooting 60HE v2" data-price="125">
-              <span class="ab-sb-card__label">Get this price</span>
+            <button type="button" class="ab-request" aria-label="Ask for a quote on Wooting 60HE v2 — we buy it for you" data-name="Wooting 60HE v2" data-price="125">
+              <span class="ab-sb-card__label">Get a quote</span>
               <span class="ab-sb-card__go" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" focusable="false"><path d="M5 12h13M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
             </button>
           </div>
@@ -949,8 +992,8 @@ hide:
             <span class="ab-sb-card__price">$454</span>
           </p>
           <div class="ab-sb-card__bottom">
-            <button type="button" class="ab-request" aria-label="Get this price for Blacklyte Kraken Pro" data-name="Blacklyte Kraken Pro" data-price="454">
-              <span class="ab-sb-card__label">Get this price</span>
+            <button type="button" class="ab-request" aria-label="Ask for a quote on Blacklyte Kraken Pro — we buy it for you" data-name="Blacklyte Kraken Pro" data-price="454">
+              <span class="ab-sb-card__label">Get a quote</span>
               <span class="ab-sb-card__go" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" focusable="false"><path d="M5 12h13M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
             </button>
           </div>
@@ -965,8 +1008,8 @@ hide:
             <span class="ab-sb-card__price">$244</span>
           </p>
           <div class="ab-sb-card__bottom">
-            <button type="button" class="ab-request" aria-label="Get this price for SONY INZONE H9 II" data-name="SONY INZONE H9 II" data-price="244">
-              <span class="ab-sb-card__label">Get this price</span>
+            <button type="button" class="ab-request" aria-label="Ask for a quote on SONY INZONE H9 II — we buy it for you" data-name="SONY INZONE H9 II" data-price="244">
+              <span class="ab-sb-card__label">Get a quote</span>
               <span class="ab-sb-card__go" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" focusable="false"><path d="M5 12h13M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
             </button>
           </div>
@@ -981,8 +1024,8 @@ hide:
             <span class="ab-sb-card__price">$174</span>
           </p>
           <div class="ab-sb-card__bottom">
-            <button type="button" class="ab-request" aria-label="Get this price for Razer BlackShark V3 Pro" data-name="Razer BlackShark V3 Pro" data-price="174">
-              <span class="ab-sb-card__label">Get this price</span>
+            <button type="button" class="ab-request" aria-label="Ask for a quote on Razer BlackShark V3 Pro — we buy it for you" data-name="Razer BlackShark V3 Pro" data-price="174">
+              <span class="ab-sb-card__label">Get a quote</span>
               <span class="ab-sb-card__go" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" focusable="false"><path d="M5 12h13M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
             </button>
           </div>
@@ -997,8 +1040,8 @@ hide:
             <span class="ab-sb-card__price">$629</span>
           </p>
           <div class="ab-sb-card__bottom">
-            <button type="button" class="ab-request" aria-label="Get this price for Sony INZONE M10S" data-name="Sony INZONE M10S" data-price="629">
-              <span class="ab-sb-card__label">Get this price</span>
+            <button type="button" class="ab-request" aria-label="Ask for a quote on Sony INZONE M10S — we buy it for you" data-name="Sony INZONE M10S" data-price="629">
+              <span class="ab-sb-card__label">Get a quote</span>
               <span class="ab-sb-card__go" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" focusable="false"><path d="M5 12h13M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
             </button>
           </div>
@@ -1013,8 +1056,8 @@ hide:
             <span class="ab-sb-card__price">$83</span>
           </p>
           <div class="ab-sb-card__bottom">
-            <button type="button" class="ab-request" aria-label="Get this price for Corsair VOID Wireless V2" data-name="Corsair VOID Wireless V2" data-price="83">
-              <span class="ab-sb-card__label">Get this price</span>
+            <button type="button" class="ab-request" aria-label="Ask for a quote on Corsair VOID Wireless V2 — we buy it for you" data-name="Corsair VOID Wireless V2" data-price="83">
+              <span class="ab-sb-card__label">Get a quote</span>
               <span class="ab-sb-card__go" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" focusable="false"><path d="M5 12h13M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
             </button>
           </div>
@@ -1029,8 +1072,8 @@ hide:
             <span class="ab-sb-card__price">$349</span>
           </p>
           <div class="ab-sb-card__bottom">
-            <button type="button" class="ab-request" aria-label="Get this price for Blacklyte Athena Pro" data-name="Blacklyte Athena Pro" data-price="349">
-              <span class="ab-sb-card__label">Get this price</span>
+            <button type="button" class="ab-request" aria-label="Ask for a quote on Blacklyte Athena Pro — we buy it for you" data-name="Blacklyte Athena Pro" data-price="349">
+              <span class="ab-sb-card__label">Get a quote</span>
               <span class="ab-sb-card__go" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" focusable="false"><path d="M5 12h13M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
             </button>
           </div>
@@ -1045,8 +1088,8 @@ hide:
             <span class="ab-sb-card__price">$700</span>
           </p>
           <div class="ab-sb-card__bottom">
-            <button type="button" class="ab-request" aria-label="Get this price for ZOWIE XL2586X+" data-name="ZOWIE XL2586X+" data-price="700">
-              <span class="ab-sb-card__label">Get this price</span>
+            <button type="button" class="ab-request" aria-label="Ask for a quote on ZOWIE XL2586X+ — we buy it for you" data-name="ZOWIE XL2586X+" data-price="700">
+              <span class="ab-sb-card__label">Get a quote</span>
               <span class="ab-sb-card__go" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" focusable="false"><path d="M5 12h13M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
             </button>
           </div>
@@ -1061,8 +1104,8 @@ hide:
             <span class="ab-sb-card__price">$363</span>
           </p>
           <div class="ab-sb-card__bottom">
-            <button type="button" class="ab-request" aria-label="Get this price for Blacklyte Kraken" data-name="Blacklyte Kraken" data-price="363">
-              <span class="ab-sb-card__label">Get this price</span>
+            <button type="button" class="ab-request" aria-label="Ask for a quote on Blacklyte Kraken — we buy it for you" data-name="Blacklyte Kraken" data-price="363">
+              <span class="ab-sb-card__label">Get a quote</span>
               <span class="ab-sb-card__go" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" focusable="false"><path d="M5 12h13M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
             </button>
           </div>
@@ -1077,8 +1120,8 @@ hide:
             <span class="ab-sb-card__price">$454</span>
           </p>
           <div class="ab-sb-card__bottom">
-            <button type="button" class="ab-request" aria-label="Get this price for Razer Iskur V2" data-name="Razer Iskur V2" data-price="454">
-              <span class="ab-sb-card__label">Get this price</span>
+            <button type="button" class="ab-request" aria-label="Ask for a quote on Razer Iskur V2 — we buy it for you" data-name="Razer Iskur V2" data-price="454">
+              <span class="ab-sb-card__label">Get a quote</span>
               <span class="ab-sb-card__go" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" focusable="false"><path d="M5 12h13M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
             </button>
           </div>
@@ -1093,8 +1136,8 @@ hide:
             <span class="ab-sb-card__price">$454</span>
           </p>
           <div class="ab-sb-card__bottom">
-            <button type="button" class="ab-request" aria-label="Get this price for ZOWIE XL2566X+" data-name="ZOWIE XL2566X+" data-price="454">
-              <span class="ab-sb-card__label">Get this price</span>
+            <button type="button" class="ab-request" aria-label="Ask for a quote on ZOWIE XL2566X+ — we buy it for you" data-name="ZOWIE XL2566X+" data-price="454">
+              <span class="ab-sb-card__label">Get a quote</span>
               <span class="ab-sb-card__go" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" focusable="false"><path d="M5 12h13M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
             </button>
           </div>
@@ -1109,8 +1152,8 @@ hide:
             <span class="ab-sb-card__price">$160</span>
           </p>
           <div class="ab-sb-card__bottom">
-            <button type="button" class="ab-request" aria-label="Get this price for NZXT Relay (+ SwitchMix)" data-name="NZXT Relay (+ SwitchMix)" data-price="160">
-              <span class="ab-sb-card__label">Get this price</span>
+            <button type="button" class="ab-request" aria-label="Ask for a quote on NZXT Relay (+ SwitchMix) — we buy it for you" data-name="NZXT Relay (+ SwitchMix)" data-price="160">
+              <span class="ab-sb-card__label">Get a quote</span>
               <span class="ab-sb-card__go" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" focusable="false"><path d="M5 12h13M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
             </button>
           </div>
@@ -1125,8 +1168,8 @@ hide:
             <span class="ab-sb-card__price">$139</span>
           </p>
           <div class="ab-sb-card__bottom">
-            <button type="button" class="ab-request" aria-label="Get this price for Razer BlackShark V2 Pro" data-name="Razer BlackShark V2 Pro" data-price="139">
-              <span class="ab-sb-card__label">Get this price</span>
+            <button type="button" class="ab-request" aria-label="Ask for a quote on Razer BlackShark V2 Pro — we buy it for you" data-name="Razer BlackShark V2 Pro" data-price="139">
+              <span class="ab-sb-card__label">Get a quote</span>
               <span class="ab-sb-card__go" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" focusable="false"><path d="M5 12h13M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
             </button>
           </div>
@@ -1141,8 +1184,8 @@ hide:
             <span class="ab-sb-card__price">$160</span>
           </p>
           <div class="ab-sb-card__bottom">
-            <button type="button" class="ab-request" aria-label="Get this price for Logitech G Pro X 2 LIGHTSPEED Headset" data-name="Logitech G Pro X 2 LIGHTSPEED Headset" data-price="160">
-              <span class="ab-sb-card__label">Get this price</span>
+            <button type="button" class="ab-request" aria-label="Ask for a quote on Logitech G Pro X 2 LIGHTSPEED Headset — we buy it for you" data-name="Logitech G Pro X 2 LIGHTSPEED Headset" data-price="160">
+              <span class="ab-sb-card__label">Get a quote</span>
               <span class="ab-sb-card__go" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" focusable="false"><path d="M5 12h13M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
             </button>
           </div>
@@ -1157,8 +1200,8 @@ hide:
             <span class="ab-sb-card__price">$419</span>
           </p>
           <div class="ab-sb-card__bottom">
-            <button type="button" class="ab-request" aria-label="Get this price for ASUS ROG SWIFT PG27AQN" data-name="ASUS ROG SWIFT PG27AQN" data-price="419">
-              <span class="ab-sb-card__label">Get this price</span>
+            <button type="button" class="ab-request" aria-label="Ask for a quote on ASUS ROG SWIFT PG27AQN — we buy it for you" data-name="ASUS ROG SWIFT PG27AQN" data-price="419">
+              <span class="ab-sb-card__label">Get a quote</span>
               <span class="ab-sb-card__go" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" focusable="false"><path d="M5 12h13M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
             </button>
           </div>
@@ -1173,8 +1216,8 @@ hide:
             <span class="ab-sb-card__price">$419</span>
           </p>
           <div class="ab-sb-card__bottom">
-            <button type="button" class="ab-request" aria-label="Get this price for ZOWIE XL2566K" data-name="ZOWIE XL2566K" data-price="419">
-              <span class="ab-sb-card__label">Get this price</span>
+            <button type="button" class="ab-request" aria-label="Ask for a quote on ZOWIE XL2566K — we buy it for you" data-name="ZOWIE XL2566K" data-price="419">
+              <span class="ab-sb-card__label">Get a quote</span>
               <span class="ab-sb-card__go" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" focusable="false"><path d="M5 12h13M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
             </button>
           </div>
@@ -1189,8 +1232,8 @@ hide:
             <span class="ab-sb-card__price">$350</span>
           </p>
           <div class="ab-sb-card__bottom">
-            <button type="button" class="ab-request" aria-label="Get this price for MSI Oculux NXG253R" data-name="MSI Oculux NXG253R" data-price="350">
-              <span class="ab-sb-card__label">Get this price</span>
+            <button type="button" class="ab-request" aria-label="Ask for a quote on MSI Oculux NXG253R — we buy it for you" data-name="MSI Oculux NXG253R" data-price="350">
+              <span class="ab-sb-card__label">Get a quote</span>
               <span class="ab-sb-card__go" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" focusable="false"><path d="M5 12h13M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
             </button>
           </div>
@@ -1205,8 +1248,8 @@ hide:
             <span class="ab-sb-card__price">$384</span>
           </p>
           <div class="ab-sb-card__bottom">
-            <button type="button" class="ab-request" aria-label="Get this price for Secretlab Titan Evo 2022" data-name="Secretlab Titan Evo 2022" data-price="384">
-              <span class="ab-sb-card__label">Get this price</span>
+            <button type="button" class="ab-request" aria-label="Ask for a quote on Secretlab Titan Evo 2022 — we buy it for you" data-name="Secretlab Titan Evo 2022" data-price="384">
+              <span class="ab-sb-card__label">Get a quote</span>
               <span class="ab-sb-card__go" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" focusable="false"><path d="M5 12h13M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
             </button>
           </div>
@@ -1221,8 +1264,8 @@ hide:
             <span class="ab-sb-card__price">$1257</span>
           </p>
           <div class="ab-sb-card__bottom">
-            <button type="button" class="ab-request" aria-label="Get this price for Herman Miller x Logitech G Embody Gaming Chair" data-name="Herman Miller x Logitech G Embody Gaming Chair" data-price="1257">
-              <span class="ab-sb-card__label">Get this price</span>
+            <button type="button" class="ab-request" aria-label="Ask for a quote on Herman Miller x Logitech G Embody Gaming Chair — we buy it for you" data-name="Herman Miller x Logitech G Embody Gaming Chair" data-price="1257">
+              <span class="ab-sb-card__label">Get a quote</span>
               <span class="ab-sb-card__go" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" focusable="false"><path d="M5 12h13M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
             </button>
           </div>
@@ -1237,8 +1280,8 @@ hide:
             <span class="ab-sb-card__price">$279</span>
           </p>
           <div class="ab-sb-card__bottom">
-            <button type="button" class="ab-request" aria-label="Get this price for Zowie XL2546K" data-name="Zowie XL2546K" data-price="279">
-              <span class="ab-sb-card__label">Get this price</span>
+            <button type="button" class="ab-request" aria-label="Ask for a quote on Zowie XL2546K — we buy it for you" data-name="Zowie XL2546K" data-price="279">
+              <span class="ab-sb-card__label">Get a quote</span>
               <span class="ab-sb-card__go" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" focusable="false"><path d="M5 12h13M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
             </button>
           </div>
@@ -1253,12 +1296,709 @@ hide:
             <span class="ab-sb-card__price">$349</span>
           </p>
           <div class="ab-sb-card__bottom">
-            <button type="button" class="ab-request" aria-label="Get this price for Zowie XL2546" data-name="Zowie XL2546" data-price="349">
-              <span class="ab-sb-card__label">Get this price</span>
+            <button type="button" class="ab-request" aria-label="Ask for a quote on Zowie XL2546 — we buy it for you" data-name="Zowie XL2546" data-price="349">
+              <span class="ab-sb-card__label">Get a quote</span>
               <span class="ab-sb-card__go" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" focusable="false"><path d="M5 12h13M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
             </button>
           </div>
         </article>
+
+        <!-- TOP-UP CARDS BEGIN (generated by _tmp_ocr/gear_topup_cards_apply.py) -->
+
+        <!-- The nineteen Top-ups products moved onto this shelf (2026-11-11,
+             user: 「将 http://127.0.0.1:8003/top-ups/ 的商品移至
+             http://127.0.0.1:8003/，商品只显示最低那一档的价格」), and on the
+             three follow-up choices: they join Popular gear rather than a band
+             of their own, /top-ups/ is deleted outright — no redirect — and
+             the nav loses TOP-UPS — and the price reads "From $X".
+
+             So each card shows one price, the entry tier's. The catalogue's
+             Spec dropdown does not come along: the shelf is a list of things
+             to ask about, and the exact amount is settled in the chat with the
+             data-name below, which names the tier that price buys. The ids are
+             the catalogue's, so /top-ups/pubg-mobile/'s "More from Top-ups"
+             links land on /#pubg-gcoin and friends. Only the PUBG card links
+             on — its title opens the one detail page the catalogue keeps
+             (/top-ups/pubg-mobile/); every other card stays unlinked, as the
+             gear cards above it are.
+
+             Covers are the catalogue's transparent 1200x250 wordmarks cut to
+             their alpha box and centred on a 960x960 ground of #f6f9fc — the
+             media box's own colour — by _tmp_ocr/gear_topup_cards_prep.py, so
+             the 1:1 frame needs no CSS of its own. Delta Force is the one mark
+             whose name is white on transparency: it gets a dark ground, or its
+             name would not read.
+
+             data-search carries "topup top-up" as well as the title, so the
+             hero box finds them and the Top-ups pill can stand alone.
+
+             Later the same day the action became "Get channel coupons"
+             (2026-11-11, user: 「将 top-ups的 Get link or channel 改成类似于
+             获取渠道和优惠券」; 「Get channel & coupons 改成获取渠道优惠券」):
+             the first pass wrote "Get channel & coupons", the second dropped
+             the ampersand. A top-up is bought on its own channel and the
+             channel's coupons are part of the answer, while the other cards
+             kept "Get link or channel" until that day's second pass made
+             them "Get a quote" (see the comment above the wrapper). Only the
+             label and the aria-label change; data-name and data-price stay.
+
+             The price line gained its tier the same day (user: 「类似 From
+             $1.18 等这些价格，需要对应一个档位/规格」): "From $X" alone left
+             the amount floating, so a small line under it names the entry
+             tier the price buys — the first row of the catalogue's Spec
+             dropdown, taken from data-name. -->
+
+        <article class="ab-sb-card" id="douyin-top-up" data-category="topup" data-search="douyin live topup top-up">
+          <div class="ab-sb-card__media ab-card__media">
+            <img src="/assets/digital/douyin-top-up-square.png" alt="Douyin Live wordmark" loading="lazy" decoding="async">
+          </div>
+          <h3 class="ab-sb-card__title">Douyin Live</h3>
+          <p class="ab-sb-card__quote">
+            <span class="ab-sb-card__price">From $1.17</span>
+            <span class="ab-sb-card__tier">60 Diamonds</span>
+          </p>
+          <div class="ab-sb-card__bottom">
+            <button type="button" class="ab-request" aria-label="Get channel coupons for Douyin Live — 60 Diamonds" data-name="Douyin Live — 60 Diamonds" data-price="1.17">
+              <span class="ab-sb-card__label">Get channel coupons</span>
+              <span class="ab-sb-card__go" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" focusable="false"><path d="M5 12h13M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+            </button>
+          </div>
+        </article>
+
+        <article class="ab-sb-card" id="telegram" data-category="topup" data-search="telegram topup top-up">
+          <div class="ab-sb-card__media ab-card__media">
+            <img src="/assets/digital/telegram-square.png" alt="Telegram wordmark" loading="lazy" decoding="async">
+          </div>
+          <h3 class="ab-sb-card__title">Telegram</h3>
+          <p class="ab-sb-card__quote">
+            <span class="ab-sb-card__price">From $0.88</span>
+            <span class="ab-sb-card__tier">50 Stars</span>
+          </p>
+          <div class="ab-sb-card__bottom">
+            <button type="button" class="ab-request" aria-label="Get channel coupons for Telegram — 50 Stars" data-name="Telegram — 50 Stars" data-price="0.88">
+              <span class="ab-sb-card__label">Get channel coupons</span>
+              <span class="ab-sb-card__go" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" focusable="false"><path d="M5 12h13M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+            </button>
+          </div>
+        </article>
+
+        <article class="ab-sb-card" id="pubg-mobile" data-category="topup" data-search="pubg mobile uc topup top-up">
+          <div class="ab-sb-card__media ab-card__media">
+            <img src="/assets/digital/pubg-mobile-square.png" alt="PUBG Mobile UC wordmark" loading="lazy" decoding="async">
+          </div>
+          <h3 class="ab-sb-card__title"><a href="/top-ups/pubg-mobile/">PUBG Mobile UC</a></h3>
+          <p class="ab-sb-card__quote">
+            <span class="ab-sb-card__price">From $0.80</span>
+            <span class="ab-sb-card__tier">60 UC</span>
+          </p>
+          <div class="ab-sb-card__bottom">
+            <button type="button" class="ab-request" aria-label="Get channel coupons for PUBG Mobile UC — 60 UC" data-name="PUBG Mobile UC — 60 UC" data-price="0.80">
+              <span class="ab-sb-card__label">Get channel coupons</span>
+              <span class="ab-sb-card__go" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" focusable="false"><path d="M5 12h13M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+            </button>
+          </div>
+        </article>
+
+        <article class="ab-sb-card" id="pubg-gcoin" data-category="topup" data-search="pubg g-coin topup top-up">
+          <div class="ab-sb-card__media ab-card__media">
+            <img src="/assets/digital/pubg-gcoin-square.png" alt="PUBG G-COIN wordmark" loading="lazy" decoding="async">
+          </div>
+          <h3 class="ab-sb-card__title">PUBG G-COIN</h3>
+          <p class="ab-sb-card__quote">
+            <span class="ab-sb-card__price">From $0.86</span>
+            <span class="ab-sb-card__tier">100 G-COIN</span>
+          </p>
+          <div class="ab-sb-card__bottom">
+            <button type="button" class="ab-request" aria-label="Get channel coupons for PUBG G-COIN — 100 G-COIN" data-name="PUBG G-COIN — 100 G-COIN" data-price="0.86">
+              <span class="ab-sb-card__label">Get channel coupons</span>
+              <span class="ab-sb-card__go" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" focusable="false"><path d="M5 12h13M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+            </button>
+          </div>
+        </article>
+
+        <article class="ab-sb-card" id="hok" data-category="topup" data-search="honor of kings topup top-up">
+          <div class="ab-sb-card__media ab-card__media">
+            <img src="/assets/digital/hok-square.png" alt="Honor of Kings wordmark" loading="lazy" decoding="async">
+          </div>
+          <h3 class="ab-sb-card__title">Honor of Kings</h3>
+          <p class="ab-sb-card__quote">
+            <span class="ab-sb-card__price">From $0.75</span>
+            <span class="ab-sb-card__tier">80 Tokens</span>
+          </p>
+          <div class="ab-sb-card__bottom">
+            <button type="button" class="ab-request" aria-label="Get channel coupons for Honor of Kings — 80 Tokens" data-name="Honor of Kings — 80 Tokens" data-price="0.75">
+              <span class="ab-sb-card__label">Get channel coupons</span>
+              <span class="ab-sb-card__go" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" focusable="false"><path d="M5 12h13M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+            </button>
+          </div>
+        </article>
+
+        <article class="ab-sb-card" id="arena-breakout" data-category="topup" data-search="arena breakout topup top-up">
+          <div class="ab-sb-card__media ab-card__media">
+            <img src="/assets/digital/arena-breakout-square.png" alt="Arena Breakout wordmark" loading="lazy" decoding="async">
+          </div>
+          <h3 class="ab-sb-card__title">Arena Breakout</h3>
+          <p class="ab-sb-card__quote">
+            <span class="ab-sb-card__price">From $0.75</span>
+            <span class="ab-sb-card__tier">60 + 6 Bonds</span>
+          </p>
+          <div class="ab-sb-card__bottom">
+            <button type="button" class="ab-request" aria-label="Get channel coupons for Arena Breakout — 60 + 6 Bonds" data-name="Arena Breakout — 60 + 6 Bonds" data-price="0.75">
+              <span class="ab-sb-card__label">Get channel coupons</span>
+              <span class="ab-sb-card__go" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" focusable="false"><path d="M5 12h13M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+            </button>
+          </div>
+        </article>
+
+        <article class="ab-sb-card" id="pokemon-go" data-category="topup" data-search="pokémon go topup top-up">
+          <div class="ab-sb-card__media ab-card__media">
+            <img src="/assets/digital/pokemon-go-square.png" alt="Pokémon GO wordmark" loading="lazy" decoding="async">
+          </div>
+          <h3 class="ab-sb-card__title">Pokémon GO</h3>
+          <p class="ab-sb-card__quote">
+            <span class="ab-sb-card__price">From $3.84</span>
+            <span class="ab-sb-card__tier">550 PokéCoins</span>
+          </p>
+          <div class="ab-sb-card__bottom">
+            <button type="button" class="ab-request" aria-label="Get channel coupons for Pokémon GO — 550 PokéCoins" data-name="Pokémon GO — 550 PokéCoins" data-price="3.84">
+              <span class="ab-sb-card__label">Get channel coupons</span>
+              <span class="ab-sb-card__go" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" focusable="false"><path d="M5 12h13M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+            </button>
+          </div>
+        </article>
+
+        <article class="ab-sb-card" id="mobile-legends" data-category="topup" data-search="mobile legends: bang bang topup top-up">
+          <div class="ab-sb-card__media ab-card__media">
+            <img src="/assets/digital/mobile-legends-square.png" alt="Mobile Legends: Bang Bang wordmark" loading="lazy" decoding="async">
+          </div>
+          <h3 class="ab-sb-card__title">Mobile Legends: Bang Bang</h3>
+          <p class="ab-sb-card__quote">
+            <span class="ab-sb-card__price">From $1.27</span>
+            <span class="ab-sb-card__tier">86 Diamonds</span>
+          </p>
+          <div class="ab-sb-card__bottom">
+            <button type="button" class="ab-request" aria-label="Get channel coupons for Mobile Legends: Bang Bang — 86 Diamonds" data-name="Mobile Legends: Bang Bang — 86 Diamonds" data-price="1.27">
+              <span class="ab-sb-card__label">Get channel coupons</span>
+              <span class="ab-sb-card__go" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" focusable="false"><path d="M5 12h13M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+            </button>
+          </div>
+        </article>
+
+        <article class="ab-sb-card" id="honkai-star-rail" data-category="topup" data-search="honkai: star rail topup top-up">
+          <div class="ab-sb-card__media ab-card__media">
+            <img src="/assets/digital/honkai-star-rail-square.png" alt="Honkai: Star Rail wordmark" loading="lazy" decoding="async">
+          </div>
+          <h3 class="ab-sb-card__title">Honkai: Star Rail</h3>
+          <p class="ab-sb-card__quote">
+            <span class="ab-sb-card__price">From $0.90</span>
+            <span class="ab-sb-card__tier">60 Oneiric Shard</span>
+          </p>
+          <div class="ab-sb-card__bottom">
+            <button type="button" class="ab-request" aria-label="Get channel coupons for Honkai: Star Rail — 60 Oneiric Shard" data-name="Honkai: Star Rail — 60 Oneiric Shard" data-price="0.90">
+              <span class="ab-sb-card__label">Get channel coupons</span>
+              <span class="ab-sb-card__go" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" focusable="false"><path d="M5 12h13M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+            </button>
+          </div>
+        </article>
+
+        <article class="ab-sb-card" id="genshin" data-category="topup" data-search="genshin impact topup top-up">
+          <div class="ab-sb-card__media ab-card__media">
+            <img src="/assets/digital/genshin-square.png" alt="Genshin Impact wordmark" loading="lazy" decoding="async">
+          </div>
+          <h3 class="ab-sb-card__title">Genshin Impact</h3>
+          <p class="ab-sb-card__quote">
+            <span class="ab-sb-card__price">From $1.01</span>
+            <span class="ab-sb-card__tier">60 Genesis Crystals</span>
+          </p>
+          <div class="ab-sb-card__bottom">
+            <button type="button" class="ab-request" aria-label="Get channel coupons for Genshin Impact — 60 Genesis Crystals" data-name="Genshin Impact — 60 Genesis Crystals" data-price="1.01">
+              <span class="ab-sb-card__label">Get channel coupons</span>
+              <span class="ab-sb-card__go" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" focusable="false"><path d="M5 12h13M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+            </button>
+          </div>
+        </article>
+
+        <article class="ab-sb-card" id="clash-of-clans" data-category="topup" data-search="clash of clans topup top-up">
+          <div class="ab-sb-card__media ab-card__media">
+            <img src="/assets/digital/clash-of-clans-square.png" alt="Clash of Clans wordmark" loading="lazy" decoding="async">
+          </div>
+          <h3 class="ab-sb-card__title">Clash of Clans</h3>
+          <p class="ab-sb-card__quote">
+            <span class="ab-sb-card__price">From $4.23</span>
+            <span class="ab-sb-card__tier">500 Gems</span>
+          </p>
+          <div class="ab-sb-card__bottom">
+            <button type="button" class="ab-request" aria-label="Get channel coupons for Clash of Clans — 500 Gems" data-name="Clash of Clans — 500 Gems" data-price="4.23">
+              <span class="ab-sb-card__label">Get channel coupons</span>
+              <span class="ab-sb-card__go" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" focusable="false"><path d="M5 12h13M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+            </button>
+          </div>
+        </article>
+
+        <article class="ab-sb-card" id="clash-royale" data-category="topup" data-search="clash royale topup top-up">
+          <div class="ab-sb-card__media ab-card__media">
+            <img src="/assets/digital/clash-royale-square.png" alt="Clash Royale wordmark" loading="lazy" decoding="async">
+          </div>
+          <h3 class="ab-sb-card__title">Clash Royale</h3>
+          <p class="ab-sb-card__quote">
+            <span class="ab-sb-card__price">From $4.27</span>
+            <span class="ab-sb-card__tier">500 Gems</span>
+          </p>
+          <div class="ab-sb-card__bottom">
+            <button type="button" class="ab-request" aria-label="Get channel coupons for Clash Royale — 500 Gems" data-name="Clash Royale — 500 Gems" data-price="4.27">
+              <span class="ab-sb-card__label">Get channel coupons</span>
+              <span class="ab-sb-card__go" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" focusable="false"><path d="M5 12h13M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+            </button>
+          </div>
+        </article>
+
+        <article class="ab-sb-card" id="brawl-stars" data-category="topup" data-search="brawl stars topup top-up">
+          <div class="ab-sb-card__media ab-card__media">
+            <img src="/assets/digital/brawl-stars-square.png" alt="Brawl Stars wordmark" loading="lazy" decoding="async">
+          </div>
+          <h3 class="ab-sb-card__title">Brawl Stars</h3>
+          <p class="ab-sb-card__quote">
+            <span class="ab-sb-card__price">From $1.74</span>
+            <span class="ab-sb-card__tier">30 GEMS</span>
+          </p>
+          <div class="ab-sb-card__bottom">
+            <button type="button" class="ab-request" aria-label="Get channel coupons for Brawl Stars — 30 GEMS" data-name="Brawl Stars — 30 GEMS" data-price="1.74">
+              <span class="ab-sb-card__label">Get channel coupons</span>
+              <span class="ab-sb-card__go" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" focusable="false"><path d="M5 12h13M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+            </button>
+          </div>
+        </article>
+
+        <article class="ab-sb-card" id="arena-of-valor" data-category="topup" data-search="arena of valor topup top-up">
+          <div class="ab-sb-card__media ab-card__media">
+            <img src="/assets/digital/arena-of-valor-square.png" alt="Arena of Valor wordmark" loading="lazy" decoding="async">
+          </div>
+          <h3 class="ab-sb-card__title">Arena of Valor</h3>
+          <p class="ab-sb-card__quote">
+            <span class="ab-sb-card__price">From $0.46</span>
+            <span class="ab-sb-card__tier">11 Coupons</span>
+          </p>
+          <div class="ab-sb-card__bottom">
+            <button type="button" class="ab-request" aria-label="Get channel coupons for Arena of Valor — 11 Coupons" data-name="Arena of Valor — 11 Coupons" data-price="0.46">
+              <span class="ab-sb-card__label">Get channel coupons</span>
+              <span class="ab-sb-card__go" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" focusable="false"><path d="M5 12h13M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+            </button>
+          </div>
+        </article>
+
+        <article class="ab-sb-card" id="delta-force" data-category="topup" data-search="delta force topup top-up">
+          <div class="ab-sb-card__media ab-card__media">
+            <img src="/assets/digital/delta-force-square.png" alt="Delta Force wordmark" loading="lazy" decoding="async">
+          </div>
+          <h3 class="ab-sb-card__title">Delta Force</h3>
+          <p class="ab-sb-card__quote">
+            <span class="ab-sb-card__price">From $0.40</span>
+            <span class="ab-sb-card__tier">30 Coins</span>
+          </p>
+          <div class="ab-sb-card__bottom">
+            <button type="button" class="ab-request" aria-label="Get channel coupons for Delta Force — 30 Coins" data-name="Delta Force — 30 Coins" data-price="0.40">
+              <span class="ab-sb-card__label">Get channel coupons</span>
+              <span class="ab-sb-card__go" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" focusable="false"><path d="M5 12h13M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+            </button>
+          </div>
+        </article>
+
+        <article class="ab-sb-card" id="valorant" data-category="topup" data-search="valorant topup top-up">
+          <div class="ab-sb-card__media ab-card__media">
+            <img src="/assets/digital/valorant-square.png" alt="VALORANT wordmark" loading="lazy" decoding="async">
+          </div>
+          <h3 class="ab-sb-card__title">VALORANT</h3>
+          <p class="ab-sb-card__quote">
+            <span class="ab-sb-card__price">From $3.15</span>
+            <span class="ab-sb-card__tier">475 VP</span>
+          </p>
+          <div class="ab-sb-card__bottom">
+            <button type="button" class="ab-request" aria-label="Get channel coupons for VALORANT — 475 VP" data-name="VALORANT — 475 VP" data-price="3.15">
+              <span class="ab-sb-card__label">Get channel coupons</span>
+              <span class="ab-sb-card__go" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" focusable="false"><path d="M5 12h13M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+            </button>
+          </div>
+        </article>
+
+        <article class="ab-sb-card" id="diablo-iv" data-category="topup" data-search="diablo iv topup top-up">
+          <div class="ab-sb-card__media ab-card__media">
+            <img src="/assets/digital/diablo-iv-square.png" alt="Diablo IV wordmark" loading="lazy" decoding="async">
+          </div>
+          <h3 class="ab-sb-card__title">Diablo IV</h3>
+          <p class="ab-sb-card__quote">
+            <span class="ab-sb-card__price">From $8.87</span>
+            <span class="ab-sb-card__tier">1000 Platinum</span>
+          </p>
+          <div class="ab-sb-card__bottom">
+            <button type="button" class="ab-request" aria-label="Get channel coupons for Diablo IV — 1000 Platinum" data-name="Diablo IV — 1000 Platinum" data-price="8.87">
+              <span class="ab-sb-card__label">Get channel coupons</span>
+              <span class="ab-sb-card__go" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" focusable="false"><path d="M5 12h13M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+            </button>
+          </div>
+        </article>
+
+        <article class="ab-sb-card" id="lol-wild-rift" data-category="topup" data-search="league of legends: wild rift topup top-up">
+          <div class="ab-sb-card__media ab-card__media">
+            <img src="/assets/digital/lol-wild-rift-square.png" alt="League of Legends: Wild Rift wordmark" loading="lazy" decoding="async">
+          </div>
+          <h3 class="ab-sb-card__title">League of Legends: Wild Rift</h3>
+          <p class="ab-sb-card__quote">
+            <span class="ab-sb-card__price">From $3.10</span>
+            <span class="ab-sb-card__tier">425 Cores</span>
+          </p>
+          <div class="ab-sb-card__bottom">
+            <button type="button" class="ab-request" aria-label="Get channel coupons for League of Legends: Wild Rift — 425 Cores" data-name="League of Legends: Wild Rift — 425 Cores" data-price="3.10">
+              <span class="ab-sb-card__label">Get channel coupons</span>
+              <span class="ab-sb-card__go" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" focusable="false"><path d="M5 12h13M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+            </button>
+          </div>
+        </article>
+
+        <article class="ab-sb-card" id="cs2" data-category="topup" data-search="cs2 skins &amp; credits topup top-up">
+          <div class="ab-sb-card__media ab-card__media">
+            <img src="/assets/digital/cs2-square.png" alt="CS2 Skins &amp; Credits wordmark" loading="lazy" decoding="async">
+          </div>
+          <h3 class="ab-sb-card__title">CS2 Skins &amp; Credits</h3>
+          <p class="ab-sb-card__quote">
+            <span class="ab-sb-card__price">From $2.29</span>
+            <span class="ab-sb-card__tier">CS2 Case Key</span>
+          </p>
+          <div class="ab-sb-card__bottom">
+            <button type="button" class="ab-request" aria-label="Get channel coupons for CS2 Skins &amp; Credits — CS2 Case Key" data-name="CS2 Skins &amp; Credits — CS2 Case Key" data-price="2.29">
+              <span class="ab-sb-card__label">Get channel coupons</span>
+              <span class="ab-sb-card__go" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" focusable="false"><path d="M5 12h13M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+            </button>
+          </div>
+        </article>
+
+        <!-- TOP-UP CARDS END -->
+
+        <!-- CATALOGUE CARDS BEGIN (generated by _tmp_ocr/gear_catalog_cards_apply.py) -->
+
+        <!-- The seventeen CDKeys and Gift-cards products moved onto this
+             shelf too (2026-11-11, user: 「将 http://127.0.0.1:8003/cdkeys/
+             和 http://127.0.0.1:8003/gift-cards/ 也同样处理」), on the same
+             two choices the Top-ups block above records: they join Popular
+             gear rather than a band of their own, and both pages are deleted
+             outright — no redirect, nav down to HOME / NEWS / GUIDES — with
+             the price reading "From $X".
+
+             Eleven cards are CDKeys', six are Gift-cards', in the order the
+             two pages had them. Each shows one price, the entry tier's; the
+             Spec dropdown does not come along, because the shelf is a list of
+             things to ask about and the exact amount is settled in the chat
+             with the data-name below, which names the tier that price buys.
+             The three cards the catalogue had no price for — Windows 11 Pro,
+             Costco's Gold Star membership, Microsoft 365 — come along too and
+             read "Price on request" (user: 「写 Price on request」): the
+             button still opens the chat, and the quote is the answer. They
+             have no data-price, so sourcing.js sends the name alone.
+
+             Every priced card also names its entry tier under the price
+             (user: 「类似 From $1.18 等这些价格，需要对应一个档位/规格」), the
+             first row of the catalogue's Spec dropdown; the unpriced three
+             never had a tier list, so they carry no tier line.
+
+             Covers: the fourteen wordmarks are cut to their alpha box and
+             centred on a 960x960 ground of #f6f9fc — the media box's own
+             colour, as in the Top-ups block — by
+             _tmp_ocr/gear_catalog_cards_prep.py. Fortnite's and Kammelna's
+             names are white on transparency, so those two take the dark
+             ground. The three unpriced cards keep the catalogue's photographs
+             (/assets/gear/<id>/01.jpg), cropped 1:1 by the media box's
+             object-fit; their data-gallery stays behind, since the shelf has
+             no lightbox.
+
+             data-search adds "cdkeys cdkey" or "giftcard gift-card" to the
+             title, so the hero box and the two new pills find them. -->
+
+        <article class="ab-sb-card" id="fortnite-card" data-category="cdkeys" data-search="fortnite v-bucks card cdkeys cdkey">
+          <div class="ab-sb-card__media ab-card__media">
+            <img src="/assets/digital/fortnite-card-square.png" alt="Fortnite V-Bucks Card wordmark" loading="lazy" decoding="async">
+          </div>
+          <h3 class="ab-sb-card__title">Fortnite V-Bucks Card</h3>
+          <p class="ab-sb-card__quote">
+            <span class="ab-sb-card__price">From $9.99</span>
+            <span class="ab-sb-card__tier">1000 V-Bucks (Austria)</span>
+          </p>
+          <div class="ab-sb-card__bottom">
+            <button type="button" class="ab-request" aria-label="Ask for a quote on Fortnite V-Bucks Card — 1000 V-Bucks (Austria) — we buy it for you" data-name="Fortnite V-Bucks Card — 1000 V-Bucks (Austria)" data-price="9.99">
+              <span class="ab-sb-card__label">Get a quote</span>
+              <span class="ab-sb-card__go" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" focusable="false"><path d="M5 12h13M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+            </button>
+          </div>
+        </article>
+
+        <article class="ab-sb-card" id="apex-legends" data-category="cdkeys" data-search="apex legends coins cdkeys cdkey">
+          <div class="ab-sb-card__media ab-card__media">
+            <img src="/assets/digital/apex-legends-square.png" alt="Apex Legends Coins wordmark" loading="lazy" decoding="async">
+          </div>
+          <h3 class="ab-sb-card__title">Apex Legends Coins</h3>
+          <p class="ab-sb-card__quote">
+            <span class="ab-sb-card__price">From $11.12</span>
+            <span class="ab-sb-card__tier">1000 Coins</span>
+          </p>
+          <div class="ab-sb-card__bottom">
+            <button type="button" class="ab-request" aria-label="Ask for a quote on Apex Legends Coins — 1000 Coins — we buy it for you" data-name="Apex Legends Coins — 1000 Coins" data-price="11.12">
+              <span class="ab-sb-card__label">Get a quote</span>
+              <span class="ab-sb-card__go" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" focusable="false"><path d="M5 12h13M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+            </button>
+          </div>
+        </article>
+
+        <article class="ab-sb-card" id="playstation" data-category="cdkeys" data-search="playstation network card cdkeys cdkey">
+          <div class="ab-sb-card__media ab-card__media">
+            <img src="/assets/digital/playstation-square.png" alt="PlayStation Network Card wordmark" loading="lazy" decoding="async">
+          </div>
+          <h3 class="ab-sb-card__title">PlayStation Network Card</h3>
+          <p class="ab-sb-card__quote">
+            <span class="ab-sb-card__price">From $1.18</span>
+            <span class="ab-sb-card__tier">1 USD</span>
+          </p>
+          <div class="ab-sb-card__bottom">
+            <button type="button" class="ab-request" aria-label="Ask for a quote on PlayStation Network Card — 1 USD — we buy it for you" data-name="PlayStation Network Card — 1 USD" data-price="1.18">
+              <span class="ab-sb-card__label">Get a quote</span>
+              <span class="ab-sb-card__go" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" focusable="false"><path d="M5 12h13M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+            </button>
+          </div>
+        </article>
+
+        <article class="ab-sb-card" id="pubg-gcoins" data-category="cdkeys" data-search="pubg g-coin cdk cdkeys cdkey">
+          <div class="ab-sb-card__media ab-card__media">
+            <img src="/assets/digital/pubg-gcoins-square.png" alt="PUBG G-COIN CDK wordmark" loading="lazy" decoding="async">
+          </div>
+          <h3 class="ab-sb-card__title">PUBG G-COIN CDK</h3>
+          <p class="ab-sb-card__quote">
+            <span class="ab-sb-card__price">From $0.91</span>
+            <span class="ab-sb-card__tier">100 coin</span>
+          </p>
+          <div class="ab-sb-card__bottom">
+            <button type="button" class="ab-request" aria-label="Ask for a quote on PUBG G-COIN CDK — 100 coin — we buy it for you" data-name="PUBG G-COIN CDK — 100 coin" data-price="0.91">
+              <span class="ab-sb-card__label">Get a quote</span>
+              <span class="ab-sb-card__go" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" focusable="false"><path d="M5 12h13M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+            </button>
+          </div>
+        </article>
+
+        <article class="ab-sb-card" id="ns-membership" data-category="cdkeys" data-search="nintendo switch online membership cdkeys cdkey">
+          <div class="ab-sb-card__media ab-card__media">
+            <img src="/assets/digital/ns-membership-square.png" alt="Nintendo Switch Online Membership wordmark" loading="lazy" decoding="async">
+          </div>
+          <h3 class="ab-sb-card__title">Nintendo Switch Online Membership</h3>
+          <p class="ab-sb-card__quote">
+            <span class="ab-sb-card__price">From $3.82</span>
+            <span class="ab-sb-card__tier">1 Month Subscription (HK)</span>
+          </p>
+          <div class="ab-sb-card__bottom">
+            <button type="button" class="ab-request" aria-label="Ask for a quote on Nintendo Switch Online Membership — 1 Month Subscription (HK) — we buy it for you" data-name="Nintendo Switch Online Membership — 1 Month Subscription (HK)" data-price="3.82">
+              <span class="ab-sb-card__label">Get a quote</span>
+              <span class="ab-sb-card__go" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" focusable="false"><path d="M5 12h13M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+            </button>
+          </div>
+        </article>
+
+        <article class="ab-sb-card" id="nintendo-eshop" data-category="cdkeys" data-search="nintendo eshop gift card cdkeys cdkey">
+          <div class="ab-sb-card__media ab-card__media">
+            <img src="/assets/digital/nintendo-eshop-square.png" alt="Nintendo eShop Gift Card wordmark" loading="lazy" decoding="async">
+          </div>
+          <h3 class="ab-sb-card__title">Nintendo eShop Gift Card</h3>
+          <p class="ab-sb-card__quote">
+            <span class="ab-sb-card__price">From $9.69</span>
+            <span class="ab-sb-card__tier">10 USD</span>
+          </p>
+          <div class="ab-sb-card__bottom">
+            <button type="button" class="ab-request" aria-label="Ask for a quote on Nintendo eShop Gift Card — 10 USD — we buy it for you" data-name="Nintendo eShop Gift Card — 10 USD" data-price="9.69">
+              <span class="ab-sb-card__label">Get a quote</span>
+              <span class="ab-sb-card__go" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" focusable="false"><path d="M5 12h13M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+            </button>
+          </div>
+        </article>
+
+        <article class="ab-sb-card" id="steam-wallet" data-category="cdkeys" data-search="steam wallet code cdkeys cdkey">
+          <div class="ab-sb-card__media ab-card__media">
+            <img src="/assets/digital/steam-wallet-square.png" alt="Steam Wallet Code wordmark" loading="lazy" decoding="async">
+          </div>
+          <h3 class="ab-sb-card__title">Steam Wallet Code</h3>
+          <p class="ab-sb-card__quote">
+            <span class="ab-sb-card__price">From $1.42</span>
+            <span class="ab-sb-card__tier">5 RM</span>
+          </p>
+          <div class="ab-sb-card__bottom">
+            <button type="button" class="ab-request" aria-label="Ask for a quote on Steam Wallet Code — 5 RM — we buy it for you" data-name="Steam Wallet Code — 5 RM" data-price="1.42">
+              <span class="ab-sb-card__label">Get a quote</span>
+              <span class="ab-sb-card__go" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" focusable="false"><path d="M5 12h13M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+            </button>
+          </div>
+        </article>
+
+        <article class="ab-sb-card" id="gocash-card" data-category="cdkeys" data-search="gocash (global) cdkeys cdkey">
+          <div class="ab-sb-card__media ab-card__media">
+            <img src="/assets/digital/gocash-card-square.png" alt="GoCash (Global) wordmark" loading="lazy" decoding="async">
+          </div>
+          <h3 class="ab-sb-card__title">GoCash (Global)</h3>
+          <p class="ab-sb-card__quote">
+            <span class="ab-sb-card__price">From $4.79</span>
+            <span class="ab-sb-card__tier">5 USD</span>
+          </p>
+          <div class="ab-sb-card__bottom">
+            <button type="button" class="ab-request" aria-label="Ask for a quote on GoCash (Global) — 5 USD — we buy it for you" data-name="GoCash (Global) — 5 USD" data-price="4.79">
+              <span class="ab-sb-card__label">Get a quote</span>
+              <span class="ab-sb-card__go" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" focusable="false"><path d="M5 12h13M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+            </button>
+          </div>
+        </article>
+
+        <article class="ab-sb-card" id="windows-11-pro" data-category="cdkeys" data-search="microsoft windows 11 pro cdkeys cdkey">
+          <div class="ab-sb-card__media ab-card__media">
+            <img src="/assets/gear/windows-11-pro/01.jpg" alt="The Windows 11 Pro box on a near-white field under a sticker reading activation code by email" loading="lazy" decoding="async">
+          </div>
+          <h3 class="ab-sb-card__title">Microsoft Windows 11 Pro</h3>
+          <p class="ab-sb-card__quote">
+            <span class="ab-sb-card__price">Price on request</span>
+          </p>
+          <div class="ab-sb-card__bottom">
+            <button type="button" class="ab-request" aria-label="Ask for a quote on Microsoft Windows 11 Pro — we buy it for you" data-name="Microsoft Windows 11 Pro">
+              <span class="ab-sb-card__label">Get a quote</span>
+              <span class="ab-sb-card__go" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" focusable="false"><path d="M5 12h13M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+            </button>
+          </div>
+        </article>
+
+        <article class="ab-sb-card" id="costco-gold-star-membership" data-category="cdkeys" data-search="costco 1-year gold star membership + $45 digital costco shop card cdkeys cdkey">
+          <div class="ab-sb-card__media ab-card__media">
+            <img src="/assets/gear/costco-gold-star-membership/01.jpg" alt="A couple carrying pizza boxes and two drinks at a warehouse snack counter" loading="lazy" decoding="async">
+          </div>
+          <h3 class="ab-sb-card__title">Costco 1-Year Gold Star Membership + $45 Digital Costco Shop Card</h3>
+          <p class="ab-sb-card__quote">
+            <span class="ab-sb-card__price">Price on request</span>
+          </p>
+          <div class="ab-sb-card__bottom">
+            <button type="button" class="ab-request" aria-label="Ask for a quote on Costco 1-Year Gold Star Membership + $45 Digital Costco Shop Card — we buy it for you" data-name="Costco 1-Year Gold Star Membership + $45 Digital Costco Shop Card">
+              <span class="ab-sb-card__label">Get a quote</span>
+              <span class="ab-sb-card__go" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" focusable="false"><path d="M5 12h13M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+            </button>
+          </div>
+        </article>
+
+        <article class="ab-sb-card" id="microsoft-365-1-year" data-category="cdkeys" data-search="microsoft 365: 1-year subscription cdkeys cdkey">
+          <div class="ab-sb-card__media ab-card__media">
+            <img src="/assets/gear/microsoft-365-1-year/01.jpg" alt="The Microsoft 365 Personal box with its year-one features listed on the front" loading="lazy" decoding="async">
+          </div>
+          <h3 class="ab-sb-card__title">Microsoft 365: 1-Year Subscription</h3>
+          <p class="ab-sb-card__quote">
+            <span class="ab-sb-card__price">Price on request</span>
+          </p>
+          <div class="ab-sb-card__bottom">
+            <button type="button" class="ab-request" aria-label="Ask for a quote on Microsoft 365: 1-Year Subscription — we buy it for you" data-name="Microsoft 365: 1-Year Subscription">
+              <span class="ab-sb-card__label">Get a quote</span>
+              <span class="ab-sb-card__go" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" focusable="false"><path d="M5 12h13M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+            </button>
+          </div>
+        </article>
+
+        <article class="ab-sb-card" id="amazon-gift-card-us" data-category="giftcards" data-search="amazon gift card (us) giftcards gift-card giftcard">
+          <div class="ab-sb-card__media ab-card__media">
+            <img src="/assets/digital/amazon-gift-card-us-square.png" alt="Amazon Gift Card (US) wordmark" loading="lazy" decoding="async">
+          </div>
+          <h3 class="ab-sb-card__title">Amazon Gift Card (US)</h3>
+          <p class="ab-sb-card__quote">
+            <span class="ab-sb-card__price">From $4.95</span>
+            <span class="ab-sb-card__tier">5 USD</span>
+          </p>
+          <div class="ab-sb-card__bottom">
+            <button type="button" class="ab-request" aria-label="Ask for a quote on Amazon Gift Card (US) — 5 USD — we buy it for you" data-name="Amazon Gift Card (US) — 5 USD" data-price="4.95">
+              <span class="ab-sb-card__label">Get a quote</span>
+              <span class="ab-sb-card__go" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" focusable="false"><path d="M5 12h13M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+            </button>
+          </div>
+        </article>
+
+        <article class="ab-sb-card" id="apple-gift-card" data-category="giftcards" data-search="apple gift card giftcards gift-card giftcard">
+          <div class="ab-sb-card__media ab-card__media">
+            <img src="/assets/digital/apple-gift-card-square.png" alt="Apple Gift Card wordmark" loading="lazy" decoding="async">
+          </div>
+          <h3 class="ab-sb-card__title">Apple Gift Card</h3>
+          <p class="ab-sb-card__quote">
+            <span class="ab-sb-card__price">From $4.50</span>
+            <span class="ab-sb-card__tier">5 USD</span>
+          </p>
+          <div class="ab-sb-card__bottom">
+            <button type="button" class="ab-request" aria-label="Ask for a quote on Apple Gift Card — 5 USD — we buy it for you" data-name="Apple Gift Card — 5 USD" data-price="4.50">
+              <span class="ab-sb-card__label">Get a quote</span>
+              <span class="ab-sb-card__go" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" focusable="false"><path d="M5 12h13M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+            </button>
+          </div>
+        </article>
+
+        <article class="ab-sb-card" id="google-play-gift-card" data-category="giftcards" data-search="google play gift card giftcards gift-card giftcard">
+          <div class="ab-sb-card__media ab-card__media">
+            <img src="/assets/digital/google-play-gift-card-square.png" alt="Google Play Gift Card wordmark" loading="lazy" decoding="async">
+          </div>
+          <h3 class="ab-sb-card__title">Google Play Gift Card</h3>
+          <p class="ab-sb-card__quote">
+            <span class="ab-sb-card__price">From $4.95</span>
+            <span class="ab-sb-card__tier">5 USD</span>
+          </p>
+          <div class="ab-sb-card__bottom">
+            <button type="button" class="ab-request" aria-label="Ask for a quote on Google Play Gift Card — 5 USD — we buy it for you" data-name="Google Play Gift Card — 5 USD" data-price="4.95">
+              <span class="ab-sb-card__label">Get a quote</span>
+              <span class="ab-sb-card__go" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" focusable="false"><path d="M5 12h13M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+            </button>
+          </div>
+        </article>
+
+        <article class="ab-sb-card" id="netflix-gift-card-us" data-category="giftcards" data-search="netflix gift card (us) giftcards gift-card giftcard">
+          <div class="ab-sb-card__media ab-card__media">
+            <img src="/assets/digital/netflix-gift-card-us-square.png" alt="Netflix Gift Card (US) wordmark" loading="lazy" decoding="async">
+          </div>
+          <h3 class="ab-sb-card__title">Netflix Gift Card (US)</h3>
+          <p class="ab-sb-card__quote">
+            <span class="ab-sb-card__price">From $20.25</span>
+            <span class="ab-sb-card__tier">20 USD</span>
+          </p>
+          <div class="ab-sb-card__bottom">
+            <button type="button" class="ab-request" aria-label="Ask for a quote on Netflix Gift Card (US) — 20 USD — we buy it for you" data-name="Netflix Gift Card (US) — 20 USD" data-price="20.25">
+              <span class="ab-sb-card__label">Get a quote</span>
+              <span class="ab-sb-card__go" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" focusable="false"><path d="M5 12h13M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+            </button>
+          </div>
+        </article>
+
+        <article class="ab-sb-card" id="xbox-gift-card" data-category="giftcards" data-search="xbox live gift card giftcards gift-card giftcard">
+          <div class="ab-sb-card__media ab-card__media">
+            <img src="/assets/digital/xbox-gift-card-square.png" alt="Xbox Live Gift Card wordmark" loading="lazy" decoding="async">
+          </div>
+          <h3 class="ab-sb-card__title">Xbox Live Gift Card</h3>
+          <p class="ab-sb-card__quote">
+            <span class="ab-sb-card__price">From $4.59</span>
+            <span class="ab-sb-card__tier">5 USD</span>
+          </p>
+          <div class="ab-sb-card__bottom">
+            <button type="button" class="ab-request" aria-label="Ask for a quote on Xbox Live Gift Card — 5 USD — we buy it for you" data-name="Xbox Live Gift Card — 5 USD" data-price="4.59">
+              <span class="ab-sb-card__label">Get a quote</span>
+              <span class="ab-sb-card__go" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" focusable="false"><path d="M5 12h13M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+            </button>
+          </div>
+        </article>
+
+        <article class="ab-sb-card" id="kammelna-gift-card" data-category="giftcards" data-search="kammelna gift card giftcards gift-card giftcard">
+          <div class="ab-sb-card__media ab-card__media">
+            <img src="/assets/digital/kammelna-gift-card-square.png" alt="Kammelna Gift Card wordmark" loading="lazy" decoding="async">
+          </div>
+          <h3 class="ab-sb-card__title">Kammelna Gift Card</h3>
+          <p class="ab-sb-card__quote">
+            <span class="ab-sb-card__price">From $8.09</span>
+            <span class="ab-sb-card__tier">30 Days</span>
+          </p>
+          <div class="ab-sb-card__bottom">
+            <button type="button" class="ab-request" aria-label="Ask for a quote on Kammelna Gift Card — 30 Days — we buy it for you" data-name="Kammelna Gift Card — 30 Days" data-price="8.09">
+              <span class="ab-sb-card__label">Get a quote</span>
+              <span class="ab-sb-card__go" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" focusable="false"><path d="M5 12h13M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+            </button>
+          </div>
+        </article>
+
+        <!-- CATALOGUE CARDS END -->
 
       </div>
 

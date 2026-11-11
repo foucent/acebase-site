@@ -226,6 +226,36 @@
   background: var(--sb-blue-dark);
 }
 
+/* The three shops the price is checked on (2026-11-11, user: 「然后 paste a
+   product link 这里要放几个图标，京东，拼多多，淘宝」, label 「Paste a link
+   from 要改成从 这三个Logo的平台查询价格」). A quiet line under the pill rather
+   than marks inside it: on a 390 phone the field has ~190px left of the
+   button, and three marks would take half of it from the placeholder. 22px
+   squares, 3x assets, labels only — nothing here is a link. */
+.md-typeset .ab-sb-search__from {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 14px 0 0;
+  color: #6f6f78;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 1;
+}
+
+.md-typeset .ab-sb-search__from-label {
+  margin-right: 2px;
+}
+
+.md-typeset .ab-sb-search__shop {
+  width: 22px;
+  height: 22px;
+  margin: 0;
+  border-radius: 6px;
+  box-shadow: none;
+  vertical-align: middle;
+}
+
 /* the reply line under the box: only there once a link has been handed to the
    live chat, and cleared again the moment the input changes */
 .md-typeset .ab-sb-search__note {
@@ -548,7 +578,14 @@
   right: 12px;
 }
 
-/* ---------- four catalogue banners ---------- */
+/* ---------- promo banner (unused since 2026-11-11) ----------
+   The band used to be three catalogue banners at four columns. The Top-ups
+   banner went with its page (2026-11-11), then the CDKeys and Gift-cards
+   banners went with theirs (user: 「将 /cdkeys/ 和 /gift-cards/ 也同样处理」),
+   and the last one, News, was removed from the page later the same day
+   (『将 首页的 Free games / News / … 去掉』): the shelf is now reached straight
+   from the journey card. The rules below stay so a band can come back without
+   being rewritten; nothing on the page uses them. */
 
 .md-typeset .ab-sb-features {
   padding-top: 28px;
@@ -556,7 +593,7 @@
 
 .md-typeset .ab-sb-features__grid {
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-columns: minmax(0, 1fr);
   gap: 16px;
 }
 
@@ -577,18 +614,6 @@
   color: var(--sb-ink);
   box-shadow: 0 14px 28px -18px rgba(17, 24, 39, 0.4);
   transform: translateY(-2px);
-}
-
-.md-typeset .ab-sb-feature--top-ups {
-  background: linear-gradient(120deg, #eef4ff, #d7e7ff);
-}
-
-.md-typeset .ab-sb-feature--gift {
-  background: linear-gradient(120deg, #fff4ea, #ffe1c4);
-}
-
-.md-typeset .ab-sb-feature--cdkeys {
-  background: linear-gradient(120deg, #eafaf1, #d1f1e0);
 }
 
 .md-typeset .ab-sb-feature--news {
@@ -620,11 +645,22 @@
   letter-spacing: -0.01em;
 }
 
+/* A lone banner is not a thumbnail: the News art takes a third of the band,
+   cut to 16:9 so the 1000x563 cover fills it without letterboxing. */
+.md-typeset .ab-sb-feature__sub {
+  display: block;
+  max-width: 46ch;
+  margin-top: 6px;
+  color: rgba(24, 24, 27, 0.62);
+  font-size: 13px;
+  line-height: 1.45;
+}
+
 .md-typeset .ab-sb-feature__art {
   display: block;
   flex: 0 0 auto;
-  width: 42%;
-  max-width: 132px;
+  width: 34%;
+  max-width: 380px;
 }
 
 .md-typeset .ab-sb-feature__art img {
@@ -632,15 +668,19 @@
   width: 100%;
   height: auto;
   margin: 0;
-  border-radius: 0;
-  object-fit: contain;
+  border-radius: 10px;
+  object-fit: cover;
+  aspect-ratio: 16 / 9;
 }
 
 /* ---------- discovery band ---------- */
 
+/* No banner band sits above this any more (2026-11-11), so the grey band
+   comes straight after the journey card: a smaller lift keeps the two from
+   reading as one block. */
 .md-typeset .ab-sb-discovery {
-  margin-top: 36px;
-  padding: 48px 0 60px;
+  margin-top: 24px;
+  padding: 40px 0 60px;
   background: var(--sb-soft);
 }
 
@@ -811,6 +851,21 @@
   -webkit-line-clamp: 2;
 }
 
+/* One title is a link: PUBG Mobile UC's, to its detail page at
+   /top-ups/pubg-mobile/ — the single page left of the catalogue that went on
+   2026-11-11. Material would paint it the body-link colour, so the card keeps
+   its own ink and the link is only a hint, underlined on hover. */
+.md-typeset .ab-sb-card__title a {
+  color: inherit !important;
+  text-decoration: none !important;
+}
+
+.md-typeset .ab-sb-card__title a:hover,
+.md-typeset .ab-sb-card__title a:focus-visible {
+  color: var(--sb-blue) !important;
+  text-decoration: underline !important;
+}
+
 /* the quote line: the price the look-up came back with, and nothing else —
    the date that first sat next to it was dropped (2026-11-08, user:
    「类似Lowest · Nov 7的日期不需要」). The numbers are placeholders; see the
@@ -826,6 +881,21 @@
   font-size: 18px;
   font-weight: 700;
   line-height: 1.25;
+}
+
+/* The tier the "From $X" buys (2026-11-11, user: 「类似 From $1.18 等这些
+   价格，需要对应一个档位/规格」): a quiet line under the price naming the
+   entry tier, so a card never shows an amount with no spec attached. */
+.md-typeset .ab-sb-card__tier {
+  display: -webkit-box;
+  margin-top: 2px;
+  color: rgba(24, 24, 27, 0.55);
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.35;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
 }
 
 .md-typeset .ab-sb-card__bottom {
@@ -858,6 +928,15 @@
 
 .md-typeset .ab-sb-card .ab-request:hover {
   color: var(--sb-blue-dark);
+}
+
+/* The top-up label, "Get channel coupons" (2026-11-11), needs 116px and a
+   173px card offers 113px at 11px, so it takes two lines there. Balance them
+   so it breaks after "channel" — "Get channel" / "coupons" — rather than
+   leaving one word on line two. The gear labels are narrower and never wrap,
+   so this changes nothing for them. */
+.md-typeset .ab-sb-card__label {
+  text-wrap: balance;
 }
 
 .md-typeset .ab-sb-card__go {
@@ -933,12 +1012,8 @@
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
-  .md-typeset .ab-sb-features__grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-
   .md-typeset .ab-sb-feature__art {
-    width: 38%;
+    width: 36%;
   }
 }
 
@@ -1036,10 +1111,14 @@
     border-radius: 12px;
   }
 
-  /* a 173px card has room for "Get this price" on one line only at 12px,
-     and the disc comes down with it */
+  /* A 173px card held the long "Get link or channel" label on one line only
+     at 11px (2026-11-11); the label is "Get a quote" again since that day's
+     second pass, and 11px stays so this action and the top-up label, "Get
+     channel coupons" — which still needs two balanced lines at this width
+     (see text-wrap above) — keep one size across the shelf. The disc comes
+     down with it. */
   .md-typeset .ab-sb-card .ab-request {
-    font-size: 12px;
+    font-size: 11px;
     gap: 6px;
   }
 

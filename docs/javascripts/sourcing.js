@@ -20,6 +20,33 @@
     var price = parseFloat(btn.getAttribute("data-price"));
     if (!name) return "";
     var line = name + (isNaN(price) ? "" : " — " + money(price) + " each");
+
+    /* The front page is a buying service (2026-11-11 second pass, user:
+       「是的，首要也要改成 我们替你从品牌供应商或三大平台采购」): a card asks
+       for a quote to buy the piece, not for a link to buy it at. Its cards sit
+       inside .ab-sb. The one page left outside the shelf — /top-ups/pubg-mobile/
+       — keeps the sourcing wording it has had since the cart was retired on
+       2026-11-02. (It used to be said of the three catalogue pages too; they
+       were emptied onto the shelf on 2026-11-11 and deleted.) */
+    if (btn.closest && btn.closest(".ab-sb")) {
+      /* A top-up is bought on its own channel and the channel's coupons are
+         part of the answer, so its button says "Get channel coupons"
+         (2026-11-11, user: 「将 top-ups的 Get link or channel 改成类似于
+         获取渠道和优惠券」, then 「Get channel & coupons 改成获取渠道优惠券」). */
+      if (btn.closest('[data-category="topup"]')) {
+        return (
+          "Hello, I'd like the channel coupons for:\n\n" +
+          line +
+          "\n\nPlease reply in the chat with which channel it is bought on, and any coupons that apply."
+        );
+      }
+      return (
+        "Hello, I'd like a quote to buy this for me — from the brand supplier first, otherwise Pinduoduo, JD or Taobao:\n\n" +
+        line +
+        "\n\nPlease reply with the price and how I get it."
+      );
+    }
+
     return (
       "Hello, I'd like to request sourcing for:\n\n" +
       line +

@@ -293,3 +293,13 @@
     font-size: 20px;
   }
 }
+
+/* Four labels since 2026-11-11 (FIRST ORDER joined HOME / NEWS / GUIDES).
+   At 390px the 20px row runs ~376px of the 358px column and GUIDES drops
+   alone onto a second line; 18px measures ~340px and keeps the row whole.
+   Only the narrowest phones get this — 20px stays everywhere above 430px. */
+@media screen and (max-width: 430px) {
+  .ab-mainnav__link {
+    font-size: 18px;
+  }
+}

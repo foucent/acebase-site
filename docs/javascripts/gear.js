@@ -14,10 +14,11 @@
 
    Anything that is not a link is treated as a search of the shelf: the pills
    narrow by category, the box narrows by text, and the two stack. A shelf this
-   long has six kinds of thing to narrow by and two dozen brands, so the pills
-   say Mice / Keyboards / Mousepads / Monitors / Headsets / Chairs (2026-11-08,
-   when page one of five more review categories landed); before that they were
-   brand pills. The copy never calls the box a search.
+   long has seven kinds of thing to narrow by and two dozen brands, so the
+   pills say Mice / Keyboards / Mousepads / Monitors / Headsets / Chairs /
+   Top-ups (2026-11-08, when page one of five more review categories landed,
+   and 2026-11-11, when the nineteen Top-ups products moved onto the shelf);
+   before that they were brand pills. The copy never calls the box a search.
 
    The cards carry data-category and data-search (a lower-case string of the
    model plus its category) in index.md, so a card without data-search simply
@@ -133,10 +134,13 @@
   }
 
   function send(link, email) {
+    /* 2026-11-11 second pass, user: 「是的，首要也要改成 我们替你从品牌供应商或
+       三大平台采购」 — we quote the item, and the quote is what the customer
+       approves before we buy it. */
     var msg =
-      "Hello, I'd like the lowest sourcing price for this link:\n\n" +
+      "Hello, I'd like a quote to buy this product for me — from the brand supplier first, otherwise Pinduoduo, JD or Taobao:\n\n" +
       link +
-      "\n\nPlease email the price to: " +
+      "\n\nPlease email the quote to: " +
       email;
     if (typeof window.abOpenCrisp === "function") {
       window.abOpenCrisp(msg);
@@ -149,7 +153,7 @@
     }
     if (note) {
       note.textContent =
-        "Request sent — the lowest price goes to " + email + ".";
+        "Request sent — the quote goes to " + email + ".";
       note.hidden = false;
     }
   }

@@ -21,6 +21,10 @@ hide:
      Top ups」：那两张外充卡并进 /top-ups/，所以下面 More 段里的 Telegram 与
      Douyin 两条链改成 /top-ups/ 的锚点；页名改叫「Top ups」，「More from」那一
      行跟着改。
+     2026-11-11 目录页 /top-ups/ 删了（用户：「将 /top-ups/ 的商品移至 /，商品
+     只显示最低那一档的价格」），十九张卡搬上首页货架、id 不变，所以这一段改叫
+     「More game top-ups」，三条链指向 /#pubg-gcoin、/#telegram、/#douyin-top-up，
+     末一条指向首页货架 /#gear。本页地址不变，入口是首页 PUBG 那张卡的标题。
 
      正文与 FAQ 取自 topuplist 的 PUBG MOBILE 页，但**不提来源站名**，也不搬它的促销段
      （“Why Choose Topuplist” 五条、评分与评论）：介绍只留游戏、UC、用途、UID 这几段
@@ -139,9 +143,9 @@ hide:
 
   <section class="ab-section" id="more">
     <div class="ab-section__head">
-      <h2 class="ab-section__title">More from Top-ups</h2>
+      <h2 class="ab-section__title">More game top-ups</h2>
     </div>
-    <p><a href="/top-ups/#pubg-gcoin">PUBG G-COIN</a> &middot; <a href="/top-ups/#telegram">Telegram Stars</a> &middot; <a href="/top-ups/#douyin-top-up">Douyin Live</a> &middot; <a href="/top-ups/">the whole Top-ups catalogue</a></p>
+    <p><a href="/#pubg-gcoin">PUBG G-COIN</a> &middot; <a href="/#telegram">Telegram Stars</a> &middot; <a href="/#douyin-top-up">Douyin Live</a> &middot; <a href="/#gear">the whole shelf on the home page</a></p>
   </section>
 
 </div>
