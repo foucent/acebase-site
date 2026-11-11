@@ -31,7 +31,12 @@ hide:
      service percentage. Nothing here invents a fee or a delivery time.
 
      Markup is one .ab-fo wrapper styled by stylesheets/first-order.css; the
-     page is checked by _tmp_ocr/first_order_probe.py. -->
+     page is checked by _tmp_ocr/first_order_probe.py.
+
+     2026-11-11 (user: pasted the five perk labels and notes, then 「…删除」):
+     the white card of five perks is gone — the hero now runs straight into
+     "How it works". Its CSS is kept (unused), the way the home page keeps its
+     banner rules, in case the band comes back. -->
 
 <div class="ab-fo" markdown="0">
 
@@ -46,48 +51,6 @@ hide:
     </div>
   </section>
 
-  <section class="ab-fo-perks">
-    <div class="ab-fo-inner">
-      <ul class="ab-fo-perks__row">
-        <li class="ab-fo-perk">
-          <span class="ab-fo-perk__icon" aria-hidden="true">
-            <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
-          </span>
-          <span class="ab-fo-perk__label">Any shop, one box</span>
-          <span class="ab-fo-perk__note">A link from any site goes into the same box.</span>
-        </li>
-        <li class="ab-fo-perk">
-          <span class="ab-fo-perk__icon" aria-hidden="true">
-            <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.59 13.41 13.42 20.58a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"/><circle cx="7" cy="7" r="1.2"/></svg>
-          </span>
-          <span class="ab-fo-perk__label">The price check is free</span>
-          <span class="ab-fo-perk__note">You pay nothing to ask what an item costs in China.</span>
-        </li>
-        <li class="ab-fo-perk">
-          <span class="ab-fo-perk__icon" aria-hidden="true">
-            <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg>
-          </span>
-          <span class="ab-fo-perk__label">Sourced at the source</span>
-          <span class="ab-fo-perk__note">The brand supplier first, then Pinduoduo, JD or Taobao.</span>
-        </li>
-        <li class="ab-fo-perk">
-          <span class="ab-fo-perk__icon" aria-hidden="true">
-            <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="m16.5 16.5 4 4"/><path d="M8.5 11h5"/><path d="M11 8.5v5"/></svg>
-          </span>
-          <span class="ab-fo-perk__label">Inspected and assembled</span>
-          <span class="ab-fo-perk__note">Opened, checked against your order and assembled where it needs it.</span>
-        </li>
-        <li class="ab-fo-perk">
-          <span class="ab-fo-perk__icon" aria-hidden="true">
-            <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 3h14v13H1z"/><path d="M15 8h4l3 3v5h-7V8z"/><circle cx="5.5" cy="18.5" r="1.8"/><circle cx="17.5" cy="18.5" r="1.8"/></svg>
-          </span>
-          <span class="ab-fo-perk__label">Delivered worldwide</span>
-          <span class="ab-fo-perk__note">Consolidated, repacked and tracked to your door.</span>
-        </li>
-      </ul>
-    </div>
-  </section>
-
   <section class="ab-fo-section ab-fo-how">
     <div class="ab-fo-inner">
       <h2 class="ab-fo-h2">How it works</h2>
@@ -96,7 +59,7 @@ hide:
         <li class="ab-fo-step">
           <span class="ab-fo-step__num">01</span>
           <h3 class="ab-fo-step__title">Paste a link</h3>
-          <p class="ab-fo-step__text">Paste a product link from any shop &mdash; Pinduoduo, JD, Taobao or anywhere else &mdash; into the box on the home page. One link is enough.</p>
+          <p class="ab-fo-step__text">Paste a product link from any shop into the box on the home page. One link is enough.</p>
         </li>
         <li class="ab-fo-step">
           <span class="ab-fo-step__num">02</span>
@@ -178,7 +141,7 @@ hide:
         </article>
         <article class="ab-fo-limit">
           <h3 class="ab-fo-limit__title">Customs duty</h3>
-          <p class="ab-fo-limit__text">Duty and tax charged in your country are yours to pay. We declare the parcel honestly and don't cover what customs charges.</p>
+          <p class="ab-fo-limit__text">We declare the parcel in the most reasonable way to keep the duty low, but we are not responsible for customs clearance. If your parcel is picked for inspection and duty is charged, that cost is yours to pay.</p>
         </article>
       </div>
     </div>
@@ -187,7 +150,7 @@ hide:
   <section class="ab-fo-cta">
     <div class="ab-fo-inner ab-fo-cta__inner">
       <h2 class="ab-fo-cta__title">Ready to start?</h2>
-      <p class="ab-fo-cta__lead">Paste a link and we'll email you what it costs, where we'll source it and what delivery adds.</p>
+      <p class="ab-fo-cta__lead">Paste a link and we'll tell you in the live chat what it costs, where we'll source it and what delivery adds.</p>
       <div class="ab-fo-cta__actions">
         <a class="ab-fo-btn" href="/#gear-search">Get a quote</a>
         <button class="ab-fo-btn ab-fo-btn--ghost ab-crisp-open" type="button" data-crisp-msg="Hello, this is my first order — I have a question before I start.">Live chat</button>

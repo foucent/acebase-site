@@ -196,6 +196,33 @@ hide:
      branch and gear.js's message and note moved with them; ids, pictures,
      prices and data-price did not. -->
 
+<!-- NO MORE EMAIL GATE — THE QUOTE COMES BACK IN THE LIVE CHAT (2026-11-11,
+     user: 「这里不要通过邮件，而是直接打开聊天在线获取报价」). The hero box used
+     to open a dialog that collected an address because the price was answered
+     out of band; now a submitted link goes straight into the chat and the
+     answer arrives there. #price-modal, its CSS and gear.js's email handling
+     are gone; the note under the box only confirms that the chat is open.
+
+     The same message rewrote journey step 1's line ("Paste any product link,"
+     — the shelf is no longer offered as the starting point) and step 2, which
+     used to be "Leave an email, get a quote" and now names the chat as where
+     the quote lands. /first-order/'s closing line changed with it so the two
+     pages still describe one offer. -->
+
+<!-- THE HERO ASKS THE SAME QUESTION AS A CARD (2026-11-11, user: 「输入链接的
+     get a quote 点击后的效果应该和下面的商品的 get a quote 的效果是一样的」).
+     The hero's hand-off now uses sourcing.js's own wording for the shelf's
+     cards — "quote to buy this for me … Please reply with the price and how I
+     get it" — with the pasted link in the place the card puts its name and
+     price. The green note under the box is gone with it: a card click opens
+     the chat and nothing else, so the hero does too.
+
+     The shelf's heading no longer says "Popular gear" (user: 「Popular gear 要
+     改成类似 最新热门商品价格」): it reads "Latest prices on hot gear", the
+     grid's aria-label matches, and the hero chip that jumps there says "Hot
+     gear". The "Open live chat" button beside that heading was removed — the
+     hero already carries "Live chat". -->
+
 <div class="ab-sb" markdown="0">
 
   <section class="ab-sb-hero">
@@ -229,9 +256,8 @@ hide:
           <img class="ab-sb-search__shop" loading="eager" src="/assets/gear/platforms/taobao.png" alt="Taobao" width="22" height="22" decoding="async">
           <img class="ab-sb-search__shop" loading="eager" src="/assets/gear/platforms/pinduoduo.png" alt="Pinduoduo" width="22" height="22" decoding="async">
         </p>
-        <p class="ab-sb-search__note" id="gear-note" aria-live="polite" hidden></p>
         <div class="ab-sb-hero__tools">
-          <a class="ab-sb-chip" href="#gear">Popular gear</a>
+          <a class="ab-sb-chip" href="#gear">Hot gear</a>
           <a class="ab-sb-chip" href="#how">How it works</a>
           <button class="ab-sb-chip ab-crisp-open" type="button" data-crisp-msg="Hello, I'd like a quote to buy some gaming gear for me.">Live chat</button>
         </div>
@@ -239,49 +265,17 @@ hide:
     </div>
   </section>
 
-  <!-- The email gate (2026-11-08, user: 「用户点 get price之后，需要弹出一个邮箱
-       输入框，用于接收价格信息」). Get price no longer hands the link straight to
-       the chat: it opens this dialog, because the price is answered asynchronously
-       and needs somewhere to land. The address and the link both ride in the
-       chat message — this site has no form backend, so the chat inbox is where a
-       human picks the request up — and the note under the box repeats the
-       address, so the reader can see what was sent. The dialog asks where to
-       send the quote: approving it is what starts the purchase, so nothing is
-       charged when the address is left. -->
-  <div class="ab-sb-modal" id="price-modal" role="dialog" aria-modal="true"
-       aria-labelledby="price-modal-title" hidden>
-    <div class="ab-sb-modal__panel">
-      <button class="ab-sb-modal__close" type="button" aria-label="Close">
-        <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false">
-          <path fill="currentColor" d="M18.3 5.7a1 1 0 0 0-1.4 0L12 10.6 7.1 5.7a1 1 0 0 0-1.4 1.4L10.6 12l-4.9 4.9a1 1 0 1 0 1.4 1.4L12 13.4l4.9 4.9a1 1 0 0 0 1.4-1.4L13.4 12l4.9-4.9a1 1 0 0 0 0-1.4z"/>
-        </svg>
-      </button>
-      <h2 class="ab-sb-modal__title" id="price-modal-title">Where should we send your quote?</h2>
-      <p class="ab-sb-modal__lead">We check the brand supplier first, then Pinduoduo, JD and Taobao, and email you one price for the link you pasted. Approve it and we buy the item, inspect it and deliver it to your door.</p>
-      <p class="ab-sb-modal__link" id="price-modal-link"></p>
-      <form class="ab-sb-modal__form" id="price-form" novalidate>
-        <label class="ab-sb-modal__label" for="price-email">Email address</label>
-        <input class="ab-sb-modal__input" id="price-email" name="email" type="email"
-               autocomplete="email" inputmode="email" spellcheck="false"
-               placeholder="you@example.com" required>
-        <p class="ab-sb-modal__error" id="price-error" role="alert" hidden></p>
-        <button class="ab-sb-modal__submit" type="submit">Email me the quote</button>
-      </form>
-      <p class="ab-sb-modal__foot">The quote is free. Once you approve it we buy the item, inspect it when it reaches our warehouse, assemble it where needed and deliver it to your door.</p>
-    </div>
-  </div>
-
   <section class="ab-sb-journey" id="how">
     <div class="ab-sb-inner">
       <div class="ab-sb-journey__card">
         <ol class="ab-sb-journey__steps">
           <li class="ab-sb-step">
             <p class="ab-sb-step__title"><span class="ab-sb-step__num">1</span> Paste a link or pick a piece</p>
-            <p class="ab-sb-step__text">Paste any product link, or pick one from the shelf below.</p>
+            <p class="ab-sb-step__text">Paste any product link.</p>
           </li>
           <li class="ab-sb-step">
-            <p class="ab-sb-step__title"><span class="ab-sb-step__num">2</span> Leave an email, get a quote</p>
-            <p class="ab-sb-step__text">We check the brand supplier first, then Pinduoduo, JD and Taobao, and email you one price.</p>
+            <p class="ab-sb-step__title"><span class="ab-sb-step__num">2</span> Get the quote in the live chat</p>
+            <p class="ab-sb-step__text">We check the brand supplier first, then Pinduoduo, JD and Taobao, and reply with one price in the live chat.</p>
           </li>
           <li class="ab-sb-step">
             <p class="ab-sb-step__title"><span class="ab-sb-step__num">3</span> We buy, inspect and deliver</p>
@@ -300,8 +294,7 @@ hide:
   <section class="ab-sb-discovery" id="gear">
     <div class="ab-sb-inner">
       <header class="ab-sb-discovery__head">
-        <h2 class="ab-sb-discovery__title">Popular gear</h2>
-        <button class="ab-sb-chat ab-crisp-open" type="button" data-crisp-msg="Hello, I'd like a quote to buy some gaming gear for me.">Open live chat</button>
+        <h2 class="ab-sb-discovery__title">Latest prices on hot gear</h2>
       </header>
 
       <p class="ab-sb-discovery__lead">The gear players ask about most, plus top-ups, gift cards and game codes — ask on any card for a quote and we will buy it for you.</p>
@@ -319,7 +312,7 @@ hide:
         <button class="ab-sb-pill" type="button" data-category="giftcards" aria-pressed="false">Gift-cards</button>
       </div>
 
-      <div class="ab-sb-grid" id="gear-grid" aria-label="Popular gear">
+      <div class="ab-sb-grid" id="gear-grid" aria-label="Latest prices on hot gear">
 
         <!-- Page one of five more review categories joined the shelf above the
              keyboards (2026-11-08, user: 「将 https://prosettings.net/reviews/type/

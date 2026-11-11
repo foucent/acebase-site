@@ -4,13 +4,12 @@
    方式获取最低采购价」, then 「用户点 get price之后，需要弹出一个邮箱输入框，
    用于接收价格信息」).
 
-   The hero box asks for a product link. Submitting one opens the email dialog
-   (#price-modal) rather than sending anything: the price is looked up out of
-   band, so it needs an address to land at. On submit, the link and the address
-   go into one Crisp message — this site has no form backend, so the chat inbox
-   is where the request is actually picked up — and the note under the box says
-   where the answer will go. The input keeps its value, so a typo can be fixed
-   and sent again.
+   The hero box asks for a product link. Submitting one opens the live chat
+   with the link already in the message (2026-11-11, user: 「这里不要通过邮件，
+   而是直接打开聊天在线获取报价」 — the email dialog that stood here until then is
+   gone). This site has no form backend, so the chat inbox is where a person
+   picks the request up and answers with the price. The input keeps its value,
+   so a typo can be fixed and sent again.
 
    Anything that is not a link is treated as a search of the shelf: the pills
    narrow by category, the box narrows by text, and the two stack. A shelf this
@@ -34,9 +33,7 @@
   var pills = document.getElementById("gear-pills");
   var form = document.getElementById("gear-search-form");
   var input = document.getElementById("gear-search");
-  var note = document.getElementById("gear-note");
   var empty = document.getElementById("gear-empty");
-  var modal = document.getElementById("price-modal");
   if (!grid || !pills) return;
 
   var cards = Array.prototype.slice.call(grid.querySelectorAll(".ab-sb-card"));
@@ -60,12 +57,6 @@
     return /^(www\.)?[a-z0-9-]+(\.[a-z0-9-]+)+([/?#]|$)/i.test(s);
   }
 
-  /* Deliberately loose: something@something.tld and no spaces. Anything
-     stricter rejects addresses that are perfectly deliverable. */
-  function looksLikeEmail(v) {
-    return /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(String(v || "").trim());
-  }
-
   function apply() {
     var terms = words(query);
     var shown = 0;
@@ -85,63 +76,18 @@
     if (empty) empty.hidden = shown !== 0;
   }
 
-  /* ---------- the email gate ---------- */
+  /* ---------- a link opens the live chat ---------- */
 
-  var priceModal = modal && modal.querySelector(".ab-sb-modal__panel") ? modal : null;
-  var emailForm = priceModal && priceModal.querySelector("#price-form");
-  var emailInput = priceModal && priceModal.querySelector("#price-email");
-  var emailError = priceModal && priceModal.querySelector("#price-error");
-  var linkEcho = priceModal && priceModal.querySelector("#price-modal-link");
-  var pendingLink = "";
-  var lastFocus = null;
-
-  function setError(msg) {
-    if (!emailInput) return;
-    if (msg) {
-      emailInput.setAttribute("aria-invalid", "true");
-      if (emailError) {
-        emailError.textContent = msg;
-        emailError.hidden = false;
-      }
-    } else {
-      emailInput.removeAttribute("aria-invalid");
-      if (emailError) {
-        emailError.textContent = "";
-        emailError.hidden = true;
-      }
-    }
-  }
-
-  function openModal(link) {
-    if (!priceModal) return;
-    pendingLink = link;
-    setError("");
-    if (linkEcho) linkEcho.textContent = link;
-    if (emailInput) emailInput.value = "";
-    lastFocus = document.activeElement;
-    priceModal.hidden = false;
-    document.body.style.overflow = "hidden";
-    if (emailInput) emailInput.focus();
-  }
-
-  function closeModal() {
-    if (!priceModal || priceModal.hidden) return;
-    priceModal.hidden = true;
-    document.body.style.overflow = "";
-    setError("");
-    if (lastFocus && lastFocus.focus) lastFocus.focus();
-    lastFocus = null;
-  }
-
-  function send(link, email) {
-    /* 2026-11-11 second pass, user: 「是的，首要也要改成 我们替你从品牌供应商或
-       三大平台采购」 — we quote the item, and the quote is what the customer
-       approves before we buy it. */
+  /* The same request the shelf's cards send through sourcing.js — the link
+     takes the place the card gives its name and price (2026-11-11, user:
+     「输入链接的 get a quote 点击后的效果应该和下面的商品的 get a quote 的效果
+     是一样的」). No note appears, for the same reason: a card click opens the
+     chat and nothing else. */
+  function sendToChat(link) {
     var msg =
-      "Hello, I'd like a quote to buy this product for me — from the brand supplier first, otherwise Pinduoduo, JD or Taobao:\n\n" +
+      "Hello, I'd like a quote to buy this for me — from the brand supplier first, otherwise Pinduoduo, JD or Taobao:\n\n" +
       link +
-      "\n\nPlease email the quote to: " +
-      email;
+      "\n\nPlease reply with the price and how I get it.";
     if (typeof window.abOpenCrisp === "function") {
       window.abOpenCrisp(msg);
     } else {
@@ -151,48 +97,6 @@
       window.$crisp.push(["set", "message:text", msg]);
       window.$crisp.push(["do", "chat:open"]);
     }
-    if (note) {
-      note.textContent =
-        "Request sent — the quote goes to " + email + ".";
-      note.hidden = false;
-    }
-  }
-
-  if (priceModal) {
-    priceModal.addEventListener("click", function (ev) {
-      /* the backdrop closes; a click inside the panel does not */
-      if (ev.target === priceModal) closeModal();
-    });
-    var closeBtn = priceModal.querySelector(".ab-sb-modal__close");
-    if (closeBtn) closeBtn.addEventListener("click", closeModal);
-    document.addEventListener("keydown", function (ev) {
-      if (ev.key === "Escape" && !priceModal.hidden) {
-        ev.preventDefault();
-        closeModal();
-      }
-    });
-  }
-
-  if (emailForm && emailInput) {
-    emailInput.addEventListener("input", function () {
-      if (emailInput.getAttribute("aria-invalid") === "true") setError("");
-    });
-    emailForm.addEventListener("submit", function (ev) {
-      ev.preventDefault();
-      var email = emailInput.value.trim();
-      if (!email) {
-        setError("Enter an email address so we can send the price.");
-        emailInput.focus();
-        return;
-      }
-      if (!looksLikeEmail(email)) {
-        setError("That does not look like an email address — check it and try again.");
-        emailInput.focus();
-        return;
-      }
-      send(pendingLink || (input ? input.value.trim() : ""), email);
-      closeModal();
-    });
   }
 
   /* ---------- the shelf ---------- */
@@ -212,7 +116,6 @@
   if (input) {
     input.addEventListener("input", function () {
       query = input.value;
-      if (note) note.hidden = true;
       apply();
     });
   }
@@ -223,15 +126,14 @@
       var value = input ? input.value.trim() : "";
 
       if (looksLikeLink(value)) {
-        /* a link is not a filter: put the whole shelf back, then ask where to
-           send the price */
+        /* a link is not a filter: put the whole shelf back, then hand the link
+           to the chat, where the quote is answered */
         query = "";
         apply();
-        openModal(value);
+        sendToChat(value);
         return;
       }
 
-      if (note) note.hidden = true;
       query = value;
       apply();
       var disc = document.getElementById("gear");
